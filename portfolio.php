@@ -119,7 +119,7 @@
 	
 		<div class="sixteen columns">
 			
-			<div class="four columns">
+			<div class="four columns alpha">
 				<a href="img/walko/walko1.jpg" data-lightbox="walko"><img src="img/walko/walko_thumb.jpg" class="scale-with-grid">
 				<p>Sarah Walko</p></a>
 			</div>

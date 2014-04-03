@@ -4,12 +4,6 @@
 	#Page Styles
 	#Media Queries
 	#Font-Face */
-/* Smaller than standard 960 (devices and browsers) */
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-/* All Mobile Sizes (devices and browser) */
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 /* # SITE STYLES
 ================================================== */
 * {
@@ -58,9 +52,9 @@ a {
 
 .band {
   width: 100%;
-  background-color: black;
+  background-color: silver;
   padding: 2em 0 8em 0;
-  color: white; }
+  color: #5a5a5a; }
 
 .uppercase, .portfolio p, nav {
   text-transform: uppercase; }
@@ -68,15 +62,9 @@ a {
 .bold, a, .portfolio p, nav {
   font-weight: 900; }
 
-/* HR
-=========================== */
 hr {
   width: 100%;
   border: 1px solid black; }
-
-footer hr {
-  border-weight: 0.1em;
-  border-color: white; }
 
 .img-band {
   width: 100%;
@@ -96,9 +84,9 @@ footer hr {
   -moz-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out; }
   .portfolio img:hover {
-    opacity: 0.5; }
+    opacity: 0.65; }
 .portfolio p {
-  font-family: "Futura LT Book";
+  font-family: "Futura LT Book", Helvetica, sans-serif;
   font-size: .75em;
   letter-spacing: .15em; }
 
@@ -125,18 +113,19 @@ nav {
 
 /* FOOTER
 =====================================*/
-footer {
-  color: silver; }
-  footer p, footer ul {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: smaller;
-    line-height: 1.75em; }
-  footer a:link, footer a:visited {
-    font-family: inherit;
-    line-height: 1.75em;
-    color: silver; }
-    footer a:link:hover, footer a:visited:hover {
-      color: white; }
+footer p, footer ul {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: smaller;
+  line-height: 1.75em; }
+footer hr {
+  border-weight: 1px;
+  border-color: rgba(90, 90, 90, 0.5); }
+footer a:link, footer a:visited {
+  font-family: inherit;
+  line-height: 1.75em;
+  color: #5a5a5a; }
+  footer a:link:hover, footer a:visited:hover {
+    color: black; }
 
 /* #Media Queries
 ================================================== */
