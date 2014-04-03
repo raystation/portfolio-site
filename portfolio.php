@@ -6,141 +6,142 @@
 	================================================== -->
 
 	<div class="container portfolio">
-		
-		<div class="four columns">
-			<a href="img/animore/01.jpg" data-lightbox="animore" title=""><img src="img/animore/thumb.jpg" class="scale-with-grid"></a>
-			<p>Animore</p>
-		</div>
 
-		<div class="four columns">
-			<a href="img/edgeware/00.jpg" data-lightbox="edgeware" title=""><img src="img/edgeware/00.jpg" class="scale-with-grid"></a>
-			<p>Edgeware</p>
-		</div>
+		<div class="sixteen columns">
+			<div class="four columns alpha">
+				<a href="img/animore/01.jpg" data-lightbox="animore" title=""><img src="img/animore/thumb.jpg" class="scale-with-grid"></a>
+				<p>Animore</p>
+			</div>
 
-		<div class="four columns">
-			<a href="img/idibon/derby2-01.jpg" data-lightbox="idibon"><img src="img/idibon/title.jpg" class="scale-with-grid"></a>
-			<p>Idibon</p>
-		</div>
+			<div class="four columns">
+				<a href="img/edgeware/00.jpg" data-lightbox="edgeware" title=""><img src="img/edgeware/00.jpg" class="scale-with-grid"></a>
+				<p>Edgeware</p>
+			</div>
 
-		<div class="four columns">
-			<a href="img/maladobaldwin/01.jpg" data-lightbox="malado"><img src="img/maladobaldwin/title.jpg" class="scale-with-grid"></a>
-			<p> Malado Baldwin</p>
-		</div>
+			<div class="four columns">
+				<a href="img/idibon/derby2-01.jpg" data-lightbox="idibon"><img src="img/idibon/title.jpg" class="scale-with-grid"></a>
+				<p>Idibon</p>
+			</div>
 
-	</div>
+			<div class="four columns omega">
+				<a href="img/maladobaldwin/01.jpg" data-lightbox="malado"><img src="img/maladobaldwin/title.jpg" class="scale-with-grid"></a>
+				<p> Malado Baldwin</p>
+			</div>
+		</div>	
+
+		<!-- Row 2
+		================================================== -->
 	
+		<div class="sixteen columns">
+				
+			<div class="four columns alpha">
+				<a href="img/eggbaby_b.jpg" data-lightbox="eggbaby"><img src="img/eggbaby1.jpg" class="scale-with-grid">
+				<p>Egg Baby</p></a>
+			</div>
 
-	<!-- Row 2
-	================================================== -->
-	
-	<div class="container portfolio">
+			<div class="four columns">
+				<a href="img/indiginauts_b.jpg" data-lightbox="indigi"><img src="img/indiginauts_b.jpg" class="scale-with-grid">
+				<p>Indiginauts</p></a>
+			</div>
+
+			<div class="four columns">
+				<a href="img/mky/cover.jpg" class="visible" data-lightbox="mky"><img src="img/mky/thumb.jpg" class="scale-with-grid">
+				<p>Monkey Mo, Monkey&nbsp;Go</p></a>
+			</div>
+
+			<div class="four columns omega">
+				<a href="img/museyon/title_b.jpg" data-lightbox="museyon"><img src="img/museyon/title.jpg" class="scale-with-grid">
+				<p>Museyon</p></a>
+			</div>
+
+		</div>	
 		
-		<div class="four columns">
-			<a href="img/eggbaby_b.jpg" data-lightbox="eggbaby"><img src="img/eggbaby1.jpg" class="scale-with-grid">
-			<p>Egg Baby</p></a>
-		</div>
-
-		<div class="four columns">
-			<a href="img/indiginauts_b.jpg" data-lightbox="indigi"><img src="img/indiginauts_b.jpg" class="scale-with-grid">
-			<p>Indiginauts</p></a>
-		</div>
-
-		<div class="four columns">
-			<a href="img/mky/cover.jpg" class="visible" data-lightbox="mky"><img src="img/mky/thumb.jpg" class="scale-with-grid">
-			<p>Monkey Mo, Monkey&nbsp;Go</p></a>
-		</div>
-
-		<div class="four columns">
-			<a href="img/museyon/title_b.jpg" data-lightbox="museyon"><img src="img/museyon/title.jpg" class="scale-with-grid">
-			<p>Museyon</p></a>
-		</div>
-
-	</div>	
 	
+		<!-- Row 3
+		================================================== -->
+		
+		<div class="sixteen columns">
+		
+			<div class="four columns alpha">
+				<a href="img/museyon/c-ny/title.jpg" data-lightbox="pokemon"><img src="img/museyon/c-ny/title.jpg" class="scale-with-grid">
+				<p>Pokémon</p></a>
+				
+			</div>
+
+			<div class="four columns">
+				<a href="img/museyon/rome/cover.jpg" data-lightbox="rome"><img src="img/museyon/rome/thumb.jpg" class="scale-with-grid">
+				<p>Chronicles of Old&nbsp;Rome</p></a>
+			</div>
+
+			<div class="four columns">
+				<a href="img/pearson/attention.jpg" data-lightbox="pearson"><img src="img/pearson/title.jpg" class="scale-with-grid">
+				<p>100 Principles of Game&nbsp;Design</p></a>
+			</div>
+
+			<div class="four columns omega">
+				<a href="img/storymaps/01.jpg" data-lightbox="storymaps"><img src="img/storymaps/title.jpg" class="scale-with-grid">
+				<p>Storymaps</p></a>
+			</div>
+
+		</div>
+		
 	
-	<!-- Row 3
-	================================================== -->
-		
-	<div class="container portfolio">
-		
-		<div class="four columns">
-			<a href="img/museyon/c-ny/title.jpg" data-lightbox="pokemon"><img src="img/museyon/c-ny/title.jpg" class="scale-with-grid">
-			<p>Pokémon</p></a>
+		<!-- Row 4
+		================================================== -->
+	
+		<div class="sixteen columns">
 			
-		</div>
+			<div class="four columns alpha">
+				<a href="img/" data-lightbox="poke"><img src="img/pkmn/title.jpg" class="scale-with-grid">
+				<p>Pokémon</p></a>
+			</div>
 
-		<div class="four columns">
-			<a href="img/museyon/rome/cover.jpg" data-lightbox="rome"><img src="img/museyon/rome/thumb.jpg" class="scale-with-grid">
-			<p>Chronicles of Old&nbsp;Rome</p></a>
-		</div>
+			<div class="four columns">
+				<a href="img/scavhunt/01.jpg" data-lightbox="hunt"><img src="img/scavhunt/title.jpg" class="scale-with-grid">
+				<p>Scavenger Hunt</p></a>
+			</div>
 
-		<div class="four columns">
-			<a href="img/pearson/attention.jpg" data-lightbox="pearson"><img src="img/pearson/title.jpg" class="scale-with-grid">
-			<p>100 Principles of Game&nbsp;Design</p></a>
-		</div>
+			<div class="four columns">
+				<a href="img/colorRunner/05.jpg" data-lightbox="runner"><img src="img/colorRunner/title.jpg" class="scale-with-grid">
+				<p>Color Runner</p></a>
+			</div>
 
-		<div class="four columns">
-			<a href="img/storymaps/01.jpg" data-lightbox="storymaps"><img src="img/storymaps/title.jpg" class="scale-with-grid">
-			<p>Storymaps</p></a>
-		</div>
+			<div class="four columns omega">
+				<a href="img/tiger/tigertiger_b.jpg" data-lightbox="tiger"><img src="img/tiger/title.jpg" class="scale-with-grid">
+				<p>Tiger, Tiger Tail on&nbsp;Fire</p></a>
+			</div>
 
-	</div>
+		</div>
 	
 	
-	<!-- Row 4
-	================================================== -->
+		<!-- Row 5
+		================================================== -->
 	
-	<div class="container portfolio">
+		<div class="sixteen columns">
 			
-		<div class="four columns">
-			<a href="img/" data-lightbox="poke"><img src="img/pkmn/title.jpg" class="scale-with-grid">
-			<p>Pokémon</p></a>
+			<div class="four columns">
+				<a href="img/walko/walko1.jpg" data-lightbox="walko"><img src="img/walko/walko_thumb.jpg" class="scale-with-grid">
+				<p>Sarah Walko</p></a>
+			</div>
+
+			<div class="four columns">
+				<a href="img/superbarracuda/Palin_halloween.jpg" data-lightbox="palin"><img src="img/superbarracuda/palin_thumb.jpg" class="scale-with-grid">
+				<p>Sarah Palin</p></a>
+			</div>
+
+			<div class="four columns">
+				<a href="gif-fun.php"><img src="img/dailygifs/thumbnail.gif" class="scale-with-grid">
+				<p>GIF fun!</p></a>
+			</div>
+
+			<div class="four columns omega">
+				<a href="img/chrichard/Chrichard-invite1.png" data-lightbox="chrichard"><img src="img/chrichard/thumbnail.jpg" class="scale-with-grid">
+				<p>Chrichard invite</p></a>
+			</div>
+
 		</div>
 
-		<div class="four columns">
-			<a href="img/scavhunt/01.jpg" data-lightbox="hunt"><img src="img/scavhunt/title.jpg" class="scale-with-grid">
-			<p>Scavenger Hunt</p></a>
-		</div>
-
-		<div class="four columns">
-			<a href="img/colorRunner/05.jpg" data-lightbox="runner"><img src="img/colorRunner/title.jpg" class="scale-with-grid">
-			<p>Color Runner</p></a>
-		</div>
-
-		<div class="four columns">
-			<a href="img/tiger/tigertiger_b.jpg" data-lightbox="tiger"><img src="img/tiger/title.jpg" class="scale-with-grid">
-			<p>Tiger, Tiger Tail on&nbsp;Fire</p></a>
-		</div>
-
-	</div>
-	
-	
-	<!-- Row 5
-	================================================== -->
-	
-	<div class="container portfolio">
-			
-		<div class="four columns">
-			<a href="img/walko/walko1.jpg" data-lightbox="walko"><img src="img/walko/walko_thumb.jpg" class="scale-with-grid">
-			<p>Sarah Walko</p></a>
-		</div>
-
-		<div class="four columns">
-			<a href="img/superbarracuda/Palin_halloween.jpg" data-lightbox="palin"><img src="img/superbarracuda/palin_thumb.jpg" class="scale-with-grid">
-			<p>Sarah Palin</p></a>
-		</div>
-
-		<div class="four columns">
-			<a href="gif-fun.php"><img src="img/dailygifs/thumbnail.gif" class="scale-with-grid">
-			<p>GIF fun!</p></a>
-		</div>
-
-		<div class="four columns">
-			<a href="img/chrichard/Chrichard-invite1.png" data-lightbox="chrichard"><img src="img/chrichard/thumbnail.jpg" class="scale-with-grid">
-			<p>Chrichard invite</p></a>
-		</div>
-
-	</div>
+	</div> <!-- end container -->
 	
 	
 	<!-- Hidden images
