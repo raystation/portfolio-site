@@ -97,6 +97,12 @@ hr {
   padding: 3px;
   margin: 1px; }
 
+.resume-title {
+  margin: 0;
+  color: steelblue;
+  font-weight: bold;
+  padding: 0; }
+
 /* NAV STYLES
 ==================================================*/
 nav {
