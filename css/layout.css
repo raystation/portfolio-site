@@ -73,17 +73,24 @@ hr {
 #blobby {
   background: url("img/dailygifs/blob_2.gif"); }
 
+.visible {
+  display: inherit !important; }
+
+img.scale-with-grid2 {
+  width: 100%;
+  height: auto; }
+
 .textbox {
   padding: 1em; }
   .textbox .removeRight {
     padding-right: 0; }
 
-.portfolio img {
+.portfolio .thumbnail img {
   opacity: 1;
   -webkit-transition: opacity 0.25s ease-in-out;
   -moz-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out; }
-  .portfolio img:hover {
+  .portfolio .thumbnail img:hover {
     opacity: 0.65; }
 .portfolio p {
   font-family: "Futura LT Book", Helvetica, sans-serif;
@@ -102,6 +109,11 @@ hr {
   color: steelblue;
   font-weight: bold;
   padding: 0; }
+
+#animore-full,
+#edgeware-full,
+#eggbaby-full {
+  display: none; }
 
 /* NAV STYLES
 ==================================================*/
