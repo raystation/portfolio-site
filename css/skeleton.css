@@ -201,7 +201,14 @@
         .container .sixteen.columns,
         .container .one-third.column,
         .container .two-thirds.column { width: 420px; }
-    }    /*  > 960px================================================== */    @media only screen and (min-width: 1400px) {		body {			font-size: 17px;		}        }
+    }
+    
+/*  > 960px
+================================================== */
+
+    @media only screen and (min-width: 1400px) {
+    
+    }
 
 
 /* #Clearing

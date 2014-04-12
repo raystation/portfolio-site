@@ -38,7 +38,7 @@
 			</div>
 
 			<div class="sixteen columns">
-				<hr class="footer">
+				<hr>
 				<p> &copy <?php echo date('Y');?> 
 					Raymond Yuen • made with Skeleton • 
 				</p>
