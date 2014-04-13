@@ -9,7 +9,7 @@
 
 		<div class="sixteen columns">
 			<div class="four columns alpha">
-				<a href="img/animore/01.jpg" data-lightbox="animore" title=""><img src="img/animore/thumb.jpg" class="scale-with-grid"></a>
+				<a href="animore.php"title=""><img src="img/animore/thumb.jpg" class="scale-with-grid"></a>
 				<p>Animore</p>
 			</div>
 
@@ -45,7 +45,7 @@
 			</div>
 
 			<div class="four columns">
-				<a href="img/mky/cover.jpg" class="visible" data-lightbox="mky"><img src="img/mky/thumb.jpg" class="scale-with-grid">
+				<a href="monkey.php"><img src="img/monkey-mo/thumb.jpg" class="scale-with-grid">
 				<p>Monkey Mo, Monkey&nbsp;Go</p></a>
 			</div>
 
@@ -74,12 +74,12 @@
 			</div>
 
 			<div class="four columns">
-				<a href="img/pearson/attention.jpg" data-lightbox="pearson"><img src="img/pearson/title.jpg" class="scale-with-grid">
+				<a href="100principles.php"><img src="img/pearson/title.jpg" class="scale-with-grid">
 				<p>100 Principles of Game&nbsp;Design</p></a>
 			</div>
 
 			<div class="four columns omega">
-				<a href="img/storymaps/01.jpg" data-lightbox="storymaps"><img src="img/storymaps/title.jpg" class="scale-with-grid">
+				<a href="storymaps.php"><img src="img/storymaps/title.jpg" class="scale-with-grid">
 				<p>Storymaps</p></a>
 			</div>
 
@@ -92,7 +92,7 @@
 		<div class="sixteen columns">
 			
 			<div class="four columns alpha">
-				<a href="img/" data-lightbox="poke"><img src="img/pkmn/title.jpg" class="scale-with-grid">
+				<a href="img/" data-lightbox="poke"><img src="img/pokemon/title.jpg" class="scale-with-grid">
 				<p>Pokémon</p></a>
 			</div>
 
@@ -189,19 +189,6 @@
 		<a href="img/museyon/rome/2.jpg" data-lightbox="rome"></a>
 		<a href="img/museyon/rome/3.jpg" data-lightbox="rome"></a>
 		<a href="img/museyon/rome/4.jpg" data-lightbox="rome"></a>
-		
-		<a href="img/pearson/commons.jpg" data-lightbox="pearson"></a>
-		<a href="img/pearson/minmax.jpg" data-lightbox="pearson"></a>
-		<a href="img/pearson/environment.jpg" data-lightbox="pearson"></a>
-		<a href="img/pearson/errors.jpg" data-lightbox="pearson"></a>
-		<a href="img/pearson/griefing.gif" data-lightbox="pearson"></a>
-		<a href="img/pearson/hicks.jpg" data-lightbox="pearson"></a>
-		<a href="img/pearson/rewards.jpg" data-lightbox="pearson"></a>
-		<a href="img/pearson/rewards_2.jpg" data-lightbox="pearson"></a>
-		<a href="img/pearson/sandbox_1.jpg" data-lightbox="pearson"></a>
-		<a href="img/pearson/sandbox_2.jpg" data-lightbox="pearson"></a>
-		<a href="img/pearson/wayfinding.jpg" data-lightbox="pearson"></a>
-		<a href="img/pearson/working_memory.jpg" data-lightbox="pearson"></a>	
 
 		<a href="img/storymaps/02.jpg" data-lightbox="storymaps"></a>
 		<a href="img/storymaps/03.jpg" data-lightbox="storymaps"></a>

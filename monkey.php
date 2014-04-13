@@ -10,24 +10,22 @@
 		<div class="sixteen columns">
 
 			<div class="twelve columns alpha">
-				<a href="img/indigi/title.jpg" data-lightbox="indigi"><img src="img/indigi/title.jpg" class="scale-with-grid2 add-bottom"></a>
+				<a href="img/monkey-mo/2.jpg" data-lightbox="monkey-mo"><img src="img/monkey-mo/2.jpg" class="scale-with-grid2 add-bottom"></a>
 			</div>
 
 			<div class="four columns omega padding opacity-fade">
-				<h5>Indiginauts</h5>
+				<h5>Monkey Mo, Monkey&nbsp;Go!</h5>
 				<p>
-					<a href="http://www.suspendedbeliefgames.com">Suspended Belief Studios</a>
-					Creative direction for simplifed adventure game targeted at tablet devices. 
+					Teaming again with author Lin Fong O'Neil, we worked together to create a children's book about the tales of a monkey who had escaped the confines of a zoo.
 				</p>				
 			</div>
 
-			<a href="img/indigi/1.jpg" data-lightbox="indigi"><img src="img/indigi/1.jpg" class="scale-with-grid2 add-bottom"></a>
-			<a href="img/indigi/2.jpg" data-lightbox="indigi"><img src="img/indigi/2.jpg" class="scale-with-grid2 add-bottom"></a>
-			<a href="img/indigi/3.jpg" data-lightbox="indigi"><img src="img/indigi/3.jpg" class="scale-with-grid2 add-bottom"></a>
-			<a href="img/indigi/4.jpg" data-lightbox="indigi"><img src="img/indigi/4.jpg" class="scale-with-grid2 add-bottom"></a>
-			<img src="http://placehold.it/600x400&text=mini game controls" class="scale-with-grid2 add-bottom">
-			<img src="http://placehold.it/600x400&text=original drawings" class="scale-with-grid2 add-bottom">
-			<img src="http://placehold.it/600x400&text=design elements" class="scale-with-grid2 add-bottom">
+			<a href="img/monkey-mo/MKY_013.jpg" data-lightbox="monkey"><img src="img/monkey-mo/MKY_013.jpg" class="scale-with-grid2 add-bottom"></a>
+			<a href="img/monkey-mo/MKY_012.jpg" data-lightbox="monkey"><img src="img/monkey-mo/MKY_012.jpg" class="scale-with-grid2 add-bottom"></a>
+
+			<img src="http://placehold.it/600x400&text=animals" class="scale-with-grid2 add-bottom">
+			<img src="http://placehold.it/600x400&text=inside cover" class="scale-with-grid2 add-bottom">
+			<img src="http://placehold.it/600x400&text=inside cover" class="scale-with-grid2 add-bottom">
 
 
 		</div> <!-- end sixteen -->
