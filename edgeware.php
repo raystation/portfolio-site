@@ -44,16 +44,4 @@
 	</div> <!-- end container -->
 	
 	
-	<!-- Hidden images
-	================================================== -->
-	
-	<div style="display:none">
-		<a href="img/edgeware/00.jpg" data-lightbox="edgeware"></a>
-		<a href="img/edgeware/01.jpg" data-lightbox="edgeware"></a>
-		<a href="img/edgeware/02.jpg" data-lightbox="edgeware"></a>
-		<a href="img/edgeware/03.jpg" data-lightbox="edgeware"></a>
-		<a href="img/edgeware/04.jpg" data-lightbox="edgeware"></a>
-		<a href="img/edgeware/05.jpg" data-lightbox="edgeware"></a>
-	</div>
-
 <?php include('inc/footer.php'); ?>

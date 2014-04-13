@@ -30,18 +30,5 @@
 		</div> <!-- end sixteen -->
 
 	</div> <!-- end container -->
-	
-	
-	<!-- Hidden images
-	================================================== -->
-	
-	<div style="display:none">
-		<a href="img/idibon/derby2-01.jpg" data-lightbox="idibon"></a>
-		<a href="img/idibon/powerhouse-language_v.png" data-lightbox="idibon"></a>
-		<a href="img/idibon/bball_observed_hq.jpg" data-lightbox="idibon"></a>
-		<a href="img/idibon/graphs_Percentage_hq.jpg" data-lightbox="idibon"></a>
-		<a href="img/idibon/graphs_Song_Titles_hq.jpg" data-lightbox="idibon"></a>
-		<a href="img/idibon/judge.jpg" data-lightbox="idibon"></a>
-	</div>
 
 <?php include('inc/footer.php'); ?>

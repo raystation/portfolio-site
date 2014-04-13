@@ -40,7 +40,7 @@
 			</div>
 
 			<div class="four columns">
-				<a href="img/indiginauts_b.jpg" data-lightbox="indigi"><img src="img/indiginauts_b.jpg" class="scale-with-grid">
+				<a href="indigi.php"><img src="img/indigi/thumb.jpg" class="scale-with-grid">
 				<p>Indiginauts</p></a>
 			</div>
 
