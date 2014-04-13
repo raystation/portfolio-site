@@ -19,7 +19,7 @@
 			</div>
 
 			<div class="four columns">
-				<a href="img/idibon/derby2-01.jpg" data-lightbox="idibon"><img src="img/idibon/title.jpg" class="scale-with-grid"></a>
+				<a href="idibon.php"><img src="img/idibon/title.jpg" class="scale-with-grid"></a>
 				<p>Idibon</p>
 			</div>
 

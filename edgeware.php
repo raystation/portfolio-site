@@ -1,11 +1,9 @@
 <?php 
-	$pageTitle = "Ray Yuen | Portfolio";
+	$pageTitle = "Ray Yuen | Edgeware";
 	include('inc/header.php'); ?>
 
 	<!-- Row 1
 	================================================== -->
-
-	<!-- <a href="img/animore/01.jpg" data-lightbox="animore" title=""><img src="img/animore/thumb.jpg" class="scale-with-grid"></a> -->
 	
 	<div class="container add-bottom">
 

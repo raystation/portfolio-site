@@ -19,7 +19,7 @@ body {
   font-family: Helvetica, sans-serif;
   font-size: 11pt;
   line-height: 1.25em;
-  background-color: white;
+  background-color: #ededed;
   color: #333333; }
 
 h5 {
@@ -59,9 +59,9 @@ a {
 
 .band {
   width: 100%;
-  background-color: #ededed;
+  background-color: #dbdbdb;
   padding: 2em 0 8em 0;
-  color: #878787; }
+  color: #757575; }
 
 .uppercase, .portfolio p, nav {
   text-transform: uppercase; }
@@ -156,16 +156,16 @@ footer p, footer ul {
   line-height: 1.75em; }
 footer hr {
   border-weight: 1px;
-  border-color: rgba(135, 135, 135, 0.25); }
+  border-color: rgba(117, 117, 117, 0.25); }
 footer a:link, footer a:visited {
   font-family: inherit;
   line-height: 1.75em;
-  color: #878787;
+  color: #757575;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   transition: all 1s; }
   footer a:link:hover, footer a:visited:hover {
-    color: #080808;
+    color: black;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     transition: all 1s; }
