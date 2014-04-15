@@ -24,7 +24,7 @@
 			</div>
 
 			<div class="four columns omega">
-				<a href="img/maladobaldwin/01.jpg" data-lightbox="malado"><img src="img/maladobaldwin/title.jpg" class="scale-with-grid"></a>
+				<a href="malado.php"><img src="img/maladobaldwin/title.jpg" class="scale-with-grid"></a>
 				<p> Malado Baldwin</p>
 			</div>
 		</div>	
