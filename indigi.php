@@ -17,7 +17,8 @@
 				<h5>Indiginauts</h5>
 				<p>
 					<a href="http://www.suspendedbeliefgames.com">Suspended Belief Studios</a>
-					Creative direction for simplifed adventure game targeted at tablet devices. 
+					Creative direction for simplifed adventure game targeted at tablet devices.<br>
+					<a href="http://54.215.232.227/">Demo Link</a>
 				</p>				
 			</div>
 
