@@ -50,7 +50,7 @@
 			</div>
 
 			<div class="four columns omega">
-				<a href="img/museyon/title_b.jpg" data-lightbox="museyon"><img src="img/museyon/title.jpg" class="scale-with-grid">
+				<a href="museyon.php"><img src="img/museyon/title.jpg" class="scale-with-grid">
 				<p>Museyon</p></a>
 			</div>
 
@@ -63,8 +63,8 @@
 		<div class="sixteen columns">
 		
 			<div class="four columns alpha">
-				<a href="img/museyon/c-ny/title.jpg"><img src="img/museyon/c-ny/title.jpg" class="scale-with-grid">
-				<p>Pokémon</p></a>
+				<a href="museyon.php"><img src="img/museyon/c-ny/title.jpg" class="scale-with-grid">
+				<p>Chronicles of Old New York</p></a>
 				
 			</div>
 
