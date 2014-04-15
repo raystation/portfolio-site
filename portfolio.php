@@ -63,7 +63,7 @@
 		<div class="sixteen columns">
 		
 			<div class="four columns alpha">
-				<a href="img/museyon/c-ny/title.jpg" data-lightbox="pokemon"><img src="img/museyon/c-ny/title.jpg" class="scale-with-grid">
+				<a href="img/museyon/c-ny/title.jpg"><img src="img/museyon/c-ny/title.jpg" class="scale-with-grid">
 				<p>Pokémon</p></a>
 				
 			</div>
@@ -92,7 +92,7 @@
 		<div class="sixteen columns">
 			
 			<div class="four columns alpha">
-				<a href="img/" data-lightbox="poke"><img src="img/pokemon/title.jpg" class="scale-with-grid">
+				<a href="pokemon.php"><img src="img/pokemon/licshow_tiles_2roll.jpg" class="scale-with-grid">
 				<p>Pokémon</p></a>
 			</div>
 
