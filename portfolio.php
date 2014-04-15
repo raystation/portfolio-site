@@ -97,12 +97,12 @@
 			</div>
 
 			<div class="four columns">
-				<a href="img/scavhunt/01.jpg" data-lightbox="hunt"><img src="img/scavhunt/title.jpg" class="scale-with-grid">
+				<a href="scavenger-hunt.php"><img src="img/scavhunt/title.jpg" class="scale-with-grid">
 				<p>Scavenger Hunt</p></a>
 			</div>
 
 			<div class="four columns">
-				<a href="img/colorRunner/05.jpg" data-lightbox="runner"><img src="img/colorRunner/title.jpg" class="scale-with-grid">
+				<a href="color-runner.php"><img src="img/colorRunner/title.jpg" class="scale-with-grid">
 				<p>Color Runner</p></a>
 			</div>
 
