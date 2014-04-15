@@ -94,18 +94,18 @@ img.scale-with-grid2 {
   width: 100%;
   height: auto; }
 
-.opacity-fade img {
+.opacity-fade a > img {
   -webkit-transition: opacity 0.25s ease-in-out;
   -moz-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out; }
-  .opacity-fade img:hover {
+  .opacity-fade a > img:hover {
     opacity: 0.65; }
 
 .portfolio img {
   opacity: 1;
-  -webkit-transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  transition: opacity 0.25s ease-in-out; }
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
   .portfolio img:hover {
     opacity: 0.65; }
 .portfolio p {
