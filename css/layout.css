@@ -5,6 +5,7 @@
 #Media Queries
 #Font-Face */
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 /* # SITE STYLES
 ================================================== */
 * {
@@ -16,11 +17,14 @@ body, html {
   width: 100%; }
 
 body {
-  font-family: Helvetica, sans-serif;
-  font-size: 11pt;
-  line-height: 2em;
+  font-family: Futura, "Open Sans", Helvetica, sans-serif;
+  font-size: 15pt;
+  line-height: 1.35em;
   background-color: #ededed;
-  color: #333333; }
+  color: #333333;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%; }
 
 h5 {
   font-size: 1.25em; }
@@ -51,7 +55,7 @@ a {
 .center, .portfolio p, nav {
   text-align: center; }
 
-.padding, .textbox {
+.padding, .index-right-column {
   padding: 10px; }
 
 .fixed {
@@ -66,10 +70,10 @@ a {
 .uppercase, .portfolio p, nav {
   text-transform: uppercase; }
 
-.bold, a, .portfolio p, nav {
+.bold, a {
   font-weight: 900; }
 
-.arvo, h1, h2, h3, h4, h5 {
+.arvo, h1, h2, h3, h4, h5, nav {
   font-family: Arvo, serif; }
 
 hr {
@@ -105,6 +109,14 @@ img.scale-with-grid2 {
     -moz-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out; }
 
+.index-right-column {
+  padding-right: 0px;
+  padding-top: 0px; }
+
+.caption, .index-right-column {
+  font-size: 11pt;
+  line-height: 1.25em; }
+
 li {
   margin-bottom: .45em; }
 
@@ -123,7 +135,7 @@ li {
   .portfolio img:hover {
     opacity: 0.65; }
 .portfolio p {
-  font-family: "Futura LT Book", Helvetica, sans-serif;
+  line-height: 1.25em;
   font-size: .75em;
   letter-spacing: .15em; }
 
@@ -148,20 +160,21 @@ li {
 /* NAV STYLES
 ==================================================*/
 nav {
-  letter-spacing: .5em;
-  font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif; }
+  letter-spacing: .25em; }
   nav ul li {
-    margin-right: 1em;
+    margin-right: .25em;
     display: inline;
     list-style: none; }
     nav ul li:last-child {
       margin-right: 0; }
     nav ul li a, nav ul li a:visited {
+      font-weight: 400;
+      color: black;
       -webkit-transition: all 1s;
       -moz-transition: all 1s;
       transition: all 1s; }
       nav ul li a:hover, nav ul li a:visited:hover {
-        color: gray;
+        color: steelblue;
         -webkit-transition: all 1s;
         -moz-transition: all 1s;
         transition: all 1s; }

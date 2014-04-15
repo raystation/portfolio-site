@@ -55,6 +55,7 @@
 			
 			<ul class="title add-bottom">
 				<li><a href="portfolio.php">portfolio</a></li>
+				<li>•</li>
 				<li><a href="about.php">about</a></li>
 				<!-- <li><a href="#">news</a></li> -->
 			</ul>				
