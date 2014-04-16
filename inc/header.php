@@ -26,7 +26,7 @@
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/layout.css">
 
-	<link rel="stylesheet" href="css/jquery.bxslider.css">	
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" href="css/lightbox.css">	
 
 	<!--[if lt IE 9]>

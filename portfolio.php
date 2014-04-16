@@ -153,18 +153,18 @@
 			</div>
 
 			<div class="four columns">
-				<a href="img/superbarracuda/Palin_halloween.jpg" data-lightbox="palin"><img src="img/superbarracuda/palin_thumb.jpg" class="scale-with-grid"></a>
-				<p>Sarah Palin</p>
+				<a href="#"><img src="http://placehold.it/400x273&text=example" class="scale-with-grid"></a>
+				<p>Example</p>
 			</div>
 
 			<div class="four columns">
-				<a href="gif-fun.php"><img src="img/dailygifs/thumbnail.gif" class="scale-with-grid"></a>
-				<p>GIF fun!</p>
+				<a href="#"><img src="http://placehold.it/400x273&text=example" class="scale-with-grid"></a>
+				<p>Example</p>
 			</div>
 
 			<div class="four columns omega">
-				<a href="img/chrichard/Chrichard-invite1.png" data-lightbox="chrichard"><img src="img/chrichard/thumbnail.jpg" class="scale-with-grid"></a>
-				<p>Chrichard invite</p>
+				<a href="#"><img src="http://placehold.it/400x273&text=example" class="scale-with-grid"></a>
+				<p>Example</p>
 			</div>
 
 		</div>		
