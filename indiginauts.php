@@ -29,7 +29,7 @@
 				<p>
 					<a href="http://www.suspendedbeliefgames.com">Suspended Belief Studios</a> <br>
 					Creative direction for simplifed adventure game targeted at tablet devices.<br>
-					<a href="http://54.215.232.227/">Demo Link</a>
+					<a href="http://54.215.232.227/" target="_blank">Demo Link</a>
 				</p>				
 			</div>
 

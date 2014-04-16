@@ -50,7 +50,7 @@
 			</div>
 
 			<div class="four columns omega">
-				<a href="museyon.php"><img src="img/museyon/title.jpg" class="scale-with-grid"></a>
+				<a href="#"><img src="http://placehold.it/400x273&text=City Style" class="scale-with-grid"></a>
 				<p>Museyon</p>
 			</div>
 
@@ -64,12 +64,12 @@
 		
 			<div class="four columns alpha">
 				<a href="chronicles-of-old-new-york.php"><img src="img/museyon/c-ny/title.jpg" class="scale-with-grid"></a>
-				<p>Chronicles of Old New York</p>
+				<p>Chronicles of Old New&nbsp;York</p>
 				
 			</div>
 
 			<div class="four columns">
-				<a href="chronicles-of-old-rome.php" data-lightbox="rome"><img src="img/museyon/rome/thumb.jpg" class="scale-with-grid"></a>
+				<a href="chronicles-of-old-rome.php"><img src="img/museyon/rome/thumb.jpg" class="scale-with-grid"></a>
 				<p>Chronicles of Old&nbsp;Rome</p>
 			</div>
 
@@ -102,12 +102,12 @@
 			</div>
 
 			<div class="four columns">
-				<a href="color-runner.php"><img src="img/colorRunner/title.jpg" class="scale-with-grid"></a>
-				<p>Color Runner</p>
+				<a href="color-chameleon.php"><img src="img/color-chameleon/title.jpg" class="scale-with-grid"></a>
+				<p>Color Chameleon</p>
 			</div>
 
 			<div class="four columns omega">
-				<a href="img/tiger/tigertiger_b.jpg" data-lightbox="tiger"><img src="img/tiger/title.jpg" class="scale-with-grid"></a>
+				<a href="tiger-tiger.php"><img src="img/tiger/title.jpg" class="scale-with-grid"></a>
 				<p>Tiger, Tiger Tail on&nbsp;Fire</p>
 			</div>
 
@@ -141,33 +141,86 @@
 
 		</div>
 
-
 		<!-- Row 6
 		================================================== -->
-	
+
 		<div class="sixteen columns">
-			
+				
 			<div class="four columns alpha">
-				<a href="animore.php"title=""><img src="img/animore/thumb.jpg" class="scale-with-grid"></a>
+				<a href="animore.php"><img src="img/animore/thumb.jpg" class="scale-with-grid"></a>
 				<p>Animore</p>
 			</div>
 
 			<div class="four columns">
-				<a href="#"><img src="http://placehold.it/400x273&text=example" class="scale-with-grid"></a>
-				<p>Example</p>
+				<a href="#"><img src="http://placehold.it/400x273&text=Chronicles of Old Boston" class="scale-with-grid"></a>
+				<p>Chronicles of Old Boston</p>
 			</div>
 
 			<div class="four columns">
-				<a href="#"><img src="http://placehold.it/400x273&text=example" class="scale-with-grid"></a>
-				<p>Example</p>
+				<a href="#"><img src="http://placehold.it/400x273&text=Chronicles of Old Las Vegas" class="scale-with-grid"></a>
+				<p>Chronicles of Old Las Vegas</p>
 			</div>
 
 			<div class="four columns omega">
-				<a href="#"><img src="http://placehold.it/400x273&text=example" class="scale-with-grid"></a>
-				<p>Example</p>
+				<a href="#"><img src="http://placehold.it/400x273&text=Chronicles of Old London" class="scale-with-grid"></a>
+				<p>Chronicles of Old London</p>
 			</div>
 
-		</div>		
+		</div>
+
+		<!-- Row 7
+		================================================== -->
+
+		<div class="sixteen columns">
+				
+			<div class="four columns alpha">
+				<a href="#"><img src="http://placehold.it/400x273&text=Art+Paris: Impressionists & Post-Impressionists" class="scale-with-grid"></a>
+				<p>Art+Paris: Impressionists &amp; Post-Impressionists</p>
+			</div>
+
+			<div class="four columns">
+				<a href="#"><img src="http://placehold.it/400x273&text=Arceus" class="scale-with-grid"></a>
+				<p>Arceus: Jewel of Life</p>
+			</div>
+
+			<div class="four columns">
+				<a href="#"><img src="http://placehold.it/400x273&text=" class="scale-with-grid"></a>
+				<p>Mystery Dungeon 2</p>
+			</div>
+
+			<div class="four columns omega">
+				<a href="#"><img src="http://placehold.it/400x273&text=" class="scale-with-grid"></a>
+				<p>Battle Revolution</p>
+			</div>
+
+		</div>
+
+		<!-- Row 8
+		================================================== -->
+
+		<div class="sixteen columns">
+				
+			<div class="four columns alpha">
+				<a href="#"><img src="http://placehold.it/400x273&text=" class="scale-with-grid"></a>
+				<p>Pocket Pokedex</p>
+			</div>
+
+			<div class="four columns">
+				<a href="#"><img src="http://placehold.it/400x273&text=" class="scale-with-grid"></a>
+				<p>Pokemon 15th Anniversary</p>
+			</div>
+
+			<div class="four columns">
+				<a href="#"><img src="http://placehold.it/400x273&text=" class="scale-with-grid"></a>
+				<p>Toy Fair</p>
+			</div>
+
+			<div class="four columns omega">
+				<a href="#"><img src="http://placehold.it/400x273&text=" class="scale-with-grid"></a>
+				<p>Pokemon projects </p>
+			</div>			
+
+		</div> <!-- end sixteen columns -->
 
 	</div> <!-- end container -->
 	
