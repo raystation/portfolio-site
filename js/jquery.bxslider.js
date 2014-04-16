@@ -15,15 +15,15 @@
 	var defaults = {
 
 		// GENERAL
-		mode: 'vertical', // 'horizontal' 'vertical' 'fade'
+		mode: 'horizontal', // 'horizontal' 'vertical' 'fade'
 		slideSelector: '', // jQuery selector i.e. 'div.slide'
 		infiniteLoop: true, // boolean. true, false
 		hideControlOnEnd: false, // true, false
 		speed: 500, // integer. Slide transition duration (in ms)
-		easing: false, // if using CSS: 'linear', 'ease', 'ease-in', 'ease-out', 'ease-in-out', 'cubic-bezier(n,n,n,n)'. If not using CSS: 'swing', 'linear' (see the above file for more options)
+		easing: 'ease-in-out', // if using CSS: 'linear', 'ease', 'ease-in', 'ease-out', 'ease-in-out', 'cubic-bezier(n,n,n,n)'. If not using CSS: 'swing', 'linear' (see the above file for more options)
 		slideMargin: 0, // integer. margin between each slide
 		startSlide: 0, // integer. 
-		randomStart: true, // boolean. true, false
+		randomStart: false, // boolean. true, false
 		captions: false, // boolean. true, false
 		ticker: false, // boolean. true, false
 		tickerHover: false, // boolean. true, false

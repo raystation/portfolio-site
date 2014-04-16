@@ -17,7 +17,7 @@ body, html {
   width: 100%; }
 
 body {
-  font-family: Futura, "Open Sans", Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 15pt;
   line-height: 1.35em;
   background-color: #ededed;
@@ -136,8 +136,8 @@ li {
     opacity: 0.65; }
 .portfolio p {
   line-height: 1.25em;
-  font-size: .75em;
-  letter-spacing: .15em; }
+  font-size: 0.75em;
+  letter-spacing: 0.15em; }
 
 .chart > div {
   font: 10px sans-serif;
@@ -160,9 +160,9 @@ li {
 /* NAV STYLES
 ==================================================*/
 nav {
-  letter-spacing: .25em; }
+  letter-spacing: 0.25em; }
   nav ul li {
-    margin-right: .25em;
+    margin-right: 0.25em;
     display: inline;
     list-style: none; }
     nav ul li:last-child {
@@ -180,7 +180,6 @@ nav {
         transition: all 1s; }
 
 footer p, footer ul {
-  font-family: Verdana, Geneva, sans-serif;
   font-size: smaller;
   line-height: 1.75em; }
 footer hr {

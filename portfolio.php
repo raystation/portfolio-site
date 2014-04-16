@@ -9,8 +9,8 @@
 
 		<div class="sixteen columns">
 			<div class="four columns alpha">
-				<a href="animore.php"title=""><img src="img/animore/thumb.jpg" class="scale-with-grid"></a>
-				<p>Animore</p>
+				<a href="the3.php"title=""><img src="img/the3/thumb.jpg" class="scale-with-grid"></a>
+				<p>The 3</p>
 			</div>
 
 			<div class="four columns">
@@ -35,23 +35,23 @@
 		<div class="sixteen columns">
 				
 			<div class="four columns alpha">
-				<a href="img/eggbaby_b.jpg" data-lightbox="eggbaby"><img src="img/eggbaby1.jpg" class="scale-with-grid">
-				<p>Egg Baby</p></a>
+				<a href="img/eggbaby_b.jpg" data-lightbox="eggbaby"><img src="img/eggbaby1.jpg" class="scale-with-grid"></a>
+				<p>Egg Baby</p>
 			</div>
 
 			<div class="four columns">
-				<a href="indigi.php"><img src="img/indigi/thumb.jpg" class="scale-with-grid">
-				<p>Indiginauts</p></a>
+				<a href="indigi.php"><img src="img/indigi/thumb.jpg" class="scale-with-grid"></a>
+				<p>Indiginauts</p>
 			</div>
 
 			<div class="four columns">
-				<a href="monkey.php"><img src="img/monkey-mo/thumb.jpg" class="scale-with-grid">
-				<p>Monkey Mo, Monkey&nbsp;Go</p></a>
+				<a href="monkey.php"><img src="img/monkey-mo/thumb.jpg" class="scale-with-grid"></a>
+				<p>Monkey Mo, Monkey&nbsp;Go</p>
 			</div>
 
 			<div class="four columns omega">
-				<a href="museyon.php"><img src="img/museyon/title.jpg" class="scale-with-grid">
-				<p>Museyon</p></a>
+				<a href="museyon.php"><img src="img/museyon/title.jpg" class="scale-with-grid"></a>
+				<p>Museyon</p>
 			</div>
 
 		</div>	
@@ -63,24 +63,24 @@
 		<div class="sixteen columns">
 		
 			<div class="four columns alpha">
-				<a href="museyon.php"><img src="img/museyon/c-ny/title.jpg" class="scale-with-grid">
-				<p>Chronicles of Old New York</p></a>
+				<a href="museyon.php"><img src="img/museyon/c-ny/title.jpg" class="scale-with-grid"></a>
+				<p>Chronicles of Old New York</p>
 				
 			</div>
 
 			<div class="four columns">
-				<a href="img/museyon/rome/cover.jpg" data-lightbox="rome"><img src="img/museyon/rome/thumb.jpg" class="scale-with-grid">
-				<p>Chronicles of Old&nbsp;Rome</p></a>
+				<a href="img/museyon/rome/cover.jpg" data-lightbox="rome"><img src="img/museyon/rome/thumb.jpg" class="scale-with-grid"></a>
+				<p>Chronicles of Old&nbsp;Rome</p>
 			</div>
 
 			<div class="four columns">
-				<a href="100principles.php"><img src="img/pearson/title.jpg" class="scale-with-grid">
-				<p>100 Principles of Game&nbsp;Design</p></a>
+				<a href="100principles.php"><img src="img/pearson/title.jpg" class="scale-with-grid"></a>
+				<p>100 Principles of Game&nbsp;Design</p>
 			</div>
 
 			<div class="four columns omega">
-				<a href="storymaps.php"><img src="img/storymaps/title.jpg" class="scale-with-grid">
-				<p>Storymaps</p></a>
+				<a href="storymaps.php"><img src="img/storymaps/title.jpg" class="scale-with-grid"></a>
+				<p>Storymaps</p>
 			</div>
 
 		</div>
@@ -92,23 +92,23 @@
 		<div class="sixteen columns">
 			
 			<div class="four columns alpha">
-				<a href="pokemon.php"><img src="img/pokemon/licshow_tiles_2roll.jpg" class="scale-with-grid">
-				<p>Pokémon</p></a>
+				<a href="pokemon.php"><img src="img/pokemon/licshow_tiles_2roll.jpg" class="scale-with-grid"></a>
+				<p>Pokémon</p>
 			</div>
 
 			<div class="four columns">
-				<a href="scavenger-hunt.php"><img src="img/scavhunt/title.jpg" class="scale-with-grid">
-				<p>Scavenger Hunt</p></a>
+				<a href="scavenger-hunt.php"><img src="img/scavhunt/title.jpg" class="scale-with-grid"></a>
+				<p>Scavenger Hunt</p>
 			</div>
 
 			<div class="four columns">
-				<a href="color-runner.php"><img src="img/colorRunner/title.jpg" class="scale-with-grid">
-				<p>Color Runner</p></a>
+				<a href="color-runner.php"><img src="img/colorRunner/title.jpg" class="scale-with-grid"></a>
+				<p>Color Runner</p>
 			</div>
 
 			<div class="four columns omega">
-				<a href="img/tiger/tigertiger_b.jpg" data-lightbox="tiger"><img src="img/tiger/title.jpg" class="scale-with-grid">
-				<p>Tiger, Tiger Tail on&nbsp;Fire</p></a>
+				<a href="img/tiger/tigertiger_b.jpg" data-lightbox="tiger"><img src="img/tiger/title.jpg" class="scale-with-grid"></a>
+				<p>Tiger, Tiger Tail on&nbsp;Fire</p>
 			</div>
 
 		</div>
@@ -120,26 +120,54 @@
 		<div class="sixteen columns">
 			
 			<div class="four columns alpha">
-				<a href="img/walko/walko1.jpg" data-lightbox="walko"><img src="img/walko/walko_thumb.jpg" class="scale-with-grid">
-				<p>Sarah Walko</p></a>
+				<a href="img/walko/walko1.jpg" data-lightbox="walko"><img src="img/walko/walko_thumb.jpg" class="scale-with-grid"></a>
+				<p>Sarah Walko</p>
 			</div>
 
 			<div class="four columns">
-				<a href="img/superbarracuda/Palin_halloween.jpg" data-lightbox="palin"><img src="img/superbarracuda/palin_thumb.jpg" class="scale-with-grid">
-				<p>Sarah Palin</p></a>
+				<a href="img/superbarracuda/Palin_halloween.jpg" data-lightbox="palin"><img src="img/superbarracuda/palin_thumb.jpg" class="scale-with-grid"></a>
+				<p>Sarah Palin</p>
 			</div>
 
 			<div class="four columns">
-				<a href="gif-fun.php"><img src="img/dailygifs/thumbnail.gif" class="scale-with-grid">
-				<p>GIF fun!</p></a>
+				<a href="gif-fun.php"><img src="img/dailygifs/thumbnail.gif" class="scale-with-grid"></a>
+				<p>GIF fun!</p>
 			</div>
 
 			<div class="four columns omega">
-				<a href="img/chrichard/Chrichard-invite1.png" data-lightbox="chrichard"><img src="img/chrichard/thumbnail.jpg" class="scale-with-grid">
-				<p>Chrichard invite</p></a>
+				<a href="img/chrichard/Chrichard-invite1.png" data-lightbox="chrichard"><img src="img/chrichard/thumbnail.jpg" class="scale-with-grid"></a>
+				<p>Chrichard invite</p>
 			</div>
 
 		</div>
+
+
+		<!-- Row 6
+		================================================== -->
+	
+		<div class="sixteen columns">
+			
+			<div class="four columns alpha">
+				<a href="animore.php"title=""><img src="img/animore/thumb.jpg" class="scale-with-grid"></a>
+				<p>Animore</p>
+			</div>
+
+			<div class="four columns">
+				<a href="img/superbarracuda/Palin_halloween.jpg" data-lightbox="palin"><img src="img/superbarracuda/palin_thumb.jpg" class="scale-with-grid"></a>
+				<p>Sarah Palin</p>
+			</div>
+
+			<div class="four columns">
+				<a href="gif-fun.php"><img src="img/dailygifs/thumbnail.gif" class="scale-with-grid"></a>
+				<p>GIF fun!</p>
+			</div>
+
+			<div class="four columns omega">
+				<a href="img/chrichard/Chrichard-invite1.png" data-lightbox="chrichard"><img src="img/chrichard/thumbnail.jpg" class="scale-with-grid"></a>
+				<p>Chrichard invite</p>
+			</div>
+
+		</div>		
 
 	</div> <!-- end container -->
 	

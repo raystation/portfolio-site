@@ -52,7 +52,6 @@
 ================================================== */
 	body {
 		background: #fff;
-		line-height: 2em;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
  }

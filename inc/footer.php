@@ -61,8 +61,11 @@
 
 		$(document).ready(function(){
 		  $('.bxsliderIndex').bxSlider({
+		  	mode: 'vertical',
 		  	easing: 'ease-in-out',
 		  	autoHover: true,
+		  	controls: false,
+				randomStart: true
 		  });
 		});
 	</script>
