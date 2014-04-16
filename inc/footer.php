@@ -59,16 +59,16 @@
 			$('.slick').slick({
 			  autoplay: true,
 			  dots: true,
-			  arrows: false,
-			  fade: true
+			  fade: true,
+			  draggable: false
 			});
 		});		
 	</script>
 				
 
-	<!-- Lightbox 
+	<!-- Lightbox 2.7.1
 	==================================================  -->
-	<script src="js/lightbox-2.6.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
 	
 
 <!-- End Document

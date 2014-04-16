@@ -8,6 +8,14 @@
 	<div class="container add-bottom">
 
 		<div class="sixteen columns">
+			
+			<div class="slick">
+				<div><img src="img/edgeware/01.jpg" class="scale-with-grid2" alt=""></div>
+				<div><img src="img/edgeware/02.jpg" class="scale-with-grid2" alt=""></div>
+				<div><img src="img/edgeware/03.jpg" class="scale-with-grid2" alt=""></div>
+				<div><img src="img/edgeware/04.jpg" class="scale-with-grid2" alt=""></div>
+				<div><img src="img/edgeware/05.jpg" class="scale-with-grid2" alt=""></div>
+			</div>
 
 			<div class="twelve columns alpha">
 				<a href="img/edgeware/00.jpg" data-lightbox="edgeware"><img src="img/edgeware/00.jpg" class="scale-with-grid2 add-bottom"></a>
