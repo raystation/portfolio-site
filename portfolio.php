@@ -9,7 +9,7 @@
 
 		<div class="sixteen columns">
 			<div class="four columns alpha">
-				<a href="the3.php"title=""><img src="img/the3/thumb.jpg" class="scale-with-grid"></a>
+				<a href="the3.php"title=""><img src="img/the3/thumb.svg" class="scale-with-grid"></a>
 				<p>The 3</p>
 			</div>
 

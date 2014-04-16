@@ -8,18 +8,22 @@
 	<div class="container add-bottom">
 
 		<div class="sixteen columns">
+
+			<h1 class="center">The 3</h1>
+			<p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, dolorem, ratione at cupiditate aspernatur laudantium. Cumque eligendi facere dolor voluptatem?</p>
+
 			<ul class="bxslider">
-				<li><img src="img/the3/01.jpg" width="1000" height="600"></li>
-				<li><img src="img/the3/02.jpg" width="1000" height="600"></li>
-				<li><img src="img/the3/03.jpg" width="1000" height="600"></li>
-				<li><img src="img/the3/04.jpg" width="1000" height="600"></li>
+				<li><img src="img/the3/01.jpg" class="scale-with-grid"></li> <!-- width="1000" height="600" --> 
+				<li><img src="img/the3/02.jpg" class="scale-with-grid"></li> <!-- width="1000" height="600" --> 
+				<li><img src="img/the3/03.jpg" class="scale-with-grid"></li> <!-- width="1000" height="600" --> 
+				<li><img src="img/the3/04.jpg" class="scale-with-grid"></li> <!-- width="1000" height="600" --> 
 			</ul>
 		</div>
 		
 		<div class="sixteen columns">
 			<div class="twelve columns alpha">
 				<p>	
-					Our first foray into the iPhone games arena was a trivia game. "The 3" centered around the basic concept of multiple choice trivia with timely usage of powerups.
+					Our first foray into the iPhone games arena was a trivia game. &ldquo;The 3&rdquo; centered around the basic concept of multiple choice trivia with timely usage of powerups.
 				</p>
 
 				<p> 
