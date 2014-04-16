@@ -39,7 +39,7 @@
 
 			<div class="sixteen columns">
 				<hr>
-				<p> &copy <?php echo date('Y');?> 
+				<p> &copy; <?php echo date('Y');?> 
 					Raymond Yuen • made with Skeleton • 
 				</p>
 
