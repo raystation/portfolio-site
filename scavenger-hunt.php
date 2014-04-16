@@ -10,8 +10,8 @@
 		<div class="sixteen columns">
 
 			<div class="slick">
-				<div><a href="img/scavhunt/01.jpg" data-lightbox="scav" data-title="caption"></a><img src="img/scavhunt/01a.jpg" class="scale-with-grid2 add-bottom" data-lightbox="scavhunt"></div>
-				<div><a href="img/scavhunt/01.jpg" data-lightbox="scav" data-title="caption"></a><img src="img/scavhunt/02.jpg" class="scale-with-grid2 add-bottom" data-lightbox="scavhunt"></div>
+				<div><a href="img/scavhunt/01.jpg" data-lightbox="scav" data-title="caption"><img src="img/scavhunt/01-thumb.jpg" class="scale-with-grid2 add-bottom" data-lightbox="scavhunt"></a></div>
+				<div><a href="img/scavhunt/02.jpg" data-lightbox="scav" data-title="caption"><img src="img/scavhunt/02-thumb.jpg" class="scale-with-grid2 add-bottom" data-lightbox="scavhunt"></a></div>
 			</div>
 
 			<div class="twelve columns alpha">
@@ -35,6 +35,7 @@
 			<div class="four columns omega caption padding">
 				<h5>Scavenger Hunt</h5>
 				<p>T-shirt design for Threadless</p>
+				link to museum
 			</div>
 
 		</div>
