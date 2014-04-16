@@ -9,7 +9,7 @@
 
 		<div class="sixteen columns">
 			<div class="four columns alpha">
-				<a href="the3.php"title=""><img src="img/the3/thumb.svg" class="scale-with-grid"></a>
+				<a href="the3.php"><img src="img/the3/thumb.svg" class="scale-with-grid"></a>
 				<p>The 3</p>
 			</div>
 
@@ -40,12 +40,12 @@
 			</div>
 
 			<div class="four columns">
-				<a href="indigi.php"><img src="img/indigi/thumb.jpg" class="scale-with-grid"></a>
+				<a href="indiginauts.php"><img src="img/indigi/thumb.jpg" class="scale-with-grid"></a>
 				<p>Indiginauts</p>
 			</div>
 
 			<div class="four columns">
-				<a href="monkey.php"><img src="img/monkey-mo/thumb.jpg" class="scale-with-grid"></a>
+				<a href="monkey-mo.php"><img src="img/monkey-mo/thumb.jpg" class="scale-with-grid"></a>
 				<p>Monkey Mo, Monkey&nbsp;Go</p>
 			</div>
 
@@ -63,13 +63,13 @@
 		<div class="sixteen columns">
 		
 			<div class="four columns alpha">
-				<a href="museyon.php"><img src="img/museyon/c-ny/title.jpg" class="scale-with-grid"></a>
+				<a href="chronicles-of-old-new-york.php"><img src="img/museyon/c-ny/title.jpg" class="scale-with-grid"></a>
 				<p>Chronicles of Old New York</p>
 				
 			</div>
 
 			<div class="four columns">
-				<a href="img/museyon/rome/cover.jpg" data-lightbox="rome"><img src="img/museyon/rome/thumb.jpg" class="scale-with-grid"></a>
+				<a href="chronicles-of-old-rome.php" data-lightbox="rome"><img src="img/museyon/rome/thumb.jpg" class="scale-with-grid"></a>
 				<p>Chronicles of Old&nbsp;Rome</p>
 			</div>
 

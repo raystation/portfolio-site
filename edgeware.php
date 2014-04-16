@@ -28,25 +28,6 @@
 				</p>				
 			</div>
 
-			<div class="eight columns alpha">
-				<a href="img/edgeware/01.jpg" data-lightbox="edgeware"><img src="img/edgeware/01.jpg" class="scale-with-grid2 add-bottom"></a>
-			</div>
-			<div class="eight columns omega">
-				<a href="img/edgeware/02.jpg" data-lightbox="edgeware"><img src="img/edgeware/02.jpg" class="scale-with-grid2 add-bottom"></a>
-			</div>
-			<div class="eight columns alpha">
-				<a href="img/edgeware/03.jpg" data-lightbox="edgeware"><img src="img/edgeware/03.jpg" class="scale-with-grid2 add-bottom"></a>
-			</div>
-			<div class="eight columns omega">
-				<a href="img/edgeware/04.jpg" data-lightbox="edgeware"><img src="img/edgeware/04.jpg" class="scale-with-grid2 add-bottom"></a>
-			</div>
-			<div class="eight columns alpha">
-				<a href="img/edgeware/05.jpg" data-lightbox="edgeware"><img src="img/edgeware/05.jpg" class="scale-with-grid2 add-bottom"></a>
-			</div>
-			<div class="eight columns omega">
-				<a href="img/edgeware/05.jpg" data-lightbox="edgeware"><img src="img/edgeware/05.jpg" class="scale-with-grid2 add-bottom"></a>
-			</div>
-
 		</div> <!-- end sixteen -->
 
 	</div> <!-- end container -->
