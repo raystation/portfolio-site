@@ -7,17 +7,17 @@
 	
 	<div class="container add-bottom">
 
-		<div class="sixteen columns add-bottom">
+		<div class="sixteen columns">
 
 			<h1 class="center">The 3</h1>
 			<p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, dolorem, ratione at cupiditate aspernatur laudantium. Cumque eligendi facere dolor voluptatem?</p>
 
-			<ul class="slick">
+			<div class="slick">
 				<div><img src="img/the3/01.jpg" class="scale-with-grid"></div>
 				<div><img src="img/the3/02.jpg" class="scale-with-grid"></div>
 				<div><img src="img/the3/03.jpg" class="scale-with-grid"></div>
 				<div><img src="img/the3/04.jpg" class="scale-with-grid"></div>
-			</ul>
+			</div>
 		</div>
 		
 		<div class="sixteen columns">
