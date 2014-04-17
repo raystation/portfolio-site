@@ -41,7 +41,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-touch-icon-114x114.png">
 	
 </head>
-
+<?php require 'inc/work-info.php';?>
 <body>
 		
 	<!-- Primary Page Layout

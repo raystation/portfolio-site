@@ -14,12 +14,12 @@
 			</div>
 
 			<div class="four columns">
-				<a href="indiginauts.php"><img src="img/indigi/thumb.jpg" class="scale-with-grid"></a>
+				<a href="indiginauts.php"><img src="img/indiginauts/thumb.jpg" class="scale-with-grid"></a>
 				<p>Indiginauts</p>
 			</div>
 
 			<div class="four columns">
-				<a href="100principles.php"><img src="img/pearson/title.jpg" class="scale-with-grid"></a>
+				<a href="100principles.php"><img src="img/100-principles-of-game-design/title.jpg" class="scale-with-grid"></a>
 				<p>100 Principles of Game&nbsp;Design</p>
 			</div>
 
