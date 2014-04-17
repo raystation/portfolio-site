@@ -11,14 +11,33 @@
 		<div class="sixteen columns">
 
 			<div class="slick">
-				<div><a href="img/indigi/title.jpg" data-lightbox="indigi" data-title="title screen"><img src="img/indigi/title.jpg" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="img/indigi/1.jpg" data-lightbox="indigi" data-title="caption"><img src="img/indigi/1.jpg" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="img/indigi/2.jpg" data-lightbox="indigi" data-title="caption"><img src="img/indigi/2.jpg" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="img/indigi/3.jpg" data-lightbox="indigi" data-title="caption"><img src="img/indigi/3.jpg" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="img/indigi/4.jpg" data-lightbox="indigi" data-title="caption"><img src="img/indigi/4.jpg" class="scale-with-grid2 add-bottom"></a></div>
-				<div><img src="http://placehold.it/600x400&text=mini game controls" class="scale-with-grid2 add-bottom"></div>
-				<div><img src="http://placehold.it/600x400&text=original drawings" class="scale-with-grid2 add-bottom"></div>
-				<div><img src="http://placehold.it/600x400&text=design elements" class="scale-with-grid2 add-bottom"></div>
+				<?php $item1="img/indigi/01.jpg"; $caption1="caption";?>
+				<div><a href="<?php echo $item1;?>" data-lightbox="detail" data-title="<?php echo $caption1;?>"><img src="<?php echo $item1;?>" class="scale-with-grid2 add-bottom"></a></div>
+
+				<?php $item2="img/indigi/02.jpg"; $caption2="caption";?>
+				<div><a href="<?php echo $item2;?>" data-lightbox="detail" data-title="<?php echo $caption2;?>"><img src="<?php echo $item2;?>" class="scale-with-grid2 add-bottom"></a></div>
+				
+				<?php $item3="img/indigi/03.jpg"; $caption3="caption";?>
+				<div><a href="<?php echo $item3;?>" data-lightbox="detail" data-title="<?php echo $caption3;?>"><img src="<?php echo $item3;?>" class="scale-with-grid2 add-bottom"></a></div>
+				
+				<?php $item9="img/indigi/04.jpg"; $caption9="caption";?>
+				<div><a href="<?php echo $item9;?>" data-lightbox="detail" data-title="<?php echo $caption9;?>"><img src="<?php echo $item9;?>" class="scale-with-grid2 add-bottom"></a></div>
+
+				<?php $item4="img/indigi/bridge.jpg"; $caption4="caption";?>
+				<div><a href="<?php echo $item4;?>" data-lightbox="detail" data-title="<?php echo $caption4;?>"><img src="<?php echo $item4;?>" class="scale-with-grid2 add-bottom"></a></div>
+				
+				<?php $item5="img/indigi/kitchen.jpg"; $caption5="caption";?>
+				<div><a href="<?php echo $item5;?>" data-lightbox="detail" data-title="<?php echo $caption5;?>"><img src="<?php echo $item5;?>" class="scale-with-grid2 add-bottom"></a></div>
+				
+				<?php $item6="img/indigi/prison.jpg"; $caption6="caption";?>
+				<div><a href="<?php echo $item6;?>" data-lightbox="detail" data-title="<?php echo $caption6;?>"><img src="<?php echo $item6;?>" class="scale-with-grid2 add-bottom"></a></div>
+				
+				<?php $item7="img/indigi/puzzle.jpg"; $caption7="caption";?>
+				<div><a href="<?php echo $item7;?>" data-lightbox="detail" data-title="<?php echo $caption7;?>"><img src="<?php echo $item7;?>" class="scale-with-grid2 add-bottom"></a></div>
+				
+				<?php $item8="img/indigi/character-sheet.jpg"; $caption8="caption";?>
+				<div><a href="<?php echo $item8;?>" data-lightbox="detail" data-title="<?php echo $caption8;?>"><img src="<?php echo $item8;?>" class="scale-with-grid2 add-bottom"></a></div>
+
 			</div>
 
 			<div class="twelve columns alpha">
@@ -30,7 +49,7 @@
 				<p>
 					<a href="http://www.suspendedbeliefgames.com">Suspended Belief Studios</a> <br>
 					Creative direction for simplifed adventure game targeted at tablet devices.<br>
-					<a href="http://54.215.232.227/" target="_blank">Demo Link</a>
+					<a href="http://54.215.292.227/" target="_blank">Demo Link</a>
 				</p>				
 			</div>
 

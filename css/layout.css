@@ -173,6 +173,10 @@ nav {
   letter-spacing: 0.25em; }
   nav .title a {
     color: black; }
+  nav .title:before {
+    content: url("../img/ry-logo.svg") no-repeat;
+    position: absolute;
+    left: 10px; }
   nav ul li {
     font-size: 1rem;
     margin-right: 0.25em;

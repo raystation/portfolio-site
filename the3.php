@@ -10,8 +10,8 @@
 
 		<div class="sixteen columns">
 
-			<h1 class="center">The 3</h1>
-			<p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, dolorem, ratione at cupiditate aspernatur laudantium. Cumque eligendi facere dolor voluptatem?</p>
+<!-- 			<h1 class="center">The 3</h1>
+			<p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, dolorem, ratione at cupiditate aspernatur laudantium. Cumque eligendi facere dolor voluptatem?</p> -->
 
 			<div class="slick">
 				<div><img src="img/the3/01.jpg" class="scale-with-grid"></div>

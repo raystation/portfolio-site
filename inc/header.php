@@ -54,7 +54,7 @@
 			<h2 class="title"><a href="index.php">Ray Yuen</a></h2>
 			
 			<ul class="add-bottom">
-				<li><a href="portfolio.php">portfolio</a></li>
+				<li><a href="work.php">work</a></li>
 				<li>•</li>
 				<li><a href="projects.php">projects</a></li>
 				<li>•</li>

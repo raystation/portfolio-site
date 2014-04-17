@@ -1,5 +1,5 @@
 <?php 
-	$pageTitle = "Ray Yuen | Portfolio";
+	$pageTitle = "Ray Yuen | Work";
 	include('inc/header.php'); ?>
 
 	<!-- Row 1
@@ -14,8 +14,8 @@
 			</div>
 
 			<div class="four columns">
-				<a href="monkey-mo.php"><img src="img/monkey-mo/thumb.jpg" class="scale-with-grid"></a>
-				<p>Monkey Mo, Monkey&nbsp;Go</p>
+				<a href="indiginauts.php"><img src="img/indigi/thumb.jpg" class="scale-with-grid"></a>
+				<p>Indiginauts</p>
 			</div>
 
 			<div class="four columns">
@@ -24,9 +24,10 @@
 			</div>
 
 			<div class="four columns omega">
-				<a href="indiginauts.php"><img src="img/indigi/thumb.jpg" class="scale-with-grid"></a>
-				<p>Indiginauts</p>
+				<a href="monkey-mo.php"><img src="img/monkey-mo/thumb.jpg" class="scale-with-grid"></a>
+				<p>Monkey Mo, Monkey&nbsp;Go</p>
 			</div>
+
 		</div>	
 
 		<!-- Row 2
@@ -35,8 +36,8 @@
 		<div class="sixteen columns">
 				
 			<div class="four columns alpha">
-				<a href="#"><img src="http://placehold.it/400x273&text=City Style" class="scale-with-grid"></a>
-				<p>City Style</p>
+				<a href="chronicles-of-old-london.php"><img src="http://placekitten.com/400/273" class="scale-with-grid"></a>
+				<p>Chronicles of Old&nbsp;London</p>
 			</div>
 
 			<div class="four columns">
@@ -125,8 +126,8 @@
 			</div>
 
 			<div class="four columns">
-				<a href="img/superbarracuda/Palin_halloween.jpg" data-lightbox="palin"><img src="img/superbarracuda/palin_thumb.jpg" class="scale-with-grid"></a>
-				<p>Sarah Palin</p>
+				<a href="malado.php"><img src="img/maladobaldwin/title.jpg" class="scale-with-grid"></a>
+				<p>Malado Baldwin</p>		
 			</div>
 
 			<div class="four columns">
@@ -153,17 +154,17 @@
 
 			<div class="four columns">
 				<a href="chronicles-of-old-boston.php"><img src="http://placehold.it/400x273&text=Chronicles of Old Boston" class="scale-with-grid"></a>
-				<p>Chronicles of Old Boston</p>
+				<p>Chronicles of Old&nbsp;Boston</p>
 			</div>
 
 			<div class="four columns">
 				<a href="chronicles-of-old-las-vegas.php"><img src="http://placehold.it/400x273&text=Chronicles of Old Las Vegas" class="scale-with-grid"></a>
-				<p>Chronicles of Old Las Vegas</p>
+				<p>Chronicles of Old Las&nbsp;Vegas</p>
 			</div>
 
 			<div class="four columns omega">
-				<a href="chronicles-of-old-london.php"><img src="http://placehold.it/400x273&text=Chronicles of Old London" class="scale-with-grid"></a>
-				<p>Chronicles of Old London</p>
+				<a href="#"><img src="http://placehold.it/400x273&text=City Style" class="scale-with-grid"></a>
+				<p>City Style</p>				
 			</div>
 
 		</div>
@@ -217,7 +218,7 @@
 
 			<div class="four columns omega">
 				<a href="#"><img src="http://placehold.it/400x273&text=" class="scale-with-grid"></a>
-				<p>Pokemon projects </p>
+				<p>Pokemon projects</p>
 			</div>			
 
 		</div> <!-- end sixteen columns -->

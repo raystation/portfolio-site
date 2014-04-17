@@ -19,7 +19,7 @@
 				<div><img src="img/edgeware/05.jpg" class="scale-with-grid2" alt=""></div>
 			</div>
 
-			<div class="twelve columns alpha">
+			<div class="twelve columns alpha caption">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, nihil ad adipisci amet commodi est in dignissimos minus vel dolorem natus dolores exercitationem similique fugiat corporis assumenda ducimus. Accusamus, voluptatibus sequi eos iure itaque eaque beatae ipsa quaerat magni quia?
 			</div>
 
