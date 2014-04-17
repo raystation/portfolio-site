@@ -14,7 +14,7 @@
 				<a href="img/monkey-mo/2.jpg" data-lightbox="monkey-mo"><img src="img/monkey-mo/2.jpg" class="scale-with-grid2 add-bottom"></a>
 			</div>
 
-			<div class="four columns omega padding opacity-fade">
+			<div class="four columns omega opacity-fade">
 				<h5><?php echo $title ;?></h5>
 				<p>
 					Teaming again with author Lin Fong O'Neil, we worked together to create another children's book. Lin wanted to do another animal in the Chinese zodiac and I responded with "Monkey!" obviously because my zodiac animal is a monkey. about the tales of a monkey who had escaped the confines of a zoo.

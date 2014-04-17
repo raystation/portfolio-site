@@ -44,7 +44,7 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, distinctio, nulla, ducimus corporis sapiente qui similique quibusdam aspernatur debitis soluta ut iure id ipsa suscipit ex obcaecati consectetur numquam ad atque cum quia eius vitae cumque ullam accusantium voluptatum placeat aperiam itaque doloribus blanditiis fugiat laborum minus optio sed repudiandae dolor possimus rerum perspiciatis nesciunt voluptas? Obcaecati, facere, nihil, consequatur numquam assumenda pariatur aliquid cumque ut quas nesciunt accusamus dolorem unde ullam odit vel voluptatum reprehenderit. Consequuntur, assumenda labore iusto!
 			</div>
 
-			<div class="four columns omega padding caption">
+			<div class="four columns omega caption">
 				<h5><?php echo $title ;?></h5>
 				<p>
 					<a href="http://www.suspendedbeliefgames.com">Suspended Belief Studios</a> <br>

@@ -31,7 +31,7 @@
 				<a href="img/museyon/impress/cover.jpg" data-lightbox="impress"><img src="img/museyon/impress/cover.jpg" class="scale-with-grid2 add-bottom"></a>
 			</div>
 
-			<div class="eight columns omega padding ">
+			<div class="eight columns omega ">
 				<h5>Art+Paris: Impressionists and Post-Impressionists</h5> 
 				<p>
 					In 19th-century Paris, a group of avant-garde artists stood up to the establishment and started a cultural revolution. Today, they’re known as the Impressionists. See Paris through the eyes of these revolutionary artists.

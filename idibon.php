@@ -14,7 +14,7 @@
 				<a href="img/idibon/title.jpg" data-lightbox="idibon"><img src="img/idibon/title.jpg" class="scale-with-grid2 add-bottom"></a>
 			</div>
 
-			<div class="four columns omega padding opacity-fade">
+			<div class="four columns omega opacity-fade">
 				<h5><?php echo $title ;?></h5>
 				<p>
 					Illustrations and infographics for a social and data analysis.

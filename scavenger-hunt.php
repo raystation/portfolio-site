@@ -33,7 +33,7 @@
 
 			</div>
 
-			<div class="four columns omega caption padding">
+			<div class="four columns omega caption">
 				<h5><?php echo $title ;?></h5>
 				<p>T-shirt design for Threadless</p>
 				link to museum

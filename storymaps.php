@@ -22,7 +22,7 @@
 				I supplied the illustrations for a PhD study by Sean Hammond. Essentially, it is a tool that kids can use to enhance their storywriting skills. In Sean’s research, he broke down the various elements of a fairy tale and I illustrated said elements as cards. The kids would then pick and choose the story elements they want to include and the software would help them plan out the story.
 			</div>
 
-			<div class="four columns omega padding caption">
+			<div class="four columns omega caption">
 				<h5><?php echo $title ;?></h5>
 				
 			</div>

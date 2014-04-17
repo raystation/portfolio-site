@@ -27,7 +27,7 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, delectus, corporis, soluta totam ab fugit at esse animi eum maiores temporibus veritatis aut consequatur possimus accusamus magni sed nulla suscipit saepe alias nostrum eaque nemo quibusdam voluptate architecto incidunt tempore provident repudiandae nesciunt accusantium quis et ipsa excepturi recusandae error!
 			</div>
 
-			<div class="four columns omega padding caption">
+			<div class="four columns omega caption">
 				<h5><?php echo $title ;?></h5>
 				<p>
 					An unrealized video game concept.

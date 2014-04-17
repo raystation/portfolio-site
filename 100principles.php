@@ -69,7 +69,7 @@
 				<img class="scale-with-grid" src="img/pearson/environment-pencil.jpg">
 			</div>
 
-			<div class="four columns omega padding caption opacity-fade">
+			<div class="four columns omega caption opacity-fade">
 				<h5><?php echo $title ;?></h5>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsa facilis dicta harum amet consequuntur cumque doloribus numquam id laudantium.

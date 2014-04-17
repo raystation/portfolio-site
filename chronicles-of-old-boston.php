@@ -22,7 +22,7 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, asperiores in quos expedita nihil deleniti architecto delectus nisi assumenda nesciunt. Commodi, in, ullam, ducimus libero repudiandae fugiat autem tenetur architecto quia voluptas ab eligendi nulla impedit totam odit facere saepe at aspernatur quisquam voluptate magni omnis repellendus asperiores quasi illum voluptates soluta molestias sint eaque. Ullam, dolore, corporis voluptas distinctio obcaecati sint iusto maxime explicabo harum eveniet ab illo eum.
 			</div>
 
-			<div class="four columns omega padding caption">
+			<div class="four columns omega caption">
 				<h5><?php echo $title ;?></h5>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, explicabo.<br>
