@@ -1,5 +1,5 @@
 <?php 
-	$title = "100 Principles of Game Design";
+	$title = "100 Principles of Game&nbsp;Design";
 	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 
@@ -15,46 +15,46 @@
 				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 
 				<?php $item="img/pearson/environment.jpg"; $caption="caption";?>
-				<div><a href="img/pearson/environment-hq.jpg" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="img/pearson/environment-hq.jpg" data-lightbox="detail" data-title="<?php echo $caption;?>"><img data-lazy="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 				
 				<?php $item="img/pearson/theme.jpg"; $caption="caption";?>
-				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img data-lazy="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 				
 				<?php $item="img/pearson/synergy.jpg"; $caption="caption";?>
-				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img data-lazy="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 				
 				<?php $item="img/pearson/min-max.jpg"; $caption="caption";?>
-				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img data-lazy="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 				
 				<?php $item="img/pearson/reward1.jpg"; $caption="caption";?>
-				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img data-lazy="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 				
 				<?php $item="img/pearson/reward2.jpg"; $caption="caption";?>
-				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img data-lazy="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 				
 				<?php $item="img/pearson/hicks.jpg"; $caption="caption";?>
-				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img data-lazy="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 
 				<?php $item="img/pearson/griefing.gif"; $caption="caption";?>
-				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img data-lazy="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 
 				<?php $item="img/pearson/errors.jpg"; $caption="caption";?>
-				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img data-lazy="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 
 				<?php $item="img/pearson/commons.jpg"; $caption="caption";?>
-				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img data-lazy="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 
 				<?php $item="img/pearson/attention-perception.jpg"; $caption="caption";?>
-				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img data-lazy="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 
 				<?php $item="img/pearson/accomplishment.jpg"; $caption="caption";?>
-				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img data-lazy="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 
 				<?php $item="img/pearson/working-memory.jpg"; $caption="caption";?>
-				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img data-lazy="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 
 				<?php $item="img/pearson/wayfinding.jpg"; $caption="caption";?>
-				<div><a href="img/pearson/wayfinding-hq.jpg" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="img/pearson/wayfinding-hq.jpg" data-lightbox="detail" data-title="<?php echo $caption;?>"><img data-lazy="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
 
 			</div>
 

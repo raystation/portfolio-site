@@ -57,9 +57,20 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('.slick').slick({
+			  accessibility: true,
+			  lazyLoad: 'progressive',
+			  autoplay: true,
+			  autoplaySpeed: 4000,
+			  arrows: true,
+			  dots: true,
+			  draggable: false
+			});
+			$('.slick-index').slick({
+			  accessibility: true,
+			  lazyLoad: 'progressive',
+			  arrows: false,
 			  autoplay: true,
 			  dots: true,
-			  fade: true,
 			  draggable: false
 			});
 		});		

@@ -1,5 +1,4 @@
 css/bourbon/
 css/layout.scss
 css/sass/
-css/.sass-cache/
-.sass-cache/
+*.sass-cache/
