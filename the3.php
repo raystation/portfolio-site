@@ -9,16 +9,28 @@
 	<div class="container add-bottom">
 
 		<div class="sixteen columns">
-
-<!-- 			<h1 class="center">The 3</h1>
-			<p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, dolorem, ratione at cupiditate aspernatur laudantium. Cumque eligendi facere dolor voluptatem?</p> -->
-
+			
+			<?php
+			//<h1 class="center">The 3</h1>
+			//<p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, dolorem, ratione at cupiditate aspernatur laudantium. Cumque eligendi facere dolor voluptatem?</p>
+			;?>
+			
 			<div class="slick">
-				<div><img src="img/the3/01.jpg" class="scale-with-grid"></div>
-				<div><img src="img/the3/02.jpg" class="scale-with-grid"></div>
-				<div><img src="img/the3/03.jpg" class="scale-with-grid"></div>
-				<div><img src="img/the3/04.jpg" class="scale-with-grid"></div>
+				
+				<?php $item1="img/the3/01.jpg"; $caption1="title screen";?>
+				<div><a href="<?php echo $item1;?>" data-lightbox="detail" data-title="<?php echo $caption1;?>"><img src="<?php echo $item1;?>" class="scale-with-grid2 add-bottom"></a></div>
+
+				<?php $item2="img/the3/02.jpg"; $caption2="screens from the game";?>
+				<div><a href="<?php echo $item2;?>" data-lightbox="detail" data-title="<?php echo $caption2;?>"><img src="<?php echo $item2;?>" class="scale-with-grid2 add-bottom"></a></div>
+				
+				<?php $item3="img/the3/03.jpg"; $caption3="three-quarters view";?>
+				<div><a href="<?php echo $item3;?>" data-lightbox="detail" data-title="<?php echo $caption3;?>"><img src="<?php echo $item3;?>" class="scale-with-grid2 add-bottom"></a></div>
+				
+				<?php $item4="img/the3/04.jpg"; $caption4="close up";?>
+				<div><a href="<?php echo $item4;?>" data-lightbox="detail" data-title="<?php echo $caption4;?>"><img src="<?php echo $item4;?>" class="scale-with-grid2 add-bottom"></a></div>
+
 			</div>
+
 		</div>
 		
 		<div class="sixteen columns">

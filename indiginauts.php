@@ -1,7 +1,7 @@
 <?php 
 	$title = "Indiginauts";
 	$pageTitle = "Ray Yuen | " . $title;
-	include('inc/header.php'); ?>
+	include('inc/header.php');?>
 
 	<!-- Row 1
 	================================================== -->

@@ -11,19 +11,53 @@
 		<div class="sixteen columns">
 
 			<div class="slick">
-				<div><a href="img/pearson/commons.jpg" data-lightbox="pearson" data-title="The Commons"><img src="img/pearson/commons.jpg" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="img/pearson/minmax.jpg" data-lightbox="pearson" data-title="Min/Max"><img src="img/pearson/minmax.jpg" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="img/pearson/environment.jpg" data-lightbox="pearson" data-title="eee"><img src="img/pearson/environment.jpg" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="img/pearson/errors.jpg" data-lightbox="pearson" data-title="eeee"><img src="img/pearson/errors.jpg" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="img/pearson/griefing.gif" data-lightbox="pearson" data-title="eeee"><img src="img/pearson/griefing.gif" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="img/pearson/hicks.jpg" data-lightbox="pearson" data-title="eeee"><img src="img/pearson/hicks.jpg" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="img/pearson/rewards.jpg" data-lightbox="pearson" data-title="eeee"><img src="img/pearson/rewards.jpg" class="scale-with-grid2 add-bottom"></a>				</div>
-				<div><a href="img/pearson/rewards_2.jpg" data-lightbox="pearson" data-title="eeee"><img src="img/pearson/rewards_2.jpg" class="scale-with-grid2 add-bottom"></a>			</div>
-				<div><a href="img/pearson/sandbox_1.jpg" data-lightbox="pearson" data-title="eeee"><img src="img/pearson/sandbox_1.jpg" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="img/pearson/sandbox_2.jpg" data-lightbox="pearson" data-title="eeee"><img src="img/pearson/sandbox_2.jpg" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="img/pearson/wayfinding.jpg" dat data-lightbox="pearson" data-title="eeee"><img src="img/pearson/wayfinding.jpg" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="img/pearson/working_memory.jpg" data-lightbox="pearson" data-title="eeee"><img src="img/pearson/working_memory.jpg" class="scale-with-grid2 add-bottom"></a></div>
+				<?php $item="img/pearson/book-cover.jpg"; $caption="caption";?>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+
+				<?php $item="img/pearson/environment.jpg"; $caption="caption";?>
+				<div><a href="img/pearson/environment-hq.jpg" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				
+				<?php $item="img/pearson/theme.jpg"; $caption="caption";?>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				
+				<?php $item="img/pearson/synergy.jpg"; $caption="caption";?>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				
+				<?php $item="img/pearson/min-max.jpg"; $caption="caption";?>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				
+				<?php $item="img/pearson/reward1.jpg"; $caption="caption";?>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				
+				<?php $item="img/pearson/reward2.jpg"; $caption="caption";?>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+				
+				<?php $item="img/pearson/hicks.jpg"; $caption="caption";?>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+
+				<?php $item="img/pearson/griefing.gif"; $caption="caption";?>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+
+				<?php $item="img/pearson/errors.jpg"; $caption="caption";?>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+
+				<?php $item="img/pearson/commons.jpg"; $caption="caption";?>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+
+				<?php $item="img/pearson/attention-perception.jpg"; $caption="caption";?>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+
+				<?php $item="img/pearson/accomplishment.jpg"; $caption="caption";?>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+
+				<?php $item="img/pearson/working-memory.jpg"; $caption="caption";?>
+				<div><a href="<?php echo $item;?>" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+
+				<?php $item="img/pearson/wayfinding.jpg"; $caption="caption";?>
+				<div><a href="img/pearson/wayfinding-hq.jpg" data-lightbox="detail" data-title="<?php echo $caption;?>"><img src="<?php echo $item;?>" class="scale-with-grid2 add-bottom"></a></div>
+
 			</div>
+
 		</div>
 
 		<div class="sixteen columns">
@@ -32,7 +66,7 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, dolorum, quibusdam, natus quis molestiae reprehenderit commodi expedita dolore ratione voluptatem non dignissimos alias enim nam cupiditate explicabo cumque veniam inventore magnam eaque assumenda velit autem animi at sint omnis quae!
 				</p>
-				<img class="scale-with-grid" src="img/pearson/environment_pencil.jpg">
+				<img class="scale-with-grid" src="img/pearson/environment-pencil.jpg">
 			</div>
 
 			<div class="four columns omega padding caption opacity-fade">
@@ -40,7 +74,7 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsa facilis dicta harum amet consequuntur cumque doloribus numquam id laudantium.
 				</p>
-				<a href="http://www.pearsonhighered.com/educator/product/100-Principles-of-Game-Design/9780321902498.page"><img src="img/pearson/cover.jpg" class="scale-with-grid2 add-bottom"></a>
+				<a href="http://www.pearsonhighered.com/educator/product/100-Principles-of-Game-Design/9780321902498.page"><img src="img/pearson/book-cover-thumb.jpg" class="scale-with-grid2 add-bottom"></a>
 			</div>
 
 		</div> <!-- end sixteen -->	
