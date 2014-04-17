@@ -1,5 +1,8 @@
 <?php 
 
+
+
+
 // STORYMAPS
 // ========================
 
@@ -85,4 +88,29 @@ if ( $title == "100 Principles of Game&nbsp;Design" ) {
 } //end 100-principles-of-game-design	
 
 
-;?>
+// Animore
+// ===============================
+
+if ( $title == "Project Animore" ) {
+
+	$path="img/animore/";
+
+	$description = "Unrealized video game concept Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, non hic cumque accusamus cupiditate modi maiores reprehenderit sint officiis dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, vero qui vitae ducimus quia veniam perferendis repellat ea enim facere? Nulla dignissimos reiciendis tempore repellat dolorum ullam at quae? Repudiandae, provident voluptate iste sit deleniti reiciendis ipsum qui perspiciatis corporis!";
+
+	$sidebar = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsa facilis dicta harum amet consequuntur cumque doloribus numquam id laudantium.</p>';
+
+	$img_info = array(
+    array("file" => "01.jpg", "alt" => "farm screen"),
+    array("file" => "03.jpg", "alt" => "mixing chamber"),
+    array("file" => "04.jpg", "alt" => "house detail"),
+    array("file" => "05.jpg", "alt" => "overworld map"),
+    array("file" => "02.jpg", "alt" => "new animals in the store"),
+    array("file" => "10.jpg", "alt" => "front page of the store"),
+    array("file" => "07.jpg", "alt" => "bear house"),
+    array("file" => "08.jpg", "alt" => "dog house"),
+    array("file" => "09.jpg", "alt" => "cat house")
+	);
+
+} //end 100-principles-of-game-design	
+
+
