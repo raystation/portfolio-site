@@ -62,6 +62,13 @@
 			  fade: true,
 			  draggable: false
 			});
+			$('.slick-index').slick({
+			  autoplay: true,
+			  dots: true,
+			  arrows: false,
+			  fade: true,
+			  draggable: false
+			});
 		});		
 	</script>
 				
