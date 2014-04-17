@@ -14,18 +14,18 @@
 			</div>
 
 			<div class="four columns">
-				<a href="edgeware.php"><img src="img/edgeware/00.jpg" class="scale-with-grid"></a>
-				<p>Edgeware</p>
+				<a href="monkey-mo.php"><img src="img/monkey-mo/thumb.jpg" class="scale-with-grid"></a>
+				<p>Monkey Mo, Monkey&nbsp;Go</p>
 			</div>
 
 			<div class="four columns">
-				<a href="idibon.php"><img src="img/idibon/title.jpg" class="scale-with-grid"></a>
-				<p>Idibon</p>
+				<a href="100principles.php"><img src="img/pearson/title.jpg" class="scale-with-grid"></a>
+				<p>100 Principles of Game&nbsp;Design</p>
 			</div>
 
 			<div class="four columns omega">
-				<a href="malado.php"><img src="img/maladobaldwin/title.jpg" class="scale-with-grid"></a>
-				<p> Malado Baldwin</p>
+				<a href="indiginauts.php"><img src="img/indigi/thumb.jpg" class="scale-with-grid"></a>
+				<p>Indiginauts</p>
 			</div>
 		</div>	
 
@@ -35,23 +35,23 @@
 		<div class="sixteen columns">
 				
 			<div class="four columns alpha">
-				<a href="img/eggbaby_b.jpg" data-lightbox="eggbaby"><img src="img/eggbaby1.jpg" class="scale-with-grid"></a>
-				<p>Egg Baby</p>
+				<a href="#"><img src="http://placehold.it/400x273&text=City Style" class="scale-with-grid"></a>
+				<p>City Style</p>
 			</div>
 
 			<div class="four columns">
-				<a href="indiginauts.php"><img src="img/indigi/thumb.jpg" class="scale-with-grid"></a>
-				<p>Indiginauts</p>
+				<a href="animore.php"><img src="img/animore/thumb.jpg" class="scale-with-grid"></a>
+				<p>Animore</p>
 			</div>
 
 			<div class="four columns">
-				<a href="monkey-mo.php"><img src="img/monkey-mo/thumb.jpg" class="scale-with-grid"></a>
-				<p>Monkey Mo, Monkey&nbsp;Go</p>
+				<a href="edgeware.php"><img src="img/edgeware/00.jpg" class="scale-with-grid"></a>
+				<p>Edgeware</p>				
 			</div>
 
 			<div class="four columns omega">
-				<a href="#"><img src="http://placehold.it/400x273&text=City Style" class="scale-with-grid"></a>
-				<p>Museyon</p>
+				<a href="idibon.php"><img src="img/idibon/title.jpg" class="scale-with-grid"></a>
+				<p>Idibon</p>				
 			</div>
 
 		</div>	
@@ -74,8 +74,8 @@
 			</div>
 
 			<div class="four columns">
-				<a href="100principles.php"><img src="img/pearson/title.jpg" class="scale-with-grid"></a>
-				<p>100 Principles of Game&nbsp;Design</p>
+				<a href="color-chameleon.php"><img src="img/color-chameleon/title.jpg" class="scale-with-grid"></a>
+				<p>Color Chameleon</p>
 			</div>
 
 			<div class="four columns omega">
@@ -102,8 +102,8 @@
 			</div>
 
 			<div class="four columns">
-				<a href="color-chameleon.php"><img src="img/color-chameleon/title.jpg" class="scale-with-grid"></a>
-				<p>Color Chameleon</p>
+				<a href="img/eggbaby_b.jpg" data-lightbox="eggbaby"><img src="img/eggbaby1.jpg" class="scale-with-grid"></a>
+				<p>Egg Baby</p>
 			</div>
 
 			<div class="four columns omega">
@@ -147,22 +147,22 @@
 		<div class="sixteen columns">
 				
 			<div class="four columns alpha">
-				<a href="animore.php"><img src="img/animore/thumb.jpg" class="scale-with-grid"></a>
-				<p>Animore</p>
+				<a href="malado.php"><img src="img/maladobaldwin/title.jpg" class="scale-with-grid"></a>
+				<p>Malado Baldwin</p>				
 			</div>
 
 			<div class="four columns">
-				<a href="#"><img src="http://placehold.it/400x273&text=Chronicles of Old Boston" class="scale-with-grid"></a>
+				<a href="chronicles-of-old-boston.php"><img src="http://placehold.it/400x273&text=Chronicles of Old Boston" class="scale-with-grid"></a>
 				<p>Chronicles of Old Boston</p>
 			</div>
 
 			<div class="four columns">
-				<a href="#"><img src="http://placehold.it/400x273&text=Chronicles of Old Las Vegas" class="scale-with-grid"></a>
+				<a href="chronicles-of-old-las-vegas.php"><img src="http://placehold.it/400x273&text=Chronicles of Old Las Vegas" class="scale-with-grid"></a>
 				<p>Chronicles of Old Las Vegas</p>
 			</div>
 
 			<div class="four columns omega">
-				<a href="#"><img src="http://placehold.it/400x273&text=Chronicles of Old London" class="scale-with-grid"></a>
+				<a href="chronicles-of-old-london.php"><img src="http://placehold.it/400x273&text=Chronicles of Old London" class="scale-with-grid"></a>
 				<p>Chronicles of Old London</p>
 			</div>
 

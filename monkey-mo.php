@@ -1,5 +1,6 @@
 <?php 
-	$pageTitle = "Ray Yuen | Monkey Mo, Monkey Go";
+	$title = "Monkey Mo, Monkey&nbsp;Go!";
+	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 
 	<!-- Row 1
@@ -14,7 +15,7 @@
 			</div>
 
 			<div class="four columns omega padding opacity-fade">
-				<h5>Monkey Mo, Monkey&nbsp;Go!</h5>
+				<h5><?php echo $title ;?></h5>
 				<p>
 					Teaming again with author Lin Fong O'Neil, we worked together to create a children's book about the tales of a monkey who had escaped the confines of a zoo.
 				</p>				

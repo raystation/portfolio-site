@@ -1,5 +1,6 @@
 <?php 
-	$pageTitle = "Ray Yuen | Tiger, Tiger, Tail on Fire!";
+	$title = "Tiger, Tiger, Tail on Fire!";
+	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 
 	<!-- Row 1
@@ -28,7 +29,7 @@
 				
 			</div>
 			<div class="four columns omega caption">
-				<h5>The 3</h5> 
+				<h5><?php echo $title ;?></h5> 
 				<p>
 					Tiger, Tiger, Tail on Fire!<br>
 					Author: Lin Fong O'Neil <br>

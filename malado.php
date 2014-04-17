@@ -1,5 +1,6 @@
 <?php 
-	$pageTitle = "Ray Yuen | Malado Baldwin";
+	$title = "Malado Baldwin";
+	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 
 	<!-- Row 1
@@ -25,7 +26,7 @@
 			</div>
 
 			<div class="four columns omega caption padding">
-				<h5>Malado Baldwin</h5> 
+				<h5><?php echo $title ;?></h5> 
 				<p>
 					Wordpress site for artist Malado Baldwin.<br>
 					<a href="http://www.maladobaldwin.com/blog">Link to site</a>

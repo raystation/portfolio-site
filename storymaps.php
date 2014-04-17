@@ -1,5 +1,6 @@
 <?php 
-	$pageTitle = "Ray Yuen | Storymaps";
+	$title = "Storymaps";
+	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 
 	<!-- Row 1
@@ -18,15 +19,12 @@
 			</div>
 
 			<div class="twelve columns alpha">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, quod, ipsam, reprehenderit, eos voluptates sunt libero delectus voluptas architecto tempora ipsa itaque cum possimus. Nisi, temporibus voluptas provident vitae commodi mollitia facere quisquam eius maxime velit. Repellat, adipisci, distinctio a sapiente fugiat sit error voluptate illum expedita ut cum aliquid iste asperiores nisi officiis cumque velit sunt quia accusantium itaque.
+				I supplied the illustrations for a PhD study by Sean Hammond. Essentially, it is a tool that kids can use to enhance their storywriting skills. In Sean’s research, he broke down the various elements of a fairy tale and I illustrated said elements as cards. The kids would then pick and choose the story elements they want to include and the software would help them plan out the story.
 			</div>
 
 			<div class="four columns omega padding caption">
-				<h5>Storymaps</h5>
-				<p>
-					I supplied the illustrations for a PhD study by Sean Hammond. Essentially, it is a tool that kids can use to enhance their storywriting skills. In Sean’s research, he broke down the various elements of a fairy tale and I illustrated said elements as cards. The kids would then pick and choose the story elements they want to include and the software would help them plan out the story.<br>
-					<!-- <a href="http://seanh.sdfeu.org/storymaps/">external link</a> -->
-				</p>
+				<h5><?php echo $title ;?></h5>
+				
 			</div>
 
 		</div> <!-- end sixteen -->

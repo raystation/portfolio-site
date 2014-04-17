@@ -1,5 +1,5 @@
 <?php 
-	$title = "Chronicles of Old&nbsp;Rome";
+	$title = "Art+Paris: Art + Paris Impressionists Post-Impressionists";
 	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 
@@ -11,11 +11,11 @@
 		<div class="sixteen columns">
 			
 			<div class="slick">
-				<div><a href="http://placehold.it/400x273&text=" data-lightbox="storymaps" data-title="caption"><img src="http://placehold.it/400x273&text=" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="http://placehold.it/400x273&text=" data-lightbox="storymaps" data-title="caption"><img src="http://placehold.it/400x273&text=" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="http://placehold.it/400x273&text=" data-lightbox="storymaps" data-title="caption"><img src="http://placehold.it/400x273&text=" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="http://placehold.it/400x273&text=" data-lightbox="storymaps" data-title="caption"><img src="http://placehold.it/400x273&text=" class="scale-with-grid2 add-bottom"></a></div>
-				<div><a href="http://placehold.it/400x273&text=" data-lightbox="storymaps" data-title="caption"><img src="http://placehold.it/400x273&text=" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="http://placehold.it/400x273&text=" data-lightbox="detail" data-title="caption"><img src="http://placehold.it/400x273&text=" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="http://placehold.it/400x273&text=" data-lightbox="detail" data-title="caption"><img src="http://placehold.it/400x273&text=" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="http://placehold.it/400x273&text=" data-lightbox="detail" data-title="caption"><img src="http://placehold.it/400x273&text=" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="http://placehold.it/400x273&text=" data-lightbox="detail" data-title="caption"><img src="http://placehold.it/400x273&text=" class="scale-with-grid2 add-bottom"></a></div>
+				<div><a href="http://placehold.it/400x273&text=" data-lightbox="detail" data-title="caption"><img src="http://placehold.it/400x273&text=" class="scale-with-grid2 add-bottom"></a></div>
 			</div>
 
 			<div class="twelve columns alpha">

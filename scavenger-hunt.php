@@ -1,5 +1,6 @@
 <?php 
-	$pageTitle = "Ray Yuen | Scavenger Hunt";
+	$title = "Scavenger Hunt";
+	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 
 	<!-- Row 1
@@ -33,7 +34,7 @@
 			</div>
 
 			<div class="four columns omega caption padding">
-				<h5>Scavenger Hunt</h5>
+				<h5><?php echo $title ;?></h5>
 				<p>T-shirt design for Threadless</p>
 				link to museum
 			</div>

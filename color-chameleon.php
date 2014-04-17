@@ -1,5 +1,6 @@
 <?php 
-	$pageTitle = "Ray Yuen | Color Runner";
+	$title = "Color Chameleon";
+	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 
 	<!-- Row 1
@@ -24,8 +25,8 @@
 			</div>
 
 			<div class="four columns omega padding caption">
-				<h5>Color Runner</h5>
-				<p>T-shirt design for Threadless</p>
+				<h5><?php echo $title ;?></h5>
+				<p>Lorem ipsum dolor sit amet.</p>
 			</div>
 
 		</div>

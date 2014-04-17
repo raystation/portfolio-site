@@ -1,5 +1,6 @@
 <?php 
-	$pageTitle = "Ray Yuen | The 3";
+	$title = "The 3";
+	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 
 	<!-- Row 1
@@ -35,7 +36,7 @@
 				
 			</div>
 			<div class="four columns omega caption">
-				<h5>The 3</h5> 
+				<h5><?php echo $title ;?></h5> 
 				<p>
 					A <a href="http://www.suspendedbeliefgames.com">Suspended Belief</a> Joint. <br>
 					Platform: iPhone 4 and up. Playable on iPads. <br>

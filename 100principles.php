@@ -1,5 +1,6 @@
 <?php 
-	$pageTitle = "Ray Yuen | Pearson";
+	$title = "100 Principles of Game Design";
+	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 
 	<!-- Row 1
@@ -35,7 +36,7 @@
 			</div>
 
 			<div class="four columns omega padding caption opacity-fade">
-				<h5>100 Principles of Game Design</h5>
+				<h5><?php echo $title ;?></h5>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsa facilis dicta harum amet consequuntur cumque doloribus numquam id laudantium.
 				</p>

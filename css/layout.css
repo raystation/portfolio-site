@@ -123,13 +123,12 @@ img.scale-with-grid2 {
 .index-right-column {
   padding-right: 0px;
   padding-top: 0px; }
+  .index-right-column li {
+    margin-bottom: .45em; }
 
 .caption, .index-right-column {
   font-size: 11pt;
   line-height: 1.25em; }
-
-li {
-  margin-bottom: .45em; }
 
 .opacity-fade a > img {
   -webkit-transition: opacity 0.25s ease-in-out;

@@ -1,5 +1,6 @@
 <?php 
-	$pageTitle = "Ray Yuen | idibon";
+	$title = "idibon";
+	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 
 	<!-- Row 1
@@ -14,7 +15,7 @@
 			</div>
 
 			<div class="four columns omega padding opacity-fade">
-				<h5>Edgeware</h5>
+				<h5><?php echo $title ;?></h5>
 				<p>
 					Illustrations and infographics for a social and data analysis.
 				</p>				

@@ -1,5 +1,6 @@
 <?php 
-	$pageTitle = "Ray Yuen | Animore";
+	$title = "Project Animore";
+	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 
 	<!-- Row 1
@@ -27,9 +28,9 @@
 			</div>
 
 			<div class="four columns omega padding caption">
-				<h5>Project Animore</h5>
+				<h5><?php echo $title ;?></h5>
 				<p>
-					An unrealized video game concept
+					An unrealized video game concept.
 				</p>
 			</div>
 		</div> <!-- end sixteen -->

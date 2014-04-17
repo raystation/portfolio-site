@@ -1,5 +1,6 @@
 <?php 
-	$pageTitle = "Ray Yuen | Storymaps";
+	$title = "Chronicles of Old New&nbsp;York";
+	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 
 	<!-- Row 1
@@ -22,7 +23,7 @@
 			</div>
 
 			<div class="four columns omega padding caption">
-				<h5>Chronicles of Old New York</h5>
+				<h5><?php echo $title ;?></h5>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, explicabo. <br>
 					<a href="#">link to book</a>
@@ -30,6 +31,8 @@
 			</div>
 			
 		</div> <!-- end sixteen -->
+
+		<?php include "inc/museyon.php" ;?>
 
 	</div> <!-- end container -->
 	

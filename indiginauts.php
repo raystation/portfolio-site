@@ -1,5 +1,6 @@
 <?php 
-	$pageTitle = "Ray Yuen | Indiginauts";
+	$title = "Indiginauts";
+	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 
 	<!-- Row 1
@@ -25,7 +26,7 @@
 			</div>
 
 			<div class="four columns omega padding caption">
-				<h5>Indiginauts</h5>
+				<h5><?php echo $title ;?></h5>
 				<p>
 					<a href="http://www.suspendedbeliefgames.com">Suspended Belief Studios</a> <br>
 					Creative direction for simplifed adventure game targeted at tablet devices.<br>
