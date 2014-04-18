@@ -4,33 +4,33 @@
 
 $works = array(
 	array( "name" => "The 3", 																"path" => "the3", 																"thumb" => "thumb.svg" ), //done
-	array( "name" => "Indiginauts", 													"path" => "indiginauts", 													"thumb" => "thumb.jpg" ), //done
-	array( "name" => "100 Principles of Game&nbsp;Design", 		"path" => "100-principles-of-game-design", 				"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Storymaps", 														"path" => "storymaps",														"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Monkey Mo, Monkey&nbsp;Go!",		 				"path" => "monkey-mo",														"thumb" => "thumb.jpg" ),
+	array( "name" => "Indiginauts", 													"path" => "indiginauts", 													"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "100 Principles of Game&nbsp;Design", 		"path" => "100-principles-of-game-design", 				"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "Storymaps", 														"path" => "storymaps",														"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "Monkey Mo, Monkey&nbsp;Go!",		 				"path" => "monkey-mo",														"thumb" => "thumb.jpg" ), 
 	array( "name" => "Scavenger Hunt", 												"path" => "scavenger-hunt",												"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Chronicles of Old&nbsp;London", 				"path" => "temp",																	"thumb" => "thumb.jpg" ),
-	array( "name" => "Sarah Walko Wordpress site",						"path" => "sarah-walko-wordpress",								"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Chronicles of Old&nbsp;Rome",			 			"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Chronicles of Old&nbsp;London", 				"path" => "chronicles-of-old-london",							"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "Sarah Walko Wordpress site",						"path" => "sarah-walko-wordpress",								"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "Chronicles of Old&nbsp;Rome",			 			"path" => "chronicles-of-old-rome",								"thumb" => "thumb.jpg" ),
 	array( "name" => "Animore", 															"path" => "animore", 															"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Edgeware", 															"path" => "edgeware",															"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Art+Paris",															"path" => "temp",																	"thumb" => "thumb.jpg" ), 
+	array( "name" => "Edgeware", 															"path" => "edgeware",															"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "Art+Paris",															"path" => "art-and-paris",												"thumb" => "thumb.jpg" ), 
 	array( "name" => "idibon", 																"path" => "idibon",																"thumb" => "thumb.jpg" ),
-	array( "name" => "Chronicles of Old New&nbsp;York", 			"path" => "temp",																	"thumb" => "thumb.jpg" ), 
+	array( "name" => "Chronicles of Old New&nbsp;York", 			"path" => "chronicles-of-old-new-york",						"thumb" => "thumb.jpg" ), 
 	array( "name" => "Color Chameleon", 											"path" => "color-chameleon",											"thumb" => "thumb.jpg" ),
-	array( "name" => "Malado Baldwin", 												"path" => "malado-baldwin-wordpress",							"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Malado Baldwin Wordpress", 												"path" => "malado-baldwin-wordpress",		"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Egg Baby", 															"path" => "egg-baby",															"thumb" => "thumb.jpg" ), //more images
-	array( "name" => "Chronicles of Old New&nbsp;Boston", 		"path" => "temp",																	"thumb" => "thumb.jpg" ),
-	array( "name" => "Chronicles of Old New&nbsp;Las Vegas", 	"path" => "temp",																	"thumb" => "thumb.jpg" ),
-	array( "name" => "City Style", 														"path" => "temp",																	"thumb" => "thumb.jpg" ),
-	array( "name" => "Arceus: Jewel of&nbsp;Life",						"path" => "temp",																	"thumb" => "thumb.jpg" ),
-	array( "name" => "Mystery Dungeon 2", 										"path" => "temp",																	"thumb" => "thumb.jpg" ),
-	array( "name" => "Battle Revolution", 										"path" => "temp",																	"thumb" => "thumb.jpg" ),
-	array( "name" => "Pocket Pokedex", 												"path" => "temp",																	"thumb" => "thumb.jpg" ),
-	array( "name" => "Pokemon 15th Anniv", 										"path" => "temp",																	"thumb" => "thumb.jpg" ),
-	array( "name" => "Malado Baldwin Indexhibit site",				"path" => "malado-baldwin-indexhibit",						"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Toy Fair", 															"path" => "temp",																	"thumb" => "thumb.jpg" ),
-	array( "name" => "Featured Shops", 												"path" => "temp",																	"thumb" => "thumb.jpg" )
+	array( "name" => "Chronicles of Old New&nbsp;Boston", 		"path" => "chronicles-of-old-boston",							"thumb" => "thumb.jpg" ),
+	array( "name" => "Chronicles of Old New&nbsp;Las Vegas", 	"path" => "chronicles-of-old-las-vegas",					"thumb" => "thumb.jpg" ),
+	array( "name" => "City Style", 														"path" => "city-style",														"thumb" => "thumb.jpg" ),
+	//array( "name" => "Arceus: Jewel of&nbsp;Life",						"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	//array( "name" => "Mystery Dungeon 2", 										"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	//array( "name" => "Battle Revolution", 										"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	//array( "name" => "Pocket Pokedex", 												"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	//array( "name" => "Pokemon 15th Anniv", 										"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Malado Baldwin Indexhibit",							"path" => "malado-baldwin-indexhibit",						"thumb" => "thumb.jpg" ), //copy
+	//array( "name" => "Toy Fair", 															"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	//array( "name" => "Featured Shops", 												"path" => "temp",																	"thumb" => "thumb.jpg" )
 );
 
 
@@ -212,6 +212,7 @@ if ( $title == "Malado Baldwin Wordpress site" ) {
 
 } //end malado-baldwin-wordpress
 
+
 // SARAH WALKO WORDPRESS
 // ===============================
 
@@ -231,6 +232,7 @@ if ( $title == "Sarah Walko Wordpress site" ) {
 	);	
 
 } //end sarah-walko-wordpress	
+
 
 // SCAVENGER HUNT
 // ===============================
@@ -310,7 +312,7 @@ if ( $title == "Edgeware" ) {
     array("file" => "06.jpg", "alt" => "")
 	);	
 
-} //end The 3
+} //end edgeware
 
 
 // EGG BABY
@@ -328,7 +330,7 @@ if ( $title == "Egg Baby" ) {
     array("file" => "01.jpg", "alt" => "")
 	);	
 
-} //end The 3
+} //end egg-baby
 
 
 // COLOR CHAMELEON
@@ -346,4 +348,155 @@ if ( $title == "Color Chameleon" ) {
     array("file" => "01.jpg", "alt" => "")
 	);	
 
-} //end The 3
+} //end color-chameleon
+
+
+// ART + PARIS
+// ===============================
+
+if ( $title == "Art + Paris" ) {
+
+	$path="img/art-and-paris/";
+
+	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
+
+	$sidebar = 'Lorem ipsum dolor sit amet.';
+
+	$img_info = array(
+    array("file" => "cover.jpg", "alt" => ""),
+    array("file" => "01.jpg", "alt" => ""),
+    array("file" => "02.jpg", "alt" => ""),
+    array("file" => "03.jpg", "alt" => ""),
+    array("file" => "04.jpg", "alt" => ""),
+    array("file" => "05.jpg", "alt" => ""),
+    array("file" => "06.jpg", "alt" => "")
+	);	
+
+} //end art-and-paris
+
+
+// CHRONICLES OF OLD LONDON
+// ===============================
+
+if ( $title == "Chronicles of Old&nbsp;London" ) {
+
+	$path="img/chronicles-of-old-london/";
+
+	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.</p>
+		<p><img src="img/chronicles-of-old-london/Parks-and-Rec-9-550x366.jpg" class="scale-with-grid" alt="" /> <br>
+		<p><img src="img/chronicles-of-old-london/Parks&Recreation_s.jpg" class="scale-with-grid" alt="" />
+		';
+
+	$sidebar = 'Lorem ipsum dolor sit amet.';
+
+	$img_info = array(
+    array("file" => "cover.jpg", "alt" => ""),
+    array("file" => "01.jpg", "alt" => ""),
+    array("file" => "toc.jpg", "alt" => ""),
+    array("file" => "02.jpg", "alt" => ""),
+    array("file" => "03.jpg", "alt" => ""),
+    array("file" => "04.jpg", "alt" => ""),
+    array("file" => "05.jpg", "alt" => ""),
+    array("file" => "06.jpg", "alt" => ""),
+    array("file" => "07.jpg", "alt" => ""),
+	);	
+
+} //end chronicles-of-old-london
+
+
+// CITY STYLE
+// ===============================
+
+if ( $title == "City Style" ) {
+
+	$path="img/city-style/";
+
+	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
+
+	$sidebar = 'Lorem ipsum dolor sit amet.';
+
+	$img_info = array(
+    array("file" => "title.jpg", "alt" => ""),
+    array("file" => "toc.jpg", "alt" => ""),
+    array("file" => "forward.jpg", "alt" => ""),
+    array("file" => "j1.jpg", "alt" => ""),
+    array("file" => "j2.jpg", "alt" => ""),
+    array("file" => "j3.jpg", "alt" => ""),
+    array("file" => "ny.jpg", "alt" => ""),
+    array("file" => "ny1.jpg", "alt" => ""),
+    array("file" => "dir.jpg", "alt" => "")
+	);	
+
+} //end city-style
+
+
+// CHRONICLES OF OLD ROME
+// ===============================
+
+if ( $title == "Chronicles of Old&nbsp;Rome" ) {
+
+	$path="img/chronicles-of-old-rome/";
+
+	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
+
+	$sidebar = 'Lorem ipsum dolor sit amet.';
+
+	$img_info = array(
+    array("file" => "cover.jpg", "alt" => "")
+	);	
+
+} //end chronicles-of-old-rome
+
+
+// CHRONICLES OF OLD NEW YORK
+// ===============================
+
+if ( $title == "Chronicles of Old New&nbsp;York" ) {
+
+	$path="img/chronicles-of-old-new-york/";
+
+	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
+
+	$sidebar = 'Lorem ipsum dolor sit amet.';
+
+	$img_info = array(
+    array("file" => "cover.jpg", "alt" => "")
+	);	
+
+} //end chronicles-of-old-new-york
+
+
+// CHRONICLES OF OLD BOSTON
+// ===============================
+
+if ( $title == "Chronicles of Old&nbsp;Boston" ) {
+
+	$path="img/chronicles-of-old-boston/";
+
+	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
+
+	$sidebar = 'Lorem ipsum dolor sit amet.';
+
+	$img_info = array(
+    array("file" => "cover.jpg", "alt" => "")
+	);	
+
+} //end chronicles-of-old-boston
+
+
+// CHRONICLES OF OLD LAS VEGAS
+// ===============================
+
+if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
+
+	$path="img/chronicles-of-old-las-vegas/";
+
+	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
+
+	$sidebar = 'Lorem ipsum dolor sit amet.';
+
+	$img_info = array(
+    array("file" => "cover.jpg", "alt" => "")
+	);	
+
+} //end chronicles-of-old-boston

@@ -11,7 +11,7 @@
 		<div class="sixteen columns">
 
 			<div class="twelve columns alpha">
-				<a href="img/idibon/title.jpg" data-lightbox="idibon"><img src="img/idibon/title.jpg" class="scale-with-grid2 add-bottom"></a>
+				<a href="img/idibon/thumb.jpg" data-lightbox="idibon"><img src="img/idibon/thumb.jpg" class="scale-with-grid2 add-bottom"></a>
 			</div>
 
 			<div class="four columns omega opacity-fade">
