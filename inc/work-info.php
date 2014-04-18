@@ -1,6 +1,44 @@
 <?php 
 
+//order of the portfolio pieces
 
+$works = array(
+	array( "name" => "The 3", 																"path" => "the3", 																"thumb" => "thumb.svg" ),
+	array( "name" => "Indiginauts", 													"path" => "indiginauts", 													"thumb" => "thumb.jpg" ),
+	array( "name" => "100 Principles of Game&nbsp;Design", 		"path" => "100-principles-of-game-design", 				"thumb" => "thumb.jpg" ),
+	array( "name" => "Storymaps", 														"path" => "storymaps",														"thumb" => "thumb.jpg" ),
+	array( "name" => "Monkey Mo, Monkey Go!",					 				"path" => "monkey-mo",														"thumb" => "thumb.jpg" ),
+	array( "name" => "Chronicles of Old&nbsp;London", 				"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Sarah Walko", 													"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Chronicles of Old New&nbsp;Rome", 			"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Scavenger Hunt", 												"path" => "scavenger-hunt",												"thumb" => "thumb.jpg" ),
+	array( "name" => "Animore", 															"path" => "animore", 															"thumb" => "thumb.jpg" ),
+	array( "name" => "Edgeware", 															"path" => "edgeware",															"thumb" => "thumb.jpg" ),
+	array( "name" => "idibon", 																"path" => "idibon",																"thumb" => "thumb.jpg" ),
+	array( "name" => "Chronicles of Old New&nbsp;York", 			"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Color Chameleon", 											"path" => "color-chameleon",											"thumb" => "thumb.jpg" ),
+	array( "name" => "Malado Baldwin", 												"path" => "malado-baldwin", 											"thumb" => "thumb.jpg" ),
+	array( "name" => "Egg Baby", 															"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Chronicles of Old New&nbsp;Boston", 		"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Chronicles of Old New&nbsp;Las Vegas", 	"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "City Style", 														"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Arceus: Jewel of Life", 								"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Mystery Dungeon 2", 										"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Battle Revolution", 										"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Pocket Pokedex", 												"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Pokemon 15th Anniv", 										"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Toy Fair", 															"path" => "temp",																	"thumb" => "thumb.jpg" ),
+	array( "name" => "Featured Shops", 												"path" => "temp",																	"thumb" => "thumb.jpg" )
+);
+
+function workthumb($num) {
+	global $works;
+	if ( $works[$num] == NULL) {
+		return;
+	}
+	echo '<a href="'.$works[$num]["path"].'.php"><img src="img/'.$works[$num]["path"].'/'.$works[$num]["thumb"].'" class="scale-with-grid"></a>';
+	echo "<p>".$works[$num]["name"]."</p>";
+} 
 
 
 // STORYMAPS
