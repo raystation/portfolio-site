@@ -78,6 +78,9 @@ a, a:visited {
 .uppercase, .portfolio p, nav {
   text-transform: uppercase; }
 
+.none {
+  display: none; }
+
 .bold, .portfolio p {
   font-weight: 900; }
 

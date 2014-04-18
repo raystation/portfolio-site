@@ -14,7 +14,7 @@
 			</div>
 
 			<div class="four columns">
-				<a href="img/superbarracuda/Palin_halloween.jpg" data-lightbox="palin"><img src="img/superbarracuda/palin_thumb.jpg" class="scale-with-grid"></a>
+				<a href="img/superbarracuda/Palin_halloween.jpg" data-lightbox="palin"><img src="img/superbarracuda/thumb.jpg" class="scale-with-grid"></a>
 				<p>Sarah Palin comics</p>
 			</div>
 

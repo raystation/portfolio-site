@@ -1,5 +1,5 @@
 <?php 
-	$title = "Art+Paris: Art + Paris Impressionists Post-Impressionists";
+	$title = "Art+Paris";
 	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 

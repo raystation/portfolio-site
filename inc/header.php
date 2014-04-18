@@ -55,8 +55,8 @@
 			
 			<ul class="add-bottom">
 				<li><a href="work.php">work</a></li>
-				<li>•</li>
-				<li><a href="projects.php">projects</a></li>
+				<?php //<li>•</li>
+				//<li><a href="projects.php">projects</a></li> ?>
 				<li>•</li>
 				<li><a href="about.php">about</a></li>
 			</ul>				
