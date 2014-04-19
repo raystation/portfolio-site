@@ -54,6 +54,22 @@ function workthumb($num) {
 	echo "<p>".$works[$num]["name"]."</p>";
 } 
 
+// MUSEYON SIDEBAR  ========================
+
+function museyon_sidebar() {
+	global $author;
+	global $pages;
+	global $date;
+	global $url;
+	return "Written by " .$author."<br>
+			Edited by Heather Corcoran and Akira Chiba <br>
+			Published by <a href='http://www.museyon.com'>Museyon Guides</a></p>
+			<p>Trade Paperback<br>"
+			. $pages . " pages<br>
+			5 &frac14;\" &#215; 8\"<br>
+			Printed ". $date . "</p><p>
+			<a href=" .$url." target='_blank'>Buy a copy</a>";
+}
 
 // STORYMAPS
 // ========================
@@ -62,9 +78,20 @@ if ( $title == "Storymaps" ) {
 
 	$path="img/storymaps/";
 
-	$description = "I supplied the illustrations for a PhD study by Sean Hammond. Essentially, it is a tool that kids can use to enhance their storywriting skills. In Sean’s research, he broke down the various elements of a fairy tale and I illustrated said elements as cards. The kids would then pick and choose the story elements they want to include and the software would help them plan out the story.";
+	$description = "A programmer I knew, <a href=\"https://github.com/seanh\">Sean Hammond</a>, was coding some software for a Ph.D. study that would assist children in the process of story creation. He called it StoryMaps. Essentially, StoryMaps breaks down the elements of traditional fairy tales into building blocks which children could use to invent new stories. They can create stories that contain their own original ideas while being structurally complete and well-formed.</p>
 
-	$sidebar = "Riker Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam, esse aperiam minima minus atque commodi porro unde dignissimos est!";
+		<p>A big challenge with this project was making the artwork generic enough so that the kids would still get to inject their own imagination into it. Some are more difficult than others, but I was up for the task.</p>
+
+		<p>Looking at tarot cards for inspiration, I sought to break each event down to it\'s core action. The main characters would all be represented by simple stick-like figures with no faces. Each image was accentuated with one color.</p>
+		
+		<p>
+		<div class=\"caption\">Additional reading: <br />
+		</div>
+		
+		";
+
+	$sidebar = '<a href="http://seanh.github.io/storymaps/">Storymaps software</a><br>
+	<a href="https://github.com/seanh">Sean\'s Github page</a>';
 
 	$img_info = array(
     array("file" => "01.jpg", "alt" => "This is your alt text"),
@@ -358,9 +385,14 @@ if ( $title == "Art + Paris" ) {
 
 	$path="img/art-and-paris/";
 
-	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
+	$description = 'Impressionists Post-Impressionists: The Ultimate Guide to Artists, Paintings and Places in Paris and Normandy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
 
-	$sidebar = 'Lorem ipsum dolor sit amet.';
+	$author = "Museyon Guides";
+	$pages = 328;
+	$date = "July 2012";
+	$url = "http://www.museyon.com/shop/art-paris-impressionists/";
+
+	$sidebar = museyon_sidebar();
 
 	$img_info = array(
     array("file" => "cover.jpg", "alt" => ""),
@@ -382,12 +414,17 @@ if ( $title == "Chronicles of Old&nbsp;London" ) {
 
 	$path="img/chronicles-of-old-london/";
 
-	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.</p>
+	$description = 'Exploring England’s Historic Capital. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.</p>
 		<p><img src="img/chronicles-of-old-london/Parks-and-Rec-9-550x366.jpg" class="scale-with-grid" alt="" /> <br>
 		<p><img src="img/chronicles-of-old-london/Parks&Recreation_s.jpg" class="scale-with-grid" alt="" />
 		';
 
-	$sidebar = 'Lorem ipsum dolor sit amet.';
+	$author="Kevin Jackson";
+	$pages = 288;
+	$date = "May 2012";
+	$url = "http://www.museyon.com/shop/chronicles-of-old-london/";
+
+	$sidebar = museyon_sidebar();
 
 	$img_info = array(
     array("file" => "cover.jpg", "alt" => ""),
@@ -411,9 +448,18 @@ if ( $title == "City Style" ) {
 
 	$path="img/city-style/";
 
-	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
+	$description = 'A Field Guide to Global Fashion Capitals. The second book I worked on with Museyon, City Style was a completely one-off book on fashion. <a href="http://www.linkedin.com/in/thisisheatherc">Heather</a>, one of the editors, was a big nerd for art and fashion (she taught me about jean jackets).</p>
+		
+		<p>This was basically me and Heather\'s book, so we basically got to do most everything we wanted. With Heather manning the phones and email trying to get approved photos from fashion houses, I went about establishing a variant of the Museyon style for the book\'s skeleton. It was structured, but loose enough that it allowed each city to have it\'s own look and feel. We wanted the book to have a a magazine feel to them with bold type design with big photos that spoke for themselves. We may have gotten a little carried away in the beginning with many pages being full photos and the page count going up, but we course-corrected and got ourselves back to the target page count. </p>
+		<p>Epilogue: This book really refined the working relationship that would serve us well in the coming year as we go into full <em>Chronicles</em> mode.
+		';
 
-	$sidebar = 'Lorem ipsum dolor sit amet.';
+	$author = "Museyon Guides";
+	$pages = 272;
+	$date = "October 2011";
+	$url = "http://www.museyon.com/shop/city-style/";
+
+	$sidebar = museyon_sidebar();
 
 	$img_info = array(
     array("file" => "title.jpg", "alt" => ""),
@@ -437,12 +483,25 @@ if ( $title == "Chronicles of Old&nbsp;Rome" ) {
 
 	$path="img/chronicles-of-old-rome/";
 
-	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
+	$description = 'Exploring Italy\'s Eternal City. After my move to San Francisco, I didn\'t get to work on as many big projects with Museyon anymore. One thing I still do on occasion is work on their maps. Normally there is another person who makes their maps, but because they are an intensive endeavor, I was asked to help out. I had good success with it because I was more familiar with the page margins, the software and being able to make all the fonts consistently the same size.</p>
+		<p>Some full size maps here: <br />
+		Steps <br>
+		Steps <br>
+		Steps <br>
+		Steps <br>
+		Steps <br>
+		Steps
+		';
 
-	$sidebar = 'Lorem ipsum dolor sit amet.';
+	$author = "Tamara Thiessen";
+	$pages = 272;
+	$date = "April 2013";
+	$url = "http://www.museyon.com/shop/chronicles-of-old-rome";
+
+	$sidebar = museyon_sidebar();
 
 	$img_info = array(
-    array("file" => "cover.jpg", "alt" => "")
+   		array("file" => "cover.jpg", "alt" => "")
 	);	
 
 } //end chronicles-of-old-rome
@@ -455,12 +514,23 @@ if ( $title == "Chronicles of Old New&nbsp;York" ) {
 
 	$path="img/chronicles-of-old-new-york/";
 
-	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
+	$description = '<strong>Explore 400 years of Manhattan history</strong>. <em>Chronicles of Old New York</em> was the first book I worked on with Museyon Guides. The first half of the book details stories in and around New York City\'s history. The second half of the book featured walking tours which would highlight eight areas and provide references to the first half of the book. The historic content was pretty awesome. Gun duels, old taverns in the city (that George Washington went to!), rich capitalists that built the city...it was nice to know more about the city I lived in.</p>
 
-	$sidebar = 'Lorem ipsum dolor sit amet.';
+		<p>This book was to be an off-shoot book (up till this point, Museyon had been making a series of books called <a href="http://www.museyon.com/shop/art-travel-europe/">Art+</a> and <a href="http://www.museyon.com/shop/film-travel-asia-oceania-africa/">Film+</a>). We decided that we wanted to have a different look, but still keep the looks aligned. We worked together to establish some base rules and some standard layouts and with the skeleton of the book created, we went about populating the pages. </p>
+
+		<p>Since this was the first time we worked together, I had to make sure their production files were all up to snuff. The owner had a decent eye for design and some previous production experience with magazines, but the files were a copy-and-paste mess. I showed them how to automate the more menial tasks, like converting folders of images to CMYK, paragraph/character styles and indexing (because humans have better things to do!) They had me pretty involved in the design and photo selection process which I quite enjoyed. </p>
+
+		<p>Epilogue: We worked really well together and this book actually became their best selling book which lead to them doing more in the <em>Chronicles</em> series (which meant more work for me! Yeah!). They eventually asked me to do more in the series, but that took some time. In the meantime, they asked me to layout a <a href="city-style.php">fashion book</a>.';
+	
+	$author = "James Roman";
+	$pages = 260;
+	$date = "June 2010";
+	$url = "http://www.museyon.com/shop/chronicles-of-old-new-york";
+
+	$sidebar = museyon_sidebar();
 
 	$img_info = array(
-    array("file" => "cover.jpg", "alt" => "")
+   		array("file" => "cover.jpg", "alt" => "")
 	);	
 
 } //end chronicles-of-old-new-york
@@ -473,30 +543,47 @@ if ( $title == "Chronicles of Old&nbsp;Boston" ) {
 
 	$path="img/chronicles-of-old-boston/";
 
-	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
+	$description = 'Exploring New England’s Historic Capital. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
 
-	$sidebar = 'Lorem ipsum dolor sit amet.';
+	$author="Charles Bahne";
+	$pages = 288;
+	$date = "April 2012";
+	$url="http://www.museyon.com/shop/chronicles-of-old-boston/";
+
+	$sidebar = museyon_sidebar();
 
 	$img_info = array(
-    array("file" => "cover.jpg", "alt" => "")
+		array("file" => "cover.jpg", "alt" => "")
 	);	
 
 } //end chronicles-of-old-boston
 
 
-// CHRONICLES OF OLD LAS VEGAS
+// ##CHRONICLES OF OLD LAS VEGAS
 // ===============================
 
 if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 
 	$path="img/chronicles-of-old-las-vegas/";
 
-	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
+	$description = '<strong>Exploring Sin City’s High-Stakes History</strong>. The third book I worked on with Museyon. With <a href="chronicles-of-old-new-york.php"><em>Chronicles of Old New York</em></a> selling very well, they decided to continue this series. Which city? A few ideas were tossed around, but I had a feeling it was always going to be Vegas, baby. Mafia dons, casinos, Elvis, Liberace, nuclear tests...don\'t pretend like you don\'t want to know about this sort of stuff!</p>
 
-	$sidebar = 'Lorem ipsum dolor sit amet.';
+		<p>The look of this series was established, the only thing to do was to refine and respond to any sort of issues with New York\'s print run. I adjusted the margins slightly to adjust for the book\'s gutter. Picked a color palette based on the desert. Optimizied the photo sephia-process so that all photos would all look more similiar. Picked the best picture of Elvis we could.</p>
+
+		<p>Epilogue: With the amazing cover, this is easily my favorite book in the series because the stories were so amazing and we had a lot of fun putting it all together.
+	 ';
+
+	$author="James Roman";
+	$pages = 240;
+	$date = "February 2012";
+	$url = "http://www.museyon.com/shop/chronicles-of-old-las-vegas/";
+
+	$sidebar = museyon_sidebar();
 
 	$img_info = array(
     array("file" => "cover.jpg", "alt" => "")
 	);	
 
-} //end chronicles-of-old-boston
+} //end chronicles-of-old-las-vegas
+
+

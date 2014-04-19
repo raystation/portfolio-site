@@ -1,4 +1,4 @@
-	<div class="container add-bottom opacity-fade">
+
 
 		<div class="sixteen columns">
 			
@@ -21,4 +21,3 @@
 
 		</div> <!-- end sixteen -->
 
-	</div> <!-- end container -->
