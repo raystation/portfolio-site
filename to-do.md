@@ -2,6 +2,10 @@ museyon book images
 list of video games played all time
 ap copy
 egg baby copy
+color chamaleon
+boston
+vegas
+monkey mo
 
 	array( "name" => "Abriendo Puertas",								"path" => "temp",											"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "Monkey Mo, Monkey&nbsp;Go!",		 		"path" => "monkey-mo",									"thumb" => "thumb.jpg" ), 

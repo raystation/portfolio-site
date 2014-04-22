@@ -658,7 +658,7 @@ if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 } //end chronicles-of-old-las-vegas
 
 
-// 
+//  ABRIENDO PUERTAS
 // ===============================
 
 if ( $title == "Abriendo Puertas" ) {
@@ -680,4 +680,65 @@ if ( $title == "Abriendo Puertas" ) {
     		array("file" => "05.jpg", "alt" => ""),
 	);	
 
-} //end malado-baldwin-indexhibit
+} //end abriendo-puertas
+
+
+//  MONKEY MO, MONKEY GO
+// ===============================
+
+if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
+
+	$path="img/monkey-mo/";
+
+	$description = 'Teaming again with author Lin Fong O\'Neil, we worked together to create another children\'s book. Lin wanted to do another animal in the Chinese zodiac and I responded with "Monkey!" obviously because my zodiac animal is a monkey. about the tales of a monkey who had escaped the confines of a zoo.';
+	
+	$sidebar = "Children's Book</p>
+		<p>written by: Lin Fong O'Neill</p>
+		<p>Hand-drawn and inked, coloring done in Photoshop</p>
+		<p><a href='http://www.lotuswriting.com'>Lotus Writing</p>
+		<p><img width='50%' class='add-top' src='img/monkey-mo/icon_peter.png' alt='' />
+	";
+
+	$img_info = array(
+    		array("file" => "title.jpg", "alt" => "home screen"),
+    		array("file" => "cover.jpg", "alt" => "home screen"),
+    		array("file" => "01.jpg", "alt" => "home screen"),
+    		array("file" => "09.jpg", "alt" => "spread 1"),
+    		array("file" => "08.jpg", "alt" => "circus"),
+    		array("file" => "02.jpg", "alt" => "home screen"),
+    		array("file" => "03.jpg", "alt" => ""),
+    		array("file" => "04.jpg", "alt" => ""),
+    		array("file" => "05.jpg", "alt" => ""),
+    		array("file" => "07.jpg", "alt" => ""),
+    		array("file" => "06.jpg", "alt" => ""),
+
+	);	
+
+} //end abriendo-puertas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
