@@ -93,7 +93,7 @@ if ( $title == "StoryMaps" ) {
 		
 		";
 
-	$sidebar = '<p>comic-like handdrawn illustrations</p>
+	$sidebar = '<p>comic-like hand-drawn illustrations</p>
 	<p><a href="http://seanh.github.io/storymaps/">StoryMaps software</a>
 	';
 

@@ -90,6 +90,9 @@ a, a:visited {
 .montserrat, .portfolio p, nav {
   font-family: Montserrat, Helvetica, sans-serif; }
 
+.float-right {
+  float: right; }
+
 hr {
   width: 100%;
   border: 1px solid black; }

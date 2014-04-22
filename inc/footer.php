@@ -1,4 +1,10 @@
 	</div> <!-- end container -->
+
+	<?php 
+		if ( $description !== NULL ) {
+			include 'work-thumbnails.php' ;
+		}
+	 ;?>
 	
 	<!-- Footer
 	==================================================  -->

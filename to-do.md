@@ -2,7 +2,7 @@ front page
 about me
 footer
 and in alts for images
-
+add in next/previous buttons
 list of video games played all time
 ap copy
 egg baby copy

@@ -61,8 +61,6 @@
 				<li><a href="about.php">about</a></li>
 			</ul>				
 
-			<hr>
-
 		</nav>
 		
 	</header>
