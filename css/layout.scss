@@ -18,7 +18,8 @@ $txt-color: lighten(black,20%);
 $link-color: steelblue;
 $footer-color: darken($bkg-color,7%);
 $footer-text-color: darken($footer-color,40%);
-$font-size: 15pt;
+$font-size: 13pt;
+$line-height: 1.45em;
 $caption-font-size: 11pt;
 $body-font: "Arvo";
 $link-hover-color: darken(steelblue,20%);
@@ -40,7 +41,7 @@ body, html { width: 100%; }
 body { 
 	font-family: $body-font, Helvetica, sans-serif;
 	font-size: $font-size;
-	line-height: 1.35em;
+	line-height: $line-height;
 	background-color: $bkg-color; 
 	color: $txt-color;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */

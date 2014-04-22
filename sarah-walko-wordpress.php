@@ -1,5 +1,5 @@
 <?php 
-	$title = "sarahwalko.com";
+	$title = "Sarah Walko website";
 	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 	
