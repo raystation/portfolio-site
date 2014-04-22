@@ -79,7 +79,8 @@
 			  arrows: false,
 			  autoplay: true,
 			  dots: true,
-			  draggable: false
+			  draggable: false,
+			  fade: true
 			});
 		});		
 	</script>

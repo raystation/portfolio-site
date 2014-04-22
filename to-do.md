@@ -1,8 +1,13 @@
-front page
+
+front page, put off for now
+
 about me
 footer
 and in alts for images
+
 add in next/previous buttons
+additional works under details won't show thumbnail of current project
+
 list of video games played all time
 ap copy
 egg baby copy

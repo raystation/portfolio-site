@@ -10,13 +10,6 @@
 
 
 <div class="container portfolio">
-		
-		<?php 
-		if ( $description !== NULL ) {
-			
-		}
-
-		;?>
 
 		<!-- Row 1
 		================================================== -->

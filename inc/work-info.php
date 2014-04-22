@@ -732,7 +732,6 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
     		array("file" => "08.jpg", "alt" => "circus"),
     		array("file" => "02.jpg", "alt" => "home screen"),
     		array("file" => "03.jpg", "alt" => ""),
-    		array("file" => "03.jpg", "alt" => ""),
     		array("file" => "04.jpg", "alt" => ""),
     		array("file" => "05.jpg", "alt" => ""),
     		array("file" => "07.jpg", "alt" => ""),
