@@ -16,7 +16,7 @@ $works = array(
 	array( "name" => "Animore", 										"path" => "animore", 										"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Edgeware", 									"path" => "edgeware",										"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "Art+Paris",										"path" => "art-and-paris",								"thumb" => "thumb.jpg" ),  //images
-	array( "name" => "idibon", 										"path" => "idibon",										"thumb" => "thumb.jpg" ),
+	// array( "name" => "idibon", 										"path" => "idibon",										"thumb" => "thumb.jpg" ),
 	array( "name" => "Chronicles of Old New&nbsp;York", 			"path" => "chronicles-of-old-new-york",					"thumb" => "thumb.jpg" ),  //images
 	array( "name" => "Color Chameleon", 							"path" => "color-chameleon",								"thumb" => "thumb.jpg" ), 
 	array( "name" => "Malado Baldwin Wordpress", 					"path" => "malado-baldwin-wordpress",					"thumb" => "thumb.jpg" ),  //done
@@ -407,7 +407,17 @@ if ( $title == "Color Chameleon" ) {
 	$sidebar = 'Lorem ipsum dolor sit amet.';
 
 	$img_info = array(
-    array("file" => "01.jpg", "alt" => "")
+    array("file" => "title.jpg", "alt" => ""),
+    array("file" => "art.jpg", "alt" => ""),
+    array("file" => "07.jpg", "alt" => ""),
+    array("file" => "cham_run_eyes.gif", "alt" => ""),
+    array("file" => "06.jpg", "alt" => ""),
+    array("file" => "00.jpg", "alt" => ""),
+    array("file" => "01.jpg", "alt" => ""),
+    array("file" => "02.jpg", "alt" => ""),
+    array("file" => "03.jpg", "alt" => ""),
+    array("file" => "04.jpg", "alt" => ""),
+    array("file" => "05.jpg", "alt" => ""),
 	);	
 
 } //end color-chameleon
@@ -624,7 +634,15 @@ if ( $title == "Chronicles of Old&nbsp;Boston" ) {
 	$sidebar = museyon_sidebar();
 
 	$img_info = array(
-		array("file" => "cover.jpg", "alt" => "")
+		array("file" => "cover.jpg", "alt" => ""),
+		array("file" => "01.jpg", "alt" => ""),
+		array("file" => "02.jpg", "alt" => ""),
+		array("file" => "03.jpg", "alt" => ""),
+		array("file" => "04.jpg", "alt" => ""),
+		array("file" => "05.jpg", "alt" => ""),
+		array("file" => "06.jpg", "alt" => ""),
+		array("file" => "07.jpg", "alt" => ""),
+		array("file" => "08.jpg", "alt" => ""),
 	);	
 
 } //end chronicles-of-old-boston
@@ -652,7 +670,14 @@ if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 	$sidebar = museyon_sidebar();
 
 	$img_info = array(
-    array("file" => "cover.jpg", "alt" => "")
+    array("file" => "cover.jpg", "alt" => ""),
+    array("file" => "03.jpg", "alt" => "Vegas sign"),
+    array("file" => "04.jpg", "alt" => "Marilyn"),
+    array("file" => "05.jpg", "alt" => "Neon Boneyard"),
+    array("file" => "06.jpg", "alt" => ""),
+    array("file" => "01.jpg", "alt" => "rat pack"),
+    array("file" => "02.jpg", "alt" => "naked ladies"),
+    array("file" => "07.jpg", "alt" => ""),
 	);	
 
 } //end chronicles-of-old-las-vegas
@@ -707,10 +732,11 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
     		array("file" => "08.jpg", "alt" => "circus"),
     		array("file" => "02.jpg", "alt" => "home screen"),
     		array("file" => "03.jpg", "alt" => ""),
+    		array("file" => "03.jpg", "alt" => ""),
     		array("file" => "04.jpg", "alt" => ""),
     		array("file" => "05.jpg", "alt" => ""),
     		array("file" => "07.jpg", "alt" => ""),
-    		array("file" => "06.jpg", "alt" => ""),
+    		array("file" => "10.jpg", "alt" => ""),
 
 	);	
 

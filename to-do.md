@@ -5,7 +5,8 @@ egg baby copy
 color chamaleon
 boston
 vegas
-monkey mo
+monkey mo copy
+and in alts
 
 	array( "name" => "Abriendo Puertas",								"path" => "temp",											"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "Monkey Mo, Monkey&nbsp;Go!",		 		"path" => "monkey-mo",									"thumb" => "thumb.jpg" ), 
