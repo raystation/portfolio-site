@@ -41,8 +41,8 @@
 
 			<div class="sixteen columns">
 				<hr>
-				<p> &copy; <?php echo date('Y');?> 
-					Raymond Yuen • made with Skeleton • 
+				<p> All works &copy; <?php echo date('Y');?> 
+					Raymond Yuen • Please do not reproduce without expressed written consent • made with Skeleton
 				</p>
 
 			</div>
@@ -62,7 +62,7 @@
 			  accessibility: true,
 			  lazyLoad: 'progressive',
 			  autoplay: true,
-			  autoplaySpeed: 4000,
+			  autoplaySpeed: 4500,
 			  arrows: true,
 			  dots: true,
 			  draggable: false

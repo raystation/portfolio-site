@@ -116,7 +116,7 @@ if ( $title == "Indiginauts" ) {
 	$path="img/indiginauts/";
 
 	$description = "This idea was the whole reason we started Suspended Belief Games. Based on an illustration I did for a group show in New York, the Indiginauts were space explorers in the vein of Star Fleet. They were peace-loving creatures that explored the stars. Were they decended from humans? Maybe. They loved nothing more than to explore and learn and record for others to see.</p>
-		<p>Well, that was the original idea. Now they are wise-cracking aliens who aren't actually explorers as much as they are repairmen. We developed the game as a simplified point and click (point and touch on touch devices?) geared toward mobile devices. Anything we could do to improve upon the Monkey Island formula. Great story, developed characters, fun artwork.</p>
+		<p>Well, that was the original idea. Now they are wise-cracking repairmen. We developed the game as a simplified point and click (point and touch on touch devices?) geared toward mobile devices. Anything we could do to improve upon the Monkey Island formula. Great story, developed characters, fun artwork.</p>
 		<p>Currently we are still working on our first build. We are doing internal testing of the game and I am still producing artwork for the game.
 		";
 
