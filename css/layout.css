@@ -182,7 +182,6 @@ nav {
   nav .title a {
     color: black; }
   nav .title:before {
-    content: url("../img/ry-logo.svg") no-repeat;
     position: absolute;
     left: 10px; }
   nav ul li {

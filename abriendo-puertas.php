@@ -1,5 +1,5 @@
 <?php 
-	$title = "Abriendo Puertas";
+	$title = "Abriendo Puertas / Opening&nbsp;Doors";
 	$pageTitle = "Ray Yuen | " . $title;
 	include('inc/header.php'); ?>
 <?php include('inc/content.php'); ?>	

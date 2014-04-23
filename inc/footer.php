@@ -17,38 +17,25 @@
 
 				<ul>
 					<li><a href="index.php">home</a></li>
-					<li><a href="portfolio.php">portfolio</a></li>
+					<li><a href="work.php">work</a></li>
 					<li><a href="about.php">about</a></li>
-					<li><a href="#">news</a></li>
+					<?php //<li><a href="#">news</a></li></ ?>
 				</ul>
 
 			</div>
+
 			<div class="four columns">
-
-				<p>
-					Riker's background is first explored in the second-season episode The Icarus Factor.
-				</p>
-
+				<p>contact <br>
+					rayuen@gmail.com</p>
 			</div>
-			<div class="four columns">
 
-				<p>
-					Riker's background is first explored in the second-season episode The Icarus Factor.
-				</p>
-
-			</div>
-			<div class="four columns">
-
-				<p>
-					Riker's background is first explored in the second-season episode The Icarus Factor.
-				</p>
-
-			</div>
+			<div class="four columns"></div>
+			<div class="four columns"></div>
 
 			<div class="sixteen columns">
 				<hr>
 				<p> All works &copy; <?php echo date('Y');?> 
-					Raymond Yuen • Please do not reproduce without expressed written consent • made with Skeleton
+					Raymond Yuen • Please do not reproduce without expressed written consent • built with Skeleton
 				</p>
 
 			</div>

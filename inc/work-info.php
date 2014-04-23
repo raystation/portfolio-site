@@ -24,6 +24,7 @@ $works = array(
 	array( "name" => "Chronicles of Old New&nbsp;Boston", 			"path" => "chronicles-of-old-boston",					"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Chronicles of Old New&nbsp;Las Vegas", 		"path" => "chronicles-of-old-las-vegas",					"thumb" => "thumb.jpg" ), //done
 	array( "name" => "City Style", 										"path" => "city-style",										"thumb" => "thumb.jpg" ), //done
+	//array( "name" => "Tiger, Tiger, Tail on Fire!",					"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Arceus: Jewel of&nbsp;Life",					"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Mystery Dungeon 2", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Battle Revolution", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
@@ -81,7 +82,7 @@ if ( $title == "StoryMaps" ) {
 
 	$description = "A programmer I knew, <a href=\"https://github.com/seanh\">Sean Hammond</a>, was coding some software for a Ph.D. study that would assist children in the process of story creation. He called it StoryMaps. Essentially, StoryMaps breaks down the elements of traditional fairy tales into building blocks which children could use to invent new stories. They can create stories that contain their own original ideas while being structurally complete and well-formed.</p>
 
-		<p>A big challenge with this project was making the artwork generic enough so that the kids would still get to inject their own imagination into it. Some are more difficult than others, but I was up for the task.</p>
+		<p>A big challenge with this project was making the artwork generic enough so that the kids would still get to inject their own imagination into it. Some were more difficult than others, but I was up for the task.</p>
 
 		<p>Looking at tarot cards for inspiration, I sought to break each event down to it's core action. The main characters would all be represented by simple stick-like figures with no faces. Each image was accentuated with one color.</p>
 		
@@ -115,8 +116,8 @@ if ( $title == "Indiginauts" ) {
 
 	$path="img/indiginauts/";
 
-	$description = "This idea was the whole reason we started Suspended Belief Games. Based on an illustration I did for a group show in New York, the Indiginauts were space explorers in the vein of Star Fleet. They were peace-loving creatures that explored the stars. Were they decended from humans? Maybe. They loved nothing more than to explore and learn and record for others to see.</p>
-		<p>Well, that was the original idea. Now they are wise-cracking repairmen. We developed the game as a simplified point and click (point and touch on touch devices?) geared toward mobile devices. Anything we could do to improve upon the Monkey Island formula. Great story, developed characters, fun artwork.</p>
+	$description = "This idea was the whole reason we started Suspended Belief Games. Based on an illustration I did for a group show in New York, the Indiginauts were space explorers in the vein of Star Fleet. They were peace-loving creatures that explored the stars. Were they decended from humans? Maybe. They loved nothing more than to explore, learn and record for others to see.</p>
+		<p>Well, that was the original idea. Now they are wise-cracking repairmen. We developed the game as a simplified point-and-click geared toward mobile devices(point and touch on touch devices?). The main goal was to take everything we learned from classic point-and-clicks, like Monkey Island, and streamline and simplify. Top it off with an engaging story, developed characters and fun artwork.</p>
 		<p>Currently we are still working on our first build. We are doing internal testing of the game and I am still producing artwork for the game.
 		";
 
@@ -124,7 +125,7 @@ if ( $title == "Indiginauts" ) {
 				iOS, Web<br>
 				Estimated release 2014</p>
 				<p><a href="http://www.suspendedbeliefgames.com">Suspended Belief Studios</a><br>
-				<a href="http://54.215.232.227/" target="_blank">Demo Link</a>';
+				<a href="http://www.indiginauts.com" target="_blank">Demo Link</a>';
 
 	$img_info = array(
     array("file" => "logo.jpg", "alt" => "Indiginauts logo"),
@@ -149,12 +150,12 @@ if ( $title == "100 Principles of Game&nbsp;Design" ) {
 
 	$path="img/100-principles-of-game-design/";
 
-	$description = "Because of a scheduling problem, I was was asked to do the illustrations for a game design book. “Game design you say? This is my area of expertise!” The turnaround was tight, under a month for about 30 spot illustrations. I accepted and then the work began. Exchanging sketches back and forth, we decided that we could have a cast of  characters that could be reused which would speed up the work, as well as establish a visual language.</p>
-		<p>After a month of my regular schedule at work and then spending my time at night creating the illustrations, it was a rough month. In the end, I was quite proud of the work and I took another step in mastering vector artwork.
+	$description = "Because of a scheduling problem, I was was asked to do the illustrations for a game design book. “Game design you say? This is my area of expertise!” The turnaround was tight, under a month for about 30 spot illustrations. The schedule wasn't the best, but I really wanted to do game illustrations. Exchanging sketches back and forth with the author, we decided that we could have a cast of  characters that could be reused which would greatly speed up the work, as well as establish a visual language.</p>
+		<p>After a month of my regular schedule at work and then spending my time at night creating the illustrations, I was stretchef thing. However In the end, I was quite proud of the work and I took another step in mastering vector artwork.
 		";
 
-	$sidebar = 'Published by Pearson <br> 
-		Written by <a href="https://twitter.com/subversified">Wendy Despain</a> <br>
+	$sidebar = 'Published by Pearson</p>
+		<p>Written by <a href="https://twitter.com/subversified">Wendy Despain</a> <br>
 		December 2012<br>
 		240 pages </p>
 		<p><a href="http://www.pearsonhighered.com/educator/product/100-Principles-of-Game-Design/9780321902498.page">Buy a copy</a></p>
@@ -189,11 +190,10 @@ if ( $title == "Project Animore" ) {
 
 	$path="img/animore/";
 
-	$description = "This was a game concept we explored on the idea of mixing things together. We never did figure out the best way to exexcute or make it fun in a free-to-play environment, where all the games where headed on iOS. Also, we didn't have a developer at the time so it was all a lot of speculation on what would and wouldn't work. We got a lot of great artwork out of it, which is why I am including it here.";
+	$description = "This was a game concept we explored on the idea of mixing things together. We never did figure out the best way to exexcute or make it fun in a free-to-play environment, where all the games were headed at the time on iOS. We also didn't have a developer at the time so it was all a lot of speculation on what would and wouldn't work.</p><p>In the end, we never were able to fully realize the game we wanted to make but I got a lot of great artwork out of it, which is why I am including it here.";
 
-	$sidebar = 'Platform: iOS<br>
-		Creative Direction: Me<br>
-		Art : Me and Sun Park<br>
+	$sidebar = 'iOS runner<br>
+		Art  by Ray&nbsp;Yuen &amp; Sun&nbsp;Park<br>
 		Rated G!
 	';
 
@@ -379,7 +379,7 @@ if ( $title == "Egg Baby" ) {
 
 	$path="img/egg-baby/";
 
-	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
+	$description = 'A Brooklyn-based apparel company needed some illustrations for some of their clothing. Their work is targeted at infants, small boys and girls.';
 
 	$sidebar = 'Tee designs</p>
 	<p><a href="http://www.egg-baby.com">Egg by Susan Lazar</a></p>';
@@ -402,9 +402,18 @@ if ( $title == "Color Chameleon" ) {
 
 	$path="img/color-chameleon/";
 
-	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex fuga laboriosam dolorum dolores fugiat nostrum esse suscipit tenetur corporis mollitia voluptatem. Quod, voluptatum, autem asperiores numquam ab facere vero alias placeat vel dicta voluptatem ipsum omnis est soluta maiores.';
+	$description = 'Color Chameleon was one of the first ideas we tried to bring to life. We thought it would be fun to run from a zookeeper who was chasing after you. The thing you needed to do was match the color of the objects that were in your path so you could camoflague and gain distance on your pursuers.</p>
+		<p>We went through a few iterations in a 2-D perspective but we ultimately scrapped it because we couldn\'t figure out how to program it on our own. We ulitimately decided to put our money into our original idea, Indiginauts, and hire developers to help with that. We put this on the shelf.</p>
+		<p>After the success of <em>Jet Pack Joyride</em> and <em>Temple Run</em>, my business partner Jeremy once again brought up the idea of doing this game. He made the chameleon bipedal and changed the idea so that he was running through a forest picking up bugs. He needed to change to the color of the bugs to pick them up. We had another artist at this point so we made up a bunch of artwork, but once again, the game wasn\'t how we hoped so we put it back on the shelf.</p>
+		<p><strong>Epilogue</strong>: Jeremy couldn\'t let the idea of a "runner" go and has created a game called <a href="https://itunes.apple.com/us/app/color-surfer/id836439737?mt=8" target="_blank">"Color Surfer."</a> It\'s no longer a chameleon, but a spaceship! Give it a try!</p>
+	';
 
-	$sidebar = 'Lorem ipsum dolor sit amet.';
+	$sidebar = 'iOS runner</p>
+				<p>First iteration:
+				Art by Ray&nbsp;Yuen</p>
+				<p>Second iteration: 
+				Art by Ray&nbsp;Yuen &amp; Sun Park</p>				
+				';
 
 	$img_info = array(
     array("file" => "title.jpg", "alt" => ""),
@@ -686,15 +695,17 @@ if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 //  ABRIENDO PUERTAS
 // ===============================
 
-if ( $title == "Abriendo Puertas" ) {
+if ( $title == "Abriendo Puertas / Opening&nbsp;Doors" ) {
 
 	$path="img/abriendo-puertas/";
 
-	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, odio, cumque, repellendus, totam cum deleniti eveniet voluptatibus sit natus veritatis reiciendis vero impedit dicta vel perferendis ex ab deserunt. Ipsum, numquam excepturi inventore veritatis consequatur odio sapiente nobis aperiam similique itaque harum distinctio eveniet vitae totam at sint qui nostrum. ';
+	$description = 'Abriendo Puertas / Opening Doors is a non-profit dedicated to decreasing the drop-out rate of Latino kids by instilling good behaviors at home. They believe the answer starts at home so their primary focus is on educating their parents. AP/OD holds training sessions where they teach parents different things they could do with their kids, like reading to them more and talking to them more about everything.</p>
+		<p>Abriendo Puertas needed a simple informational site where parents and educators could come to find out more about the organization, where trainings would be, and educators could access teaching materials. After getting approval on the overall look of the site, we built the site based on the Skeleton framework. After a few rounds of going back and forth, we nailed we streamlined the content of the site with PHP. 
+		';
 	
 	$sidebar = "Responsive Website</p>
 		<p>Built with Skeleton, PHP</p>
-		<p><a href='http://ap-od.org'>ap-od.org</a>
+		<p><a href='http://ap-od.org' target='_blank'>ap-od.org</a>
 	";
 
 	$img_info = array(
@@ -715,9 +726,10 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 
 	$path="img/monkey-mo/";
 
-	$description = 'Teaming again with author Lin Fong O\'Neil, we worked together to create another children\'s book. Lin wanted to do another animal in the Chinese zodiac and I responded with "Monkey!" obviously because my zodiac animal is a monkey. about the tales of a monkey who had escaped the confines of a zoo.';
+	$description = 'Teaming up again with author Lin Fong O\'Neil, we worked together to create another children\'s book. Lin wanted to make another book about another animal in the Chinese zodiac and when she asked me what I wanted to do, I responded with "Monkey!" Monkeys are rad obviously.</p>
+		<p>The story follows the adventures of a little boy\'s adventure to the zoo and finding a new best friend. I put a lot of detail into this book and made it somewhat interactive. I hid animals in various spots so as give children an activity to do after they finish.';
 	
-	$sidebar = "Children's Book</p>
+	$sidebar = "Children's Book<br>Published 2010</p>
 		<p>written by: Lin Fong O'Neill</p>
 		<p>Hand-drawn and inked, coloring done in Photoshop</p>
 		<p><a href='http://www.lotuswriting.com'>Lotus Writing</p>
@@ -739,7 +751,7 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 
 	);	
 
-} //end abriendo-puertas
+} //end monkey-mo
 
 
 

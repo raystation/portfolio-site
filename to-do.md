@@ -4,6 +4,8 @@ front page, put off for now
 about me
 footer
 and in alts for images
+forus
+celebrity portraits
 
 add in next/previous buttons
 additional works under details won't show thumbnail of current project
