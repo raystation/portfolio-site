@@ -545,6 +545,7 @@ if ( $title == "City Style" ) {
 	$sidebar = museyon_sidebar();
 
 	$img_info = array(
+    array("file" => "cover.jpg", "alt" => ""),
     array("file" => "title.jpg", "alt" => ""),
     array("file" => "toc.jpg", "alt" => ""),
     array("file" => "forward.jpg", "alt" => ""),
