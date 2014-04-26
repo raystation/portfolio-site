@@ -1,2 +1,31 @@
-RewriteEngine Off
-RewriteRule ^portfolio.php$ portfolio/
+RewriteEngine on
+
+RewriteRule ^work$ work.php
+RewriteRule ^about$ about.php
+RewriteRule ^index$ index.php
+
+RewriteRule ^the3$ the3.php
+RewriteRule ^indiginauts$ indiginauts.php
+RewriteRule ^100-principles-of-game-design$ 100-principles-of-game-design.php
+RewriteRule ^storymaps$ storymaps.php
+RewriteRule ^abriendo-puertas$ abriendo-puertas.php
+RewriteRule ^monkey-mo$ monkey-mo.php
+RewriteRule ^scavenger-hunt$ scavenger-hunt.php
+RewriteRule ^chronicles-of-old-london$ chronicles-of-old-london.php
+RewriteRule ^sarah-walko-wordpress$ sarah-walko-wordpress.php
+RewriteRule ^animore$ animore.php
+RewriteRule ^art-and-paris$ art-and-paris.php
+RewriteRule ^chronicles-of-old-boston$ chronicles-of-old-boston.php
+RewriteRule ^chronicles-of-old-las-vegas$ chronicles-of-old-las-vegas.php
+RewriteRule ^chronicles-of-old-new-york$ chronicles-of-old-new-york.php
+RewriteRule ^chronicles-of-old-paris$ chronicles-of-old-paris.php
+RewriteRule ^chronicles-of-old-rome$ chronicles-of-old-rome.php
+RewriteRule ^city-style$ city-style.php
+RewriteRule ^color-chameleon$ color-chameleon.php
+RewriteRule ^edgeware$ edgeware.php
+RewriteRule ^egg-baby$ egg-baby.php
+RewriteRule ^malado-baldwin-indexhibit$ malado-baldwin-indexhibit.php
+RewriteRule ^malado-baldwin-wordpress$ malado-baldwin-wordpress.php
+RewriteRule ^tiger-tiger$ tiger-tiger.php
+RewriteRule ^idibon$ idibon.php
+
