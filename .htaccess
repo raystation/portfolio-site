@@ -28,4 +28,6 @@ RewriteRule ^malado-baldwin-indexhibit$ malado-baldwin-indexhibit.php
 RewriteRule ^malado-baldwin-wordpress$ malado-baldwin-wordpress.php
 RewriteRule ^tiger-tiger$ tiger-tiger.php
 RewriteRule ^idibon$ idibon.php
+RewriteRule ^darkrai$ darkrai.php
+RewriteRule ^suspended-belief-studios$ suspended-belief-studios.php
 

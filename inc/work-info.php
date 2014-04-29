@@ -3,20 +3,20 @@
 //order of the portfolio pieces
 
 $works = array(
-	array( "name" => "The 3", 										"path" => "the3", 											"thumb" => "thumb.svg" ), //done
+	array( "name" => "The 3", 											"path" => "the3", 											"thumb" => "thumb.svg" ), //done
 	array( "name" => "Indiginauts", 									"path" => "indiginauts", 									"thumb" => "thumb.jpg" ), //copy
-	array( "name" => "100 Principles of Game&nbsp;Design", 		"path" => "100-principles-of-game-design", 			"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Storymaps", 									"path" => "storymaps",									"thumb" => "thumb.jpg" ), //copy
-	array( "name" => "Abriendo Puertas",								"path" => "abriendo-puertas",							"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "100 Principles of Game&nbsp;Design", 		"path" => "100-principles-of-game-design", 				"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Storymaps", 									"path" => "storymaps",										"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "Abriendo Puertas",								"path" => "abriendo-puertas",								"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "Monkey Mo, Monkey&nbsp;Go!",		 		"path" => "monkey-mo",									"thumb" => "thumb.jpg" ), 
 	array( "name" => "Scavenger Hunt", 								"path" => "scavenger-hunt",								"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Chronicles of Old&nbsp;London", 				"path" => "chronicles-of-old-london",					"thumb" => "thumb.jpg" ), //images
 	array( "name" => "Sarah Walko ",									"path" => "sarah-walko-wordpress",						"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "Chronicles of Old&nbsp;Rome",			 	"path" => "chronicles-of-old-rome",						"thumb" => "thumb.jpg" ),
 	array( "name" => "Animore", 										"path" => "animore", 										"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Edgeware", 									"path" => "edgeware",										"thumb" => "thumb.jpg" ), //copy
-	array( "name" => "Art+Paris",										"path" => "art-and-paris",								"thumb" => "thumb.jpg" ),  //images
-	// array( "name" => "idibon", 										"path" => "idibon",										"thumb" => "thumb.jpg" ),
+	array( "name" => "Edgeware", 										"path" => "edgeware",										"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "Art+Paris",										"path" => "art-and-paris",									"thumb" => "thumb.jpg" ),  //images
+	// array( "name" => "idibon", 										"path" => "idibon",											"thumb" => "thumb.jpg" ),
 	array( "name" => "Chronicles of Old New&nbsp;York", 			"path" => "chronicles-of-old-new-york",					"thumb" => "thumb.jpg" ),  //images
 	array( "name" => "Color Chameleon", 							"path" => "color-chameleon",								"thumb" => "thumb.jpg" ), 
 	array( "name" => "Malado Baldwin Wordpress", 					"path" => "malado-baldwin-wordpress",					"thumb" => "thumb.jpg" ),  //done
@@ -24,13 +24,15 @@ $works = array(
 	array( "name" => "Chronicles of Old New&nbsp;Boston", 			"path" => "chronicles-of-old-boston",					"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Chronicles of Old New&nbsp;Las Vegas", 		"path" => "chronicles-of-old-las-vegas",					"thumb" => "thumb.jpg" ), //done
 	array( "name" => "City Style", 										"path" => "city-style",										"thumb" => "thumb.jpg" ), //done
+	array( "name" => "The Rise of Darkrai", 							"path" => "darkrai",										"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Suspended Belief Studios",						"path" => "suspended-belief-studios",						"thumb" => "thumb.jpg" ), //done
 	//array( "name" => "Tiger, Tiger, Tail on Fire!",					"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Arceus: Jewel of&nbsp;Life",					"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Mystery Dungeon 2", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Battle Revolution", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Pocket Pokedex", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Pokemon 15th Anniv", 						"path" => "temp",											"thumb" => "thumb.jpg" ),
-	array( "name" => "Malado Baldwin",					"path" => "malado-baldwin-indexhibit",					"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Malado Baldwin",								"path" => "malado-baldwin-indexhibit",					"thumb" => "thumb.jpg" ), //done
 	//array( "name" => "Toy Fair", 									"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Featured Shops", 							"path" => "temp",											"thumb" => "thumb.jpg" )
 );
@@ -340,10 +342,13 @@ if ( $title == "The 3" ) {
 					';
 
 	$img_info = array(
-    array("file" => "01.jpg", "alt" => ""),
-    array("file" => "02.jpg", "alt" => ""),
-    array("file" => "03.jpg", "alt" => ""),
-    array("file" => "04.jpg", "alt" => "")
+	    array("file" => "01.jpg", "alt" => ""),
+	    array("file" => "02.jpg", "alt" => ""),
+	    array("file" => "03.jpg", "alt" => ""),
+	    array("file" => "04.jpg", "alt" => ""),
+	    array("file" => "05.jpg", "alt" => ""),
+	    array("file" => "06.jpg", "alt" => ""),
+	    array("file" => "07.jpg", "alt" => ""),
 	);	
 
 } //end The 3
@@ -754,6 +759,49 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 
 } //end monkey-mo
 
+
+//  THE RISE OF DARKRAI
+// ===============================
+
+if ( $title == "The Rise of Darkrai" ) {
+
+	$path="img/darkrai/";
+
+	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, obcaecati, accusantium officiis blanditiis odio vel eius laboriosam suscipit amet culpa modi alias. Expedita, est, deleniti, blanditiis odit voluptate nobis reiciendis unde fugiat laudantium voluptatibus illo nam quae delectus consectetur aperiam animi nisi debitis doloribus iste obcaecati corrupti ab reprehenderit harum.';
+	
+	$sidebar = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quasi.";
+
+	$img_info = array(
+    		array("file" => "01.jpg", "alt" => "home screen"),
+    		array("file" => "05.jpg", "alt" => "home screen"),
+    		array("file" => "02.jpg", "alt" => "home screen"),
+    		array("file" => "03.jpg", "alt" => "home screen"),
+    		array("file" => "04.jpg", "alt" => "home screen"),
+	);	
+
+} //end THE RISE OF DARKRAI
+
+
+//  SUSPENDED BELIEF STUDIOS
+// ===============================
+
+if ( $title == "Suspended Belief Studios" ) {
+
+	$path="img/suspended-belief-studios/";
+
+	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, obcaecati, accusantium officiis blanditiis odio vel eius laboriosam suscipit amet culpa modi alias. Expedita, est, deleniti, blanditiis odit voluptate nobis reiciendis unde fugiat laudantium voluptatibus illo nam quae delectus consectetur aperiam animi nisi debitis doloribus iste obcaecati corrupti ab reprehenderit harum.';
+	
+	$sidebar = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quasi.";
+
+	$img_info = array(
+    		array("file" => "01.jpg", "alt" => ""),
+    		array("file" => "02.jpg", "alt" => ""),
+    		array("file" => "03.jpg", "alt" => ""),
+    		array("file" => "04.jpg", "alt" => ""),
+    		array("file" => "05.jpg", "alt" => ""),
+	);	
+
+} //end THE RISE OF DARKRAI
 
 
 
