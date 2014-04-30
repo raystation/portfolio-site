@@ -24,9 +24,9 @@ $works = array(
 	array( "name" => "Chronicles of Old New&nbsp;Boston", 			"path" => "chronicles-of-old-boston",					"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Chronicles of Old New&nbsp;Las Vegas", 		"path" => "chronicles-of-old-las-vegas",					"thumb" => "thumb.jpg" ), //done
 	array( "name" => "City Style", 										"path" => "city-style",										"thumb" => "thumb.jpg" ), //done
-	array( "name" => "The Rise of Darkrai", 							"path" => "darkrai",										"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Suspended Belief Studios",						"path" => "suspended-belief-studios",						"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Arceus and the Jewel of Life",					"path" => "arceus",											"thumb" => "thumb.jpg" ), //done
+	//array( "name" => "The Rise of Darkrai", 							"path" => "darkrai",										"thumb" => "thumb.jpg" ), //done
+	//array( "name" => "Suspended Belief Studios",						"path" => "suspended-belief-studios",						"thumb" => "thumb.jpg" ), //done
+	//array( "name" => "Arceus and the Jewel of Life",					"path" => "arceus",											"thumb" => "thumb.jpg" ), //done
 	//array( "name" => "Tiger, Tiger, Tail on Fire!",					"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Arceus: Jewel of&nbsp;Life",					"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Mystery Dungeon 2", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
@@ -737,9 +737,9 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 		<p>The story follows the adventures of a little boy\'s adventure to the zoo and finding a new best friend. I put a lot of detail into this book and made it somewhat interactive. I hid animals in various spots so as give children an activity to do after they finish.';
 	
 	$sidebar = "Children's Book<br>Published 2010</p>
-		<p>written by: Lin Fong O'Neill</p>
+		<p>written by: Lin Fong O'Neill, <a href='http://www.lotuswriting.com'>Lotus Writing</a><br>Illustrated: by Ray Yuen</p>
 		<p>Hand-drawn and inked, coloring done in Photoshop</p>
-		<p><a href='http://www.lotuswriting.com'>Lotus Writing</p>
+		<p><a href='http://www.amazon.com/Monkey-Mo-Go-Lin-Fong-ONeill/dp/0978644131'>Buy the book</a></p>
 		<p><img width='50%' class='add-top' src='img/monkey-mo/icon_peter.png' alt='' />
 	";
 
