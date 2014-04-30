@@ -30,4 +30,5 @@ RewriteRule ^tiger-tiger$ tiger-tiger.php
 RewriteRule ^idibon$ idibon.php
 RewriteRule ^darkrai$ darkrai.php
 RewriteRule ^suspended-belief-studios$ suspended-belief-studios.php
+RewriteRule ^arceus$ arceus.php
 

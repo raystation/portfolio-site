@@ -26,6 +26,7 @@ $works = array(
 	array( "name" => "City Style", 										"path" => "city-style",										"thumb" => "thumb.jpg" ), //done
 	array( "name" => "The Rise of Darkrai", 							"path" => "darkrai",										"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Suspended Belief Studios",						"path" => "suspended-belief-studios",						"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Arceus and the Jewel of Life",					"path" => "arceus",											"thumb" => "thumb.jpg" ), //done
 	//array( "name" => "Tiger, Tiger, Tail on Fire!",					"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Arceus: Jewel of&nbsp;Life",					"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Mystery Dungeon 2", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
@@ -801,9 +802,27 @@ if ( $title == "Suspended Belief Studios" ) {
     		array("file" => "05.jpg", "alt" => ""),
 	);	
 
-} //end THE RISE OF DARKRAI
+} //end SUSPENDED BELIEF STUDIOS
 
 
+//  arceus
+// ===============================
+
+if ( $title == "Arceus and the Jewel of Life" ) {
+
+	$path="img/arceus/";
+
+	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, obcaecati, accusantium officiis blanditiis odio vel eius laboriosam suscipit amet culpa modi alias. Expedita, est, deleniti, blanditiis odit voluptate nobis reiciendis unde fugiat laudantium voluptatibus illo nam quae delectus consectetur aperiam animi nisi debitis doloribus iste obcaecati corrupti ab reprehenderit harum.';
+	
+	$sidebar = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quasi.";
+
+	$img_info = array(
+    		array("file" => "03.jpg", "alt" => ""),
+    		array("file" => "01.jpg", "alt" => ""),
+    		array("file" => "02.jpg", "alt" => ""),
+	);	
+
+} //end arceus
 
 
 
