@@ -1,22 +1,25 @@
 
 front page, put off for now
 
-about me
+add more icons to quickly identify things
+fix up about me
+pocket pokedex
 footer
 and in alts for images
 forus
 celebrity portraits
+mysetryu Dungeon
+battle Revolution
+
+## need copy 
+arceus
+sb games
+darkrai
 
 add in next/previous buttons
 additional works under details won't show thumbnail of current project
 
 list of video games played all time
-ap copy
-egg baby copy
-color chamaleon
-boston
-vegas
-monkey mo copy
 
 
 	array( "name" => "Abriendo Puertas",								"path" => "temp",											"thumb" => "thumb.jpg" ), //copy

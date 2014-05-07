@@ -24,11 +24,10 @@ $works = array(
 	array( "name" => "Chronicles of Old New&nbsp;Boston", 			"path" => "chronicles-of-old-boston",					"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Chronicles of Old New&nbsp;Las Vegas", 		"path" => "chronicles-of-old-las-vegas",					"thumb" => "thumb.jpg" ), //done
 	array( "name" => "City Style", 										"path" => "city-style",										"thumb" => "thumb.jpg" ), //done
-	//array( "name" => "The Rise of Darkrai", 							"path" => "darkrai",										"thumb" => "thumb.jpg" ), //done
-	//array( "name" => "Suspended Belief Studios",						"path" => "suspended-belief-studios",						"thumb" => "thumb.jpg" ), //done
-	//array( "name" => "Arceus and the Jewel of Life",					"path" => "arceus",											"thumb" => "thumb.jpg" ), //done
-	//array( "name" => "Tiger, Tiger, Tail on Fire!",					"path" => "temp",											"thumb" => "thumb.jpg" ),
-	//array( "name" => "Arceus: Jewel of&nbsp;Life",					"path" => "temp",											"thumb" => "thumb.jpg" ),
+	array( "name" => "The Rise of Darkrai", 							"path" => "darkrai",										"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Suspended Belief Studios",						"path" => "suspended-belief-studios",						"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Arceus and the Jewel of Life",					"path" => "arceus",											"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Tiger, Tiger, Tail on Fire!",					"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Mystery Dungeon 2", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Battle Revolution", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Pocket Pokedex", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
