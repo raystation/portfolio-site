@@ -40,12 +40,23 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-touch-icon-114x114.png">
 	
-	<!-- anal-ytics -->
+	<!-- segment -->
 	<script type="text/javascript">
 		window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
 		window.analytics.load("a2k3w53h8e");
 		window.analytics.page();
 	</script>	
+	<!-- google anal -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50284623-1', 'rayuen.com');
+  ga('send', 'pageview');
+
+</script>
 
 </head>
 <?php require 'inc/work-info.php';?>
@@ -58,14 +69,14 @@
 
 		<nav class="sixteen columns">
 			
-			<h2 class="title"><a href="index.php">Ray Yuen</a></h2>
+			<h2 class="title"><a href="index">Ray Yuen</a></h2>
 			
 			<ul class="add-bottom">
-				<li><a href="work.php">work</a></li>
+				<li><a href="work">work</a></li>
 				<?php //<li>•</li>
 				//<li><a href="projects.php">projects</a></li> ?>
 				<li>•</li>
-				<li><a href="about.php">about</a></li>
+				<li><a href="about">about</a></li>
 			</ul>				
 
 		</nav>

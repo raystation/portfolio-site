@@ -52,7 +52,7 @@ function workthumb($num) {
 	if ( $works[$num] == NULL) {
 		return;
 	}
-	echo '<a href="'.$works[$num]["path"].'.php"><img src="img/'.$works[$num]["path"].'/'.$works[$num]["thumb"].'" class="scale-with-grid"></a>';
+	echo '<a href="'.$works[$num]["path"].'"><img src="img/'.$works[$num]["path"].'/'.$works[$num]["thumb"].'" class="scale-with-grid"></a>';
 	echo "<p>".$works[$num]["name"]."</p>";
 } 
 
