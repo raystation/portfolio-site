@@ -100,6 +100,7 @@ if ( $title == "StoryMaps" ) {
 	<p><a href="http://seanh.github.io/storymaps/">StoryMaps software</a>
 	';
 
+
 	$img_info = array(
     array("file" => "01.jpg", "alt" => "This is your alt text"),
     array("file" => "02.jpg", "alt" => "This is your alt text"),
@@ -162,6 +163,8 @@ if ( $title == "100 Principles of Game&nbsp;Design" ) {
 		240 pages </p>
 		<p><a href="http://www.pearsonhighered.com/educator/product/100-Principles-of-Game-Design/9780321902498.page">Buy a copy</a></p>
 	';
+
+	$img_info = 
 
 	$img_info = array(
 	    array("file" => "book-cover.jpg", "alt" => "Cover of the book"),
@@ -767,9 +770,19 @@ if ( $title == "The Rise of Darkrai" ) {
 
 	$path="img/darkrai/";
 
-	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, obcaecati, accusantium officiis blanditiis odio vel eius laboriosam suscipit amet culpa modi alias. Expedita, est, deleniti, blanditiis odit voluptate nobis reiciendis unde fugiat laudantium voluptatibus illo nam quae delectus consectetur aperiam animi nisi debitis doloribus iste obcaecati corrupti ab reprehenderit harum.';
+	$description = 'The Rise of Darkrai was the 10th Pok&eacute;mon movie made and the third movie I worked on.</p>
+		<p>It was around this time I was finally starting to feel comfortable with the logos I was creating for these movies. The logos were by far the hardest part for me because they went against everything I was taught in school—to simplify and remove. Here it was almost more is better. Ornamental, fun and colorful. It was a little hard to adjust to at first, but eventually we got there.</p>
+		<p>Chris, the creative director and I worked closely on this one. I gave him a bunch of ideas, but they were all missing something. Once he found the typeface we ended up using, it quickly came in place. I thought the gothic typeface really captured the feel of the featured ghost-like character and the look of the movie. After that, localizing the rest of the materials was easy.</p>
+		<p>The website wasn\'t given as much time as we wanted. I handed off some art assets to Masahiro </p>
+		</p>';
 	
-	$sidebar = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quasi.";
+	$sidebar = "February 2008</p>
+				<p><strong>Creative</strong>: Chris&nbsp;Brixey, Ray&nbsp;Yuen</p>
+				<p><strong>Interactive</strong>: Masahiro&nbsp;Manabe</p>
+				<p>Logo, movie poster, marketing materials, DVD packaging, movie mini-site</p>
+				<p><strong>Original title</strong>: Pocket&nbsp;Monsters Diamond & Pearl the Movie: Dialga vs. Palkia vs. Darkrai</p>
+				<p>劇場版ポケットモンスター ダイヤモンド&パール ディアルガVSパルキアVSダークライ</p>
+				";
 
 	$img_info = array(
     		array("file" => "01.jpg", "alt" => "home screen"),
@@ -789,9 +802,10 @@ if ( $title == "Suspended Belief Studios" ) {
 
 	$path="img/suspended-belief-studios/";
 
-	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, obcaecati, accusantium officiis blanditiis odio vel eius laboriosam suscipit amet culpa modi alias. Expedita, est, deleniti, blanditiis odit voluptate nobis reiciendis unde fugiat laudantium voluptatibus illo nam quae delectus consectetur aperiam animi nisi debitis doloribus iste obcaecati corrupti ab reprehenderit harum.';
+	$description = 'Me and my friend Jeremy Klar started this company together. Originally intended to just make games, we\'ve found ourselves in financial straits and since I had some web experience, we took some clients on.' ;
 	
-	$sidebar = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quasi.";
+	$sidebar = "Design studio.</p>
+	<p><a href=\"http://www.suspendedbeliefgames.com\">suspendedbeliefgames.com</a>";
 
 	$img_info = array(
     		array("file" => "01.jpg", "alt" => ""),

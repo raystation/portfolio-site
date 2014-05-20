@@ -16,9 +16,7 @@
 
 		<div class="sixteen columns">
 			<div class="four columns alpha">
-				<?php workthumb(0);  
-
-				?>
+				<?php workthumb(0);  ?>
 			</div>
 
 			<div class="four columns">

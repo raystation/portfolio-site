@@ -1,6 +1,6 @@
 
 front page, put off for now
-
+implement a scan-dir
 add more icons to quickly identify things
 fix up about me
 pocket pokedex
