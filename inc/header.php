@@ -40,6 +40,18 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-touch-icon-114x114.png">
 	
+	<!-- google anal -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-50284623-1', 'rayuen.com');
+	  ga('require', 'displayfeatures');
+	  ga(‘set’, ‘&uid’, {{USER_ID}}); 
+	  ga('send', 'pageview');
+	</script>
+
 </head>
 <?php require 'inc/work-info.php';?>
 <body>
