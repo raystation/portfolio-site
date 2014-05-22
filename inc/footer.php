@@ -84,6 +84,17 @@
 	<!-- Lightbox 2.7.1
 	==================================================  -->
 	<script src="js/lightbox.min.js"></script>
+	<?php 
+		if ( $pageTitle == "Ray Yuen | Hire Me!" ) {
+			echo "<script src=\"js/jquery.tooltipster.min.js\"></script>".
+			"<script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+    </script>";
+		}
+	;?>
+
 	
 
 <!-- End Document

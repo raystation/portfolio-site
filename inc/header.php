@@ -28,6 +28,12 @@
 
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" href="css/lightbox.css">	
+	
+	<?php 
+		if ( $pageTitle == "Ray Yuen | Hire Me!" ) {
+			echo "<link rel=\"stylesheet\" href=\"css/tooltipster.css\">";
+		}
+	;?>	
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
