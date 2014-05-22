@@ -3,6 +3,8 @@ RewriteEngine on
 RewriteRule ^work$ work.php
 RewriteRule ^about$ about.php
 RewriteRule ^index$ index.php
+RewriteRule ^hire-me$ hire-me.php
+RewriteRule ^resume$ resume.php
 
 RewriteRule ^the3$ the3.php
 RewriteRule ^indiginauts$ indiginauts.php

@@ -1,16 +1,17 @@
 <?php 
 
 switch ( $id ) {
+
 	case '354':
 		$company="DeNa";
 		$jobTitle="Graphic Designer";
 		$name="Hiring Manager";
 		$email="something@dena.com";
 		$date="May 21, 2014";
-		$originaljobposting="http://www.indeed.com/viewjob?jk=aa1c202e12339c46&q=(graphic+or+design+or+print+or+illustration)&l=san+francisco&tk=18nvfjmlb06ag44b&from=jarecjobs&utm_source=jobseeker_emails&utm_medium=email&utm_campaign=job_alerts";
+		$originaljobposting="http://www.thefocalpoint.com/about/employment/44";
 
 		$copy="
-		<p>
+		<p class=\"add-top\">
 			The ability to convey a point of view and persuade with images is a powerful skill, especially in the courtroom. I believe with my varied experience in many areas, I can help bring impactful images with a simplicity that won't distract from the point being made.
 		</p>
 		<p>
@@ -27,7 +28,7 @@ switch ( $id ) {
 	
 	default:
 		$company="Hiring Manager";
-		break;	
+		break;
 }
 
 ;?>

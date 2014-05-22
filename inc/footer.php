@@ -12,33 +12,34 @@
 	<footer class="band">
 
 		<div class="container">
-			
-			<div class="four columns">
-
-				<ul>
-					<?php //<li><a href="index.php">home</a></li> ;?>
-					<li><a href="work.php">work</a></li>
-					<li><a href="about.php">about</a></li>
-					<?php //<li><a href="#">news</a></li></ ?>
-				</ul>
-
-			</div>
-
-			<div class="four columns">
-				<p>contact <br>
-					<a href="mailto:rayuen@gmail.com?subject=">rayuen@gmail.com</a>		</p>
-			</div>
-
-			<div class="four columns">
-				<p>
-					social <br>
-					<a href="http://www.linkedin.com/in/rayuen">linkedin.com/rayuen</a>
-				</p>
-			</div>
-
-			<div class="four columns"></div>
 
 			<div class="sixteen columns">
+				<div class="four columns alpha">
+
+					<ul>
+						<?php //<li><a href="index.php">home</a></li> ;?>
+						<li><a href="work.php">work</a></li>
+						<li><a href="about.php">about</a></li>
+						<?php //<li><a href="#">news</a></li></ ?>
+					</ul>
+
+				</div>
+
+				<div class="four columns">
+					<p>contact <br>
+						<a href="mailto:rayuen@gmail.com?subject=">rayuen@gmail.com</a>		</p>
+				</div>
+
+				<div class="four columns">
+					<p>
+						social <br>
+						<a href="http://www.linkedin.com/in/rayuen">linkedin.com/rayuen</a>
+					</p>
+				</div>
+
+				<div class="four columns omega"></div>
+
+
 				<hr>
 				<p> All works &copy; <?php echo date('Y');?> 
 					Raymond Yuen • Please do not reproduce without expressed written consent • built with Skeleton
