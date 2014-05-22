@@ -63,6 +63,9 @@ a, a:visited {
 .center, .portfolio p, nav {
   text-align: center; }
 
+.right {
+  text-align: right; }
+
 .padding, .index-right-column {
   padding: 10px; }
 
@@ -145,6 +148,20 @@ img.scale-with-grid2 {
   .opacity-fade a > img:hover {
     opacity: 0.65; }
 
+.resume-pdf {
+  background-color: lavender;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -moz-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out; }
+  .resume-pdf:hover {
+    background-color: lightblue;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    -moz-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out; }
+
 .portfolio p {
   line-height: 1.25em;
   font-size: 0.75em;
@@ -158,11 +175,10 @@ img.scale-with-grid2 {
     opacity: 0.65; }
 
 .chart > div {
-  font: 10px sans-serif;
+  font: 10pt sans-serif;
   background-color: silver;
-  text-align: right;
   padding: 3px;
-  margin: 1px; }
+  margin: 5px 0; }
 
 .resume-title {
   margin: 0;

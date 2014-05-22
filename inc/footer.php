@@ -31,10 +31,10 @@
 				</div>
 
 				<div class="four columns">
-					<p>
+					<!-- <p>
 						social <br>
 						<a href="http://www.linkedin.com/in/rayuen">linkedin.com/rayuen</a>
-					</p>
+					</p> -->
 				</div>
 
 				<div class="four columns omega"></div>
