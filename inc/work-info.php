@@ -3,11 +3,12 @@
 //order of the portfolio pieces
 
 $works = array(
+	array( "name" => "Suspended Belief Studios",						"path" => "suspended-belief-studios",						"thumb" => "thumb.jpg" ), //done
 	array( "name" => "The 3", 											"path" => "the3", 											"thumb" => "thumb.svg" ), //done
 	array( "name" => "Indiginauts", 									"path" => "indiginauts", 									"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "Abriendo Puertas",								"path" => "abriendo-puertas",								"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "100 Principles of Game&nbsp;Design", 		"path" => "100-principles-of-game-design", 				"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Storymaps", 									"path" => "storymaps",										"thumb" => "thumb.jpg" ), //copy
-	array( "name" => "Abriendo Puertas",								"path" => "abriendo-puertas",								"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "Monkey Mo, Monkey&nbsp;Go!",		 		"path" => "monkey-mo",									"thumb" => "thumb.jpg" ), 
 	array( "name" => "Scavenger Hunt", 								"path" => "scavenger-hunt",								"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Chronicles of Old&nbsp;London", 				"path" => "chronicles-of-old-london",					"thumb" => "thumb.jpg" ), //images
@@ -25,9 +26,8 @@ $works = array(
 	array( "name" => "Chronicles of Old New&nbsp;Las Vegas", 		"path" => "chronicles-of-old-las-vegas",					"thumb" => "thumb.jpg" ), //done
 	array( "name" => "City Style", 										"path" => "city-style",										"thumb" => "thumb.jpg" ), //done
 	array( "name" => "The Rise of Darkrai", 							"path" => "darkrai",										"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Suspended Belief Studios",						"path" => "suspended-belief-studios",						"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Arceus and the Jewel of Life",					"path" => "arceus",											"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Tiger, Tiger, Tail on Fire!",					"path" => "temp",											"thumb" => "thumb.jpg" ),
+	array( "name" => "Arceus and the Jewel of&nbsp;Life",					"path" => "arceus",											"thumb" => "thumb.jpg" ), //done
+	// array( "name" => "Tiger, Tiger, Tail on Fire!",					"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Mystery Dungeon 2", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Battle Revolution", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Pocket Pokedex", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
@@ -770,10 +770,9 @@ if ( $title == "The Rise of Darkrai" ) {
 
 	$path="img/darkrai/";
 
-	$description = 'The Rise of Darkrai was the 10th Pok&eacute;mon movie made and the third movie I worked on.</p>
-		<p>It was around this time I was finally starting to feel comfortable with the logos I was creating for these movies. The logos were by far the hardest part for me because they went against everything I was taught in school—to simplify and remove. Here it was almost more is better. Ornamental, fun and colorful. It was a little hard to adjust to at first, but eventually we got there.</p>
-		<p>Chris, the creative director and I worked closely on this one. I gave him a bunch of ideas, but they were all missing something. Once he found the typeface we ended up using, it quickly came in place. I thought the gothic typeface really captured the feel of the featured ghost-like character and the look of the movie. After that, localizing the rest of the materials was easy.</p>
-		<p>The website wasn\'t given as much time as we wanted. I handed off some art assets to Masahiro </p>
+	$description = 'The Rise of Darkrai was the 10th Pok&eacute;mon movie made and the third movie I worked&nbsp;on.</p>
+		<p>It was around this time I was finally starting to feel comfortable with the logos I was creating for these movies. The logos were by far the hardest part for me because they went against everything I was taught in school—to simplify and remove. Here it was almost more is better. Ornamental, fun and colorful. It was a little hard to adjust to at first, but eventually we got&nbsp;there.</p>
+		<p>Chris, the creative director and I worked closely on this one. I gave him a bunch of ideas, but they were all missing something. Once he found the typeface we ended up using, it quickly came in place. I thought the gothic typeface really captured the feel of the featured ghost-like character and the look of the movie. After that, localizing the rest of the materials was easy.
 		</p>';
 	
 	$sidebar = "February 2008</p>
@@ -802,7 +801,7 @@ if ( $title == "Suspended Belief Studios" ) {
 
 	$path="img/suspended-belief-studios/";
 
-	$description = 'Me and my friend Jeremy Klar started this company together. Originally intended to just make games, we\'ve found ourselves in financial straits and since I had some web experience, we took some clients on.' ;
+	$description = 'Me and my friend Jeremy Klar started this company together. Originally intended to just make games, we have since taken on some web design clients as well.' ;
 	
 	$sidebar = "Design studio.</p>
 	<p><a href=\"http://www.suspendedbeliefgames.com\">suspendedbeliefgames.com</a>";
@@ -821,13 +820,13 @@ if ( $title == "Suspended Belief Studios" ) {
 //  arceus
 // ===============================
 
-if ( $title == "Arceus and the Jewel of Life" ) {
+if ( $title == "Arceus and the Jewel of&nbsp;Life" ) {
 
 	$path="img/arceus/";
 
-	$description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, obcaecati, accusantium officiis blanditiis odio vel eius laboriosam suscipit amet culpa modi alias. Expedita, est, deleniti, blanditiis odit voluptate nobis reiciendis unde fugiat laudantium voluptatibus illo nam quae delectus consectetur aperiam animi nisi debitis doloribus iste obcaecati corrupti ab reprehenderit harum.';
+	$description = '';
 	
-	$sidebar = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quasi.";
+	$sidebar = "";
 
 	$img_info = array(
     		array("file" => "03.jpg", "alt" => ""),

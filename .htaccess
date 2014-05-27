@@ -2,7 +2,7 @@ RewriteEngine on
 
 RewriteRule ^work$ work.php
 RewriteRule ^about$ about.php
-RewriteRule ^index$ index.php
+RewriteRule ^home$ index.php
 RewriteRule ^hire-me$ hire-me.php
 RewriteRule ^resume$ resume.php
 
