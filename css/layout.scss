@@ -175,10 +175,14 @@ img.scale-with-grid2 { width: 100%; height:auto }
 
 .chart > div {
 	font: 10pt sans-serif;
-	background-color: silver;
+	background-color: lighten($link-color,40%);
 	padding: 3px;
 	margin: 5px 0;
-	@extend .white;
+	@include transition( all 0.25s ease-in-out );
+	&:hover {
+		@include transition( all 0.25s ease-in-out );
+		background-color: lighten($link-color,30%);
+	}
 }
 
 .resume-title {
@@ -186,6 +190,15 @@ img.scale-with-grid2 { width: 100%; height:auto }
 	color: steelblue;
 	font-weight: bold;
 	padding: 0;
+}
+
+#history strong a, #history strong a:visited {
+	color: black;
+	@include transition( all 0.25s ease-in-out );
+	&:hover {
+		@include transition( all 0.25s ease-in-out );
+		color: $link-color;
+	}
 }
 
 #animore-full, 

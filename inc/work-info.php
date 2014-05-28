@@ -14,7 +14,7 @@ $works = array(
 	array( "name" => "Chronicles of Old&nbsp;London", 				"path" => "chronicles-of-old-london",					"thumb" => "thumb.jpg" ), //images
 	array( "name" => "Sarah Walko ",									"path" => "sarah-walko-wordpress",						"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "Chronicles of Old&nbsp;Rome",			 	"path" => "chronicles-of-old-rome",						"thumb" => "thumb.jpg" ),
-	array( "name" => "Animore", 										"path" => "animore", 										"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Animore", 										"path" => "project-animore", 										"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Edgeware", 										"path" => "edgeware",										"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "Art+Paris",										"path" => "art-and-paris",									"thumb" => "thumb.jpg" ),  //images
 	// array( "name" => "idibon", 										"path" => "idibon",											"thumb" => "thumb.jpg" ),
@@ -193,9 +193,9 @@ if ( $title == "100 Principles of Game&nbsp;Design" ) {
 
 if ( $title == "Project Animore" ) {
 
-	$path="img/animore/";
+	$path="img/project-animore/";
 
-	$description = "This was a game concept we explored on the idea of mixing things together. We never did figure out the best way to exexcute or make it fun in a free-to-play environment, where all the games were headed at the time on iOS. We also didn't have a developer at the time so it was all a lot of speculation on what would and wouldn't work.</p><p>In the end, we never were able to fully realize the game we wanted to make but I got a lot of great artwork out of it, which is why I am including it here.";
+	$description = "This was a game concept we explored on the idea of mixing things together. We never did figure out the best way to execute or make it fun in a free-to-play environment, where all the games were headed at the time on iOS. We also didn't have a developer at the time so it was all a lot of speculation on what would and wouldn't work.</p><p>In the end, we never were able to fully realize the game we wanted to make but I got a lot of great artwork out of it, which is why I am including it here.";
 
 	$sidebar = 'iOS runner<br>
 		Art  by Ray&nbsp;Yuen &amp; Sun&nbsp;Park<br>

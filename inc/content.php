@@ -52,6 +52,7 @@
 					if ( $title == "The 3" or 
 							$title == "Suspended Belief Studios" or 
 							$title == "Indiginauts" or 
+							$title == "Project Animore" or 
 							$title == "Abriendo Puertas / Opening&nbsp;Doors" or 
 							$title == "Color Chameleon") {
 						include 'inc/related-sb.php';

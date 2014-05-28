@@ -69,7 +69,7 @@
 
 		<nav class="sixteen columns">
 			
-			<h2 class="title"><a href="home">Ray Yuen</a></h2>
+			<h2 class="title"><a href="index">Ray Yuen</a></h2>
 			
 			<ul class="add-bottom">
 				<li><a href="work">work</a></li>
