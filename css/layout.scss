@@ -22,7 +22,7 @@ $font-size: 13pt;
 $line-height: 1.45em;
 $caption-font-size: 11pt;
 $body-font: "Arvo";
-$link-hover-color: darken(steelblue,20%);
+$link-hover-color: darken(steelblue,40%);
 
 $tablet-portrait: "only screen and (min-width: 480px) and (max-width: 767px)";
 
@@ -85,7 +85,11 @@ a,a:visited {
 .bold 				{ font-weight: 900; }
 .arvo 				{ font-family: Arvo, Times, serif; }
 .montserrat 	{ font-family: Montserrat, Helvetica, sans-serif; }
-.float-right { float: right; }
+.float-right 	{ float: right; }
+.float-left 	{ float: left; }
+.visible 			{ display: inherit !important }
+.remove-right { padding-right: 0; padding-top: 0;}
+.remove-bottom{ margin-bottom: 0px; }
 
 hr 						{ width: 100%; border: 1px solid black; }
 
@@ -93,8 +97,6 @@ hr 						{ width: 100%; border: 1px solid black; }
 
 #blobby 			{ background: url('img/dailygifs/blob_2.gif')	}
 
-.visible 			{ display: inherit !important }
-.remove-right  { padding-right: 0; padding-top: 0;}
 
 img.scale-with-grid2 { width: 100%; height:auto }
 
@@ -211,34 +213,32 @@ img.scale-with-grid2 { width: 100%; height:auto }
 ==================================================*/
 
 nav {
-  @extend .center;
 	@extend .uppercase;
 	@extend .montserrat;
 	letter-spacing: 0.25em;
 	.title {
-		a { color: black; }
-		&:before {
-			// content: url('../img/ry-logo.svg') no-repeat;
-			position: absolute;
-			left: 10px;
+		a { 
+			@extend .float-left;
+			color: black; 
 		}
 	}
 
 	ul li {
+		@extend .float-right;
 		font-size: 1rem;
 		margin-right: 0.25em;
 		display: inline;
 		list-style: none;
 		&:last-child { margin-right: 0; }
 		a, a:visited, {
+			@include transition(all 1.0s);
 			font-weight: 400;
 			color: $link-color;
-			@include transition(all 1.0s);
 			&:hover { 
-				color: $link-hover-color;
 				@include transition(all 1.0s);
+				color: $link-hover-color;
 			}
-		}			
+		}
 	}
 }
 

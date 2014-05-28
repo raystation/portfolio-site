@@ -36,7 +36,7 @@ a, a:visited {
   -moz-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
   a:hover, a:visited:hover {
-    color: #294d6b;
+    color: #0d1821;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out; }
@@ -60,7 +60,7 @@ a, a:visited {
 
 /* OPTIONS
 =========================== */
-.center, .portfolio p, nav {
+.center, .portfolio p {
   text-align: center; }
 
 .right {
@@ -93,8 +93,21 @@ a, a:visited {
 .montserrat, .portfolio p, nav {
   font-family: Montserrat, Helvetica, sans-serif; }
 
-.float-right {
+.float-right, nav ul li {
   float: right; }
+
+.float-left, nav .title a {
+  float: left; }
+
+.visible {
+  display: inherit !important; }
+
+.remove-right {
+  padding-right: 0;
+  padding-top: 0; }
+
+.remove-bottom {
+  margin-bottom: 0px; }
 
 hr {
   width: 100%;
@@ -106,13 +119,6 @@ hr {
 
 #blobby {
   background: url("img/dailygifs/blob_2.gif"); }
-
-.visible {
-  display: inherit !important; }
-
-.remove-right {
-  padding-right: 0;
-  padding-top: 0; }
 
 img.scale-with-grid2 {
   width: 100%;
@@ -217,9 +223,6 @@ nav {
   letter-spacing: 0.25em; }
   nav .title a {
     color: black; }
-  nav .title:before {
-    position: absolute;
-    left: 10px; }
   nav ul li {
     font-size: 1rem;
     margin-right: 0.25em;
@@ -228,16 +231,16 @@ nav {
     nav ul li:last-child {
       margin-right: 0; }
     nav ul li a, nav ul li a:visited {
-      font-weight: 400;
-      color: steelblue;
       -webkit-transition: all 1s;
       -moz-transition: all 1s;
-      transition: all 1s; }
+      transition: all 1s;
+      font-weight: 400;
+      color: steelblue; }
       nav ul li a:hover, nav ul li a:visited:hover {
-        color: #294d6b;
         -webkit-transition: all 1s;
         -moz-transition: all 1s;
-        transition: all 1s; }
+        transition: all 1s;
+        color: #0d1821; }
 
 footer p, footer ul {
   font-size: smaller;

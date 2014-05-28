@@ -68,15 +68,14 @@
 	<header class="container add-top">
 
 		<nav class="sixteen columns">
+			<h5 class="title remove-bottom"><a href="index">Ray Yuen</a></h5>
 			
-			<h2 class="title"><a href="index">Ray Yuen</a></h2>
-			
-			<ul class="add-bottom">
-				<li><a href="work">work</a></li>
+			<ul class="remove-bottom">
+				<li><a href="work"><h5>work</h5></a></li>
 				<?php //<li>•</li>
 				//<li><a href="projects.php">projects</a></li> ?>
 				<li>•</li>
-				<li><a href="about">about</a></li>
+				<li><a href="about"><h5>about</h5></a></li>
 			</ul>				
 
 		</nav>
