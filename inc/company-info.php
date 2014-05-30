@@ -98,7 +98,7 @@ case '360':
 
 		$copy="
 		<p class=\"add-top\">
-			Hi there! I've saw your job posting and y'all seem like fun people! I am a graphic designer and illustrator who likes to code on the side. With over <a href='resume#history'>8+ years</a> of experience in design and production and a passion for gaming(I saw Wiimotes, N64 controllers and CliffyB in the photos on your site), I think I could be a welcome addition to your team!
+			Hi there! I saw your job posting and y'all seem like fun people! I am a graphic designer and illustrator who likes to code on the side. With over <a href='resume#history'>8+ years</a> of experience in design and production and a passion for gaming(I saw Wiimotes, N64 controllers and CliffyB in the photos on your site), I think I could be a welcome addition to your team!
 		</p>
 		<p>I'm currently at a <a href='suspended-belief-studios'>gaming startup</a> that is winding down. I come from a print-production background, more recently delving into web design/production. While at Pok&eacute;mon, I worked in the creative department as part of a small team of three, supporting the various departments with their needs. In addition to enforcing the brand standards and guidelines, we worked on a variety of projects including toy packaging, video-game launches, brand standard guides for licensees, strategy guide localization, in-store branding, mini-movie websites...just to name a few. Projects usually all bunched up around video-game/TV/movie launches so good time-management was a must.
 		</p> 
@@ -119,6 +119,123 @@ case '360':
 		";
 
 		break;			
+
+case '101':
+		$company="Academia.edu";
+		$jobTitle="Designer";
+		$name="Richard Price";
+		$logo="http://2.academia-assets.com/images/home2/academia-edu.jpg?c955c2b2909a6b3b334a33da57bb307a";
+		$email="richard@academia.edu";
+		$date="May 29, 2014";
+		$originaljobposting="http://www.academia.edu/hiring/designer";
+
+		$copy="
+		<p class=\"add-top\">
+			Hi there! I saw your posting on Indeed and thought you guys are doing some interesting work (the few papers I've seen have always been hosted on individual sites in various formats). I'm a graphic designer and illustrator who likes to code on the side.
+		</p>
+		<p>
+			I am looking for a position where I can design and also grow as a coder. Here are some sites I've built: <br>
+			<a href='abriendo-puertas'>Abriendo Puertas / Opening Doors</a><br>
+			<a href='http://www.suspendedbeliefgames.com'>Suspended Belief Studios</a><br>
+		</p>
+		<p>
+		I am <a href=\"resume#skills\">highly proficent</a> in <a href='color-chameleon'>Photoshop</a> and <a href='100-principles-of-game-design'>Illustrator</a> as I've been using them for a long time. I am extremely comfortable with HTML/CSS. Programming is a bit of a hobby of mine so I am actively learning other web languages, like Ruby and PHP. I've only learned a little Javascript, but this could be a good excuse to get amazing at it.
+		</p>
+		
+		<div class='four columns add-bottom alpha' ><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>Abriendo Puertas / Opening Doors</a></div>
+
+		<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
+
+		<div class='four columns add-bottom omega'><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
+		<div class='clear'></div>
+
+		<p>Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href=\"resume\">here</a> or below for a PDF. Thank you!			
+		</p>
+		";
+
+		break;	
+
+case '510':
+		$company="Self Aware Games<br>Oakland, CA";
+		$jobTitle="Graphic Designer II";
+		$name;
+		$logo="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPZdVzUtbr4fy3c24OPPh5DCpzP4urFRARDEktLZ-5_7NdfT_Skh6nYXU";
+		$email;
+		$date="May 29, 2014";
+		$originaljobposting="http://www.bigfishgames.com/company/open-positions.html?nl=1&jvi=ouJYYfwT,Job&jvs=Indeed&jvk=Job";
+
+		$copy="
+		<p class=\"add-top\">
+			Hi there! I saw your posting on Indeed and like what you guys do! I am a graphic designer and illustrator with an interest in coding.
+		</p>
+		<p>
+			I am looking for a position in gaming...a place where I can incorporate my design and illustration skills—a place where we can produce high quality design and art and have a great time doing it!
+		</p>
+		<p>
+			I've included links to some design and illustration work I've done.
+			<br>
+			&bull; <a href='indiginauts'>Indiginauts</a><br>
+			&bull; <a href='the3'>The 3</a><br>
+			&bull; <a href='project-animore'>Project Animore</a><br>
+			&bull; <a href='100-principles-of-game-design'>100 Principles of Game Design</a>
+		</p>
+		<p>
+			
+		</p>
+		
+		<div class='four columns add-bottom alpha' ><a class='caption' href='indiginauts'><img class='scale-with-grid' src='img/indiginauts/thumb.jpg'>Indiginauts</a></div>
+
+		<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
+
+		<div class='four columns add-bottom omega'><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
+		<div class='clear'></div>
+
+		<p>Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href=\"resume\">here</a> or below for a PDF. Thank you!			
+		</p>
+		";
+
+		$other="
+			<div class='four columns add-bottom alpha caption'>
+				<hr class='add-top'>
+				<p><strong>Currently Playing</strong></p>
+					<ul>
+						<li><a target='_blank' href='https://itunes.apple.com/us/app/ftl-faster-than-light/id833951143?mt=8'>FTL</a>, iPad</li>
+						<li><a target='_blank' href='http://www.naughtydog.com/games/the_last_of_us/'>The Last of Us</a>, PS3</li>
+						<li><a target='_blank' href='https://itunes.apple.com/us/app/tiny-thief/id656620224?mt=8'>Tiny Thief</a>, iOS</li>
+						<li><a target='_blank' href='>FEZ</a>, PS3</li>
+						<li><a target='_blank' href='https://itunes.apple.com/us/app/zookeeper-battle/id548270497?mt=8'>Zookeeper Battle</a>, iOS</li>
+						<li><a target='_blank' href='http://www.elderscrolls.com/skyrim'>Skyrim</a>, PS3</li>
+					</ul>
+			</div>
+
+			<div class='four columns add-bottom caption'>
+				<hr class='add-top'>
+				<p><strong>Hobbies</strong></p>
+					<ul>
+						<li>Casual Games</li>
+						<li>Basketball</li>
+						<li>Programming</li>
+						<li>Cooking</li>
+						<li>Making Lists</li>
+					</ul>
+			</div>
+
+			<div class='four columns add-bottom caption omega'>
+				<hr class='add-top'>
+				<p><strong>Currently Watching</strong></p>
+					<ul>
+						<li>Game of Thrones</li>
+						<li>Mad Men</li>
+						<li>Old Godzilla movies</li>
+						<li>Bob's Burgers</li>
+						<li>Basketball documentaries</li>
+					</ul>
+			</div>
+
+			<div class='clear'></div>
+		";
+
+		break;					
 
 case '257':
 		$company="Toca Boca";

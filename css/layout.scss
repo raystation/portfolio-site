@@ -20,7 +20,7 @@ $footer-color: darken($bkg-color,7%);
 $footer-text-color: darken($footer-color,40%);
 $font-size: 13pt;
 $line-height: 1.45em;
-$caption-font-size: 11pt;
+$caption-font-size: 10pt;
 $body-font: "Arvo";
 $link-hover-color: darken(steelblue,20%);
 
@@ -128,7 +128,9 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 .caption {
 	font-size: $caption-font-size;
 	line-height: 1.45em;
-	p { margin-bottom: .35em; }
+	p { margin-bottom: .5em; }
+	hr { margin-bottom: .5em; }
+	li { margin-bottom: .2em; }
 }
 
 .opacity-fade {

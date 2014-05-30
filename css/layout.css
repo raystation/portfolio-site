@@ -142,10 +142,14 @@ img.scale-with-grid2 {
     margin-bottom: .45em; }
 
 .caption, .index-right-column {
-  font-size: 11pt;
+  font-size: 10pt;
   line-height: 1.45em; }
   .caption p, .index-right-column p {
-    margin-bottom: .35em; }
+    margin-bottom: .5em; }
+  .caption hr, .index-right-column hr {
+    margin-bottom: .5em; }
+  .caption li, .index-right-column li {
+    margin-bottom: .2em; }
 
 .opacity-fade a > img {
   -webkit-transition: opacity 0.25s ease-in-out;
