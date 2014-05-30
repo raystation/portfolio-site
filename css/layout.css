@@ -84,6 +84,9 @@ a, a:visited {
 .none {
   display: none; }
 
+.hidden {
+  visibility: hidden; }
+
 .bold, .portfolio p {
   font-weight: 900; }
 
@@ -109,6 +112,9 @@ a, a:visited {
 .remove-bottom {
   margin-bottom: 0px; }
 
+.mobile {
+  display: inherit; }
+
 hr {
   width: 100%;
   border: 1px solid black; }
@@ -121,7 +127,7 @@ hr {
   background: url("img/dailygifs/blob_2.gif"); }
 
 img.scale-with-grid2 {
-  width: 100%;
+  max-width: 100%;
   height: auto; }
 
 .strike {
@@ -142,10 +148,14 @@ img.scale-with-grid2 {
     margin-bottom: .45em; }
 
 .caption, .index-right-column {
-  font-size: 11pt;
+  font-size: 10pt;
   line-height: 1.45em; }
   .caption p, .index-right-column p {
-    margin-bottom: .35em; }
+    margin-bottom: .5em; }
+  .caption hr, .index-right-column hr {
+    margin-bottom: .5em; }
+  .caption li, .index-right-column li {
+    margin-bottom: .2em; }
 
 .opacity-fade a > img {
   -webkit-transition: opacity 0.25s ease-in-out;
@@ -267,7 +277,13 @@ footer a:link, footer a:visited {
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 /* All Mobile Sizes (devices and browser) */
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .mobile {
+    display: none; } }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  .mobile {
+    display: none; } }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 /* #Font-Face
 ================================================== */

@@ -20,7 +20,7 @@ $footer-color: darken($bkg-color,7%);
 $footer-text-color: darken($footer-color,40%);
 $font-size: 13pt;
 $line-height: 1.45em;
-$caption-font-size: 11pt;
+$caption-font-size: 10pt;
 $body-font: "Arvo";
 $link-hover-color: darken(steelblue,40%);
 
@@ -82,6 +82,7 @@ a,a:visited {
 .band 				{ width: 100%; background-color: $footer-color; padding: 2em 0 8em 0; color: $footer-text-color; }
 .uppercase		{ text-transform: uppercase; }
 .none 				{ display: none; }
+.hidden 			{ visibility: hidden; }
 .bold 				{ font-weight: 900; }
 .arvo 				{ font-family: Arvo, Times, serif; }
 .montserrat 	{ font-family: Montserrat, Helvetica, sans-serif; }
@@ -90,6 +91,7 @@ a,a:visited {
 .visible 			{ display: inherit !important }
 .remove-right { padding-right: 0; padding-top: 0;}
 .remove-bottom{ margin-bottom: 0px; }
+.mobile 			{ display: inherit; } 
 
 hr 						{ width: 100%; border: 1px solid black; }
 
@@ -98,7 +100,7 @@ hr 						{ width: 100%; border: 1px solid black; }
 #blobby 			{ background: url('img/dailygifs/blob_2.gif')	}
 
 
-img.scale-with-grid2 { width: 100%; height:auto }
+img.scale-with-grid2 { max-width: 100%; height:auto }
 
 .strike { 
 	text-decoration: line-through;
@@ -128,7 +130,9 @@ img.scale-with-grid2 { width: 100%; height:auto }
 .caption {
 	font-size: $caption-font-size;
 	line-height: 1.45em;
-	p { margin-bottom: .35em; }
+	p { margin-bottom: .5em; }
+	hr { margin-bottom: .5em; }
+	li { margin-bottom: .2em; }
 }
 
 .opacity-fade {
@@ -282,9 +286,14 @@ footer {
 @media only screen and (max-width: 767px) {}
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.mobile { display:none; }
+}
+
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+	.mobile { display:none; }
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (min-width: 960px) {}
