@@ -3,23 +3,23 @@
 //order of the portfolio pieces
 
 $works = array(
-	array( "name" => "Suspended Belief Studios",						"path" => "suspended-belief-studios",						"thumb" => "thumb.jpg" ), //done
 	array( "name" => "The 3", 											"path" => "the3", 											"thumb" => "thumb.svg" ), //done
 	array( "name" => "Indiginauts", 									"path" => "indiginauts", 									"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "Abriendo Puertas",								"path" => "abriendo-puertas",								"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "Suspended Belief Studios",						"path" => "suspended-belief-studios",						"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Animore", 										"path" => "project-animore", 										"thumb" => "thumb.jpg" ), //done
 	array( "name" => "100 Principles of Game&nbsp;Design", 		"path" => "100-principles-of-game-design", 				"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Storymaps", 									"path" => "storymaps",										"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "Chronicles of Old&nbsp;London", 				"path" => "chronicles-of-old-london",					"thumb" => "thumb.jpg" ), //images
 	array( "name" => "Monkey Mo, Monkey&nbsp;Go!",		 		"path" => "monkey-mo",									"thumb" => "thumb.jpg" ), 
 	array( "name" => "Scavenger Hunt", 								"path" => "scavenger-hunt",								"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Chronicles of Old&nbsp;London", 				"path" => "chronicles-of-old-london",					"thumb" => "thumb.jpg" ), //images
+	array( "name" => "Color Chameleon", 							"path" => "color-chameleon",								"thumb" => "thumb.jpg" ), 
+	array( "name" => "Storymaps", 									"path" => "storymaps",										"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "Sarah Walko ",									"path" => "sarah-walko-wordpress",						"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "Chronicles of Old&nbsp;Rome",			 	"path" => "chronicles-of-old-rome",						"thumb" => "thumb.jpg" ),
-	array( "name" => "Animore", 										"path" => "project-animore", 										"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Edgeware", 										"path" => "edgeware",										"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "Art+Paris",										"path" => "art-and-paris",									"thumb" => "thumb.jpg" ),  //images
 	// array( "name" => "idibon", 										"path" => "idibon",											"thumb" => "thumb.jpg" ),
 	array( "name" => "Chronicles of Old New&nbsp;York", 			"path" => "chronicles-of-old-new-york",					"thumb" => "thumb.jpg" ),  //images
-	array( "name" => "Color Chameleon", 							"path" => "color-chameleon",								"thumb" => "thumb.jpg" ), 
 	array( "name" => "Malado Baldwin Wordpress", 					"path" => "malado-baldwin-wordpress",					"thumb" => "thumb.jpg" ),  //done
 	array( "name" => "Egg Baby", 										"path" => "egg-baby",										"thumb" => "thumb.jpg" ),  //more images
 	array( "name" => "Chronicles of Old New&nbsp;Boston", 			"path" => "chronicles-of-old-boston",					"thumb" => "thumb.jpg" ), //done
@@ -163,8 +163,6 @@ if ( $title == "100 Principles of Game&nbsp;Design" ) {
 		240 pages </p>
 		<p><a href="http://www.pearsonhighered.com/educator/product/100-Principles-of-Game-Design/9780321902498.page">Buy a copy</a></p>
 	';
-
-	$img_info = 
 
 	$img_info = array(
 	    array("file" => "book-cover.jpg", "alt" => "Cover of the book"),

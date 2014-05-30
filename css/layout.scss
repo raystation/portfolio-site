@@ -82,10 +82,12 @@ a,a:visited {
 .band 				{ width: 100%; background-color: $footer-color; padding: 2em 0 8em 0; color: $footer-text-color; }
 .uppercase		{ text-transform: uppercase; }
 .none 				{ display: none; }
+.hidden 			{ visibility: hidden; }
 .bold 				{ font-weight: 900; }
 .arvo 				{ font-family: Arvo, Times, serif; }
 .montserrat 	{ font-family: Montserrat, Helvetica, sans-serif; }
-.float-right { float: right; }
+.float-right 	{ float: right; }
+.mobile 			{ display: inherit; } 
 
 hr 						{ width: 100%; border: 1px solid black; }
 
@@ -96,7 +98,7 @@ hr 						{ width: 100%; border: 1px solid black; }
 .visible 			{ display: inherit !important }
 .remove-right  { padding-right: 0; padding-top: 0;}
 
-img.scale-with-grid2 { width: 100%; height:auto }
+img.scale-with-grid2 { max-width: 100%; height:auto }
 
 .strike { 
 	text-decoration: line-through;
@@ -282,9 +284,14 @@ footer {
 @media only screen and (max-width: 767px) {}
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.mobile { display:none; }
+}
+
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+	.mobile { display:none; }
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (min-width: 960px) {}

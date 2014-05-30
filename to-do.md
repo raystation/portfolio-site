@@ -1,20 +1,27 @@
 
-front page, put off for now
-implement a scan-dir
-add more icons to quickly identify things
-fix up about me
+- index, put off for now
+- add more icons to quickly identify things
+
+# RESUME ADDITIONS
+- 2-3 years experience working in a professional design environment as part of a larger team or freelance experience on a wide range of client products
+- Experience launching branding, marketing or advertising initiatives
+- Familiar with content development, marketing strategies, web analytics, and comfortable managing relationships with outside vendors
+- Possess a keen eye for design, able to work within a brand framework and help nurture one
+- Organized copy and material for design projects from internal teams or external sources (e.g. worked with a client or freelancer to produce a promotional video)
+- Worked closely with marketing or advertising personnel to strategize brand and product communication
+- Must possess excellent knowledge of layout, graphic design, composition, pre-press, digital file preparation, art, illustration, photography, printing production techniques and standards
+- Ability to work effectively in a team environment and to direct outside vendors
+- Strong project organizational skills required; able to successfully juggle multiple projects and to prioritize tasks
+
+# PROJECTS TO ADD
 pocket pokedex
-footer
 and in alts for images
 forus
 celebrity portraits
-mysetryu Dungeon
-battle Revolution
+Mystery Dungeon
+Battle Revolution
 
-## need copy 
-arceus
-sb games
-darkrai
+
 
 add in next/previous buttons
 additional works under details won't show thumbnail of current project

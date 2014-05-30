@@ -27,7 +27,7 @@
 	<link rel="stylesheet" href="css/layout.css">
 
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<link rel="stylesheet" href="css/lightbox.mincss">	
+	<link rel="stylesheet" href="css/lightbox.min.css">	
 	
 	<?php 
 		if ( $pageTitle == "Ray Yuen | Hire Me!" ) {
