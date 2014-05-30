@@ -237,34 +237,148 @@ case '510':
 
 		break;					
 
-case '257':
+case '212':
+		$company="Crunchyroll";
+		$jobTitle="Visual Designer";
+		$name;
+		$logo="http://www.pakman.com/wp-content/uploads/2013/12/CrunchyRoll-Logo.jpg";
+		$email;
+		$date="May 29, 2014";
+		$originaljobposting="http://www.crunchyroll.com/jobs/13454/detail?gh_jid=13454";
+
+		$copy="
+		<p class=\"add-top\">
+			<div class='four columns alpha'>
+			<img class='scale-with-grid' src='http://i.imgur.com/GGtiS45.jpg'>
+			</div>
+			Hello! I saw your posting and I, really liking manga and anime, couldn't pass up this opportunity to get in touch. I am a graphic designer and illustrator with some experience in programming.
+		</p>
+		<p>
+			I have over <a href=\"resume#history\">8+ years</a> working in design and marketing. At <em>The Pok&eacute;mon Company</em>, I worked in the creative department as part of a small team of three, supporting the internal departments with their various needs. In addition to enforcing the brand standards and guidelines, we worked on projects like toy packaging, video-game launches, strategy guide localization, <a href='darkrai'>mini-movie websites</a>...just to name a few. When projects were too big to be handled in-house, we managed outside vendors and got things produced in a timely manner.
+		</p> 
+		<p>
+		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. I became a master in Illustrator since all the Pok&eacute;mon artwork is in that format. 
+		</p>
+
+		<div class='four columns add-bottom alpha' ><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>Rise of Darkrai</a></div>
+
+		<div class='four columns add-bottom '><a class='caption' href='arceus'><img class='scale-with-grid' src='img/arceus/thumb.jpg'>Arceus</a></div>
+
+		<div class='four columns add-bottom omega'><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
+		<div class='clear'></div>		
+
+		<p>
+			Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href=\"resume\">here</a> or a PDF version below. Thank you!
+		</p>";
+
+		$other="
+			<div class='four columns add-bottom alpha caption'>
+				<hr class='add-top'>
+				<p><strong>Favorite Pok&eacute;mon</strong></p>
+					<ul>
+						<li>Piplup</li>
+						<li>Heracross</li>
+						<li>Garchomp</li>
+						<li>Combee</li>
+						<li>Alakazam</li>
+					</ul>
+			</div>
+
+			<div class='four columns add-bottom caption'>
+				<hr class='add-top'>
+				<p><strong>Fav. Anime/Manga</strong></p>
+					<ul>
+						<li>One Piece</li>
+						<li>Naruto</li>
+						<li>Cowboy Bebop</li>
+						<li>Attack on Titan</li>
+					</ul>
+			</div>
+
+			<div class='four columns add-bottom caption omega'>
+				<hr class='add-top'>
+				<p><strong>Fav. characters</strong></p>
+					<ul>
+						<li>Sanji</li>
+						<li>Monkey D. Luffy</li>
+						<li>Rock Lee</li>
+						<li>Spike Spiegel</li>
+						<li>Jiraiya</li>
+					</ul>
+			</div>
+			";	
+
+		break;		
+
+case '415':
 		$company="Toca Boca";
 		$jobTitle="Designer";
 		$name;
-		$logo="http://s3.amazonaws.com/resumator/customer_20120721194456_RSBNQFONZCPNYPUP/logos/20120721195423_tb_logo_50.png";
+		$logo="http://ilbuono.co.uk/wp-content/uploads/2013/01/logo_5001.png";
 		$email;
-		$date="May 28, 2014";
+		$date="May 30, 2014";
 		$originaljobposting="http://tocaboca.theresumator.com/apply/ZoeHry/Designer.html";
 
 		$copy="
 		<p class=\"add-top\">
-			I am writing in regards to your designer position that was posted a little at the beginning of this month. I realize that this email may not be timely, but I hope I can still be considered for placement, or for a <a href=\"http://careers.williams-sonomainc.com/pottery-barn-teen/job/San-Francisco-Catalog-Production-Assistant-Pottery-Barn-Teen-CA-94111/59492600/\" target=\"_blank\">similiar position</a> in the future.
+			Hallå! I saw your posting and after looking you guys up, decided I LOVE what you guys do! Y'all seem so fun! I am a designer and an illustrator with some experience in programming. I am looking for a position where I can contribute to a team and do amazing work and also have fun doing it. I am a firm believer in the play experience—people learn by doing. 
 		</p>
 		<p>
-			I have over <a href=\"resume#history\">8+ years</a> working in design and marketing. I come from a print-production background, more recently delving into web design/production. At The Pok&eacute;mon Company, I worked as part of a small team of three, supporting the various departments with their various needs. We worked on things like toy packaging, video-game launches, strategy guide localization, mini-movie websites...just to name a few. We did this all while maintaining the brand standards passed on from Japan. 
+			I am currently winding down with my gaming startup. We worked on a few big projects, where I contributed original artwork, UI design, logo design and game design. I also used to work at Pok&eacute;mon. I also used to work at Pok&eacute;mon where we serviced all the internal departments with their creative needs. 
 		</p> 
 		<p>
-		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. Programming is a bit of a hobby of mine—I am extremely comfortable with HTML/CSS and am actively learning other web languages, like Javascript/jQuery, PHP and Ruby on Rails. I am also highly skilled in <a href=\"monkey-mo\">drawing</a>. 
+		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. I've been using Photoshop since high school and all the Pok&eacute;mon artwork was in Illustrator format.
 		</p>
+
+		<div class='four columns add-bottom alpha' ><a class='caption' href='indiginauts'><img class='scale-with-grid' src='img/indiginauts/thumb.jpg'>Indiginauts</a></div>
+
+		<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
+
+		<div class='four columns add-bottom omega'><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
+		<div class='clear'></div>	
+
 		<p>
-			Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume in PDF format below or an online version <a href=\"resume\">here</a>. Thank you!
+			Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
 		</p>";
 
-		break;				
+		break;
+
+case '88':
+		$company="YMCA of San Francisco";
+		$jobTitle="Graphics Design Associate";
+		$name;
+		$logo="http://www.indeed.com/cmp/_s/logos/e28b994824ced938";
+		$email="presidiohr@ymcasf.net";
+		$date="May 30, 2014";
+		$originaljobposting="http://www.ymcasf.org/who_we_are/employment/job_listings/detail/1355_graphics_design_associate";
+
+		$copy="
+		<p class=\"add-top\">
+			Hi! I saw your job posting and since I am a huge fan and a regular at the YMCA in Chinatown, I thought I would get in touch. I am a graphic designer and illustrator with experience in UI and programming.
+		</p>
+		<p>
+			I think one of the reason I really like the YMCA is that it's a family environment. I usually go to the Y to play basketball with the teens, but if there are just children around, I will play <a href='http://www.wikihow.com/Play-Horse-(the-Basketball-Game)'>H-O-R-S-E</a> with them (if they aren't too shy). I love kids! I've considered volunteering my time, but thought I should get some regular income first.
+		</p> 
+		<p>
+			I have publishing, design and production experience from over <a href=\"resume#history\">8+ years</a> working in in-house creative departments and supporting marketing departments. I used to work at <em>Equinox Fitness Clubs</em> where we maintained over 13 clubs in the New York metro area. We produced collateral (a lot of it by hand) like business cards, membership cards, posters for special classes, special promotion tickets, quarterly reports...
+		</p>
+
+		<div class='four columns add-bottom alpha' ><a class='caption' href='chronicles-of-old-new-york'><img class='scale-with-grid' src='img/chronicles-of-old-new-york/thumb.jpg'>Chronicles of Old NY</a></div>
+
+		<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
+
+		<div class='four columns add-bottom omega'><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>The Rise of Darkrai</a></div>
+		<div class='clear'></div>	
+
+		<p>
+			Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
+		</p>";
+
+		break;					
 
 	
 	default:
-		$company="To: Hiring Manager";
+		$company="Hiring Manager";
 		$copy="
 		<p class=\"add-top\">
 			I have worked in the design field for over 8 years and have a solid traditional print background. I used to work at Pokemon, in a small in-house creative team consisting of 3 people. The experience that would most interest you was our work supporting the publishing department (primarily with strategy guides). We would usually have big a diverse range of design work centered around any major video-game or movie releases, so time and project management was essential. More recently, I've been working with an independent publisher designing and laying out their travel guides. 
