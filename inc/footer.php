@@ -84,6 +84,19 @@
 	<!-- Lightbox 2.7.1
 	==================================================  -->
 	<script src="js/lightbox.min.js"></script>
+
+	<!-- headroom -->
+	<script src="js/headroom.js"></script>
+	<script>
+		var myElement = document.querySelector("header");
+		// var headroom  = new Headroom(myElement);
+		var headroom = new Headroom(myElement, {
+		  "tolerance": 10,
+		  "offset": 50,
+		});		
+		headroom.init();
+	</script>
+
 	<?php 
 		if ( $pageTitle == "Ray Yuen | Hire Me!" ) {
 			echo "<script src=\"js/jquery.tooltipster.min.js\"></script>".
@@ -91,9 +104,11 @@
         $(document).ready(function() {
             $('.tooltip').tooltipster();
         });
-    </script>";
+    	</script>";
 		}
 	;?>
+
+	<div class="responsive-indicator"></div>
 
 	
 

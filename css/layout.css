@@ -24,7 +24,9 @@ body {
   color: #333333;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
-  -webkit-text-size-adjust: 100%; }
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-text-size-adjust: 100%;
+  margin-top: 70px; }
 
 h5 {
   font-size: 1.25em; }
@@ -78,7 +80,10 @@ a, a:visited {
   padding: 2em 0 8em 0;
   color: #878787; }
 
-.uppercase, .portfolio p, nav {
+.navband {
+  width: 100%; }
+
+.uppercase, .headroom nav, .portfolio p {
   text-transform: uppercase; }
 
 .none {
@@ -93,14 +98,17 @@ a, a:visited {
 .arvo, h1, h2, h3, h4, h5 {
   font-family: Arvo, Times, serif; }
 
-.montserrat, .portfolio p, nav {
+.montserrat, .headroom nav, .portfolio p {
   font-family: Montserrat, Helvetica, sans-serif; }
 
-.float-right, nav ul li {
+.float-right {
   float: right; }
 
-.float-left, nav .title a {
+.float-left {
   float: left; }
+
+.last {
+  margin-right: 0px; }
 
 .visible {
   display: inherit !important; }
@@ -164,25 +172,65 @@ img.scale-with-grid2 {
   .opacity-fade a > img:hover {
     opacity: 0.65; }
 
-.resume-pdf {
-  background-color: lavender;
-  padding: 10px;
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
-  -webkit-transition: background-color 0.25s ease-in-out;
-  -moz-transition: background-color 0.25s ease-in-out;
-  transition: background-color 0.25s ease-in-out; }
-  .resume-pdf:hover {
-    background-color: lightblue;
-    -webkit-transition: background-color 0.25s ease-in-out;
-    -moz-transition: background-color 0.25s ease-in-out;
-    transition: background-color 0.25s ease-in-out; }
+.headroom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: white;
+  padding: 25px 0 10px 0;
+  font-size: 14pt;
+  -webkit-transition: all 0.75s ease-in-out;
+  -moz-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out; }
+  .headroom nav {
+    letter-spacing: 0.15em; }
+    .headroom nav .title {
+      font-size: 25px;
+      text-align: left;
+      float: left; }
+      .headroom nav .title a, .headroom nav .title a:visited {
+        color: black; }
+        .headroom nav .title a:hover, .headroom nav .title a:visited:hover {
+          color: gray; }
+    .headroom nav ul {
+      text-align: right; }
+      .headroom nav ul li {
+        font-size: 1rem;
+        display: inline;
+        list-style: none;
+        margin-right: 2em; }
+        @media only screen and (max-width: 767px) {
+          .headroom nav ul li {
+            margin-right: 1em; } }
+        .headroom nav ul li:last-child {
+          margin-right: 0; }
+        .headroom nav ul li a, .headroom nav ul li a:visited {
+          -webkit-transition: all 0.25s;
+          -moz-transition: all 0.25s;
+          transition: all 0.25s;
+          font-weight: 400;
+          color: black; }
+          .headroom nav ul li a:hover, .headroom nav ul li a:visited:hover {
+            -webkit-transition: all 0.25s;
+            -moz-transition: all 0.25s;
+            transition: all 0.25s;
+            color: silver; }
+
+.headroom--pinned {
+  top: 0; }
+
+.headroom--unpinned {
+  top: -100px; }
 
 .portfolio p {
   line-height: 1.25em;
   font-size: 0.75em;
   letter-spacing: 0.15em; }
+  @media only screen and (max-width: 767px) {
+    .portfolio p {
+      font-size: 1em; } }
 .portfolio img {
   opacity: 1;
   -webkit-transition: all 0.25s ease-in-out;
@@ -211,6 +259,21 @@ img.scale-with-grid2 {
   font-weight: bold;
   padding: 0; }
 
+.resume-pdf {
+  background-color: lavender;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -moz-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out; }
+  .resume-pdf:hover {
+    background-color: lightblue;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    -moz-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out; }
+
 #history strong a, #history strong a:visited {
   color: black;
   -webkit-transition: all 0.25s ease-in-out;
@@ -226,31 +289,6 @@ img.scale-with-grid2 {
 #edgeware-full,
 #eggbaby-full {
   display: none; }
-
-/* NAV STYLES
-==================================================*/
-nav {
-  letter-spacing: 0.25em; }
-  nav .title a {
-    color: black; }
-  nav ul li {
-    font-size: 1rem;
-    margin-right: 0.25em;
-    display: inline;
-    list-style: none; }
-    nav ul li:last-child {
-      margin-right: 0; }
-    nav ul li a, nav ul li a:visited {
-      -webkit-transition: all 1s;
-      -moz-transition: all 1s;
-      transition: all 1s;
-      font-weight: 400;
-      color: steelblue; }
-      nav ul li a:hover, nav ul li a:visited:hover {
-        -webkit-transition: all 1s;
-        -moz-transition: all 1s;
-        transition: all 1s;
-        color: #0d1821; }
 
 footer p, footer ul {
   font-size: smaller;
@@ -273,18 +311,30 @@ footer a:link, footer a:visited {
 
 /* #Media Queries
 ================================================== */
+/* Larger than 960px (devices and browsers) */
 /* Smaller than standard 960 (devices and browsers) */
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 /* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  .mobile {
+    display: none; }
+
+  .title {
+    float: none; } }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .mobile {
-    display: none; } }
+    display: none; }
+
+  .title {
+    float: none; } }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
+  .title {
+    float: none; }
+
   .mobile {
     display: none; } }
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 /* #Font-Face
 ================================================== */
 /* 	This is the proper syntax for an @font-face file

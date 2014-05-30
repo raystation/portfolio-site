@@ -65,21 +65,18 @@
 	<!-- Primary Page Layout
 	================================================== -->
 		
-	<header class="container add-top">
+	<header class="navband headroom">
+		<div class="container">
+			<nav class="sixteen columns">
+				<div class="title"><a href="index">Ray Yuen</a></div>
+				<ul>
+					<li><a href="work">work</a></li>
+					<li><a href="about">about</a></li>
+					<?php //<li><a href="projects.php">projects</a></li> ?>
+				</ul>				
 
-		<nav class="sixteen columns">
-			<h5 class="title remove-bottom"><a href="index">Ray Yuen</a></h5>
-			
-			<ul class="remove-bottom">
-				<li><a href="work"><h5>work</h5></a></li>
-				<?php //<li>•</li>
-				//<li><a href="projects.php">projects</a></li> ?>
-				<li>•</li>
-				<li><a href="about"><h5>about</h5></a></li>
-			</ul>				
-
-		</nav>
-		
+			</nav>
+		</div>
 	</header>
 
 	<div class="container add-bottom opacity-fade">

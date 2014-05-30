@@ -9,6 +9,7 @@
 
 //INCLUDES ==================================================
 @import 'bourbon/bourbon';
+// @import 'scss/responsive-indicator';
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
@@ -24,7 +25,12 @@ $caption-font-size: 10pt;
 $body-font: "Arvo";
 $link-hover-color: darken(steelblue,40%);
 
-$tablet-portrait: "only screen and (min-width: 480px) and (max-width: 767px)";
+$desktop-large: "only screen and (min-width: 960px)";
+$desktop: "only screen and (max-width: 959px)";
+$tablet-portrait: "only screen and (min-width: 768px) and (max-width: 959px)";
+$mobile: "only screen and (max-width: 767px)";
+$mobile-landscape: "only screen and (min-width: 480px) and (max-width: 767px)";
+$mobile-portrait: "only screen and (max-width: 479px)";
 
 
 // MIXIN ==================================================
@@ -45,7 +51,9 @@ body {
 	background-color: $bkg-color; 
 	color: $txt-color;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 	-webkit-text-size-adjust: 100%;	
+	margin-top: 70px;
 }
 h1, h2, h3, h4, h5 {
 	@extend .arvo;
@@ -80,6 +88,7 @@ a,a:visited {
 .padding 			{ padding: 10px; }
 .fixed 				{ height: 80%; }
 .band 				{ width: 100%; background-color: $footer-color; padding: 2em 0 8em 0; color: $footer-text-color; }
+.navband			{ width: 100%; }
 .uppercase		{ text-transform: uppercase; }
 .none 				{ display: none; }
 .hidden 			{ visibility: hidden; }
@@ -88,6 +97,7 @@ a,a:visited {
 .montserrat 	{ font-family: Montserrat, Helvetica, sans-serif; }
 .float-right 	{ float: right; }
 .float-left 	{ float: left; }
+.last 				{ margin-right: 0px; }
 .visible 			{ display: inherit !important }
 .remove-right { padding-right: 0; padding-top: 0;}
 .remove-bottom{ margin-bottom: 0px; }
@@ -142,19 +152,72 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	}
 }
 
-.resume-pdf {
-	background-color: lavender;
-	padding:10px;
-	width: 50px;
-	height: 50px;
-	border-radius:5px;
-	@include transition( background-color 0.25s ease-in-out ); 
-	&:hover { 
-		background-color: lightblue; 
-		@include transition( background-color 0.25s ease-in-out ); 
+// HEADER
+// ========================
+
+.headroom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: white;
+  padding: 25px 0 10px 0;
+  font-size: 14pt;
+  @include transition( all 0.75s ease-in-out );
+	
+	nav {
+		@extend .uppercase;
+		@extend .montserrat;
+		letter-spacing: 0.15em;
+
+		.title {
+			font-size: 25px;
+			text-align: left;
+			float: left;
+
+			a, a:visited { 
+				color: black; 
+				&:hover {
+					color: gray;
+				}
+			}
+		}
+		ul {
+			text-align: right;
+
+			li {
+				font-size: 1rem;
+				display: inline;
+				list-style: none;
+				margin-right: 2em;
+				@media #{$mobile} { 
+					margin-right: 1em;
+				}
+				&:last-child { margin-right: 0; }
+				a, a:visited {
+					@include transition(all 0.25s);
+					font-weight: 400;
+					color: black;
+					&:hover { 
+						@include transition(all 0.25s);
+						color: silver;
+					}
+				}
+			}
+		}
 	}
 }
 
+.headroom--pinned {
+	top: 0;
+	// transform: translateY( 0% );
+}
+
+.headroom--unpinned {
+	top: -100px;
+	// transform: translateY( -100% );
+}
 
 // PORTFOLIO PAGE 
 // ======================================
@@ -168,6 +231,9 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		line-height: 1.25em;
 		font-size: 0.75em;
 		letter-spacing: 0.15em;
+		@media #{$mobile} { 
+			font-size: 1em;
+		}		
 	}	
 	img {
 	opacity: 1;
@@ -198,6 +264,19 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	padding: 0;
 }
 
+.resume-pdf {
+	background-color: lavender;
+	padding:10px;
+	width: 50px;
+	height: 50px;
+	border-radius:5px;
+	@include transition( background-color 0.25s ease-in-out ); 
+	&:hover { 
+		background-color: lightblue; 
+		@include transition( background-color 0.25s ease-in-out ); 
+	}
+}
+
 #history strong a, #history strong a:visited {
 	color: black;
 	@include transition( all 0.25s ease-in-out );
@@ -211,40 +290,6 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 #edgeware-full,
 #eggbaby-full
 { display: none; }
-
-
-/* NAV STYLES
-==================================================*/
-
-nav {
-	@extend .uppercase;
-	@extend .montserrat;
-	letter-spacing: 0.25em;
-	.title {
-		a { 
-			@extend .float-left;
-			color: black; 
-		}
-	}
-
-	ul li {
-		@extend .float-right;
-		font-size: 1rem;
-		margin-right: 0.25em;
-		display: inline;
-		list-style: none;
-		&:last-child { margin-right: 0; }
-		a, a:visited, {
-			@include transition(all 1.0s);
-			font-weight: 400;
-			color: $link-color;
-			&:hover { 
-				@include transition(all 1.0s);
-				color: $link-hover-color;
-			}
-		}
-	}
-}
 
 
 // FOOTER
@@ -272,9 +317,11 @@ footer {
 	}
 }
 
-
 /* #Media Queries
 ================================================== */
+
+/* Larger than 960px (devices and browsers) */
+@media only screen and (min-width: 960px) {}
 
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {}
@@ -283,20 +330,24 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 959px) {}
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+	.mobile { display:none; }
+	.title  { float: none; }	
+}
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	.mobile { display:none; }
+	.title  { float: none; }
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
+	.title  { float: none; }
 	.mobile { display:none; }
 }
 
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (min-width: 960px) {}
+
 
 
 /* #Font-Face
