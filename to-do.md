@@ -15,15 +15,12 @@
 
 # PROJECTS TO ADD
 pocket pokedex
-and in alts for images
+add in alts for images
 forus
 celebrity portraits
 Mystery Dungeon
 Battle Revolution
 
-
-
-add in next/previous buttons
 additional works under details won't show thumbnail of current project
 
 list of video games played all time

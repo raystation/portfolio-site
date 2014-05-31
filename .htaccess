@@ -7,6 +7,7 @@ RewriteRule ^hire-me$ hire-me.php
 RewriteRule ^resume$ resume.php
 
 RewriteRule ^100-principles-of-game-design$ 100-principles-of-game-design.php
+RewriteRule ^15th-anniversary$ 15th-anniversary.php
 RewriteRule ^abriendo-puertas$ abriendo-puertas.php
 RewriteRule ^project-animore$ project-animore.php
 RewriteRule ^arceus$ arceus.php

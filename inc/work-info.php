@@ -33,6 +33,7 @@ $works = array(
 	//array( "name" => "Pocket Pokedex", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Pokemon 15th Anniv", 						"path" => "temp",											"thumb" => "thumb.jpg" ),
 	array( "name" => "Malado Baldwin",								"path" => "malado-baldwin-indexhibit",					"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Pok&eacute;mon 15th Anniversary",		"path" => "15th-anniversary",					"thumb" => "thumb.jpg" ), //done
 	//array( "name" => "Toy Fair", 									"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Featured Shops", 							"path" => "temp",											"thumb" => "thumb.jpg" )
 );
@@ -830,6 +831,28 @@ if ( $title == "Arceus and the Jewel of&nbsp;Life" ) {
     		array("file" => "03.jpg", "alt" => ""),
     		array("file" => "01.jpg", "alt" => ""),
     		array("file" => "02.jpg", "alt" => ""),
+	);	
+
+} //end arceus
+
+//  POKEMON 15TH ANNIVERSARY
+// ===============================
+
+if ( $title == "Pok&eacute;mon: 15th Anniversary" ) {
+
+	$path="img/15th-anniversary/";
+
+	$description = '';
+	
+	$sidebar = "Bryant Park";
+
+	$img_info = array(
+    		array("file" => "01.jpg", "alt" => ""),
+    		array("file" => "02.jpg", "alt" => ""),
+    		array("file" => "03.jpg", "alt" => ""),
+    		array("file" => "04.jpg", "alt" => ""),
+    		array("file" => "05.jpg", "alt" => ""),
+    		array("file" => "06.jpg", "alt" => ""),
 	);	
 
 } //end arceus

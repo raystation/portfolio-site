@@ -52,7 +52,7 @@ case '090':
 		break;			
 
 case '431':
-		$company="Twitch <br> 225 Bush St. ";
+		$company="Twitch";
 		$jobTitle="Brand Designer";
 		$name;
 		$logo="http://www-cdn.jtvnw.net/images/xarth/header_logo.png";
@@ -156,7 +156,7 @@ case '101':
 		break;	
 
 case '510':
-		$company="Self Aware Games<br>Oakland, CA";
+		$company="Self Aware Games";
 		$jobTitle="Graphic Designer II";
 		$name;
 		$logo="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPZdVzUtbr4fy3c24OPPh5DCpzP4urFRARDEktLZ-5_7NdfT_Skh6nYXU";
