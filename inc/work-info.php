@@ -34,6 +34,8 @@ $works = array(
 	//array( "name" => "Pokemon 15th Anniv", 						"path" => "temp",											"thumb" => "thumb.jpg" ),
 	array( "name" => "Malado Baldwin",								"path" => "malado-baldwin-indexhibit",					"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Pok&eacute;mon 15th Anniversary",		"path" => "15th-anniversary",					"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Pok&eacute;mon: Toys\"R\"Us Feature Shop",		"path" => "feature-shop",					"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Nerd Comics",		"path" => "nerd-comics",					"thumb" => "thumb.jpg" ), //done
 	//array( "name" => "Toy Fair", 									"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Featured Shops", 							"path" => "temp",											"thumb" => "thumb.jpg" )
 );
@@ -45,6 +47,13 @@ $projects = array(
 	array( "name" => "Tesla", 																"path" => "", 																"thumb" => "thumb.jpg" ),
 	array( "name" => "Palin comics", 													"path" => "", 													"thumb" => "thumb.jpg" ),
 	array( "name" => "GIF Drawings", 													"path" => "", 													"thumb" => "thumb.jpg" ),
+	array( "name" => "GIFS", 													"path" => "", 													"thumb" => "thumb.jpg" )
+);
+
+$portraits = array(
+	array( "name" => "Walter White", 									"path" => "walter-white", 							"thumb" => "thumb.jpg" ),
+	array( "name" => "Palin comics", 									"path" => "", 													"thumb" => "thumb.jpg" ),
+	array( "name" => "GIF Drawings", 									"path" => "", 													"thumb" => "thumb.jpg" ),
 	array( "name" => "GIFS", 													"path" => "", 													"thumb" => "thumb.jpg" )
 );
 
@@ -857,6 +866,48 @@ if ( $title == "Pok&eacute;mon: 15th Anniversary" ) {
 
 } //end arceus
 
+//  POKEMON TOYS R US
+// ===============================
+
+if ( $title == "Pok&eacute;mon: Toys\"R\"Us Feature Shop" ) {
+
+	$path="img/feature-shop/";
+
+	$description = '';
+	
+	$sidebar = "";
+
+	$img_info = array(
+    		array("file" => "01.jpg", "alt" => ""),
+    		array("file" => "02.jpg", "alt" => ""),
+    		array("file" => "03.jpg", "alt" => ""),
+    		array("file" => "04.jpg", "alt" => ""),
+    		array("file" => "05.jpg", "alt" => ""),
+    		array("file" => "06.jpg", "alt" => ""),
+    		array("file" => "07.jpg", "alt" => ""),
+    		array("file" => "08.jpg", "alt" => ""),
+	);	
+
+} //end TOYS R US
+
+//  NERD COMICS
+// ===============================
+
+if ( $title == "Nerd Comics" ) {
+
+	$path="img/nerd-comics/";
+
+	$description = '';
+	
+	$sidebar = "";
+
+	$img_info = array(
+    		array("file" => "darwin.gif", "alt" => ""),
+    		array("file" => "inspiration.gif", "alt" => ""),
+    		array("file" => "marvels.gif", "alt" => ""),
+	);	
+
+} //end TOYS R US
 
 
 

@@ -324,7 +324,7 @@ case '415':
 			Hallå! I saw your posting and after looking you guys up, decided I LOVE what you guys do! Y'all seem so fun! I am a designer and an illustrator with some experience in programming. I am looking for a position where I can contribute to a team and do amazing work and also have fun doing it. I am a firm believer in the play experience—people learn by doing. 
 		</p>
 		<p>
-			I am currently winding down with my gaming startup. We worked on a few big projects, where I contributed original artwork, UI design, logo design and game design. I also used to work at Pok&eacute;mon. I also used to work at Pok&eacute;mon where we serviced all the internal departments with their creative needs. 
+			I am currently winding down with my gaming startup. We worked on a few big projects, where I contributed original artwork, UI design, logo design and game design. I also used to work at Pok&eacute;mon where we serviced all the internal departments with their creative needs. 
 		</p> 
 		<p>
 		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. I've been using Photoshop since high school and all the Pok&eacute;mon artwork was in Illustrator format.
