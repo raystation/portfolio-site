@@ -9,6 +9,11 @@
 
 //INCLUDES ==================================================
 @import 'bourbon/bourbon';
+@import 'scss/base';
+@import 'scss/skeleton';
+@import 'scss/slick';
+@import 'scss/lightbox';
+@import 'scss/tooltipster';
 // @import 'scss/responsive-indicator';
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -138,6 +143,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 }
 
 .caption {
+	font-family: "Helvetica";
 	font-size: $caption-font-size;
 	line-height: 1.45em;
 	p { margin-bottom: .5em; }

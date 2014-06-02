@@ -35,7 +35,7 @@ $works = array(
 	array( "name" => "Malado Baldwin",								"path" => "malado-baldwin-indexhibit",					"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Pok&eacute;mon 15th Anniversary",		"path" => "15th-anniversary",					"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Pok&eacute;mon: Toys\"R\"Us Feature Shop",		"path" => "feature-shop",					"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Nerd Comics",		"path" => "nerd-comics",					"thumb" => "thumb.jpg" ), //done
+	// array( "name" => "Nerd Comics",		"path" => "nerd-comics",					"thumb" => "thumb.jpg" ), //done
 	//array( "name" => "Toy Fair", 									"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Featured Shops", 							"path" => "temp",											"thumb" => "thumb.jpg" )
 );
@@ -312,7 +312,7 @@ if ( $title == "Scavenger Hunt" ) {
 
 	$description = 'SAN FRANCISCO, California — I submitted a t-shirt design to a Threadless contest. The challenge: make a fun tee for the <a href="http://www.chicagochildrensmuseum.org">Chicago Children\'s Museum</a>. The winner would get a ticket out to Chicago and like $1,000 in store credit or something. I did a bunch of research about the museum and found my imagination running wild with the activities you could do there (and mildly jealous that I wasn\'t a kid in Chicago!). I thought it would be wonderful to have a shirt that represented all the neat things kids could do at the museum.</p>
 		<p>My first idea was to perhaps to do a "Family Circus" style map showing a kid walking around the museum. I never did figure out the best way to represent three levels and at over time, I thought that if I had a set path, there should be a reason that for this. This is what lead me to the scavenger hunt idea. T-shirt real estate wise, it was more forgiving and allowed me more freedom with the  space on the shirt.</p>
-		<a href="img/scavenger-hunt/familycircus-hq.jpg" data-lightbox="familycircus" data-title="Family Circus map"><img src="img/scavenger-hunt/familycircus.jpg" class="scale-with-grid2 add-bottom"></a>
+		<a href="img/scavenger-hunt/ref/familycircus-hq.jpg" data-lightbox="familycircus" data-title="Family Circus map"><img src="img/scavenger-hunt/ref/familycircus.jpg" class="scale-with-grid2 add-bottom"></a>
 		<p>It did not win the grand prize, however the museum still wanted to use the design regardless and according to the representative at Threadless, it is now being sold at the museum gift shop. They were, however, too cheap to send me a sample so I don’t have actual photos.';
 
 	$sidebar = 'T-shirt design for Threadless.com</p>
@@ -905,6 +905,23 @@ if ( $title == "Nerd Comics" ) {
     		array("file" => "darwin.gif", "alt" => ""),
     		array("file" => "inspiration.gif", "alt" => ""),
     		array("file" => "marvels.gif", "alt" => ""),
+	);	
+
+} //end TOYS R US
+
+//  PORTRAITS
+// ===============================
+
+if ( $title == "Walter White" ) {
+
+	$path="img/walter-white/";
+
+	$description = '';
+	
+	$sidebar = "";
+
+	$img_info = array(
+    		array("file" => "walter-white.gif", "alt" => ""),
 	);	
 
 } //end TOYS R US

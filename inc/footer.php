@@ -1,9 +1,9 @@
 	</div> <!-- end container -->
 
 	<?php 
-		if ( $description !== NULL ) {
-			include 'work-thumbnails.php' ;
-		}
+		// if ( $description !== NULL ) {
+		// 	include 'work-thumbnails.php' ;
+		// }
 	 ;?>
 	
 	<!-- Footer
@@ -56,7 +56,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js">\x3C/script>')</script>
 
-	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('.slick').slick({
@@ -98,7 +98,7 @@
 	</script>
 
 	<?php 
-		if ( $pageTitle == "Ray Yuen | Hire Me!" ) {
+		if ( strpos($pageTitle,"Hire Me") ) {
 			echo "<script src=\"js/jquery.tooltipster.min.js\"></script>".
 			"<script>
         $(document).ready(function() {
