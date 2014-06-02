@@ -1,7 +1,6 @@
-
 <?php 
 	$project = $_GET["project"];
-
+	$section="work";
 	switch ( $project ) {
 		default:
 		$pageTitle = "Ray Yuen | Work";

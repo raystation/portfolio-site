@@ -1407,8 +1407,10 @@ a, a:visited {
   display: inherit; }
 
 hr {
-  width: 100%;
-  border: 1px solid black; }
+  border: 0;
+  height: 15px;
+  background: url("../img/bg/dots.gif") repeat-x;
+  margin: 0 0 1em 0; }
 
 .img-band {
   width: 100%;
@@ -1439,7 +1441,6 @@ img.scale-with-grid2 {
     margin-bottom: .45em; }
 
 .caption, .index-right-column {
-  font-family: "Helvetica";
   font-size: 10pt;
   line-height: 1.45em; }
   .caption p, .index-right-column p {
@@ -1468,6 +1469,18 @@ img.scale-with-grid2 {
   -webkit-transition: all 0.75s ease-in-out;
   -moz-transition: all 0.75s ease-in-out;
   transition: all 0.75s ease-in-out; }
+  .headroom .active {
+    border-bottom: 3px solid #b2cce1;
+    padding: 5px 1px;
+    color: black;
+    -webkit-transition: all 0.75s ease-in-out;
+    -moz-transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out; }
+    .headroom .active:hover {
+      -webkit-transition: all 0.75s ease-in-out;
+      -moz-transition: all 0.75s ease-in-out;
+      transition: all 0.75s ease-in-out;
+      border-bottom: 3px solid #8db3d3; }
   .headroom nav {
     letter-spacing: 0.15em; }
     .headroom nav .title {
@@ -1499,12 +1512,12 @@ img.scale-with-grid2 {
           -moz-transition: all 0.25s;
           transition: all 0.25s;
           font-weight: 400;
-          color: black; }
+          color: gray; }
           .headroom nav ul li a:hover, .headroom nav ul li a:visited:hover {
             -webkit-transition: all 0.25s;
             -moz-transition: all 0.25s;
             transition: all 0.25s;
-            color: silver; }
+            color: black; }
 
 .headroom--pinned {
   top: 0; }

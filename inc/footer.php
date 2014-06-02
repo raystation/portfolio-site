@@ -1,10 +1,4 @@
 	</div> <!-- end container -->
-
-	<?php 
-		// if ( $description !== NULL ) {
-		// 	include 'work-thumbnails.php' ;
-		// }
-	 ;?>
 	
 	<!-- Footer
 	==================================================  -->
@@ -42,7 +36,9 @@
 
 				<hr>
 				<p> All works &copy; <?php echo date('Y');?> 
-					Raymond Yuen • Please do not reproduce without expressed written consent • built with Skeleton
+					Raymond Yuen • Please do not reproduce without expressed written consent • built with Skeleton <br>
+					<a href="about?project=pun"><?php if ( $pun_status !== true ) { $pun=print_pun();echo $pun;} ?></a> <br>
+					<?php ;?>
 				</p>
 
 			</div>
@@ -65,8 +61,7 @@
 			  autoplay: true,
 			  autoplaySpeed: 4500,
 			  arrows: true,
-			  dots: true,
-			  draggable: false
+			  dots: true
 			});
 			$('.slick-index').slick({
 			  accessibility: true,
@@ -74,7 +69,6 @@
 			  arrows: false,
 			  autoplay: true,
 			  dots: true,
-			  draggable: false,
 			  fade: true
 			});
 		});		
@@ -107,10 +101,6 @@
     	</script>";
 		}
 	;?>
-
-	<div class="responsive-indicator"></div>
-
-	
 
 <!-- End Document
 ================================================== -->

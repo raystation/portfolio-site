@@ -3,27 +3,27 @@
 //order of the portfolio pieces
 
 $works = array(
-	array( "name" => "The 3", 											"path" => "the3", 											"thumb" => "thumb.svg" ), //done
+	array( "name" => "The 3", "path" => "the3", "thumb" => "thumb.svg" ), //done
 	array( "name" => "Indiginauts", 									"path" => "indiginauts", 									"thumb" => "thumb.jpg" ), //copy
-	array( "name" => "Abriendo Puertas",								"path" => "abriendo-puertas",								"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "Abriendo Puertas / Opening&nbsp;Doors",								"path" => "abriendo-puertas",								"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "Suspended Belief Studios",						"path" => "suspended-belief-studios",						"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Animore", 										"path" => "project-animore", 										"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Project Animore", 										"path" => "project-animore", 										"thumb" => "thumb.jpg" ), //done
 	array( "name" => "100 Principles of Game&nbsp;Design", 		"path" => "100-principles-of-game-design", 				"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Chronicles of Old&nbsp;London", 				"path" => "chronicles-of-old-london",					"thumb" => "thumb.jpg" ), //images
 	array( "name" => "Monkey Mo, Monkey&nbsp;Go!",		 		"path" => "monkey-mo",									"thumb" => "thumb.jpg" ), 
 	array( "name" => "Scavenger Hunt", 								"path" => "scavenger-hunt",								"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Color Chameleon", 							"path" => "color-chameleon",								"thumb" => "thumb.jpg" ), 
-	array( "name" => "Storymaps", 									"path" => "storymaps",										"thumb" => "thumb.jpg" ), //copy
-	array( "name" => "Sarah Walko ",									"path" => "sarah-walko-wordpress",						"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "StoryMaps", 									"path" => "storymaps",										"thumb" => "thumb.jpg" ), //copy
+	array( "name" => "Sarah Walko website",									"path" => "sarah-walko-wordpress",						"thumb" => "thumb.jpg" ), //copy
 	array( "name" => "Chronicles of Old&nbsp;Rome",			 	"path" => "chronicles-of-old-rome",						"thumb" => "thumb.jpg" ),
 	array( "name" => "Edgeware", 										"path" => "edgeware",										"thumb" => "thumb.jpg" ), //copy
-	array( "name" => "Art+Paris",										"path" => "art-and-paris",									"thumb" => "thumb.jpg" ),  //images
+	array( "name" => "Art + Paris",										"path" => "art-and-paris",									"thumb" => "thumb.jpg" ),  //images
 	// array( "name" => "idibon", 										"path" => "idibon",											"thumb" => "thumb.jpg" ),
 	array( "name" => "Chronicles of Old New&nbsp;York", 			"path" => "chronicles-of-old-new-york",					"thumb" => "thumb.jpg" ),  //images
-	array( "name" => "Malado Baldwin Wordpress", 					"path" => "malado-baldwin-wordpress",					"thumb" => "thumb.jpg" ),  //done
+	array( "name" => "Malado Baldwin Wordpress website", 					"path" => "malado-baldwin-wordpress",					"thumb" => "thumb.jpg" ),  //done
 	array( "name" => "Egg Baby", 										"path" => "egg-baby",										"thumb" => "thumb.jpg" ),  //more images
 	array( "name" => "Chronicles of Old New&nbsp;Boston", 			"path" => "chronicles-of-old-boston",					"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Chronicles of Old New&nbsp;Las Vegas", 		"path" => "chronicles-of-old-las-vegas",					"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Chronicles of Old Las&nbsp;Vegas", 		"path" => "chronicles-of-old-las-vegas",					"thumb" => "thumb.jpg" ), //done
 	array( "name" => "City Style", 										"path" => "city-style",										"thumb" => "thumb.jpg" ), //done
 	array( "name" => "The Rise of Darkrai", 							"path" => "darkrai",										"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Arceus and the Jewel of&nbsp;Life",					"path" => "arceus",											"thumb" => "thumb.jpg" ), //done
@@ -32,9 +32,9 @@ $works = array(
 	//array( "name" => "Battle Revolution", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Pocket Pokedex", 							"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Pokemon 15th Anniv", 						"path" => "temp",											"thumb" => "thumb.jpg" ),
-	array( "name" => "Malado Baldwin",								"path" => "malado-baldwin-indexhibit",					"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Malado Baldwin website",								"path" => "malado-baldwin-indexhibit",					"thumb" => "thumb.jpg" ), //done
 	array( "name" => "Pok&eacute;mon 15th Anniversary",		"path" => "15th-anniversary",					"thumb" => "thumb.jpg" ), //done
-	array( "name" => "Pok&eacute;mon: Toys\"R\"Us Feature Shop",		"path" => "feature-shop",					"thumb" => "thumb.jpg" ), //done
+	array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop",		"path" => "feature-shop",					"thumb" => "thumb.jpg" ), //done
 	// array( "name" => "Nerd Comics",		"path" => "nerd-comics",					"thumb" => "thumb.jpg" ), //done
 	//array( "name" => "Toy Fair", 									"path" => "temp",											"thumb" => "thumb.jpg" ),
 	//array( "name" => "Featured Shops", 							"path" => "temp",											"thumb" => "thumb.jpg" )
@@ -56,6 +56,49 @@ $portraits = array(
 	array( "name" => "GIF Drawings", 									"path" => "", 													"thumb" => "thumb.jpg" ),
 	array( "name" => "GIFS", 													"path" => "", 													"thumb" => "thumb.jpg" )
 );
+
+function get_puns() {
+	$puns = array(
+		"I stayed up all night wondering where the sun went. Then it dawned on me.",
+		"It doesn't matter how much you push the envelope. It'll still be stationary.",
+		"What is the leading cause of divorce in long-term marriages? A stalemate.",
+		"You wanna hear a joke about pizza? Never mind, it was too cheesy.",
+		"I tried to catch some fog earlier. I mist.",
+		"I walked into my sister's room and tripped on a bra. It was a booby-trap.",
+		"A book just fell on my head, I only have my shelf to blame.",
+		"I'm reading a book on anti-gravity, and it's impossible to put down.",
+		"It's not that the guy didn't know how to juggle... he just didn't have the balls to do it.",
+		"I'm glad I know sign language. It's become quite handy.",
+		"I forgot how to throw a boomerang. But it came back to me.",
+		"When a clock is hungry... It goes back four seconds.",
+		"I once heard a joke about amnesia... But I forget how it goes.",
+		"The frustrated cannibal threw up his hands.",
+		"There was once a crossed-eyed teacher... who had issues controlling his pupils.",
+		"Diarrhea is hereditary... It runs in your genes.",
+		"Those two men drinking battery acid will soon be charged.",
+		"Newspaper headline reads: Cartoonist found dead at home, details are sketchy.",
+		"The Magician got frustrated and pulled his hare out.",
+		"What did the cannibal get when he showed up to the party late? A cold shoulder!"
+		);
+	return $puns;
+}
+
+function print_pun() {
+	$puns=get_puns();
+	$count=count($puns);
+	$rand=mt_rand(0,$count);
+	$pun=$puns[$rand];
+	return $pun;
+}
+
+function sf_weather() {
+	include 'inc/phpweatherlib.php';
+	$weatherObj=new WeatherLib("KSFO");
+	$weather=array();
+	$weather["temp"]=intval( $weatherObj->get_temp_f() );
+	$weather["condition"]=$weatherObj->get_weather_string();
+	return $weather;
+}
 
 // fills in the div with links to the thumbnail and title
 

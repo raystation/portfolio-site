@@ -1,3 +1,4 @@
+<?php require 'inc/work-info.php';?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -23,12 +24,6 @@
 	<!-- CSS
   ================================================== -->
 	<link rel="stylesheet" href="css/style.css">
-	
-	<?php 
-		if ( $pageTitle == "Ray Yuen | Hire Me!" ) {
-			echo "<link rel=\"stylesheet\" href=\"css/tooltipster.css\">";
-		}
-	;?>	
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -54,7 +49,7 @@
 	</script>
 
 </head>
-<?php require 'inc/work-info.php';?>
+
 <body>
 		
 	<!-- Primary Page Layout
@@ -63,10 +58,11 @@
 	<header class="navband headroom">
 		<div class="container">
 			<nav class="sixteen columns">
-				<div class="title"><a href="index">Ray Yuen</a></div>
+				<div class="title"><a href="./">Ray Yuen</a></div>
 				<ul>
-					<li><a href="work">work</a></li>
-					<li><a href="about">about</a></li>
+					<li><a class="<?php if ( $section == "work") { echo "active"; } ;?>" href="work">work</a></li>
+					<li><a class="<?php if ( $section == "about") { echo "active"; } ;?>" href="about">about</a></li>
+					
 					<?php //<li><a href="projects.php">projects</a></li> ?>
 				</ul>				
 

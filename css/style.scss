@@ -24,11 +24,12 @@ $txt-color: lighten(black,20%);
 $link-color: steelblue;
 $footer-color: darken($bkg-color,7%);
 $footer-text-color: darken($footer-color,40%);
+$link-hover-color: darken($link-color,40%);
+
 $font-size: 13pt;
 $line-height: 1.45em;
 $caption-font-size: 10pt;
 $body-font: "Arvo";
-$link-hover-color: darken(steelblue,40%);
 
 $desktop-large: "only screen and (min-width: 960px)";
 $desktop: "only screen and (max-width: 959px)";
@@ -108,7 +109,15 @@ a,a:visited {
 .remove-bottom{ margin-bottom: 0px; }
 .mobile 			{ display: inherit; } 
 
-hr 						{ width: 100%; border: 1px solid black; }
+hr { 
+	// width: 100%; border: 1px solid black; 
+}
+hr { 
+	border: 0;
+	height : 15px;
+	background: url('../img/bg/dots.gif') repeat-x;
+	margin : 0 0 1em 0;
+}
 
 .img-band 		{ width: 100%; height: 30%; }
 
@@ -135,15 +144,15 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 // }
 
 .index-right-column {
-  @extend .padding;
-  @extend .caption;
-  padding-right: 0px;
-  padding-top: 0px;
+	@extend .padding;
+	@extend .caption;
+	padding-right: 0px;
+	padding-top: 0px;
+
 	li { margin-bottom: .45em; }
 }
 
 .caption {
-	font-family: "Helvetica";
 	font-size: $caption-font-size;
 	line-height: 1.45em;
 	p { margin-bottom: .5em; }
@@ -162,16 +171,28 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 // ========================
 
 .headroom {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  background-color: white;
-  padding: 25px 0 10px 0;
-  font-size: 14pt;
-  @include transition( all 0.75s ease-in-out );
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background-color: $bkg-color;
+	padding: 25px 0 10px 0;
+	font-size: 14pt;
+	@include transition( all 0.75s ease-in-out );
 	
+	.active {
+		border-bottom: 3px solid lighten($link-color,30%);
+		padding: 5px 1px;
+		color: black;
+		@include transition( all 0.75s ease-in-out );
+		&:hover {
+			@include transition( all 0.75s ease-in-out );
+			border-bottom: 3px solid lighten($link-color,20%);
+		}
+
+	}
+
 	nav {
 		@extend .uppercase;
 		@extend .montserrat;
@@ -208,10 +229,10 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 				a, a:visited {
 					@include transition(all 0.25s);
 					font-weight: 400;
-					color: black;
+					color: gray;
 					&:hover { 
 						@include transition(all 0.25s);
-						color: silver;
+						color: black;
 					}
 				}
 			}
