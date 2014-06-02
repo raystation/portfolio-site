@@ -86,7 +86,7 @@
 	<script src="js/lightbox.min.js"></script>
 
 	<!-- headroom -->
-	<script src="js/headroom.js"></script>
+	<script src="js/headroom.min.js"></script>
 	<script>
 		var myElement = document.querySelector("header");
 		// var headroom  = new Headroom(myElement);

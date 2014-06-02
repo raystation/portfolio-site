@@ -707,7 +707,7 @@ or wrap each row of columns in a <div class="row"> */
   .slick-list:focus {
     outline: none; }
   .slick-loading .slick-list {
-    background: white url(./ajax-loader.gif) center center no-repeat; }
+    background: white url(slick/ajax-loader.gif) center center no-repeat; }
   .slick-list.dragging {
     cursor: pointer;
     cursor: hand; }
@@ -744,7 +744,7 @@ or wrap each row of columns in a <div class="row"> */
   .slick-slide img {
     display: block; }
     .slick-slide img.slick-loading {
-      background: white url(./ajax-loader.gif) center center no-repeat;
+      background: white url(slick/ajax-loader.gif) center center no-repeat;
       padding-bottom: 100%; }
   .slick-slide.dragging img {
     pointer-events: none; }
@@ -1474,6 +1474,9 @@ img.scale-with-grid2 {
       font-size: 25px;
       text-align: left;
       float: left; }
+      @media only screen and (max-width: 767px) {
+        .headroom nav .title {
+          font-size: 1.25rem; } }
       .headroom nav .title a, .headroom nav .title a:visited {
         color: black; }
         .headroom nav .title a:hover, .headroom nav .title a:visited:hover {
@@ -1487,7 +1490,8 @@ img.scale-with-grid2 {
         margin-right: 2em; }
         @media only screen and (max-width: 767px) {
           .headroom nav ul li {
-            margin-right: 1em; } }
+            font-size: 0.9rem;
+            margin-right: 0.25em; } }
         .headroom nav ul li:last-child {
           margin-right: 0; }
         .headroom nav ul li a, .headroom nav ul li a:visited {

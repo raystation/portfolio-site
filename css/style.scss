@@ -181,6 +181,9 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 			font-size: 25px;
 			text-align: left;
 			float: left;
+			@media #{$mobile} {
+				font-size: 1.25rem;
+			}
 
 			a, a:visited { 
 				color: black; 
@@ -198,7 +201,8 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 				list-style: none;
 				margin-right: 2em;
 				@media #{$mobile} { 
-					margin-right: 1em;
+					font-size: 0.9rem;
+					margin-right: 0.25em;
 				}
 				&:last-child { margin-right: 0; }
 				a, a:visited {

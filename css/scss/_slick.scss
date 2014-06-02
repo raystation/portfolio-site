@@ -27,7 +27,7 @@
     }
 
     .slick-loading & {
-        background: #fff url(./ajax-loader.gif) center center no-repeat;
+        background: #fff url(slick/ajax-loader.gif) center center no-repeat;
     }
 
     &.dragging {
@@ -73,7 +73,7 @@
     img {
         display: block;
         &.slick-loading {
-            background: white url(./ajax-loader.gif) center center no-repeat;
+            background: white url(slick/ajax-loader.gif) center center no-repeat;
             padding-bottom: 100%;
         }
     }
