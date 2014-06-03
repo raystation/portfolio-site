@@ -1,5 +1,6 @@
 <?php 
 
+$loaded=true;
 //order of the portfolio pieces
 
 $works = array(

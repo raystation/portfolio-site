@@ -1,6 +1,24 @@
 <?php 
 
+function art_samples($name1,$path1,$name2,$path2,$name3,$path3) {
+	echo "<div class='four columns add-bottom alpha'><a class='caption' href='".$path1."'><img class='scale-with-grid' src='img/".$path1."/thumb.jpg'>".$name1."</a></div>\n";
+	echo "<div class='four columns add-bottom'><a class='caption' href='".$path2."'><img class='scale-with-grid' src='img/".$path2."/thumb.jpg'>".$name2."</a></div>\n";
+	echo "<div class='four columns add-bottom omega'><a class='caption' href='".$path3."'><img class='scale-with-grid' src='img/".$path3."/thumb.jpg'>".$name3."</a></div>\n";
+	echo "<div class='clear'></div>";
+}
+
 switch ( $id ) {
+
+	default:
+		$company="Hiring Manager";
+		$copy="
+		<p class=\"add-top\">
+			I have worked in the design field for over 8 years and have a solid traditional print background. I used to work at Pokemon, in a small in-house creative team consisting of 3 people. The experience that would most interest you was our work supporting the publishing department (primarily with strategy guides). We would usually have big a diverse range of design work centered around any major video-game or movie releases, so time and project management was essential. More recently, I've been working with an independent publisher designing and laying out their travel guides. 
+		</p>
+		<p>
+			I consider myself a very hard-working individual, willing to put in the extra time to see things finished. I have links below to my resume and some selected works. Thanks. 
+		</p>";
+		break;	
 
 	case '523':
 		$company="Room to Read";
@@ -310,83 +328,261 @@ case '212':
 
 		break;		
 
-case '415':
-		$company="Toca Boca";
-		$jobTitle="Designer";
-		$name;
-		$logo="http://ilbuono.co.uk/wp-content/uploads/2013/01/logo_5001.png";
-		$email;
-		$date="May 30, 2014";
-		$originaljobposting="http://tocaboca.theresumator.com/apply/ZoeHry/Designer.html";
+	case '415':
+	$company="Toca Boca";
+	$jobTitle="Designer";
+	$name;
+	$logo="http://ilbuono.co.uk/wp-content/uploads/2013/01/logo_5001.png";
+	$email;
+	$date="May 30, 2014";
+	$originaljobposting="http://tocaboca.theresumator.com/apply/ZoeHry/Designer.html";
 
-		$copy="
-		<p class=\"add-top\">
-			Hallå! I saw your posting and after looking you guys up, decided I LOVE what you guys do! Y'all seem so fun! I am a designer and an illustrator with some experience in programming. I am looking for a position where I can contribute to a team and do amazing work and also have fun doing it. I am a firm believer in the play experience—people learn by doing. 
-		</p>
-		<p>
-			I am currently winding down with my gaming startup. We worked on a few big projects, where I contributed original artwork, UI design, logo design and game design. I also used to work at Pok&eacute;mon where we serviced all the internal departments with their creative needs. 
-		</p> 
-		<p>
-		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. I've been using Photoshop since high school and all the Pok&eacute;mon artwork was in Illustrator format.
-		</p>
+	$copy="
+	<p class=\"add-top\">
+		Hallå! I saw your posting and after looking you guys up, decided I LOVE what you guys do! Y'all seem so fun! I am a designer and an illustrator with some experience in programming. I am looking for a position where I can contribute to a team and do amazing work and also have fun doing it. I am a firm believer in the play experience—people learn by doing. 
+	</p>
+	<p>
+		I am currently winding down with my gaming startup. We worked on a few big projects, where I contributed original artwork, UI design, logo design and game design. I also used to work at Pok&eacute;mon where we serviced all the internal departments with their creative needs. 
+	</p> 
+	<p>
+	I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. I've been using Photoshop since high school and all the Pok&eacute;mon artwork was in Illustrator format.
+	</p>
 
-		<div class='four columns add-bottom alpha' ><a class='caption' href='indiginauts'><img class='scale-with-grid' src='img/indiginauts/thumb.jpg'>Indiginauts</a></div>
+	<div class='four columns add-bottom alpha' ><a class='caption' href='indiginauts'><img class='scale-with-grid' src='img/indiginauts/thumb.jpg'>Indiginauts</a></div>
 
-		<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
+	<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
 
-		<div class='four columns add-bottom omega'><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
-		<div class='clear'></div>	
+	<div class='four columns add-bottom omega'><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
+	<div class='clear'></div>	
 
-		<p>
-			Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
-		</p>";
+	<p>
+		Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
+	</p>";
 
-		break;
+	break;
 
-case '88':
-		$company="YMCA of San Francisco";
-		$jobTitle="Graphics Design Associate";
-		$name;
-		$logo="http://www.indeed.com/cmp/_s/logos/e28b994824ced938";
-		$email="presidiohr@ymcasf.net";
-		$date="May 30, 2014";
-		$originaljobposting="http://www.ymcasf.org/who_we_are/employment/job_listings/detail/1355_graphics_design_associate";
+	case '88':
+	$company="YMCA of San Francisco";
+	$jobTitle="Graphics Design Associate";
+	$name;
+	$logo="http://www.indeed.com/cmp/_s/logos/e28b994824ced938";
+	$email="presidiohr@ymcasf.net";
+	$date="May 30, 2014";
+	$originaljobposting="http://www.ymcasf.org/who_we_are/employment/job_listings/detail/1355_graphics_design_associate";
 
-		$copy="
-		<p class=\"add-top\">
-			Hi! I saw your job posting and since I am a huge fan and a regular at the YMCA in Chinatown, I thought I would get in touch. I am a graphic designer and illustrator with experience in UI and programming.
-		</p>
-		<p>
-			I think one of the reason I really like the YMCA is that it's a family environment. I usually go to the Y to play basketball with the teens, but if there are just children around, I will play <a href='http://www.wikihow.com/Play-Horse-(the-Basketball-Game)'>H-O-R-S-E</a> with them (if they aren't too shy). I love kids! I've considered volunteering my time, but thought I should get some regular income first.
-		</p> 
-		<p>
-			I have publishing, design and production experience from over <a href=\"resume#history\">8+ years</a> working in in-house creative departments and supporting marketing departments. I used to work at <em>Equinox Fitness Clubs</em> where we maintained over 13 clubs in the New York metro area. We produced collateral (a lot of it by hand) like business cards, membership cards, posters for special classes, special promotion tickets, quarterly reports...
-		</p>
+	$copy="
+	<p class=\"add-top\">
+		Hi! I saw your job posting and since I am a huge fan and a regular at the YMCA in Chinatown, I thought I would get in touch. I am a graphic designer and illustrator with experience in UI and programming.
+	</p>
+	<p>
+		I think one of the reason I really like the YMCA is that it's a family environment. I usually go to the Y to play basketball with the teens, but if there are just children around, I will play <a href='http://www.wikihow.com/Play-Horse-(the-Basketball-Game)'>H-O-R-S-E</a> with them (if they aren't too shy). I love kids! I've considered volunteering my time, but thought I should get some regular income first.
+	</p> 
+	<p>
+		I have publishing, design and production experience from over <a href=\"resume#history\">8+ years</a> working in in-house creative departments and supporting marketing departments. I used to work at <em>Equinox Fitness Clubs</em> where we maintained over 13 clubs in the New York metro area. We produced collateral (a lot of it by hand) like business cards, membership cards, posters for special classes, special promotion tickets, quarterly reports...
+	</p>
 
-		<div class='four columns add-bottom alpha' ><a class='caption' href='chronicles-of-old-new-york'><img class='scale-with-grid' src='img/chronicles-of-old-new-york/thumb.jpg'>Chronicles of Old NY</a></div>
+	<div class='four columns add-bottom alpha' ><a class='caption' href='chronicles-of-old-new-york'><img class='scale-with-grid' src='img/chronicles-of-old-new-york/thumb.jpg'>Chronicles of Old NY</a></div>
 
-		<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
+	<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
 
-		<div class='four columns add-bottom omega'><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>The Rise of Darkrai</a></div>
-		<div class='clear'></div>	
+	<div class='four columns add-bottom omega'><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>The Rise of Darkrai</a></div>
+	<div class='clear'></div>	
 
-		<p>
-			Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
-		</p>";
+	<p>
+		Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
+	</p>";
 
-		break;					
+	break;					
 
+	case '404':
+	$company="Code for America";
+	$jobTitle="Visual Designer";
+	$name;
+	$logo="http://codeforamerica.org/assets/logo.png";
+	$email;
+	$date="June 2, 2014";
+	$originaljobposting="http://codeforamerica.theresumator.com/apply/job_20140111001007_QTSWV1EHNEMU9SGO/Visual-Designer.html?source=INDE";
+
+	$copy="
+	<p class=\"add-top\">
+		Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming. The work you do sounds interesting—I've been learning programming and I can definitly understand the motivations for your non-profit. I am looking for a position where I can apply my unique skills and also be at a place where I can affect positive change. 
+	</p>
+	<p>
+		I've selected three pieces for your approval below.
+	</p>
+
+	<div class='four columns add-bottom alpha'><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>ap-od.org</a></div>
 	
-	default:
-		$company="Hiring Manager";
-		$copy="
-		<p class=\"add-top\">
-			I have worked in the design field for over 8 years and have a solid traditional print background. I used to work at Pokemon, in a small in-house creative team consisting of 3 people. The experience that would most interest you was our work supporting the publishing department (primarily with strategy guides). We would usually have big a diverse range of design work centered around any major video-game or movie releases, so time and project management was essential. More recently, I've been working with an independent publisher designing and laying out their travel guides. 
-		</p>
-		<p>
-			I consider myself a very hard-working individual, willing to put in the extra time to see things finished. I have links below to my resume and some selected works. Thanks. 
-		</p>";
-		break;
+	<div class='four columns add-bottom' ><a class='caption' href='chronicles-of-old-new-york'><img class='scale-with-grid' src='img/chronicles-of-old-new-york/thumb.jpg'>Chronicles of Old NY</a></div>
+
+	<div class='four columns add-bottom omega'><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
+
+	<div class='clear'></div>	
+
+	<p>
+		Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
+	</p>";
+
+	break;		
+
+	case '102':
+	$company="Code for America";
+	$jobTitle="Graphic Designer";
+	$name;
+	$logo="http://www.educationsuperhighway.org/uploads/1/0/9/4/10946543/1348157671.png";
+	$email="careers@educationsuperhighway.org";
+	$date="June 2, 2014";
+	$originaljobposting="http://www.educationsuperhighway.org/graphic-designer.html";
+
+	$copy="
+	<p class=\"add-top\">
+		Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming. The work you do sounds interesting—I am looking for a position where I can apply my unique skills and also be at a place where I can affect positive change. 
+	</p>
+	<p>
+	I have over <a href=\"resume#history\">8+ years</a> working in design and marketing (and some <a href='chronicles-of-old-new-york'>publishing</a>). At <em>The Pok&eacute;mon Company</em>, I worked in the creative department as part of a small team of three, supporting the internal departments with their various needs. In addition to enforcing the brand standards and guidelines, we worked on projects like toy packaging, video-game launches, strategy guide localization, <a href='darkrai'>mini-movie websites</a>...just to name a few. When projects were too big to be handled in-house, we managed outside vendors and got things produced in a timely manner. I've selected three pieces for your approval below which I think would be relevant to the conversation. 
+	</p>
+
+	<div class='four columns add-bottom alpha'><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>ap-od.org</a></div>
+	
+	<div class='four columns add-bottom' ><a class='caption' href='chronicles-of-old-new-york'><img class='scale-with-grid' src='img/chronicles-of-old-new-york/thumb.jpg'>Chronicles of Old NY</a></div>
+
+	<div class='four columns add-bottom omega'><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
+
+	<div class='clear'></div>	
+
+	<p>
+		Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
+	</p>";
+
+	break;	
+
+	case '911':
+	$company="San Francisco Public Press";
+	$jobTitle="Print Designer";
+	$name="Michael Stoll";
+	$logo="http://sfpublicpress.org/files/logo.gif";
+	$email="design@sfpublicpress.org";
+	$date="June 2, 2014";
+	$originaljobposting="http://www.journalismjobs.com/Job_Listing.cfm?JobID=1591746&utm_source=Indeed&utm_medium=organic&utm_campaign=Indeed";
+
+	$copy="
+	<p class=\"add-top\">
+		Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming. I have worked in design on both the creative and production side for over <a href=\"resume#history\">8+ years</a>. You can find my work <a href='index'>here</a>.
+	</p>
+	<p>
+		I have submitted three relevant projects for your approval.
+	</p>
+
+	<div class='four columns add-bottom alpha'><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>ap-od.org</a></div>
+	
+	<div class='four columns add-bottom' ><a class='caption' href='chronicles-of-old-new-york'><img class='scale-with-grid' src='img/chronicles-of-old-new-york/thumb.jpg'>Chronicles of Old NY</a></div>
+
+	<div class='four columns add-bottom omega'><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
+
+	<div class='clear'></div>	
+
+	<p>
+		Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
+	</p>";
+
+	break;	
+
+	case '314':
+	$company="<a href='http://www.funplus.com' target='_blank'>FunPlus</a>";
+	$jobTitle="Game Designer - Content & Quests";
+	$logo="http://www.funplus.com/logo.png";
+	$date="June 2, 2014";
+	$originaljobposting="http://funplus.theresumator.com/apply/job_20140131155332_ST1B54RLUFBERR6A/Game-Designer-Content-Quests.html?source=INDE";
+
+	$copy="
+	<p class=\"add-top\">
+		Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming. I love what you guys do! I am looking for a position where I can contribute my <a href=\"resume#skills\">unique skills</a> in a productive and fun environment.
+	</p>
+	<p>
+		I am winding down from my <a href='suspended-belief-studios'>gaming startup</a> with my friend. I am as fascianted by game design as I am with the visuals. While I don't have experience working on a live free-to-play game, hopefully my \"gaming-resume\" will more than make up for that. I play a ton of games (casual, midcore, hardcore) and have evolved with the iOS market into it's current free-to-play phase and have been playing console games since the NES/Sega Master System. I love games! 
+	</p>
+
+	<div class='four columns add-bottom alpha'><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
+	
+	<div class='four columns add-bottom' ><a class='caption' href='indiginauts'><img class='scale-with-grid' src='img/indiginauts/thumb.jpg'>Indiginauts</a></div>
+
+	<div class='four columns add-bottom omega'><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
+
+	<div class='clear'></div>	
+
+	<p>
+		You can find my work <a href='index'>here</a>. Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
+	</p>";
+
+	$other="
+	<div class='four columns add-bottom alpha caption'>
+		<hr class='add-top'>
+		<p><strong>Favorite Pok&eacute;mon</strong></p>
+			<ul>
+				<li>Piplup</li>
+				<li>Heracross</li>
+				<li>Garchomp</li>
+				<li>Combee</li>
+				<li>Alakazam</li>
+			</ul>
+	</div>
+
+	<div class='four columns add-bottom caption'>
+		<hr class='add-top'>
+		<p><strong>Currently Playing</strong></p>
+			<ul>
+				<li>FTL</li>
+				<li>Hay Day</li>
+				<li>Disco Zoo</li>
+				<li>Zookeeper: Battle!</li>
+				<li>The Last of Us</li>
+			</ul>
+	</div>
+
+	<div class='four columns add-bottom caption omega'>
+		<hr class='add-top'>
+		<p><strong>Fav. RPG's</strong></p>
+			<ul>
+				<li>FF6</li>
+				<li>Chrono Trigger</li>
+				<li>Fallout: New Vegas</li>
+				<li>FF4</li>
+				<li>Fable</li>
+			</ul>
+	</div>
+	";
+
+	break;	
+
+	case '002':
+	$company="Chronicle Books";
+	$jobTitle="Junior Production Designer";
+	$logo="http://www.chroniclebooks.com/skin/frontend/enterprise/cbooks/images/logo.gif";
+	$date="June 2, 2014";
+	$originaljobposting="http://www.chroniclebooks.com/our-company/jobs/jr-prod-dsgnr";
+
+	$copy="
+	<p class=\"add-top\">
+		Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming. I am looking for a position where I can contribute my varied skills and have fun. I have over 8+ years of experience in design from both the creative and production side. It's probably a bit more senior than you are expecting, but hey I thought I would give it a shot—I don't see as many publishing positions out here (compared to NY). 
+	</p>
+
+	<div class='four columns add-bottom alpha'><a class='caption' href='chronicles-of-old-new-york'><img class='scale-with-grid' src='img/chronicles-of-old-new-york/thumb.jpg'>Chronicles of Old NY</a></div>
+	
+	<div class='four columns add-bottom' ><a class='caption' href='art+paris'><img class='scale-with-grid' src='img/art-and-paris/thumb.jpg'>Art + Paris</a></div>
+
+	<div class='four columns add-bottom omega'><a class='caption' href='monkey-mo'><img class='scale-with-grid' src='img/monkey-mo/thumb.jpg'>Monkey Mo, Monkey Go!</a></div>
+
+	<div class='clear'></div>	
+	<p>
+		Check out my resume here <a href='resume'>rayuen.com/resume</a> or a PDF version below. <br>
+		Check out my portfolio here <a href='work'>rayuen.com/work</a> <br>
+	</p>
+
+	<p>
+		Please let me know if I can provide any other sort of information or if we can set up a meeting. Thank you!
+	</p>";
+
+	break;	
+
 }
 
-;?>
