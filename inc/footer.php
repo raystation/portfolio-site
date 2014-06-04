@@ -8,20 +8,16 @@
 		<div class="container">
 
 			<div class="sixteen columns">
-				<div class="four columns alpha">
-
+				<div class="four columns alpha add-bottom">
 					<ul>
-						<?php //<li><a href="index.php">home</a></li> ;?>
-						<li><a href="work.php">work</a></li>
-						<li><a href="about.php">about</a></li>
-						<?php //<li><a href="#">news</a></li></ ?>
+						<li><a href="./">home</a></li>
+						<li><a href="work">work</a></li>
+						<li><a href="about">about</a> </li>
 					</ul>
-
 				</div>
 
-				<div class="four columns">
-					<p>contact <br>
-						<a href="mailto:rayuen@gmail.com?subject=">rayuen@gmail.com</a>		</p>
+				<div class="four columns add-bottom">
+					<p><a href="mailto:rayuen@gmail.com?subject=">email</a></p>
 				</div>
 
 				<div class="four columns">
@@ -33,12 +29,13 @@
 
 				<div class="four columns omega"></div>
 
-
 				<hr>
-				<p> All works &copy; <?php echo date('Y');?> 
-					Raymond Yuen • Please do not reproduce without expressed written consent • built with Skeleton <br>
-					<a href="about?project=pun"><?php if ( $pun_status !== true ) { $pun=print_pun();echo $pun;} ?></a> <br>
-					<?php ;?>
+
+				<p> 
+					<p>All works &copy; <?php echo date('Y');?> Raymond Yuen.</p>
+					<p>Please do not reproduce without expressed written consent.</p>
+					<p>Built with Skeleton.</p>
+					<p><a href="about?id=pun&pun=YESSS"><?php if ( $pun_status !== true ) { $pun=print_pun();echo $pun;} ?></a></p>
 				</p>
 
 			</div>

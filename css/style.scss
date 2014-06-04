@@ -108,8 +108,14 @@ a,a:visited {
 .remove-right 		{ padding-right: 0; padding-top: 0;}
 .remove-bottom 		{ margin-bottom: 0px; }
 .remove-top 		{ margin-top: 0px; }
-.mobile 			{ display: inherit; } 
 .nolist 			{ list-style: none; }
+.nowrap 			{ white-space: nowrap; }
+
+.mobile 			{ display: none; } 
+.desktop 			{ display: inherit; }
+
+
+.list-spacing-fix li	{ margin-bottom: 0.15em !important; }
 
 hr { 
 	// width: 100%; border: 1px solid black; 
@@ -155,7 +161,10 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	padding-right: 0px;
 	padding-top: 0px;
 	hr:first-child { margin-top: 0; }
-	ul, li { margin-bottom: 0.65em; }
+	ul, li { margin-bottom: 0.5em; }
+	@media #{$mobile} {
+		padding-left: 0px;
+	}
 }
 
 .opacity-fade {
@@ -168,6 +177,10 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 .textbox {
 	padding: 2em 3em;
 	h4 { font-weight: 400 !important; }
+	@media #{$mobile} {
+		font-size: 12px;
+		padding: 2em 2em 1em 2em;
+	}
 }
 
 // HEADER
@@ -311,12 +324,23 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	}
 }
 
-#history strong a, #history strong a:visited {
-	color: black;
-	@include transition( all 0.25s ease-in-out );
-	&:hover {
+#history {
+	ul { list-style: initial; list-style-position: inside; list-style-type: circle; }
+	li { 
+		margin-bottom: 0.15em; 
+		padding-left: 1em;
+		text-indent: -1em;
+		max-width: 80%;
+		@media #{mobile} { max-width: 100%; }
+	}
+
+	strong a, strong a:visited {
+		color: black;
 		@include transition( all 0.25s ease-in-out );
-		color: $link-color;
+		&:hover {
+			@include transition( all 0.25s ease-in-out );
+			color: $link-color;
+		}
 	}
 }
 
@@ -334,11 +358,13 @@ footer {
 	p, & ul {
 		font-size: smaller;
 		line-height: 1.75em;
+		margin-bottom: 0.25em;
 	}
-	hr { 
-		border-weight: 1px ; 
-		border-color: rgba($footer-text-color, 0.25);
+
+	li {
+		margin-bottom: 0.25em;
 	}
+
 	a:link, a:visited {
 		font-family: inherit;
 		line-height: 1.75em;
@@ -355,52 +381,40 @@ footer {
 ================================================== */
 
 /* Larger than 960px (devices and browsers) */
-@media only screen and (min-width: 960px) {}
+@media only screen and (min-width: 960px) {
+	.mobile { display:none; }
+	.desktop { display:inherit; }
+}
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
+@media only screen and (max-width: 959px) {
+	.mobile { display:none; }
+	.desktop { display:inherit; }
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.mobile { display:none; }
+	.desktop { display:inherit; }
+}
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-	.mobile { display:none; }
-	.title  { float: none; }	
+	.desktop { display:none; }
+	.mobile { display:inherit; }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	.mobile { display:none; }
-	.title  { float: none; }
+	.desktop { display:none; }
+	.mobile { display:inherit; }
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-	.title  { float: none; }
-	.mobile { display:none; }
+	.desktop { display:none; }
+	.mobile { display:inherit; }
 }
-
-
-
-
-/* #Font-Face
-================================================== */
-/* 	This is the proper syntax for an @font-face file
-	Just create a "fonts" folder at the root,
-	copy your FontName into code below and remove
-	comment brackets */
-
-/*	@font-face {
-    font-family: 'FontName';
-    src: url('../fonts/FontName.eot');
-    src: url('../fonts/FontName.eot?iefix') format('eot'),
-         url('../fonts/FontName.woff') format('woff'),
-         url('../fonts/FontName.ttf') format('truetype'),
-         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-    font-weight: normal;
-    font-style: normal; }
-*/
 
 
 // added to test google fonts when offline

@@ -331,9 +331,9 @@ case '212':
 	case '415':
 	$company="Toca Boca";
 	$jobTitle="Designer";
-	$name;
+	$name="Kalle Hellzen";
 	$logo="http://ilbuono.co.uk/wp-content/uploads/2013/01/logo_5001.png";
-	$email;
+	$email="kalle@tocaboca.com";
 	$date="May 30, 2014";
 	$originaljobposting="http://tocaboca.theresumator.com/apply/ZoeHry/Designer.html";
 
@@ -353,7 +353,7 @@ case '212':
 	<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
 
 	<div class='four columns add-bottom omega'><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
-	<div class='clear'></div>	
+	<div class='clear'></div>
 
 	<p>
 		Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!

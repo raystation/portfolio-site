@@ -3,12 +3,15 @@
 x $section for a person to tell where they are
 - about ?resume ?hire-me
 - current learning
-- ringtonesq
-- index, put off for now
+- ringtones
+x index, put off for now
 - add more icons to quickly identify things
 - hover state, get rid of labels below thumbnails
 - add in alts for images
 - celebrity portraits
+- fake jobs page
+	- sandwich logisitcs
+- cool stuff
 
 # RESUME ADDITIONS
 - 2-3 years experience working in a professional design environment as part of a larger team or freelance experience on a wide range of client products
@@ -16,9 +19,9 @@ x $section for a person to tell where they are
 - Familiar with content development, marketing strategies, web analytics, and comfortable managing relationships with outside vendors
 - Possess a keen eye for design, able to work within a brand framework and help nurture one
 - Organized copy and material for design projects from internal teams or external sources (e.g. worked with a client or freelancer to produce a promotional video)
-- Worked closely with marketing or advertising personnel to strategize brand and product communication
+x Worked closely with marketing or advertising personnel to strategize brand and product communication
 - Must possess excellent knowledge of layout, graphic design, composition, pre-press, digital file preparation, art, illustration, photography, printing production techniques and standards
-- Ability to work effectively in a team environment and to direct outside vendors
+x Ability to work effectively in a team environment and to direct outside vendors
 - Strong project organizational skills required; able to successfully juggle multiple projects and to prioritize tasks
 
 # PROJECTS TO ADD
