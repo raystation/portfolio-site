@@ -148,7 +148,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 }
 
 .caption {
-	font-size: $caption-font-size;
+	font-size: $caption-font-size !important;
 	line-height: 1.45em;
 	list-style: none;
 	p { margin-bottom: .5em; }
@@ -181,6 +181,19 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		font-size: 12px;
 		padding: 2em 2em 1em 2em;
 	}
+}
+
+.related {
+	font-size: 90%;
+	line-height: 1.4em;
+	li {
+		margin-bottom: 0.4em;
+	}
+}
+
+.description p {
+	font-size: 16pt;
+	line-height: 1.5em;
 }
 
 // HEADER

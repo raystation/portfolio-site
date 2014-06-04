@@ -1,7 +1,7 @@
 
 # TO DO
 x $section for a person to tell where they are
-- about ?resume ?hire-me
+x about ?resume ?hire-me
 - current learning
 - ringtones
 x index, put off for now

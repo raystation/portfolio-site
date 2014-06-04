@@ -91,7 +91,7 @@
 		break;
 
 		case 'feature-shop':
-		$title = 'Pok&eacute;mon: Toys"R"Us Feature Shop';
+		$title = "Pok&eacute;mon: Toys'R'Us Feature Shop";
 		break;
 
 		case 'sarah-walko-wordpress':

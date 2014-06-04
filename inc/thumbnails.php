@@ -3,7 +3,7 @@
 	<?php
 
 		//adds home link if it's not the index page
-		if ( $description !== NULL ) { echo '<div class="add-top add-bottom"><a href="index">&#11013; Back to home</a></div>'."\n"; }
+		if ( $description !== NULL ) { echo '<hr><div class="add-top add-bottom"><a href="index">&#11013; Back to home</a></div>'."\n"; }
 		
 		// populates page with thumbnails from $work
 		$count=1;

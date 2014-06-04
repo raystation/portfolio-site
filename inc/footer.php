@@ -12,19 +12,20 @@
 					<ul>
 						<li><a href="./">home</a></li>
 						<li><a href="work">work</a></li>
-						<li><a href="about">about</a> </li>
+						<li><a href="about">about</a></li>
 					</ul>
 				</div>
 
 				<div class="four columns add-bottom">
-					<p><a href="mailto:rayuen@gmail.com?subject=">email</a></p>
+					<ul>
+						<li><a href="mailto:rayuen@gmail.com?subject=">email</a></li>
+					</ul>
 				</div>
 
 				<div class="four columns">
-					<!-- <p>
-						social <br>
-						<a href="http://www.linkedin.com/in/rayuen">linkedin.com/rayuen</a>
-					</p> -->
+					<ul>
+						<li><a href="about?id=jobs">jobs</a></li>
+					</ul>
 				</div>
 
 				<div class="four columns omega"></div>

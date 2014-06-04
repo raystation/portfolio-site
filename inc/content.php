@@ -12,7 +12,7 @@
 
 			;?>
 
-			<div class="twelve columns alpha">
+			<div class="twelve columns alpha description">
 				<?php echo "<p>".$description."</p>";?>
 				
 				<?php 

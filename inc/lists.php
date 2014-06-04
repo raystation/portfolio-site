@@ -143,6 +143,16 @@ function list_games_playing() {
 	return $container;
 }
 
+function list_random_facts() {
+	$container = array(
+		"I’ve illustrated two children’s books.",
+		"I drew caricatures at Six Flags Great Adventure in New Jersey for about four summers.",
+		"I can solve a Rubik’s Cube in under a minute.",
+		"I worked at a toy truck modeling company doing screen and pad printing.",
+	);
+	return $container;
+}
+
 function list_albums_listening() {
 	$container = array(
 		"Paracosm, <em>Washed&nbsp;Out</em>",
@@ -166,6 +176,13 @@ function all_lists(){
 				"Asian Sensation",
 				"The Worm",
 				"The Hand"
+			)),
+
+		array( "title"=>"Random Facts About Me", "items"=>array(
+				"I’ve illustrated two children’s books.",
+				"I drew caricatures at Six Flags Great Adventure in New Jersey for about four summers.",
+				"I can solve a Rubik’s Cube in under a minute.",
+				"I worked at a toy truck modeling company doing screen and pad printing.",
 			)),
 
 		array( "title"=>"Currently Playing", "items"=>array(
@@ -242,7 +259,6 @@ function all_lists(){
 	);
 
 	return $lists;
-
 }
 
 

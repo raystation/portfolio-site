@@ -143,9 +143,11 @@ if ( $title == "StoryMaps" ) {
 		<p>Looking at tarot cards for inspiration, I sought to break each event down to it's core action. The main characters would all be represented by simple stick-like figures with no faces. Each image was accentuated with one color.</p>
 		
 		<p>
-		<div class=\"caption\">Additional reading: <br />
-		<p><a href='http://www.era.lib.ed.ac.uk/handle/1842/5294' target='_blank'>Sean's Ph.D. thesis</a><br>
-		<a href=\"https://github.com/seanh\">Sean's Github page</a></p>
+		<div class='caption list-spacing-fix'>
+		<ul>Additional reading:
+			<li><a href='http://www.era.lib.ed.ac.uk/handle/1842/5294' target='_blank'>Sean's Ph.D. thesis</a></li>
+			<li><a href=\"https://github.com/seanh\">Sean's Github page</a></li>
+		<ul>
 		</div>
 		
 		";
@@ -208,7 +210,7 @@ if ( $title == "100 Principles of Game&nbsp;Design" ) {
 	$path="img/100-principles-of-game-design/";
 
 	$description = "Because of a scheduling problem, I was was asked to do the illustrations for a game design book. “Game design you say? This is my area of expertise!” The turnaround was tight, under a month for about 30 spot illustrations. The schedule wasn't the best, but I really wanted to do game illustrations. Exchanging sketches back and forth with the author, we decided that we could have a cast of  characters that could be reused which would greatly speed up the work, as well as establish a visual language.</p>
-		<p>After a month of my regular schedule at work and then spending my time at night creating the illustrations, I was stretchef thing. However In the end, I was quite proud of the work and I took another step in mastering vector artwork.
+		<p>After a month of my regular schedule at work and then spending my time at night creating the illustrations, I was stretched thin. In the end however, I was quite proud of the work and I took another step in mastering a pure vector art style.
 		";
 
 	$sidebar = 'Published by Pearson</p>
@@ -247,10 +249,15 @@ if ( $title == "Project Animore" ) {
 
 	$path="img/project-animore/";
 
-	$description = "This was a game concept we explored on the idea of mixing things together. We never did figure out the best way to execute or make it fun in a free-to-play environment, where all the games were headed at the time on iOS. We also didn't have a developer at the time so it was all a lot of speculation on what would and wouldn't work.</p><p>In the end, we never were able to fully realize the game we wanted to make but I got a lot of great artwork out of it, which is why I am including it here.";
+	$description = "This was a game concept we explored on the idea of mixing things together. We never did figure out the best way to execute or make it fun in a free-to-play environment (where all the games were headed at the time on iOS). We also didn't have a developer at the time to actually test game ideas with so it was all a lot of speculation on what would and wouldn't work.</p><p>In the end, we never were able to fully realize the game we wanted to make but I got a lot of great artwork out of it!
+	</p>
+	<p>
+		I mean, did you see that honey bear house??
+
+	";
 
 	$sidebar = 'iOS runner<br>
-		Art  by Ray&nbsp;Yuen &amp; Sun&nbsp;Park<br>
+		Art by Ray&nbsp;Yuen &amp; Sun&nbsp;Park<br>
 		Rated G!
 	';
 
@@ -331,8 +338,8 @@ if ( $title == "Sarah Walko website" ) {
 
 	$path="img/sarah-walko-wordpress/";
 
-	$description = "My first experience building a site using Wordpress. I met artist Sarah Walko through my good artist friend Malado Baldwin. She expressed that she needed a site that she could update on her own and that she had experience with Wordpress through work. So I went about helping her figure out the best way to get this going for her.</p>
-		<p>After figuring out all the nesseary information on her hosting, the actual Wordpress install really was about 5 minutes (this is something they boast)! We worked together on learning about a fresh WP install and soon was figuring out best practices for theme management, plugins and navigation. PRETTY COOL. So cool that <a href='malado-baldwin-wordpress.php'>Malado </a> wanted a site just like Sarah’s! 
+	$description = "My first experience building a site using Wordpress. I met artist Sarah Walko through my good artist friend Malado Baldwin. She expressed that she needed a site that she could update on her own and that she had experience with Wordpress through work. So I went about helping her figure out the best way to get this going for&nbsp;her.</p>
+		<p>After figuring out all the nessesary information on her hosting, the actual Wordpress install really was about 5 minutes (this is something they boast)! We worked together on learning about a fresh WP install and soon was figuring out best practices for theme management, plugins and navigation. PRETTY COOL. So cool that <a href='malado-baldwin-wordpress.php'>Malado </a> wanted a site just like Sarah’s! 
 	";
 
 	$sidebar = 'Website<br>Built with Wordpress</p>
@@ -354,10 +361,10 @@ if ( $title == "Scavenger Hunt" ) {
 
 	$path="img/scavenger-hunt/";
 
-	$description = 'SAN FRANCISCO, California — I submitted a t-shirt design to a Threadless contest. The challenge: make a fun tee for the <a href="http://www.chicagochildrensmuseum.org">Chicago Children\'s Museum</a>. The winner would get a ticket out to Chicago and like $1,000 in store credit or something. I did a bunch of research about the museum and found my imagination running wild with the activities you could do there (and mildly jealous that I wasn\'t a kid in Chicago!). I thought it would be wonderful to have a shirt that represented all the neat things kids could do at the museum.</p>
-		<p>My first idea was to perhaps to do a "Family Circus" style map showing a kid walking around the museum. I never did figure out the best way to represent three levels and at over time, I thought that if I had a set path, there should be a reason that for this. This is what lead me to the scavenger hunt idea. T-shirt real estate wise, it was more forgiving and allowed me more freedom with the  space on the shirt.</p>
+	$description = 'SAN FRANCISCO, California — I submitted a t-shirt design to a Threadless contest. The challenge: make a fun tee for the <a href="http://www.chicagochildrensmuseum.org">Chicago Children\'s Museum</a>. The winner would get a ticket out to Chicago and like $1,000 in Threadless store credit or something. I did a bunch of research about the museum and found my imagination running wild with the activities you could do there (and mildly jealous that I wasn\'t a kid in Chicago!). I thought it would be wonderful to have a shirt that represented all the neat things kids could do at the&nbsp;museum.</p>
+		<p>My first idea was to perhaps to do a "Family Circus" style map showing a kid walking around the museum. I never did figure out the best way to represent three levels without a lot of weird perspective glitches. This is what lead me to the scavenger hunt idea. T-shirt real estate wise, it was more forgiving and allowed me more freedom with the  space on the shirt.</p>
 		<a href="img/scavenger-hunt/ref/familycircus-hq.jpg" data-lightbox="familycircus" data-title="Family Circus map"><img src="img/scavenger-hunt/ref/familycircus.jpg" class="scale-with-grid2 add-bottom"></a>
-		<p>It did not win the grand prize, however the museum still wanted to use the design regardless and according to the representative at Threadless, it is now being sold at the museum gift shop. They were, however, too cheap to send me a sample so I don’t have actual photos.';
+		<p>It did not win the grand prize, however the museum still wanted to use the design and according to the representative at Threadless, it is now being sold at the museum gift shop. They were, however, too cheap to send me a sample so I don’t have actual&nbsp;photos.';
 
 	$sidebar = 'T-shirt design for Threadless.com</p>
 				<p><a href="img/scavenger-hunt/01.jpg" data-lightbox="scav" data-title="T-shirt" alt="">shirt detail</a>
@@ -500,7 +507,7 @@ if ( $title == "Art + Paris" ) {
 	$path="img/art-and-paris/";
 
 	$description = '<strong>Impressionists Post-Impressionists: The Ultimate Guide to Artists, Paintings and Places in Paris and Normandy</strong>. This was another book in the Art+ series that Museyon was doing that they hadn’t done in a while since they started full steam with the Chronicles series. I personally had never laid out one of these, so I was eager to tackle something new.</p>
-		<p>The direction from the owner was that I didn’t need to follow the style of the previous books because he thought the stuff we have been doing recently was easier to read and more clear. Plus it looked rad. With that in mind, I basically did a merge of the two styles—the readability and conciseness of the Chronicles books with some of the previous art elements from the Art+ books.</p>
+		<p>The direction from the owner was that I didn’t need to follow the style of the previous books because he thought the stuff we have been doing recently was easier to read and more clear. Plus, it looked rad. With that in mind, I basically did a merge of the two styles—the readability and conciseness of the Chronicles books with some of the previous art elements from the Art+ books.</p>
 		<p>Epilogue: With hundreds of paintings to catalogue and detail, this book was the most meticulous and detail-oriented book I worked on with Museyon. In the end, I am quite proud of this book and for all the stuff I learned that I forgot about in art history class.'
 	;
 
@@ -531,10 +538,10 @@ if ( $title == "Chronicles of Old&nbsp;London" ) {
 
 	$path="img/chronicles-of-old-london/";
 
-	$description = '<strong>Exploring England’s Historic Capital</strong>. The last Chronicles book I laid out. By this seventh book, the process for creation was pretty automatic. The conversations moved on from design to better content and better flow. &ldquo;Is this drawing of Jack the Ripper too graphic?&rdquo; &ldquo;Is it not graphic enough?&rdquo; &ldquo;Is this too many photos of the Royal Wedding?&rdquo;</p>
-		<p>This book also has the singular distinction of making it onto a television show, &ldquo;“Parks and Recreation.&rdquo; There is an season opener where the gang goes to London and Leslie Nope is seen holding the book! Hopefully it was also read and not just used because it has a beautiful cover! You know how Macs are always used instead of PC’s in television and movies? I’d like to think that this is what’s happening here.</p>
-		<p><img src="img/chronicles-of-old-london/Parks-and-Rec-9-550x366.jpg" class="scale-with-grid" alt="" /> <br>
-		<p><img src="img/chronicles-of-old-london/Parks&Recreation_s.jpg" class="scale-with-grid" alt="" />
+	$description = '<strong>Exploring England’s Historic Capital</strong>. The last Chronicles book I laid out. By this seventh book, the process for creation was pretty automatic. The conversations moved on from design to better content and better flow. <em>&ldquo;Is this drawing of Jack the Ripper too graphic?&rdquo; &ldquo;Is it not graphic enough?&rdquo; &ldquo;Is this too many photos of the Royal Wedding?&rdquo;</em></p>
+		<p>This book also has the singular distinction of making it onto a television show, &ldquo;Parks and Recreation.&rdquo; There is a season opener where the gang goes to London and Leslie Nope is seen holding the book! Hopefully it was also read and not just used because it has a beautiful cover! You know how Macs are always used instead of PCs in television and movies? I’d like to think that this is what’s happening here.</p>
+		<p class="caption"><img src="img/chronicles-of-old-london/Parks-and-Rec-9-550x366.jpg" class="scale-with-grid" alt="" />Leslie using the guide to travel.</p>
+		<p class="caption"><img src="img/chronicles-of-old-london/Parks&Recreation_s.jpg" class="scale-with-grid" alt="" />Beautiful.
 		';
 
 	$author="Kevin&nbsp;Jackson";
@@ -594,7 +601,7 @@ if ( $title == "City Style" ) {
 	$description = 'A Field Guide to Global Fashion Capitals. The second book I worked on with Museyon, City Style was a completely one-off book on fashion. <a href="http://www.linkedin.com/in/thisisheatherc">Heather</a>, one of the editors, was a big nerd for art and fashion (she taught me about jean jackets).</p>
 		
 		<p>This was basically me and Heather\'s book, so we basically got to do most everything we wanted. With Heather manning the phones and email trying to get approved photos from fashion houses, I went about establishing a variant of the Museyon style for the book\'s skeleton. It was structured, but loose enough that it allowed each city to have it\'s own look and feel. We wanted the book to have a a magazine feel to them with bold type design with big photos that spoke for themselves. We may have gotten a little carried away in the beginning with many pages being full photos and the page count going up, but we course-corrected and got ourselves back to the target page count. </p>
-		<p>Epilogue: This book really refined the working relationship that would serve us well in the coming year as we go into full <em>Chronicles</em> mode.
+		<p>Epilogue: This book really refined the working relationship that would serve us well in the coming year as we go into full <em>Chronicles</em>&nbsp;mode.
 		';
 
 	$author = "Museyon&nbsp;Guides";
@@ -627,7 +634,10 @@ if ( $title == "Chronicles of Old&nbsp;Rome" ) {
 
 	$path="img/chronicles-of-old-rome/";
 
-	$description = '<strong>Exploring Italy\'s Eternal City</strong>. After my move to San Francisco, I didn\'t get to work on as many big projects with Museyon anymore. One thing I still do on occasion is work on their maps. Normally there is another person who makes their maps, but because they are an intensive endeavor, I was asked to help out. I had good success with it because I was more familiar with the page margins, the software and being able to make all the fonts consistently the same size. ';
+	$description = '<strong>Exploring Italy\'s Eternal City</strong>. After my move to San Francisco, I didn\'t get to work on as many big projects with Museyon anymore. One thing I still do on occasion is work on their maps. Normally there is another person who makes their maps, but because they are an intensive endeavor, I was asked to help out. I had good success with it because I was more familiar with the page margins, the software and being able to make all the fonts consistently the same&nbsp;size. 
+	</p><p>
+		That being said, they are still an intensive endeavor that involves some pretty detailed Illustrator work. And street labeling. So much street labeling.
+	';
 
 	$author = "Tamara&nbsp;Thiessen";
 	$pages = 272;
@@ -660,7 +670,7 @@ if ( $title == "Chronicles of Old New&nbsp;York" ) {
 
 		<p>Since this was the first time we worked together, I had to make sure their production files were all up to snuff. The owner had a decent eye for design and some previous production experience with magazines, but the files were a copy-and-paste mess. I showed them how to automate the more menial tasks, like converting folders of images to CMYK, paragraph/character styles and indexing (because humans have better things to do!) They had me pretty involved in the design and photo selection process which I quite enjoyed. </p>
 
-		<p>Epilogue: We worked really well together and this book actually became their best selling book which lead to them doing more in the <em>Chronicles</em> series (which meant more work for me! Yeah!). They eventually asked me to do more in the series, but that took some time. In the meantime, they asked me to layout a <a href="city-style.php">fashion book</a>.';
+		<p>Epilogue: We worked really well together and this book actually became their best selling book which lead to them doing more in the <em>Chronicles</em> series (which meant more work for me! Yeah!). They eventually asked me to do more in the series, but that took some time. In the meantime, they asked me to layout a <a href="city-style">fashion book</a>.';
 	
 	$author = "James&nbsp;Roman";
 	$pages = 260;
@@ -694,7 +704,7 @@ if ( $title == "Chronicles of Old&nbsp;Boston" ) {
 
 	$path="img/chronicles-of-old-boston/";
 
-	$description = '<strong>Exploring New England’s Historic Capital</strong>. No one can deny Boston’s historical signifigance in America’s history. Being able to read about the stories of our forefathers and a broken mollasses tank that kills woman and children alike in the same book. Amazing. ';
+	$description = '<strong>Exploring New England’s Historic Capital</strong>. No one can deny Boston’s historical signifigance in America’s history. Being able to read the stories of our forefathers and a broken mollasses tank that kills woman and children alike in the same book. Amazing. ';
 
 	$author="Charles&nbsp;Bahne";
 	$pages = 288;
@@ -727,9 +737,9 @@ if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 
 	$description = '<strong>Exploring Sin City’s High-Stakes History</strong>. The third book I worked on with Museyon. With <a href="chronicles-of-old-new-york.php"><em>Chronicles of Old New York</em></a> selling very well, they decided to continue this series. Which city? A few ideas were tossed around, but I had a feeling it was always going to be Vegas, baby. Mafia dons, casinos, Elvis, Liberace, nuclear tests...don\'t pretend like you don\'t want to know about this sort of stuff!</p>
 
-		<p>The look of this series was established, the only thing to do was to refine and respond to any sort of issues with New York\'s print run. I adjusted the margins slightly to adjust for the book\'s gutter. Picked a color palette based on the desert. Optimizied the photo sephia-process so that all photos would all look more similiar. Picked the best picture of Elvis we could.</p>
+		<p>The look of this series was established, the only thing to do was to refine and respond to any sort of issues with New York\'s print run. I adjusted the margins slightly to adjust for the book\'s gutter. Picked a color palette based on the desert. Optimized the photo sephia process so that all photos would all look more similiar. Picked the best picture of Elvis we could.</p>
 
-		<p>Epilogue: With the amazing cover, this is easily my favorite book in the series because the stories were so amazing and we had a lot of fun putting it all together.
+		<p>Epilogue: With the amazing cover and content, this is easily my favorite book in the whole series because the stories were so amazing and we had a lot of fun putting it all together.
 	 ';
 
 	$author="James&nbsp;Roman";
@@ -760,12 +770,12 @@ if ( $title == "Abriendo Puertas / Opening&nbsp;Doors" ) {
 
 	$path="img/abriendo-puertas/";
 
-	$description = 'Abriendo Puertas / Opening Doors is a non-profit dedicated to decreasing the drop-out rate of Latino kids by instilling good behaviors at home. They believe the answer starts at home so their primary focus is on educating their parents. AP/OD holds training sessions where they teach parents different things they could do with their kids, like reading to them more and talking to them more about everything.</p>
-		<p>Abriendo Puertas needed a simple informational site where parents and educators could come to find out more about the organization, where trainings would be, and educators could access teaching materials. After getting approval on the overall look of the site, we built the site based on the Skeleton framework. After a few rounds of going back and forth, we nailed we streamlined the content of the site with PHP. 
+	$description = '<em>Abriendo Puertas / Opening Doors</em> is a non-profit dedicated to decreasing the drop-out rate of Latino kids by instilling good behaviors at home. They believe the answer starts at home so their primary focus is on educating their parents. AP/OD holds training sessions where they teach parents different things they could do with their kids to better engage them and acclimate them to a learning environment.</p>
+		<p>AP/OD needed an informational site where parents and educators could come to find out more about the organization, where trainings would be, and a place where educators could access teaching materials. After getting approval on the overall look of the site, we built the site based on the Skeleton framework. After a few rounds of going back and forth, we streamlined the content of the site with PHP. They now have beautiful site that looks good on all devices.
 		';
 	
 	$sidebar = "Responsive Website</p>
-		<p>Built with Skeleton, PHP</p>
+		<p>Built with Skeleton, jQuery, PHP</p>
 		<p><a href='http://ap-od.org' target='_blank'>ap-od.org</a>
 	";
 
@@ -788,10 +798,23 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 	$path="img/monkey-mo/";
 
 	$description = 'Teaming up again with author Lin Fong O\'Neil, we worked together to create another children\'s book. Lin wanted to make another book about another animal in the Chinese zodiac and when she asked me what I wanted to do, I responded with "Monkey!" Monkeys are rad obviously.</p>
-		<p>The story follows the adventures of a little boy\'s adventure to the zoo and finding a new best friend. I put a lot of detail into this book and made it somewhat interactive. I hid animals in various spots so as give children an activity to do after they finish.';
+		<p>The story follows the adventures of a little boy\'s adventure to the zoo and finding a new best friend. I put a lot of detail into this book and made it somewhat interactive. I hid animals in various spots so as give children an activity to do after they finish.
+		</p>
+
+		<hr>
+		<div class="six columns alpha">
+			<a href="img/monkey-mo/classroom1.jpg" data-lightbox="monkey" data-title="The group"><img class="scale-with-grid" src="img/monkey-mo/classroom1.jpg" alt=""></a>
+		</div>
+		<div class="six columns omega">
+			<a href="img/monkey-mo/classroom2.jpg" data-lightbox="monkey" data-title="The group"><img class="scale-with-grid" src="img/monkey-mo/classroom2.jpg" alt=""></a>
+		</div>
+		<p>
+		The time I read the book to a kindergarten class and then taught them how to draw monkeys. That was a good day!
+		'
+		;
 	
 	$sidebar = "Children's Book<br>Published 2010</p>
-		<p>written by: Lin Fong O'Neill, <a href='http://www.lotuswriting.com'>Lotus Writing</a><br>Illustrated: by Ray Yuen</p>
+		<p>written by: Lin Fong O'Neill, <a href='http://www.lotuswriting.com'>Lotus&nbsp;Writing</a><br>Illustrated: by Ray Yuen</p>
 		<p>Hand-drawn and inked, coloring done in Photoshop</p>
 		<p><a href='http://www.amazon.com/Monkey-Mo-Go-Lin-Fong-ONeill/dp/0978644131'>Buy the book</a></p>
 		<p><img width='50%' class='add-top' src='img/monkey-mo/icon_peter.png' alt='' />
@@ -824,7 +847,7 @@ if ( $title == "The Rise of Darkrai" ) {
 
 	$description = 'The Rise of Darkrai was the 10th Pok&eacute;mon movie made and the third movie I worked&nbsp;on.</p>
 		<p>It was around this time I was finally starting to feel comfortable with the logos I was creating for these movies. The logos were by far the hardest part for me because they went against everything I was taught in school—to simplify and remove. Here it was almost more is better. Ornamental, fun and colorful. It was a little hard to adjust to at first, but eventually we got&nbsp;there.</p>
-		<p>Chris, the creative director and I worked closely on this one. I gave him a bunch of ideas, but they were all missing something. Once he found the typeface we ended up using, it quickly came in place. I thought the gothic typeface really captured the feel of the featured ghost-like character and the look of the movie. After that, localizing the rest of the materials was easy.
+		<p>Chris, the creative director, and I worked closely on this one. I gave him a bunch of ideas, but they were all missing something. Once he found the typeface we ended up using, it quickly came in place. I thought the gothic typeface really captured the feel of the featured ghost-like character and the look of the movie. After that, localizing the rest of the materials was easy.
 		</p>';
 	
 	$sidebar = "February 2008</p>
@@ -853,7 +876,8 @@ if ( $title == "Suspended Belief Studios" ) {
 
 	$path="img/suspended-belief-studios/";
 
-	$description = 'Me and my friend Jeremy Klar started this company together. Originally intended to just make games, we have since taken on some web design clients as well.' ;
+	$description = 'Me and my friend Jeremy Klar started this company together. Originally intended to just make games, we have since taken on some web development as well. Originally began in Brooklyn, we moved out to San Francisco to be closer to the gaming scene.' 
+	;
 	
 	$sidebar = "Design studio.</p>
 	<p><a href=\"http://www.suspendedbeliefgames.com\">suspendedbeliefgames.com</a>";
@@ -913,7 +937,7 @@ if ( $title == "Pok&eacute;mon: 15th Anniversary" ) {
 //  POKEMON TOYS R US
 // ===============================
 
-if ( $title == "Pok&eacute;mon: Toys\"R\"Us Feature Shop" ) {
+if ( $title == "Pok&eacute;mon: Toys'R'Us Feature Shop" ) {
 
 	$path="img/feature-shop/";
 
