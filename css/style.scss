@@ -147,6 +147,24 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	}
 }
 
+.underline {
+	// position: relative;
+    border-bottom: 3px solid rgba(steelblue,0.35);
+	@include transition( all 0.25s ease-in-out );
+    &:hover {
+		@include transition( all 0.25s ease-in-out );
+    	border-bottom: 3px solid rgba(steelblue,1);
+
+    }
+	// &:after {
+	//     content: "";
+	//     left: -10px;
+	//     position: absolute;
+	//     right: -10px;
+	//     top: 50%;
+	// }
+}
+
 .caption {
 	font-size: $caption-font-size !important;
 	line-height: 1.45em;
@@ -191,9 +209,14 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	}
 }
 
-.description p {
+.description {
+	a {  
+		// @extend .underline;
+	}
+	p {
 	font-size: 16pt;
 	line-height: 1.5em;
+	}
 }
 
 // HEADER
@@ -306,14 +329,21 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 // ======================================
 
 .chart > div {
-	font: 10pt sans-serif;
-	background-color: lighten($link-color,40%);
-	padding: 3px;
-	margin: 5px 0;
+	font: 8pt sans-serif;
+	font-weight: bold;
+	background-color: lighten(silver,15%);
+	padding: 0;
+	margin: 0;
 	@include transition( all 0.25s ease-in-out );
-	&:hover {
-		@include transition( all 0.25s ease-in-out );
+	
+	> div {
 		background-color: lighten($link-color,30%);
+		margin: 5px 0;
+		padding: 4px 0 4px 10px;
+	}
+	&:hover .inner {
+		@include transition( all 0.25s ease-in-out );
+		background-color: lighten(silver,10%);
 	}
 }
 
@@ -393,41 +423,34 @@ footer {
 /* #Media Queries
 ================================================== */
 
-/* Larger than 960px (devices and browsers) */
-@media only screen and (min-width: 960px) {
-	.mobile { display:none; }
-	.desktop { display:inherit; }
-}
+	/* Larger than 960px (devices and browsers) */
+  @media only screen and (min-width: 960px) { 
+  }
 
-/* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {
-	.mobile { display:none; }
-	.desktop { display:inherit; }
-}
+  /* Smaller than standard 960 (devices and browsers) */
+  @media only screen and (max-width: 959px) { 
+  }
 
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-	.mobile { display:none; }
-	.desktop { display:inherit; }
-}
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+  @media only screen and (min-width: 768px) and (max-width: 959px) { 
+  }
 
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-	.desktop { display:none; }
-	.mobile { display:inherit; }
-}
+	/* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) { 
+  	.mobile  { display:inherit; }
+  	.desktop { display:none; }  }
 
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-	.desktop { display:none; }
-	.mobile { display:inherit; }
-}
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+  @media only screen and (min-width: 480px) and (max-width: 767px) { 
+  	.mobile  { display:inherit; }
+  	.desktop { display:none; }
+  }
 
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
-	.desktop { display:none; }
-	.mobile { display:inherit; }
-}
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+  @media only screen and (max-width: 479px) { 
+  	.mobile  { display:inherit; }
+  	.desktop { display:none; }
+  }
 
 
 // added to test google fonts when offline

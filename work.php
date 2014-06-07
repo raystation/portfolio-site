@@ -44,6 +44,10 @@
 
 		case 'chronicles-of-old-rome':
 		$title = 'Chronicles of Old&nbsp;Rome';
+		break;		
+
+		case 'chronicles-of-old-paris':
+		$title = 'Chronicles of Old&nbsp;Paris';
 		break;
 
 		case 'city-style':
@@ -86,8 +90,8 @@
 		$title = 'Nerd Comics';
 		break;
 
-		case '15th-anniversary':
-		$title = 'Pok&eacute;mon: 15th Anniversary';
+		case '10th-anniversary':
+		$title = 'Pok&eacute;mon: 10th Anniversary';
 		break;
 
 		case 'feature-shop':
@@ -114,10 +118,22 @@
 		$title = 'The 3';
 		break;
 
+		case 'museyon-guides':
+		$title = 'Museyon Guides';
+		break;		
+
+		case 'pokemon':
+		$title = 'Pok&eacute;mon';
+		break;
+
+		case 'toy-fair':
+		$title = 'Pok&eacute;mon: Toy Fair';
+		break;		
+
 	}
 	
 if ( is_null($title) ) { $pageTitle = "Ray Yuen | Work"; } else { $pageTitle = "Ray Yuen | " . $title; }
 include('inc/header.php');
 if ( is_null($project) ) {} else { include('inc/content.php'); }
-include('inc/thumbnails.php');
+skeleton_print_thumbnail_4($works);
 include('inc/footer.php'); 

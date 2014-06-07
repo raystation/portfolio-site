@@ -1,17 +1,30 @@
 
 # TO DO
-x $section for a person to tell where they are
+
+x Put Pokemon all on one page?
+
+x Put Museyon all on one page?
+
+- add icons for "tools"
+
 x about ?resume ?hire-me
+
 - current learning
+
 - ringtones
+
 x index, put off for now
+
 - add more icons to quickly identify things
+
 - hover state, get rid of labels below thumbnails
+
 - add in alts for images
+
 - celebrity portraits
-- fake jobs page
-	- sandwich logisitcs
-- cool stuff
+
+x fake jobs page
+	x sandwich logisitcs
 
 # RESUME ADDITIONS
 - 2-3 years experience working in a professional design environment as part of a larger team or freelance experience on a wide range of client products

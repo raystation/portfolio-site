@@ -44,6 +44,8 @@
 		</div> <!-- END CONTAINER -->
 
 	</footer>
+
+	<div class="responsive-indicator"></div>
 	
 	<!-- Slick
 	================================================== -->
