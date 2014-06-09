@@ -8,7 +8,7 @@
 				$projects=get_SBS_projects();
 				break;
 
-				case "Pok&eacute;mon":
+				case "The Pok&eacute;mon Company":
 				$projects=get_pokemon_projects();
 				break;
 				

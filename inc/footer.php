@@ -91,16 +91,17 @@
 		headroom.init();
 	</script>
 
-	<?php 
-		if ( strpos($pageTitle,"Hire Me") ) {
-			echo "<script src=\"js/jquery.tooltipster.min.js\"></script>".
-			"<script>
+	<script src="js/jquery.tooltipster.min.js"></script>
+	<script>
+        
         $(document).ready(function() {
-            $('.tooltip').tooltipster();
+            $('.tooltip').tooltipster({
+            	animation: 'fade',
+            	delay: 800
+            });
         });
-    	</script>";
-		}
-	;?>
+
+	</script>
 
 <!-- End Document
 ================================================== -->

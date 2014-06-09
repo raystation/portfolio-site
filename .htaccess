@@ -8,7 +8,6 @@ RewriteRule ^resume$ about?id=resume
 RewriteRule ^portraits$ work?project=portraits
 
 RewriteRule ^pokemon$ work?project=pokemon
-RewriteRule ^10th-anniversary$ work?project=10th-anniversary
 RewriteRule ^feature-shop$ work?project=feature-shop
 RewriteRule ^arceus$ work?project=arceus
 RewriteRule ^darkrai$ work?project=darkrai
@@ -16,6 +15,12 @@ RewriteRule ^toy-fair$ work?project=toy-fair
 RewriteRule ^mystery-dungeon$ work?project=mystery-dungeon
 RewriteRule ^battle-revolution$ work?project=battle-revolution
 RewriteRule ^pocket-pokedex$ work?project=pocket-pokedex
+RewriteRule ^mystery-dungeon$ work?project=mystery-dungeon
+RewriteRule ^pocket-pokedex$ work?project=pocket-pokedex
+RewriteRule ^10th-anniversary$ work?project=10th-anniversary
+RewriteRule ^dp-launch$ work?project=dp-launch
+RewriteRule ^licensing-show$ work?project=licensing-show
+RewriteRule ^pokemon-logos$ work?project=pokemon-logos
 
 RewriteRule ^museyon-guides$ work?project=museyon-guides
 RewriteRule ^art-and-paris$ work?project=art-and-paris

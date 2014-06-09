@@ -1608,14 +1608,36 @@ img.scale-with-grid2 {
   background-color: #e6e6e6;
   padding: 0;
   margin: 0;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out; }
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
   .chart > div > div {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     background-color: #b2cce1;
     margin: 5px 0;
     padding: 4px 0 4px 10px; }
   .chart > div:hover .inner {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: #d7e4ef; }
+
+.tech-skills > div {
+  font: 8pt sans-serif;
+  font-weight: bold;
+  background-color: #c4d8e8;
+  padding: 4px;
+  margin: 4px 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+  .tech-skills > div > div {
+    background-color: #b2cce1;
+    margin: 5px 0;
+    padding: 4px 0 4px 10px; }
+  .tech-skills > div:hover .inner {
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;

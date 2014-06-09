@@ -123,11 +123,35 @@
 		break;		
 
 		case 'pokemon':
-		$title = 'Pok&eacute;mon';
+		$title = 'The Pok&eacute;mon Company';
 		break;
 
 		case 'toy-fair':
 		$title = 'Pok&eacute;mon: Toy Fair';
+		break;		
+
+		case 'mystery-dungeon':
+		$title = 'Pok&eacute;mon: Mystery&nbsp;Dungeon';
+		break;		
+
+		case 'battle-revolution':
+		$title = 'Battle Revolution';
+		break;		
+
+		case 'pocket-pokedex':
+		$title = 'Pocket Pok&eacute;dex';
+		break;		
+
+		case 'dp-launch':
+		$title = 'Pok&eacute;mon: Diamond & Pearl Launch';
+		break;		
+
+		case 'licensing-show':
+		$title = 'Licensing Show';
+		break;		
+
+		case 'pokemon-logos':
+		$title = 'Pok&eacute;mon: Logos';
 		break;		
 
 	}

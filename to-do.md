@@ -26,7 +26,7 @@ x index, put off for now
 x fake jobs page
 	x sandwich logisitcs
 
-# RESUME ADDITIONS
+` RESUME ADDITIONS
 - 2-3 years experience working in a professional design environment as part of a larger team or freelance experience on a wide range of client products
 - Experience launching branding, marketing or advertising initiatives
 - Familiar with content development, marketing strategies, web analytics, and comfortable managing relationships with outside vendors

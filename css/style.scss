@@ -334,6 +334,26 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	background-color: lighten(silver,15%);
 	padding: 0;
 	margin: 0;
+	@include transition( all 0.5s ease-in-out );
+	
+	> div {
+		@include transition( all 0.5s ease-in-out );
+		background-color: lighten($link-color,30%);
+		margin: 5px 0;
+		padding: 4px 0 4px 10px;
+	}
+	&:hover .inner {
+		@include transition( all 0.5s ease-in-out );
+		background-color: lighten($link-color,40%);
+	}
+}
+
+.tech-skills > div {
+	font: 8pt sans-serif;
+	font-weight: bold;
+	background-color: lighten(steelblue,35%);
+	padding: 4px;
+	margin: 4px 0;
 	@include transition( all 0.25s ease-in-out );
 	
 	> div {
