@@ -1,4 +1,4 @@
-RewriteEngine on
+RewriteEngine On
 
 RewriteRule ^work$ work.php
 RewriteRule ^about$ about.php

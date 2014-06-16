@@ -24,7 +24,7 @@
 
 				<div class="four columns">
 					<ul>
-						<li><a href="about?id=jobs">jobs</a></li>
+						<!-- <li><a href="about?id=jobs">jobs</a></li> -->
 					</ul>
 				</div>
 

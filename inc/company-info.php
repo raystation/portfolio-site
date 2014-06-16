@@ -350,7 +350,12 @@ case '212':
 
 	<p>
 		Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
-	</p>";
+	</p><hr><p>
+	
+	Update June 13, 2014: <br>
+	asked to do a homework assignment. <br />
+	<a href='http://rayuen.com/projects/toca-boca-homework.pdf'>link to homework</a>
+	";
 
 	break;
 

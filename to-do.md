@@ -1,32 +1,26 @@
 
 # TO DO
+========================
 
+- narrative on the work page
 x Put Pokemon all on one page?
-
 x Put Museyon all on one page?
-
 - add icons for "tools"
-
 x about ?resume ?hire-me
-
 - current learning
-
 - ringtones
-
 x index, put off for now
-
 - add more icons to quickly identify things
-
 - hover state, get rid of labels below thumbnails
-
 - add in alts for images
-
 - celebrity portraits
-
 x fake jobs page
 	x sandwich logisitcs
 
-` RESUME ADDITIONS
+
+RESUME ADDITIONS
+========================
+
 - 2-3 years experience working in a professional design environment as part of a larger team or freelance experience on a wide range of client products
 - Experience launching branding, marketing or advertising initiatives
 - Familiar with content development, marketing strategies, web analytics, and comfortable managing relationships with outside vendors
@@ -37,7 +31,9 @@ x Worked closely with marketing or advertising personnel to strategize brand and
 x Ability to work effectively in a team environment and to direct outside vendors
 - Strong project organizational skills required; able to successfully juggle multiple projects and to prioritize tasks
 
+
 # PROJECTS TO ADD
+========================
 pocket pokedex
 forus
 Mystery Dungeon

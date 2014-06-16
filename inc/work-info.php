@@ -18,10 +18,10 @@ $works = array(
 	array( "name" => "Sarah Walko website","path" => "sarah-walko-wordpress","thumb" => "jpg" ), 
 	array( "name" => "Edgeware","path" => "edgeware","thumb" => "jpg" ), 
 	array( "name" => "StoryMaps","path" => "storymaps","thumb" => "jpg" ),
-	// array( "name" => "idibon","path" => "idibon","thumb" => "jpg" ),
 	array( "name" => "Malado Baldwin Wordpress website","path" => "malado-baldwin-wordpress","thumb" => "jpg" ),
 	array( "name" => "Egg Baby","path" => "egg-baby","thumb" => "jpg" ), 
 	array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit", "thumb" => "jpg" ),
+	// array( "name" => "idibon","path" => "idibon","thumb" => "jpg" ),
 	// array( "name" => "Nerd Comics", "path" => "nerd-comics", "thumb" => "jpg" ),
 );
 
@@ -42,8 +42,8 @@ function get_museyon_books(){
 		array( "name" => "Chronicles of Old Las&nbsp;Vegas","path" => "chronicles-of-old-las-vegas","thumb" => "jpg" ),
 		array( "name" => "Chronicles of Old&nbsp;Boston","path" => "chronicles-of-old-boston","thumb" => "jpg" ), 
 		array( "name" => "Chronicles of Old&nbsp;Paris","path" => "chronicles-of-old-paris","thumb" => "jpg" ), 
+		array( "name" => "Chronicles of Old&nbsp;London", "path" => "chronicles-of-old-london", "thumb" => "jpg" ),
 		array( "name" => "Art + Paris","path" => "art-and-paris","thumb" => "jpg" ),
-		array( "name" => "Chronicles of Old&nbsp;London","path" => "chronicles-of-old-london", "thumb" => "jpg" ),
 		array( "name" => "Chronicles of Old&nbsp;Rome","path" => "chronicles-of-old-rome","thumb" => "jpg" ),
 	);
 	return $works;
@@ -344,11 +344,6 @@ if ( $title == "StoryMaps" ) {
 
 	$path="img/storymaps/";
 
-	$tools=array(
-		array("skill"=>"Hand-drawn&nbsp;illustrations", "percent"=>70),
-		array("skill"=>"Photoshop", "percent"=>30),
-	);
-
 	$description = "
 		A programmer I knew, <a href=\"https://github.com/seanh\">Sean Hammond</a>, was coding some software for a Ph.D. study that would assist children in the process of story creation. He called it StoryMaps. Essentially, StoryMaps breaks down the elements of traditional fairy tales into building blocks which children could use to invent new stories. They can create stories that contain their own original ideas while being structurally complete and well-formed.
 		</p><p>
@@ -409,8 +404,6 @@ if ( $title == "Indiginauts" ) {
 		<a href="http://www.indiginauts.com" target="_blank">Demo Link</a>
 	';
 	
-	$tools = array("Photoshop","Illustrator","Flash","Hand-drawn illustrations", "iPad","iPhone");
-
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>55),
 		array("skill"=>"Hand&nbsp;Drawn&nbsp;Illustrations", "percent"=>35),
@@ -570,13 +563,11 @@ if ( $title == "Malado Baldwin Wordpress site" ) {
 		Epilogue: Malado really likes Wordpress, but finds it overwhelming sometimes. Artists are very picky about how their work is shown so she needed complete freedom. She is generally happy with the site but she finds that she doesn’t have the time to maintain it anymore. Recently, I’ve been thinking about building her a super simple site with my newfound PHP, jQuery, media query and SASSSSSS skills...to be continued...?
 	";
 
-	$tools = array("Wordpress framework","HTML","CSS","Photoshop","Illustrator");
-
 	$sidebar = 'Portfolio Website</p>
 		<p><a href="http://www.maladobaldwin.com/blog" target="_blank">link to site</a>';
 
 	$tools=array(
-		array("skill"=>"Wordpress", "percent"=>30),
+		array("skill"=>"Wordpress&nbsp;Framework", "percent"=>30),
 		array("skill"=>"Photoshop", "percent"=>20),
 		array("skill"=>"HTML", "percent"=>20),
 		array("skill"=>"CSS", "percent"=>30),
@@ -603,8 +594,6 @@ if ( $title == "Sarah Walko website" ) {
 
 	$path="img/sarah-walko-wordpress/";
 
-	$tools = array("Wordpress framework","HTML","CSS","Photoshop","Illustrator");
-
 	$description = "
 		My first experience building a site using Wordpress. I met artist Sarah Walko through my good artist friend Malado Baldwin. She expressed that she needed a site that she could update on her own and that she had experience with Wordpress through work. So I went about helping her figure out the best way to get this going for&nbsp;her.
 		</p><p>
@@ -615,7 +604,7 @@ if ( $title == "Sarah Walko website" ) {
 		<p><a href="http://www.sarahwalko.com/blog" target="_blank">sarahwalko.com</a>';
 
 	$tools=array(
-		array("skill"=>"Wordpress", "percent"=>30),
+		array("skill"=>"Wordpress&nbsp;Framework", "percent"=>30),
 		array("skill"=>"Photoshop", "percent"=>20),
 		array("skill"=>"HTML", "percent"=>20),
 		array("skill"=>"CSS", "percent"=>30),
@@ -637,8 +626,6 @@ if ( $title == "Scavenger Hunt" ) {
 
 	$path="img/scavenger-hunt/";
 
-	$tools = array("Hand-drawn illustrations","Photoshop");
-
 	$description = 'SAN FRANCISCO, California — I submitted a t-shirt design to a Threadless contest. The challenge: make a fun tee for the <a href="http://www.chicagochildrensmuseum.org">Chicago Children\'s Museum</a>. The winner would get a ticket out to Chicago and like $1,000 in Threadless store credit or something. I did a bunch of research about the museum and found my imagination running wild with the activities you could do there (and mildly jealous that I wasn\'t a kid in Chicago!). I thought it would be wonderful to have a shirt that represented all the neat things kids could do at the&nbsp;museum.
 		</p><p>
 		My first idea was to perhaps to do a "Family Circus" style map showing a kid walking around the museum. I never did figure out the best way to represent three levels without a lot of weird perspective glitches. This is what lead me to the scavenger hunt idea. T-shirt real estate wise, it was more forgiving and allowed me more freedom with the  space on the shirt.
@@ -655,7 +642,7 @@ if ( $title == "Scavenger Hunt" ) {
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>80),
-		array("skill"=>"Illustrator", "percent"=>20),
+		array("skill"=>"Hand&nbsp;Drawn&nbsp;Illustrations", "percent"=>20),
 	);
 
 	$img_info = array(
@@ -673,7 +660,6 @@ if ( $title == "The 3" ) {
 
 	$path="img/the3/";
 
-	$tools = array("Illustrator","Photoshop","OmniGraffle");
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>70, "icon"=>"IL"),
 		array("skill"=>"Photoshop", "percent"=>20, "icon"=>"PS"),
@@ -719,14 +705,13 @@ if ( $title == "Edgeware" ) {
 
 	$path="img/edgeware/";
 
-	$tools = array("Hand-drawn illustrations","Illustrator","Photoshop");
-
 	$description = 'These are vector graphics proposed for a device that would help  Coast Guard patrols decide on the best course of action or even rules of engagement. They would input the conditions and the device would narrow down your options. I am not sure that this device was actually ever created but that’s the world of lucrative government contracts fer&nbsp;ya.';
 
 	$sidebar = 'Vector Illustrations';
 
 	$tools=array(
-		array("skill"=>"Photoshop", "percent"=>80),
+		array("skill"=>"Photoshop", "percent"=>70),
+		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>10),
 		array("skill"=>"Illustrator", "percent"=>20),
 	);	
 
@@ -748,8 +733,6 @@ if ( $title == "Edgeware" ) {
 if ( $title == "Egg Baby" ) {
 
 	$path="img/egg-baby/";
-
-	$tools = array("Hand-drawn illustrations","Photoshop","Illustrator");
 
 	$description = 'A Brooklyn-based apparel company needed some illustrations for some of their clothing. Their work is targeted at infants, small boys and girls.';
 
@@ -780,7 +763,6 @@ if ( $title == "Color Chameleon" ) {
 
 	$path="img/color-chameleon/";
 
-	$tools = array("Hand-drawn illustrations","Photoshop");
 
 	$description = 'Color Chameleon was one of the first ideas we tried to bring to life. We thought it would be fun to run from a zookeeper who was chasing after you. The thing you needed to do was match the color of the objects that were in your path so you could camoflague and gain distance on your pursuers.
 		</p><p>
@@ -800,9 +782,8 @@ if ( $title == "Color Chameleon" ) {
 	';
 
 	$tools=array(
-		array("skill"=>"Illustrator", "percent"=>50),
+		array("skill"=>"Hand-drawn illustrations", "percent"=>50),
 		array("skill"=>"Photoshop", "percent"=>45),
-		array("skill"=>"Indesign", "percent"=>5),
 	);	
 
 	$img_info = array(
@@ -828,8 +809,6 @@ if ( $title == "Color Chameleon" ) {
 if ( $title == "Art + Paris" ) {
 
 	$path="img/art-and-paris/";
-
-	$tools = array("Indesign","Photoshop","Illustrator");
 
 	$description = '
 	<strong>Impressionists Post-Impressionists: The Ultimate Guide to Artists, Paintings and Places in Paris and Normandy</strong>. This was another book in the <em>Art+</em> series that Museyon was doing that they hadn’t done in a while since they started full steam with the Chronicles series. I personally had never laid out one of these, so I was eager to tackle something new.
@@ -875,7 +854,11 @@ if ( $title == "Chronicles of Old&nbsp;London" ) {
 
 	$path="img/chronicles-of-old-london/";
 
-	$tools = array("Indesign","Photoshop","Illustrator");
+	$tools=array(
+		array("skill"=>"Indesign", "percent"=>75),
+		array("skill"=>"Photoshop", "percent"=>20),
+		array("skill"=>"Illustrator", "percent"=>5),
+	);	
 
 	$description = '
 		<strong>Exploring England’s Historic Capital</strong>. The last Chronicles book I laid out. By this seventh book, the process for creation was pretty automatic. The conversations moved on from design to better content and better flow. <em>&ldquo;Is this drawing of Jack the Ripper too graphic?&rdquo; &ldquo;Is it not graphic enough?&rdquo; &ldquo;Is this too many photos of the Royal Wedding?&rdquo;</em>
@@ -893,12 +876,6 @@ if ( $title == "Chronicles of Old&nbsp;London" ) {
 	$url = "http://www.museyon.com/shop/chronicles-of-old-london/";
 
 	$sidebar = museyon_sidebar();
-
-	$tools=array(
-		array("skill"=>"Indesign", "percent"=>75),
-		array("skill"=>"Photoshop", "percent"=>20),
-		array("skill"=>"Illustrator", "percent"=>5),
-	);	
 
 	$img_info = array(
 	    array("file" => "cover.jpg", "alt" => "Book Cover"),
@@ -921,8 +898,6 @@ if ( $title == "Chronicles of Old&nbsp;London" ) {
 if ( $title == "Chronicles of Old&nbsp;Paris" ) {
 
 	$path="img/chronicles-of-old-paris/";
-
-	$tools = array("Indesign","Photoshop","Illustrator");
 
 	$description = '
 		<strong>Exploring the Historic City of Light</strong>. Paris. The city of love. This place has a very special place in my heart because this is was my first trip with my s.o. other than each other\'s cities (long distance!).</p><p>Where the Vegas book was rife with land grabbing deals, the American frontier, casinos and big personalities—the Paris book was about food, steadfastness, art and music. There\'s a story about the city being starved during a siege and them resorting to eating zoo animals instead of surrendering. Oh and the top restaurants fought over who got which animal. How amazing is that?
@@ -948,7 +923,7 @@ if ( $title == "Chronicles of Old&nbsp;Paris" ) {
 		array("file" => "02.jpg", "alt" => "Napoleon"),
 	);	
 
-} //end chronicles-of-old-london
+} //end chronicles-of-old-paris
 
 
 // #CITY STYLE
@@ -957,8 +932,6 @@ if ( $title == "Chronicles of Old&nbsp;Paris" ) {
 if ( $title == "City Style" ) {
 
 	$path="img/city-style/";
-
-	$tools = array("Indesign","Photoshop","Illustrator");
 
 	$description = '
 		A Field Guide to Global Fashion Capitals. The second book I worked on with Museyon, City Style was a completely one-off book on fashion. <a href="http://www.linkedin.com/in/thisisheatherc">Heather</a>, one of the editors, was a big nerd for art and fashion (she taught me about jean jackets).
@@ -1007,7 +980,6 @@ if ( $title == "Chronicles of Old&nbsp;Rome" ) {
 
 	$path="img/chronicles-of-old-rome/";
 
-	$tools = array("Illustrator","Photoshop","Indesign","Google Maps","Openmaps");
 
 	$description = '
 		<strong>Exploring Italy\'s Eternal City</strong>. After my move to San Francisco, I didn\'t get to work on as many big projects with Museyon anymore. One thing I still do on occasion is work on their maps. Normally there is another person who makes their maps, but because they are an intensive endeavor, I was asked to help out. I had good success with it because I was more familiar with the page margins, the software and being able to make all the fonts consistently the same&nbsp;size. 
@@ -1023,10 +995,13 @@ if ( $title == "Chronicles of Old&nbsp;Rome" ) {
 	$sidebar = museyon_sidebar();
 
 	$tools=array(
-		array("skill"=>"Indesign", "percent"=>75),
-		array("skill"=>"Photoshop", "percent"=>20),
-		array("skill"=>"Illustrator", "percent"=>5),
+		array("skill"=>"Illustrator", "percent"=>70),
+		array("skill"=>"Google Maps", "percent"=>10),
+		array("skill"=>"Openmaps", "percent"=>10),
+		array("skill"=>"Photoshop", "percent"=>5),
+		array("skill"=>"Indesign", "percent"=>5),
 	);	
+	$tools = array("Illustrator","Photoshop","Indesign","Google Maps","Openmaps");
 
 	$img_info = array(
    		array("file" => "cover.jpg", "alt" => ""),
@@ -1046,8 +1021,6 @@ if ( $title == "Chronicles of Old New&nbsp;York" ) {
 
 	$path="img/chronicles-of-old-new-york/";
 
-	$tools = array("Indesign","Photoshop","Illustrator");
-
 	$description = '
 		<strong>Explore 400 years of Manhattan history</strong>. <em>Chronicles of Old New York</em> was the first book I worked on with Museyon Guides. The first half of the book details stories in and around New York City\'s history. The second half of the book featured walking tours which would highlight eight areas and provide references to the first half of the book. The historic content was pretty awesome. Gun duels, old taverns in the city (that George Washington went to!), rich capitalists that built the city...it was nice to know more about the city I lived in.
 		</p><p>
@@ -1055,7 +1028,7 @@ if ( $title == "Chronicles of Old New&nbsp;York" ) {
 		</p><p>
 		Since this was the first time we worked together, I had to make sure their production files were all up to snuff. The owner had a decent eye for design and some previous production experience with magazines, but the files were a copy-and-paste mess. I showed them how to automate the more menial tasks, like converting folders of images to CMYK, paragraph/character styles and indexing (because humans have better things to do!) They had me pretty involved in the design and photo selection process which I quite enjoyed. 
 		</p><p>
-		Epilogue: We worked really well together and this book actually became their best selling book which lead to them doing more in the <em>Chronicles</em> series (which meant more work for me! Yeah!). They eventually asked me to do more in the series, but that took some time. In the meantime, they asked me to layout a <a href="city-style">fashion book</a>.';
+		<strong>Epilogue</strong>: We worked really well together and this book actually became their best selling book which lead to them doing more in the <em>Chronicles</em> series (which meant more work for me! Yeah!). They eventually asked me to do more in the series, but that took some time. In the meantime, they asked me to layout a <a href="city-style">fashion book</a>.';
 	
 	$author = "James&nbsp;Roman";
 	$pages = 260;
@@ -1094,8 +1067,6 @@ if ( $title == "Chronicles of Old New&nbsp;York" ) {
 if ( $title == "Chronicles of Old&nbsp;Boston" ) {
 
 	$path="img/chronicles-of-old-boston/";
-
-	$tools = array("Indesign","Photoshop","Illustrator");
 
 	$description = '<strong>Exploring New England’s Historic Capital</strong>. No one can deny Boston’s historical signifigance in America’s history. Being able to read the stories of our forefathers and a broken mollasses tank that kills woman and children alike in the same book. Amazing. ';
 
@@ -1220,12 +1191,6 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 		array("skill"=>"Indesign", "percent"=>10),
 		array("skill"=>"Illustrator", "percent"=>5),
 	);
-
-	$tools=array(
-		array("skill"=>"Hand&nbsp;drawn&nbsp;Illustrations", "percent"=>40),
-		array("skill"=>"Photoshop", "percent"=>35),
-		array("skill"=>"Indesign", "percent"=>25),
-	);	
 
 	$description = '
 		Teaming up again with author Lin Fong O\'Neil, we worked together to create another children\'s book. Lin wanted to make another book about another animal in the Chinese zodiac and when she asked me what I wanted to do, I responded with "Monkey!" Monkeys are rad&nbsp;obviously.
