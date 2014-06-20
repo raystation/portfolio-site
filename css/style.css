@@ -1463,7 +1463,7 @@ img.scale-with-grid2 {
     top: 50%; }
 
 .underline {
-  border-bottom: 3px solid rgba(70, 130, 180, 0.35);
+  border-bottom: 3px solid rgba(70, 130, 180, 0.25);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
@@ -1471,7 +1471,7 @@ img.scale-with-grid2 {
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
-    border-bottom: 3px solid steelblue; }
+    border-bottom: 3px solid rgba(70, 130, 180, 0.5); }
 
 .caption, .index-right-column {
   font-size: 10pt !important;

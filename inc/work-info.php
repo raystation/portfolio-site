@@ -782,7 +782,7 @@ if ( $title == "Color Chameleon" ) {
 	';
 
 	$tools=array(
-		array("skill"=>"Hand-drawn illustrations", "percent"=>50),
+		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>50),
 		array("skill"=>"Photoshop", "percent"=>45),
 	);	
 

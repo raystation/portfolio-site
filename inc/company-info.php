@@ -325,7 +325,7 @@ case '212':
 	$company="Toca Boca";
 	$jobTitle="Designer";
 	$name="Kalle Hellzen";
-	$logo="http://ilbuono.co.uk/wp-content/uploads/2013/01/logo_5001.png";
+	$logo="https://scontent-b-sjc.xx.fbcdn.net/hphotos-xpa1/t1.0-9/1016556_628012347252223_866083872_n.png";
 	$email="kalle@tocaboca.com";
 	$date="May 30, 2014";
 	$originaljobposting="http://tocaboca.theresumator.com/apply/ZoeHry/Designer.html";
@@ -975,8 +975,8 @@ case '212':
 		I have over eight years of design experience from both the marketing/creative and the production side. My most relevant experience comes from Pok&eacute;mon as an in-house designer. I was part of a small team of three which all creative streamed through. We also enforced brand standards with the internal departments as well as with external vendors. I am a master of the <span class='underline tooltip' title='Photoshop, Illustrator, Indesign'>tools</span> of the trade and have relevant <span class='underline tooltip' title='HTML, CSS/Sass, PHP, Javascript'>programming</span> experience as well. 
 	</p>
 	<p>
-		Resume: <a href='resume' class='tooltip underline' title='PDF version below'>rayuen.com/resume</a><br>
-		Portfolio: <a href='work' class='underline'>rayuen.com</a>
+		Resume: <a href='resume' class='tooltip' title='PDF version below'>rayuen.com/resume</a><br>
+		Portfolio: <a href='work'>rayuen.com</a>
 	</p>
 
 	<p>

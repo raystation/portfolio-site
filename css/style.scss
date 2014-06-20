@@ -149,11 +149,11 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 
 .underline {
 	// position: relative;
-    border-bottom: 3px solid rgba(steelblue,0.35);
+    border-bottom: 3px solid rgba(steelblue,0.25);
 	@include transition( all 0.25s ease-in-out );
     &:hover {
 		@include transition( all 0.25s ease-in-out );
-    	border-bottom: 3px solid rgba(steelblue,1);
+    	border-bottom: 3px solid rgba(steelblue,0.5);
 
     }
 	// &:after {
