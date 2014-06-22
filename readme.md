@@ -1,12 +1,10 @@
 # PERSONAL PORTFOLIO SITE
-========================
 - built on the Skeleton framework
 - hand-coded with HTML/CSS/PHP
 - I'm fairly new to PHP so this definitly needs refactoring
 
 
 # TO DO
-========================
 - index, put off for now
 - add icons for "tools"
 - add in celebrity portraits
@@ -23,7 +21,6 @@ x fake jobs page
 
 
 # RESUME ADDITIONS
-========================
 - Strong project organizational skills required; able to successfully juggle multiple projects and to prioritize tasks
 - 2-3 years experience working in a professional design environment as part of a larger team or freelance experience on a wide range of client products
 - Experience launching branding, marketing or advertising initiatives
@@ -36,7 +33,6 @@ x Worked closely with marketing or advertising personnel to strategize brand and
 
 
 # PROJECTS TO ADD
-========================
 - pocket pokedex
 - forus
 - Mystery Dungeon
