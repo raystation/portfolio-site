@@ -1051,6 +1051,56 @@ case '212':
 	$other2="<img src='http://pekandarattyre.files.wordpress.com/2012/06/luffy-1.gif' class='tooltip' alt='GOMU GOMU NOOOOO!' title='GOMU GOMU NO...!' >";
 
 
+break;	
+
+case 'church':
+	$jobTitle="PT associate / independent&nbsp;contractor";
+	$company="anon";
+	$date="June 21, 2014";
+	$email='v7g8q-4530327344@job.craigslist.org';
+	$originaljobposting="http://sfbay.craigslist.org/sfc/med/4530327344.html";
+	$job_details="Popular San Francisco based Marketing, Graphic+ Web Design company is seeking a part time associate/independent contractor to join our team. Our business is broken down into 3: 1/3 Full Service Marketing, 1/3 Graphic Design, 1/3 Website Design. If you are looking for 15-20 hours a week, here we are. This is a multi faceted job where you will need to have the following skills AND experience. <br>
+		<br>
+		Graphic Design/Web Design:<br>
+		<br>
+		We work predominantly in Illustrator, Photoshop, InDesign and Wordpress. We also do alot of stuff in Microsoft products too. (Know Powerpoint?) Believe it or not we work on PC...you will need to be able to swing through the air easily on PC Adobe and Microsoft products. This is the creative side to the business, however, you must be able to \"bang\" things out that look beautiful. Logos, business cards, brochures, presentations folders, marketing collateral...you get the picture.  Show me what ya got... (We want to see your website samples, too) Earn extra $$$ if you can work and really know Wordpress.<br>
+		<br>
+		Marketing/Admin:<br>
+		<br>
+		You might be required to do follow up calls with press or clients, run errands, come up with marketing ideas for clients (or even our business) go to printers, write a press release, work on FaceBook pages, work on business promotion/loyalty/customer relationship programs...it's never a dull time here and our projects vary from day to day. You must have good technical, writing and people skills...period. <br>
+		<br>
+		Like Wordpress?<br>
+		We definitely need someone who is comfortable designing AND developing sites in Responsive Design.  Our sites are not too complex, but we will want to see what you back ends look like....of your websites that is!<br>
+		<br>
+		This is a home-based office job and we employ about 6-8 offsite independent contractors. However, this is an on-site PT position for a Jack or Jill of all trades. The office is located in the Castro on the CHURCH MUNI line. <br>
+		<br>
+		All of our team are super nice people and like working here....You are not going to be super rich here, however, if you are looking for some extra cash in a fun environment with a great team and amazingly nice clients, come apply. You might learn a thing or two as well...<br>
+		<br>
+		To apply please send the following: <br>
+		+ Resume <br>
+		+ Design Portfolio link <br>
+		+ A little info about your Marketing/Admin experience <br>
+		+ Your favorite place you like to hang out.
+";
+
+	$copy="
+	<p class='add-top'>
+		Hi! I saw your posting on Craiglist and it sounded interesting! I am a freelance designer with programming experience looking to take on more work and thought I would pass along my info.
+	</p><p>
+		I have worked in two small in-house creative departments supporting major brands. They were fast-paced and we worked in many different mediums. Coming from a publishing world in New York, I have an extended print production background. It was after coming here that I was able to focus more on UI/UX.
+	</p><p>
+	Of the matters relating to Wordpress, I have experience setting up and helping friends get the CMS running on their <a href='sarah-walko-wordpress'>sites</a>. I have a working knowledge of PHP and Wordpress components which I am actively learning more of in hopes of building more dynamic feature-rich sites(programming has quickly become a hobby of mine)! Since learning of responsive design, I am dumb-founded how major brands still have sites that still don't responsive to tablets and phones. Needless to say, I have experience with responsive frameworks and can build one from the <a href='abriend-puertas'>ground up</a> if need be. Feel free to take a look at the code of my sites on <a href='http://www.github.com/raystation' target='_blank'>Github</a>.
+	</p>
+	<p>
+		If you would like to set up a chat, please feel free to get back to me or you can try to find me at the <a href='http://cartoonart.org' target='_blank'>Cartoon Art Museum</a> or a <a href='http://sf.funcheap.com/monthly-drink-draw-knockout/' target='_blank'>Drink and&nbsp;Draw</a>! 
+	<p>
+		Resume: <a href='resume' class='tooltip' title='PDF version below'>rayuen.com/resume</a><br>
+		Portfolio: <a href='work'>rayuen.com</a>
+	</p>
+	
+	";
+
 	break;	
+
 }
 

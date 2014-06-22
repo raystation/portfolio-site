@@ -1306,7 +1306,7 @@ body {
   font-size: 13pt;
   line-height: 1.45em;
   background-color: white;
-  color: #333333;
+  color: #4d4d4d;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
@@ -1377,7 +1377,7 @@ a, a:visited {
 .navband {
   width: 100%; }
 
-.uppercase, .headroom nav, .portfolio p {
+.uppercase, .original-job-button, .headroom nav, .portfolio p {
   text-transform: uppercase; }
 
 .none {
@@ -1392,7 +1392,7 @@ a, a:visited {
 .arvo, h1, h2, h3, h4, h5 {
   font-family: Arvo, Times, serif; }
 
-.montserrat, .headroom nav, .portfolio p {
+.montserrat, .original-job-button, .headroom nav, .portfolio p {
   font-family: Montserrat, Helvetica, sans-serif; }
 
 .float-right {
@@ -1423,11 +1423,8 @@ a, a:visited {
 .nowrap {
   white-space: nowrap; }
 
-.mobile {
+.hide {
   display: none; }
-
-.desktop {
-  display: inherit; }
 
 .list-spacing-fix li {
   margin-bottom: 0.15em !important; }
@@ -1518,6 +1515,21 @@ img.scale-with-grid2 {
 .description p {
   font-size: 16pt;
   line-height: 1.5em; }
+
+.original-job-button {
+  background-color: steelblue;
+  color: white;
+  padding: 0.25em;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 0.5em;
+  width: 200px;
+  text-align: center; }
+  .original-job-button:hover {
+    background-color: #0d1821; }
+
+.original-job-details {
+  color: #999999; }
 
 .headroom {
   position: fixed;
@@ -1686,11 +1698,6 @@ img.scale-with-grid2 {
     -moz-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
     color: steelblue; }
-
-#animore-full,
-#edgeware-full,
-#eggbaby-full {
-  display: none; }
 
 footer p, footer ul {
   font-size: smaller;

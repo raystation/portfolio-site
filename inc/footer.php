@@ -100,6 +100,7 @@
         });
 
 	</script>
+	<script src="js/job-details.js"></script>
 
 <!-- End Document
 ================================================== -->
