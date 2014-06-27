@@ -1164,7 +1164,7 @@ case 'church':
 		$job_details="<p>We are seeking a creative team member with a sharp eye and a deep knowledge of typography, color theory, composition, layout, and visual design and the ability to apply these to projects across mediums. In addition, this candidate should be able to hand-code clean, semantic HTML & CSS. This designer will be accountable for researching, developing and executing design solutions related to information layout and the user experience for both digital and traditional projects and will apply common user-centered design practices and tools to solve complex design problems.  He/she will present/execute original and compelling creative concepts with the ability to produce documentation to communicate site design/functionality or best standard practices when required.  The ideal candidate will have commercial experience designing large-scale content rich sites, complex workflows, and framework-level interactions. He/she will be comfortable using web analytics data to inform and defend design decisions and will evangelize design principles internally.</p>
 
 			<p>We are looking for a person that enjoys working in a team environment and having fun while contributing to a variety of projects for various clients. We offer competitive salaries, excellent benefits and an ownership culture that keeps us cutting edge and growing. If you meet the criteria outlined then we want to hear from you. Apply today!</p>
-
+						<hr>
 			<ul>Some of the things you'll do:</ul>
 <li>Graphic design, interactive design and front-end website development</li>
 <li>Translate wireframes into user-friendly design comps and turn designs into functional prototypes using HTML, CSS</li>
@@ -1174,19 +1174,29 @@ case 'church':
 <li>Organize and architect content/features/functionality for new and existing websites and applications</li>
 <li>Create detailed, organized, and readable documentation including concept models, use cases, personas, site maps, user/task flows, wireframes, and functional specifications</li>
 </ul>
-
+<hr>
+<ul>Some of the things you'll need:</ul>
+<li>5+ years designing experiences across mediums and device platforms</li>
+<li>Strong portfolio demonstrating both online and dynamic printed projects</li>
+<li>Ability to develop simple and elegant design approaches to complex design problems</li>
+<li>Strong comfort level and flexibility with an organic and iterative design process through wireframing and prototyping</li>
+<li>Knowledge of capabilities/limitations of current web technologies such as responsive HTML5, CSS3 and JQuery</li>
+<li>Hand crafted prototypes via semantic HTML & CSS</li>
+<li>Ability to collaborate actively as part of a multi-disciplinary team</li>
+<li>Ability to clearly communicate ideas and vision to team members and clients</li>
+<li>Self-motivation and the ability to take direction well</li>
+<li>Ability to manage multiple projects from start to finish</li>
+<li>Proficiency in Adobe CS suite and Mac/PC platform</li>
+</ul>
 
 ";
 
 		$copy="
 			<p class='add-top'>
-				Hi! I saw your posting on Craiglist and it sounded interesting! I am a freelance designer with programming experience looking to take on more work and thought I would pass along my info.
+				Hi! I saw your posting on and it sounded interesting! I am a designer/illustrator with programming experience. I am looking for a place where I can continue to hone my UI/UX chops while also drawing from my varied work experience. 
 			</p><p>
-				I have worked in two small in-house creative departments supporting major brands. They were fast-paced and we worked in many different mediums. Coming from a publishing world in New York, I have an extended print production background. It was after coming here that I was able to focus more on UI/UX.
+				My <a href='resume'>resume</a> will reveal my extensive production experience as well as my excursions into illustration, digital and programming. I have first-hand knowledge of building responsive websites from the ground up using HTML, CSS, JQuery and PHP as well as familiarity with the <span class='underline tooltip' title='Wordpress, Bootstrap, Foundation, Skeleton'>popular frameworks</span>.
 			</p><p>
-			Of the matters relating to Wordpress, I have experience setting up and helping friends get the CMS running on their <a href='sarah-walko-wordpress'>sites</a>. I have a working knowledge of PHP and Wordpress components which I am actively learning more of in hopes of building more dynamic feature-rich sites(programming has quickly become a hobby of mine)! Since learning of responsive design, I am dumb-founded how major brands still have sites that still don't responsive to tablets and phones. Needless to say, I have experience with responsive frameworks and can build one from the <a href='abriend-puertas'>ground up</a> if need be. Feel free to take a look at the code of my sites on <a href='http://www.github.com/raystation' target='_blank'>Github</a>.
-			</p>
-			<p>
 				If you would like to set up a chat, please feel free to get back to me or you can try to find me at the <a href='http://cartoonart.org' target='_blank'>Cartoon Art 
 				um</a> or a <a href='http://sf.funcheap.com/monthly-drink-draw-knockout/' target='_blank'>Drink and&nbsp;Draw</a>! 
 			<p>

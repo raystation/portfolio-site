@@ -9,12 +9,13 @@
 
 //INCLUDES ==================================================
 @import 'bourbon/bourbon';
-@import 'scss/base';
-@import 'scss/skeleton';
-@import 'scss/slick';
-@import 'scss/lightbox';
-@import 'scss/tooltipster';
-// @import 'scss/responsive-indicator';
+@import 'base';
+@import 'skeleton';
+@import 'slick';
+@import 'lightbox';
+@import 'tooltipster';
+// @import 'responsive-indicator';
+@import "compass/css3/columns";
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
@@ -238,7 +239,17 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 
 .original-job-details {
 	color: lighten($txt-color,30%);
-	
+	p,ul,li {font-size: 1rem;}
+	hr,ul {
+	@include column-span(all);
+	}
+	ul {
+		font-weight: 800;
+	}
+	@media only screen and (min-width: 800px) {
+		@include column-count(2);
+		@include column-gap(2em);
+	}	
 }
 
 // HEADER
@@ -456,33 +467,6 @@ footer {
 		}
 	}
 }
-
-/* #Media Queries
-================================================== */
-
-	/* Larger than 960px (devices and browsers) */
-  @media only screen and (min-width: 960px) { 
-  }
-
-  /* Smaller than standard 960 (devices and browsers) */
-  @media only screen and (max-width: 959px) { 
-  }
-
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-  @media only screen and (min-width: 768px) and (max-width: 959px) { 
-  }
-
-	/* All Mobile Sizes (devices and browser) */
-  @media only screen and (max-width: 767px) { 
-  }
-
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-  @media only screen and (min-width: 480px) and (max-width: 767px) { 
-  }
-
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-  @media only screen and (max-width: 479px) { 
-  }
 
 
 // added to test google fonts when offline
