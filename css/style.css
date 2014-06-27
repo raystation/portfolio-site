@@ -1291,6 +1291,42 @@ body:after {
   -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1); }
 
+@media only screen and (min-width: 960px) {
+  .mobile {
+    display: none; }
+
+  .desktop {
+    display: inherit; } }
+@media only screen and (max-width: 959px) {
+  .mobile {
+    display: none; }
+
+  .desktop {
+    display: inherit; } }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .mobile {
+    display: none; }
+
+  .desktop {
+    display: inherit; } }
+@media only screen and (max-width: 767px) {
+  .mobile {
+    display: inherit; }
+
+  .desktop {
+    display: none; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .mobile {
+    display: inherit; }
+
+  .desktop {
+    display: none; } }
+@media only screen and (max-width: 479px) {
+  .mobile {
+    display: inherit; }
+
+  .desktop {
+    display: none; } }
 /* # SITE STYLES
 ================================================== */
 * {
@@ -1685,7 +1721,7 @@ img.scale-with-grid2 {
   padding-left: 1em;
   text-indent: -1em;
   max-width: 80%; }
-  @media mobile {
+  @media only screen and (max-width: 767px) {
     #history li {
       max-width: 100%; } }
 #history strong a, #history strong a:visited {
@@ -1724,26 +1760,8 @@ footer a:link, footer a:visited {
 /* Smaller than standard 960 (devices and browsers) */
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-  .mobile {
-    display: inherit; }
-
-  .desktop {
-    display: none; } }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .mobile {
-    display: inherit; }
-
-  .desktop {
-    display: none; } }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
-  .mobile {
-    display: inherit; }
-
-  .desktop {
-    display: none; } }
 @font-face {
   font-family: 'Arvo';
   font-style: normal;

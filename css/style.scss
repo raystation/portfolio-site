@@ -27,7 +27,7 @@ $footer-text-color: darken($footer-color,40%);
 $link-hover-color: darken($link-color,40%);
 
 $font-size: 13pt;
-$line-height: 1.45em;
+$line-height: 1.45em;	
 $caption-font-size: 10pt;
 $body-font: "Arvo";
 
@@ -37,6 +37,13 @@ $tablet-portrait: "only screen and (min-width: 768px) and (max-width: 959px)";
 $mobile: "only screen and (max-width: 767px)";
 $mobile-landscape: "only screen and (min-width: 480px) and (max-width: 767px)";
 $mobile-portrait: "only screen and (max-width: 479px)";
+
+@media #{$desktop-large} 		{ .mobile {display:none;} .desktop {display:inherit;} }
+@media #{$desktop} 					{ .mobile {display:none;} .desktop {display:inherit;} }
+@media #{$tablet-portrait} 	{ .mobile {display:none;} .desktop {display:inherit;} }
+@media #{$mobile} 					{ .mobile {display:inherit;} .desktop {display:none;} }
+@media #{$mobile-landscape} { .mobile {display:inherit;} .desktop {display:none;} }
+@media #{$mobile-portrait} 	{ .mobile {display:inherit;} .desktop {display:none;} }
 
 
 // MIXIN ==================================================
@@ -48,6 +55,7 @@ $mobile-portrait: "only screen and (max-width: 479px)";
 ================================================== */
 
 * {	@include box-sizing(border-box); }
+
 
 body, html { width: 100%; }
 body { 
@@ -89,34 +97,31 @@ a,a:visited {
 /* OPTIONS
 =========================== */
 
-.center 			{ text-align: center; }
-.right 				{ text-align: right; }
-.padding 			{ padding: 10px; }
-.fixed 				{ height: 80%; }
-.band 				{ width: 100%; background-color: $footer-color; padding: 2em 0 8em 0; color: $footer-text-color; }
-.navband			{ width: 100%; }
+.center 				{ text-align: center; }
+.right 					{ text-align: right; }
+.padding 				{ padding: 10px; }
+.fixed 					{ height: 80%; }
+.band 					{ width: 100%; background-color: $footer-color; padding: 2em 0 8em 0; color: $footer-text-color; }
+.navband				{ width: 100%; }
 .uppercase			{ text-transform: uppercase; }
-.none 				{ display: none; }
-.hidden 			{ visibility: hidden; }
-.bold 				{ font-weight: 900; }
-.arvo 				{ font-family: Arvo, Times, serif; }
+.none 					{ display: none; }
+.hidden 				{ visibility: hidden; }
+.bold 					{ font-weight: 900; }
+.arvo 					{ font-family: Arvo, Times, serif; }
 .montserrat 		{ font-family: Montserrat, Helvetica, sans-serif; }
 .float-right 		{ float: right; }
 .float-left 		{ float: left; }
-.last 				{ margin-right: 0px; }
-.visible 			{ display: inherit !important }
-.remove-right 		{ padding-right: 0; padding-top: 0;}
-.remove-bottom 		{ margin-bottom: 0px; }
+.last 					{ margin-right: 0px; }
+.visible 				{ display: inherit !important }
+.remove-right 	{ padding-right: 0; padding-top: 0;}
+.remove-bottom 	{ margin-bottom: 0px; }
 .remove-top 		{ margin-top: 0px; }
-.nolist 			{ list-style: none; }
-.nowrap 			{ white-space: nowrap; }
-.hide 				{ display: none; }
+.nolist 				{ list-style: none; }
+.nowrap 				{ white-space: nowrap; }
+.hide 					{ display: none; }
 
 .list-spacing-fix li	{ margin-bottom: 0.15em !important; }
 
-hr { 
-	// width: 100%; border: 1px solid black; 
-}
 hr { 
 	border: 0;
 	height : 15px;
@@ -127,7 +132,6 @@ hr {
 .img-band 		{ width: 100%; height: 30%; }
 
 #blobby 			{ background: url('img/dailygifs/blob_2.gif')	}
-
 
 img.scale-with-grid2 { max-width: 100%; height:auto }
 
@@ -412,7 +416,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		padding-left: 1em;
 		text-indent: -1em;
 		max-width: 80%;
-		@media #{mobile} { max-width: 100%; }
+		@media #{$mobile} { max-width: 100%; }
 	}
 
 	strong a, strong a:visited {
@@ -470,19 +474,14 @@ footer {
 
 	/* All Mobile Sizes (devices and browser) */
   @media only screen and (max-width: 767px) { 
-  	.mobile  { display:inherit; }
-  	.desktop { display:none; }  }
+  }
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
   @media only screen and (min-width: 480px) and (max-width: 767px) { 
-  	.mobile  { display:inherit; }
-  	.desktop { display:none; }
   }
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
   @media only screen and (max-width: 479px) { 
-  	.mobile  { display:inherit; }
-  	.desktop { display:none; }
   }
 
 
