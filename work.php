@@ -156,7 +156,7 @@
 
 	}
 	
-if ( is_null($title) ) { $pageTitle = "Ray Yuen | Work"; } else { $pageTitle = "Ray Yuen | " . $title; }
+if ( is_null($title) ) { $title = "Work"; }
 include('inc/header.php');
 if ( is_null($project) ) {} else { include('inc/content.php'); }
 skeleton_print_thumbnail_4($works);

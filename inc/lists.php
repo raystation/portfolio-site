@@ -23,7 +23,7 @@ function random_number($array) {
 function random_list_items($array,$quantity=5) {
 	$count=0;
 	$random_list=array();
-	while ( $count < $quantity ) {
+	while ( $count <= $quantity ) {
 		$number=random_number($array);
 		$item=$array[$number];
 		
@@ -34,6 +34,24 @@ function random_list_items($array,$quantity=5) {
 	}
 	return $random_list;
 }
+
+// function random_list_items($array,$quantity=5) {
+	
+// 	$count=0;
+// 	while ( $count !== $quantity ) {
+// 		$count=count($array);
+// 		$rand=rand(0,$count);
+// 		$array_rand[]=$rand;
+// 		unset($array,$rand);
+// 		$count++;
+// 	} 
+
+// 	foreach ($array_rand as $number) {
+// 		$random_list[]=$array[$number];
+// 	}
+
+// 	return $random_list;
+// }
 
 function list_favorite_games() {
 	$list_title="Favorite Games";
@@ -120,7 +138,7 @@ function list_self_nicknames() {
 		"Angel Eyes",
 		"Tiny Dancer",
 		"Dance Floor General",
-		"Lil",
+		"Lil'",
 		"Inspector",
 		"Asian Sensation",
 		"The Worm",

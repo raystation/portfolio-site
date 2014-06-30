@@ -9,7 +9,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title><?php echo $pageTitle; ?></title>
+	<title>Ray Yuen &#124; <?php echo $title; ?></title>
 	<meta name="description" content="Ray Yuen is a designer and artist working in numerous media: books, games, game design and illustration.">
 	<meta name="author" content="Ray Yuen">
 

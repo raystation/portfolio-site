@@ -176,12 +176,11 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 }
 
 .index-right-column {
-	@extend .padding;
-	@extend .caption;
-	padding-right: 0px;
-	padding-top: 0px;
-	hr:first-child { margin-top: 0; }
-	ul, li { margin-bottom: 0.5em; }
+	// padding-right: 0px;
+	// padding-top: 0px;
+	// hr:first-child { margin-top: 0; }
+	font-size:0.75em;
+	ul, li { margin-bottom: 0; }
 	@media #{$mobile} {
 		padding-left: 0px;
 	}
@@ -196,10 +195,16 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 
 .textbox {
 	padding: 2em 3em;
-	h4 { font-weight: 400 !important; }
+	font-size: 32px;
+	line-height: 1.25em;
+	font-weight: 400 !important;
+	background-color: lavender;
+
 	@media #{$mobile} {
-		font-size: 12px;
-		padding: 2em 2em 1em 2em;
+		font-size: $font-size*1.25;
+		line-height: $line-height;
+		padding: 0;
+		background-color: transparent;
 	}
 }
 

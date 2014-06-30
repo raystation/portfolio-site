@@ -118,6 +118,12 @@ function print_skill_html(){
 	echo '</div>';
 }
 
+function get_date() {
+	date_default_timezone_set('America/Los_Angeles');
+	$date["year"]=date('Y');
+	$date["day"]=date('D');
+	return $date;
+}
 
 //order of the projects
 
@@ -155,7 +161,8 @@ function get_puns() {
 		"Those two men drinking battery acid will soon be charged.",
 		"Newspaper headline reads: Cartoonist found dead at home, details are sketchy.",
 		"The Magician got frustrated and pulled his hare out.",
-		"What did the cannibal get when he showed up to the party late? A cold shoulder!"
+		"What did the cannibal get when he showed up to the party late? A cold shoulder.",
+		"A boiled egg in the morning is really hard to beat."
 		);
 	return $puns;
 }
