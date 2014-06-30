@@ -151,16 +151,12 @@ function get_puns() {
 		"I walked into my sister's room and tripped on a bra. It was a booby-trap.",
 		"A book just fell on my head, I only have my shelf to blame.",
 		"I'm reading a book on anti-gravity, and it's impossible to put down.",
-		"It's not that the guy didn't know how to juggle... he just didn't have the balls to do it.",
 		"I'm glad I know sign language. It's become quite handy.",
 		"I forgot how to throw a boomerang. But it came back to me.",
-		"When a clock is hungry... It goes back four seconds.",
 		"I once heard a joke about amnesia... But I forget how it goes.",
 		"The frustrated cannibal threw up his hands.",
 		"There was once a crossed-eyed teacher... who had issues controlling his pupils.",
-		"Those two men drinking battery acid will soon be charged.",
 		"Newspaper headline reads: Cartoonist found dead at home, details are sketchy.",
-		"The Magician got frustrated and pulled his hare out.",
 		"What did the cannibal get when he showed up to the party late? A cold shoulder.",
 		"A boiled egg in the morning is really hard to beat."
 		);

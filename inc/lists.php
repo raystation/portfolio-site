@@ -53,6 +53,34 @@ function random_list_items($array,$quantity=5) {
 // 	return $random_list;
 // }
 
+function list_ringtones(){
+	$tones["nokia-classic"]=array("name"=>"Classic Nokia mono","file"=>"nokia-classic");
+	$tones["nba-on-nbc"]=array("name"=>"The NBA on NBC theme","file"=>"nba-on-nbc");
+	$tones["muppet-show"]=array("name"=>"The Muppet Show theme","file"=>"muppet-show");
+	$tones["muppets-manamana"]=array("name"=>"Muppets - Ma na ma na","file"=>"muppets-manamana");
+	$tones["star-trek-main-viewing-screen"]=array("name"=>"Star Trek OS: Main Viewing Screen","file"=>"star-trek-main-viewing-screen");
+	$tones["breaking-bad-marie"]=array("name"=>"Breaking Bad: Hank's ringtone for Marie","file"=>"breaking-bad-marie");
+	$tones["one-piece-dendenmushi"]=array("name"=>"One Piece - Den Den Mushi","file"=>"one-piece-dendenmushi");
+	$tones["star-wars-cantina-band"]=array("name"=>"Star Wars Cantina Band","file"=>"star-wars-cantina-band");
+	$tones["linus-lucy"]=array("name"=>"Linus and Lucy","file"=>"linus-lucy");
+	$tones["mgs-codec"]=array("name"=>"Metal Gear Solid codec","file"=>"mgs-codec");
+	$tones["benny-hill"]=array("name"=>"Benny Hill theme","file"=>"benny-hill");
+	$tones["rickroll"]=array("name"=>"Never Gonna Give You Up","file"=>"rickroll");
+	$tones["careless-whisper"]=array("name"=>"Careless Whisper","file"=>"careless-whisper");
+	return $tones;
+}
+
+function html_list_ringtones(){
+	$tones=list_ringtones();
+	foreach ($tones as $tone) {
+		$name=$tone["name"];
+		$path="ringtone/".$tone["file"].".m4r";
+		echo "<a href='".$path."' target='_blank'>".$name."</a><br>";
+	}
+}
+
+
+
 function list_favorite_games() {
 	$list_title="Favorite Games";
 	$favorite_games = array(

@@ -24,7 +24,8 @@
 
 				<div class="four columns">
 					<ul>
-						<!-- <li><a href="about?id=jobs">jobs</a></li> -->
+						<li><a href="ringtones.php">ringtones</a></li>
+						<li><a href="jobs">jobs</a></li>
 					</ul>
 				</div>
 
