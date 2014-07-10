@@ -98,10 +98,16 @@
             	animation: 'fade',
             	delay: 800
             });
-        });
+        }); 
 
 	</script>
 	<script src="js/job-details.js"></script>
+	<?php  
+		if (!is_null($plugin)) {
+			echo "<script src='".$plugin[0]."'></script>";
+			echo "<script>".$plugin[1]."</script>";
+		}
+	;?>
 
 <!-- End Document
 ================================================== -->

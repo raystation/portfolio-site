@@ -54,3 +54,5 @@ RewriteRule ^scavenger-hunt$ work?project=scavenger-hunt
 RewriteRule ^storymaps$ work?project=storymaps
 RewriteRule ^tiger-tiger$ work?project=tiger-tiger
 
+RewriteRule ^bigfish$ hire-me?id=510
+

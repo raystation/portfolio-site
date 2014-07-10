@@ -166,10 +166,10 @@ case '101':
 		break;	
 
 case '510':
-		$company="Self Aware Games";
+		$company="Big Fish";
 		$jobTitle="Graphic Designer II";
-		$name;
-		$logo="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPZdVzUtbr4fy3c24OPPh5DCpzP4urFRARDEktLZ-5_7NdfT_Skh6nYXU";
+		$name="Anna Galgana";
+		$logo="http://www.underconsideration.com/brandnew/archives/big_fish_games_detail.jpg";
 		$email;
 		$date="May 29, 2014";
 		$originaljobposting="http://www.bigfishgames.com/company/open-positions.html?nl=1&jvi=ouJYYfwT,Job&jvs=Indeed&jvk=Job";
@@ -207,20 +207,18 @@ case '510':
 		$other="
 			<div class='four columns list-spacing-fix add-bottom alpha caption'>
 				<hr class='add-top'>
-				<p><strong>Currently Playing</strong></p>
+				<h5>Currently Playing</strong></h5>
 					<ul>
-						<li><a target='_blank' href='https://itunes.apple.com/us/app/ftl-faster-than-light/id833951143?mt=8'>FTL</a>, iPad</li>
-						<li><a target='_blank' href='http://www.naughtydog.com/games/the_last_of_us/'>The Last of Us</a>, PS3</li>
-						<li><a target='_blank' href='https://itunes.apple.com/us/app/tiny-thief/id656620224?mt=8'>Tiny Thief</a>, iOS</li>
-						<li><a target='_blank' href='http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=6&cad=rja&uact=8&ved=0CFoQFjAF&url=http%3A%2F%2Ffezgame.com%2F&ei=2CmMU53yNsruoAS4lICoDg&usg=AFQjCNEegHBfdpnaxJgloJxDyi1w7bOivg&sig2=C7UVfRPpg-3TYHIQ3s7fbQ&bvm=bv.68191837,d.cGU'>FEZ</a>, PS3</li>
-						<li><a target='_blank' href='https://itunes.apple.com/us/app/zookeeper-battle/id548270497?mt=8'>Zookeeper Battle</a>, iOS</li>
-						<li><a target='_blank' href='http://www.elderscrolls.com/skyrim'>Skyrim</a>, PS3</li>
+						<li>Nimblequest</li>
+						<li>X-COM: Enemy Unknown</li>
+						<li>Disco Zoo</li>
+						<li>Red Dead Redemption</li>
 					</ul>
 			</div>
 
 			<div class='four columns list-spacing-fix add-bottom caption'>
 				<hr class='add-top'>
-				<p><strong>Hobbies</strong></p>
+				<h5>Hobbies</strong></h5>
 					<ul>
 						<li>Casual Games</li>
 						<li>Basketball</li>
@@ -232,7 +230,7 @@ case '510':
 
 			<div class='four columns list-spacing-fix add-bottom caption omega'>
 				<hr class='add-top'>
-				<p><strong>Currently Watching</strong></p>
+				<h5>Currently Watching</strong></h5>
 					<ul>
 						<li>Game of Thrones</li>
 						<li>Mad Men</li>
@@ -242,8 +240,41 @@ case '510':
 					</ul>
 			</div>
 
+			<div class='clear'></div>";
+
+		$post="	
+			<h6>Aztec Gold Art Test - June 23, 2014</h6>
+			
+			<div class='one-third column alpha'><a href='img/big-fish/1_cropped.jpg'><img src='img/big-fish/1.jpg' class='scale-with-grid2 add-bottom'></a></div>
+			<div class='one-third column' ><a href='img/big-fish/2_cropped.jpg'><img src='img/big-fish/2.jpg' class='scale-with-grid2 add-bottom'></a></div>
+			<div class='one-third column omega'><a href='img/big-fish/3_cropped.jpg'><img src='img/big-fish/3.jpg' class='scale-with-grid2 add-bottom'></a></div>
+			<a href='img/big-fish/big-fish-01_cropped.jpg'><img src='img/big-fish/big-fish-01.png' class='scale-with-grid2 add-bottom'></a>
+			
+			<hr>
+			
+			<h6>Additional Works - July 9, 2014</h6>
+			
+			<a href='img/big-fish/Plat_insert5.jpg'><img src='img/big-fish/Plat_insert5.jpg' class='scale-with-grid2 add-bottom'></a>
+			
+			<div class='one-third column alpha'><a href='img/big-fish/Poster_Rotom_1.jpg'><img src='img/big-fish/Poster_Rotom_1.jpg' class='scale-with-grid2 add-bottom'></a></div>
+			<div class='one-third column'><a href='img/big-fish/Poster_Rotom_2.jpg'><img src='img/big-fish/Poster_Rotom_2.jpg' class='scale-with-grid2 add-bottom'></a></div>
+			<div class='one-third column omega'><a href='img/big-fish/Poster_Shaymin.jpg'><img src='img/big-fish/Poster_Shaymin.jpg' class='scale-with-grid2 add-bottom'></a></div>
 			<div class='clear'></div>
+
+			<div class='slick'>
+				<div><img class='scale-with-grid' src='img/big-fish/Brochure_051210-1.jpg'></div>
+				<div><img class='scale-with-grid' src='img/big-fish/Brochure_051210-2.jpg'></div>
+				<div><img class='scale-with-grid' src='img/big-fish/Brochure_051210-4.jpg'></div>
+				<div><img class='scale-with-grid' src='img/big-fish/Brochure_051210-5.jpg'></div>
+				<div><img class='scale-with-grid' src='img/big-fish/Brochure_051210-7.jpg'></div>
+			</div>
+			<div class='clear'></div>
+
+			<div class='one-third column '><img src='img/big-fish/AfH_S-226x226.gif' class='scale-with-grid add-bottom'></div>
+			<div class='one-third column'><img src='img/big-fish/AfH_V-200x300.gif' class='scale-with-grid add-bottom'></div>
 		";
+
+		// $plugin=array("js/jQueryRotate.js",'$(document).ready(function() {$(".flip").click(function() {$(this).rotate(-90); }); }); ');
 
 		break;					
 
@@ -1281,8 +1312,8 @@ case 'church':
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.svg'>".$project3[1].".</a> ".$project3[2]."</div>
 
 			<div class='clear'></div>	
-			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a>.</p>
-		";
+			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a> and my <a href='resume'>resume</a>. </p>		
+			";
 
 		break;
 
@@ -1442,7 +1473,7 @@ case 'ad101':
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.svg'>".$project3[1].".</a> ".$project3[2]."</div>
 
 			<div class='clear'></div>	
-			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a>.</p>
+			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a> and my <a href='resume'>resume</a>. </p>
 		";
 
 		break;			
@@ -1505,7 +1536,7 @@ case 'ad101':
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.jpg'>".$project3[1].".</a> ".$project3[2]."</div>
 
 			<div class='clear'></div>	
-			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a>.</p>
+			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a> and my <a href='resume'>resume</a>. </p>
 		";
 
 		break;
@@ -1575,7 +1606,7 @@ case 'ad101':
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.svg'>".$project3[1].".</a> ".$project3[2]."</div>
 
 			<div class='clear'></div>	
-			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a>.</p>
+			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a> and my <a href='resume'>resume</a>. </p>
 		";
 
 		$other="
@@ -1593,7 +1624,7 @@ case 'ad101':
 		$email;
 
 		$job_details="
-		<h3 class='center addtop'>Contract Brand Experience Designer</h3>
+		<h3 class='center add-top'>Contract Brand Experience Designer</h3>
 		<h3 class='center'>Experience Design | San Francisco, CA</h3>
 		<hr><h6>About Our Role</h6>
 		<p>OpenTable is seeking a contract designer to work as part of our Brand Experience team in building, developing and executing our new brand vision. You’ll be concepting and designing for print, digital and environmental communications that influence the way people discover, reserve and experience restaurants across North America and beyond.
@@ -1637,10 +1668,44 @@ case 'ad101':
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.svg'>".$project3[1].".</a> ".$project3[2]."</div>
 
 			<div class='clear'></div>	
-			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a>.</p>
+			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a> and my <a href='resume'>resume</a>. </p>
 		";
 
-		break;			
+		break;
+
+		case 'anyperk':
+		$originaljobposting="http://www.indeed.com/viewjob?jk=4e588f8bd2da4858&tk=18se0pj841d7271o&from=recommendedjobs";
+		$logo="http://media.glassdoor.com/sqll/693529/anyperk-squarelogo-1380243933805.png";
+		$jobTitle="Designer";
+		$company="Anyperk";
+		$date="July 9, 2014";
+		$email="jobs@anyperk.com";
+
+		$job_details;
+		
+		$copy="
+		<p class='add-top'>
+		Hello, I saw your posting and wanted to pass along my information. I am a graphic designer with programming experience. I am looking for a fun place where I can continue to hone my creative skills while also learning new ones.	
+		";
+
+		$project1=array("pokemon","The Pok&eacute;mon Company", "Overall support of all internal departments with creative needs. Fast-paced environment where we worked to bring projects from outside vendors in-house. Take a look at the Toy Fair trade booth!");
+		$project2=array("abriendo-puertas","Abriendo Puertas", "Design and hand-code of responsive informational website for non-profit.");
+		$project3=array("the3","The 3", "Trivia game where I developed the UI and overall flow of the game.");
+
+		$sample_works = "
+			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position. They may seem 'kiddy' but this was the nature of the work...meaning this isn't all I am capable of.</p>
+			
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project1[0]."'><img class='scale-with-grid' src='img/".$project1[0]."/thumb.svg'>".$project1[1].".</a> ".$project1[2]."</div>
+			
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project2[0]."'><img class='scale-with-grid' src='img/".$project2[0]."/thumb.jpg'>".$project2[1].".</a> ".$project2[2]."</div>
+
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.svg'>".$project3[1].".</a> ".$project3[2]."</div>
+
+			<div class='clear'></div>	
+			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a> and my <a href='resume'>resume</a>. </p>
+		";
+
+		break;					
 
 }
 
