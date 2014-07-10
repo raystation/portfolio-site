@@ -117,7 +117,6 @@ case '360':
 		I am <a href=\"resume#skills\">highly proficent</a> in <a href='color-chameleon'>Photoshop</a> and <a href='100-principles-of-game-design'>Illustrator</a> as I've been using them for a long time. I am extremely comfortable with HTML/CSS. Programming is a bit of a hobby of mine so I am actively learning other web languages, like Ruby and PHP. I am comfortable with using <a href='http://www.github.com/raystation' target='_blank'>git</a>. I am also highly skilled in <a href=\"monkey-mo\">drawing</a>. 
 		</p>
 		
-
 		<div class='four columns add-bottom alpha' ><a class='caption' href='color-chameleon'><img class='scale-with-grid' src='img/color-chameleon/thumb.jpg'>Color Chameleon</a></div>
 
 		<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
@@ -424,7 +423,7 @@ case '212':
 	break;		
 
 	case '102':
-	$company="Code for America";
+	$company="Education Superhighway";
 	$jobTitle="Graphic Designer";
 	$name;
 	$logo="http://www.educationsuperhighway.org/uploads/1/0/9/4/10946543/1348157671.png";
@@ -608,7 +607,8 @@ case '212':
 
 	<p>
 		Please let me know if I can provide any other sort of information or if we can set up a meeting. Thank you!
-	</p>";
+	</p>
+	";
 
 	$other="
 	<div class='four columns add-bottom alpha list-spacing-fix caption'>
@@ -653,36 +653,38 @@ case '212':
 <p>Kabam - San Francisco, CA</p>
 <p>Kabam is the leader in the western world for free-to-play core games with 1st and 3rd party published titles available on mobile devices via the Apple Store, Google Play and on the Web via Facebook, Yahoo, Kabam.com and other leading platforms. In 2013 Kabam revenues grew by 100 percent to more than $360 million. Kabam has 800 employees across three continents, with corporate headquarters in San Francisco. The company's investors include Google, Warner Brothers, MGM, SK Telecom, Intel, Canaan Partners, Redpoint Ventures and Pinnacle Ventures. More information about Kabam can be found at www.kabam.com.</p> 
 <p>The Visual Designer will be responsible for creating all manner of product marketing and advertising creative for Kabam’s first party studio’s games. </p>
-<p>WHAT YOU'LL DO:</p>
+<hr>
+<h6>WHAT YOU'LL DO:</h6>
 <p>Team: First Party Marketing Art</p>
 <p>The First Party Marketing Art Team is responsible for creating all storefront marketing assets, promotional vehicles and campaigns, banner ad and video/rich media/banner ad creative for User Acquisition, all supported by rigorous performance testing and localization for between 12 and 15 languages. We strive to deliver all work in a timely manner and always adhere to pre-determined schedules. Our function can be summed up as follows: innovate, create, communicate, test, iterate, localize, optimize. Our team also supports the production of campaigns produced by external partners and agencies by contributing to concept development, art/creative direction, feedback, asset support. </p>
-<p>Day to day:</p>
-<p>Work with marketing art team to develop and iterate advertising concepts to test on a weekly basis </p>
-<p>Create advertising concepts that can be resized/re-purposed for a multitude of sizes, and a number of delivery platforms (static/animated gif, interactive html 5, video) </p>
+<hr>
+<h6>Day to day:</h6>
+<li>Work with marketing art team to develop and iterate advertising concepts to test on a weekly basis </li>
+<li>Create advertising concepts that can be resized/re-purposed for a multitude of sizes, and a number of delivery platforms (static/animated gif, interactive html 5, video) </li>
 
-<p>Create meticulous master ad layouts of top-performing creative that will be sent out for resizing, localization, and/or interactive production on a weekly basis </p>
+<li>Create meticulous master ad layouts of top-performing creative that will be sent out for resizing, localization, and/or interactive production on a weekly basis </li>
 
-<p>Create/design brand/product marketing and promotional assets for all storefronts informed by existing brand art style and performance marketing data </p>
+<li>Create/design brand/product marketing and promotional assets for all storefronts informed by existing brand art style and performance marketing data </li>
 
-<p>Support Product Marketing, BizDev and Lifecycle/emil/XP teams by handling requests for assets and promotional executions </p>
+<li>Support Product Marketing, BizDev and Lifecycle/emil/XP teams by handling requests for assets and promotional executions </li>
 
-<p>Provide feedback and direction for the creation of key art assets produced by external agencies </p>
+<li>Provide feedback and direction for the creation of key art assets produced by external agencies </li>
 
-<p>Collaborate with video/multimedia artist to generate ideas and storyboards for : 30 and : 15 User Acquisition video ad units</p> 
-<p>Maintain and adhere to strict file preparation, file structure and naming convention guidelines </p>
-<p>Prepare all master psd files such that resizing and localization is as streamlined as possible. </p>
-<p>Career Progression:</p>
-<p>This role is a mid-level position that will be integral to Kabam’s User Acquisition, Product Marketing, BizDev and Lifecycle marketing success</p> 
-
-<p>Benefits:</p>
-<p>Full Health, Dental, and Vision; 401k matching; $250 gym reimbursement; $1000 per year educational stipend; daily catered lunches; tons of snacks, drinks, etc. </p>
-<p>Education:</p>
-<p>Bachelor’s degree or certificate for Art, Design or other related field or equivalent work experience. </p>
-
-<p>Years Experience: </p>
-<p>5+ years of experience creating and producing both advertising and storefront marketing assets in the mobile games space. </p>
-
-<p>MUST Have Experience:</p>
+<li>Collaborate with video/multimedia artist to generate ideas and storyboards for : 30 and : 15 User Acquisition video ad units</li> 
+<li>Maintain and adhere to strict file preparation, file structure and naming convention guidelines </li>
+<li>Prepare all master psd files such that resizing and localization is as streamlined as possible. </li>
+<li>Career Progression: This role is a mid-level position that will be integral to Kabam’s User Acquisition, Product Marketing, BizDev and Lifecycle marketing success</li> 
+<hr>
+<h6>Benefits:</h6>
+<li>Full Health, Dental, and Vision; 401k matching; $250 gym reimbursement; $1000 per year educational stipend; daily catered lunches; tons of snacks, drinks, etc. </li>
+<hr>
+<h6>Education:</h6>
+<li>Bachelor’s degree or certificate for Art, Design or other related field or equivalent work experience. </li>
+<hr>
+<h6>Years Experience:</h6>
+5+ years of experience creating and producing both advertising and storefront marketing assets in the mobile games space. </p>
+<hr>
+<h6>MUST Have Experience:</h6>
 <li>Exceptional Adobe CS skills (digital painting/retouching skills a plus) </li>
 <li>Conception/Creation of ad campaigns for mobile games </li>
 <li>Creation of iOS and Google Play launch marketing assets – screenshots, icons, featuring art </li>
@@ -691,6 +693,7 @@ case '212':
 <li>Top-notch organizational skills – file management and spec documentation </li>
 <li>Self-motivated creative problem solver </li>
 <li>Excellent interpersonal skills </li>
+
 	";
 
 	break;		
@@ -1166,34 +1169,34 @@ case 'church':
 			<p>We are looking for a person that enjoys working in a team environment and having fun while contributing to a variety of projects for various clients. We offer competitive salaries, excellent benefits and an ownership culture that keeps us cutting edge and growing. If you meet the criteria outlined then we want to hear from you. Apply today!</p>
 						<hr>
 			<ul>Some of the things you'll do:</ul>
-<li>Graphic design, interactive design and front-end website development</li>
-<li>Translate wireframes into user-friendly design comps and turn designs into functional prototypes using HTML, CSS</li>
-<li>Translate business requirements into elegant, innovative and intuitive design solutions, balancing user needs with business goals and technological constraints</li>
-<li>Work closely with teams to ensure that design specifications are correctly implemented and, as required, to integrate prototypes within CMS frameworks under tight deadlines</li>
-<li>Help establish and reinforce consistent interaction design patterns across platforms</li>
-<li>Organize and architect content/features/functionality for new and existing websites and applications</li>
-<li>Create detailed, organized, and readable documentation including concept models, use cases, personas, site maps, user/task flows, wireframes, and functional specifications</li>
-</ul>
-<hr>
-<ul>Some of the things you'll need:</ul>
-<li>5+ years designing experiences across mediums and device platforms</li>
-<li>Strong portfolio demonstrating both online and dynamic printed projects</li>
-<li>Ability to develop simple and elegant design approaches to complex design problems</li>
-<li>Strong comfort level and flexibility with an organic and iterative design process through wireframing and prototyping</li>
-<li>Knowledge of capabilities/limitations of current web technologies such as responsive HTML5, CSS3 and JQuery</li>
-<li>Hand crafted prototypes via semantic HTML & CSS</li>
-<li>Ability to collaborate actively as part of a multi-disciplinary team</li>
-<li>Ability to clearly communicate ideas and vision to team members and clients</li>
-<li>Self-motivation and the ability to take direction well</li>
-<li>Ability to manage multiple projects from start to finish</li>
-<li>Proficiency in Adobe CS suite and Mac/PC platform</li>
-</ul>
+			<li>Graphic design, interactive design and front-end website development</li>
+			<li>Translate wireframes into user-friendly design comps and turn designs into functional prototypes using HTML, CSS</li>
+			<li>Translate business requirements into elegant, innovative and intuitive design solutions, balancing user needs with business goals and technological constraints</li>
+			<li>Work closely with teams to ensure that design specifications are correctly implemented and, as required, to integrate prototypes within CMS frameworks under tight deadlines</li>
+			<li>Help establish and reinforce consistent interaction design patterns across platforms</li>
+			<li>Organize and architect content/features/functionality for new and existing websites and applications</li>
+			<li>Create detailed, organized, and readable documentation including concept models, use cases, personas, site maps, user/task flows, wireframes, and functional specifications</li>
+			</ul>
+			<hr>
+			<ul>Some of the things you'll need:</ul>
+			<li>5+ years designing experiences across mediums and device platforms</li>
+			<li>Strong portfolio demonstrating both online and dynamic printed projects</li>
+			<li>Ability to develop simple and elegant design approaches to complex design problems</li>
+			<li>Strong comfort level and flexibility with an organic and iterative design process through wireframing and prototyping</li>
+			<li>Knowledge of capabilities/limitations of current web technologies such as responsive HTML5, CSS3 and JQuery</li>
+			<li>Hand crafted prototypes via semantic HTML & CSS</li>
+			<li>Ability to collaborate actively as part of a multi-disciplinary team</li>
+			<li>Ability to clearly communicate ideas and vision to team members and clients</li>
+			<li>Self-motivation and the ability to take direction well</li>
+			<li>Ability to manage multiple projects from start to finish</li>
+			<li>Proficiency in Adobe CS suite and Mac/PC platform</li>
+			</ul>
 
-";
+			";
 
 		$copy="
 			<p class='add-top'>
-				Hi! I saw your posting on and it sounded interesting! I am a designer/illustrator with programming experience. I am looking for a place where I can continue to hone my UI/UX chops while also drawing from my varied work experience. 
+				Hi! I saw your posting and it sounded interesting! I am a designer/illustrator with programming experience. I am looking for a place where I can continue to hone my UI/UX chops while also drawing from my varied work experience. 
 			</p><p>
 				My <a href='resume'>resume</a> will reveal my extensive production experience as well as more recent experiences with illustration, digital and programming. I have first-hand knowledge of building responsive websites from the ground up using HTML, CSS, JQuery and PHP as well as familiarity with the <span class='underline tooltip' title='Wordpress, Bootstrap, Foundation, Skeleton'>popular frameworks</span>.
 			</p><p>
@@ -1206,7 +1209,438 @@ case 'church':
 		
 		";
 
+		break;	
+
+		case 'QTpi':
+		$jobTitle="Graphic Designer";
+		$company="Tea Collection";
+		$email="jobs@teacollection.com";
+		$date="July 2, 2014";
+		$logo="http://s.tea-global.net/mas_assets/theme/tea_collection/images/logo-new.png";
+		
+		$originaljobposting="http://www.coroflot.com/jobs/56674/Graphic-Designer";
+		
+		$job_details="
+		<h6>Position Title: Graphic Designer </h6>
+		<p>Reports to: Design Director </p>
+			<p>Department: Brand Creative </p>
+		<hr>
+		<h6>About Us: </h6>
+		<p>Tea Brand Creative is a talented team of graphic designers, copywriters, producers and marketers working together to bring Tea to life using stories, images and campaigns that connect and resonate with our customers. Our goal is to excited and inspire at every touch point. From the communication with our customers and site experience to our retailers, and catalog/direct mail promotions we strive to treat every customer interaction as a way to tell the story of Tea. We go there! </p>
+		<hr>
+		<h6>The role: </h6>
+		<p>The Graphic Designer will create, execute and maintain Tea marketing materials ranging from web marketing (email, site updates, social), promotions, packaging, in-store collateral, and seasonal marketing campaigns that resonates with our customers, makes people believe in the brand, and also makes them take action. </p>
+		<hr>
+		<h6>Essential Duties and Responsibilities: </h6>
+		<li>Use established templates to create email campaigns and update banner ads. Help to create new email templates. </li>
+		<li>Work to improve website design, to increase conversion and brand awareness.</li>
+		<li>Update website with seasonal imagery/content and maintain look and feel across platform. </li>
+		<li>Update B2B website with seasonal product imagery, content and tools. </li>
+		<li>Update social media platforms such as Facebook, Twitter, Pinterest, and the Tea blog. </li>
+		<li>Update seasonal product packaging (i.e., hangtags, size stickers). </li>
+		<li>Design in-Store collateral. </li>
+		<li>Work with internal departments (Merchandising and Sales) to provide posters and sales collateral in time for seasonal trade shows/</li>events. 
+		<li>Assist team during studio photo shoots (i.e., prepping products, renting equipment, propping etc.). </li>
+		<li>Assist Graphic Design Manager with catalog production. </li>
+		<li>Fulfill online image requests. </li>
+		<hr>
+		<h6>Qualifications:</h6> 
+		<li>5+ years’ work experience in a graphic design position, product/fashion based company a plus </li>
+		<li>Great sense of design, fashion and meticulous attention to detail. </li>
+		<li>Proficiency with HTML, CSS, Adobe Illustrator, Photoshop, Acrobat, and Microsoft Office </li>
+		<li>Studio/hand skills: confidence working with blade, ruler and glue for clean mock-ups and comping of presentation materials </li>
+		<li>Takes great pride in the designs produced and takes ownership of projects. </li>
+		<li>Proactive, detail-oriented and deadline-driven: willing to do whatever it takes and spend whatever time it takes to meet deadlines. </li>
+		<li>Able to handle multiple projects at once in a fast-paced environment while being extremely productive and timely. </li>
+		<li>Strong interpersonal and communication skills: able to take direction but ask the right questions in order to get the job done correctly and on time. </li>
+		<li>Consummate team player who loves to learn. </li>
+		<hr>
+		<h6>Expectations for All Employees: </h6>
+		<li>Supports the organization’s mission, vision, and values by exhibiting the following behaviors: excellence and competence, collaboration, innovation, respect, personalization, commitment to our community, and accountability and ownership.</li>
+		";
+
+		$copy="
+		<p class='add-top'>
+			Hi! I saw your posting and wanted to pass along my information. I'm a designer/illustrator with some web design skills. I am looking for a fun cool place where I can continue to hone my UI/UX and web design skills while also drawing from my wide range of skills.
+		</p><p>
+			My <a href='resume'>resume</a> will reveal my extensive production experience as well as more recent experiences with illustration, digital and programming. I have over 8+ years of experience working in branding and production supporting marketing, licensing, and publishing initiatives. 
+		</p>		
+		";
+
+		$project1=array("museyon-guides","Museyon Guides", "Design and layout of 300+ page travel books, not unlike catalogues!");
+		$project2=array("abriendo-puertas","Abriendo Puertas", "Development of website. Hand-written HTML/CSS, skills which can be used for  email templates.");
+		$project3=array("pokemon","The Pok&eacute;mon Company", "Overall support of all internal departments with creative needs. I would suggest checking out the Feature Shop and the Licensing Show.");
+
+		$sample_works = "
+			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
+			
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project1[0]."'><img class='scale-with-grid' src='img/".$project1[0]."/thumb.svg'>".$project1[1].".</a> ".$project1[2]."</div>
+			
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project2[0]."'><img class='scale-with-grid' src='img/".$project2[0]."/thumb.jpg'>".$project2[1].".</a> ".$project2[2]."</div>
+
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.svg'>".$project3[1].".</a> ".$project3[2]."</div>
+
+			<div class='clear'></div>	
+			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a>.</p>
+		";
+
+		break;
+
+case 'ad101':
+		$jobTitle="Mid-level Designer";
+		$company="Adworkshop Inc";
+		$date="June 21, 2014";
+		$logo="https://www.adworkshop.com/sites/all/themes/adworkshop/i/logos/adworkshop-logo-black.svg";
+		$originaljobposting="https://www.adworkshop.com/employment/designer";
+		$job_details="<p>We are seeking a creative team member with a sharp eye and a deep knowledge of typography, color theory, composition, layout, and visual design and the ability to apply these to projects across mediums. In addition, this candidate should be able to hand-code clean, semantic HTML & CSS. This designer will be accountable for researching, developing and executing design solutions related to information layout and the user experience for both digital and traditional projects and will apply common user-centered design practices and tools to solve complex design problems. He/she will present/execute original and compelling creative concepts with the ability to produce documentation to communicate site design/functionality or best standard practices when required.  The ideal candidate will have commercial experience designing large-scale content rich sites, complex workflows, and framework-level interactions. He/she will be comfortable using web analytics data to inform and defend design decisions and will evangelize design principles internally.</p>
+
+			<p>We are looking for a person that enjoys working in a team environment and having fun while contributing to a variety of projects for various clients. We offer competitive salaries, excellent benefits and an ownership culture that keeps us cutting edge and growing. If you meet the criteria outlined then we want to hear from you. Apply today!</p>
+						<hr>
+			<ul>Some of the things you'll do:</ul>
+			<li>Graphic design, interactive design and front-end website development</li>
+			<li>Translate wireframes into user-friendly design comps and turn designs into functional prototypes using HTML, CSS</li>
+			<li>Translate business requirements into elegant, innovative and intuitive design solutions, balancing user needs with business goals and technological constraints</li>
+			<li>Work closely with teams to ensure that design specifications are correctly implemented and, as required, to integrate prototypes within CMS frameworks under tight deadlines</li>
+			<li>Help establish and reinforce consistent interaction design patterns across platforms</li>
+			<li>Organize and architect content/features/functionality for new and existing websites and applications</li>
+			<li>Create detailed, organized, and readable documentation including concept models, use cases, personas, site maps, user/task flows, wireframes, and functional specifications</li>
+			</ul>
+			<hr>
+			<ul>Some of the things you'll need:</ul>
+			<li>5+ years designing experiences across mediums and device platforms</li>
+			<li>Strong portfolio demonstrating both online and dynamic printed projects</li>
+			<li>Ability to develop simple and elegant design approaches to complex design problems</li>
+			<li>Strong comfort level and flexibility with an organic and iterative design process through wireframing and prototyping</li>
+			<li>Knowledge of capabilities/limitations of current web technologies such as responsive HTML5, CSS3 and JQuery</li>
+			<li>Hand crafted prototypes via semantic HTML & CSS</li>
+			<li>Ability to collaborate actively as part of a multi-disciplinary team</li>
+			<li>Ability to clearly communicate ideas and vision to team members and clients</li>
+			<li>Self-motivation and the ability to take direction well</li>
+			<li>Ability to manage multiple projects from start to finish</li>
+			<li>Proficiency in Adobe CS suite and Mac/PC platform</li>
+			</ul>
+
+			";
+
+		$copy="
+			<p class='add-top'>
+				Hi! I saw your posting and it sounded interesting! I am a designer/illustrator with programming experience. I am looking for a place where I can continue to hone my UI/UX chops while also drawing from my varied work experience. 
+			</p><p>
+				My <a href='resume'>resume</a> will reveal my extensive production experience as well as more recent experiences with illustration, digital and programming. I have first-hand knowledge of building responsive websites from the ground up using HTML, CSS, JQuery and PHP as well as familiarity with the <span class='underline tooltip' title='Wordpress, Bootstrap, Foundation, Skeleton'>popular frameworks</span>.
+			</p><p>
+				If you would like to set up a chat, please feel free to get back to me or you can try to find me at the <a href='http://cartoonart.org' target='_blank'>Cartoon Art 
+				Museum</a> or a <a href='http://sf.funcheap.com/monthly-drink-draw-knockout/' target='_blank'>Drink and&nbsp;Draw</a>! 
+			<p>
+				Resume: <a href='resume' class='tooltip' title='PDF version below'>rayuen.com/resume</a><br>
+				Portfolio: <a href='work'>rayuen.com</a>
+			</p>
+		
+		";
+
+
+		break;	
+
+		case 'cas-1':
+		$jobTitle="Graphic Designer";
+		$company="California Academy of Sciences";
+		$date="July 3, 2014";
+		$logo="http://www.coroflot.com/user_files/job_employer_logos/442008_aI8WzpdQM6gSU5XlFAjCVuJA_.jpg";
+		
+		$originaljobposting="http://www.coroflot.com/jobs/56706/Graphic-Designer";
+		
+		$job_details="
+		<h6>POSITION SUMMARY: </h6>
+
+		<p>The Graphic Designer works with the Creative team in the design and production of Academy print materials and creation of graphic imagery. This is an opportunity for a talented and exacting designer to join an in-house design department of a forward-looking San Francisco institution. The Graphic Designer reports to the Creative Director.</p>
+
+		<hr>
+		<h6>ESSENTIAL DUTIES AND RESPONSIBILITIES:</h6>
+
+		<li>Design or assist in the design of Academy print materials, which may include brochures, invitations, programs, posters, stickers, signs, invitations, ads, and wordmarks</li>
+		<li>Design material for digital formats including web banners and online promotions</li>
+		<li>Prepare files for print production</li>
+		<li>Create illustrations for icons or graphics</li>
+		<li>Retouch and manipulate photographic images</li>
+		<li>Design and produce in-house signage</li>
+		<li>Follow Academy identity and design guidelines for all work</li>
+		<li>Follow all Academy safety regulations</li>
+		<li>Other duties as assigned</li>
+
+		<hr>
+		<h6>QUALIFICATIONS:</h6>
+
+		<p>To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions.</p>
+
+		<hr>
+		<h6>EDUCATION and/or EXPERIENCE:</h6>
+
+		<p>The ideal candidate will possess a combination of the following education and/or equivalent experience:</p>
+
+		<li>B.A. degree in design or related field</li>
+		<li>2-4 years of experience in a professional design situation</li>
+
+		<hr>
+		<h6>KNOWLEDGE, SKILLS AND ABILITIES:</h6>
+
+		<li>Proficiency in Adobe Creative Suite, specifically Indesign, Photoshop and Illustrator</li>
+		<li>Have excellent understanding of and facility with typography</li>
+		<li>Able to manipulate and retouch photographs</li>
+		<li>Ability to create vector illustrations</li>
+		<li>Excellent computer skills in preparing work for a variety of production outputs</li>
+		<li>Understand how to design within a brand or format</li>
+		<li>Knowledge of production for print and web</li>
+
+		<hr>
+		<h6>THE IDEAL CANDIDATE WILL:</h6>
+
+		<li>Be very organized, responsible and resourceful</li>
+		<li>Be a team player with good interpersonal skills</li>
+		<li>Be able to work on multiple projects at once</li>
+		<li>Be very detail-oriented and work well in a fast-paced deadline-driven environment</li>
+		<li>Be able to take direction and seek help when needed</li>
+		<li>Have a refined modern design sensibility</li>
+		<li>Have a sense of humor</li>
+		<li>Be aligned with the mission of the Academy</li>
+
+
+		<p>LANGUAGE SKILLS: Ability to read and interpret documents such as safety rules, operating and maintenance instructions, and procedure manuals. Ability to write routine reports and correspondence. Ability to speak effectively before groups or individuals.
+		</p>
+
+
+		<p>PHYSICAL DEMANDS & WORK ENVIRONMENT: The physical demands and work environment described here are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. While performing the duties of this job, the employee is frequently required to stand, sit, walk, and reach with hands and arms, and talk or hear. Must be able to lift 25 lbs. Must be able to perform repetitive motions 50% of the time.</p>
+
+
+		<hr>
+		<h6>APPLICATION INSTRUCTIONS: </h6>
+
+		<p>Please submit your cover letter and resume online at http://calacademy.snaphire.com. Note that the recruitment timeline for positions vary and depend on many factors, so it is impossible to accurately predict when a position will close. We appreciate your patience during this process. No phone calls please.</p>
+
+		<p>The California Academy of Sciences is an Equal Opportunity Employer and welcomes applications from individuals who will contribute to its diversity.</p>
+
+		<p>The California Academy of Sciences is a non-smoking facility. Smoking is also prohibited in Golden Gate Park.</p>
+";
+
+		$copy="
+		<p class='add-top'>
+			Hi! I saw your posting and wanted to pass along my information. I'm a designer/illustrator with extensive in-house experience. I am looking for a design position in a fun place and nothing sounds more fun to me than a learning institution with an aquarium and a&nbsp;rainforest!  
+		</p><p>
+			My <a href='resume'>resume</a> will reveal my extensive production experience as well as more recent experiences with illustration, digital and programming. I have over 8+ years of experience working in branding and production supporting marketing, licensing, and publishing initiatives. 
+		</p>		
+		";
+
+		$project1=array("pokemon","The Pok&eacute;mon Company", "Overall support of all internal departments with creative needs. All artwork flowed through our department and we had to figure out how to get it created.");
+		$project2=array("project-animore","Project Animore", "Game concept. Vector illustrations! For UI and artwork.");
+		$project3=array("museyon-guides","Museyon Guides", "Art direction and production for 300+ page travel books.");
+
+		$sample_works = "
+			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
+			
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project1[0]."'><img class='scale-with-grid' src='img/".$project1[0]."/thumb.svg'>".$project1[1].".</a> ".$project1[2]."</div>
+			
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project2[0]."'><img class='scale-with-grid' src='img/".$project2[0]."/thumb.jpg'>".$project2[1].".</a> ".$project2[2]."</div>
+
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.svg'>".$project3[1].".</a> ".$project3[2]."</div>
+
+			<div class='clear'></div>	
+			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a>.</p>
+		";
+
+		break;			
+
+		case 'cm-2':
+		$jobTitle="Book Designer";
+		$company="Callisto Media";
+		$date="July 3, 2014";
+		$email="jobs@callistomedia.com";
+		$logo="http://www.coroflot.com/user_files/job_employer_logos/0_sfcZ3EcR5a7fBnY7xRizo6JJl.png";
+		
+		$originaljobposting="http://www.coroflot.com/jobs/56701/Book-Designer";
+		
+		$job_details="
+		<h6>Responsibilities</h6>
+		<li>Report to the Creative Director and collaborate closely with Design and Editorial colleagues</li>
+		<li>Create book designs to conform to company-defined objectives</li>
+		<li>Produce cover mechanicals and print-ready files</li>
+		<li>Specify and manage acquisition of stock photography</li>
+		<li>Create and adapt interior design templates and review composed pages</li>
+		<li>Adhere to demanding design schedules</li>
+		<li>Assist in e-book design and production </li>
+		<li>Provide support to Creative Director on additional production, design, and administrative tasks</li>
+
+		<h6>Requirements</h6>
+		<li>At least 3 years book design experience, preferably in Trade publishing</li>
+		<li>Strong conceptual thinking and design proficiency with great attention to detail</li>
+		<li>Extensive knowledge of typography and proper typesetting conventions</li>
+		<li>Solid book production and pre-press skills, with knowledge of latest software and technologies</li>
+		<li>Excellent verbal, written, and interpersonal skills</li>
+		<li>Superior organizational skills with ability to multi-task, prioritize assignments, and meet tight deadlines</li>
+		<li>Ability to take initiative while also working collaboratively with Design and Editorial colleagues</li>
+		<li>Adaptability in a fast-paced and dynamic startup environment</li>
+		<li>Expert proficiency in Photoshop, Illustrator, and InDesign</li>
+		<li>Bachelor’s degree in graphic design or equivalent education and experience</li>
+
+		<p>Callisto Media offers a competitive salary, full benefits, stock options, 401K, and a friendly working environment. This is a full-time, onsite position at our office in Berkeley, California. Please submit a resume, digital samples of your work or your online portfolio, salary requirements, and a cover letter describing why you are an ideal candidate.
+		</p>
+";
+
+		$copy="
+		<p class='add-top'>
+			Hi! I saw your posting and wanted to pass along my information. I'm a designer/illustrator with extensive in-house design experience. I am looking for a design position in a fun place and learn more about the future of publishing!
+		</p><p>
+			My <a href='resume'>resume</a> will reveal my extensive production experience as well as more recent experiences with illustration, digital and programming. I have over 8+ years of experience working in branding and production supporting marketing, licensing, and publishing initiatives. 
+		</p>		
+		";
+
+		$project1=array("museyon-guides","Museyon Guides", "Art direction and production for 300+ page travel books. Took books from conception to finish.");
+		$project2=array("pokemon","The Pok&eacute;mon Company", "Overall support of all internal departments with creative needs. All artwork flowed through our department and we had to figure out how to get it created.");
+		$project3=array("project-animore","Project Animore", "Game concept. Vector illustrations! For UI and artwork.");
+
+		$sample_works = "
+			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
+			
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project1[0]."'><img class='scale-with-grid' src='img/".$project1[0]."/thumb.svg'>".$project1[1].".</a> ".$project1[2]."</div>
+			
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project2[0]."'><img class='scale-with-grid' src='img/".$project2[0]."/thumb.svg'>".$project2[1].".</a> ".$project2[2]."</div>
+
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.jpg'>".$project3[1].".</a> ".$project3[2]."</div>
+
+			<div class='clear'></div>	
+			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a>.</p>
+		";
+
+		break;
+
+		case 'docusign':
+		$originaljobposting="https://www.docusign.com/company/careers?jvi=ownaZfwM,Job";
+		$logo;
+		$jobTitle="Designer/Jr. Art Director";
+		$company="Docusign";
+		$date="July 9, 2014";
+		$email;
+		
+		
+		$job_details="
+		
+		<h3 class='center'>Designer/Jr. Art Director</h3>
+		<h6 class='center'>Marketing | San Francisco, CA</h6>
+		<p>DocuSign is the industry leader for eSignatures and digital transaction management. We bring delightful experiences to millions of people every day and our worldwide network continues to grow by leaps and bounds. Are you interested in joining a fun and tech savvy company? Would you like to receive random hugs from people who have benefited from using your product? Can you work in a fast paced, deadline and results driven atmosphere? Do you want to collaborate with an amazing group of peers who’ll inspire you in new ways every day? If so, we would like to meet you. We’re looking for Designer/Junior Art Director to join our small, tight-knit, in-house creative team in San Francisco, California.
+		</p>
+		<p>As a Designer/Junior Art Director you will work on producing amazing visual experiences, managing competing timelines, organizing design assets, and contributing to the creative pool of ideas. Our candidate should be able to create cutting-edge designs and explain their thought process to non-creative. They should have outstanding visual design skills and advanced knowledge of Photoshop, Illustrator and InDesign.
+		</p>
+		<hr>		
+		<h6>Responsibilities </h6>
+		<li>Simultaneously design everything from animated banners to full-blown web experiences within short timelines and often on the same day</li>
+		<li>Work collaboratively with other creative professionals to create cohesive visual messaging and set consistently higher standards in design across the DocuSign brand</li>
+		<li>Create visual branding for field events, including guidelines, templates and final artwork</li>
+		<li>Appreciate feedback (both giving and receiving) and seek it out in reviews with peers and stakeholders</li>
+		<li>Ability to design for different audiences – B2B by title and industry, a mobile audience, and B2C with the Consumer</li>
+		<li>Listen to the feedback and excel at balancing multiple inputs when arriving at final designs and iterations</li>
+		<li>Keep track of all requests in a project management and planning tool</li>
+		<hr>
+		<h6>Qualifications </h6>
+		<li>An easy-going, organized and professional personality that is always looking for ways to improve</li>
+		<li>3+ years experience designing for graphics for large scale events</li>
+		<li>Must have solid print experience and working with print vendors to proof and quality check materials</li>
+		<li>Advanced knowledge and technical proficiency with the Adobe Creative Suite</li>
+		<li>Experience creating landing pages, banner ads, email designs and other direct response materials</li>
+		<li>Mobile browser design experience a nice-to-have</li>
+		<li>Knowledge of user-centered design principles, web design best practices, visual trends and emerging web technologies</li>
+		<li>Other coding skills considered a plus</li>
+		<li>Excellent organization, communication, interpersonal, and time management skills</li>
+		<li>Strong attention to detail</li>
+		<li>BA/BFA in Graphic Design or an equivalent Arts degree required</li>
+		<li>Knowledge of Eventbrite or other event management tools required</li>
+		<li>Goal-oriented and solution focused professionals only. This is a 24/7 work environment and the ideal candidate must be willing to work at any hour of the day or over weekends and holidays.</li>
+		<p>Along with your resume and cover letter, please submit a link to your portfolio or work samples</p>
+		";
+
+		$copy="
+		<p class='add-top'>
+			Hello! I saw your posting and wanted to get in touch. I'm a designer/illustrator with programming experience. I am looking for a position in a place where I can be a collaborative member to a team and to continue to learn more on the digital side.
+		</p><p>
+			My <a href='resume'>resume</a> will reveal my extensive production experience, as well as more recent experiences with illustration and programming. I have over 8+ years of experience working in branding and production supporting marketing, licensing, and publishing initiatives.		
+		";
+
+		$project1=array("pokemon","The Pok&eacute;mon Company", "Overall support of all internal departments with creative needs. Fast-paced environment and we worked to bring projects from outside vendors in-house.");
+		$project2=array("abriendo-puertas","Abriendo Puertas", "Design and hand-code of responsive informational website for non-profit.");
+		$project3=array("the3","The 3", "Trivia game where I developed the UI and overall flow of the game.");
+
+		$sample_works = "
+			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
+			
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project1[0]."'><img class='scale-with-grid' src='img/".$project1[0]."/thumb.svg'>".$project1[1].".</a> ".$project1[2]."</div>
+			
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project2[0]."'><img class='scale-with-grid' src='img/".$project2[0]."/thumb.jpg'>".$project2[1].".</a> ".$project2[2]."</div>
+
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.svg'>".$project3[1].".</a> ".$project3[2]."</div>
+
+			<div class='clear'></div>	
+			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a>.</p>
+		";
+
+		$other="
+		ps. While most of my work in the past years have been focused on children's brands or children's related properties and may seem a bit \"childish\", I can reassure you that I can work in a more clean and \"professional\" style! I just haven't had the opportunity in a while!
+		";
+
 		break;		
+
+		case 'opentable':
+		$originaljobposting="http://www.opentable.com/careers/#alljobs?nl=1&jvi=osebZfwA,Job&jvs=Indeed&jvk=Job";
+		$logo="http://www.opentable.com/about/images/logos/opentable-hr-color.svg";
+		$jobTitle="Contract Brand Experience Designer";
+		$company="Opentable";
+		$date="July 9, 2014";
+		$email;
+
+		$job_details="
+		<h3 class='center addtop'>Contract Brand Experience Designer</h3>
+		<h3 class='center'>Experience Design | San Francisco, CA</h3>
+		<hr><h6>About Our Role</h6>
+		<p>OpenTable is seeking a contract designer to work as part of our Brand Experience team in building, developing and executing our new brand vision. You’ll be concepting and designing for print, digital and environmental communications that influence the way people discover, reserve and experience restaurants across North America and beyond.
+		</p>
+		<p>Designers at OpenTable understand that the behavior of products and services is part of designing for how people will interact with them. They have strong information visualization skills, care about all the details of design both on and off the screen, have a desire to put things in the world that have a meaningful impact on people's lives and thrive in a collaborative environment that values the team.
+		</p>
+		<hr><h6>About Us</h6>
+		<p>OpenTable is the world's leading provider of online restaurant reservations, seating approximately 12 million diners per month via online bookings across 28,000 restaurants. The OpenTable network connects restaurants and diners, helping diners discover and book the perfect table and helping restaurants deliver personalized hospitality to keep guests coming back. In addition to the company's website and mobile apps, OpenTable powers online reservations for nearly 600 partners, including many of the Internet's most popular global and local brands. Headquartered in San Francisco, California, we have team members in the United States, Canada, Germany, Japan, Mexico and the UK. OpenTable also owns and operates toptable, the leading consumer destination site for restaurant reservations in the UK.
+		</p><hr><h6>About You</h6>
+		<li>Human-centered: Your designs respond to the needs and motivations of real people. You understand human centered design philosophy and are comfortable going out into the world for inspiration.</li>
+		<li>Communication skills: You communicate visually and can express your ideas with skill and grace whether standing at a whiteboard, drawing on a napkin, or presenting on screen. You see visual design as a language and can explain what your design decisions are meant to communicate.</li>
+		<li>Collaboration: You demonstrate a strong, collaborative ethos and have the ability to inspire and facilitate collaboration with others.</li>
+		<li>Prototyping skills: You understand that building proofs of concept and iterating helps you and others explore fail and learn quickly. You work at varying levels of fidelity and are always interested in trying new tools and methods.</li>
+		<li>You have an exceptional portfolio featuring examples of communication design work and a link to your personal website or web portfolio.</li>
+		<li>At least 3 years of experience in a related position, designing for digital experiences.</li>
+		<li>Working knowledge of HTML, CSS and the technologies that you’re designing for.</li>
+		<li>Expert Adobe skills.</li>
+		<li>Pixel-perfect attention to detail.</li>
+		<li>The ability to think about high-level product vision, you understand constraints and you contribute to a fantastic design experience.</li>
+		<li>Comfort trying new things with a tendency to ask for forgiveness rather than ask for permission.</li>
+		<li>Possess a healthy sense of humor.</li>
+		";
+		
+		$copy="
+		<p class='add-top'>
+			Hey! You guys are an app on my phone! In that case I need to send my information along! I am a designer/illustrator with programming experience. I am looking for a fun job where I can continute to learn and to contribute my unique skills to a collaborative team.</p><p>
+			I used to work at <a href='pokemon'>Pok&eacute;mon</a> on creative team and part of that duty was branding. Our first role was implementing rules from our Japanese overlords, but the other part of that role was imagining how people interacted with our brand.
+		";
+
+		$project1=array("pokemon","The Pok&eacute;mon Company", "Overall support of all internal departments with creative needs. Fast-paced environment and we worked to bring projects from outside vendors in-house.");
+		$project2=array("abriendo-puertas","Abriendo Puertas", "Design and hand-code of responsive informational website for non-profit.");
+		$project3=array("the3","The 3", "Trivia game where I developed the UI and overall flow of the game.");
+
+		$sample_works = "
+			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
+			
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project1[0]."'><img class='scale-with-grid' src='img/".$project1[0]."/thumb.svg'>".$project1[1].".</a> ".$project1[2]."</div>
+			
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project2[0]."'><img class='scale-with-grid' src='img/".$project2[0]."/thumb.jpg'>".$project2[1].".</a> ".$project2[2]."</div>
+
+			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.svg'>".$project3[1].".</a> ".$project3[2]."</div>
+
+			<div class='clear'></div>	
+			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a>.</p>
+		";
+
+		break;			
 
 }
 

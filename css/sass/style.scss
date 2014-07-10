@@ -15,7 +15,7 @@
 @import 'lightbox';
 @import 'tooltipster';
 // @import 'responsive-indicator';
-@import "compass/css3/columns";
+@import "compass/css3";
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
@@ -175,6 +175,11 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	hr { margin-bottom: .5em; }
 }
 
+.bio {
+	font-size: 1.15em;
+	line-height: 1.35em;
+}
+
 .index-right-column {
 	// padding-right: 0px;
 	// padding-top: 0px;
@@ -245,7 +250,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 .original-job-details {
 	color: lighten($txt-color,30%);
 	p,ul,li {font-size: 1rem;}
-	hr,ul {
+	hr,ul,h1,h2,h3,h4,h5,h6 {
 	@include column-span(all);
 	}
 	ul {
