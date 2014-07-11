@@ -5,19 +5,23 @@
 
 
 # TO DO
-- index, put off for now
+- conversational slideshow during interviews
 - add icons for "tools"
 - add in celebrity portraits
-- currently learning
-- ringtones
 - add icons to quickly identify things
 - hover state, get rid of labels below thumbnails
 - add in alts for images
-x Put Pokemon all on one page?
-x Put Museyon all on one page?
-x about ?resume ?hire-me
-x fake jobs page
-	x sandwich logisitcs
+- refactor list random getting
+
+# TO DO DONE
+- x index, put off for now
+- x currently learning
+- x ringtones
+- x Put Pokemon all on one page?
+- x Put Museyon all on one page?
+- x about ?resume ?hire-me
+- x fake jobs page
+	- x sandwich logisitcs
 
 
 # RESUME ADDITIONS
