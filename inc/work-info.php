@@ -163,8 +163,6 @@ function get_puns() {
 	return $puns;
 }
 
-
-
 function print_pun() {
 	$puns=get_puns();
 	$count=count($puns);

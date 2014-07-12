@@ -35,23 +35,35 @@ function random_list_items($array,$quantity=5) {
 	return $random_list;
 }
 
-// function random_list_items($array,$quantity=5) {
+function print_list( $array,$results=5,$randomize=false,$heading=6 ){
+	if ( !is_null( $array["name"] ) ) { $name=$array["name"]; }
+	if ( !is_null( $array["list"] ) ) { $array=$array["list"]; }
 	
-// 	$count=0;
-// 	while ( $count !== $quantity ) {
-// 		$count=count($array);
-// 		$rand=rand(0,$count);
-// 		$array_rand[]=$rand;
-// 		unset($array,$rand);
-// 		$count++;
-// 	} 
+	if ( count($array) < $results ) { $random_numbers_array=array_rand($array, count($array) ); }
+	else { $random_numbers_array=array_rand($array,$results); }
 
-// 	foreach ($array_rand as $number) {
-// 		$random_list[]=$array[$number];
-// 	}
+	if ( $randomize==true ) { $array=shuffle($array); }
+	echo "<h5>".$name."</h5>";
+	echo "<ul>";
+	
+	foreach ($random_numbers_array as $number) {
+		echo "<li>".$array[$number]."</li>";
+	}
+	echo "</ul>";
+}
 
-// 	return $random_list;
-// }
+function list_games_play2() {
+	$container = array(
+		"name"=>"Games Playing",
+		"list"=>array(
+			"X-COM: Enemy Unknown",
+			"Disco Zoo",
+			"Nimblequest",
+			"Red Dead Redemption",
+		)
+	);
+	return $container;
+}
 
 function list_ringtones(){
 	$tones["nokia-classic"]=array("name"=>"Classic Nokia mono","file"=>"nokia-classic");
@@ -78,8 +90,6 @@ function html_list_ringtones(){
 		echo "<a href='".$path."' target='_blank'>".$name."</a><br>";
 	}
 }
-
-
 
 function list_favorite_games() {
 	$list_title="Favorite Games";
