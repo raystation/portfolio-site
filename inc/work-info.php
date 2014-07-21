@@ -22,6 +22,7 @@ $works = array(
 	array( "name" => "Egg Baby","path" => "egg-baby","thumb" => "jpg" ), 
 	array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit", "thumb" => "jpg" ),
 	array( "name" => "Portfolio Site","path" => "portfolio-site", "thumb" => "jpg" ),
+	array( "name" => "LesConcierges","path" => "lesconcierges", "thumb" => "jpg" ),
 	// array( "name" => "idibon","path" => "idibon","thumb" => "jpg" ),
 	// array( "name" => "Nerd Comics", "path" => "nerd-comics", "thumb" => "jpg" ),
 );
@@ -332,7 +333,7 @@ if ( $title == "Walter White" ) {
 
 	$path="img/walter-white/";
 
-	$description = '';
+	$description;
 	
 	$sidebar = "";
 
@@ -1291,7 +1292,7 @@ if ( $title == "Arceus and the Jewel of&nbsp;Life" ) {
 		array("skill"=>"Photoshop", "percent"=>20),
 	);
 
-	$description = '';
+	$description;
 	
 	$sidebar = "";
 
@@ -1350,7 +1351,7 @@ if ( $title == "Pok&eacute;mon: Toys'R'Us Feature Shop" ) {
 
 	$path="img/feature-shop/";
 
-	$description = '';
+	$description;
 	
 	$sidebar = "Toys'R'Us Times Square";
 
@@ -1380,7 +1381,7 @@ if ( $title == "Pok&eacute;mon: Toy Fair" ) {
 
 	$path="img/toy-fair/";
 
-	$description = '';
+	$description;
 	
 	$sidebar = "
 		Trade Show Booth
@@ -1408,7 +1409,7 @@ if ( $title == "Nerd Comics" ) {
 
 	$path="img/nerd-comics/";
 
-	$description = '';
+	$description;
 	
 	$sidebar = "";
 
@@ -1428,7 +1429,7 @@ if ( $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon" ) {
 
 	$path="img/mystery-dungeon/";
 
-	$description = '';
+	$description;
 	
 	$sidebar = "
 		Strategy Guide <br />	
@@ -1455,7 +1456,7 @@ if ( $title == "Pocket Pok&eacute;dex" ) {
 
 	$path="img/pocket-pokedex/";
 
-	$description = '';
+	$description;
 	
 	$sidebar = "
 		Book Design <br />
@@ -1485,7 +1486,7 @@ if ( $title == "Battle Revolution" ) {
 
 	$path="img/battle-revolution/";
 
-	$description = '';
+	$description;
 	
 	$sidebar = "Strategy Guides <br />
 	Mini-website";
@@ -1511,7 +1512,7 @@ if ( $title == "Pok&eacute;mon: Diamond & Pearl Launch" ) {
 
 	$path="img/dp-launch/";
 
-	$description = '';
+	$description;
 	
 	$sidebar = "
 		Event at Nintendo World in New York <br />
@@ -1547,7 +1548,7 @@ if ( $title == "Licensing Show" ) {
 
 	$path="img/licensing-show/";
 
-	$description = '';
+	$description;
 	
 	$sidebar = "
 		Trade Show Booth
@@ -1584,7 +1585,7 @@ if ( $title == "Pok&eacute;mon: Logos" ) {
 
 	$path="img/pokemon-logos/";
 
-	$description = '';
+	$description;
 	
 	$sidebar = "
 		Logo examples
@@ -1602,22 +1603,20 @@ if ( $title == "Pok&eacute;mon: Logos" ) {
 		array("file" => "galactic-battles.jpg", "alt" => ""),
 		array("file" => "giratina.jpg", "alt" => ""),
 		array("file" => "battle-frontier.jpg", "alt" => ""),
-);	
+	);	
 
 } //end POKEMON-LOGOS
 
 //  #PORTFOLIO-SITE
 // ===============================
 
-if ( $title == "Pok&eacute;mon: Logos" ) {
+if ( $title == "Portfolio Site" ) {
 
 	$path="img/portfolio-site/";
 
-	$description = '';
+	$description="yay!";
 	
-	$sidebar = "
-		Logo examples
-	";
+	$sidebar="Logo examples";
 
 	$tools=array(
 		array("skill"=>"Sublime Text", "percent"=>70),
@@ -1631,3 +1630,28 @@ if ( $title == "Pok&eacute;mon: Logos" ) {
 	);
 
 } //end PORTFOLIO SITE
+
+//  #LESCONCIERGES
+// ===============================
+
+if ( $title == "LesConcierges" ) {
+
+	$template="art";
+	$path="img/lesconcierges/";
+
+	$description="yay!";
+	
+	$sidebar="Logo examples";
+
+	$tools=array(
+		array("skill"=>"Sublime Text", "percent"=>70),
+		array("skill"=>"Git", "percent"=>10),
+		array("skill"=>"Photoshop", "percent"=>20),
+	);
+
+	$img_info = array(
+		array("file" => "01.jpg", "alt" => ""),
+		array("file" => "02.jpg", "alt" => ""),
+	);
+
+} //end LESCONCIERGES

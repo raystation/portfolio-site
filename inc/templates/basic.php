@@ -1,5 +1,5 @@
 <div class="sixteen columns">
-			
+			<!-- basic -->
 			<?php  
 				echo "<div class='slick'>\n";
 					foreach($img_info as $img) {

@@ -53,6 +53,8 @@ RewriteRule ^sarah-walko-wordpress$ work?project=sarah-walko-wordpress
 RewriteRule ^scavenger-hunt$ work?project=scavenger-hunt
 RewriteRule ^storymaps$ work?project=storymaps
 RewriteRule ^tiger-tiger$ work?project=tiger-tiger
+RewriteRule ^portfolio-site$ work?project=portfolio-site
+RewriteRule ^lesconcierges$ work?project=lesconcierges
 
 RewriteRule ^bigfish$ hire-me?id=510
 

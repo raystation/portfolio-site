@@ -156,11 +156,19 @@
 
 		case 'portfolio-site':
 		$title = 'Portfolio Site';
-		break;				
+		break;
+
+		case 'lesconcierges':
+		$title = 'LesConcierges';
+		break;
 	}
 	
 if ( is_null($title) ) { $title = "Work"; }
 include('inc/header.php');
-if ( is_null($project) ) {} else { include('inc/content.php'); }
+if ( !is_null($project) ) { 
+	$template="inc/templates/".$template.".php";
+	if ( file_exists( $template ) ) { include $template; }
+	else { include 'inc/templates/basic.php'; }
+}
 skeleton_print_thumbnail_4($works);
 include('inc/footer.php'); 
