@@ -107,6 +107,7 @@ function list_favorite_games() {
 			"Dig Dug",
 			"Double Dragon",
 			"Fallout 3",
+			"Fable",
 			"Fallout: New Vegas",
 			"Final Fantasy 4",
 			"X-COM",
@@ -115,10 +116,13 @@ function list_favorite_games() {
 			"Ghouls 'n' Ghosts",
 			"Golden Axe II",
 			"Golden Axe",
+			"Journey",
 			"Junk Jack",
 			"L.A. Noire",
+			"Limbo",
 			"Marble Madness",
 			"Mario Kart 7",
+			"Mario Kart Wii",
 			"Mario Kart DS",
 			"Metal Gear Solid",
 			"Metal Gear Solid 3: Snake Eater",
@@ -131,11 +135,14 @@ function list_favorite_games() {
 			"NBA Live 95",
 			"Okami",
 			"PaRappa the Rappa",
+			"Pikmin",
+			"Jet Set Radio",
 			"Patapon",
 			"Phoenix Wright 2: Trials and Tribulations",
 			"Phoenix Wright: Ace Attorney",
 			"Plants vs. Zombies",
 			"Pocket Planes",
+			"Portal 2",
 			"Pokemon Diamond & Pearl",
 			"Trauma Center",
 			"Pokemon Y",
@@ -162,6 +169,7 @@ function list_favorite_games() {
 			"Transport Tycoon",
 			"Uncharted 2",
 			"Zombies Ate My Neighbors",
+			"Ghost Trick: Phantom Detective",
 		)
 	);
 	return $list;
@@ -178,7 +186,8 @@ function list_self_nicknames() {
 			"Inspector",
 			"Asian Sensation",
 			"The Worm",
-			"The Hand"
+			"The Hand",
+			"Wild Bunch",
 		)
 	);
 	return $list;	
@@ -277,6 +286,7 @@ function list_fav_tv() {
 			"Futurama",
 			"Mighty Boosh",
 			"Archer",
+			"Star Wars: The Old Republic",
 		)
 	);
 	return $list;
@@ -311,39 +321,76 @@ function html_list_link($array,$h=5) {
 	echo "</ul>";
 }
 
-// function print_list( $array,$randomize=false,$results=5,$heading=5 ){
-	
-// 	// check to make sure the variables are not NULL
-// 	if ( !is_null( $array["name"] ) ) { $name=$array["name"]; }
-// 	if ( !is_null( $array["list"] ) ) { $array=$array["list"]; }
+function list_favorite_pokemon() {
+	$list = array(
+		"name"=>"Favorite Pok&eacute;mon",
+		"list"=>array(
+			"Scizor",
+			"Heracross",
+			"Drifblim",
+			"Piplup",
+			"Drapion",
+			"Gengar",
+			"Weavile",
+			"Garchomp",
+			"Spiritomb",
+			"Snorlax",
+		)
+	);
+	return $list;
+}
 
-// 	if ( $randomize==true ) { 
-// 		if ( count($array) < $results ) { 
-// 			$numbers_array=array_rand($array, count($array) ); 
-// 			shuffle($numbers_array); 
-// 		} else { 
-// 			$numbers_array=array_rand($array,$results); 
-// 			shuffle($numbers_array); 
-// 		}
-// 	} 
+function list_baby_names() {
+	$list = array(
+		"name"=>"Names I Would Give a Baby",
+		"list"=>array(
+			"Drone",
+			"Horatio",
+			"Banjo",
+			"Rayson",
+			"Batman",
+		)
+	);
+	return $list;
+}
 
-// 	if ( $randomize==false ) {
-// 			if ( count($array) < $results ) { 
-// 				$numbers_array=range(0, count($array) ); 
-// 			} else { $numbers_array=range(0, $results); 
-// 		}
-// 	}
-// 	// var_dump($numbers_array);
+function list_new_favorite_things() {
+	$list = array(
+		"name"=>"New Favorite Things",
+		"list"=>array(
+			"Hawaiian shirts",
+			"pineapple juice",
+			"Santa Cruz",
+			"The City logo",
+			"ESPN 30 for 30 documentaries",
+			"George Takei",
+			"Bravest Warriors",
+		)
+	);
+	return $list;
+}
 
-// 	echo "<h".$heading.">".$name."</h".$heading.">";
-// 	echo "<ul>";
-	
-// 	foreach ($numbers_array as $number) {
-// 		echo "<li>".$array[$number]."</li>";
-// 	}
-// 	echo "</ul>";
-// }
-
-
+function list_videogame_backlog() {
+	$list = array(
+		"name"=>"Video Game backlog",
+		"list"=>array(
+			"FEZ",
+			"Bravely Default",
+			"Zelda: A Link Between Worlds",
+			"Grand Theft Auto 5",
+			"Towerfall",
+			"Shovel Knight",
+			"Mario Kart 8",
+			"Skyrim",
+			"Uncharted 3",
+			"Assassin's Creed",
+			"Fire Emblem: Awakening",
+			"Tactics Ogre",
+			"Nidhogg",
+			"Dragon's Crown",
+		)
+	);
+	return $list;
+}
 
 

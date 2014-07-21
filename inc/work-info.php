@@ -237,6 +237,8 @@ function skeleton_print_page_thumbnail_4($array) {
 	echo "</div>";
 }
 
+
+
 // MUSEYON  ========================
 
 function museyon_sidebar() {
