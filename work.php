@@ -152,8 +152,11 @@
 
 		case 'pokemon-logos':
 		$title = 'Pok&eacute;mon: Logos';
-		break;		
+		break;	
 
+		case 'portfolio-site':
+		$title = 'Portfolio Site';
+		break;				
 	}
 	
 if ( is_null($title) ) { $title = "Work"; }

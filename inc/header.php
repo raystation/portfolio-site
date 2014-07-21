@@ -12,6 +12,7 @@
 	<title>Ray Yuen &#124; <?php echo $title; ?></title>
 	<meta name="description" content="Ray Yuen is a designer and artist working in numerous media: books, games, game design and illustration.">
 	<meta name="author" content="Ray Yuen">
+	<meta name="keywords" content="portfolio, design, illustration, web design">
 
 	<meta property="og:site_name" content="Ray Yuen. Design + Illustration"/>
 	<meta property="og:url" content="http://rayuen.com"/>

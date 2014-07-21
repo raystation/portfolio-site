@@ -13,7 +13,7 @@ function list_html($array){
 
 	echo "</ul>\n";
 }
- 
+
 function random_number($array) {
 	$count=count($array);
 	$rand=mt_rand(0,$count);
@@ -255,31 +255,95 @@ function list_albums_listening() {
 
 function list_fav_tv() {
 	$list = array(
-			"name"=>"Favorite TV Shows",
-			"list"=>array(
-				"LOST",
-				"Venture Brothers",
-				"Bravest Warriors",
-				"Sherlock",
-				"Breaking Bad",
-				"Star Trek: TOS",
-				"Battlestar Galactica",
-				"Twilight Zone",
-				"Mad Men",
-				"SNL",
-				"Game of Thrones",
-				"BBC Planet Earth",
-				"Firefly",
-				"Arrested Development",
-				"Cowboy Bebop",
-				"Doctor Who",
-				"Chappelle's Show",
-				"Futurama",
-				"Mighty Boosh",
-				"Archer",
+		"name"=>"Favorite TV Shows",
+		"list"=>array(
+			"LOST",
+			"Venture Brothers",
+			"Bravest Warriors",
+			"Sherlock",
+			"Breaking Bad",
+			"Star Trek: TOS",
+			"Battlestar Galactica",
+			"Twilight Zone",
+			"Mad Men",
+			"SNL",
+			"Game of Thrones",
+			"BBC Planet Earth",
+			"Firefly",
+			"Arrested Development",
+			"Cowboy Bebop",
+			"Doctor Who",
+			"Chappelle's Show",
+			"Futurama",
+			"Mighty Boosh",
+			"Archer",
 		)
 	);
 	return $list;
 }
+
+function list_friends() {
+	$list=array(
+		"name"=>"Friends",
+		"list"=>array(
+			array("item" => "Simon Yuen", "url" => "simonyuen.com"),
+			array("item" => "Peter Oumanski", "url" => "peteroumanski.com"),
+			array("item" => "Malado Baldwin", "url" => "maladobaldwin.com"),
+			array("item" => "Data Blick / Anya Hearn", "url" => "datablick.com"),
+			array("item" => "Tim Eggert", "url" => "timeggert.com"),
+			array("item" => "Sarah Walko", "url" => "sarahwalko.com"),
+			array("item" => "Marina Grinshpun", "url" => "marinagrinshpun.com"),
+		)
+	);
+	return $list;
+}
+
+function html_list_link($array,$h=5) {
+
+	if ( !is_null( $array["name"] ) ) { $name=$array["name"]; }
+	if ( !is_null( $array["list"] ) ) { $array=$array["list"]; }
+
+	echo "<h".$h.">".$name."</h".$h."><ul>";
+
+	foreach ($array as $list_item) {
+		echo "<li><a href='http://".$list_item[url]."' target='_blank'>".$list_item[item]."</a></li>";
+	}
+	echo "</ul>";
+}
+
+// function print_list( $array,$randomize=false,$results=5,$heading=5 ){
+	
+// 	// check to make sure the variables are not NULL
+// 	if ( !is_null( $array["name"] ) ) { $name=$array["name"]; }
+// 	if ( !is_null( $array["list"] ) ) { $array=$array["list"]; }
+
+// 	if ( $randomize==true ) { 
+// 		if ( count($array) < $results ) { 
+// 			$numbers_array=array_rand($array, count($array) ); 
+// 			shuffle($numbers_array); 
+// 		} else { 
+// 			$numbers_array=array_rand($array,$results); 
+// 			shuffle($numbers_array); 
+// 		}
+// 	} 
+
+// 	if ( $randomize==false ) {
+// 			if ( count($array) < $results ) { 
+// 				$numbers_array=range(0, count($array) ); 
+// 			} else { $numbers_array=range(0, $results); 
+// 		}
+// 	}
+// 	// var_dump($numbers_array);
+
+// 	echo "<h".$heading.">".$name."</h".$heading.">";
+// 	echo "<ul>";
+	
+// 	foreach ($numbers_array as $number) {
+// 		echo "<li>".$array[$number]."</li>";
+// 	}
+// 	echo "</ul>";
+// }
+
+
 
 

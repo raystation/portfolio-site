@@ -21,6 +21,7 @@ $works = array(
 	array( "name" => "Malado Baldwin Wordpress website","path" => "malado-baldwin-wordpress","thumb" => "jpg" ),
 	array( "name" => "Egg Baby","path" => "egg-baby","thumb" => "jpg" ), 
 	array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit", "thumb" => "jpg" ),
+	array( "name" => "Portfolio Site","path" => "portfolio-site", "thumb" => "jpg" ),
 	// array( "name" => "idibon","path" => "idibon","thumb" => "jpg" ),
 	// array( "name" => "Nerd Comics", "path" => "nerd-comics", "thumb" => "jpg" ),
 );
@@ -1602,3 +1603,29 @@ if ( $title == "Pok&eacute;mon: Logos" ) {
 );	
 
 } //end POKEMON-LOGOS
+
+//  #PORTFOLIO-SITE
+// ===============================
+
+if ( $title == "Pok&eacute;mon: Logos" ) {
+
+	$path="img/portfolio-site/";
+
+	$description = '';
+	
+	$sidebar = "
+		Logo examples
+	";
+
+	$tools=array(
+		array("skill"=>"Sublime Text", "percent"=>70),
+		array("skill"=>"Git", "percent"=>10),
+		array("skill"=>"Photoshop", "percent"=>20),
+	);
+
+	$img_info = array(
+		array("file" => "01.jpg", "alt" => ""),
+		array("file" => "02.jpg", "alt" => ""),
+	);
+
+} //end PORTFOLIO SITE

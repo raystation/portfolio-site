@@ -11,9 +11,9 @@
 - add icons to quickly identify things
 - hover state, get rid of labels below thumbnails
 - add in alts for images
-- refactor list random getting
 
 # TO DO DONE
+- x refactor list random getting
 - x index, put off for now
 - x currently learning
 - x ringtones
