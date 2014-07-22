@@ -36,7 +36,7 @@
 					<p>All works &copy; <?php $date=get_date();echo $date["year"];?> Raymond Yuen.</p>
 					<p>Please do not reproduce without expressed written consent.</p>
 					<p>Built with Skeleton.</p>
-					<p><a href="about?id=pun&pun=YESSS"><?php if ( $pun_status !== true ) { $pun=print_pun();echo $pun;} ?></a></p>
+					<p><?php if ( $pun_status !== true ) { $pun=print_pun();echo $pun;} ?></p>
 
 			</div>
 

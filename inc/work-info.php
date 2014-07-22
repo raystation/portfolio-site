@@ -21,8 +21,8 @@ $works = array(
 	array( "name" => "Malado Baldwin Wordpress website","path" => "malado-baldwin-wordpress","thumb" => "jpg" ),
 	array( "name" => "Egg Baby","path" => "egg-baby","thumb" => "jpg" ), 
 	array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit", "thumb" => "jpg" ),
-	array( "name" => "Portfolio Site","path" => "portfolio-site", "thumb" => "jpg" ),
-	array( "name" => "LesConcierges","path" => "lesconcierges", "thumb" => "jpg" ),
+	// array( "name" => "Portfolio Site","path" => "portfolio-site", "thumb" => "jpg" ),
+	// array( "name" => "LesConcierges","path" => "lesconcierges", "thumb" => "jpg" ),
 	// array( "name" => "idibon","path" => "idibon","thumb" => "jpg" ),
 	// array( "name" => "Nerd Comics", "path" => "nerd-comics", "thumb" => "jpg" ),
 );
@@ -160,17 +160,15 @@ function get_puns() {
 		"There was once a crossed-eyed teacher... who had issues controlling his pupils.",
 		"Newspaper headline reads: Cartoonist found dead at home, details are sketchy.",
 		"What did the cannibal get when he showed up to the party late? A cold shoulder.",
-		"A boiled egg in the morning is really hard to beat."
-		);
+		"A boiled egg in the morning is really hard to beat.",
+	);
 	return $puns;
 }
 
 function print_pun() {
 	$puns=get_puns();
-	$count=count($puns);
-	$rand=mt_rand(0,$count);
-	$pun=$puns[$rand];
-	return $pun;
+	shuffle($puns);
+	return $puns[0];
 }
 
 function sf_weather() {
