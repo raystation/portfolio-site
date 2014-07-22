@@ -303,6 +303,8 @@ function list_friends() {
 			array("item" => "Tim Eggert", "url" => "timeggert.com"),
 			array("item" => "Sarah Walko", "url" => "sarahwalko.com"),
 			array("item" => "Marina Grinshpun", "url" => "marinagrinshpun.com"),
+			array("item" => "Jen Noto", "url" => "jennoto.com"),
+			array("item" => "Brendan Leach", "url" => "iknowashortcut.com"),
 		)
 	);
 	return $list;

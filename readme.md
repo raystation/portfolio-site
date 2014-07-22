@@ -3,14 +3,17 @@
 - hand-coded with HTML/CSS/PHP
 - I'm fairly new to PHP so this definitly needs refactoring
 
+- add in alts for images
 
 # TO DO
+- separate lists functionality from data
 - conversational slideshow during interviews
+- randomize the logo  (cartoony, pixel)
 - add icons for "tools"
-- add in celebrity portraits
 - add icons to quickly identify things
+- GIF page
+- portraits page / add in celebrity portraits
 - hover state, get rid of labels below thumbnails
-- add in alts for images
 
 # TO DO DONE
 - x refactor list random getting

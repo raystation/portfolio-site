@@ -1650,8 +1650,15 @@ if ( $title == "LesConcierges" ) {
 	);
 
 	$img_info = array(
-		array("file" => "01.jpg", "alt" => ""),
-		array("file" => "02.jpg", "alt" => ""),
+		array("file" => "01.jpg", "alt" => "Caption 1"),
+		array("file" => "02.jpg", "alt" => "Caption 2"),
+		array("file" => "03.jpg", "alt" => "Caption 2"),
+		array("file" => "04.jpg", "alt" => "Caption 2"),
+		array("file" => "05.jpg", "alt" => "Caption 2"),
+		array("file" => "06.jpg", "alt" => "Caption 2"),
+		array("file" => "07.jpg", "alt" => "Caption 2"),
+		array("file" => "08.jpg", "alt" => "Caption 2"),
+		array("file" => "09.jpg", "alt" => "Caption 2"),
 	);
 
 } //end LESCONCIERGES
