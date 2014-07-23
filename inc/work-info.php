@@ -22,7 +22,7 @@ $works = array(
 	array( "name" => "Egg Baby","path" => "egg-baby","thumb" => "jpg" ), 
 	array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit", "thumb" => "jpg" ),
 	// array( "name" => "Portfolio Site","path" => "portfolio-site", "thumb" => "jpg" ),
-	// array( "name" => "LesConcierges","path" => "lesconcierges", "thumb" => "jpg" ),
+	array( "name" => "LesConcierges","path" => "lesconcierges", "thumb" => "jpg" ),
 	// array( "name" => "idibon","path" => "idibon","thumb" => "jpg" ),
 	// array( "name" => "Nerd Comics", "path" => "nerd-comics", "thumb" => "jpg" ),
 );
@@ -125,6 +125,15 @@ function get_date() {
 	$date["year"]=date('Y');
 	$date["day"]=date('D');
 	return $date;
+}
+
+function dev_tools($livereload=true,$responsive=true) {
+	if ($responsive==true) {
+		echo '<div class="responsive-indicator"></div>';
+	}
+	if ($livereload==true) { 
+		echo "<script>document.write('<script src=\"http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1\"></' + 'script>')</script>"; 
+	}
 }
 
 //order of the projects
@@ -1637,26 +1646,28 @@ if ( $title == "LesConcierges" ) {
 	$template="art";
 	$path="img/lesconcierges/";
 
-	$description="yay!";
+	$description="I was comissioned to do some illustrations to show an example of how LesConcierges' new web interface and app would work with their existing service.";
 	
-	$sidebar="Logo examples";
+	$sidebar="
+		Illustrations<br>
+		July 2014
+	";
 
 	$tools=array(
-		array("skill"=>"Sublime Text", "percent"=>70),
-		array("skill"=>"Git", "percent"=>10),
-		array("skill"=>"Photoshop", "percent"=>20),
+		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>60),
+		array("skill"=>"Photoshop", "percent"=>40),
 	);
 
 	$img_info = array(
-		array("file" => "01.jpg", "alt" => "Caption 1"),
-		array("file" => "02.jpg", "alt" => "Caption 2"),
-		array("file" => "03.jpg", "alt" => "Caption 2"),
-		array("file" => "04.jpg", "alt" => "Caption 2"),
-		array("file" => "05.jpg", "alt" => "Caption 2"),
-		array("file" => "06.jpg", "alt" => "Caption 2"),
-		array("file" => "07.jpg", "alt" => "Caption 2"),
-		array("file" => "08.jpg", "alt" => "Caption 2"),
-		array("file" => "09.jpg", "alt" => "Caption 2"),
+		array("file" => "01.jpg", "alt" => "The hotel owner tells his assistant that he needs to schedule a flight to Shanghai"),
+		array("file" => "02.jpg", "alt" => "The assistant talks to someone at LesConcierges with her boss's request"),
+		array("file" => "03.jpg", "alt" => "The LesConcierges concierge does research and talks to other concierges"),
+		array("file" => "04.jpg", "alt" => "The hotel owner receives a message while he is busy and responds with a quick text back"),
+		array("file" => "05.jpg", "alt" => "He looks at the hotel options that are sent his way"),
+		array("file" => "06.jpg", "alt" => "On the flight over, someone he meets makes a food recommedation"),
+		array("file" => "07.jpg", "alt" => "On the flight, the hotel owner tells LesConcierges that he needs some reservations"),
+		array("file" => "08.jpg", "alt" => "During a meeting, the hotel owner receives a message that his reservation is confirmed"),
+		array("file" => "09.jpg", "alt" => "A survey is given afterwards to ensure quality"),
 	);
 
 } //end LESCONCIERGES

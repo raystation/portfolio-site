@@ -14,7 +14,7 @@
 @import 'slick';
 @import 'lightbox';
 @import 'tooltipster';
-// @import 'responsive-indicator';
+@import 'responsive-indicator';
 @import "compass/css3";
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -118,7 +118,7 @@ a,a:visited {
 .remove-bottom 	{ margin-bottom: 0px; }
 .remove-top 		{ margin-top: 0px; }
 .nolist 				{ list-style: none; }
-.nowrap 				{ white-space: nowrap; }
+.nowrap, .nobreak 				{ white-space: nowrap; }
 .hide 					{ display: none; }
 
 .list-spacing-fix li	{ margin-bottom: 0.15em !important; }

@@ -144,7 +144,7 @@ function list_favorite_games() {
 			"Plants vs. Zombies",
 			"Pocket Planes",
 			"Pokemon Diamond & Pearl",
-			"Pokemon Y",
+			"Pokemon X/Y",
 			"Portal 2",
 			"Rampage",
 			"Red Dead Redemption",
@@ -170,6 +170,7 @@ function list_favorite_games() {
 			"Uncharted 2",
 			"X-COM",
 			"Zombies Ate My Neighbors",
+			"Star Wars: The Old Republic",
 		)
 	);
 	return $list;
@@ -188,6 +189,7 @@ function list_self_nicknames() {
 			"The Worm",
 			"The Hand",
 			"Wild Bunch",
+			"Stormborn",
 		)
 	);
 	return $list;	
@@ -230,9 +232,9 @@ function list_games_playing() {
 		"name"=>"Games Playing",
 		"list"=>array(
 			"X-COM: Enemy Unknown",
+			"Red Dead Redemption",
 			"Disco Zoo",
 			"Nimblequest",
-			"Red Dead Redemption",
 		)
 	);
 	return $container;
@@ -252,11 +254,11 @@ function list_albums_listening() {
 	$list = array(
 			"name"=>"Albums Listening to",
 			"list"=>array(
-				"Paracosm, <em>Washed&nbsp;Out</em>",
-				"St. Vincent, <em>St.&nbsp;Vincent</em>",
-				"Modern Vampires in the City, <em>Vampire&nbsp;Weekend</em> ",
-				"Ritual of the Savage, <em>Les&nbsp;Baxter</em>",
-				"Gunfighter Ballads and Trail Songs, <em>Marty&nbsp;Robbins</em>",
+				"<span class='tooltip' title='Washed Out'>Paracosm</span>",
+				"<span class='tooltip' title='St. Vincent'>St. Vincent</span>",
+				"<span class='tooltip' title='Vampire Weekend'>Modern Vampires in the City</span>",
+				"<span class='tooltip' title='Les Baxter'>Ritual of the Savage</span>",
+				"<span class='tooltip' title='Marty Robbins'>Gunfighter Ballads & Trail Songs</span>",
 		)
 	);
 	return $list;
@@ -266,27 +268,27 @@ function list_fav_tv() {
 	$list = array(
 		"name"=>"Favorite TV Shows",
 		"list"=>array(
-			"LOST",
-			"Venture Brothers",
-			"Bravest Warriors",
-			"Sherlock",
-			"Breaking Bad",
-			"Star Trek: TOS",
-			"Battlestar Galactica",
-			"Twilight Zone",
-			"Mad Men",
-			"SNL",
-			"Game of Thrones",
-			"BBC Planet Earth",
-			"Firefly",
+			"Archer",
 			"Arrested Development",
+			"Battlestar Galactica",
+			"BBC Planet Earth",
+			"Breaking Bad",
+			"Chappelle Show",
 			"Cowboy Bebop",
 			"Doctor Who",
-			"Chappelle's Show",
+			"Brooklyn Nine-Nine",
+			"Firefly",
 			"Futurama",
+			"Game of Thrones",
+			"LOST",
+			"Mad Men",
 			"Mighty Boosh",
-			"Archer",
-			"Star Wars: The Old Republic",
+			"Sherlock",
+			"SNL",
+			"Star Trek",
+			"Twilight Zone",
+			"Venture Brothers",
+			// "Bravest Warriors",
 		)
 	);
 	return $list;
@@ -376,20 +378,21 @@ function list_videogame_backlog() {
 	$list = array(
 		"name"=>"Video Game backlog",
 		"list"=>array(
-			"FEZ",
-			"Bravely Default",
-			"Zelda: A Link Between Worlds",
-			"Grand Theft Auto 5",
-			"Towerfall",
-			"Shovel Knight",
-			"Mario Kart 8",
-			"Skyrim",
-			"Uncharted 3",
 			"Assassin's Creed",
-			"Fire Emblem: Awakening",
-			"Tactics Ogre",
-			"Nidhogg",
+			"Bravely Default",
 			"Dragon's Crown",
+			"FEZ",
+			"Fire Emblem: Awakening",
+			"Grand Theft Auto 5",
+			"Mario Kart 8",
+			"Nidhogg",
+			"Shovel Knight",
+			"Skyrim",
+			"Spelunky",
+			"Tactics Ogre",
+			"Towerfall",
+			"Uncharted 3",
+			"Zelda: A Link Between Worlds",
 		)
 	);
 	return $list;

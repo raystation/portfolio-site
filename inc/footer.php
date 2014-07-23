@@ -44,7 +44,7 @@
 
 	</footer>
 
-	<div class="responsive-indicator"></div>
+	
 	
 	<!-- Slick
 	================================================== -->
@@ -96,7 +96,7 @@
         $(document).ready(function() {
             $('.tooltip').tooltipster({
             	animation: 'fade',
-            	delay: 800
+            	delay: 200
             });
         }); 
 
@@ -111,5 +111,8 @@
 
 <!-- End Document
 ================================================== -->
+	
+	<?php dev_tools($livereload=true,$responsive=false) ;?>
+
 </body>
 </html>
