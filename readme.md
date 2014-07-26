@@ -6,8 +6,8 @@
 - add in alts for images
 
 # TO DO
-- separate lists functionality from data
 - conversational slideshow during interviews
+- separate lists functionality from data
 - randomize the logo  (cartoony, pixel)
 - add icons for "tools"
 - add icons to quickly identify things
