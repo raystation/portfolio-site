@@ -2095,7 +2095,7 @@ a:hover, a:visited:hover {
 }
 
 /* line 121, sass/style.scss */
-.nowrap {
+.nowrap, .nobreak {
   white-space: nowrap;
 }
 
@@ -2283,7 +2283,12 @@ img.scale-with-grid2 {
   -o-column-span: all;
   column-span: all;
 }
-/* line 256, sass/style.scss */
+/* line 254, sass/style.scss */
+.original-job-details h6, .original-job-details hr {
+  margin: 2em 0;
+  text-align: center;
+}
+/* line 258, sass/style.scss */
 .original-job-details ul {
   font-weight: 800;
 }
@@ -2295,15 +2300,15 @@ img.scale-with-grid2 {
     -ms-column-count: 2;
     -o-column-count: 2;
     column-count: 2;
-    -webkit-column-gap: 2em;
-    -moz-column-gap: 2em;
-    -ms-column-gap: 2em;
-    -o-column-gap: 2em;
-    column-gap: 2em;
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    -ms-column-gap: 1em;
+    -o-column-gap: 1em;
+    column-gap: 1em;
   }
 }
 
-/* line 268, sass/style.scss */
+/* line 270, sass/style.scss */
 .headroom {
   position: fixed;
   top: 0;
@@ -2318,7 +2323,7 @@ img.scale-with-grid2 {
   -o-transition: all 0.75s ease-in-out false;
   transition: all 0.75s ease-in-out;
 }
-/* line 279, sass/style.scss */
+/* line 281, sass/style.scss */
 .headroom .active {
   border-bottom: 3px solid #b2cce1;
   padding: 5px 1px;
@@ -2328,7 +2333,7 @@ img.scale-with-grid2 {
   -o-transition: all 0.75s ease-in-out false;
   transition: all 0.75s ease-in-out;
 }
-/* line 284, sass/style.scss */
+/* line 286, sass/style.scss */
 .headroom .active:hover {
   -webkit-transition: all 0.75s ease-in-out;
   -moz-transition: all 0.75s ease-in-out false;
@@ -2336,35 +2341,35 @@ img.scale-with-grid2 {
   transition: all 0.75s ease-in-out;
   border-bottom: 3px solid #8db3d3;
 }
-/* line 291, sass/style.scss */
+/* line 293, sass/style.scss */
 .headroom nav {
   letter-spacing: 0.15em;
 }
-/* line 296, sass/style.scss */
+/* line 298, sass/style.scss */
 .headroom nav .title {
   font-size: 25px;
   text-align: left;
   float: left;
 }
 @media only screen and (max-width: 767px) {
-  /* line 296, sass/style.scss */
+  /* line 298, sass/style.scss */
   .headroom nav .title {
     font-size: 1.25rem;
   }
 }
-/* line 304, sass/style.scss */
+/* line 306, sass/style.scss */
 .headroom nav .title a, .headroom nav .title a:visited {
   color: black;
 }
-/* line 306, sass/style.scss */
+/* line 308, sass/style.scss */
 .headroom nav .title a:hover, .headroom nav .title a:visited:hover {
   color: gray;
 }
-/* line 311, sass/style.scss */
+/* line 313, sass/style.scss */
 .headroom nav ul {
   text-align: right;
 }
-/* line 314, sass/style.scss */
+/* line 316, sass/style.scss */
 .headroom nav ul li {
   font-size: 1rem;
   display: inline;
@@ -2372,17 +2377,17 @@ img.scale-with-grid2 {
   margin-right: 2em;
 }
 @media only screen and (max-width: 767px) {
-  /* line 314, sass/style.scss */
+  /* line 316, sass/style.scss */
   .headroom nav ul li {
     font-size: 0.9rem;
     margin-right: 0.25em;
   }
 }
-/* line 323, sass/style.scss */
+/* line 325, sass/style.scss */
 .headroom nav ul li:last-child {
   margin-right: 0;
 }
-/* line 324, sass/style.scss */
+/* line 326, sass/style.scss */
 .headroom nav ul li a, .headroom nav ul li a:visited {
   -webkit-transition: all 0.25s false;
   -moz-transition: all 0.25s false false;
@@ -2391,7 +2396,7 @@ img.scale-with-grid2 {
   font-weight: 400;
   color: gray;
 }
-/* line 328, sass/style.scss */
+/* line 330, sass/style.scss */
 .headroom nav ul li a:hover, .headroom nav ul li a:visited:hover {
   -webkit-transition: all 0.25s false;
   -moz-transition: all 0.25s false false;
@@ -2400,29 +2405,29 @@ img.scale-with-grid2 {
   color: black;
 }
 
-/* line 338, sass/style.scss */
+/* line 340, sass/style.scss */
 .headroom--pinned {
   top: 0;
 }
 
-/* line 343, sass/style.scss */
+/* line 345, sass/style.scss */
 .headroom--unpinned {
   top: -100px;
 }
 
-/* line 352, sass/style.scss */
+/* line 354, sass/style.scss */
 .portfolio p {
   line-height: 1.25em;
   font-size: 0.75em;
   letter-spacing: 0.15em;
 }
 @media only screen and (max-width: 767px) {
-  /* line 352, sass/style.scss */
+  /* line 354, sass/style.scss */
   .portfolio p {
     font-size: 1em;
   }
 }
-/* line 364, sass/style.scss */
+/* line 366, sass/style.scss */
 .portfolio img {
   opacity: 1;
   -webkit-transition: all 0.25s ease-in-out;
@@ -2430,12 +2435,12 @@ img.scale-with-grid2 {
   -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
 }
-/* line 367, sass/style.scss */
+/* line 369, sass/style.scss */
 .portfolio img:hover {
   opacity: 0.65;
 }
 
-/* line 374, sass/style.scss */
+/* line 376, sass/style.scss */
 .chart > div {
   font: 8pt sans-serif;
   font-weight: bold;
@@ -2447,7 +2452,7 @@ img.scale-with-grid2 {
   -o-transition: all 0.5s ease-in-out false;
   transition: all 0.5s ease-in-out;
 }
-/* line 382, sass/style.scss */
+/* line 384, sass/style.scss */
 .chart > div > div {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out false;
@@ -2457,7 +2462,7 @@ img.scale-with-grid2 {
   margin: 5px 0;
   padding: 4px 0 4px 10px;
 }
-/* line 388, sass/style.scss */
+/* line 390, sass/style.scss */
 .chart > div:hover .inner {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out false;
@@ -2466,7 +2471,7 @@ img.scale-with-grid2 {
   background-color: #d7e4ef;
 }
 
-/* line 394, sass/style.scss */
+/* line 396, sass/style.scss */
 .tech-skills > div {
   font: 8pt sans-serif;
   font-weight: bold;
@@ -2478,13 +2483,13 @@ img.scale-with-grid2 {
   -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
 }
-/* line 402, sass/style.scss */
+/* line 404, sass/style.scss */
 .tech-skills > div > div {
   background-color: #b2cce1;
   margin: 5px 0;
   padding: 4px 0 4px 10px;
 }
-/* line 407, sass/style.scss */
+/* line 409, sass/style.scss */
 .tech-skills > div:hover .inner {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out false;
@@ -2493,7 +2498,7 @@ img.scale-with-grid2 {
   background-color: #dadada;
 }
 
-/* line 413, sass/style.scss */
+/* line 415, sass/style.scss */
 .resume-title {
   margin: 0;
   color: steelblue;
@@ -2501,7 +2506,7 @@ img.scale-with-grid2 {
   padding: 0;
 }
 
-/* line 420, sass/style.scss */
+/* line 422, sass/style.scss */
 .resume-pdf {
   background-color: lavender;
   padding: 10px;
@@ -2513,7 +2518,7 @@ img.scale-with-grid2 {
   -o-transition: background-color 0.25s ease-in-out false;
   transition: background-color 0.25s ease-in-out;
 }
-/* line 427, sass/style.scss */
+/* line 429, sass/style.scss */
 .resume-pdf:hover {
   background-color: lightblue;
   -webkit-transition: background-color 0.25s ease-in-out;
@@ -2522,13 +2527,13 @@ img.scale-with-grid2 {
   transition: background-color 0.25s ease-in-out;
 }
 
-/* line 434, sass/style.scss */
+/* line 436, sass/style.scss */
 #history ul {
   list-style: initial;
   list-style-position: inside;
   list-style-type: circle;
 }
-/* line 435, sass/style.scss */
+/* line 437, sass/style.scss */
 #history li {
   margin-bottom: 0.15em;
   padding-left: 1em;
@@ -2536,12 +2541,12 @@ img.scale-with-grid2 {
   max-width: 80%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 435, sass/style.scss */
+  /* line 437, sass/style.scss */
   #history li {
     max-width: 100%;
   }
 }
-/* line 443, sass/style.scss */
+/* line 445, sass/style.scss */
 #history strong a, #history strong a:visited {
   color: black;
   -webkit-transition: all 0.25s ease-in-out;
@@ -2549,7 +2554,7 @@ img.scale-with-grid2 {
   -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
 }
-/* line 446, sass/style.scss */
+/* line 448, sass/style.scss */
 #history strong a:hover, #history strong a:visited:hover {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out false;
@@ -2558,17 +2563,17 @@ img.scale-with-grid2 {
   color: steelblue;
 }
 
-/* line 459, sass/style.scss */
+/* line 461, sass/style.scss */
 footer p, footer ul {
   font-size: smaller;
   line-height: 1.75em;
   margin-bottom: 0.25em;
 }
-/* line 465, sass/style.scss */
+/* line 467, sass/style.scss */
 footer li {
   margin-bottom: 0.25em;
 }
-/* line 469, sass/style.scss */
+/* line 471, sass/style.scss */
 footer a:link, footer a:visited {
   font-family: inherit;
   line-height: 1.75em;
@@ -2578,7 +2583,7 @@ footer a:link, footer a:visited {
   -o-transition: all 1s false false;
   transition: all 1s;
 }
-/* line 474, sass/style.scss */
+/* line 476, sass/style.scss */
 footer a:link:hover, footer a:visited:hover {
   color: #080808;
   -webkit-transition: all 1s false;

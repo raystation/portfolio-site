@@ -140,6 +140,7 @@ function list_favorite_games() {
 			"Patapon",
 			"Phoenix Wright: Trials & Tribulations",
 			"Phoenix Wright: Ace Attorney",
+			"Picross",
 			"Pikmin",
 			"Plants vs. Zombies",
 			"Pocket Planes",
@@ -398,4 +399,45 @@ function list_videogame_backlog() {
 	return $list;
 }
 
+function list_funny_city_names() {
+	$list = array(
+		"name"=>"Video Game backlog",
+		"list"=>array(
+			"Albuquerque",
+			"Sheboygan",
+			"Pensascola",
+			"French Lick",
+		)
+	);
+	return $list;
+}
 
+function list_tech_skills() {
+	$list = array(
+		"name"=>"Technical Skills",
+		"list"=>array(
+			array("percent"=>99,"skill"=>"Hand-drawing skills"),
+			array("percent"=>98,"skill"=>"Illustrator"),
+			array("percent"=>98,"skill"=>"Indesign"),
+			array("percent"=>89,"skill"=>"QuarkXPress"),
+			array("percent"=>85,"skill"=>"Dreamweaver"),
+			array("percent"=>52,"skill"=>"Flash"),
+			"clear",
+			array("percent"=>95,"skill"=>"Microsoft Office Suite"),
+			array("percent"=>70,"skill"=>"Omnigraffle"),
+			"clear",
+			array("percent"=>92,"skill"=>"HTML"),
+			array("percent"=>89,"skill"=>"CSS"),
+			array("percent"=>92,"skill"=>"Sass"),
+			array("percent"=>40,"skill"=>"JQuery"),
+			array("percent"=>35,"skill"=>"Javascript"),
+			"clear",
+			array("percent"=>65,"skill"=>"PHP"),
+			array("percent"=>80,"skill"=>"Wordpress"),
+			"clear",
+			array("percent"=>85,"skill"=>"Git"),
+			array("percent"=>30,"skill"=>"Ruby"),
+		)
+	);
+	return $list;
+}

@@ -68,6 +68,27 @@ function get_pokemon_projects(){
 	return $works;
 }
 
+
+function html_print_tech_skills() {
+	include_once "inc/lists.php";
+	$array=list_tech_skills();
+	$name=$array["name"];
+	$list=$array["list"];
+	$bkgcolor="196,216,250";
+
+	foreach ($list as $list_item) {
+
+		if ( $list_item == "clear") { 
+			echo "<div class='clear'></div>";
+		} else {
+			$percent=$list_item["percent"];
+			$opacity=$percent*0.01;
+			echo '<div style="width: '.$percent.'%;background-color:rgba('.$bkgcolor.','.$opacity.');">'.$list_item[skill].'<span class="float-right">'.$percent.'</span></div>';
+		}
+	}
+}
+
+
 function related_check() {
 	
 	global $title;

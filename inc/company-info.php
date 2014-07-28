@@ -1705,7 +1705,229 @@ case 'ad101':
 			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a> and my <a href='resume'>resume</a>. </p>
 		";
 
+		break;	
+
+		case 'airbnb-production':
+		$originaljobposting="https://www.airbnb.com/jobs/departments/position/2276?gh_src=r5qfbo";
+		$logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/250px-Airbnb_Logo_B%C3%A9lo.svg.png";
+		$jobTitle="Production Designer";
+		$company="Airbnb";
+		$date="July 28, 2014";
+		$email;
+
+		$job_details="
+	
+			<h6 class='center add-top'>Responsibilities</h6>
+			
+				<li>Assist the Product Design team in implementing precise visual design.</li>
+				<li>Supply graphics across many different mediums: web, iOS, Android and print.</li>
+				<li>Work with developers to ensure implementation is to specification.</li>
+				<li>Create guides in different formats that help the team ship the highest level of detail.</li>
+				<li>Maintain asset libraries for reusable, systematic design.</li>
+				<li>Curate content when needed: screenshot narratives, personas in photography, etc.</li>
+
+			<h6 class='center add-top'>Requirements</h6>
+
+				<li>A diverse portfolio that exhibits excellent use of typography, color, imagery, information architecture and attention to detail.</li>
+				<li>Experience designing for mobile devices.</li>
+				<li>Full knowledge of the Adobe Creative Suite.</li>
+				<li>Knowledge of front end markup: HTML/CSS/JQuery.</li>
+				<li>Familiarity with GitHub.</li>
+				<li>Familiarity with JIRA - managing a ticket queue is required.</li>
+				<li>Proficiency with Apple hardware and software.</li>
+
+			<h6 class='center add-top'>Bonus Skills</h6>
+			
+				<li>Strong sketching skills</li>
+				<li>Information design skills</li>
+				<li>BFA/MFA or equivalent industry experience</li>
+				<li>Icon design</li>
+			
+
+		";
+		
+		$copy="
+			<p class='add-top'>
+			Hello, I saw your posting and wanted to pass along my information. I am a graphic designer and illustrator with programming experience. I am looking for a fun place where I can continue to hone my creative skills while also learning new ones. Career-wise, I would like to acquire more skills relating to front-end dev and UI positions, so I think this position would put me in a good place to be exposed to that sort of thing.
+			</p><p>
+
+			I have many years of print production experience and more recently some web production experience. My portfolio will not be as diverse as others being print-based, but I am a very fast learner and have great ideas as evidenced by my recent experiments into unlocking the secrets of PHP and JS.  
+
+			</p><p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
+		";
+
+		$project3=array("path"=>"pokemon","name"=>"The Pok&eacute;mon Company","type"=>"svg");
+		$project3["desc"]="Overall support of all internal departments with creative needs. Fast-paced environment where we worked to bring projects from outside vendors in-house.";
+
+		$project1=array("path"=>"abriendo-puertas","name"=>"Abriendo Puertas","type"=>"jpg");
+		$project1["desc"]="Design and hand-code of responsive informational website for <span class='nowrap'>non-profit</span>.";
+
+		$project2=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
+		$project2["desc"]="Trivia game where I developed the UI and overall flow of the game.";
+
 		break;					
+
+		case 'zen':
+		$originaljobposting="http://boards.greenhouse.io/zenpayroll/jobs/8623#.U9anxoBdX_r";
+		$logo="https://s3.amazonaws.com/prod-heroku/greenhouse_job_boards/logos/000/000/284/resized/zenpayroll-logo-250x120.png";
+		$jobTitle="Designer";
+		$company="ZenPayroll";
+		$date="July 28, 2014";
+		$email;
+
+		$job_details="
+	
+			<p>ZenPayroll is on a mission to provide delightful, modern payroll to businesses everywhere. We're proud to have built a product that our customers love. Our entire team cares deeply about design, and we are all passionate about creating memorable, delightful experiences that make people smile. Thinking about our users as *people* with feelings, desires and aspirations, is one of the things that makes our product design so unique.</p>
+
+			<p>As a ZenPayroll Designer, you will have the authority and freedom to create detailed graphics, but you can also dramatically influence how users interact with our product and how they should feel. Design is one of the strongest tenets of our company - we believe great design leads to delightful experiences.  Expect to be challenged every day.</p>
+
+			<p>We’re looking for someone who enjoys creating only the most beautiful, pixel-perfect designs. You view design as a craft and you’re always keen to improve. You love getting positive feedback from customers who notice the little details that you spent hours perfecting.</p>
+
+			<h6>At ZenPayroll you will:</h6>
+
+			<li>Be an owner of what you build</li>
+			<li>Have full creative control over your projects and help set the visual tone of ZenPayroll</li>
+			<li>Interact with small businesses and design beautiful marketing materials</li>
+			<li>Be highly involved with a product that processes tens of millions of dollars in payroll monthly</li>
+			<li>Understand customer pain points, come up with solutions, and then prototype, iterate, and launch frequently</li>
+			<h6>The ideal candidate will:</h6>
+			<li>Be able to build what they design</li>
+			<li>Rapidly prototype and A/B test designs</li>
+			<li>Have expertise in CSS, HTML, Photoshop, and Illustrator</li>
+			<li>Have experience in the latest responsive design techniques</li>
+			<li>Have strong opinions about visual design</li>
+			<li>Have experience creating beautiful infographics, marketing materials, and email designs</li>
+			<li>Be able to think creatively and justify concepts and ideas to team members</li>
+			<li>Present concepts clearly and influence team members cross-functionally</li>
+			<li>Know common user interface design patterns</li>
+			<li>Pay great attention to detail. \"Pixel perfect isn't an ideal, it is a requirement\"</li>
+			<li>Desire to work in a small, collaborative environment</li>
+			<li>Be passionate about crafting only the best experiences</li>
+			<li>Have a sense of humor</li>
+
+			<h6>Bonus Qualities:</h6>
+
+			<li>Strong understanding of typography</li>
+			<li>Javascript knowledge</li>
+			<li>Great portfolio of infographics, iconography, or illustration work</li>
+			<li>Ability to surprise us with your recent work/projects. We love surprises.</li>
+			
+
+		";
+		
+		$copy="
+			<p class='add-top'>
+				Hello, I saw your posting and wanted to pass along my information. I am a graphic designer with programming experience. I am looking for a fun place where I can continue to hone my creative skills, develop new skills and stay on top of new trends. Career-wise, I would like to acquire more skills relating to front-end dev and UI positions, so I think this position would put me in a good place to be exposed to that sort of thing.
+			</p><p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
+		";
+
+
+		$project1=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
+		$project1["desc"]="Unrealized game concept where I worked on wireframing, artwork, UI, game concept and design.";
+
+		$project2=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
+		$project2["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and design.";
+
+		$project3=array("path"=>"100-principles-of-game-design","name"=>"100 Principles of Game Design","type"=>"jpg");
+		$project3["desc"]="Vector illustrations for a book published by Peachpit Publishing.";
+
+		break;
+
+		case 'dena-4':
+		$originaljobposting="https://www.linkedin.com/jobs2/view/17656623?trk=job_view_similar_jobs";
+		$logo="https://media.licdn.com/media/p/6/005/06c/3f2/0ea81b5.png";
+		$jobTitle="Graphic Designer - Mobile";
+		$company="DeNA";
+		$date="July 28, 2014";
+		$name="Anna Lam";
+		$email;
+
+		$job_details="
+	
+			<p>The AWESOME Graphic Designer will work in a team to produce a broad range of marketing collateral to promote games across a variety of media outlets.</p>
+
+			<h6>Responsibilities:</h6>
+
+				<li>Produce game logos, key art, and icons based on marketing direction using assets created by game development teams.</li>
+				<li>Create promotional graphics incorporating screen captures from the games to engage App Store consumers.</li>
+				<li>Produce digital banners based on established game assets and guidelines for pre and post-launch marketing activities across multiple platforms (iOS, Android).</li>
+				<li>Partner with internal and external business partners in a timely and professional manner to move creative initiatives forward.</li>
+				<li>Research, share, and demonstrate graphic design best practices while also being open to learning what works best within the mobile space.</li>
+				<li>Produce other marketing assets and collateral as needed.</li>
+
+			<h6>Qualifications:</h6>
+				<li>5+ years graphic design experience producing consumer-facing marketing assets.</li>
+				<li>Expert command of digital media design including (but not limited to) logo, icon and banner creation</li>
+				<li>Mobile or Video game industry experience preferred</li>
+				<li>Expert command of Adobe software, especially Photoshop and Illustrator.</li>
+				<li>Excellent compositional, color, and typographical skills.</li>
+				<li>Collaborative-minded, able to professionally give and take direction.</li>
+				<li>Prolific individual contributor possessing high quality standards of work.</li>
+				<li>Offer specialist support to design team in their daily work and through workshops.</li>
+				<li>Ability to work closely and consult regularly with all relevant department graphic design needs (Product Marketing, User Acquisition, Corporate etc.)</li>
+				<li>Ability to manage multiple, quick turn-around projects simultaneously</li>
+				<li>Highly creative, high organizational skills, with keen attention to detail.</li>
+				<li>Excellent written and oral communication skills.</li>
+				<li>Bachelor’s degree in graphic design/visual communications.</li>
+			
+
+		";
+		
+		$copy="
+			<p class='add-top'>
+				Hello, I saw your posting and wanted to get in touch. I love the gaming space and the people that work in it so when I saw a position at your company, I wanted to pass along my info. I am a graphic designer and illustrator who recently just left a gaming startup. I am looking for a fun place where I can continue to hone my creative skills, develop new skills and stay on top of new trends. 
+			</p><p>Very briefly, I have worked at in-house creative departments, like Pokemon, where I gained a lot of production experience working on a variety of projects from small to large-scale.</p>
+			</p><p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
+		";
+
+		$project3=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
+		$project3["desc"]="Unrealized game concept where I worked on wireframing, artwork, UI, game concept and design.";
+
+		$project2=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
+		$project2["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and design.";
+
+		$project1=array("path"=>"pokemon-logos","name"=>"Pok&eacute;mon logos","type"=>"jpg");
+		$project1["desc"]="Logos we developed for various movies and television shows at Pokemon.";
+
+		break;	
+
+		case 'gymboree':
+		$originaljobposting="https://gymboree.tms.hrdepartment.com/jobs/8606/Senior-Web-Creative-DesignerSan-Francisco-CA";
+		$logo="https://gymboree.tms.hrdepartment.com/custom/media/GYM/images/2010redesign/colorthemes/orange/gymboree_logo01_orange.gif";
+		$jobTitle="Senior Web Creative Designer";
+		$company="Gymboree";
+		$date="July 28, 2014";
+		$name="Adriann Harrington";
+		$email;
+
+		$job_details="
+			
+			<p>The Gymboree Corporation is the leading specialty children’s retailer with over 1,200 stores domestically and internationally and generating over 1 billion in sales yearly. The Gymboree Corporation continues to grow and expand at a rapid pace but without sacrificing our commitment to quality. Most of all, we pride ourselves in hiring great people with the talent it takes to keep up with our growth. </p>
+
+			<p>The Sr. Web Creative Designer will work closely with the creative team to develop and produce creative for the ecommerce website, email campaigns, deliver HTML coding and online marketing for all brands. This person will work closely with copywriters and business partners to design original layouts on a tight schedule. S/he will work with business and copy teams to clarify objectives, revise creative and ensure accuracy for all projects. The Sr. Web Designer will actively participate and help drive the creative process by presenting well-developed creative solutions to meet the given objectives. This person will be responsible for executing product line updates for all ecommerce website, as well as hand-coding HTML for emails and deploying them in an accurate and timely manner. S/he will work with the email service provider to manage day to day operations while resolving issues and refining processes for launching emails. S/he will be responsible for staying current on industry trends, while keeping all brands at the forefront for site/email design and best practices. The Sr. Web Designer will work across Creative disciplines to drive the best customer experience solution. S/he will be responsible for conducting photo shoots to provide additional imagery for site and email creative. S/he will supervise and develop other designers and contractors while balancing personal workflow and priorities. This person will be responsible for giving effective feedback to drive successful designs and design systems, while inspiring and enhancing the efforts of a creative team.</p>
+			 
+			<h6>Job Requirements :</h6>
+			<p>BFA in Graphic Design, Interaction Design, Visual Studies or other design-related field preferred. 5-7 years of professional experience in web design or multimedia required. The candidate must have strong graphic design, layout, typography, image manipulation, and color correction skills. The candidate must also have relevant experience (ideally in a retail or ecommerce environment) with a lifestyle-oriented “trend-setting” brand. This person must be extremely proficient in Photoshop, Illustrator, Dreamweaver & HTML. This person must also have proficiency in Flash and must be familiar with InDesign. S/he must be detail-oriented, well organized and able to thrive in deadline driven environment. The ideal candidate will have the ability to manage competing, high priority projects while identifying creative solutions quickly. This person will also have the ability to self-direct under ambiguous and changing circumstances. The candidate must have strong written and verbal communications skills. S/he must be willing to be flexible in job duties and take on added responsibility when necessary.</p>
+
+		";
+		
+		$copy="
+			<p class='add-top'>
+				Hello, I saw your posting and wanted to get in touch. I love the gaming space and the people that work in it so when I saw a position at your company, I wanted to pass along my info. I am a graphic designer and illustrator who recently just left a gaming startup. I am looking for a fun place where I can continue to hone my creative skills, develop new skills and stay on top of new trends. 
+			</p><p>Very briefly, I have worked at in-house creative departments, like Pokemon, where I gained a lot of production experience working on a variety of projects from small to large-scale.</p>
+			</p><p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
+		";
+
+		$project3=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
+		$project3["desc"]="Unrealized game concept where I worked on wireframing, artwork, UI, game concept and design.";
+
+		$project2=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
+		$project2["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and design.";
+
+		$project1=array("path"=>"pokemon-logos","name"=>"Pok&eacute;mon logos","type"=>"jpg");
+		$project1["desc"]="Logos we developed for various movies and television shows at Pokemon.";
+
+		break;				
 
 }
 
