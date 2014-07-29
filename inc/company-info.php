@@ -2042,6 +2042,154 @@ case 'ad101':
 		$project3["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and&nbsp;design.";
 
 
+		break;
+
+		case 'cal-science':
+		$originaljobposting="http://calacademy.snaphire.com/jobdetails?jobmc=13152MDBI";
+		$logo="http://upload.wikimedia.org/wikipedia/fr/6/6d/California_Academy_of_Sciences_-_Logo.png";
+		$jobTitle="Graphic Designer";
+		$company="California Academy of Sciences";
+		$date="July 29, 2014";
+		$name;
+		$email;
+
+		$job_details="
+			<p>The California Academy of Sciences is looking for a unique and talented User Experience/Interaction Designer to join the Digital Engagement team.  In this role, the Interaction Designer will create integrated interactive design experiences across onsite and online applications on a wide range of platforms.  Using text, images, videos, audio, animations, and other digital and visual effects, they may work on projects such as Internet sites, mobile solutions, museum exhibit interactives, online learning materials, and other interactive applications.</p>
+
+			<p>Reporting to the Associate Director of Digital Engagement, the Interaction Designer will help to continuously innovate and evolve digital interactive experiences.  The role will be an essential part of the Digital Engagement team working closely with producers, developers and museum stakeholders to create dynamic, engaging experiences to support the Academy goals.  The ideal candidate must present a strong portfolio of innovative and engaging designs.</p>
+			<h6>ESSENTIAL DUTIES AND RESPONSIBILITIES</h6>
+			<li>Responsible for and deliver on all phases of the design process</li>
+			<li>Partner with stakeholders to internalize and translate business goals into concept briefs</li>
+			<li>Create designs and experiences to ensure that it is visually intuitive and impactful, meets brand guidelines, and exhibits all of the best practices for presenting content to the targeted audience</li>
+			<li>Evolve and work within design systems and guidelines to ensure consistency, uniformity, and high level of usability across websites, apps, and products</li>
+			<li>Brainstorm, research, wire-frame, design and refine user experiences - all within specified product requirements and deadlines</li>
+			<li>Deliver on responsive design and present content across multiple viewports, devices, and platforms</li>
+			<li>Use metrics and frequent user research data to influence design</li>
+			<li>Design and deliver interaction flows, screen mockups, and wireframes to high-fidelity HTML prototypes</li>
+			<li>Architect and perform usability sessions with key stakeholders and users to get feedback to evolve design concepts and user interfaces</li>
+			<li>Work closely with a cross-functional team that includes project managers, developers, other designers and content teams</li>
+			<li>Contribute positively to design discussions visually, verbally, and in writing</li>
+			<li>Evangelize design principles to stakeholders</li>
+			<li>Follow all Academy safety regulations</li>
+			<li>Other duties as assigned</li>
+			<h6>QUALIFICATIONS</h6>
+			<p>To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions.</p>
+			<h6>PROJECT PORTFOLIO: </h6>
+			<p>A strong portfolio that demonstrates thoughtful, innovative problem solving with a focus on insights into human behavior and illustrating a diverse set of technologies is a must.  Applicants will be asked to provide a portfolio of sample project deliverables, web sites, mobile sites, apps, etc. Please be sure to include a URL to your portfolio or your application will not be considered.</p>
+			<h6>EDUCATION and/or EXPERIENCE: <br>
+			The ideal candidate will possess a combination of the following education and/or equivalent experience:
+			</h6>
+
+			<li>B.A./B.S. in Human-Computer Interaction Design, Web Design, Graphic Design, or related field</li>
+			<li>Three or more years of interactive design experience on paid assignments</li>
+			<h6>KNOWLEDGE, SKILLS AND ABILITIES:</h6>
+			<li>Exceptional user interface and experience design skills and understanding of user-centered design disciplines and principles</li>
+			<li>Ability to quickly grasp and distill highly complex user design issues into clean, understandable solutions</li>
+			<li>Candidate must flourish in a fast-paced, interactive, dynamic and dead-line driven culture and environment</li>
+			<li>Ability to use frameworks and toolkits to quickly test functional design solutions</li>
+			<li>Experience with design industry tools and technologies such as, but not limited to: Adobe Suite, Drupal, PHP, HTML/HTML5, CSS, Sass, Javascript, jQuery, etc.</li>
+			<li>Personable and diplomatic team player with the ability to collaborate and communicate well</li>
+			<li>Strong interest in emergent technologies</li>
+			<li>Familiarity with Agile Project Management methodology a plus</li>
+			<li>A passion for science, technology, and science education is a strong plus</li>
+		";
+		
+		$copy="
+			<p class='add-top'>
+				Hello, I saw your posting and wanted to pass along my information. I am very interested in working for an institution for learning! I am a graphic designer and illustrator with programming experience. I am looking for a fun position in education, where I can apply my unique skillset while also learning new things along the way. 
+			</p><p>
+				I have many years of print production experience working at <span class='nobreak'>in-house</span> <a href='pokemon'>creative departments</a> servicing brands. I also just recently left a gaming startup where I was essentially the creative department. The experience I gained there, partnered with my passion for gaming, will inform the interaction decisions I make—hopefully into engaging and fun experiences. One of the big challenges with interaction is knowing when to \"get out of the way\" and let the content speak for itself; it's a constant measuring of minimal vs. ornamental.
+			</p><p>
+				I have linked to three samples which I think will directly address some of the things you are looking for in this position.</p>
+		";
+
+		$project1=array("path"=>"the3","name"=>"The3","type"=>"svg");
+		$project1["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and&nbsp;design.";
+
+		$project2=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
+		$project2["desc"]="Unrealized game concept where I worked on wireframing, artwork, UI, game concept and design.";
+
+		$project3=array("path"=>"abriendo-puertas","name"=>"Abriendo Puertas", "type"=>"jpg");
+		$project3["desc"]="Responsive informational site we developed for a non-profit. Hand-coded HTML/CSS on a minimal <span class='nobreak'>front-end</span> framework.";
+
+		break;
+
+		case 'verticalresponse':
+		$originaljobposting="http://www.verticalresponse.com/about/jobs?nl=1&jvi=o7peZfwt%2CJob&jvs=Craigslist#jobs";
+		$logo="http://www.verticalresponse.com/sites/all/themes/bootstrap/VRLogoTag.2C.svg";
+		$jobTitle="Graphic Web Designer/Front End Web Developer";
+		$company="Verticalresponse";
+		$date="July 29, 2014";
+		$name;
+		$email;
+
+		$job_details="
+			<p>The California Academy of Sciences is looking for a unique and talented User Experience/Interaction Designer to join the Digital Engagement team.  In this role, the Interaction Designer will create integrated interactive design experiences across onsite and online applications on a wide range of platforms.  Using text, images, videos, audio, animations, and other digital and visual effects, they may work on projects such as Internet sites, mobile solutions, museum exhibit interactives, online learning materials, and other interactive applications.</p>
+
+			<p>Reporting to the Associate Director of Digital Engagement, the Interaction Designer will help to continuously innovate and evolve digital interactive experiences.  The role will be an essential part of the Digital Engagement team working closely with producers, developers and museum stakeholders to create dynamic, engaging experiences to support the Academy goals.  The ideal candidate must present a strong portfolio of innovative and engaging designs.</p>
+			<h6>ESSENTIAL DUTIES AND RESPONSIBILITIES</h6>
+			<li>Responsible for and deliver on all phases of the design process</li>
+			<li>Partner with stakeholders to internalize and translate business goals into concept briefs</li>
+			<li>Create designs and experiences to ensure that it is visually intuitive and impactful, meets brand guidelines, and exhibits all of the best practices for presenting content to the targeted audience</li>
+			<li>Evolve and work within design systems and guidelines to ensure consistency, uniformity, and high level of usability across websites, apps, and products</li>
+			<li>Brainstorm, research, wire-frame, design and refine user experiences - all within specified product requirements and deadlines</li>
+			<li>Deliver on responsive design and present content across multiple viewports, devices, and platforms</li>
+			<li>Use metrics and frequent user research data to influence design</li>
+			<li>Design and deliver interaction flows, screen mockups, and wireframes to high-fidelity HTML prototypes</li>
+			<li>Architect and perform usability sessions with key stakeholders and users to get feedback to evolve design concepts and user interfaces</li>
+			<li>Work closely with a cross-functional team that includes project managers, developers, other designers and content teams</li>
+			<li>Contribute positively to design discussions visually, verbally, and in writing</li>
+			<li>Evangelize design principles to stakeholders</li>
+			<li>Follow all Academy safety regulations</li>
+			<li>Other duties as assigned</li>
+			<h6>QUALIFICATIONS</h6>
+			<p>To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions.</p>
+			<h6>PROJECT PORTFOLIO: </h6>
+			<p>A strong portfolio that demonstrates thoughtful, innovative problem solving with a focus on insights into human behavior and illustrating a diverse set of technologies is a must.  Applicants will be asked to provide a portfolio of sample project deliverables, web sites, mobile sites, apps, etc. Please be sure to include a URL to your portfolio or your application will not be considered.</p>
+			<h6>EDUCATION and/or EXPERIENCE: <br>
+			The ideal candidate will possess a combination of the following education and/or equivalent experience:
+			</h6>
+
+			<li>B.A./B.S. in Human-Computer Interaction Design, Web Design, Graphic Design, or related field</li>
+			<li>Three or more years of interactive design experience on paid assignments</li>
+			<h6>KNOWLEDGE, SKILLS AND ABILITIES:</h6>
+			<li>Exceptional user interface and experience design skills and understanding of user-centered design disciplines and principles</li>
+			<li>Ability to quickly grasp and distill highly complex user design issues into clean, understandable solutions</li>
+			<li>Candidate must flourish in a fast-paced, interactive, dynamic and dead-line driven culture and environment</li>
+			<li>Ability to use frameworks and toolkits to quickly test functional design solutions</li>
+			<li>Experience with design industry tools and technologies such as, but not limited to: Adobe Suite, Drupal, PHP, HTML/HTML5, CSS, Sass, Javascript, jQuery, etc.</li>
+			<li>Personable and diplomatic team player with the ability to collaborate and communicate well</li>
+			<li>Strong interest in emergent technologies</li>
+			<li>Familiarity with Agile Project Management methodology a plus</li>
+			<li>A passion for science, technology, and science education is a strong plus</li>
+		";
+		
+		$copy="
+			<p class='add-top'>
+				Hello, I saw your posting and the position sounds like just the thing I am currently looking for! I wanted to send along my information because I am an aspiring front-end dev transitioning from a print world.
+			</p><p>
+				Because I am transitioning doesn't mean I should be overlooked! I am a super-fast learner and a puzzle solver. Between freelance gigs and job-hunting, I picked up the basics of PHP and have been starting to dissect how Wordpress works. <a href='https://github.com/raystation/farnsworth-wp' target='_blank'>Custom</a> themes baby! For a while, my attention was unfocused, and just started looking into a bunch of languages like JS and Ruby, but I've sorta settled into PHP and front-end frameworks (for now). I think working with you guys would give me the perfect excuse to continue my path of learning! 
+			</p><p>
+				I have linked to three samples which I think will directly address some of the things I think you are looking for in this position.</p>
+		";
+
+		$sample_works="
+			<h6>Abriendo Puertas</h6>
+			<p>Responsive informational site we developed for a non-profit. Hand-coded HTML/CSS on a minimal <span class='nobreak'>front-end</span> framework.</p>
+			<h6><a href='http://rayuen.com/projects/ipsum-generator/'>Lorem Ipsum generator</a></h6>
+			<p>Recent experiement. Proof of concept right now. The program takes a list of words and randomly generates paragraphs of lorem ipsum filler text based on a few parameters. </p>
+
+		";
+
+		$project1=array("path"=>"the3","name"=>"The3","type"=>"svg");
+		$project1["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and&nbsp;design.";
+
+		$project2=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
+		$project2["desc"]="Unrealized game concept where I worked on wireframing, artwork, UI, game concept and design.";
+
+		$project3=array("path"=>"abriendo-puertas","name"=>"Abriendo Puertas", "type"=>"jpg");
+		$project3["desc"]="Responsive informational site we developed for a non-profit. Hand-coded HTML/CSS on a minimal <span class='nobreak'>front-end</span> framework.";
+
 		break;								
 
 }
