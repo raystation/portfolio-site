@@ -2124,44 +2124,35 @@ case 'ad101':
 		$email;
 
 		$job_details="
-			<p>The California Academy of Sciences is looking for a unique and talented User Experience/Interaction Designer to join the Digital Engagement team.  In this role, the Interaction Designer will create integrated interactive design experiences across onsite and online applications on a wide range of platforms.  Using text, images, videos, audio, animations, and other digital and visual effects, they may work on projects such as Internet sites, mobile solutions, museum exhibit interactives, online learning materials, and other interactive applications.</p>
+			<p>We are looking for a Designer/Developer who is a result-oriented, proactive, and motivated individual to be a part of our Creative/Web Marketing team. This person is responsible for producing marketing collateral and developing front-end solutions including contributing to and maintaining the VerticalResponse.com corporate website and blog.</p>
 
-			<p>Reporting to the Associate Director of Digital Engagement, the Interaction Designer will help to continuously innovate and evolve digital interactive experiences.  The role will be an essential part of the Digital Engagement team working closely with producers, developers and museum stakeholders to create dynamic, engaging experiences to support the Academy goals.  The ideal candidate must present a strong portfolio of innovative and engaging designs.</p>
-			<h6>ESSENTIAL DUTIES AND RESPONSIBILITIES</h6>
-			<li>Responsible for and deliver on all phases of the design process</li>
-			<li>Partner with stakeholders to internalize and translate business goals into concept briefs</li>
-			<li>Create designs and experiences to ensure that it is visually intuitive and impactful, meets brand guidelines, and exhibits all of the best practices for presenting content to the targeted audience</li>
-			<li>Evolve and work within design systems and guidelines to ensure consistency, uniformity, and high level of usability across websites, apps, and products</li>
-			<li>Brainstorm, research, wire-frame, design and refine user experiences - all within specified product requirements and deadlines</li>
-			<li>Deliver on responsive design and present content across multiple viewports, devices, and platforms</li>
-			<li>Use metrics and frequent user research data to influence design</li>
-			<li>Design and deliver interaction flows, screen mockups, and wireframes to high-fidelity HTML prototypes</li>
-			<li>Architect and perform usability sessions with key stakeholders and users to get feedback to evolve design concepts and user interfaces</li>
-			<li>Work closely with a cross-functional team that includes project managers, developers, other designers and content teams</li>
-			<li>Contribute positively to design discussions visually, verbally, and in writing</li>
-			<li>Evangelize design principles to stakeholders</li>
-			<li>Follow all Academy safety regulations</li>
-			<li>Other duties as assigned</li>
-			<h6>QUALIFICATIONS</h6>
-			<p>To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions.</p>
-			<h6>PROJECT PORTFOLIO: </h6>
-			<p>A strong portfolio that demonstrates thoughtful, innovative problem solving with a focus on insights into human behavior and illustrating a diverse set of technologies is a must.  Applicants will be asked to provide a portfolio of sample project deliverables, web sites, mobile sites, apps, etc. Please be sure to include a URL to your portfolio or your application will not be considered.</p>
-			<h6>EDUCATION and/or EXPERIENCE: <br>
-			The ideal candidate will possess a combination of the following education and/or equivalent experience:
-			</h6>
+			<p>A strong visual eye and a perspective on front and back-end technologies and their impact on the design process is necessary, as are the chops to take a project from concept through completion.</p>
+			<h6>RESPONSIBILITIES</h6>
+			<li>Design and code web pages with pixel perfect quality in regards to navigational layouts and appearance.</li>
+			<li>Design, code, and document projects of various scope.</li>
+			<li>Make updates to and maintain Drupal and WordPress websites.</li>
+			<li>Design, code, and test responsive HTML emails.</li>
+			<li>Work closely with marketing team to coordinate projects and communicate technical issues.</li>
+			<li>Debug and troubleshoot layout and scripting issues across a variety of browsers.</li>
+			<li>Collaborate on other traditional graphic design/marketing projects.</li>
+			
+			<h6>REQUIREMENTS</h6>
+			<li>3+years of experience designing and creating consumer websites.</li>
+			<li>Ability to create standards-compliant, valid HTML/CSS files by hand from design comps -- must be pixel perfect.</li>
+			<li>Proficiency with Adobe Creative Suite, Photoshop or other image editing software.</li>
+			<li>Ability to write clean, coherent code and to follow established coding style guidelines.</li>
+			<li>Strong development experience in PHP, HTML / HTML5, CSS 3.</li>
+			<li>Strong knowledge of JavaScript frameworks (jQuery).</li>
+			<li>Experience with WordPress and Drupal CMS a plus.</li>
+			<li>Experience with responsive design principles for web sites and HTML emails.</li>
+			<li>Self-motivated, ability to work independently and efficiently with a strong attention to detail and accuracy.</li>
+			<li>Strong communications and organizational skills with an ability to thrive in a fast-paced production deadline-driven environment.</li>
+			<li>Bachelors degree in a related field is highly desired.</li>
+			<li>Proof of eligibility to work in the US.</li>
 
-			<li>B.A./B.S. in Human-Computer Interaction Design, Web Design, Graphic Design, or related field</li>
-			<li>Three or more years of interactive design experience on paid assignments</li>
-			<h6>KNOWLEDGE, SKILLS AND ABILITIES:</h6>
-			<li>Exceptional user interface and experience design skills and understanding of user-centered design disciplines and principles</li>
-			<li>Ability to quickly grasp and distill highly complex user design issues into clean, understandable solutions</li>
-			<li>Candidate must flourish in a fast-paced, interactive, dynamic and dead-line driven culture and environment</li>
-			<li>Ability to use frameworks and toolkits to quickly test functional design solutions</li>
-			<li>Experience with design industry tools and technologies such as, but not limited to: Adobe Suite, Drupal, PHP, HTML/HTML5, CSS, Sass, Javascript, jQuery, etc.</li>
-			<li>Personable and diplomatic team player with the ability to collaborate and communicate well</li>
-			<li>Strong interest in emergent technologies</li>
-			<li>Familiarity with Agile Project Management methodology a plus</li>
-			<li>A passion for science, technology, and science education is a strong plus</li>
+			<p>To be considered for this role, you must: </p>
+			<p>Provide a portfolio highlighting examples of developed websites exhibiting your expertise in HTML / HTML5, CSS 3, jQuery, responsive web.</p>
+			<p>Be nimble, and ready to work in a fast-paced environment on a small team.</p>
 		";
 		
 		$copy="
@@ -2174,21 +2165,15 @@ case 'ad101':
 		";
 
 		$sample_works="
-			<h6>Abriendo Puertas</h6>
+			
+			<h5>Abriendo Puertas</h5>
 			<p>Responsive informational site we developed for a non-profit. Hand-coded HTML/CSS on a minimal <span class='nobreak'>front-end</span> framework.</p>
-			<h6><a href='http://rayuen.com/projects/ipsum-generator/'>Lorem Ipsum generator</a></h6>
-			<p>Recent experiement. Proof of concept right now. The program takes a list of words and randomly generates paragraphs of lorem ipsum filler text based on a few parameters. </p>
+			<h5><a href='http://rayuen.com/projects/ipsum-generator/'>Lorem Ipsum generator</a></h5>
+			<p>Recent experiement. Proof of concept right now (so it looks horrible). The program takes a list of words and randomly generates paragraphs of lorem ipsum filler text based on a few parameters.</p>
+			<h5><a href='https://github.com/raystation/farnsworth-wp/'>Wordpress for friend</a></h5>
+			<p>Making a Wordpress theme from scratch, based on the Foundation front-end framework. Not finished yet, so just runs locally. Only have a link to the souce.</p>			
 
 		";
-
-		$project1=array("path"=>"the3","name"=>"The3","type"=>"svg");
-		$project1["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and&nbsp;design.";
-
-		$project2=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
-		$project2["desc"]="Unrealized game concept where I worked on wireframing, artwork, UI, game concept and design.";
-
-		$project3=array("path"=>"abriendo-puertas","name"=>"Abriendo Puertas", "type"=>"jpg");
-		$project3["desc"]="Responsive informational site we developed for a non-profit. Hand-coded HTML/CSS on a minimal <span class='nobreak'>front-end</span> framework.";
 
 		break;								
 
