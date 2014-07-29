@@ -2010,7 +2010,39 @@ case 'ad101':
 		$project3["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and&nbsp;design.";
 
 
-		break;						
+		break;
+
+		case 'medical-1':
+		$originaljobposting="http://hire.jobvite.com/CompanyJobs/Careers.aspx?k=Job&c=q4a9Vfw2&j=oeeGYfwQ&s=Indeed";
+		$logo="http://hire.jobvite.com/logo/973_onemed_logo.png";
+		$jobTitle="Graphic Designer";
+		$company="One Medical Group";
+		$date="July 28, 2014";
+		$name;
+		$email;
+
+		$job_details;
+		
+		$copy="
+			<p class='add-top'>
+				Hello, I saw your posting and wanted to pass along my information. I am a graphic designer looking for a home! 
+			</p><p>
+				I have many years of print production experience working at in-house <a href='pokemon'>creative departments</a> servicing brands. I worked on a variety of projects, from small to large-scale. 
+			</p><p>
+				I have linked to three samples which I think will directly address some of the things you are looking for in this position.</p>
+		";
+
+		$project1=array("path"=>"pokemon","name"=>"The Pok&eacute;mon Company","type"=>"svg");
+		$project1["desc"]="In-house designer. Overall support of all internal departments with creative needs. Fast-paced environment and we worked to bring projects from outside vendors in-house.";
+
+		$project2=array("path"=>"museyon-guides","name"=>"Museyon Guides","type"=>"svg");
+		$project2["desc"]="Freelance book designer. Design and layout of books, from conception to press.";
+
+		$project3=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
+		$project3["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and&nbsp;design.";
+
+
+		break;								
 
 }
 
