@@ -1913,9 +1913,11 @@ case 'ad101':
 		
 		$copy="
 			<p class='add-top'>
-				Hello, I saw your posting and wanted to get in touch. I love the gaming space and the people that work in it so when I saw a position at your company, I wanted to pass along my info. I am a graphic designer and illustrator who recently just left a gaming startup. I am looking for a fun place where I can continue to hone my creative skills, develop new skills and stay on top of new trends. 
-			</p><p>Very briefly, I have worked at in-house creative departments, like Pokemon, where I gained a lot of production experience working on a variety of projects from small to large-scale.</p>
-			</p><p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
+				Hello, I saw your posting and wanted to get in touch. I am a designer and and illustrator with some programming experience. I am looking for a job where I can apply my unique skills and experience while staying on the cutting edge for new technologies.
+			</p><p>
+				I have many years of print production experience working at in-house creative departments. I can also create simple responsive websites with dynamic content with PHP. I can hand-code, so I can debug errors that will occur along the way. This experience will allow me to jump right in and start contributing to a team right away. All this...and more!
+
+			</p><p>Excluding this website as an example, I have linked to three samples which I think will directly address some of the things you are looking for in this position.</p>
 		";
 
 		$project3=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
@@ -1924,10 +1926,91 @@ case 'ad101':
 		$project2=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
 		$project2["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and design.";
 
-		$project1=array("path"=>"pokemon-logos","name"=>"Pok&eacute;mon logos","type"=>"jpg");
-		$project1["desc"]="Logos we developed for various movies and television shows at Pokemon.";
+		$project1=array("path"=>"abriendo-puertas","name"=>"ap-od.org","type"=>"jpg");
+		$project1["desc"]="Responsive informational site we developed for a non-profit. Hand-coded HTML/CSS on a minimal <span class='nobreak'>front-end</span> framework.";
 
-		break;				
+		break;		
+
+		case 'relayrides':
+		$originaljobposting="https://relayrides.com/jobs/graphic-design";
+		$logo="https://d1pryd867v4xab.cloudfront.net/resources/img/logos/logo_large.v6.png";
+		$jobTitle="Graphic Designer";
+		$company="RelayRides";
+		$date="July 28, 2014";
+		$name;
+		$email="<a href=\"mailto:jobs@relayrides.com\">jobs@relayrides.com</a>";
+
+		$job_details="
+			
+			<p>We’re looking for a talented graphic designer to help us build the world’s largest peer-to-peer car rental marketplace. Here at our SOMA headquarters, you’ll be working as part of our growing design team, across the entirety of our customer experience, creating everything from toolbar icons to digital advertising to product illustrations and back again. You’ll have the chance to work side-by-side with our engineering, marketing, and product design staff, as together we change the way that millions of people travel.</p>
+			 
+			<h6>Requirements :</h6>
+			<li>A stellar visual portfolio, highlighting your attention to the finest details and the elegance of your craft.</li>
+			<li>Excellent communication skills. From napkin sketches to high-fidelity comps, you can get your ideas across to a variety of audiences.</li>
+			<li>Experience producing superb graphic design for web and/or mobile. Additional experience with print design welcomed.</li>
+			<li>Familiarity with current consumer software design trends.</li>
+			<li>Comfortable working in an Agile development environment, and the flexibility to iterate frequently in all stages of design and development.</li>
+			<li>Experience in copyediting a plus, especially in advertising, marketing, or pr contexts.</li>
+			<li>Experience with digital photography and/or video a plus.</li>
+
+			<h6>Responsibilities :</h6>
+			<li>Produce production-ready iconography and illustration for web, mobile, and print.</li>
+			<li>Collaborate with the rest of our product team to design a holistic user experience that provides elegant, simple interaction, motion, and visuals.</li>
+			<li>Refine our visual brand identity, and keep our brand identity consistent across multiple channels.</li>
+			<li>Work directly with our marketing & analytics team to craft beautiful, enticing digital marketing campaigns that range from email campaigns to web promotional pages, including direct ads of all sorts.</li>
+		";
+		
+		$copy="
+			<p class='add-top'>
+				Hello, I saw your posting and you guys seem very interesting! I am a designer and and illustrator with some programming experience. I have started on the road to being a digital designer and want to be in a team environment where I am honing those skills. 
+			</p><p>
+				I have many years of print production experience working at in-house <a href='pokemon'>creative departments</a>. I just left a <a href='suspended-belief-studios'>gaming startup</a> where I did everything from game design, UI, interaction, game illustration, websites, logo design to content. I love the challenge of solving puzzles and enjoy watching plans come together!
+
+			</p><p>Excluding this website as an example, I have linked to three samples which I think will directly address some of the things you are looking for in this position.</p>
+		";
+
+		$project3=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
+		$project3["desc"]="Unrealized game concept where I worked on wireframing, artwork, UI, game concept and design.";
+
+		$project2=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
+		$project2["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and design.";
+
+		$project1=array("path"=>"abriendo-puertas","name"=>"ap-od.org","type"=>"jpg");
+		$project1["desc"]="Responsive informational site we developed for a non-profit. Hand-coded HTML/CSS on a minimal <span class='nobreak'>front-end</span> framework.";
+
+		break;
+
+		case 'revolution':
+		$originaljobposting="https://rew22.ultipro.com/REV1004/JobBoard/JobDetails.aspx?__ID=*2CD07B4273B83F69&__jbsrc=950BE424-D07B-4CB9-88AC-2FE566617D17";
+		$logo="https://rew22.ultipro.com/REV1004/JobBoard/custom/skincustom/logo.png";
+		$jobTitle="Graphic Designer";
+		$company="Revolution Foods";
+		$date="July 28, 2014";
+		$name;
+		$email;
+
+		$job_details;
+		
+		$copy="
+			<p class='add-top'>
+				Hello, I saw your posting and wanted to pass along my information. I am a graphic designer looking for a home! 
+			</p><p>
+				I have many years of print production experience working at in-house <a href='pokemon'>creative departments</a> servicing brands. I worked on a variety of projects, from small to large-scale. 
+			</p><p>
+				I have linked to three samples which I think will directly address some of the things you are looking for in this position.</p>
+		";
+
+		$project1=array("path"=>"pokemon","name"=>"The Pok&eacute;mon Company","type"=>"svg");
+		$project1["desc"]="In-house designer. Overall support of all internal departments with creative needs. Fast-paced environment and we worked to bring projects from outside vendors in-house.";
+
+		$project2=array("path"=>"museyon-guides","name"=>"Museyon Guides","type"=>"svg");
+		$project2["desc"]="Freelance book designer. Design and layout of books, from conception to press.";
+
+		$project3=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
+		$project3["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and&nbsp;design.";
+
+
+		break;						
 
 }
 
