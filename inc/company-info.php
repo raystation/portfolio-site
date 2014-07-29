@@ -2166,7 +2166,7 @@ case 'ad101':
 
 		$sample_works="
 			
-			<h5>Abriendo Puertas</h5>
+			<h5><a href='rayuen.com/abriendo-puertas'>Abriendo Puertas</a></h5>
 			<p>Responsive informational site we developed for a non-profit. Hand-coded HTML/CSS on a minimal <span class='nobreak'>front-end</span> framework.</p>
 			<h5><a href='http://rayuen.com/projects/ipsum-generator/'>Lorem Ipsum generator</a></h5>
 			<p>Recent experiement. Proof of concept right now (so it looks horrible). The program takes a list of words and randomly generates paragraphs of lorem ipsum filler text based on a few parameters.</p>
