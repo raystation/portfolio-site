@@ -83,9 +83,13 @@ function html_print_tech_skills() {
 		} else {
 			$percent=$list_item["percent"];
 			$opacity=$percent*0.01;
-			echo '<div style="width: '.$percent.'%;background-color:rgba('.$bkgcolor.','.$opacity.');">'.$list_item[skill].'<span class="float-right">'.$percent.'</span></div>';
+			echo '<div style="width: '.$percent.'%;background-color:rgba('.$bkgcolor.','.$opacity.');">'.$list_item[skill].'<span class="float-right nobreak">'.$percent.'</span></div>';
 		}
 	}
+}
+
+function horizontal_bar_chart_100 ( $data ) {
+	echo "<div class='bar-chart'></>";
 }
 
 

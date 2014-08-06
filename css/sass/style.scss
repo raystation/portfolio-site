@@ -70,8 +70,10 @@ body {
 	-webkit-text-size-adjust: 100%;	
 	margin-top: 70px;
 }
-h1, h2, h3, h4, h5 {
-	@extend .arvo;
+h1, h2, h3, h4, h5, h6 {
+	@extend .uppercase;
+	@extend .montserrat;
+	color: $link-color;
 }
 
 h5 {
@@ -115,7 +117,7 @@ a,a:visited {
 .last 					{ margin-right: 0px; }
 .visible 				{ display: inherit !important }
 .remove-right 	{ padding-right: 0; padding-top: 0;}
-.remove-bottom 	{ margin-bottom: 0px; }
+.remove-bottom 	{ margin-bottom: 0; }
 .remove-top 		{ margin-top: 0px; }
 .nolist 				{ list-style: none; }
 .nowrap, .nobreak 				{ white-space: nowrap; }
@@ -369,6 +371,42 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	&:hover { opacity: 0.65; }
 	}
 }
+
+// HIRE ME 
+// ======================================
+
+.bar-chart {
+	width: 90%;
+	// height: 20px;
+	margin: 0 auto;
+	padding: 0;
+	margin-bottom: 1em;
+	.inner {
+		font-size: 8pt;
+		font-family: Verdana,sans-serif;
+		text-align: center;
+		display: inline-block;
+		background-color: orange;
+		color: black;
+		// padding: 0.25em 1em;
+		// margin: 0;
+		margin-right: -4px; //fixes weird space to the right of the box.
+		margin-bottom: 0.5em;
+	}
+}
+
+$icon-width: 150px;
+
+.space-page {
+	h5 {
+		padding-top: 2em;
+	}
+	img {
+		margin-bottom: 1em;
+		border: 1px solid silver; 
+	}
+}
+	
 
 // ABOUT ME 
 // ======================================

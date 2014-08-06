@@ -1773,6 +1773,7 @@ case 'ad101':
 		$jobTitle="Designer";
 		$company="ZenPayroll";
 		$date="July 28, 2014";
+		$name="David Nguyen";
 		$email;
 
 		$job_details="
@@ -1814,13 +1815,11 @@ case 'ad101':
 			
 
 		";
-		
 		$copy="
 			<p class='add-top'>
 				Hello, I saw your posting and wanted to pass along my information. I am a graphic designer with programming experience. I am looking for a fun place where I can continue to hone my creative skills, develop new skills and stay on top of new trends. Career-wise, I would like to acquire more skills relating to front-end dev and UI positions, so I think this position would put me in a good place to be exposed to that sort of thing.
 			</p><p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
 		";
-
 
 		$project1=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
 		$project1["desc"]="Unrealized game concept where I worked on wireframing, artwork, UI, game concept and design.";
@@ -1830,6 +1829,168 @@ case 'ad101':
 
 		$project3=array("path"=>"100-principles-of-game-design","name"=>"100 Principles of Game Design","type"=>"jpg");
 		$project3["desc"]="Vector illustrations for a book published by Peachpit Publishing.";
+		// $rubiks=true;
+		// $monkey=true;
+
+		$followup='
+			<hr class="caption">
+			<div class="space-page">
+				<p class="remove-bottom">August 5, 2014</p>
+				<h5 class="add-bottom">Phone Call Followup</h5>
+				<p class="add-bottom">David,<br>I pulled together some examples of cleaner and more modern stuff. I took it to mean less decorative/ornamental, colorful and cluttered. The big gap in my portfolio is lack of clean digital works, where I have lots of clean print works.</p>
+				
+				<h5>Equinox Fitness Clubs</h5>
+				<p>This was a mailer that was sent to a limited audience living in affluent neighborhoods surrounding our more "suburban" gyms.</p>
+				<a href="img/zen/EQX-b-cov-1.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/EQX-b-cov-1.jpg"></a>
+				<p>The brochure cover was printed on thick glossy black cardstock with the logo and tagline embossed. The back flap folded into itself protecting the pages inside during transit.</p>
+
+				<div class="six columns alpha">
+					<a href="img/zen/EQX-b-back-1.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/EQX-b-back-1.jpg"></a>
+				</div>
+
+				<div class="six columns omega">
+					<a href="img/zen/EQX-b-back-2.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/EQX-b-back-2.jpg"></a>
+				</div>
+				
+				<p>The interior highlighted distinguishing aspects of gym, along with sexy photos of trainers and gyms. </p>
+				
+				<div class="six columns alpha">
+					<a href="img/zen/EQX-b-int-1.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/EQX-b-int-1.jpg"></a>
+				</div>
+
+				<div class="six columns omega">
+					<a href="img/zen/EQX-b-int-2.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/EQX-b-int-2.jpg"></a>
+				</div>
+
+				<p>This was a general mailer that was sent out during the holidays to current members. It included free passes and shop specials to get people into the spirit of giving (please excuse the condition of the mailer, it has been handled by quite a few people).</p>
+
+				<p>The origami-inspired packaging mimicked a gift that opened to contain a square booklet. This photo does not show the clear circular sticker that was used to keep the packaging sealed.</p>
+
+				<a href="img/zen/EQX-gift-1.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/EQX-gift-1.jpg"></a>
+
+				<div class="six columns alpha">
+					<a href="img/zen/EQX-gift-2.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/EQX-gift-2.jpg"></a>
+				</div>
+
+				<div class="six columns omega">
+					<a href="img/zen/EQX-gift-3.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/EQX-gift-3.jpg"></a>
+				</div>
+
+				<a href="img/zen/EQX-gift-4.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/EQX-gift-4.jpg"></a>
+
+				<div class="six columns alpha">
+					<a href="img/zen/EQX-gift-5.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/EQX-gift-5.jpg"></a>
+				</div>
+
+				<div class="six columns omega">
+					<a href="img/zen/EQX-gift-6.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/EQX-gift-6.jpg"></a>
+				</div>
+				<div class="clear"></div>
+
+
+				<h5>Museyon Guides</h5>
+
+				<p>I included <a href="museyon-guides">Museyon Guides</a> again because I think my work there, in terms of modern and clean design, is very relevant and hope you can take a second look.</p>
+
+				<p>I oversaw the design, layout and prepress for about 8 books. I worked on the "Chronicles" series and two spin-off books. I established the design of the Chronicles series from the first book and was able to experiment with different designs for the <span class="nobreak">spin-off</span>&nbsp;books.</p>
+
+
+				<p>This is <a href="chronicles-of-old-new-boston">Chronicles of Old Boston</a>.</p>
+				
+				<a href="img/chronicles-of-old-boston/cover.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/chronicles-of-old-boston/cover.jpg"></a>
+
+				<p>I implemented this design system from the first Chronicles book and have been perfected it through six books.</p>
+
+				<div class="six columns alpha">
+					<a href="img/chronicles-of-old-boston/01.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/chronicles-of-old-boston/01.jpg"></a>
+				</div>
+
+				<div class="six columns omega">
+					<a href="img/chronicles-of-old-boston/02.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/chronicles-of-old-boston/02.jpg"></a>
+				</div>
+
+				<div class="six columns alpha">
+					<a href="img/chronicles-of-old-boston/04.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/chronicles-of-old-boston/04.jpg"></a>
+				</div>
+
+				<div class="six columns omega">
+					<a href="img/chronicles-of-old-boston/06.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/chronicles-of-old-boston/06.jpg"></a>
+				</div>
+
+
+				<p>This is <a href="city-style">City Style</a>. This design was probably the boldest step we took in terms of brand style. It was a deliberate decision given the material. Each chapter had unique magazine-like photo spreads with bold typography and lines to anchor everything.</p>
+				
+				<a href="img/city-style/forward.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/city-style/forward.jpg"></a>
+
+				<div class="six columns alpha">
+					<a href="img/city-style/ny.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/city-style/ny.jpg"></a>
+				</div>
+
+				<div class="six columns omega">
+					<a href="img/city-style/ny1.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/city-style/ny1.jpg"></a>
+				</div>
+
+				<div class="six columns alpha">
+					<a href="img/city-style/toc.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/city-style/toc.jpg"></a>
+				</div>
+
+				<div class="six columns omega">
+					<a href="img/city-style/j3.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/city-style/j3.jpg"></a>
+				</div>
+
+
+				<p>This was a brochure I created to be distributed at a publishing convention. The full-color 10-page brochure was printed on matte paper and was <a href="nobreak">saddle-stitched</a>.</p>
+
+				<a href="img/zen/Brochure_051210-1.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/Brochure_051210-1.jpg"></a>
+
+				<p>The most current books were given two page spreads and a smattering of delectable photos from the book. The photos were of various sizes, so I spent some time arranging and scaling them to fit the page width.</p>
+		
+				<div class="six columns alpha">
+					<a href="img/zen/Brochure_051210-2.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/Brochure_051210-2.jpg"></a>
+					<a href="img/zen/Brochure_051210-5.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/Brochure_051210-5.jpg"></a>
+				</div>
+
+				<div class="six columns omega">
+					<a href="img/zen/Brochure_051210-4.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/Brochure_051210-4.jpg"></a>
+					<a href="img/zen/Brochure_051210-7.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/Brochure_051210-7.jpg"></a>
+				</div>
+				<div class="clear"></div>
+
+
+
+				<h5>idibon</h5>
+				<p>The guys over at <a href="http://www.idibon.com">idibon</a> have a custom built Wordpress site they use as a blog and informational site. While I did not build this theme, I did help them tweak the HTML/CSS afterwards and create site graphics. The people who built the site did not the <span class="nobreak">&ldquo;pixel-perfect&rdquo;</span> level of attention that so many job postings are searching for nowadays.</p>
+
+				<a href="img/zen/idibon1.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/idibon1.jpg"></a>
+
+				<p>I helped them craft their product page to help people understand what it is they do as well as fix color and spacing issues on their <a href="http://idibon.com/about/">bios</a>&nbsp;page.</p>
+
+				<div class="six columns alpha">
+					<a href="img/zen/idibon2.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/idibon2.jpg"></a>
+				</div>
+
+				<div class="six columns omega">
+					<a href="img/zen/idibon3.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/idibon3.jpg"></a>
+				</div>
+
+				<p>As an NPL startup, they have a lot of interesting things to say about language, so they like to share fun things on their blog. They get me to help with infographics sometimes. Fun observations, like the decline of the usage of the word love in song titles to common themes people name racehorses with.</p>
+
+				<a href="img/idibon/graphs_Percentage_hq.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/idibon/graphs_Percentage_hq.jpg"></a>
+				<a href="img/idibon/powerhouse-language_v.png" data-lightbox="zen"><img class="scale-with-grid" src="img/idibon/powerhouse-language_v.png"></a>
+				<a href="img/idibon/derby2-01.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/idibon/derby2-01.jpg"></a>
+				<a href="img/idibon/bball_observed_hq.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/idibon/bball_observed_hq.jpg"></a>
+				
+				<h5>Wedding Invite</h5>
+				<p>I worked with a Chinese couple to develop their wedding invites. They did not want a traditional Chinese invite so I helped them make a simple bilingual invite. I worked with a letterpresser to get these produced. </p>
+				<a href="img/chrichard/Chrichard-invite1.png" data-lightbox="zen"><img class="scale-with-grid" src="img/chrichard/Chrichard-invite1.png"></a>
+				
+
+				<p>I do understand your concerns and I hope that this helps convince you that I can design in other styles given the opportunity! Please let me know if you still have doubts.</p>
+				<p>Ray</p>
+
+			</div>
+		';
+
 
 		break;
 
@@ -2096,7 +2257,7 @@ case 'ad101':
 		
 		$copy="
 			<p class='add-top'>
-				Hello, I saw your posting and wanted to pass along my information. I am very interested in working for an institution for learning! I am a graphic designer and illustrator with programming experience. I am looking for a fun position in education, where I can apply my unique skillset while also learning new things along the way. 
+				Hello, I saw your posting and wanted to pass along my information. I am very interested in working for an institution of learning! I am a graphic designer and illustrator with programming experience. I am looking for a fun position in education, where I can apply my unique skillset while also learning new things along the way. 
 			</p><p>
 				I have many years of print production experience working at <span class='nobreak'>in-house</span> <a href='pokemon'>creative departments</a> servicing brands. I also just recently left a gaming startup where I was essentially the creative department. The experience I gained there, partnered with my passion for gaming, will inform the interaction decisions I make—hopefully into engaging and fun experiences. One of the big challenges with interaction is knowing when to \"get out of the way\" and let the content speak for itself; it's a constant measuring of minimal vs. ornamental.
 			</p><p>
@@ -2114,7 +2275,7 @@ case 'ad101':
 
 		break;
 
-		case 'verticalresponse':
+ 		case 'verticalresponse':
 		$originaljobposting="http://www.verticalresponse.com/about/jobs?nl=1&jvi=o7peZfwt%2CJob&jvs=Craigslist#jobs";
 		$logo="http://www.verticalresponse.com/sites/all/themes/bootstrap/VRLogoTag.2C.svg";
 		$jobTitle="Graphic Web Designer/Front End Web Developer";
@@ -2175,7 +2336,87 @@ case 'ad101':
 
 		";
 
-		break;								
+		break;
+
+// <div class='bar-chart'>
+// 	<div class='inner tooltip' title='test' style='width:40%;background-color:red'>Illustration</div>
+// 	<div class='inner tooltip' title='test' style='width:20%;background-color:yellow'>Programming</div>
+// 	<div class='inner tooltip' title='test' style='width:20%;background-color:orange'>Web Design</div>
+// 	<div class='inner tooltip' title='test' style='width:20%;background-color:green'>Gaming</div>
+// 	<div class='caption add-bottom'>Areas of Exploration</div>
+// </div>		
+
+case 'experiment':
+		$originaljobposting="https://experiment.com/jobs";
+		$logo="https://d3t9s8cdqyboc5.cloudfront.net/assets/logo-motion-596724ca10a0f28cbbc37ee954ae9aca.gif";
+		$jobTitle="Graphic Designer";
+		$company="Experiment";
+		$date="August 2, 2014";
+		$name;
+		$email;
+
+		$job_details="
+			<p>The California Academy of Sciences is looking for a unique and talented User Experience/Interaction Designer to join the Digital Engagement team.  In this role, the Interaction Designer will create integrated interactive design experiences across onsite and online applications on a wide range of platforms.  Using text, images, videos, audio, animations, and other digital and visual effects, they may work on projects such as Internet sites, mobile solutions, museum exhibit interactives, online learning materials, and other interactive applications.</p>
+
+			<p>Reporting to the Associate Director of Digital Engagement, the Interaction Designer will help to continuously innovate and evolve digital interactive experiences.  The role will be an essential part of the Digital Engagement team working closely with producers, developers and museum stakeholders to create dynamic, engaging experiences to support the Academy goals.  The ideal candidate must present a strong portfolio of innovative and engaging designs.</p>
+			<h6>ESSENTIAL DUTIES AND RESPONSIBILITIES</h6>
+			<li>Responsible for and deliver on all phases of the design process</li>
+			<li>Partner with stakeholders to internalize and translate business goals into concept briefs</li>
+			<li>Create designs and experiences to ensure that it is visually intuitive and impactful, meets brand guidelines, and exhibits all of the best practices for presenting content to the targeted audience</li>
+			<li>Evolve and work within design systems and guidelines to ensure consistency, uniformity, and high level of usability across websites, apps, and products</li>
+			<li>Brainstorm, research, wire-frame, design and refine user experiences - all within specified product requirements and deadlines</li>
+			<li>Deliver on responsive design and present content across multiple viewports, devices, and platforms</li>
+			<li>Use metrics and frequent user research data to influence design</li>
+			<li>Design and deliver interaction flows, screen mockups, and wireframes to high-fidelity HTML prototypes</li>
+			<li>Architect and perform usability sessions with key stakeholders and users to get feedback to evolve design concepts and user interfaces</li>
+			<li>Work closely with a cross-functional team that includes project managers, developers, other designers and content teams</li>
+			<li>Contribute positively to design discussions visually, verbally, and in writing</li>
+			<li>Evangelize design principles to stakeholders</li>
+			<li>Follow all Academy safety regulations</li>
+			<li>Other duties as assigned</li>
+			<h6>QUALIFICATIONS</h6>
+			<p>To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions.</p>
+			<h6>PROJECT PORTFOLIO: </h6>
+			<p>A strong portfolio that demonstrates thoughtful, innovative problem solving with a focus on insights into human behavior and illustrating a diverse set of technologies is a must.  Applicants will be asked to provide a portfolio of sample project deliverables, web sites, mobile sites, apps, etc. Please be sure to include a URL to your portfolio or your application will not be considered.</p>
+			<h6>EDUCATION and/or EXPERIENCE: <br>
+			The ideal candidate will possess a combination of the following education and/or equivalent experience:
+			</h6>
+
+			<li>B.A./B.S. in Human-Computer Interaction Design, Web Design, Graphic Design, or related field</li>
+			<li>Three or more years of interactive design experience on paid assignments</li>
+			<h6>KNOWLEDGE, SKILLS AND ABILITIES:</h6>
+			<li>Exceptional user interface and experience design skills and understanding of user-centered design disciplines and principles</li>
+			<li>Ability to quickly grasp and distill highly complex user design issues into clean, understandable solutions</li>
+			<li>Candidate must flourish in a fast-paced, interactive, dynamic and dead-line driven culture and environment</li>
+			<li>Ability to use frameworks and toolkits to quickly test functional design solutions</li>
+			<li>Experience with design industry tools and technologies such as, but not limited to: Adobe Suite, Drupal, PHP, HTML/HTML5, CSS, Sass, Javascript, jQuery, etc.</li>
+			<li>Personable and diplomatic team player with the ability to collaborate and communicate well</li>
+			<li>Strong interest in emergent technologies</li>
+			<li>Familiarity with Agile Project Management methodology a plus</li>
+			<li>A passion for science, technology, and science education is a strong plus</li>
+		";
+		
+		$copy="
+			<p class='add-top'>
+				Hello, someone passed along the job portrait you <a href='https://medium.com/job-portraits/experiment-is-hiring-a-product-designer-to-change-the-world-of-science-dfa58739c55e' target='_blank'>posted on Medium</a> and my interest is sufficently piqued that I am writing this to you. With long form pieces like this, it gives people the opportunity to inject their imagination and I imagined myself solving interesting problems, experimenting (no <span class='tooltip underline' title='hover over my portrait for a pun'>pun</span> intended there) and learning new things. 
+			</p><p>
+				I am a graphic designer and illustrator with programming experience. Career-wise, I've jumped around a bit—the past four years have been an exploration of illustration, publishing, web design, programming, interaction and game design.
+			</p><p>
+				I have many years of print production experience working at <span class='nobreak'>in-house</span> <a href='pokemon'>creative departments</a> servicing brands. I also just recently left a gaming startup where I was essentially the creative department. 
+			</p><p>
+				I have linked to three samples which I think will directly address some of the things you are looking for in this position.</p>
+		";
+
+		$project1=array("path"=>"the3","name"=>"The3","type"=>"svg");
+		$project1["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and&nbsp;design.";
+
+		$project2=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
+		$project2["desc"]="Unrealized game concept where I worked on wireframing, artwork, UI, game concept and design.";
+
+		$project3=array("path"=>"abriendo-puertas","name"=>"Abriendo Puertas", "type"=>"jpg");
+		$project3["desc"]="Responsive informational site we developed for a non-profit. Hand-coded HTML/CSS on a minimal <span class='nobreak'>front-end</span> framework.";
+
+		break;						
 
 }
 

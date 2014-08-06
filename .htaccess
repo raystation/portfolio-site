@@ -57,4 +57,5 @@ RewriteRule ^portfolio-site$ work?project=portfolio-site
 RewriteRule ^lesconcierges$ work?project=lesconcierges
 
 RewriteRule ^bigfish$ hire-me?id=510
+RewriteRule ^zenpayroll$ hire-me?id=zen
 

@@ -430,7 +430,7 @@ function list_tech_skills() {
 			array("percent"=>89,"skill"=>"CSS"),
 			array("percent"=>92,"skill"=>"Sass"),
 			array("percent"=>40,"skill"=>"JQuery"),
-			array("percent"=>35,"skill"=>"Javascript"),
+			array("percent"=>35,"skill"=>"JS"),
 			"clear",
 			array("percent"=>65,"skill"=>"PHP"),
 			array("percent"=>80,"skill"=>"Wordpress"),
