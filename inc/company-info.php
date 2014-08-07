@@ -2355,46 +2355,7 @@ case 'experiment':
 		$name;
 		$email;
 
-		$job_details="
-			<p>The California Academy of Sciences is looking for a unique and talented User Experience/Interaction Designer to join the Digital Engagement team.  In this role, the Interaction Designer will create integrated interactive design experiences across onsite and online applications on a wide range of platforms.  Using text, images, videos, audio, animations, and other digital and visual effects, they may work on projects such as Internet sites, mobile solutions, museum exhibit interactives, online learning materials, and other interactive applications.</p>
-
-			<p>Reporting to the Associate Director of Digital Engagement, the Interaction Designer will help to continuously innovate and evolve digital interactive experiences.  The role will be an essential part of the Digital Engagement team working closely with producers, developers and museum stakeholders to create dynamic, engaging experiences to support the Academy goals.  The ideal candidate must present a strong portfolio of innovative and engaging designs.</p>
-			<h6>ESSENTIAL DUTIES AND RESPONSIBILITIES</h6>
-			<li>Responsible for and deliver on all phases of the design process</li>
-			<li>Partner with stakeholders to internalize and translate business goals into concept briefs</li>
-			<li>Create designs and experiences to ensure that it is visually intuitive and impactful, meets brand guidelines, and exhibits all of the best practices for presenting content to the targeted audience</li>
-			<li>Evolve and work within design systems and guidelines to ensure consistency, uniformity, and high level of usability across websites, apps, and products</li>
-			<li>Brainstorm, research, wire-frame, design and refine user experiences - all within specified product requirements and deadlines</li>
-			<li>Deliver on responsive design and present content across multiple viewports, devices, and platforms</li>
-			<li>Use metrics and frequent user research data to influence design</li>
-			<li>Design and deliver interaction flows, screen mockups, and wireframes to high-fidelity HTML prototypes</li>
-			<li>Architect and perform usability sessions with key stakeholders and users to get feedback to evolve design concepts and user interfaces</li>
-			<li>Work closely with a cross-functional team that includes project managers, developers, other designers and content teams</li>
-			<li>Contribute positively to design discussions visually, verbally, and in writing</li>
-			<li>Evangelize design principles to stakeholders</li>
-			<li>Follow all Academy safety regulations</li>
-			<li>Other duties as assigned</li>
-			<h6>QUALIFICATIONS</h6>
-			<p>To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions.</p>
-			<h6>PROJECT PORTFOLIO: </h6>
-			<p>A strong portfolio that demonstrates thoughtful, innovative problem solving with a focus on insights into human behavior and illustrating a diverse set of technologies is a must.  Applicants will be asked to provide a portfolio of sample project deliverables, web sites, mobile sites, apps, etc. Please be sure to include a URL to your portfolio or your application will not be considered.</p>
-			<h6>EDUCATION and/or EXPERIENCE: <br>
-			The ideal candidate will possess a combination of the following education and/or equivalent experience:
-			</h6>
-
-			<li>B.A./B.S. in Human-Computer Interaction Design, Web Design, Graphic Design, or related field</li>
-			<li>Three or more years of interactive design experience on paid assignments</li>
-			<h6>KNOWLEDGE, SKILLS AND ABILITIES:</h6>
-			<li>Exceptional user interface and experience design skills and understanding of user-centered design disciplines and principles</li>
-			<li>Ability to quickly grasp and distill highly complex user design issues into clean, understandable solutions</li>
-			<li>Candidate must flourish in a fast-paced, interactive, dynamic and dead-line driven culture and environment</li>
-			<li>Ability to use frameworks and toolkits to quickly test functional design solutions</li>
-			<li>Experience with design industry tools and technologies such as, but not limited to: Adobe Suite, Drupal, PHP, HTML/HTML5, CSS, Sass, Javascript, jQuery, etc.</li>
-			<li>Personable and diplomatic team player with the ability to collaborate and communicate well</li>
-			<li>Strong interest in emergent technologies</li>
-			<li>Familiarity with Agile Project Management methodology a plus</li>
-			<li>A passion for science, technology, and science education is a strong plus</li>
-		";
+		$job_details="";
 		
 		$copy="
 			<p class='add-top'>
@@ -2416,7 +2377,147 @@ case 'experiment':
 		$project3=array("path"=>"abriendo-puertas","name"=>"Abriendo Puertas", "type"=>"jpg");
 		$project3["desc"]="Responsive informational site we developed for a non-profit. Hand-coded HTML/CSS on a minimal <span class='nobreak'>front-end</span> framework.";
 
-		break;						
+		break;
+
+		case 'heyzap':
+		$hiremepage="http://www.rayuen.com/hire-me?id=heyzap";
+		$originaljobposting="http://www.heyzap.com/jobs/49";
+		$logo="http://heyzap.com/images/navigation/heybar_logo.png";
+		$jobTitle="Designer";
+		$company="Heyzap";
+		$date="August 7, 2014";
+		$name;
+		$email="jobs@heyzap.com";
+
+		$job_details="
+			<h6>About the Role:</h6>
+			<p>We are seeking a Designer to make our user experience as delightful as possible. The ideal candidate will have a personal interest in applications, interfaces and a passion for designing developer-focused web/mobile experiences. We are looking for intuition in fundamental design principles and a willingness to engage in a two-way learning process. The Designer will innovate all aspects of Heyzap’s design from dashboards to our front page, to our core ad products. We want to make every pixel smile and put user experience at the top of our agenda.</p>
+
+			<h6>About Us</h6>
+			<p>Heyzap is changing the way we discover mobile apps by systematically redesigning mobile advertising from the ground up. Piece by piece, Heyzap has produced the leading SDK that helps thousands of app developers monetize and get discovered. Heyzap works with the largest and most innovative mobile developers like King, Spotify, Supercell, Kabam and PocketGems.</p>
+
+			<p>Our office is in the middle of a new mobile app epicenter in San Francisco’s Financial District. We are backed by some of the best investors in the world including: Union Square Ventures, Chris Dixon, Naval Ravikant, Ashton Kutcher and Qualcomm Ventures.</p>
+
+			<h6>Responsibilities</h6>
+			<li>Solve challenging design problems, including complex dashboards.</li>
+			<li>Being involved in speccing and executing projects.</li>
+			<li>Designing pixel perfect experiences for users.</li>
+			<li>Being a master of user interfaces, flow and usability.</li>
+			<li>Work closely with the founders and the team to make our product the best gaming app in the world.</li>
+
+			<h6>Requirements:</h6>
+			<p>Multi-year experience in the following:</p>
+			<li>Expert Skills: Photoshop/sketch.</li>
+			<li>Multi-year professional experience as a member of a creative team or agency. (Alternatively, your portfolio blows us away).</li>
+			<li>Solid understanding of web standards, web/mobile, and live production practices.</li>
+			<li>Super strong creative and visual skills.</li>
+			<li>Mesmerizing portfolio of work.</li>
+			<li>Pixel-perfect experiences.</li>
+			<li>The ability to ship and sail.</li>
+			<li>Ability to explain your thinking; strong interpersonal skills; an ability to work independently and with a group.</li>
+			<li>Demonstrated ability to develop new approaches to complex design problems and convey ideas into tangible forms.</li>
+			<li>Ability to write great call to actions.</li>
+			<li>Thought leadership on design principles.</li>
+			<li>HTML / CSS (strong bonus points).</li>
+			<li>Ability to work with other designers and in a design team.</li>
+			<li>Be able to write copy that sings to our users.</li>
+
+			<h6>Bonus Points</h6>
+			<li>Experience developing high quality consumer applications.</li>
+			<li>Basic Rails knowledge (not required but a bonus nonetheless).</li>
+			<li>Bachelor’s Degree in HCI or Interface Design or related degree (self-taught is fine as well).</li>
+			<li>Typography, Iconography, Illustration, Animation.</li>
+			<li>Being able to make Photoshop or Sketch do unexpected things.</li>
+			<li>Industrial design experience / formal training.</li>
+			<li>Has an interest in art.</li>
+			<li>Ability to manage other designers.</li>
+			<li>Can detect a pixel out-of-place from a mile away.</li>
+			<li>Likes teaching design theory to engineering and sales.</li>
+
+			
+			<h6>Perks</h6>
+			<li>Intelligent, driven team members.</li>
+			<li>Product-centric company.</li>
+			<li>Learning environment where we encourage people to think from first principles and take the widest responsibility they can handle.</li>
+			<li>Founders that care about design and constantly want to upgrade their design.</li>
+			<li>Sunny office with lots of natural light.</li>
+			<li>Be autonomous and largely self managed.</li>
+			<li>Allow your design skills to influence the office design, aesthetic and evolve the company branding.</li>
+			<li>Meaningful stock options.</li>
+			<li>Whatever hardware you need, the best display, Herman Miller desk and a comfy Aeron chair.</li>
+			<li>Medical, vision and dental insurance.</li>
+			<li>401(k).</li>
+			<li>Book budget and large existing library.</li>
+			<li>An exciting and challenging work environment.</li>
+			<li>Commuter benefits.</li>
+			<li>Free lunches (there is such a thing at Heyzap).</li>
+			<li>Fun team events and IMAX trips.</li>
+			<li>Free 24 hour fitness gym membership.</li>
+			<li>Unlimited whiteboard access.</li>
+		";
+
+		$other="
+			<div class='four columns list-spacing-fix add-bottom alpha caption'>
+				<hr class='add-top'>
+				<h5>Currently Playing</strong></h5>
+					<ul>
+						<li>Disco Zoo</li>
+						<li>Red Dead Redemption</li>
+						<li>Nimblequest</li>
+						<li>X-COM: Enemy Unknown</li>
+					</ul>
+			</div>
+
+			<div class='four columns list-spacing-fix add-bottom caption'>
+				<hr class='add-top'>
+				<h5>Inspirations</strong></h5>
+					<ul>
+						<li>video games</li>
+						<li>science fiction</li>
+						<li>walking around</li>
+						<li>graphic artists</li>
+						<li>Hong Kong action films</li>
+					</ul>
+			</div>
+
+			<div class='four columns list-spacing-fix add-bottom caption omega'>
+				<hr class='add-top'>
+				<h5>Favorite Games</strong></h5>
+					<ul>
+						<li>Fallout: New Vegas</li>
+						<li>Batman: Arkham City</li>
+						<li>Red Dead Redemption</li>
+						<li>Tetris</li>
+						<li>Final Fantasy 4</li>
+					</ul>
+			</div>
+
+			<div class='clear'></div>
+			";
+		
+		$copy="
+			<p class='add-top'>
+				Hello, I saw your posting and wanted to get in touch because you guys sound awesome. I am a designer/illustrator with some programming experience. I am looking for a fun place to work where I can be part of a team and contribute my unique skill set. Plus, I have always had a life-long passion for gaming!
+			</p>
+			<p>
+				Working at in-house design departments, I have many years of design and production experience. We (the creative and branding team) supported internal departments with various creative needs—including publishing, marketing and licensing initiatives. My working experience is mainly print-based, but I have been expanding in the past two years, delving into web technologies(I am currently going back and forth between PHP and Javascript right&nbsp;now). 
+			</p>
+			<p>
+				I linked below to three projects which I believe might be of some&nbsp;interest.
+		";
+
+		$rubiks=true;
+
+		$project1=array("path"=>"the3","name"=>"The3","type"=>"svg");
+		$project1["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and&nbsp;design.";
+
+		$project2=array("path"=>"indiginauts","name"=>"Indiginauts","type"=>"jpg");
+		$project2["desc"]="Point and click adventure game. I worked on game illustration, UI, game concept and design, and character development.";
+
+		$project3=array("path"=>"museyon-guides","name"=>"Museyon Guides", "type"=>"svg");
+		$project3["desc"]="Small publisher that puts out travel guides. I helped them develop design for a new series and also helped them produce the books. ";
+
+		break;								
 
 }
 
