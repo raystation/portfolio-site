@@ -1,5 +1,12 @@
 <?php 
 
+//converts title into lowercase and no spaces
+function downcasespace($string) {
+	$string = str_replace(" ", "", $string);
+	$string = strtolower($string);
+	return $string;
+}
+
 switch ( $id ) {
 
 	default:
@@ -609,123 +616,6 @@ case '212':
 	<p>
 		Please let me know if I can provide any other sort of information or if we can set up a meeting. Thank you!
 	</p>";
-
-	break;		
-
-	case '9999':
-	$company="Kabam";
-	$jobTitle="Visual Designer";
-	$logo="http://www.indeed.com/cmp/_s/logos/f984ad8d5222c019";
-	$date="June 4, 2014";
-	$originaljobposting="http://www.indeed.com/viewjob?jk=8ce5f60822550da0&q=(graphic+or+design+or+print+or+illustration)&l=san+francisco&tk=18pivv0m706a00an&from=ja&alid=8cb27739bcde7d9d&utm_source=jobseeker_emails&utm_medium=email&utm_campaign=job_alerts";
-
-	$copy="
-	<p class=\"add-top\">
-		Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming and have over 8+ years of experience in design from both the creative/marketing and production side. I am looking for a position where I can contribute my varied skills and have fun. 
-	</p>
-
-	<div class='four columns add-bottom alpha'><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>The Rise of Darkrai</a></div>
-	
-	<div class='four columns add-bottom' ><a class='caption' href='color-chameleon'><img class='scale-with-grid' src='img/color-chameleon/thumb.jpg'>Color Chameleon</a></div>
-
-	<div class='four columns add-bottom omega'><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>Abriendo Puertas</a></div>
-
-	<div class='clear'></div>	
-	<p>
-		Check out my resume here <a href='resume'>rayuen.com/resume</a> or a PDF version below. <br>
-		Check out my portfolio here <a href='work'>rayuen.com/work</a> <br>
-	</p>
-
-	<p>
-		Please let me know if I can provide any other sort of information or if we can set up a meeting. Thank you!
-	</p>
-	";
-
-	$other="
-	<div class='four columns add-bottom alpha list-spacing-fix caption'>
-		<hr class='add-top'>
-		<p><strong>Favorite Pok&eacute;mon</strong></p>
-			<ul>
-				<li>Piplup</li>
-				<li>Heracross</li>
-				<li>Garchomp</li>
-				<li>Combee</li>
-				<li>Alakazam</li>
-			</ul>
-	</div>
-
-	<div class='four columns add-bottom list-spacing-fix caption'>
-		<hr class='add-top'>
-		<p><strong>Currently Playing</strong></p>
-			<ul>
-				<li>FTL</li>
-				<li>Hay Day</li>
-				<li>Disco Zoo</li>
-				<li>Zookeeper: Battle!</li>
-				<li>The Last of Us</li>
-			</ul>
-	</div>
-
-	<div class='four columns add-bottom list-spacing-fix caption omega'>
-		<hr class='add-top'>
-		<p><strong>Fav. RPG's</strong></p>
-			<ul>
-				<li>FF6</li>
-				<li>Chrono Trigger</li>
-				<li>Fallout: New Vegas</li>
-				<li>FF4</li>
-				<li>Fable</li>
-			</ul>
-	</div>
-	";
-
-	$job_details="
-			<h6>Visual Designer</h6>
-<p>Kabam - San Francisco, CA</p>
-<p>Kabam is the leader in the western world for free-to-play core games with 1st and 3rd party published titles available on mobile devices via the Apple Store, Google Play and on the Web via Facebook, Yahoo, Kabam.com and other leading platforms. In 2013 Kabam revenues grew by 100 percent to more than $360 million. Kabam has 800 employees across three continents, with corporate headquarters in San Francisco. The company's investors include Google, Warner Brothers, MGM, SK Telecom, Intel, Canaan Partners, Redpoint Ventures and Pinnacle Ventures. More information about Kabam can be found at www.kabam.com.</p> 
-<p>The Visual Designer will be responsible for creating all manner of product marketing and advertising creative for Kabam’s first party studio’s games. </p>
-<hr>
-<h6>WHAT YOU'LL DO:</h6>
-<p>Team: First Party Marketing Art</p>
-<p>The First Party Marketing Art Team is responsible for creating all storefront marketing assets, promotional vehicles and campaigns, banner ad and video/rich media/banner ad creative for User Acquisition, all supported by rigorous performance testing and localization for between 12 and 15 languages. We strive to deliver all work in a timely manner and always adhere to pre-determined schedules. Our function can be summed up as follows: innovate, create, communicate, test, iterate, localize, optimize. Our team also supports the production of campaigns produced by external partners and agencies by contributing to concept development, art/creative direction, feedback, asset support. </p>
-<hr>
-<h6>Day to day:</h6>
-<li>Work with marketing art team to develop and iterate advertising concepts to test on a weekly basis </li>
-<li>Create advertising concepts that can be resized/re-purposed for a multitude of sizes, and a number of delivery platforms (static/animated gif, interactive html 5, video) </li>
-
-<li>Create meticulous master ad layouts of top-performing creative that will be sent out for resizing, localization, and/or interactive production on a weekly basis </li>
-
-<li>Create/design brand/product marketing and promotional assets for all storefronts informed by existing brand art style and performance marketing data </li>
-
-<li>Support Product Marketing, BizDev and Lifecycle/emil/XP teams by handling requests for assets and promotional executions </li>
-
-<li>Provide feedback and direction for the creation of key art assets produced by external agencies </li>
-
-<li>Collaborate with video/multimedia artist to generate ideas and storyboards for : 30 and : 15 User Acquisition video ad units</li> 
-<li>Maintain and adhere to strict file preparation, file structure and naming convention guidelines </li>
-<li>Prepare all master psd files such that resizing and localization is as streamlined as possible. </li>
-<li>Career Progression: This role is a mid-level position that will be integral to Kabam’s User Acquisition, Product Marketing, BizDev and Lifecycle marketing success</li> 
-<hr>
-<h6>Benefits:</h6>
-<li>Full Health, Dental, and Vision; 401k matching; $250 gym reimbursement; $1000 per year educational stipend; daily catered lunches; tons of snacks, drinks, etc. </li>
-<hr>
-<h6>Education:</h6>
-<li>Bachelor’s degree or certificate for Art, Design or other related field or equivalent work experience. </li>
-<hr>
-<h6>Years Experience:</h6>
-5+ years of experience creating and producing both advertising and storefront marketing assets in the mobile games space. </p>
-<hr>
-<h6>MUST Have Experience:</h6>
-<li>Exceptional Adobe CS skills (digital painting/retouching skills a plus) </li>
-<li>Conception/Creation of ad campaigns for mobile games </li>
-<li>Creation of iOS and Google Play launch marketing assets – screenshots, icons, featuring art </li>
-<li>The utmost in familiarity with the above assets’ specs </li>
-<li>A keen eye for color, composition, layout, typography </li>
-<li>Top-notch organizational skills – file management and spec documentation </li>
-<li>Self-motivated creative problem solver </li>
-<li>Excellent interpersonal skills </li>
-
-	";
 
 	break;		
 
@@ -2517,7 +2407,229 @@ case 'experiment':
 		$project3=array("path"=>"museyon-guides","name"=>"Museyon Guides", "type"=>"svg");
 		$project3["desc"]="Small publisher that puts out travel guides. I helped them develop design for a new series and also helped them produce the books. ";
 
-		break;								
+		break;
 
+		case 'dropcam':
+		$originaljobposting="http://www.indeed.com/viewjob?jk=5c6e855af4f69344&q=web+designer&l=San+Francisco,+CA&tk=18udfv5sv076h0sg&from=ja&alid=3a86d2ec9d8ca6dc&utm_source=jobseeker_emails&utm_medium=email&utm_campaign=job_alerts";
+		$logo="https://d2ouawgq7rgimz.cloudfront.net/press/thumb-Dropcam-logo-vert-rev.png";
+		$jobTitle="Web Designer";
+		$company="Dropcam";
+		$date="August 8, 2014";
+		$name;
+		$email;
+		$hiremepage = downcasespace("http://rayuen.com/hire-me?id=$company");
+
+		$job_details="
+			
+			<p>Dropcam is seeking a web designer to deliver an informative, engaging and compelling experience on Dropcam.com. You’ll work closely with the marketing team and across the company to tell the Dropcam story and help manage the Dropcam store.</p>
+			
+			<h6>RESPONSIBILITIES</h6>
+			<li>Own the Dropcam.com store experience from content to functionality working closely with the marketing, product and engineering teams. Build short and medium term strategic plans for the site.</li>
+			<li>Define, design and manage the implementation of website features and functionality with technical teams to support business objectives.</li>
+			<li>Create and manage execution of seasonal campaigns - Valentines Day, Mother's Day etc - across platforms (web, email, social).</li>
+			<li>Be a customer advocate creating a easy and engaging user experience that fits with our brand guidelines and personality.</li>
+			<li>Ongoing site optimizations working with data analyst to execute regular A|B tests of different designs.</li>
+			<li>Manage all the web assets including banners, videos, images, landing pages and copy.</li>
+			
+			<h6>REQUIREMENTS</h6>
+
+			<li>2 - 4 years experience of web design</li>
+			<li>Keen eye for design</li>
+			<li>Proficiency with HTML, CSS, ability to code your design</li>
+			<li>Demonstrated knowledge of website technology and development</li>
+			<li>Strong understanding of latest trends in front-end web, responsive design</li>
+			<li>Excellent project management skills</li>
+			<li>Personality that thrives in a fast-paced, exciting work environment</li>
+			<li>High attention to detail</li>
+		";
+	
+		$copy="
+			<p class='add-top'>
+				Hello, I saw your posting and wanted to pass along my information. I am a designer/illustrator with some programming experience. I am looking for a place make where I can contribute my creative experience and make a full transition into a web role. After looking over your job posting, I think Dropcam could be a perfect place to do that. 
+			</p>
+			<p>
+				I have many years of print experience working in in-house design positions. In the past two years I have tried to immerse myself in everything that a web designer would be doing. I helped my friends build simple websites. i've dived into responsive design and am learning a little programming. Currently I am jumping back and forth between PHP and Javascript and am enjoying the learning experience.
+			</p>
+			<p>
+				I linked below to three projects which I believe might be of some&nbsp;interest.
+		";
+
+		$project2=array("path"=>"sarah-walko-wordpress","name"=>"Sarah Walko WP site","type"=>"jpg");
+		$project2["desc"]="Wordpress site I helped a friend put together. I am decoding the WP code to figure out how to make my own themes. ";
+
+		$project3=array("path"=>"suspended-belief-studios","name"=>"Suspended Belief Studios","type"=>"jpg");
+		$project3["desc"]="Gaming startup I was part of. I worked on game illustrations, UI, game concept and design and character development.";
+
+		$project1=array("path"=>"abriendo-puertas","name"=>"Abriendo Puertas", "type"=>"jpg");
+		$project1["desc"]="Responsive informational site we developed for a non-profit. Hand-coded HTML/CSS on a minimal <span class='nobreak'>front-end</span> framework.";
+
+	break;
+
+	case '9999':
+		$company="Kabam";
+		$jobTitle="Visual Designer";
+		$logo="http://www.indeed.com/cmp/_s/logos/f984ad8d5222c019";
+		$date="June 4, 2014";
+		$originaljobposting="http://www.indeed.com/viewjob?jk=8ce5f60822550da0&q=(graphic+or+design+or+print+or+illustration)&l=san+francisco&tk=18pivv0m706a00an&from=ja&alid=8cb27739bcde7d9d&utm_source=jobseeker_emails&utm_medium=email&utm_campaign=job_alerts";
+		$hiremepage = "http://rayuen.com/kabam";
+
+		$copy="
+		<p class=\"add-top\">
+			Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming and have over 8+ years of experience in design from both the creative/marketing and production side. I am looking for a position where I can contribute my varied skills and have fun. 
+		</p>
+
+		<div class='four columns add-bottom alpha'><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>The Rise of Darkrai</a></div>
+		
+		<div class='four columns add-bottom' ><a class='caption' href='color-chameleon'><img class='scale-with-grid' src='img/color-chameleon/thumb.jpg'>Color Chameleon</a></div>
+
+		<div class='four columns add-bottom omega'><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>Abriendo Puertas</a></div>
+
+		<div class='clear'></div>	
+		<p>
+			Check out my resume here <a href='resume'>rayuen.com/resume</a> or a PDF version below. <br>
+			Check out my portfolio here <a href='work'>rayuen.com/work</a> <br>
+		</p>
+
+		<p>
+			Please let me know if I can provide any other sort of information or if we can set up a meeting. Thank you!
+		</p>
+		";
+
+		$other="
+		<div class='four columns add-bottom alpha list-spacing-fix caption'>
+			<hr class='add-top'>
+			<p><strong>Favorite F2P</strong></p>
+				<ul>
+					<li>Pocket Planes
+					<li>Hay Day
+					<li>Disco Zoo
+					<li>Tiny Tower
+					<li>Cityville
+				</ul>
+		</div>
+
+		<div class='four columns add-bottom list-spacing-fix caption'>
+			<hr class='add-top'>
+			<p><strong>Currently Playing</strong></p>
+				<ul>
+					<li>Disco Zoo
+					<li>X-COM: Enemy Unknown
+					<li>Red Dead Redemption
+					<li>2048
+					<li>Nimblequest
+				</ul>
+		</div>
+
+		<div class='four columns add-bottom list-spacing-fix caption omega'>
+			<hr class='add-top'>
+			<p><strong>Fav. RPG's</strong></p>
+				<ul>
+					<li>FF6
+					<li>Chrono Trigger
+					<li>Fallout: New Vegas
+					<li>FF4
+					<li>Fable
+				</ul>
+		</div>
+		";
+
+		$job_details="
+			<h6>Visual Designer</h6>
+			<p>Kabam - San Francisco, CA</p>
+			<p>Kabam is the leader in the western world for free-to-play core games with 1st and 3rd party published titles available on mobile devices via the Apple Store, Google Play and on the Web via Facebook, Yahoo, Kabam.com and other leading platforms. In 2013 Kabam revenues grew by 100 percent to more than $360 million. Kabam has 800 employees across three continents, with corporate headquarters in San Francisco. The company's investors include Google, Warner Brothers, MGM, SK Telecom, Intel, Canaan Partners, Redpoint Ventures and Pinnacle Ventures. More information about Kabam can be found at www.kabam.com.</p> 
+			<p>The Visual Designer will be responsible for creating all manner of product marketing and advertising creative for Kabam’s first party studio’s games. </p>
+			<hr>
+			<h6>WHAT YOU'LL DO:</h6>
+			<p>Team: First Party Marketing Art</p>
+			<p>The First Party Marketing Art Team is responsible for creating all storefront marketing assets, promotional vehicles and campaigns, banner ad and video/rich media/banner ad creative for User Acquisition, all supported by rigorous performance testing and localization for between 12 and 15 languages. We strive to deliver all work in a timely manner and always adhere to pre-determined schedules. Our function can be summed up as follows: innovate, create, communicate, test, iterate, localize, optimize. Our team also supports the production of campaigns produced by external partners and agencies by contributing to concept development, art/creative direction, feedback, asset support. </p>
+			<hr>
+			<h6>Day to day:</h6>
+			<li>Work with marketing art team to develop and iterate advertising concepts to test on a weekly basis </li>
+			<li>Create advertising concepts that can be resized/re-purposed for a multitude of sizes, and a number of delivery platforms (static/animated gif, interactive html 5, video) </li>
+
+			<li>Create meticulous master ad layouts of top-performing creative that will be sent out for resizing, localization, and/or interactive production on a weekly basis </li>
+
+			<li>Create/design brand/product marketing and promotional assets for all storefronts informed by existing brand art style and performance marketing data </li>
+
+			<li>Support Product Marketing, BizDev and Lifecycle/emil/XP teams by handling requests for assets and promotional executions </li>
+
+			<li>Provide feedback and direction for the creation of key art assets produced by external agencies </li>
+
+			<li>Collaborate with video/multimedia artist to generate ideas and storyboards for : 30 and : 15 User Acquisition video ad units</li> 
+			<li>Maintain and adhere to strict file preparation, file structure and naming convention guidelines </li>
+			<li>Prepare all master psd files such that resizing and localization is as streamlined as possible. </li>
+			<li>Career Progression: This role is a mid-level position that will be integral to Kabam’s User Acquisition, Product Marketing, BizDev and Lifecycle marketing success</li> 
+			<hr>
+			<h6>Benefits:</h6>
+			<li>Full Health, Dental, and Vision; 401k matching; $250 gym reimbursement; $1000 per year educational stipend; daily catered lunches; tons of snacks, drinks, etc. </li>
+			<hr>
+			<h6>Education:</h6>
+			<li>Bachelor’s degree or certificate for Art, Design or other related field or equivalent work experience. </li>
+			<hr>
+			<h6>Years Experience:</h6>
+			5+ years of experience creating and producing both advertising and storefront marketing assets in the mobile games space. </p>
+			<hr>
+			<h6>MUST Have Experience:</h6>
+			<li>Exceptional Adobe CS skills (digital painting/retouching skills a plus) </li>
+			<li>Conception/Creation of ad campaigns for mobile games </li>
+			<li>Creation of iOS and Google Play launch marketing assets – screenshots, icons, featuring art </li>
+			<li>The utmost in familiarity with the above assets’ specs </li>
+			<li>A keen eye for color, composition, layout, typography </li>
+			<li>Top-notch organizational skills – file management and spec documentation </li>
+			<li>Self-motivated creative problem solver </li>
+			<li>Excellent interpersonal skills </li>
+		";
+		$rubiks=true;
+		$yayray=true;
+
+		$followup='
+			<hr class="caption">
+			<div class="space-page">
+				<p class="remove-bottom">August 20, 2014</p>
+				<h5 class="add-bottom">Interview for third-party visual designer</h5>
+				<p class="add-bottom">I\'ve included some things below that may be relevant to the conversation at hand.</p>
+				
+				<h5>WIRED magazine</h5>
+				<p>Spot illustrations for a Norton advertorial in the September 2014 issue of Wired magazine. Not yet out in newstands, layout not final.</p>
+				
+				<a href="img/wired/car.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/wired/car.jpg"></a>
+				<a href="img/wired/three.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/wired/three.jpg"></a>
+
+				<h5>Something....darker</h5>
+				
+				<a href="img/kabam/hell-fire.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/kabam/hell-fire.jpg"></a>
+
+				<p>I have been trying to make some art works in the style of a Kabam game to gear up for the next Kabam interview. I tried to emulate a workflow that I thought I would be going through here. I\'ve included the original pieces I worked off to show my work process.</p>
+
+				<div class="four columns alpha">
+					<a href="img/kabam/perona.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/kabam/perona.jpg"></a>
+				</div>
+				<div class="four columns">
+					<a href="img/kabam/castle.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/kabam/castle.jpg"></a>
+				</div>
+				<div class="four columns omega">
+					<a href="img/kabam/cloud.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/kabam/cloud.jpg"></a>
+				</div>
+				<div class="clear"></div>
+				
+				<h5>Lesconcierges</h5>
+				<a href="img/lesconcierges/01.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/lesconcierges/01.jpg"></a>
+				
+				<div class="four columns  alpha">
+					<a href="img/lesconcierges/08.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/lesconcierges/08.jpg"></a>
+				</div>
+				<div class="four columns">
+					<a href="img/lesconcierges/09.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/lesconcierges/09.jpg"></a>
+				</div>
+				<div class="four  columns  omega">
+					<a href="img/lesconcierges/02.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/lesconcierges/02.jpg"></a>
+				</div>
+
+				<p>I do understand your concerns and I hope that this helps convince you that I can design in other styles given the opportunity! Please let me know if you still have doubts.</p>
+				<p>Ray</p>
+
+			</div>';
+
+		break;		
 }
 

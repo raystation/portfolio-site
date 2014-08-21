@@ -56,6 +56,8 @@ RewriteRule ^tiger-tiger$ work?project=tiger-tiger
 RewriteRule ^portfolio-site$ work?project=portfolio-site
 RewriteRule ^lesconcierges$ work?project=lesconcierges
 
+RewriteRule ^kabam$ hire-me?id=9999
 RewriteRule ^bigfish$ hire-me?id=510
 RewriteRule ^zenpayroll$ hire-me?id=zen
+RewriteRule ^dropcam$ hire-me?id=dropcam
 

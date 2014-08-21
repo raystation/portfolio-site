@@ -1695,4 +1695,19 @@ if ( $title == "LesConcierges" ) {
 		array("file" => "09.jpg", "alt" => "A survey is given afterwards to ensure quality"),
 	);
 
+	$other="
+		<div class='eight columns alpha add-bottom'>
+			<a href='img/lesconcierges/sketch2.jpg' data-lightbox='les'><img class='scale-with-grid' src='img/lesconcierges/sketch2.jpg'></a>
+		</div>
+		<div class='eight columns omega add-bottom'>
+			<a href='img/lesconcierges/sketch3.jpg' data-lightbox='les'><img class='scale-with-grid' src='img/lesconcierges/sketch3.jpg'></a>
+		</div>
+		<div class='eight columns alpha add-bottom'>
+			<a href='img/lesconcierges/sketch4.jpg' data-lightbox='les'><img class='scale-with-grid' src='img/lesconcierges/sketch4.jpg'></a>
+		</div>
+		<div class='eight columns omega add-bottom'>
+			<a href='img/lesconcierges/sketch5.jpg' data-lightbox='les'><img class='scale-with-grid' src='img/lesconcierges/sketch5.jpg'></a>
+		</div>		
+	";
+
 } //end LESCONCIERGES
