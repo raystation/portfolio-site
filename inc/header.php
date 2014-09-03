@@ -9,8 +9,9 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Ray Yuen &#124; <?php echo $title; ?></title>
-	<meta name="description" content="Ray Yuen is a designer and artist working in numerous media: books, games, game design and illustration.">
+	<title>Ray Yuen &#124; <?php pr($title); ?></title>
+	<meta name="description" content="<? 
+	if(!is_null($meta_description)){ echo $meta_description; } else { echo "Ray Yuen is a designer and artist working in numerous media: books, games, game design and illustration.";}; ?>">
 	<meta name="author" content="Ray Yuen">
 	<meta name="keywords" content="portfolio, design, illustration, web design">
 
@@ -20,7 +21,7 @@
 	
 	<!-- Mobile Specific Metas
   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, ma;ximum-scale=1">
 
 	<!-- CSS
   ================================================== -->

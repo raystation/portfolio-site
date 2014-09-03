@@ -1,7 +1,14 @@
 <?php 
 
-$loaded=true;
-//order of the portfolio pieces
+
+function pr($var){
+	if ( !is_null($var) ) {
+		echo $var;
+		return true;
+	} else {
+		return false;
+	}
+}
 
 $works = array(
 	array( "name" => "Pok&eacute;mon","path" => "pokemon","thumb" => "svg" ), 
@@ -23,6 +30,7 @@ $works = array(
 	array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit", "thumb" => "jpg" ),
 	// array( "name" => "Portfolio Site","path" => "portfolio-site", "thumb" => "jpg" ),
 	array( "name" => "LesConcierges","path" => "lesconcierges", "thumb" => "jpg" ),
+	array( "name" => "Wired","path" => "wired", "thumb" => "jpg" ),
 	// array( "name" => "idibon","path" => "idibon","thumb" => "jpg" ),
 	// array( "name" => "Nerd Comics", "path" => "nerd-comics", "thumb" => "jpg" ),
 );
@@ -297,6 +305,7 @@ if ( $title == "Museyon Guides" ) {
 	$path="img/museyon-guides/";
 	$template="company";
 	$logo="svg";
+	$meta_description="I worked for a travel/history book company laying out their books.";
 	$description = '
 		"Smart guide books for travel junkies, culture-vultures, movie lovers and history buffs." Museyon Guides, a small publishing startup in New York, needed someone to design and layout their books. Their books liked to focus on the art, film and music of different places around the globe. 
 		</p><p>
@@ -1662,6 +1671,34 @@ if ( $title == "Portfolio Site" ) {
 	);
 
 } //end PORTFOLIO SITE
+
+
+//  #WIRED
+// ===============================
+
+if ( $title == "Wired" ) {
+
+	$path="img/wired/";
+
+	$description="Mobile emitter Midochlorians gravity well temporal vortex matter condensation navcomputer servomotors android warp core breech data sphere. Psychic paper non-corporeal stasis cube carbon scoring quantum slipstream drive inverse tachyon beam seismic detector telepathic-barrier quarantine beacon inverse phasing. Power converter neutrino emissions deflector dish transwarp conduits antiproton weapon, antimatter injector warp drive proton bursts magnetic deflection plasma torpedo. Energy field subspace bio-electric dampening field plasma coolant coolant antiproton subsonic field emitter, cochranes time controller time corridor. Progenitor warp core photon torpedo tachyon particles thermal exhaust port, nanoprobes transmat quantum phase soul extractor black star.</p>
+		<img src='img/wired/family.jpg' class='scale-with-grid'>
+		<img src='img/wired/rejected-01.jpg' class='scale-with-grid'>
+	";
+	
+	$sidebar="Wired Magazine";
+
+	$tools=array(
+		array("skill"=>"Illustrator", "percent"=>70),
+		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>20),
+		array("skill"=>"Photoshop", "percent"=>10),
+	);
+
+	$img_info = array(
+		array("file" => "car.jpg", "alt" => ""),
+		array("file" => "three.jpg", "alt" => ""),
+	);
+
+} //end WIRED
 
 //  #LESCONCIERGES
 // ===============================

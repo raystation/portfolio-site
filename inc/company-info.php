@@ -2630,6 +2630,68 @@ case 'experiment':
 
 			</div>';
 
-		break;		
+		break;
+
+	case 'nextlesson':
+		$originaljobposting="http://jobs.nextlesson.org/a/jbb/job-details/998594";
+		$logo="http://www.nextlesson.org/siteassets/img/prlogo4.png";
+		$jobTitle="Graphic Designer";
+		$company="Nextlesson";
+		$date="August 25, 2014";
+		$name="Kaila Carty";
+		$email="kaila@nextlesson.org";
+		$hiremepage = downcasespace("http://rayuen.com/hire-me?id=$company");
+
+		$job_details="
+			<p>NextLesson (nextlesson.org) is an education technology startup focused on helping students prepare for the real world. We work with great teachers to build stellar curriculum for students primarily in the 3rd-8th grades.</p>
+
+			<p>We are ready and eager to better merchandise our product! Specifically, we are in need of a graphic designer who can create a cohesive look for our site, curriculum and brand. For about 75% of the work time you would be creating kid-friendly, illustrative graphics for all our curriculum (including cover images, app icons, characters, etc.). The other 25% of the time you will need to do some corporate branding projects (brochures, flyers, signage). </p>
+
+			<p>This is a big opportunity for someone who want to make their mark at a startup. The only thing we are set on is our logo; everything else is fair game and we encourage you to own it!	</p>	
+			<p>About you:</p>
+			<li>Incredible visual portfolio: Highlights your attention to the finest details and the elegance of your craft.
+			<li>Playful style: You have created graphics specifically geared towards kids or have done work that could be considered kid-friendly. We want someone who is excited about getting graphics for students!
+			<li>Broad experience: You've created superb graphic design for web and/or mobile. Your graphic work also translates to print (We offer online and paper copies of our curriculum).
+			<li>Excellent communication skills: You are comfortable working with and enjoy getting input from other team members
+			<li>Social Media Buff: You know what it is and feel confident that you can create pinnable imagery
+			<p>Bonus Points for:</p>
+			<li>Some experience in UI/UX. This is not one the primary focuses of this role but we find an extra brain on this matter to always be helpful.</li>
+			<p>We're a group of smart, driven individuals who also know how to enjoy ourselves and have a good time. We're self-described foodies - we celebrate Pizza Fridays and various team members enjoy bringing treats as afternoon munchies. </p>
+		";
+	
+		$slider='
+			<div class="slick-index">
+				<div><img class="scale-with-grid" src="img/wired/car.jpg"></div>
+				<div><img class="scale-with-grid" src="img/100-principles-of-game-design/slider.jpg"></div>
+				<div><img class="scale-with-grid" src="img/edgeware/slider.jpg"></div>
+				<div><img class="scale-with-grid" src="img/lesconcierges/slider.jpg"></div>
+				<div><img class="scale-with-grid" src="img/monkey-mo/cover.jpg"></div>
+				<div><img class="scale-with-grid" src="img/scavenger-hunt/01-thumb.jpg"></div>
+				<div><img class="scale-with-grid" src="img/project-animore/slider.jpg"></div>
+				<div><img class="scale-with-grid" src="img/indiginauts/bridge.jpg"></div>
+			</div>
+		';
+		$copy="
+			<p class='add-top'>
+				Thanks for sending me a note about your startup. I have been interested in moving into education so I am sending my information along. I am a designer and illustrator with some programming experience. I am looking for a place where I can contribute my unique skills, learn new stuff, meet new people and have fun!
+			</p>
+			<p>
+				I have many years of print experience working in in-house design positions. In the past three years I have explored illustration, programming and publishing. 
+			</p>
+			<p>
+				I linked to three projects which I believe might be of some&nbsp;interest.					
+		";
+
+		$project1=array("path"=>"indiginauts","name"=>"Indignauts", "type"=>"jpg");
+		$project1["desc"]="Point and click adventure game geared toward tablet devices.";
+
+		$project2=array("path"=>"color-chameleon","name"=>"Color Chameleon","type"=>"jpg");
+		$project2["desc"]="Game concept for a runner.";
+
+		$project3=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
+		$project3["desc"]="Unrealized <span class='nobreak'>free-to-play</span> game concept about mixing animal parts&nbsp;up.";
+
+
+	break;		
 }
 

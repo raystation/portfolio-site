@@ -53,6 +53,7 @@
 
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript">
+		//TODO: only echo the stuff we need for each page, boolean value from work-info.php
 		$(document).ready(function(){
 			$('.slick').slick({
 			  accessibility: true,
@@ -67,8 +68,11 @@
 			  lazyLoad: 'progressive',
 			  arrows: false,
 			  autoplay: true,
+			  autoplaySpeed: 4000,
+			  speed: 4000,
 			  dots: true,
-			  fade: true
+			  fade: true,
+			  pauseOnHover: false
 			});
 		});		
 	</script>

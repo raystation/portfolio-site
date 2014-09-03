@@ -1,6 +1,9 @@
 <?php 
 	$project = $_GET["project"];
 	$section="work";
+
+	// TODO:automatically find out what the title of the post is
+	
 	switch ( $project ) {
 		default:
 		$pageTitle = "Ray Yuen | Work";
@@ -161,6 +164,10 @@
 		case 'lesconcierges':
 		$title = 'LesConcierges';
 		break;
+
+		case 'wired':
+		$title = 'Wired';
+		break;		
 	}
 	
 if ( is_null($title) ) { $title = "Work"; }
