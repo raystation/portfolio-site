@@ -679,7 +679,7 @@ if ( $title == "Scavenger Hunt" ) {
 		My first idea was to perhaps to do a "Family Circus" style map showing a kid walking around the museum. I never did figure out the best way to represent three levels without a lot of weird perspective glitches. This is what lead me to the scavenger hunt idea. T-shirt real estate wise, it was more forgiving and allowed me more freedom with the  space on the shirt.
 		</p>
 		<a href="img/scavenger-hunt/ref/familycircus-hq.jpg" data-lightbox="familycircus" data-title="Family Circus map"><img src="img/scavenger-hunt/ref/familycircus.jpg" class="scale-with-grid2 add-bottom"></a>
-		<p>It did not win the grand prize, however the museum still wanted to use the design and according to the representative at Threadless, it is now being sold at the museum gift shop. They were, however, too cheap to send me a sample so I don’t have actual&nbsp;photos.';
+		<p>It did not win the grand prize, however the museum still wanted to use the design and according to the representative at Threadless, it is now being sold at the museum gift shop.';
 
 	$sidebar = '
 		T-shirt design for Threadless.com</p>

@@ -370,6 +370,7 @@ function list_new_favorite_things() {
 			"ESPN 30 for 30 documentaries",
 			"George Takei",
 			"Bravest Warriors",
+			"Schwings",
 		)
 	);
 	return $list;
@@ -401,7 +402,7 @@ function list_videogame_backlog() {
 
 function list_funny_city_names() {
 	$list = array(
-		"name"=>"Video Game backlog",
+		"name"=>"Funny City Names",
 		"list"=>array(
 			"Albuquerque",
 			"Sheboygan",

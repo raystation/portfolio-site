@@ -58,7 +58,7 @@ blockquote, q {
   quotes: none;
 }
 
-/* line 43, sass/_base.scss */
+/* line 42, sass/_base.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -266,14 +266,14 @@ ul.disc {
   list-style: disc outside;
 }
 
-/* line 112, sass/_base.scss */
+/* line 111, sass/_base.scss */
 ul ul, ul ol,
 ol ol, ol ul {
   margin: 4px 0 5px 30px;
   font-size: 90%;
 }
 
-/* line 114, sass/_base.scss */
+/* line 113, sass/_base.scss */
 ul ul li, ul ol li,
 ol ol li, ol ul li {
   margin-bottom: 6px;
@@ -314,7 +314,7 @@ fieldset {
   margin-bottom: 20px;
 }
 
-/* line 139, sass/_base.scss */
+/* line 135, sass/_base.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -341,7 +341,7 @@ select {
   padding: 0;
 }
 
-/* line 159, sass/_base.scss */
+/* line 156, sass/_base.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -358,7 +358,7 @@ textarea {
   min-height: 60px;
 }
 
-/* line 168, sass/_base.scss */
+/* line 167, sass/_base.scss */
 label,
 legend {
   display: block;
@@ -376,7 +376,7 @@ input[type="checkbox"] {
   display: inline;
 }
 
-/* line 177, sass/_base.scss */
+/* line 176, sass/_base.scss */
 label span,
 legend span {
   font-weight: normal;
@@ -441,7 +441,7 @@ legend span {
   padding: 0;
 }
 
-/* line 26, sass/_skeleton.scss */
+/* line 25, sass/_skeleton.scss */
 .container .column,
 .container .columns {
   float: left;
@@ -467,7 +467,7 @@ legend span {
 }
 
 /* Base Grid */
-/* line 35, sass/_skeleton.scss */
+/* line 34, sass/_skeleton.scss */
 .container .one.column,
 .container .one.columns {
   width: 40px;
@@ -643,7 +643,7 @@ legend span {
     width: 768px;
   }
 
-  /* line 80, sass/_skeleton.scss */
+  /* line 79, sass/_skeleton.scss */
   .container .column,
   .container .columns {
     margin-left: 10px;
@@ -668,7 +668,7 @@ legend span {
     margin-right: 0;
   }
 
-  /* line 86, sass/_skeleton.scss */
+  /* line 85, sass/_skeleton.scss */
   .container .one.column,
   .container .one.columns {
     width: 28px;
@@ -844,13 +844,13 @@ legend span {
     width: 300px;
   }
 
-  /* line 133, sass/_skeleton.scss */
+  /* line 132, sass/_skeleton.scss */
   .container .columns,
   .container .column {
     margin: 0;
   }
 
-  /* line 153, sass/_skeleton.scss */
+  /* line 135, sass/_skeleton.scss */
   .container .one.column,
   .container .one.columns,
   .container .two.columns,
@@ -874,7 +874,7 @@ legend span {
   }
 
   /* Offsets */
-  /* line 170, sass/_skeleton.scss */
+  /* line 156, sass/_skeleton.scss */
   .container .offset-by-one,
   .container .offset-by-two,
   .container .offset-by-three,
@@ -902,13 +902,13 @@ legend span {
     width: 420px;
   }
 
-  /* line 183, sass/_skeleton.scss */
+  /* line 182, sass/_skeleton.scss */
   .container .columns,
   .container .column {
     margin: 0;
   }
 
-  /* line 203, sass/_skeleton.scss */
+  /* line 185, sass/_skeleton.scss */
   .container .one.column,
   .container .one.columns,
   .container .two.columns,
@@ -947,7 +947,7 @@ legend span {
 
 /* Use clearfix class on parent to clear nested columns,
 or wrap each row of columns in a <div class="row"> */
-/* line 225, sass/_skeleton.scss */
+/* line 222, sass/_skeleton.scss */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -960,13 +960,13 @@ or wrap each row of columns in a <div class="row"> */
   height: 0;
 }
 
-/* line 233, sass/_skeleton.scss */
+/* line 232, sass/_skeleton.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 236, sass/_skeleton.scss */
+/* line 235, sass/_skeleton.scss */
 .row,
 .clearfix {
   zoom: 1;
@@ -998,7 +998,7 @@ or wrap each row of columns in a <div class="row"> */
   user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* line 18, sass/_slick.scss */
@@ -1015,7 +1015,7 @@ or wrap each row of columns in a <div class="row"> */
 }
 /* line 29, sass/_slick.scss */
 .slick-loading .slick-list {
-  background: white url(slick/ajax-loader.gif) center center no-repeat;
+  background: #fff url(slick/ajax-loader.gif) center center no-repeat;
 }
 /* line 33, sass/_slick.scss */
 .slick-list.dragging {
@@ -1023,7 +1023,7 @@ or wrap each row of columns in a <div class="row"> */
   cursor: hand;
 }
 
-/* line 41, sass/_slick.scss */
+/* line 38, sass/_slick.scss */
 .slick-slider .slick-list,
 .slick-track,
 .slick-slide,
@@ -1043,7 +1043,7 @@ or wrap each row of columns in a <div class="row"> */
   display: block;
   zoom: 1;
 }
-/* line 56, sass/_slick.scss */
+/* line 55, sass/_slick.scss */
 .slick-track:before, .slick-track:after {
   content: "";
   display: table;
@@ -1100,9 +1100,8 @@ or wrap each row of columns in a <div class="row"> */
   font-weight: normal;
   font-style: normal;
 }
-
 /* Arrows */
-/* line 116, sass/_slick.scss */
+/* line 115, sass/_slick.scss */
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -1899,8 +1898,8 @@ body:after {
 ================================================== */
 /* line 58, sass/style.scss */
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1937,17 +1936,17 @@ h5 {
 a, a:visited {
   color: steelblue;
   text-decoration: none;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out false;
-  -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
 }
 /* line 86, sass/style.scss */
 a:hover, a:visited:hover {
   color: #0d1821;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out false;
-  -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
 }
 
@@ -2145,9 +2144,9 @@ img.scale-with-grid2 {
 }
 /* line 143, sass/style.scss */
 .strikeout:after {
+  -moz-transition: all 0.75s ease-in-out;
+  -o-transition: all 0.75s ease-in-out;
   -webkit-transition: all 0.75s ease-in-out;
-  -moz-transition: all 0.75s ease-in-out false;
-  -o-transition: all 0.75s ease-in-out false;
   transition: all 0.75s ease-in-out;
   border-bottom: 3px solid rgba(70, 130, 180, 0.5);
   content: "";
@@ -2160,16 +2159,16 @@ img.scale-with-grid2 {
 /* line 154, sass/style.scss */
 .underline {
   border-bottom: 3px solid rgba(70, 130, 180, 0.25);
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out false;
-  -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
 }
 /* line 158, sass/style.scss */
 .underline:hover {
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out false;
-  -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
   border-bottom: 3px solid rgba(70, 130, 180, 0.5);
 }
@@ -2192,7 +2191,7 @@ img.scale-with-grid2 {
 /* line 180, sass/style.scss */
 .bio {
   font-size: 1.15em;
-  line-height: 1.35em;
+  line-height: 1.45em;
 }
 
 /* line 185, sass/style.scss */
@@ -2212,9 +2211,9 @@ img.scale-with-grid2 {
 
 /* line 197, sass/style.scss */
 .opacity-fade a > img {
+  -moz-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
   -webkit-transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out false;
-  -o-transition: opacity 0.25s ease-in-out false;
   transition: opacity 0.25s ease-in-out;
 }
 /* line 199, sass/style.scss */
@@ -2282,10 +2281,8 @@ img.scale-with-grid2 {
 }
 /* line 255, sass/style.scss */
 .original-job-details hr, .original-job-details ul, .original-job-details h1, .original-job-details h2, .original-job-details h3, .original-job-details h4, .original-job-details h5, .original-job-details h6 {
-  -webkit-column-span: all;
   -moz-column-span: all;
-  -ms-column-span: all;
-  -o-column-span: all;
+  -webkit-column-span: all;
   column-span: all;
 }
 /* line 256, sass/style.scss */
@@ -2300,15 +2297,11 @@ img.scale-with-grid2 {
 @media only screen and (min-width: 800px) {
   /* line 252, sass/style.scss */
   .original-job-details {
-    -webkit-column-count: 2;
     -moz-column-count: 2;
-    -ms-column-count: 2;
-    -o-column-count: 2;
+    -webkit-column-count: 2;
     column-count: 2;
-    -webkit-column-gap: 1em;
     -moz-column-gap: 1em;
-    -ms-column-gap: 1em;
-    -o-column-gap: 1em;
+    -webkit-column-gap: 1em;
     column-gap: 1em;
   }
 }
@@ -2323,9 +2316,9 @@ img.scale-with-grid2 {
   background-color: white;
   padding: 25px 0 10px 0;
   font-size: 14pt;
+  -moz-transition: all 0.75s ease-in-out;
+  -o-transition: all 0.75s ease-in-out;
   -webkit-transition: all 0.75s ease-in-out;
-  -moz-transition: all 0.75s ease-in-out false;
-  -o-transition: all 0.75s ease-in-out false;
   transition: all 0.75s ease-in-out;
 }
 /* line 283, sass/style.scss */
@@ -2333,16 +2326,16 @@ img.scale-with-grid2 {
   border-bottom: 3px solid #b2cce1;
   padding: 5px 1px;
   color: black;
+  -moz-transition: all 0.75s ease-in-out;
+  -o-transition: all 0.75s ease-in-out;
   -webkit-transition: all 0.75s ease-in-out;
-  -moz-transition: all 0.75s ease-in-out false;
-  -o-transition: all 0.75s ease-in-out false;
   transition: all 0.75s ease-in-out;
 }
 /* line 288, sass/style.scss */
 .headroom .active:hover {
+  -moz-transition: all 0.75s ease-in-out;
+  -o-transition: all 0.75s ease-in-out;
   -webkit-transition: all 0.75s ease-in-out;
-  -moz-transition: all 0.75s ease-in-out false;
-  -o-transition: all 0.75s ease-in-out false;
   transition: all 0.75s ease-in-out;
   border-bottom: 3px solid #8db3d3;
 }
@@ -2394,18 +2387,18 @@ img.scale-with-grid2 {
 }
 /* line 328, sass/style.scss */
 .headroom nav ul li a, .headroom nav ul li a:visited {
-  -webkit-transition: all 0.25s false;
-  -moz-transition: all 0.25s false false;
-  -o-transition: all 0.25s false false;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
   transition: all 0.25s;
   font-weight: 400;
   color: gray;
 }
 /* line 332, sass/style.scss */
 .headroom nav ul li a:hover, .headroom nav ul li a:visited:hover {
-  -webkit-transition: all 0.25s false;
-  -moz-transition: all 0.25s false false;
-  -o-transition: all 0.25s false false;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
   transition: all 0.25s;
   color: black;
 }
@@ -2435,9 +2428,9 @@ img.scale-with-grid2 {
 /* line 368, sass/style.scss */
 .portfolio img {
   opacity: 1;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out false;
-  -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
 }
 /* line 371, sass/style.scss */
@@ -2481,16 +2474,16 @@ img.scale-with-grid2 {
   background-color: #e6e6e6;
   padding: 0;
   margin: 0;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out false;
-  -o-transition: all 0.5s ease-in-out false;
   transition: all 0.5s ease-in-out;
 }
 /* line 422, sass/style.scss */
 .chart > div > div {
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out false;
-  -o-transition: all 0.5s ease-in-out false;
   transition: all 0.5s ease-in-out;
   background-color: #b2cce1;
   margin: 5px 0;
@@ -2498,9 +2491,9 @@ img.scale-with-grid2 {
 }
 /* line 428, sass/style.scss */
 .chart > div:hover .inner {
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out false;
-  -o-transition: all 0.5s ease-in-out false;
   transition: all 0.5s ease-in-out;
   background-color: #d7e4ef;
 }
@@ -2512,9 +2505,9 @@ img.scale-with-grid2 {
   background-color: #c4d8e8;
   padding: 4px;
   margin: 4px 0;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out false;
-  -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
 }
 /* line 442, sass/style.scss */
@@ -2525,9 +2518,9 @@ img.scale-with-grid2 {
 }
 /* line 447, sass/style.scss */
 .tech-skills > div:hover .inner {
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out false;
-  -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
   background-color: #dadada;
 }
@@ -2547,17 +2540,17 @@ img.scale-with-grid2 {
   width: 50px;
   height: 50px;
   border-radius: 5px;
+  -moz-transition: background-color 0.25s ease-in-out;
+  -o-transition: background-color 0.25s ease-in-out;
   -webkit-transition: background-color 0.25s ease-in-out;
-  -moz-transition: background-color 0.25s ease-in-out false;
-  -o-transition: background-color 0.25s ease-in-out false;
   transition: background-color 0.25s ease-in-out;
 }
 /* line 467, sass/style.scss */
 .resume-pdf:hover {
   background-color: lightblue;
+  -moz-transition: background-color 0.25s ease-in-out;
+  -o-transition: background-color 0.25s ease-in-out;
   -webkit-transition: background-color 0.25s ease-in-out;
-  -moz-transition: background-color 0.25s ease-in-out false;
-  -o-transition: background-color 0.25s ease-in-out false;
   transition: background-color 0.25s ease-in-out;
 }
 
@@ -2583,16 +2576,16 @@ img.scale-with-grid2 {
 /* line 483, sass/style.scss */
 #history strong a, #history strong a:visited {
   color: black;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out false;
-  -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
 }
 /* line 486, sass/style.scss */
 #history strong a:hover, #history strong a:visited:hover {
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out false;
-  -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
   color: steelblue;
 }
@@ -2612,17 +2605,17 @@ footer a:link, footer a:visited {
   font-family: inherit;
   line-height: 1.75em;
   color: #878787;
-  -webkit-transition: all 1s false;
-  -moz-transition: all 1s false false;
-  -o-transition: all 1s false false;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 /* line 514, sass/style.scss */
 footer a:link:hover, footer a:visited:hover {
   color: #080808;
-  -webkit-transition: all 1s false;
-  -moz-transition: all 1s false false;
-  -o-transition: all 1s false false;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
@@ -2632,7 +2625,6 @@ footer a:link:hover, footer a:visited:hover {
   font-weight: 400;
   src: local("Arvo"), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/BM-nqL-L5PgjKPDNaleWB_esZW2xOQ-xsNqO47m55DA.woff) format("woff");
 }
-
 @font-face {
   font-family: 'Arvo';
   font-style: normal;
