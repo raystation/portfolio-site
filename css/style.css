@@ -2133,7 +2133,7 @@ hr {
 }
 
 /* line 139, sass/style.scss */
-img.scale-with-grid2 {
+img.scale-with-grid2, .portfolio img {
   max-width: 100%;
   height: auto;
 }
@@ -2433,19 +2433,19 @@ img.scale-with-grid2 {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-/* line 371, sass/style.scss */
+/* line 372, sass/style.scss */
 .portfolio img:hover {
   opacity: 0.65;
 }
 
-/* line 378, sass/style.scss */
+/* line 379, sass/style.scss */
 .bar-chart {
   width: 90%;
   margin: 0 auto;
   padding: 0;
   margin-bottom: 1em;
 }
-/* line 384, sass/style.scss */
+/* line 385, sass/style.scss */
 .bar-chart .inner {
   font-size: 8pt;
   font-family: Verdana,sans-serif;
@@ -2457,17 +2457,17 @@ img.scale-with-grid2 {
   margin-bottom: 0.5em;
 }
 
-/* line 401, sass/style.scss */
+/* line 402, sass/style.scss */
 .space-page h5 {
   padding-top: 2em;
 }
-/* line 404, sass/style.scss */
+/* line 405, sass/style.scss */
 .space-page img {
   margin-bottom: 1em;
   border: 1px solid silver;
 }
 
-/* line 414, sass/style.scss */
+/* line 415, sass/style.scss */
 .chart > div {
   font: 8pt sans-serif;
   font-weight: bold;
@@ -2479,7 +2479,7 @@ img.scale-with-grid2 {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 422, sass/style.scss */
+/* line 423, sass/style.scss */
 .chart > div > div {
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -2489,7 +2489,7 @@ img.scale-with-grid2 {
   margin: 5px 0;
   padding: 4px 0 4px 10px;
 }
-/* line 428, sass/style.scss */
+/* line 429, sass/style.scss */
 .chart > div:hover .inner {
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -2498,7 +2498,7 @@ img.scale-with-grid2 {
   background-color: #d7e4ef;
 }
 
-/* line 434, sass/style.scss */
+/* line 435, sass/style.scss */
 .tech-skills > div {
   font: 8pt sans-serif;
   font-weight: bold;
@@ -2510,13 +2510,13 @@ img.scale-with-grid2 {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-/* line 442, sass/style.scss */
+/* line 443, sass/style.scss */
 .tech-skills > div > div {
   background-color: #b2cce1;
   margin: 5px 0;
   padding: 4px 0 4px 10px;
 }
-/* line 447, sass/style.scss */
+/* line 448, sass/style.scss */
 .tech-skills > div:hover .inner {
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
@@ -2525,7 +2525,7 @@ img.scale-with-grid2 {
   background-color: #dadada;
 }
 
-/* line 453, sass/style.scss */
+/* line 454, sass/style.scss */
 .resume-title {
   margin: 0;
   color: steelblue;
@@ -2533,7 +2533,7 @@ img.scale-with-grid2 {
   padding: 0;
 }
 
-/* line 460, sass/style.scss */
+/* line 461, sass/style.scss */
 .resume-pdf {
   background-color: lavender;
   padding: 10px;
@@ -2545,7 +2545,7 @@ img.scale-with-grid2 {
   -webkit-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
 }
-/* line 467, sass/style.scss */
+/* line 468, sass/style.scss */
 .resume-pdf:hover {
   background-color: lightblue;
   -moz-transition: background-color 0.25s ease-in-out;
@@ -2554,13 +2554,13 @@ img.scale-with-grid2 {
   transition: background-color 0.25s ease-in-out;
 }
 
-/* line 474, sass/style.scss */
+/* line 475, sass/style.scss */
 #history ul {
   list-style: initial;
   list-style-position: inside;
   list-style-type: circle;
 }
-/* line 475, sass/style.scss */
+/* line 476, sass/style.scss */
 #history li {
   margin-bottom: 0.15em;
   padding-left: 1em;
@@ -2568,12 +2568,12 @@ img.scale-with-grid2 {
   max-width: 80%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 475, sass/style.scss */
+  /* line 476, sass/style.scss */
   #history li {
     max-width: 100%;
   }
 }
-/* line 483, sass/style.scss */
+/* line 484, sass/style.scss */
 #history strong a, #history strong a:visited {
   color: black;
   -moz-transition: all 0.25s ease-in-out;
@@ -2581,7 +2581,7 @@ img.scale-with-grid2 {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-/* line 486, sass/style.scss */
+/* line 487, sass/style.scss */
 #history strong a:hover, #history strong a:visited:hover {
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
@@ -2590,17 +2590,17 @@ img.scale-with-grid2 {
   color: steelblue;
 }
 
-/* line 499, sass/style.scss */
+/* line 500, sass/style.scss */
 footer p, footer ul {
   font-size: smaller;
   line-height: 1.75em;
   margin-bottom: 0.25em;
 }
-/* line 505, sass/style.scss */
+/* line 506, sass/style.scss */
 footer li {
   margin-bottom: 0.25em;
 }
-/* line 509, sass/style.scss */
+/* line 510, sass/style.scss */
 footer a:link, footer a:visited {
   font-family: inherit;
   line-height: 1.75em;
@@ -2610,7 +2610,7 @@ footer a:link, footer a:visited {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 514, sass/style.scss */
+/* line 515, sass/style.scss */
 footer a:link:hover, footer a:visited:hover {
   color: #080808;
   -moz-transition: all 1s;

@@ -234,13 +234,14 @@ function workthumb($num) {
 } 
 
 function skeleton_print_thumbnail_4($array) {
-	echo '<div class="sixteen columns portfolio">'."\n";
+
+	echo '</div><div class="container portfolio">'."\n";
 	global $description;
 
 	//adds home link if it's not the index page
-	if ( $description !== NULL ) { 
+	if ( isset($description) ) { 
 		// echo '<hr>'."\n"; 
-		echo '<hr><div class="add-top add-bottom"><a href="index">&#11013; Back to home</a></div>'."\n"; 
+		echo '<div class="sixteen columns add-bottom"><hr><a href="index">&#11013; Back to home</a></div>'."\n"; 
 	} 
 
 	// populates page with thumbnails from $work	
@@ -248,32 +249,30 @@ function skeleton_print_thumbnail_4($array) {
 	$alphacount;
 	$omegacount;
 	foreach ( $array as $array_item ) {
-		echo "\t".'<div class="four columns'; 
-		if ( $count == 1 or $count == $alphacount ) { echo ' alpha'; $alphacount=$count+4; } 
-		if ( $count == 4 or $count == $omegacount ) { echo ' omega'; }
-		echo '"><a href="'.$array_item[path].'" alt="'.html_entity_decode($array_item[name]).'"><img class="scale-with-grid" src="img/'.$array_item[path].'/thumb.'.$array_item[thumb].'"></a><p>'.$array_item[name].'</p></div>'."\n";
-		if ( $count == 4 or $count == $omegacount ) { echo "</div>\n<div class='sixteen columns portfolio'>\n"; $omegacount=$count+4; }
-		$count++;
+		echo '<div class="four columns"><a href="'.$array_item["path"].'" alt="'.html_entity_decode($array_item["name"]).'"><img src="img/'.$array_item["path"].'/thumb.'.$array_item["thumb"].'"></a><p>'.$array_item["name"].'</p></div>';
+		if ( $count == 4 ) { 
+			echo "<div class='clear'></div>";
+			$count = 1;
+		} else {
+			$count++;
+		}
 	}
-	echo "</div>";
 }
 
 function skeleton_print_page_thumbnail_4($array) {
-	echo '<div class="sixteen columns portfolio">'."\n";
 	global $description;
 	global $path;
 
-	// populates page with thumbnails from $work	
+	// populates page with thumbnails from $work
 	$count=1;
-	$alphacount;
-	$omegacount;
 	foreach ( $array as $array_item ) {
-		echo "\t".'<div class="four columns'; 
-		if ( $count == 1 or $count == $alphacount ) { echo ' alpha'; $alphacount=$count+4; } 
-		if ( $count == 4 or $count == $omegacount ) { echo ' omega'; }
-		echo '"><a href="'.$array_item[path].'" alt="'.html_entity_decode($array_item[name]).'"><img class="scale-with-grid" src="img/'.$array_item[path].'/thumb.'.$array_item[thumb].'"></a><p>'.$array_item[name].'</p></div>'."\n";
-		if ( $count == 4 or $count == $omegacount ) { echo "</div>\n<div class='sixteen columns portfolio'>\n"; $omegacount=$count+4; }
-		$count++;
+		echo "\t".'<div class="four columns"><a href="'.$array_item["path"].'" alt="'.html_entity_decode($array_item["name"]).'"><img class="scale-with-grid" src="img/'.$array_item["path"].'/thumb.'.$array_item["thumb"].'"></a><p>'.$array_item["name"].'</p></div>'."\n";
+		if ( $count == 4 ) { 
+			echo "<div class='clear'></div>";
+			$count = 1;
+		} else {
+			$count++;
+		}
 	}
 	echo "</div>";
 }
