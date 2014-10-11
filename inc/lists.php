@@ -35,13 +35,14 @@ function random_list_items($array,$quantity=5) {
 	return $random_list;
 }
 
-function print_list( $array,$randomize=false,$results=5,$heading=5 ){
+function print_list( $array, $randomize=false, $results=5, $heading=5 ){
+	// $heading is the size of the headline 
 	
 	// check to make sure the variables are not NULL
-	if ( !is_null( $array["name"] ) ) { $name=$array["name"]; }
-	if ( !is_null( $array["list"] ) ) { $array=$array["list"]; }
+	if ( isset( $array["name"] ) ) { $name=$array["name"]; }
+	if ( isset( $array["list"] ) ) { $array=$array["list"]; }
 
-	if ( $randomize==true ) { 
+	if ( $randomize == true ) { 
 		if ( count($array) < $results ) { 
 			$numbers_array=array_rand($array, count($array) ); 
 			shuffle($numbers_array); 
@@ -49,7 +50,7 @@ function print_list( $array,$randomize=false,$results=5,$heading=5 ){
 			$numbers_array=array_rand($array,$results); 
 			shuffle($numbers_array); 
 		}
-	} 
+	}
 
 	if ( $randomize==false ) {
 			if ( count($array) < $results ) { 
@@ -232,8 +233,10 @@ function list_games_playing() {
 	$container = array(
 		"name"=>"Games Playing",
 		"list"=>array(
-			"X-COM: Enemy Unknown",
+			"Grand Theft Auto 5",
 			"Red Dead Redemption",
+			"Mario Kart 7",
+			"X-COM: Enemy Unknown",
 			"Disco Zoo",
 			"Nimblequest",
 		)

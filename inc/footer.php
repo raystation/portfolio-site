@@ -35,8 +35,8 @@
 
 					<p>All works &copy; <?php $date=get_date();echo $date["year"];?> Raymond Yuen.</p>
 					<p>Please do not reproduce without expressed written consent.</p>
-					<p>Built with Skeleton.</p>
-					<p><?php if ( $pun_status !== true ) { $pun=print_pun();echo $pun;} ?></p>
+					<p class="add-bottom">Built with Skeleton.</p>
+					<p><? $pun = print_pun(); echo $pun; ?></p>
 
 			</div>
 
@@ -96,18 +96,16 @@
 
 	<script src="js/jquery.tooltipster.min.js"></script>
 	<script>
-        
         $(document).ready(function() {
             $('.tooltip').tooltipster({
             	animation: 'fade',
             	delay: 200
             });
         }); 
-
 	</script>
 	<script src="js/job-details.js"></script>
 	<?php  
-		if (!is_null($plugin)) {
+		if ( isset($plugin) ) {
 			echo "<script src='".$plugin[0]."'></script>";
 			echo "<script>".$plugin[1]."</script>";
 		}
