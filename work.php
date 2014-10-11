@@ -1,5 +1,7 @@
-<?php 
-	$project = $_GET["project"];
+<?	
+	$query_age = (isset($_GET['query_age']) ? $_GET['query_age'] : null); 
+	$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
+	
 	$section="work";
 
 	// TODO:automatically find out what the title of the post is
@@ -170,9 +172,9 @@
 		break;		
 	}
 	
-if ( is_null($title) ) { $title = "Work"; }
+if ( !isset($title) ) { $title = "Work"; }
 include('inc/header.php');
-if ( !is_null($project) ) { 
+if ( isset($project) ) { 
 	$template="inc/templates/".$template.".php";
 	if ( file_exists( $template ) ) { include $template; }
 	else { include 'inc/templates/basic.php'; }
