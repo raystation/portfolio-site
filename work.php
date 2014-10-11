@@ -1,5 +1,4 @@
 <?	
-	// $query_age = (isset($_GET['query_age']) ? $_GET['query_age'] : null); 
 	$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
 	$section="work";
 

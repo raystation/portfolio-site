@@ -324,7 +324,7 @@ function html_list_link($array,$h=5) {
 	echo "<h".$h.">".$name."</h".$h."><ul>";
 
 	foreach ($array as $list_item) {
-		echo "<li><a href='http://".$list_item[url]."' target='_blank'>".$list_item[item]."</a></li>";
+		echo "<li><a href='http://".$list_item["url"]."' target='_blank'>".$list_item["item"]."</a></li>";
 	}
 	echo "</ul>";
 }

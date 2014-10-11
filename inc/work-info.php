@@ -91,7 +91,7 @@ function html_print_tech_skills() {
 		} else {
 			$percent=$list_item["percent"];
 			$opacity=$percent*0.01;
-			echo '<div style="width: '.$percent.'%;background-color:rgba('.$bkgcolor.','.$opacity.');">'.$list_item[skill].'<span class="float-right nobreak">'.$percent.'</span></div>';
+			echo '<div style="width: '.$percent.'%;background-color:rgba('.$bkgcolor.','.$opacity.');">'.$list_item["skill"].'<span class="float-right nobreak">'.$percent.'</span></div>';
 		}
 	}
 }
@@ -262,7 +262,7 @@ function skeleton_print_thumbnail_4($array) {
 function skeleton_print_page_thumbnail_4($array) {
 	global $description;
 	global $path;
-
+	echo "</div><div class='container portfolio'>";
 	// populates page with thumbnails from $work
 	$count=1;
 	foreach ( $array as $array_item ) {
@@ -1679,9 +1679,13 @@ if ( $title == "Wired" ) {
 
 	$path="img/wired/";
 
-	$description="Mobile emitter Midochlorians gravity well temporal vortex matter condensation navcomputer servomotors android warp core breech data sphere. Psychic paper non-corporeal stasis cube carbon scoring quantum slipstream drive inverse tachyon beam seismic detector telepathic-barrier quarantine beacon inverse phasing. Power converter neutrino emissions deflector dish transwarp conduits antiproton weapon, antimatter injector warp drive proton bursts magnetic deflection plasma torpedo. Energy field subspace bio-electric dampening field plasma coolant coolant antiproton subsonic field emitter, cochranes time controller time corridor. Progenitor warp core photon torpedo tachyon particles thermal exhaust port, nanoprobes transmat quantum phase soul extractor black star.</p>
+	$description="Illustration for an \"advertorial\" for Norton in Wired Magazine. Norton wanted to show that in this digital life of ours, our precious, precious memories are all stored on our personal devices that can be lost or broken. For this adventuring family, the best solution is to use Norton services to back up your data.
+	</p>
 		<img src='img/wired/family.jpg' class='scale-with-grid'>
 		<img src='img/wired/rejected-01.jpg' class='scale-with-grid'>
+	<p>
+	The first idea–dad taking an underwater portrait–was rejected. I actually didn't get a reason, but so I hustled with the other option of the family in a road-trip scenario.
+	</p>
 	";
 	
 	$sidebar="Wired Magazine";
