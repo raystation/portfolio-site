@@ -305,12 +305,12 @@ function list_friends() {
 			array("item" => "Simon Yuen", "url" => "simonyuen.com"),
 			array("item" => "Peter Oumanski", "url" => "peteroumanski.com"),
 			array("item" => "Malado Baldwin", "url" => "maladobaldwin.com"),
-			array("item" => "Data Blick / Anya Hearn", "url" => "datablick.com"),
+			array("item" => "Data Blick / Anya A'Hearn", "url" => "datablick.com"),
 			array("item" => "Tim Eggert", "url" => "timeggert.com"),
 			array("item" => "Sarah Walko", "url" => "sarahwalko.com"),
 			array("item" => "Marina Grinshpun", "url" => "marinagrinshpun.com"),
 			array("item" => "Jen Noto", "url" => "jennoto.com"),
-			array("item" => "Brendan Leach", "url" => "iknowashortcut.com"),
+			// array("item" => "Brendan Leach", "url" => "iknowashortcut.com"),
 		)
 	);
 	return $list;

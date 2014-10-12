@@ -9,7 +9,7 @@
  			array("name" => "Simon Yuen", "link" => "simonyuen.com"),
  			array("name" => "Malado Baldwin", "link" => "maladobaldwin.com"),
  			array("name" => "Marina Grinshpun", "link" => "marinagrinshpun.com"),
- 			array("name" => "Data Blick / Anya Hearn", "link" => "datablick.com"),
+ 			array("name" => "Data Blick / Anya A'Hearn", "link" => "datablick.com"),
  		);
  	}
 <ul>

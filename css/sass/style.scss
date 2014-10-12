@@ -20,7 +20,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 // VARIABLES ==================================================
-$bkg-color: white;
+$bkg-color: whitesmoke;
 $txt-color: lighten(black,30%);
 $link-color: steelblue;
 $footer-color: darken($bkg-color,7%);
@@ -93,7 +93,7 @@ a,a:visited {
 =========================== */
 
 .dots 				{ background-image: url('.../img/bg2.gif');	}
-@each $color in steelblue, silver, white, yellow, whitesmoke, greenyellow, lavender {
+@each $color in "steelblue", "silver", "white", "yellow", "whitesmoke", "greenyellow", "lavender" {
 	.#{$color} { background-color: #{$color}; }
 }
 
@@ -228,8 +228,9 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		// @extend .underline;
 	}
 	p {
-	font-size: 16pt;
-	line-height: 1.5em;
+		font-size: 16pt;
+		line-height: 1.5em;
+		max-width: 32em;
 	}
 }
 
@@ -347,6 +348,18 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 .headroom--unpinned {
 	top: -100px;
 	// transform: translateY( -100% );
+}
+
+// INDEX
+// ======================================
+
+.index-text {
+	li { 
+		// font-size: 16pt;
+		font-weight: 100;
+		max-width: 32em;
+		line-height: 1.75em;
+	}
 }
 
 // PORTFOLIO PAGE 
@@ -518,7 +531,6 @@ footer {
 		}
 	}
 }
-
 
 // added to test google fonts when offline
 

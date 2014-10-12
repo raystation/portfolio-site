@@ -61,4 +61,5 @@ RewriteRule ^kabam$ hire-me?id=9999
 RewriteRule ^bigfish$ hire-me?id=510
 RewriteRule ^zenpayroll$ hire-me?id=zen
 RewriteRule ^dropcam$ hire-me?id=dropcam
+RewriteRule ^nextlesson$ hire-me?id=nextlesson
 

@@ -11,9 +11,11 @@ function pr($var){
 }
 
 $works = array(
-	array( "name" => "Pok&eacute;mon","path" => "pokemon","thumb" => "svg" ), 
 	array( "name" => "Suspended Belief Studios","path" => "suspended-belief-studios", "thumb" => "jpg" ), 
+	array( "name" => "Pok&eacute;mon","path" => "pokemon","thumb" => "svg" ), 
+	array( "name" => "Wired","path" => "wired", "thumb" => "jpg" ),
 	array( "name" => "Indiginauts", "path" => "indiginauts", "thumb" => "jpg" ), 
+	array( "name" => "LesConcierges","path" => "lesconcierges", "thumb" => "jpg" ),
 	array( "name" => "The 3", "path" => "the3", "thumb" => "svg" ), 
 	array( "name" => "Museyon Guides", "path" => "museyon-guides", "thumb" => "svg" ), 
 	array( "name" => "Abriendo Puertas / Opening&nbsp;Doors", "path" => "abriendo-puertas",	"thumb" => "jpg" ), 
@@ -29,8 +31,6 @@ $works = array(
 	array( "name" => "Egg Baby","path" => "egg-baby","thumb" => "jpg" ), 
 	array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit", "thumb" => "jpg" ),
 	// array( "name" => "Portfolio Site","path" => "portfolio-site", "thumb" => "jpg" ),
-	array( "name" => "LesConcierges","path" => "lesconcierges", "thumb" => "jpg" ),
-	array( "name" => "Wired","path" => "wired", "thumb" => "jpg" ),
 	// array( "name" => "idibon","path" => "idibon","thumb" => "jpg" ),
 	// array( "name" => "Nerd Comics", "path" => "nerd-comics", "thumb" => "jpg" ),
 );
@@ -277,7 +277,10 @@ function skeleton_print_page_thumbnail_4($array) {
 	echo "</div>";
 }
 
-
+function get_images($dir){
+	$files = array_diff( scandir( $dir ), Array( ".", ".." ) ); 
+	return $files;
+}
 
 // MUSEYON  ========================
 
@@ -1198,7 +1201,7 @@ if ( $title == "Abriendo Puertas / Opening&nbsp;Doors" ) {
 
 	$description = '<em>Abriendo Puertas / Opening Doors</em> is a non-profit dedicated to decreasing the drop-out rate of Latino kids by instilling good behaviors at home. They believe the answer starts at home so their primary focus is on educating their parents. AP/OD holds training sessions where they teach parents different things they could do with their kids to better engage them and acclimate them to a learning environment.
 		</p><p>
-		AP/OD needed an informational site where parents and educators could come to find out more about the organization, where trainings would be, and a place where educators could access teaching materials. After getting approval on the overall look of the site, we built the site based on the Skeleton framework. After a few rounds of going back and forth, we streamlined the content of the site with PHP. They now have beautiful site that looks good on all devices.
+		AP/OD needed an informational site where parents and educators could come to find out more about the organization, where trainings would be, and a place where educators could access teaching materials. After getting approval on the overall look of the site, we built the site based on the Skeleton framework. After a few rounds of going back and forth, we streamlined the content of the site with PHP. They now have a beautiful site that looks great on all&nbsp;devices.
 		';
 	
 	$sidebar = "Responsive Website</p>
