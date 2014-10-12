@@ -439,7 +439,7 @@ if ( $title == "Indiginauts" ) {
 	$path="img/indiginauts/";
 
 	$description = "
-		This idea was the whole reason we started Suspended Belief Games. Based on an illustration I did for a group show in New York, the Indiginauts were space explorers in the vein of Star Fleet. They were peace-loving creatures that explored the stars. Were they decended from humans? Maybe. They loved nothing more than to explore, learn and record for others to see.
+		This idea was the whole reason we started Suspended Belief Games. Based on an illustration I did for a group show in New York, the Indiginauts were space explorers in the vein of Star Fleet. They were peace-loving creatures that explored the stars. Were they decended from humans? Maybe. They loved nothing more than to explore, learn and record for others to&nbsp;see.
 		</p><p>
 		Well, that was the original idea. Now they are wise-cracking repairmen. We developed the game as a simplified <span class='tooltip underline' title='Point and Touch?'>point-and-click</span> geared toward mobile devices. The main goal was to take everything we learned from classic point-and-clicks, like <em>Monkey Island</em>, and streamline and simplify. Top it off with an engaging story, developed characters and fun artwork.
 		</p><p>
@@ -485,9 +485,9 @@ if ( $title == "100 Principles of Game&nbsp;Design" ) {
 	$path="img/100-principles-of-game-design/";
 
 	$description = "
-		Because of a scheduling problem, I was was asked to do the illustrations for a game design book. “Game design you say? This is my area of expertise!” The turnaround was tight, under a month for about 30 spot illustrations. The schedule wasn't the best, but I really wanted to do game illustrations. Exchanging sketches back and forth with the author, we decided that we could have a cast of  characters that could be reused which would greatly speed up the work, as well as establish a visual language.
+		Because of a scheduling problem, I was was asked to do the illustrations for a game design book. “Game design you say? This is my area of expertise!” The turnaround was tight, under a month for about 30 spot illustrations. The schedule wasn't the best, but I really wanted to do game illustrations. Exchanging sketches back and forth with the author, we decided that we could have a cast of  characters that could be reused which would greatly speed up the work, as well as establish a visual&nbsp;language.
 		</p><p>
-		After a month of my regular schedule at work and then spending my time at night creating the illustrations, I was stretched thin. In the end however, I was quite proud of the work and I took another step in mastering a pure vector art style.
+		After a month of my regular schedule at work and then spending my time at night creating the illustrations, I was stretched thin. In the end however, I was quite proud of the work and I took another step in mastering a pure vector art&nbsp;style.
 		";
 	
 	$tools=array(
@@ -1245,7 +1245,7 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 	$description = '
 		Teaming up again with author Lin Fong O\'Neil, we worked together to create another children\'s book. Lin wanted to make another book about another animal in the Chinese zodiac and when she asked me what I wanted to do, I responded with "Monkey!" Monkeys are rad&nbsp;obviously.
 		</p><p>
-		The story follows the adventures of a little boy\'s adventure to the zoo and finding a new best friend. I put a lot of detail into this book and made it somewhat interactive. I hid animals in various spots so as give children an activity to do after they finish.
+		The story follows the adventures of a little boy\'s adventure to the zoo and finding a new best friend. I put a lot of detail into this book and made it somewhat interactive. I hid animals in various spots so as give children an activity to do after they&nbsp;finish.
 		</p>
 
 		<hr>
