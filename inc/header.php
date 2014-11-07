@@ -10,7 +10,7 @@
   ================================================== -->
 	<meta charset="utf-8">
 	<title>Ray Yuen &#124; <?php pr($title); ?></title>
-	<meta name="description" content="<? 
+	<meta name="description" content="<?
 	if(!is_null($meta_description)){ echo $meta_description; } else { echo "Ray Yuen is a designer and artist working in numerous media: books, games, game design and illustration.";}; ?>">
 	<meta name="author" content="Ray Yuen">
 	<meta name="keywords" content="portfolio, design, illustration, web design">
@@ -18,10 +18,10 @@
 	<meta property="og:site_name" content="Ray Yuen. Design + Illustration"/>
 	<meta property="og:url" content="http://rayuen.com"/>
 	<meta itemprop="url" content="http://rayuen.com"/>
-	
+
 	<!-- Mobile Specific Metas
   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, ma;ximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- CSS
   ================================================== -->
@@ -37,7 +37,7 @@
 	<link rel="apple-touch-icon" href="img/icon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-touch-icon-114x114.png">
-	
+
 	<!-- google anal -->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -53,10 +53,10 @@
 </head>
 
 <body>
-		
+
 	<!-- Primary Page Layout
 	================================================== -->
-		
+
 	<header class="navband headroom">
 		<div class="container">
 			<nav class="sixteen columns">
@@ -64,9 +64,9 @@
 				<ul>
 					<li><a class="<?php if ( $section == "work") { echo "active"; } ;?>" href="work">work</a></li>
 					<li><a class="<?php if ( $section == "about") { echo "active"; } ;?>" href="about">about</a></li>
-					
+
 					<?php //<li><a href="projects.php">projects</a></li> ?>
-				</ul>				
+				</ul>
 
 			</nav>
 		</div>
