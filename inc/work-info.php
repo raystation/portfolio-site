@@ -102,9 +102,19 @@ function horizontal_bar_chart_100 ( $data ) {
 function get_emoji(){
 	$emoji_path = "img/emoji";
 	$emojis = get_images( $emoji_path );
+
+	$rand = array();
+
 	for ($i=1; $i < 4; $i++) {
-		$rand = array_rand($emojis);
-		echo "<img src='" . $emoji_path . "/" . $emojis[$rand] . "'>";
+		$random_number = array_rand($emojis);
+		while ( in_array( $random_number, $rand ) ) {
+			$random_number = array_rand($emojis);
+		}
+		$rand[] = $random_number;
+	}
+
+	foreach ($rand as $key => $value) {
+		echo "<img src='" . $emoji_path . "/" . $emojis[$value] . "'>";
 	}
 }
 function get_images($dir){
