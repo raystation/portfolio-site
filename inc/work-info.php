@@ -368,14 +368,14 @@ if ( $title == "Suspended Belief Studios" ) {
 
 	$path="img/suspended-belief-studios/";
 
-	$description = 'Me and my friend Jeremy Klar started this company together. Originally intended to just make games, we have since taken on some web development as well. Originally began in Brooklyn, we moved out to San Francisco to be closer to the gaming scene.'
+	$description = 'Me and my friend Jeremy Klar started this company together. Originally intended to just make games, we started taking on some web development as well. Originally began in Brooklyn, we moved out to San Francisco to be closer to the gaming scene. Our company released two games and went on hiatus shortly after that.'
 	;
 
 	$template="company";
 	$logo="svg";
 
 	$sidebar = "Design studio.</p>
-	<p><a href=\"http://www.suspendedbeliefgames.com\">suspendedbeliefgames.com</a>";
+	<p><a href=\"pages/sb-studios/\" target='_blank' >suspendedbeliefgames.com</a>";
 
 	$img_info = array(
 	);
@@ -457,7 +457,7 @@ if ( $title == "Indiginauts" ) {
 		</p><p>
 		Well, that was the original idea. Now they are wise-cracking repairmen. We developed the game as a simplified <span class='tooltip underline' title='Point and Touch?'>point-and-click</span> geared toward mobile devices. The main goal was to take everything we learned from classic point-and-clicks, like <em>Monkey Island</em>, and streamline and simplify. Top it off with an engaging story, developed characters and fun artwork.
 		</p><p>
-		Currently we are still working on our <a href='http://indiginauts.com' target='_blank'>first build</a>. We are doing internal testing of the game and I am still producing artwork for the&nbsp;game.
+		Here's an <a href='http://indiginauts.com' target='_blank'>initial build</a>.
 		";
 
 	$sidebar = '

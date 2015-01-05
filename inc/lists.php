@@ -237,8 +237,9 @@ function list_games_playing() {
 	$container = array(
 		"name"=>"Games Playing",
 		"list"=>array(
-			"Grand Theft Auto 5",
 			"Bravely Default",
+			"Shovel Knight",
+			"Grand Theft Auto 5",
 			"868-HACK",
 			"FEZ",
 			// "Red Dead Redemption",
@@ -313,6 +314,7 @@ function list_friends() {
 			array("item" => "Simon Yuen", "url" => "simonyuen.com"),
 			array("item" => "Peter Oumanski", "url" => "peteroumanski.com"),
 			array("item" => "Malado Baldwin", "url" => "maladobaldwin.com"),
+			array("item" => "Adelle Marcero", "url" => "adellemarcero.com"),
 			array("item" => "Data Blick / Anya A'Hearn", "url" => "datablick.com"),
 			array("item" => "Tim Eggert", "url" => "timeggert.com"),
 			array("item" => "Sarah Walko", "url" => "sarahwalko.com"),
@@ -382,6 +384,10 @@ function list_new_favorite_things() {
 			"George Takei",
 			"Bravest Warriors",
 			"Schwings",
+			"One Night Ultimate Werewolf",
+			"Marbles the Brain Store",
+			"Mission Workshop bags",
+			"New Balance shoes",
 		)
 	);
 	return $list;

@@ -24,7 +24,7 @@
 			<div class="four columns">
 				<ul>
 					<li><a href="ringtones.php">ringtones</a>
-					<li><a href="jobs">jobs</a>
+					<!-- <li><a href="jobs">jobs</a> -->
 				</ul>
 			</div>
 
