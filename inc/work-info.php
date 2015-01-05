@@ -11,6 +11,8 @@ function pr($var){
 }
 
 $works = array(
+	array( "name" => "Holiday Card 2014","path" => "holiday-2014", "thumb" => "jpg" ),
+	array( "name" => "Adelle Marcero Portfolio Site","path" => "adelle-marcero", "thumb" => "jpg" ),
 	array( "name" => "Suspended Belief Studios","path" => "suspended-belief-studios", "thumb" => "jpg" ),
 	array( "name" => "Pok&eacute;mon","path" => "pokemon","thumb" => "svg" ),
 	array( "name" => "Wired","path" => "wired", "thumb" => "jpg" ),
@@ -226,13 +228,11 @@ function get_puns() {
 	);
 	return $puns;
 }
-
 function print_pun() {
 	$puns=get_puns();
 	shuffle($puns);
 	return $puns[0];
 }
-
 function sf_weather() {
 	include 'inc/phpweatherlib.php';
 	$weatherObj=new WeatherLib("KSFO");
@@ -241,7 +241,6 @@ function sf_weather() {
 	$weather["condition"]=$weatherObj->get_weather_string();
 	return $weather;
 }
-
 // fills in the div with links to the thumbnail and title
 //deprecated
 function workthumb($num) {
@@ -1719,6 +1718,69 @@ if ( $title == "Wired" ) {
 	);
 
 } //end WIRED
+
+//  #Holiday Card 2014
+// ===============================
+
+if ( $title == "Holiday Card 2014" ) {
+
+	$path="img/holiday-2014/";
+
+	$description="
+	For our holiday greeting, I decided to do a riff on the <em>exquisite corpse</em> game with fun costumes. Each figure is composed of a head, a body and feet. These parts are randomly selected on page load and with each refresh, it will randomly select another&nbsp;set.
+	";
+
+	$sidebar="
+	Holiday 2014 <br>
+	<a href='http://www.rayuen.com/holiday2014' target='_blank'>link to site</a>
+	";
+
+	$tools=array(
+		array("skill"=>"Illustrator", "percent"=>65),
+		array("skill"=>"HTML/CSS", "percent"=>10),
+		array("skill"=>"JS", "percent"=>5),
+		array("skill"=>"PHP", "percent"=>20),
+	);
+
+	$img_info = array(
+		array("file" => "01.jpg", "alt" => "Yeti + Reintaur"),
+		array("file" => "02.jpg", "alt" => "Grinch + Animal Princess"),
+		array("file" => "03.jpg", "alt" => "New Years + Santa"),
+		array("file" => "04.jpg", "alt" => "Grinch + Elf Centaur"),
+	);
+
+} //end Holiday 2014
+
+//  #Adelle's site
+// ===============================
+
+if ( $title == "Adelle Marcero Portfolio Site" ) {
+
+	$path="img/adelle-marcero/";
+
+	$description="
+	I helped my friend Adelle Marcero with her portfolio site. I built it using simple PHP and CSS and linked to her holiday Etsy&nbsp;shop.
+	";
+
+	$sidebar="
+	Adelle Marcero Portfolio Site <br>
+	<a href='http://adelle.ink' target='_blank'>adelle.ink</a>
+	";
+
+	$tools=array(
+		array("skill"=>"HTML/CSS", "percent"=>40),
+		array("skill"=>"PHP", "percent"=>60),
+	);
+
+	$img_info = array(
+		array("file" => "homepage.jpg", "alt" => "Adelle Marcero home page"),
+		array("file" => "jimi.jpg", "alt" => "Jimi Hendrix by Adelle Marcero"),
+		array("file" => "beasties.jpg", "alt" => "The Beastie Boys by Adelle Marcero"),
+		array("file" => "about.jpg", "alt" => "Adelle Marcero about page"),
+		array("file" => "footer.jpg", "alt" => "the footer"),
+	);
+
+} //adelle's site
 
 //  #LESCONCIERGES
 // ===============================
