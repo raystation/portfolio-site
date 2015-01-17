@@ -16,8 +16,8 @@
 @import 'tooltipster';
 @import 'responsive-indicator';
 @import "compass/css3";
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 // VARIABLES ==================================================
 $bkg-color: lighten(whitesmoke,5%);
@@ -27,10 +27,11 @@ $footer-color: darken($bkg-color,7%);
 $footer-text-color: darken($footer-color,40%);
 $link-hover-color: darken($link-color,40%);
 
-$font-size: 13pt;
+$font-size: 14pt;
 $line-height: 1.45em;
 $caption-font-size: 10pt;
-$body-font: "Arvo";
+// $body-font: "Arvo";
+$body-font: "Circular";
 
 $desktop-large: "only screen and (min-width: 960px)";
 $desktop: "only screen and (max-width: 959px)";
@@ -111,7 +112,7 @@ a,a:visited {
 .hidden 				{ visibility: hidden; }
 .bold 					{ font-weight: 900; }
 .arvo 					{ font-family: Arvo, Times, serif; }
-.montserrat 		{ font-family: Montserrat, Helvetica, sans-serif; }
+.montserrat 		{ font-family: Circular, Helvetica, sans-serif; }
 .float-right 		{ float: right; }
 .float-left 		{ float: left; }
 .last 					{ margin-right: 0px; }
@@ -539,15 +540,30 @@ $icon-width: 150px;
 }
 
 // added to test google fonts when offline
+
 @font-face {
-  font-family: 'Arvo';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Arvo'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/BM-nqL-L5PgjKPDNaleWB_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+  font-family: 'Circular';
+  src:
+	  url('fonts/circular-book.woff') format('woff'),
+	  url('fonts/circular-book.ttf') format('truetype');
+	  font-weight: normal;
 }
 @font-face {
-  font-family: 'Arvo';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Arvo Bold'), local('Arvo-Bold'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/_OKjjqM9ed2qvTR07QdjWwLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+  font-family: 'Circular';
+  src: url('fonts/circular-medium.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('fonts/circular-medium.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+       font-weight: bold;
 }
+
+// @font-face {
+//   font-family: 'Arvo';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Arvo'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/BM-nqL-L5PgjKPDNaleWB_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+// }
+// @font-face {
+//   font-family: 'Arvo';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: local('Arvo Bold'), local('Arvo-Bold'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/_OKjjqM9ed2qvTR07QdjWwLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+// }

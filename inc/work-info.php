@@ -1,6 +1,5 @@
 <?php
 
-
 function pr($var){
 	if ( !is_null($var) ) {
 		echo $var;
@@ -1348,7 +1347,7 @@ if ( $title == "Arceus and the Jewel of&nbsp;Life" ) {
 		array("skill"=>"Photoshop", "percent"=>20),
 	);
 
-	$description;
+	$description="";
 
 	$sidebar = "";
 

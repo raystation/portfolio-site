@@ -242,11 +242,12 @@ function list_games_playing() {
 			"Grand Theft Auto 5",
 			"868-HACK",
 			"FEZ",
+			"FTL",
+			"Disco Zoo",
+			"Nimblequest",
 			// "Red Dead Redemption",
 			// "Mario Kart 7",
 			// "X-COM: Enemy Unknown",
-			"Disco Zoo",
-			"Nimblequest",
 		)
 	);
 	return $container;
