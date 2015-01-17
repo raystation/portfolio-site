@@ -61,8 +61,9 @@ function print_list( $array, $results=5, $randomize=false, $heading=5 ){
 
   $content .= "<h$heading>$name</h$heading><ul>";
 
-  if ( $randomize == "all" ) {
-    shuffle($array);
+  if ( $randomize ) {
+    $array = shuffle($array);
+    // TODO: array isn't shuffling
     // if ( count($array) < $results ) {
     //  $numbers_array=array_rand($array, count($array) );
     //  shuffle($numbers_array);

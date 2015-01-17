@@ -199,9 +199,10 @@ function list_albums_listening() {
 		"name"=>"Albums Listening to",
 		"list"=>array(
 			"<span class='tooltip' title='Washed Out'>Paracosm</span>",
-			// "<span class='tooltip' title='St. Vincent'>St. Vincent</span>",
-			"<span class='tooltip' title='Vampire Weekend'>Modern Vampires in the City</span>",
+			"<span class='tooltip' title='St. Vincent'>St. Vincent</span>",
+			// "<span class='tooltip' title='Vampire Weekend'>Modern Vampires in the City</span>",
 			"<span class='tooltip' title='Parquet Courts'>Sunbathing Animals</span>",
+			"<span class='tooltip' title='Pogo'>Star Charts</span>",
 			// "<span class='tooltip' title='Les Baxter'>Ritual of the Savage</span>",
 			// "<span class='tooltip' title='Marty Robbins'>Gunfighter Ballads & Trail Songs</span>",
 		)

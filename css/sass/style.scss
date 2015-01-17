@@ -20,12 +20,20 @@
 // @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 // VARIABLES ==================================================
+$primary-color: red;
+// $bkg-color: LightSteelBlue;
 $bkg-color: lighten(whitesmoke,5%);
 $txt-color: lighten(black,30%);
-$link-color: steelblue;
+
+$link-color: $primary-color;
+$link-hover-color: lighten($link-color,20%);
+
+$textbox-color: $primary-color;
+$textbox-text-color: black;
+$textbox-link-color: white;
+
 $footer-color: darken($bkg-color,7%);
 $footer-text-color: darken($footer-color,40%);
-$link-hover-color: darken($link-color,40%);
 
 $font-size: 14pt;
 $line-height: 1.45em;
@@ -73,7 +81,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
 	@extend .uppercase;
-	@extend .montserrat;
+	@extend .special-font;
 	color: $link-color;
 }
 
@@ -112,7 +120,7 @@ a,a:visited {
 .hidden 				{ visibility: hidden; }
 .bold 					{ font-weight: 900; }
 .arvo 					{ font-family: Arvo, Times, serif; }
-.montserrat 		{ font-family: Circular, Helvetica, sans-serif; }
+.special-font 		{ font-family: Circular, Helvetica, sans-serif; }
 .float-right 		{ float: right; }
 .float-left 		{ float: left; }
 .last 					{ margin-right: 0px; }
@@ -208,7 +216,12 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	font-size: 32px;
 	line-height: 1.25em;
 	font-weight: 400 !important;
-	background-color: lavender;
+	background-color: $textbox-color;
+	color: $textbox-text-color;
+	// background-color: desaturate($link-color,50%);
+	a:link, a:visited {
+		color: $textbox-link-color;
+	}
 
 	@media #{$mobile} {
 		font-size: $font-size*1.25;
@@ -247,7 +260,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	width: 200px;
 	text-align: center;
 	@extend .uppercase;
-	@extend .montserrat;
+	@extend .special-font;
 	&:hover {
 		background-color: $link-hover-color;
 	}
@@ -298,11 +311,12 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 
 	nav {
 		@extend .uppercase;
-		@extend .montserrat;
+		@extend .special-font;
 		letter-spacing: 0.15em;
 
 		.title {
 			font-size: 25px;
+			font-weight: 900;
 			text-align: left;
 			float: left;
 			@media #{$mobile} {
@@ -314,6 +328,15 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 				&:hover {
 					color: gray;
 				}
+			}
+			&::after {
+				content: "\2301"; //hexcode of &#8961; http://www.evotech.net/blog/2007/08/css-javascript-character-entities/
+				content: "\270F";
+				color: red;
+				font-size: 150%;
+				position: absolute;
+				top: -1px;
+				margin-left: 8px;
 			}
 		}
 		ul {
@@ -372,7 +395,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	p {
 		@extend .uppercase;
 		@extend .center;
-		@extend .montserrat;
+		@extend .special-font;
 		@extend .bold;
 		line-height: 1.25em;
 		font-size: 0.75em;
