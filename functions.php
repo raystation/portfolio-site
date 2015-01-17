@@ -61,9 +61,9 @@ function print_list( $array, $results=5, $randomize=false, $heading=5 ){
 
   $content .= "<h$heading>$name</h$heading><ul>";
 
-  if ( $randomize ) {
-    $array = shuffle($array);
-    // TODO: array isn't shuffling
+  if ( $randomize == true ) {
+    shuffle($array);
+    // var_dump($array);
     // if ( count($array) < $results ) {
     //  $numbers_array=array_rand($array, count($array) );
     //  shuffle($numbers_array);
@@ -210,29 +210,6 @@ function dev_tools($livereload=true,$responsive=true) {
     echo "<script>document.write('<script src=\"http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1\"></' + 'script>')</script>";
   }
 }
-
-
-function get_puns() {
-  $puns = array(
-    "I stayed up all night wondering where the sun went. Then it dawned on me.",
-    "It doesn't matter how much you push the envelope. It'll still be stationary.",
-    "What is the leading cause of divorce in long-term marriages? A stalemate.",
-    "You wanna hear a joke about pizza? Never mind, it was too cheesy.",
-    "I tried to catch some fog earlier. I mist.",
-    "I walked into my sister's room and tripped on a bra. It was a booby-trap.",
-    "A book just fell on my head, I only have my shelf to blame.",
-    "I'm reading a book on anti-gravity, and it's impossible to put down.",
-    "I'm glad I know sign language. It's become quite handy.",
-    "I forgot how to throw a boomerang. But it came back to me.",
-    "I once heard a joke about amnesia... But I forget how it goes.",
-    "The frustrated cannibal threw up his hands.",
-    "There was once a crossed-eyed teacher... who had issues controlling his pupils.",
-    "Newspaper headline reads: Cartoonist found dead at home, details are sketchy.",
-    "What did the cannibal get when he showed up to the party late? A cold shoulder.",
-    "A boiled egg in the morning is really hard to beat.",
-  );
-  return $puns;
-}
 function print_pun() {
   $puns=get_puns();
   shuffle($puns);
@@ -312,4 +289,13 @@ function html_list_link($array,$h=5) {
     echo "<li><a href='http://".$list_item["url"]."' target='_blank'>".$list_item["item"]."</a></li>";
   }
   echo "</ul>";
+}
+
+function pr($var){
+  if ( !is_null($var) ) {
+    echo $var;
+    return true;
+  } else {
+    return false;
+  }
 }

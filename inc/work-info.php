@@ -1,14 +1,5 @@
 <?php
 
-function pr($var){
-	if ( !is_null($var) ) {
-		echo $var;
-		return true;
-	} else {
-		return false;
-	}
-}
-
 $works = array(
 	array( "name" => "Holiday Card 2014","path" => "holiday-2014", "thumb" => "jpg" ),
 	array( "name" => "Adelle Marcero Portfolio Site","path" => "adelle-marcero", "thumb" => "jpg" ),

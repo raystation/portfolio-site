@@ -111,7 +111,7 @@ function list_favorite_games() {
 
 function list_self_nicknames() {
 	$list = array(
-		"name"=>"Nicknames (Didn't&nbsp;Stick)",
+		"name"=>"Bad Nicknames For Me",
 		"list"=>array(
 			"Angel Eyes",
 			"Tiny Dancer",
@@ -169,13 +169,13 @@ function list_games_playing() {
 		"name"=>"Games Playing",
 		"list"=>array(
 			"Bravely Default",
+			"FTL: Faster Than Light",
 			"Shovel Knight",
-			"Grand Theft Auto 5",
+			// "Grand Theft Auto 5",
 			"868-HACK",
-			"FEZ",
-			"FTL",
-			"Disco Zoo",
-			"Nimblequest",
+			// "FEZ",
+			// "Disco Zoo",
+			// "Nimblequest",
 			// "Red Dead Redemption",
 			// "Mario Kart 7",
 			// "X-COM: Enemy Unknown",
@@ -200,6 +200,7 @@ function list_albums_listening() {
 		"list"=>array(
 			"<span class='tooltip' title='Washed Out'>Paracosm</span>",
 			"<span class='tooltip' title='St. Vincent'>St. Vincent</span>",
+			"<a href='http://open.spotify.com/user/rayuen/playlist/62I8v8t8oZHss5O8fjM1IF' class='tooltip' title='The Bombay Royale'>You Me Bullets Love</a>",
 			// "<span class='tooltip' title='Vampire Weekend'>Modern Vampires in the City</span>",
 			"<span class='tooltip' title='Parquet Courts'>Sunbathing Animals</span>",
 			"<span class='tooltip' title='Pogo'>Star Charts</span>",
@@ -378,4 +379,28 @@ function list_tech_skills() {
 		)
 	);
 	return $list;
+}
+function get_puns() {
+  $puns = array(
+    "I stayed up all night wondering where the sun went. Then it dawned on me.",
+    "It doesn't matter how much you push the envelope. It'll still be stationary.",
+    "What is the leading cause of divorce in long-term marriages? A stalemate.",
+    "You wanna hear a joke about pizza? Never mind, it was too cheesy.",
+    "I tried to catch some fog earlier. I mist.",
+    "I walked into my sister's room and tripped on a bra. It was a booby-trap.",
+    "A book just fell on my head, I only have my shelf to blame.",
+    "I'm reading a book on anti-gravity, and it's impossible to put down.",
+    "I'm glad I know sign language. It's become quite handy.",
+    "I forgot how to throw a boomerang. But it came back to me.",
+    "I once heard a joke about amnesia... But I forget how it goes.",
+    "The frustrated cannibal threw up his hands.",
+    "There was once a crossed-eyed teacher... who had issues controlling his pupils.",
+    "Newspaper headline reads: Cartoonist found dead at home, details are sketchy.",
+    "What did the cannibal get when he showed up to the party late? A cold shoulder.",
+    "A boiled egg in the morning is really hard to beat.",
+
+    "Why do zombies love rice and barley so much? Because they are <em>graiiiiiiiiiiins</em>.",
+    "Why do zombies love Amtrak? Because they love <em>traaaaaaiiiinnns.</em>.",
+  );
+  return $puns;
 }
