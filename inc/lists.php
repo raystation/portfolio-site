@@ -1,74 +1,5 @@
 <?php
 
-function list_html($array){
-	echo "<ul>\n";
-
-	foreach ($array as $key => $value) {
-		if ( is_int($key) ) {
-			echo "<li>".$value."</li>\n";
-		} else {
-			echo "<li><a href=\"".$value."\">".$key."</a></li>\n";
-		}
-	}
-
-	echo "</ul>\n";
-}
-
-function random_number($array) {
-	$count=count($array);
-	$rand=mt_rand(0,$count);
-	return $rand;
-}
-
-function random_list_items($array,$quantity=5) {
-	$count=0;
-	$random_list=array();
-	while ( $count <= $quantity ) {
-		$number=random_number($array);
-		$item=$array[$number];
-
-		if ( !in_array($item,$random_list)) {
-			$random_list[]=$item;
-			$count++;
-		}
-	}
-	return $random_list;
-}
-
-function print_list( $array, $randomize=false, $results=5, $heading=5 ){
-	// $heading is the size of the headline
-
-	// check to make sure the variables are not NULL
-	if ( isset( $array["name"] ) ) { $name=$array["name"]; }
-	if ( isset( $array["list"] ) ) { $array=$array["list"]; }
-
-	if ( $randomize == true ) {
-		if ( count($array) < $results ) {
-			$numbers_array=array_rand($array, count($array) );
-			shuffle($numbers_array);
-		} else {
-			$numbers_array=array_rand($array,$results);
-			shuffle($numbers_array);
-		}
-	}
-
-	if ( $randomize==false ) {
-			if ( count($array) < $results ) {
-				$numbers_array=range(0, count($array) );
-			} else { $numbers_array=range(0, $results);
-		}
-	}
-	// var_dump($numbers_array);
-
-	echo "<h".$heading.">".$name."</h".$heading.">";
-	echo "<ul>";
-
-	foreach ($numbers_array as $number) {
-		echo "<li>".$array[$number]."</li>";
-	}
-	echo "</ul>";
-}
-
 function list_ringtones(){
 	$tones["nokia-classic"]=array("name"=>"Classic Nokia mono","file"=>"nokia-classic");
 	$tones["nba-on-nbc"]=array("name"=>"The NBA on NBC theme","file"=>"nba-on-nbc");
@@ -325,19 +256,6 @@ function list_friends() {
 		)
 	);
 	return $list;
-}
-
-function html_list_link($array,$h=5) {
-
-	if ( !is_null( $array["name"] ) ) { $name=$array["name"]; }
-	if ( !is_null( $array["list"] ) ) { $array=$array["list"]; }
-
-	echo "<h".$h.">".$name."</h".$h."><ul>";
-
-	foreach ($array as $list_item) {
-		echo "<li><a href='http://".$list_item["url"]."' target='_blank'>".$list_item["item"]."</a></li>";
-	}
-	echo "</ul>";
 }
 
 function list_favorite_pokemon() {

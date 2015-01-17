@@ -1,4 +1,7 @@
-<?php require 'inc/work-info.php';?>
+<?
+require_once 'inc/work-info.php';
+require_once 'functions.php';
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
