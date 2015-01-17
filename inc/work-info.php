@@ -409,7 +409,7 @@ if ( $title == "StoryMaps" ) {
 	$description = "
 		A programmer I knew, <a href=\"https://github.com/seanh\">Sean Hammond</a>, was coding some software for a Ph.D. study that would assist children in the process of story creation. He called it StoryMaps. Essentially, StoryMaps breaks down the elements of traditional fairy tales into building blocks which children could use to invent new stories. They can create stories that contain their own original ideas while being structurally complete and well-formed.
 		</p><p>
-		A big challenge with this project was making the artwork generic enough so that the kids would still get to inject their own imagination into it. Some were more difficult than others, but I was up for the task.
+		A big challenge with this project was making the artwork generic enough so that the kids would still get to inject their own imagination into it. Some were more difficult than others, but I was up for the&nbsp;task.
 		</p><p>
 		Looking at tarot cards for inspiration, I sought to break each event down to it's core action. The main characters would all be represented by simple stick-like figures with no faces. Each image was accentuated with one color.
 		</p><p>
