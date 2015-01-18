@@ -18,11 +18,11 @@ function list_ringtones(){
 }
 
 function html_list_ringtones(){
-	$tones=list_ringtones();
+	$tones = list_ringtones();
 	foreach ($tones as $tone) {
-		$name=$tone["name"];
-		$path="ringtone/".$tone["file"].".m4r";
-		echo "<a href='".$path."' target='_blank'>".$name."</a><br>";
+		$name = $tone["name"];
+		$path = "ringtone/".$tone['file'].".m4r";
+		echo "<a href='$path' target='_blank'>$name</a><br>";
 	}
 }
 

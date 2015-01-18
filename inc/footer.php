@@ -118,7 +118,5 @@
 <!-- End Document
 ================================================== -->
 
-	<?php dev_tools($livereload=true,$responsive=false) ;?>
-
 </body>
 </html>

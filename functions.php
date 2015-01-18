@@ -211,6 +211,7 @@ function dev_tools($livereload=true,$responsive=true) {
   }
 }
 function print_pun() {
+  include_once "inc/lists.php";
   $puns=get_puns();
   shuffle($puns);
   return $puns[0];
