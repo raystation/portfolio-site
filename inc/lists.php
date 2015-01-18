@@ -1,73 +1,4 @@
-<?php 
-
-function list_html($array){
-	echo "<ul>\n";
-	
-	foreach ($array as $key => $value) {
-		if ( is_int($key) ) {
-			echo "<li>".$value."</li>\n";
-		} else {
-			echo "<li><a href=\"".$value."\">".$key."</a></li>\n";
-		}
-	}
-
-	echo "</ul>\n";
-}
-
-function random_number($array) {
-	$count=count($array);
-	$rand=mt_rand(0,$count);
-	return $rand;	
-}
-
-function random_list_items($array,$quantity=5) {
-	$count=0;
-	$random_list=array();
-	while ( $count <= $quantity ) {
-		$number=random_number($array);
-		$item=$array[$number];
-		
-		if ( !in_array($item,$random_list)) {
-			$random_list[]=$item;
-			$count++;
-		} 	
-	}
-	return $random_list;
-}
-
-function print_list( $array, $randomize=false, $results=5, $heading=5 ){
-	// $heading is the size of the headline 
-	
-	// check to make sure the variables are not NULL
-	if ( isset( $array["name"] ) ) { $name=$array["name"]; }
-	if ( isset( $array["list"] ) ) { $array=$array["list"]; }
-
-	if ( $randomize == true ) { 
-		if ( count($array) < $results ) { 
-			$numbers_array=array_rand($array, count($array) ); 
-			shuffle($numbers_array); 
-		} else { 
-			$numbers_array=array_rand($array,$results); 
-			shuffle($numbers_array); 
-		}
-	}
-
-	if ( $randomize==false ) {
-			if ( count($array) < $results ) { 
-				$numbers_array=range(0, count($array) ); 
-			} else { $numbers_array=range(0, $results); 
-		}
-	}
-	// var_dump($numbers_array);
-
-	echo "<h".$heading.">".$name."</h".$heading.">";
-	echo "<ul>";
-	
-	foreach ($numbers_array as $number) {
-		echo "<li>".$array[$number]."</li>";
-	}
-	echo "</ul>";
-}
+<?php
 
 function list_ringtones(){
 	$tones["nokia-classic"]=array("name"=>"Classic Nokia mono","file"=>"nokia-classic");
@@ -87,11 +18,11 @@ function list_ringtones(){
 }
 
 function html_list_ringtones(){
-	$tones=list_ringtones();
+	$tones = list_ringtones();
 	foreach ($tones as $tone) {
-		$name=$tone["name"];
-		$path="ringtone/".$tone["file"].".m4r";
-		echo "<a href='".$path."' target='_blank'>".$name."</a><br>";
+		$name = $tone["name"];
+		$path = "ringtone/".$tone['file'].".m4r";
+		echo "<a href='$path' target='_blank'>$name</a><br>";
 	}
 }
 
@@ -104,6 +35,7 @@ function list_favorite_games() {
 			"Batman: Arkham City",
 			"Bubble Bobble",
 			"Chrono Trigger",
+			"Monument Valley",
 			"Crystal Castles",
 			"Dig Dug",
 			"Double Dragon",
@@ -112,6 +44,7 @@ function list_favorite_games() {
 			"Fallout: New Vegas",
 			"Final Fantasy IV",
 			"Final Fantasy VI",
+			"FTL: Faster Than Light",
 			"Final Fantasy Tactics",
 			"Ghost Trick: Phantom Detective",
 			"Ghouls 'n' Ghosts",
@@ -120,6 +53,7 @@ function list_favorite_games() {
 			"Gunstar Heroes",
 			"Jet Set Radio",
 			"Journey",
+			"Ico",
 			"Junk Jack",
 			"L.A. Noire",
 			"Limbo",
@@ -139,12 +73,15 @@ function list_favorite_games() {
 			"Okami",
 			"PaRappa the Rappa",
 			"Patapon",
+			"Portal",
+			"Portal 2",
 			"Phoenix Wright: Trials & Tribulations",
 			"Phoenix Wright: Ace Attorney",
 			"Picross",
 			"Pikmin",
 			"Plants vs. Zombies",
 			"Pocket Planes",
+			"Psychonauts",
 			"Pokemon Diamond & Pearl",
 			"Pokemon X/Y",
 			"Portal 2",
@@ -169,8 +106,8 @@ function list_favorite_games() {
 			"Transport Tycoon",
 			"Trauma Center",
 			"Triple Town",
-			"Uncharted 2",
-			"X-COM",
+			"Uncharted 2: Among Thieves",
+			"X-COM: Enemy Unknown",
 			"Zombies Ate My Neighbors",
 			"Star Wars: The Old Republic",
 		)
@@ -180,7 +117,7 @@ function list_favorite_games() {
 
 function list_self_nicknames() {
 	$list = array(
-		"name"=>"Nicknames (Didn't&nbsp;Stick)",
+		"name"=>"Bad Nicknames For Me",
 		"list"=>array(
 			"Angel Eyes",
 			"Tiny Dancer",
@@ -194,51 +131,60 @@ function list_self_nicknames() {
 			"Stormborn",
 		)
 	);
-	return $list;	
+	return $list;
 }
 
 function list_fav_artists() {
 	$list = array(
 		"name"=>"Favorite Art People",
 		"list"=>array(
-			"Pendleton Ward",
-			"Ji Lee",
+			"Bryan Lee O'Malley",
+			"Carson Ellis",
+			"Charlotte Dumortier",
+			"Chuck Groenink",
+			"eBoy",
+			"Genevi&eacute;ve Gauckler",
+			"Geoff Mcfettridge",
 			"Hellen Jo",
 			"Jack Teagle",
 			"James Jean",
+			"Jessica Hische",
+			"Ji Lee",
+			"Jim Houser",
+			"Jordan Crane",
+			"Josh Cochran",
+			"Mar&eacute; Odomo",
+			"Matthew Houston",
+			"Maya Hayuk",
+			"Mike Perry",
+			"Neil Scwaab",
+			"Olly Moss",
+			"Pendleton Ward",
+			"Peter Oumanski",
+			"Richard Perez",
+			"Scott Benson",
 			"Tom Gauld",
 			"Travis Millard",
-			"Peter Oumanski",
-			"Olly Moss",
-			"Mike Perry",
-			"eBoy",
-			"Geoff Mcfettridge",
-			"Mar&eacute; Odomo",
-			"Jordan Crane",
-			"Jim Houser",
-			"Josh Cochran",
-			"Bryan Lee O'Malley",
-			"Chuck Groenink",
-			"Jessica Hische",
-			"Genevi&eacute;ve Gauckler",
-			"Maya Hayuk",
-			"Neil Scwaab",
-			"Carson Ellis",
 		)
 	);
-	return $list;	
+	return $list;
 }
 
 function list_games_playing() {
 	$container = array(
-		"name"=>"Games Playing",
+		"name"=>"Game Rotation",
 		"list"=>array(
-			"Grand Theft Auto 5",
-			"Red Dead Redemption",
-			"Mario Kart 7",
-			"X-COM: Enemy Unknown",
-			"Disco Zoo",
-			"Nimblequest",
+			"Bravely Default",
+			"FTL: Faster Than Light",
+			"Shovel Knight",
+			// "Grand Theft Auto 5",
+			"868-HACK",
+			// "Fez",
+			// "Disco Zoo",
+			// "Nimblequest",
+			// "Red Dead Redemption",
+			// "Mario Kart 7",
+			// "X-COM: Enemy Unknown",
 		)
 	);
 	return $container;
@@ -256,13 +202,41 @@ function list_random_facts() {
 
 function list_albums_listening() {
 	$list = array(
-			"name"=>"Albums Listening to",
-			"list"=>array(
-				"<span class='tooltip' title='Washed Out'>Paracosm</span>",
-				"<span class='tooltip' title='St. Vincent'>St. Vincent</span>",
-				"<span class='tooltip' title='Vampire Weekend'>Modern Vampires in the City</span>",
-				"<span class='tooltip' title='Les Baxter'>Ritual of the Savage</span>",
-				"<span class='tooltip' title='Marty Robbins'>Gunfighter Ballads & Trail Songs</span>",
+		"name"=>"Music Rotation",
+		"list"=>array(
+			"<a href='http://open.spotify.com/album/1NTLKANenV7OuwDi37QUhQ'>Washed Out</a>",
+			"<a href='http://open.spotify.com/album/2CJnMhwEEkS8R1ctgt5llf'>St. Vincent</a>",
+			"<a href='http://open.spotify.com/album/1QJbEM4M5IHluPee0sqNv8'>The Bombay Royale</a>",
+			"<a href='http://open.spotify.com/album/2Qi2SySN2ePZwMLDSv9Krn'>Vampire Weekend</a>",
+			"<a href='http://open.spotify.com/album/3ngz9FbWGxHscqvwoGOL0u'>Parquet Courts</a>",
+			"<a href='http://open.spotify.com/user/rayuen/playlist/2wyJBhrzeJgjaq3w4oB2HU'>Discover African Rock</a>",
+			"<a href='http://open.spotify.com/album/1oIfFFJ1CvnbvsHyvIHwbA'>Pogo</a>",
+		)
+	);
+	return $list;
+}
+function list_friends() {
+	$list=array(
+		"name"=>"Friends",
+		"list"=>array(
+			"<a href='http://simonyuen.com' target='_blank'>Simon Yuen</a>",
+			"<a href='http://peteroumanski.com' target='_blank'>Peter Oumanski</a>",
+			"<a href='http://maladobaldwin.com' target='_blank'>Malado Baldwin</a>",
+			"<a href='http://adelle.ink' target='_blank'>Adelle Marcero</a>",
+			"<a href='http://timeggert.com' target='_blank'>Tim Eggert</a>",
+			"<a href='http://sarahwalko.com' target='_blank'>Sarah Walko</a>",
+			"<a href='http://marinagrinshpun.com' target='_blank'>Marina Grinshpun</a>",
+			"<a href='http://datablick.com' target='_blank'>Data Blick</a>",
+
+			// array("item" => "Simon Yuen", "url" => "simonyuen.com"),
+			// array("item" => "Peter Oumanski", "url" => "peteroumanski.com"),
+			// array("item" => "Malado Baldwin", "url" => "maladobaldwin.com"),
+			// array("item" => "Adelle Marcero", "url" => "adelle.ink"),
+			// array("item" => "Tim Eggert", "url" => "timeggert.com"),
+			// array("item" => "Sarah Walko", "url" => "sarahwalko.com"),
+			// array("item" => "Marina Grinshpun", "url" => "marinagrinshpun.com"),
+			// array("item" => "Data Blick", "url" => "datablick.com"),
+			// array("item" => "Jen Noto", "url" => "jennoto.com"),
 		)
 	);
 	return $list;
@@ -296,37 +270,6 @@ function list_fav_tv() {
 		)
 	);
 	return $list;
-}
-
-function list_friends() {
-	$list=array(
-		"name"=>"Friends",
-		"list"=>array(
-			array("item" => "Simon Yuen", "url" => "simonyuen.com"),
-			array("item" => "Peter Oumanski", "url" => "peteroumanski.com"),
-			array("item" => "Malado Baldwin", "url" => "maladobaldwin.com"),
-			array("item" => "Data Blick / Anya A'Hearn", "url" => "datablick.com"),
-			array("item" => "Tim Eggert", "url" => "timeggert.com"),
-			array("item" => "Sarah Walko", "url" => "sarahwalko.com"),
-			array("item" => "Marina Grinshpun", "url" => "marinagrinshpun.com"),
-			array("item" => "Jen Noto", "url" => "jennoto.com"),
-			// array("item" => "Brendan Leach", "url" => "iknowashortcut.com"),
-		)
-	);
-	return $list;
-}
-
-function html_list_link($array,$h=5) {
-
-	if ( !is_null( $array["name"] ) ) { $name=$array["name"]; }
-	if ( !is_null( $array["list"] ) ) { $array=$array["list"]; }
-
-	echo "<h".$h.">".$name."</h".$h."><ul>";
-
-	foreach ($array as $list_item) {
-		echo "<li><a href='http://".$list_item["url"]."' target='_blank'>".$list_item["item"]."</a></li>";
-	}
-	echo "</ul>";
 }
 
 function list_favorite_pokemon() {
@@ -374,6 +317,10 @@ function list_new_favorite_things() {
 			"George Takei",
 			"Bravest Warriors",
 			"Schwings",
+			"One Night Ultimate Werewolf",
+			"Marbles the Brain Store",
+			"Mission Workshop bags",
+			"New Balance shoes",
 		)
 	);
 	return $list;
@@ -384,19 +331,31 @@ function list_videogame_backlog() {
 		"name"=>"Video Game backlog",
 		"list"=>array(
 			"Assassin's Creed",
-			"Bravely Default",
+			// "Bravely Default",
 			"Dragon's Crown",
-			"FEZ",
+			"Fez",
 			"Fire Emblem: Awakening",
-			"Grand Theft Auto 5",
+			"Fable 2",
+			// "Grand Theft Auto 5",
 			"Mario Kart 8",
 			"Nidhogg",
-			"Shovel Knight",
-			"Skyrim",
+			"Minecraft",
+			// "Shovel Knight",
+			// "The Elder Scrolls V: Skyrim",
 			"Spelunky",
+			"A Wolf Among Us",
+			"The Walking Dead: Season Two",
 			"Tactics Ogre",
 			"Towerfall",
 			"Uncharted 3",
+			"Super Mario 3D World",
+			"Day-Z",
+			"Dark Souls II",
+			"Uncharted 3: Drake's Deception",
+			"Heartstone: Heroes of Warcraft",
+			"Gone Home",
+			"Dragon Age: Inquisition",
+			"Middle Earth: Shadow of Mordor",
 			"Zelda: A Link Between Worlds",
 		)
 	);
@@ -444,4 +403,28 @@ function list_tech_skills() {
 		)
 	);
 	return $list;
+}
+function get_puns() {
+  $puns = array(
+    "I stayed up all night wondering where the sun went. Then it dawned on me.",
+    "It doesn't matter how much you push the envelope. It'll still be stationary.",
+    "What is the leading cause of divorce in long-term marriages? A stalemate.",
+    "You wanna hear a joke about pizza? Never mind, it was too cheesy.",
+    "I tried to catch some fog earlier. I mist.",
+    "I walked into my sister's room and tripped on a bra. It was a booby-trap.",
+    "A book just fell on my head, I only have my shelf to blame.",
+    "I'm reading a book on anti-gravity, and it's impossible to put down.",
+    "I'm glad I know sign language. It's become quite handy.",
+    "I forgot how to throw a boomerang. But it came back to me.",
+    "I once heard a joke about amnesia... But I forget how it goes.",
+    "The frustrated cannibal threw up his hands.",
+    "There was once a crossed-eyed teacher... who had issues controlling his pupils.",
+    "Newspaper headline reads: Cartoonist found dead at home, details are sketchy.",
+    "What did the cannibal get when he showed up to the party late? A cold shoulder.",
+    "A boiled egg in the morning is really hard to beat.",
+
+    "Why do zombies love rice and barley so much? Because they are <em>graiiiiiiiiiiins</em>.",
+    "Why do zombies love Amtrak? Because they love <em>traaaaaaiiiinnns.</em>.",
+  );
+  return $puns;
 }

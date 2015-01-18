@@ -1,9 +1,7 @@
-<?	
+<?
 	$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
 	$section="work";
 
-	// TODO:automatically find out what the title of the post is
-	
 	switch ( $project ) {
 		default:
 		$pageTitle = "Ray Yuen | Work";
@@ -47,7 +45,7 @@
 
 		case 'chronicles-of-old-rome':
 		$title = 'Chronicles of Old&nbsp;Rome';
-		break;		
+		break;
 
 		case 'chronicles-of-old-paris':
 		$title = 'Chronicles of Old&nbsp;Paris';
@@ -123,7 +121,7 @@
 
 		case 'museyon-guides':
 		$title = 'Museyon Guides';
-		break;		
+		break;
 
 		case 'pokemon':
 		$title = 'The Pok&eacute;mon Company';
@@ -131,31 +129,31 @@
 
 		case 'toy-fair':
 		$title = 'Pok&eacute;mon: Toy Fair';
-		break;		
+		break;
 
 		case 'mystery-dungeon':
 		$title = 'Pok&eacute;mon: Mystery&nbsp;Dungeon';
-		break;		
+		break;
 
 		case 'battle-revolution':
 		$title = 'Battle Revolution';
-		break;		
+		break;
 
 		case 'pocket-pokedex':
 		$title = 'Pocket Pok&eacute;dex';
-		break;		
+		break;
 
 		case 'dp-launch':
 		$title = 'Pok&eacute;mon: Diamond & Pearl Launch';
-		break;		
+		break;
 
 		case 'licensing-show':
 		$title = 'Licensing Show';
-		break;		
+		break;
 
 		case 'pokemon-logos':
 		$title = 'Pok&eacute;mon: Logos';
-		break;	
+		break;
 
 		case 'portfolio-site':
 		$title = 'Portfolio Site';
@@ -167,12 +165,20 @@
 
 		case 'wired':
 		$title = 'Wired';
-		break;		
+		break;
+
+		case 'holiday-2014':
+		$title = 'Holiday Card 2014';
+		break;
+
+		case 'adelle-marcero':
+		$title = 'Adelle Marcero Portfolio Site';
+		break;
 	}
-	
+
 if ( !isset($title) ) { $title = "Work"; }
 include('inc/header.php');
-if ( isset($project) ) { 
+if ( isset($project) ) {
 	if ( isset($template) ){
 		$template="inc/templates/".$template.".php";
 		if ( file_exists( $template ) ) { include $template; }
@@ -180,4 +186,4 @@ if ( isset($project) ) {
 	} else { include 'inc/templates/basic.php'; }
 }
 skeleton_print_thumbnail_4($works);
-include('inc/footer.php'); 
+include('inc/footer.php');

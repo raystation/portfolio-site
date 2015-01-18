@@ -1,51 +1,55 @@
 	</div> <!-- end container -->
-	
+
 	<!-- Footer
 	==================================================  -->
 
-	<footer class="band">
+	<footer class="band" id="footer">
 
 		<div class="container">
 
+			<div class="four columns add-bottom">
+				<ul>
+					<li><a href="./">home</a>
+					<li><a href="work">work</a>
+					<li><a href="about">about</a>
+				</ul>
+			</div>
+
+			<div class="four columns add-bottom">
+				<ul>
+					<li><a href="mailto:rayuen@gmail.com?subject=">email</a>
+				</ul>
+			</div>
+
+			<div class="four columns">
+				<ul>
+					<li><a href="ringtones.php">ringtones</a>
+					<!-- <li><a href="jobs">jobs</a> -->
+				</ul>
+			</div>
+
+			<div class="four columns"></div>
+
 			<div class="sixteen columns">
-				<div class="four columns alpha add-bottom">
-					<ul>
-						<li><a href="./">home</a></li>
-						<li><a href="work">work</a></li>
-						<li><a href="about">about</a></li>
-					</ul>
-				</div>
-
-				<div class="four columns add-bottom">
-					<ul>
-						<li><a href="mailto:rayuen@gmail.com?subject=">email</a></li>
-					</ul>
-				</div>
-
-				<div class="four columns">
-					<ul>
-						<li><a href="ringtones.php">ringtones</a></li>
-						<li><a href="jobs">jobs</a></li>
-					</ul>
-				</div>
-
-				<div class="four columns omega"></div>
-
 				<hr>
+			</div>
 
-					<p>All works &copy; <?php $date=get_date();echo $date["year"];?> Raymond Yuen.</p>
-					<p>Please do not reproduce without expressed written consent.</p>
-					<p class="add-bottom">Built with Skeleton.</p>
-					<p><? $pun = print_pun(); echo $pun; ?></p>
+			<div class="twelve columns add-bottom">
+				<p>All works &copy; <?php $date=get_date();echo $date["year"];?> Raymond Yuen.</p>
+				<p>Please do not reproduce without expressed written consent.</p>
+				<p class="add-bottom">Built with Skeleton.</p>
+				<p><? $pun = print_pun(); echo $pun; ?></p>
+			</div>
 
+			<div class="four columns  emoji">
+				<? get_emoji();?>
 			</div>
 
 		</div> <!-- END CONTAINER -->
 
+
 	</footer>
 
-	
-	
 	<!-- Slick
 	================================================== -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -74,9 +78,9 @@
 			  fade: true,
 			  pauseOnHover: false
 			});
-		});		
+		});
 	</script>
-				
+
 
 	<!-- Lightbox 2.7.1
 	==================================================  -->
@@ -90,7 +94,7 @@
 		var headroom = new Headroom(myElement, {
 		  "tolerance": 10,
 		  "offset": 50,
-		});		
+		});
 		headroom.init();
 	</script>
 
@@ -101,10 +105,10 @@
             	animation: 'fade',
             	delay: 200
             });
-        }); 
+        });
 	</script>
 	<script src="js/job-details.js"></script>
-	<?php  
+	<?php
 		if ( isset($plugin) ) {
 			echo "<script src='".$plugin[0]."'></script>";
 			echo "<script>".$plugin[1]."</script>";
@@ -113,8 +117,6 @@
 
 <!-- End Document
 ================================================== -->
-	
-	<?php dev_tools($livereload=true,$responsive=false) ;?>
 
 </body>
 </html>

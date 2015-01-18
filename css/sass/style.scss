@@ -16,21 +16,30 @@
 @import 'tooltipster';
 @import 'responsive-indicator';
 @import "compass/css3";
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 // VARIABLES ==================================================
-$bkg-color: whitesmoke;
+$primary-color: red;
+// $bkg-color: LightSteelBlue;
+$bkg-color: lighten(whitesmoke,5%);
 $txt-color: lighten(black,30%);
-$link-color: steelblue;
+
+$link-color: $primary-color;
+$link-hover-color: lighten($link-color,20%);
+
+$textbox-color: $primary-color;
+$textbox-text-color: black;
+$textbox-link-color: white;
+
 $footer-color: darken($bkg-color,7%);
 $footer-text-color: darken($footer-color,40%);
-$link-hover-color: darken($link-color,40%);
 
-$font-size: 13pt;
-$line-height: 1.45em;	
-$caption-font-size: 10pt;
-$body-font: "Arvo";
+$font-size: 14pt;
+$line-height: 1.45em;
+$caption-font-size: 11pt;
+// $body-font: "Arvo";
+$body-font: "Circular";
 
 $desktop-large: "only screen and (min-width: 960px)";
 $desktop: "only screen and (max-width: 959px)";
@@ -59,20 +68,21 @@ $mobile-portrait: "only screen and (max-width: 479px)";
 
 
 body, html { width: 100%; }
-body { 
+body {
+	padding-top: 20px;
 	font-family: $body-font, Helvetica, sans-serif;
 	font-size: $font-size;
 	line-height: $line-height;
-	background-color: $bkg-color; 
+	background-color: $bkg-color;
 	color: $txt-color;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-	-webkit-text-size-adjust: 100%;	
+	-webkit-text-size-adjust: 100%;
 	margin-top: 70px;
 }
 h1, h2, h3, h4, h5, h6 {
 	@extend .uppercase;
-	@extend .montserrat;
+	@extend .special-font;
 	color: $link-color;
 }
 
@@ -83,7 +93,7 @@ a,a:visited {
 	color: $link-color;
 	text-decoration: none;
 	@include transition( all 0.25s ease-in-out );
-	&:hover { 
+	&:hover {
 		color: $link-hover-color;
 		@include transition( all 0.25s ease-in-out );
 	}
@@ -111,21 +121,23 @@ a,a:visited {
 .hidden 				{ visibility: hidden; }
 .bold 					{ font-weight: 900; }
 .arvo 					{ font-family: Arvo, Times, serif; }
-.montserrat 		{ font-family: Montserrat, Helvetica, sans-serif; }
+.special-font 		{ font-family: Circular, Helvetica, sans-serif; }
 .float-right 		{ float: right; }
 .float-left 		{ float: left; }
 .last 					{ margin-right: 0px; }
 .visible 				{ display: inherit !important }
+.red				{ background-color: red; }
 .remove-right 	{ padding-right: 0; padding-top: 0;}
 .remove-bottom 	{ margin-bottom: 0; }
 .remove-top 		{ margin-top: 0px; }
+.add-top 		{ margin-top: 100px !important; }
 .nolist 				{ list-style: none; }
 .nowrap, .nobreak 				{ white-space: nowrap; }
 .hide 					{ display: none; }
 
 .list-spacing-fix li	{ margin-bottom: 0.15em !important; }
 
-hr { 
+hr {
 	border: 0;
 	height : 15px;
 	background: url('../img/bg/dots.gif') repeat-x;
@@ -177,94 +189,11 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	hr { margin-bottom: .5em; }
 }
 
-.bio {
-	font-size: 1.15em;
-	line-height: $line-height;
-}
-
-.index-right-column {
-	// padding-right: 0px;
-	// padding-top: 0px;
-	// hr:first-child { margin-top: 0; }
-	font-size:0.75em;
-	ul, li { margin-bottom: 0; }
-	@media #{$mobile} {
-		padding-left: 0px;
-	}
-}
-
 .opacity-fade {
 	a > img {
-		@include transition( opacity 0.25s ease-in-out ); 
+		@include transition( opacity 0.25s ease-in-out );
 		&:hover { opacity: 0.65; }
 	}
-}
-
-.textbox {
-	padding: 2em 3em;
-	font-size: 32px;
-	line-height: 1.25em;
-	font-weight: 400 !important;
-	background-color: lavender;
-
-	@media #{$mobile} {
-		font-size: $font-size*1.25;
-		line-height: $line-height;
-		padding: 0;
-		background-color: transparent;
-	}
-}
-
-.related {
-	font-size: 90%;
-	line-height: 1.4em;
-	li {
-		margin-bottom: 0.4em;
-	}
-}
-
-.description {
-	a {  
-		// @extend .underline;
-	}
-	p {
-		font-size: 16pt;
-		line-height: 1.5em;
-		max-width: 31em;
-	}
-}
-
-.original-job-button {
-	background-color: $link-color;
-	color: white;
-	padding: 0.25em;
-	margin: 0 auto;
-	margin-bottom: 20px;
-	border-radius: 0.5em;
-	width: 200px;
-	text-align: center;
-	@extend .uppercase;
-	@extend .montserrat;	
-	&:hover {
-		background-color: $link-hover-color;
-	}
-}
-
-.original-job-details {
-	color: lighten($txt-color,30%);
-	p,ul,li {font-size: 1rem;}
-	hr,ul,h1,h2,h3,h4,h5,h6 { @include column-span(all); }
-	h6,hr {
-		margin: 2em 0;
-		text-align: center;
-	}
-	ul {
-		font-weight: 800;
-	}
-	@media only screen and (min-width: 800px) {
-		@include column-count(2);
-		@include column-gap(1em);
-	}	
 }
 
 // HEADER
@@ -280,7 +209,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	padding: 25px 0 10px 0;
 	font-size: 14pt;
 	@include transition( all 0.75s ease-in-out );
-	
+
 	.active {
 		border-bottom: 3px solid lighten($link-color,30%);
 		padding: 5px 1px;
@@ -295,22 +224,32 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 
 	nav {
 		@extend .uppercase;
-		@extend .montserrat;
+		@extend .special-font;
 		letter-spacing: 0.15em;
 
 		.title {
 			font-size: 25px;
+			font-weight: 900;
 			text-align: left;
 			float: left;
 			@media #{$mobile} {
 				font-size: 1.25rem;
 			}
 
-			a, a:visited { 
-				color: black; 
+			a, a:visited {
+				color: black;
 				&:hover {
 					color: gray;
 				}
+			}
+			&::after {
+				content: "\2301"; //hexcode of &#8961; http://www.evotech.net/blog/2007/08/css-javascript-character-entities/
+				content: "\270F";
+				color: red;
+				font-size: 150%;
+				position: absolute;
+				top: -1px;
+				margin-left: 8px;
 			}
 		}
 		ul {
@@ -321,16 +260,16 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 				display: inline;
 				list-style: none;
 				margin-right: 2em;
-				@media #{$mobile} { 
+				@media #{$mobile} {
 					font-size: 0.9rem;
 					margin-right: 0.25em;
 				}
 				&:last-child { margin-right: 0; }
 				a, a:visited {
 					@include transition(all 0.25s);
-					font-weight: 400;
+					font-weight: 900;
 					color: gray;
-					&:hover { 
+					&:hover {
 						@include transition(all 0.25s);
 						color: black;
 					}
@@ -354,7 +293,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 // ======================================
 
 .index-text {
-	li { 
+	li {
 		// font-size: 16pt;
 		font-weight: 100;
 		max-width: 32em;
@@ -362,31 +301,62 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	}
 }
 
-// PORTFOLIO PAGE 
+.textbox {
+	padding: 2em 3em;
+	font-size: 32px;
+	line-height: 1.25em;
+	font-weight: 400 !important;
+	background-color: $textbox-color;
+	color: $textbox-text-color;
+	// background-color: desaturate($link-color,50%);
+	a:link, a:visited {
+		color: $textbox-link-color;
+	}
+
+	@media #{$mobile} {
+		font-size: $font-size*1.25;
+		line-height: $line-height;
+		padding: 0;
+		background-color: transparent;
+	}
+}
+
+.index-right-column {
+	// padding-right: 0px;
+	// padding-top: 0px;
+	// hr:first-child { margin-top: 0; }
+	font-size:0.75em;
+	ul, li { margin-bottom: 0; }
+	@media #{$mobile} {
+		padding-left: 0px;
+	}
+}
+
+// PORTFOLIO PAGE
 // ======================================
 
 .portfolio {
 	p {
 		@extend .uppercase;
 		@extend .center;
-		@extend .montserrat;
+		@extend .special-font;
 		@extend .bold;
 		line-height: 1.25em;
 		font-size: 0.75em;
 		letter-spacing: 0.15em;
-		@media #{$mobile} { 
+		@media #{$mobile} {
 			font-size: 1em;
-		}		
-	}	
+		}
+	}
 	img {
 		@extend .scale-with-grid2;
 		opacity: 1;
 		@include transition( all 0.25s ease-in-out );
-		&:hover { opacity: 0.65; }
+		// &:hover { opacity: 0.65; }
 	}
 }
 
-// HIRE ME 
+// HIRE ME
 // ======================================
 
 .bar-chart {
@@ -417,12 +387,63 @@ $icon-width: 150px;
 	}
 	img {
 		margin-bottom: 1em;
-		border: 1px solid silver; 
+		border: 1px solid silver;
 	}
 }
-	
 
-// ABOUT ME 
+.original-job-button {
+	background-color: $link-color;
+	color: white;
+	padding: 0.25em;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-radius: 0.5em;
+	width: 200px;
+	text-align: center;
+	@extend .uppercase;
+	@extend .special-font;
+	&:hover {
+		background-color: $link-hover-color;
+	}
+}
+
+.original-job-details {
+	color: lighten($txt-color,30%);
+	p,ul,li {font-size: 1rem;}
+	hr,ul,h1,h2,h3,h4,h5,h6 { @include column-span(all); }
+	h6,hr {
+		margin: 2em 0;
+		text-align: center;
+	}
+	ul {
+		font-weight: 800;
+	}
+	@media only screen and (min-width: 800px) {
+		@include column-count(2);
+		@include column-gap(1em);
+	}
+}
+
+.related {
+	font-size: 90%;
+	line-height: 1.4em;
+	li {
+		margin-bottom: 0.4em;
+	}
+}
+
+.description {
+	a {
+		// @extend .underline;
+	}
+	p {
+		font-size: 16pt;
+		line-height: 1.5em;
+		max-width: 31em;
+	}
+}
+
+// ABOUT ME
 // ======================================
 
 .chart > div {
@@ -432,7 +453,7 @@ $icon-width: 150px;
 	padding: 0;
 	margin: 0;
 	@include transition( all 0.5s ease-in-out );
-	
+
 	> div {
 		@include transition( all 0.5s ease-in-out );
 		background-color: lighten($link-color,30%);
@@ -452,7 +473,7 @@ $icon-width: 150px;
 	padding: 4px;
 	margin: 4px 0;
 	@include transition( all 0.25s ease-in-out );
-	
+
 	> div {
 		background-color: lighten($link-color,30%);
 		margin: 5px 0;
@@ -477,17 +498,17 @@ $icon-width: 150px;
 	width: 50px;
 	height: 50px;
 	border-radius:5px;
-	@include transition( background-color 0.25s ease-in-out ); 
-	&:hover { 
-		background-color: lightblue; 
-		@include transition( background-color 0.25s ease-in-out ); 
+	@include transition( background-color 0.25s ease-in-out );
+	&:hover {
+		background-color: lightblue;
+		@include transition( background-color 0.25s ease-in-out );
 	}
 }
 
 #history {
 	ul { list-style: initial; list-style-position: inside; list-style-type: circle; }
-	li { 
-		margin-bottom: 0.15em; 
+	li {
+		margin-bottom: 0.15em;
 		padding-left: 1em;
 		text-indent: -1em;
 		max-width: 80%;
@@ -504,11 +525,17 @@ $icon-width: 150px;
 	}
 }
 
+.bio {
+	font-size: 1.15em;
+	line-height: $line-height;
+}
+
+
 
 // FOOTER
 // =====================================
 
-footer {
+#footer {
 
 	p, & ul {
 		font-size: smaller;
@@ -525,9 +552,22 @@ footer {
 		line-height: 1.75em;
 		color: $footer-text-color;
 		@include transition(all 1.0s);
-		&:hover { 
-			color: darken($footer-text-color,50%); 
+		&:hover {
+			color: darken($footer-text-color,50%);
 			@include transition(all 1.0s);
+		}
+	}
+	.emoji {
+		// margin-top: 5em;
+		text-align: center;
+		// text-align: right;
+		// background-color: red;
+		img {
+			// width: 25%;
+			// margin-left: 5px;
+			// padding: 0.5em;
+			// margin: 2px;
+
 		}
 	}
 }
@@ -535,14 +575,28 @@ footer {
 // added to test google fonts when offline
 
 @font-face {
-  font-family: 'Arvo';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Arvo'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/BM-nqL-L5PgjKPDNaleWB_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+  font-family: 'Circular';
+  src:
+	  url('fonts/circular-book.woff') format('woff'),
+	  url('fonts/circular-book.ttf') format('truetype');
+	  font-weight: normal;
 }
 @font-face {
-  font-family: 'Arvo';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Arvo Bold'), local('Arvo-Bold'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/_OKjjqM9ed2qvTR07QdjWwLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+  font-family: 'Circular';
+  src: url('fonts/circular-medium.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('fonts/circular-medium.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+       font-weight: bold;
 }
+
+// @font-face {
+//   font-family: 'Arvo';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Arvo'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/BM-nqL-L5PgjKPDNaleWB_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+// }
+// @font-face {
+//   font-family: 'Arvo';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: local('Arvo Bold'), local('Arvo-Bold'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/_OKjjqM9ed2qvTR07QdjWwLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+// }
