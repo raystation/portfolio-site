@@ -4,7 +4,7 @@ function list_html($array){
 
   foreach ($array as $key => $value) {
     if ( is_int($key) ) {
-      echo "<li>".$value."</li>\n";
+      echo "<li>$value</li>\n";
     } else {
       echo "<li><a href=\"".$value."\">".$key."</a></li>\n";
     }
@@ -50,14 +50,19 @@ function random_list_items($array,$quantity=5) {
 
 function print_list( $array, $results=5, $randomize=false, $heading=5 ){
   // takes an array, decides whether to randomize it or not, decides how many results to return, and what headline size to return it in
-
+  //special arrays have URLs attached to them
+  $special = false;
   $content = "";
 
   // checks to make sure this is a special type of array with key name and list
-  if ( isset( $array["name"] ) ) { $name=$array["name"]; }
-  if ( isset( $array["list"] ) ) { $array=$array["list"]; }
-
-  // echo count($array);
+  // TODO: temporary fix where it doesn't check for special arrays
+  if ( isset($array["name"]) ) {
+    $name = $array["name"];
+    $array = $array["list"];
+    // if (isset($array["item"])) {
+    //   $special=true;
+    // }
+  }
 
   $content .= "<h$heading>$name</h$heading><ul>";
 
@@ -74,12 +79,12 @@ function print_list( $array, $results=5, $randomize=false, $heading=5 ){
   }
 
   if ( $results == "all" || $results >= count($array) ) {
-    foreach ($array as $key => $array_item) {
-      $content .= "<li>$array_item</li>";
+    foreach ( $array as $key => $array_item ) {
+      $content .= "<li>$array_item";
     }
   } elseif ( $results < count($array) ) {
     for ($i=0; $i <= $results ; $i++) {
-      $content .= "<li>$array[$i]</li>";
+      $content .= "<li>$array[$i]";
     }
   }
 
@@ -299,4 +304,21 @@ function pr($var){
   } else {
     return false;
   }
+}
+
+function social_print($caption=false){
+
+  if ( $caption == true ) {
+    echo '<ul class="list-spacing-fix add-bottom caption">'."\n";
+  } else {
+    echo '<ul class="list-spacing-fix add-bottom">'."\n";
+  }
+
+  $array = get_social_info();
+
+  foreach ( $array as $key => $value ) {
+    echo "\t\t\t\t\t\t\t".'<li><a href="http://www.'.$value.'" target="_blank">'.$key.'</a></li>'."\n";
+  }
+
+  echo '</ul>';
 }

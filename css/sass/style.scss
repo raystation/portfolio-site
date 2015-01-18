@@ -69,6 +69,7 @@ $mobile-portrait: "only screen and (max-width: 479px)";
 
 body, html { width: 100%; }
 body {
+	padding-top: 20px;
 	font-family: $body-font, Helvetica, sans-serif;
 	font-size: $font-size;
 	line-height: $line-height;
@@ -559,6 +560,15 @@ $icon-width: 150px;
 	.emoji {
 		// margin-top: 5em;
 		text-align: center;
+		// text-align: right;
+		// background-color: red;
+		img {
+			// width: 25%;
+			// margin-left: 5px;
+			// padding: 0.5em;
+			// margin: 2px;
+
+		}
 	}
 }
 

@@ -35,6 +35,7 @@ function list_favorite_games() {
 			"Batman: Arkham City",
 			"Bubble Bobble",
 			"Chrono Trigger",
+			"Monument Valley",
 			"Crystal Castles",
 			"Dig Dug",
 			"Double Dragon",
@@ -43,6 +44,7 @@ function list_favorite_games() {
 			"Fallout: New Vegas",
 			"Final Fantasy IV",
 			"Final Fantasy VI",
+			"FTL: Faster Than Light",
 			"Final Fantasy Tactics",
 			"Ghost Trick: Phantom Detective",
 			"Ghouls 'n' Ghosts",
@@ -51,6 +53,7 @@ function list_favorite_games() {
 			"Gunstar Heroes",
 			"Jet Set Radio",
 			"Journey",
+			"Ico",
 			"Junk Jack",
 			"L.A. Noire",
 			"Limbo",
@@ -70,12 +73,15 @@ function list_favorite_games() {
 			"Okami",
 			"PaRappa the Rappa",
 			"Patapon",
+			"Portal",
+			"Portal 2",
 			"Phoenix Wright: Trials & Tribulations",
 			"Phoenix Wright: Ace Attorney",
 			"Picross",
 			"Pikmin",
 			"Plants vs. Zombies",
 			"Pocket Planes",
+			"Psychonauts",
 			"Pokemon Diamond & Pearl",
 			"Pokemon X/Y",
 			"Portal 2",
@@ -100,8 +106,8 @@ function list_favorite_games() {
 			"Transport Tycoon",
 			"Trauma Center",
 			"Triple Town",
-			"Uncharted 2",
-			"X-COM",
+			"Uncharted 2: Among Thieves",
+			"X-COM: Enemy Unknown",
 			"Zombies Ate My Neighbors",
 			"Star Wars: The Old Republic",
 		)
@@ -166,14 +172,14 @@ function list_fav_artists() {
 
 function list_games_playing() {
 	$container = array(
-		"name"=>"Games Playing",
+		"name"=>"Game Rotation",
 		"list"=>array(
 			"Bravely Default",
 			"FTL: Faster Than Light",
 			"Shovel Knight",
 			// "Grand Theft Auto 5",
 			"868-HACK",
-			// "FEZ",
+			// "Fez",
 			// "Disco Zoo",
 			// "Nimblequest",
 			// "Red Dead Redemption",
@@ -196,16 +202,41 @@ function list_random_facts() {
 
 function list_albums_listening() {
 	$list = array(
-		"name"=>"Albums Listening to",
+		"name"=>"Music Rotation",
 		"list"=>array(
-			"<span class='tooltip' title='Washed Out'>Paracosm</span>",
-			"<span class='tooltip' title='St. Vincent'>St. Vincent</span>",
-			"<a href='http://open.spotify.com/user/rayuen/playlist/62I8v8t8oZHss5O8fjM1IF' class='tooltip' title='The Bombay Royale'>You Me Bullets Love</a>",
-			// "<span class='tooltip' title='Vampire Weekend'>Modern Vampires in the City</span>",
-			"<span class='tooltip' title='Parquet Courts'>Sunbathing Animals</span>",
-			"<span class='tooltip' title='Pogo'>Star Charts</span>",
-			// "<span class='tooltip' title='Les Baxter'>Ritual of the Savage</span>",
-			// "<span class='tooltip' title='Marty Robbins'>Gunfighter Ballads & Trail Songs</span>",
+			"<a href='http://open.spotify.com/album/1NTLKANenV7OuwDi37QUhQ'>Washed Out</a>",
+			"<a href='http://open.spotify.com/album/2CJnMhwEEkS8R1ctgt5llf'>St. Vincent</a>",
+			"<a href='http://open.spotify.com/album/1QJbEM4M5IHluPee0sqNv8'>The Bombay Royale</a>",
+			"<a href='http://open.spotify.com/album/2Qi2SySN2ePZwMLDSv9Krn'>Vampire Weekend</a>",
+			"<a href='http://open.spotify.com/album/3ngz9FbWGxHscqvwoGOL0u'>Parquet Courts</a>",
+			"<a href='http://open.spotify.com/user/rayuen/playlist/2wyJBhrzeJgjaq3w4oB2HU'>Discover African Rock</a>",
+			"<a href='http://open.spotify.com/album/1oIfFFJ1CvnbvsHyvIHwbA'>Pogo</a>",
+		)
+	);
+	return $list;
+}
+function list_friends() {
+	$list=array(
+		"name"=>"Friends",
+		"list"=>array(
+			"<a href='http://simonyuen.com' target='_blank'>Simon Yuen</a>",
+			"<a href='http://peteroumanski.com' target='_blank'>Peter Oumanski</a>",
+			"<a href='http://maladobaldwin.com' target='_blank'>Malado Baldwin</a>",
+			"<a href='http://adelle.ink' target='_blank'>Adelle Marcero</a>",
+			"<a href='http://timeggert.com' target='_blank'>Tim Eggert</a>",
+			"<a href='http://sarahwalko.com' target='_blank'>Sarah Walko</a>",
+			"<a href='http://marinagrinshpun.com' target='_blank'>Marina Grinshpun</a>",
+			"<a href='http://datablick.com' target='_blank'>Data Blick</a>",
+
+			// array("item" => "Simon Yuen", "url" => "simonyuen.com"),
+			// array("item" => "Peter Oumanski", "url" => "peteroumanski.com"),
+			// array("item" => "Malado Baldwin", "url" => "maladobaldwin.com"),
+			// array("item" => "Adelle Marcero", "url" => "adelle.ink"),
+			// array("item" => "Tim Eggert", "url" => "timeggert.com"),
+			// array("item" => "Sarah Walko", "url" => "sarahwalko.com"),
+			// array("item" => "Marina Grinshpun", "url" => "marinagrinshpun.com"),
+			// array("item" => "Data Blick", "url" => "datablick.com"),
+			// array("item" => "Jen Noto", "url" => "jennoto.com"),
 		)
 	);
 	return $list;
@@ -236,25 +267,6 @@ function list_fav_tv() {
 			"Twilight Zone",
 			"Venture Brothers",
 			// "Bravest Warriors",
-		)
-	);
-	return $list;
-}
-
-function list_friends() {
-	$list=array(
-		"name"=>"Friends",
-		"list"=>array(
-			array("item" => "Simon Yuen", "url" => "simonyuen.com"),
-			array("item" => "Peter Oumanski", "url" => "peteroumanski.com"),
-			array("item" => "Malado Baldwin", "url" => "maladobaldwin.com"),
-			array("item" => "Adelle Marcero", "url" => "adellemarcero.com"),
-			array("item" => "Data Blick / Anya A'Hearn", "url" => "datablick.com"),
-			array("item" => "Tim Eggert", "url" => "timeggert.com"),
-			array("item" => "Sarah Walko", "url" => "sarahwalko.com"),
-			array("item" => "Marina Grinshpun", "url" => "marinagrinshpun.com"),
-			array("item" => "Jen Noto", "url" => "jennoto.com"),
-			// array("item" => "Brendan Leach", "url" => "iknowashortcut.com"),
 		)
 	);
 	return $list;
@@ -321,17 +333,29 @@ function list_videogame_backlog() {
 			"Assassin's Creed",
 			// "Bravely Default",
 			"Dragon's Crown",
-			"FEZ",
+			"Fez",
 			"Fire Emblem: Awakening",
-			"Grand Theft Auto 5",
+			"Fable 2",
+			// "Grand Theft Auto 5",
 			"Mario Kart 8",
 			"Nidhogg",
-			"Shovel Knight",
-			"Skyrim",
+			"Minecraft",
+			// "Shovel Knight",
+			// "The Elder Scrolls V: Skyrim",
 			"Spelunky",
+			"A Wolf Among Us",
+			"The Walking Dead: Season Two",
 			"Tactics Ogre",
 			"Towerfall",
 			"Uncharted 3",
+			"Super Mario 3D World",
+			"Day-Z",
+			"Dark Souls II",
+			"Uncharted 3: Drake's Deception",
+			"Heartstone: Heroes of Warcraft",
+			"Gone Home",
+			"Dragon Age: Inquisition",
+			"Middle Earth: Shadow of Mordor",
 			"Zelda: A Link Between Worlds",
 		)
 	);
