@@ -163,7 +163,7 @@ if ( $title == "Suspended Belief Studios" ) {
 	$logo="svg";
 
 	$sidebar = "Design studio.</p>
-	<p><a href='pages/sb-studios1/'' target='_blank' >suspendedbeliefgames.com</a>";
+	<p><a href='pages/sb-studios1/' target='_blank' >suspendedbeliefgames.com</a>";
 
 	$img_info = array(
 	);
