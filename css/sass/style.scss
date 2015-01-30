@@ -28,9 +28,10 @@ $txt-color: lighten(black,30%);
 $link-color: $primary-color;
 $link-hover-color: lighten($link-color,20%);
 
-$textbox-color: $primary-color;
-$textbox-text-color: black;
-$textbox-link-color: white;
+// $textbox-color: $primary-color;
+$textbox-color: LightSkyBlue ;
+$textbox-text-color: darken($textbox-color,40%);
+$textbox-link-color: $textbox-text-color;
 
 $footer-color: darken($bkg-color,7%);
 $footer-text-color: darken($footer-color,40%);
@@ -64,7 +65,7 @@ $mobile-portrait: "only screen and (max-width: 479px)";
 /* # SITE STYLES
 ================================================== */
 
-* {	@include box-sizing(border-box); }
+* { @include box-sizing(border-box); }
 
 
 body, html { width: 100%; }
@@ -304,13 +305,14 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 .textbox {
 	padding: 2em 3em;
 	font-size: 32px;
-	line-height: 1.25em;
+	line-height: 1.5em;
 	font-weight: 400 !important;
 	background-color: $textbox-color;
 	color: $textbox-text-color;
 	// background-color: desaturate($link-color,50%);
 	a:link, a:visited {
 		color: $textbox-link-color;
+		@extend .underline;
 	}
 
 	@media #{$mobile} {
