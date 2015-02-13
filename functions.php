@@ -322,3 +322,37 @@ function social_print($caption=false){
 
   echo '</ul>';
 }
+function time_difference($month,$day,$year){
+  // gets the current date
+  date_default_timezone_set('America/Los_Angeles');
+  $current_month = date('m');
+  $current_day = date('d');
+  $current_year = date('y');
+
+  $date1 = "$year-$month-$day";
+  $date2 = "$current_year-$current_month-$current_day";
+
+  $diff = abs(strtotime($date2) - strtotime($date1));
+
+  $years = floor($diff / (365*60*60*24));
+  $months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
+  $days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
+
+  printf("%d years, %d months, and %d days", $years, $months, $days);
+}
+function birthday($birth_month,$birth_day,$birth_year){
+  date_default_timezone_set('America/Los_Angeles');
+
+  $date = getdate();
+  $current_year = $date["year"];
+  $current_month = $date["mon"];
+  $current_day = $date["mday"];
+
+  $age = $current_year - $birth_year;
+  if ( $current_month >= $birth_month && $current_day >= $birth_day ) {
+    return $age;
+  } else {
+    $age--;
+    return $age;
+  }
+}

@@ -1,5 +1,7 @@
 RewriteEngine On
 
+ErrorDocument 404 http://rayuen.com/404.html
+
 RewriteRule ^work$ work.php
 RewriteRule ^about$ about.php
 RewriteRule ^index$ index.php
@@ -66,3 +68,4 @@ RewriteRule ^dropcam$ hire-me?id=dropcam
 RewriteRule ^nextlesson$ hire-me?id=nextlesson
 
 RewriteRule ^holiday2014$ http://www.rayuen.com/projects/holiday-card/holiday
+

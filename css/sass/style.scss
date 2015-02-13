@@ -20,7 +20,7 @@
 // @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 // VARIABLES ==================================================
-$primary-color: red;
+$primary-color: #0072CE;
 // $bkg-color: LightSteelBlue;
 $bkg-color: lighten(whitesmoke,5%);
 $txt-color: lighten(black,30%);
@@ -30,7 +30,8 @@ $link-hover-color: lighten($link-color,20%);
 
 // $textbox-color: $primary-color;
 $textbox-color: LightSkyBlue ;
-$textbox-text-color: darken($textbox-color,40%);
+// $textbox-text-color: darken($textbox-color,40%);
+$textbox-text-color: white;
 $textbox-link-color: $textbox-text-color;
 
 $footer-color: darken($bkg-color,7%);
