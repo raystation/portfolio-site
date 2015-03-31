@@ -356,3 +356,20 @@ function birthday($birth_month,$birth_day,$birth_year){
     return $age;
   }
 }
+function title_ellipsis($string,$limit=27){
+    // find out if string is longer than XX letters if so, add ellipsis
+
+    //create string array
+    $array = str_split($string);
+
+    $word = "";
+
+    foreach ($array as $key => $array_item) {
+        $word .= $array_item;
+        if ($key >= $limit) {
+            $word .= "...";
+            break;
+        }
+    }
+    return $word;
+}
