@@ -321,6 +321,10 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		line-height: $line-height;
 		padding: 0;
 		background-color: transparent;
+		color: $txt-color;
+		a:link, a:visited {
+			color: $link-color;
+		}
 	}
 }
 
