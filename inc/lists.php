@@ -1,29 +1,50 @@
 <?php
 
-function list_ringtones(){
-	$tones["nokia-classic"]=array("name"=>"Classic Nokia mono","file"=>"nokia-classic");
-	$tones["nba-on-nbc"]=array("name"=>"The NBA on NBC theme","file"=>"nba-on-nbc");
-	$tones["muppet-show"]=array("name"=>"The Muppet Show theme","file"=>"muppet-show");
-	$tones["muppets-manamana"]=array("name"=>"Muppets - Ma na ma na","file"=>"muppets-manamana");
-	$tones["star-trek-main-viewing-screen"]=array("name"=>"Star Trek OS: Main Viewing Screen","file"=>"star-trek-main-viewing-screen");
-	$tones["breaking-bad-marie"]=array("name"=>"Breaking Bad: Hank's ringtone for Marie","file"=>"breaking-bad-marie");
-	$tones["one-piece-dendenmushi"]=array("name"=>"One Piece - Den Den Mushi","file"=>"one-piece-dendenmushi");
-	$tones["star-wars-cantina-band"]=array("name"=>"Star Wars Cantina Band","file"=>"star-wars-cantina-band");
-	$tones["linus-lucy"]=array("name"=>"Linus and Lucy","file"=>"linus-lucy");
-	$tones["mgs-codec"]=array("name"=>"Metal Gear Solid codec","file"=>"mgs-codec");
-	$tones["benny-hill"]=array("name"=>"Benny Hill theme","file"=>"benny-hill");
-	$tones["rickroll"]=array("name"=>"Never Gonna Give You Up","file"=>"rickroll");
-	$tones["careless-whisper"]=array("name"=>"Careless Whisper","file"=>"careless-whisper");
-	return $tones;
+function list_new_favorite_things() {
+	$list = array(
+		"name"=>"New Favorite Things",
+		"list"=>array(
+			"Hawaiian shirts",
+			// "pineapple juice",
+			"Santa Cruz",
+			// "The City logo",
+			// "ESPN 30 for 30 documentaries",
+			// "George Takei",
+			// "Bravest Warriors",
+			"Schwings",
+			"One Night Ultimate Werewolf",
+			"Marbles the Brain Store",
+			"Mission Workshop bags",
+			"New Balance shoes",
+			"Tosadas",
+			"Amazon Prime",
+			"Twitter Bootstrap",
+			"Heroku design",
+		)
+	);
+	return $list;
 }
 
-function html_list_ringtones(){
-	$tones = list_ringtones();
-	foreach ($tones as $tone) {
-		$name = $tone["name"];
-		$path = "ringtone/".$tone['file'].".m4r";
-		echo "<a href='$path' target='_blank'>$name</a><br>";
-	}
+function list_games_playing() {
+	$container = array(
+		"name"=>"Game Rotation",
+		"list"=>array(
+			"Bravely Default",
+			"FTL: Faster Than Light",
+			"Shovel Knight",
+			// "Grand Theft Auto 5",
+			// "868-HACK",
+			"Trivia Crack",
+			"Zelda: A Link Between Worlds",
+			// "Fez",
+			// "Disco Zoo",
+			// "Nimblequest",
+			// "Red Dead Redemption",
+			// "Mario Kart 7",
+			// "X-COM: Enemy Unknown",
+		)
+	);
+	return $container;
 }
 
 function list_favorite_games() {
@@ -110,14 +131,47 @@ function list_favorite_games() {
 			"X-COM: Enemy Unknown",
 			"Zombies Ate My Neighbors",
 			"Star Wars: The Old Republic",
+			"Zelda: A Link Between Worlds",
 		)
 	);
 	return $list;
 }
 
+function list_fav_tv() {
+	$list = array(
+		"name"=>"Favorite TV Shows",
+		"list"=>array(
+			"Archer",
+			"Arrested Development",
+			"Battlestar Galactica",
+			"BBC Planet Earth",
+			"Breaking Bad",
+			"Chappelle Show",
+			"Cowboy Bebop",
+			"Doctor Who",
+			"Brooklyn Nine-Nine",
+			"Firefly",
+			"Futurama",
+			"Game of Thrones",
+			"LOST",
+			"Mad Men",
+			"Mighty Boosh",
+			"Sherlock",
+			"SNL",
+			"Star Trek",
+			"Twilight Zone",
+			"Venture Brothers",
+			"Peaky Blinders",
+			// "Bravest Warriors",
+		)
+	);
+	return $list;
+}
+
+
 function list_self_nicknames() {
 	$list = array(
-		"name"=>"Bad Nicknames For Me",
+		"name"=>"Nicknames",
 		"list"=>array(
 			"Angel Eyes",
 			"Tiny Dancer",
@@ -143,6 +197,7 @@ function list_fav_artists() {
 			"Charlotte Dumortier",
 			"Chuck Groenink",
 			"eBoy",
+			"Gemma Correll",
 			"Genevi&eacute;ve Gauckler",
 			"Geoff Mcfettridge",
 			"Hellen Jo",
@@ -170,25 +225,45 @@ function list_fav_artists() {
 	return $list;
 }
 
-function list_games_playing() {
-	$container = array(
-		"name"=>"Game Rotation",
+function list_videogame_backlog() {
+	$list = array(
+		"name"=>"Video Game backlog",
 		"list"=>array(
-			"Bravely Default",
-			"FTL: Faster Than Light",
-			"Shovel Knight",
+			"Assassin's Creed",
+			// "Bravely Default",
+			"Dragon's Crown",
+			"Fez",
+			"Fire Emblem: Awakening",
+			"Fable 2",
 			// "Grand Theft Auto 5",
-			"868-HACK",
-			// "Fez",
-			// "Disco Zoo",
-			// "Nimblequest",
-			// "Red Dead Redemption",
-			// "Mario Kart 7",
-			// "X-COM: Enemy Unknown",
+			"Mario Kart 8",
+			"Nidhogg",
+			"Minecraft",
+			// "Shovel Knight",
+			// "The Elder Scrolls V: Skyrim",
+			"Spelunky",
+			"A Wolf Among Us",
+			"The Walking Dead: Season Two",
+			"Tactics Ogre",
+			"Towerfall",
+			"Uncharted 3",
+			// "Super Mario 3D World",
+			"Day-Z",
+			"Dark Souls II",
+			"Uncharted 3: Drake's Deception",
+			"Heartstone: Heroes of Warcraft",
+			"Gone Home",
+			"Dragon Age: Inquisition",
+			"Middle Earth: Shadow of Mordor",
+			"The Binding of Isaac",
+			"Badland",
+			"Metamorphabet",
+			"Retro City Rampage",
 		)
 	);
-	return $container;
+	return $list;
 }
+
 
 function list_random_facts() {
 	$container = array(
@@ -226,6 +301,8 @@ function list_friends() {
 			"<a href='http://timeggert.com' target='_blank'>Tim Eggert</a>",
 			"<a href='http://sarahwalko.com' target='_blank'>Sarah Walko</a>",
 			"<a href='http://marinagrinshpun.com' target='_blank'>Marina Grinshpun</a>",
+			"<a href='http://vivz.me/' target='_blank'>Vivian Z</a>",
+			"<a href='http://www.coryborman.com/' target='_blank'>Cory Borman</a>",
 			"<a href='http://datablick.com' target='_blank'>Data Blick</a>",
 
 			// array("item" => "Simon Yuen", "url" => "simonyuen.com"),
@@ -242,35 +319,6 @@ function list_friends() {
 	return $list;
 }
 
-function list_fav_tv() {
-	$list = array(
-		"name"=>"Favorite TV Shows",
-		"list"=>array(
-			"Archer",
-			"Arrested Development",
-			"Battlestar Galactica",
-			"BBC Planet Earth",
-			"Breaking Bad",
-			"Chappelle Show",
-			"Cowboy Bebop",
-			"Doctor Who",
-			"Brooklyn Nine-Nine",
-			"Firefly",
-			"Futurama",
-			"Game of Thrones",
-			"LOST",
-			"Mad Men",
-			"Mighty Boosh",
-			"Sherlock",
-			"SNL",
-			"Star Trek",
-			"Twilight Zone",
-			"Venture Brothers",
-			// "Bravest Warriors",
-		)
-	);
-	return $list;
-}
 
 function list_favorite_pokemon() {
 	$list = array(
@@ -305,62 +353,6 @@ function list_baby_names() {
 	return $list;
 }
 
-function list_new_favorite_things() {
-	$list = array(
-		"name"=>"New Favorite Things",
-		"list"=>array(
-			"Hawaiian shirts",
-			"pineapple juice",
-			"Santa Cruz",
-			"The City logo",
-			"ESPN 30 for 30 documentaries",
-			"George Takei",
-			"Bravest Warriors",
-			"Schwings",
-			"One Night Ultimate Werewolf",
-			"Marbles the Brain Store",
-			"Mission Workshop bags",
-			"New Balance shoes",
-		)
-	);
-	return $list;
-}
-
-function list_videogame_backlog() {
-	$list = array(
-		"name"=>"Video Game backlog",
-		"list"=>array(
-			"Assassin's Creed",
-			// "Bravely Default",
-			"Dragon's Crown",
-			"Fez",
-			"Fire Emblem: Awakening",
-			"Fable 2",
-			// "Grand Theft Auto 5",
-			"Mario Kart 8",
-			"Nidhogg",
-			"Minecraft",
-			// "Shovel Knight",
-			// "The Elder Scrolls V: Skyrim",
-			"Spelunky",
-			"A Wolf Among Us",
-			"The Walking Dead: Season Two",
-			"Tactics Ogre",
-			"Towerfall",
-			"Uncharted 3",
-			"Super Mario 3D World",
-			"Day-Z",
-			"Dark Souls II",
-			"Uncharted 3: Drake's Deception",
-			"Heartstone: Heroes of Warcraft",
-			"Gone Home",
-			"Dragon Age: Inquisition",
-			"Middle Earth: Shadow of Mordor",
-			"Zelda: A Link Between Worlds",
-		)
-	);
-	return $list;
-}
 
 function list_funny_city_names() {
 	$list = array(
@@ -423,8 +415,34 @@ function get_puns() {
     "What did the cannibal get when he showed up to the party late? A cold shoulder.",
     "A boiled egg in the morning is really hard to beat.",
 
-    "Why do zombies love rice and barley so much? Because they are <em>graiiiiiiiiiiins</em>.",
-    "Why do zombies love Amtrak? Because they love <em>traaaaaaiiiinnns.</em>.",
+    "Why do zombies love rice and barley so much? Because they are graiiiiiiiiiiins.",
+    "Why do zombies love Amtrak? Because they love traaaaaaiiiinnns.",
   );
   return $puns;
+}
+
+function list_ringtones(){
+	$tones["nokia-classic"]=array("name"=>"Classic Nokia mono","file"=>"nokia-classic");
+	$tones["nba-on-nbc"]=array("name"=>"The NBA on NBC theme","file"=>"nba-on-nbc");
+	$tones["muppet-show"]=array("name"=>"The Muppet Show theme","file"=>"muppet-show");
+	$tones["muppets-manamana"]=array("name"=>"Muppets - Ma na ma na","file"=>"muppets-manamana");
+	$tones["star-trek-main-viewing-screen"]=array("name"=>"Star Trek OS: Main Viewing Screen","file"=>"star-trek-main-viewing-screen");
+	$tones["breaking-bad-marie"]=array("name"=>"Breaking Bad: Hank's ringtone for Marie","file"=>"breaking-bad-marie");
+	$tones["one-piece-dendenmushi"]=array("name"=>"One Piece - Den Den Mushi","file"=>"one-piece-dendenmushi");
+	$tones["star-wars-cantina-band"]=array("name"=>"Star Wars Cantina Band","file"=>"star-wars-cantina-band");
+	$tones["linus-lucy"]=array("name"=>"Linus and Lucy","file"=>"linus-lucy");
+	$tones["mgs-codec"]=array("name"=>"Metal Gear Solid codec","file"=>"mgs-codec");
+	$tones["benny-hill"]=array("name"=>"Benny Hill theme","file"=>"benny-hill");
+	$tones["rickroll"]=array("name"=>"Never Gonna Give You Up","file"=>"rickroll");
+	$tones["careless-whisper"]=array("name"=>"Careless Whisper","file"=>"careless-whisper");
+	return $tones;
+}
+
+function html_list_ringtones(){
+	$tones = list_ringtones();
+	foreach ($tones as $tone) {
+		$name = $tone["name"];
+		$path = "ringtone/".$tone['file'].".m4r";
+		echo "<a href='$path' target='_blank'>$name</a><br>";
+	}
 }
