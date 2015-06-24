@@ -29,13 +29,15 @@ function list_games_playing() {
 	$container = array(
 		"name"=>"Game Rotation",
 		"list"=>array(
+			"Animal Crossing: New Leaf",
+			"Zelda: A Link Between Worlds",
 			"Bravely Default",
 			"FTL: Faster Than Light",
-			"Shovel Knight",
+			"Fallout Shelter",
+			// "Shovel Knight",
 			// "Grand Theft Auto 5",
 			// "868-HACK",
-			"Trivia Crack",
-			"Zelda: A Link Between Worlds",
+			// "Trivia Crack",
 			// "Fez",
 			// "Disco Zoo",
 			// "Nimblequest",
@@ -259,6 +261,8 @@ function list_videogame_backlog() {
 			"Badland",
 			"Metamorphabet",
 			"Retro City Rampage",
+			"A-Train 3D: City Simulator",
+			"Fallout 4",
 		)
 	);
 	return $list;
