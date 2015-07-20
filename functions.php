@@ -204,6 +204,9 @@ function get_date() {
   date_default_timezone_set('America/Los_Angeles');
   $date["year"]=date('Y');
   $date["day"]=date('D');
+  $date["num_day"]=date('d');
+  $date["long_day"]=date('l');
+  $date["month"]=date('F');
   return $date;
 }
 

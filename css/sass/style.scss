@@ -579,6 +579,19 @@ $icon-width: 150px;
 	}
 }
 
+// TODAY
+.today-header {
+	h2 {
+		font-size: 45px;
+		font-weight: 900;
+		text-transform: capitalize;
+		margin-bottom: 10px;
+	}
+	p#weather {
+		font-size: 22px;
+	}
+}
+
 // added to test google fonts when offline
 
 @font-face {
