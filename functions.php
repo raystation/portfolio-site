@@ -126,13 +126,13 @@ function html_print_tech_skills() {
 function horizontal_bar_chart_100 ( $data ) {
   echo "<div class='bar-chart'></>";
 }
-function get_emoji(){
+function get_emoji($num){
   $emoji_path = "img/emoji";
   $emojis = get_images( $emoji_path );
 
   $rand = array();
 
-  for ($i=1; $i < 4; $i++) {
+  for ($i=1; $i <= $num; $i++) {
     $random_number = array_rand($emojis);
     while ( in_array( $random_number, $rand ) ) {
       $random_number = array_rand($emojis);
@@ -200,13 +200,16 @@ function print_skill_html(){
   echo '</div>';
 }
 
-function get_date() {
-  date_default_timezone_set('America/Los_Angeles');
+function get_date($timezone="America/Los_Angeles") {
+  date_default_timezone_set($timezone);
   $date["year"]=date('Y');
   $date["day"]=date('D');
   $date["num_day"]=date('d');
   $date["long_day"]=date('l');
   $date["month"]=date('F');
+  $date["am_pm"]=date('A');
+  $date["hour"]=date('g');
+  $date["minutes"]=date('i');
   return $date;
 }
 

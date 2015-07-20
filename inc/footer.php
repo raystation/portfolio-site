@@ -42,7 +42,7 @@
 			</div>
 
 			<div class="four columns  emoji">
-				<? get_emoji();?>
+				<? get_emoji(3);?>
 			</div>
 
 		</div> <!-- END CONTAINER -->
