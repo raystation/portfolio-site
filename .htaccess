@@ -7,6 +7,7 @@ RewriteRule ^hire-me$ hire-me.php
 RewriteRule ^resume$ about?id=resume
 RewriteRule ^portraits$ work?project=portraits
 RewriteRule ^ringtones$ ringtones.php
+RewriteRule ^today$ today.php
 RewriteRule ^jobs$ about?id=jobs
 
 RewriteRule ^pokemon$ work?project=pokemon
