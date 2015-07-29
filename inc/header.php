@@ -2,6 +2,11 @@
 $meta_description="";
 require_once 'inc/work-info.php';
 require_once 'functions.php';
+
+if ( basename($_SERVER['PHP_SELF'])=="today.php" ) {
+	// $refresh="<meta http-equiv=\"refresh\" content=\"1800;URL='today.php'\">";
+	$refresh="<meta http-equiv=\"refresh\" content=\"1800;URL='today.php'\">";
+}
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
@@ -14,6 +19,7 @@ require_once 'functions.php';
   ================================================== -->
 	<meta charset="utf-8">
 	<title>Ray Yuen &#124; <?php pr($title); ?></title>
+	<? echo $refresh;?>
 	<meta name="description" content="<? if($meta_description){echo $meta_description; } else {echo "Ray Yuen is a designer and artist working in numerous media: books, games, game design and illustration."; } ?>">
 	<meta name="author" content="Ray Yuen">
 	<meta name="keywords" content="portfolio, design, illustration, web design">
