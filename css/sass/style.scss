@@ -593,6 +593,54 @@ $icon-width: 150px;
 	}
 }
 
+	input {
+		font-weight: 100;
+		font-size: 25px;
+		border: 0px;
+		box-shadow: 0px;
+		padding: 10px 15px 10px 15px;
+		//margin: 5px 0 5px 0;
+		margin: 0px;
+		// display: inline-block;
+	}
+
+	input.searchbar {
+		color: #909090;
+		background-color: #F5F8FA;
+		font-family: Georgia;
+		margin-right: 0px;
+		display: inline-block;
+		border-radius: 4em;
+		border: 0;
+		padding-left: 1em;
+		&:hover {
+			background-color: #E1E8ED;
+		}
+	}
+	input.button {
+		text-align: center;
+		background: #F5F8FA;
+		color: #8899A6;
+		font-family: Helvetica;
+		font-weight: 100;
+		font-size: 0.9em;
+		padding: 2px 10px;
+		margin-left: 10px;
+		// display: inline-block;
+	}
+
+	input:focus
+	{
+	outline: none;
+	border: 0;
+	}
+
+	input.button:hover {
+		background-color: red;
+		color: white;
+	}
+
+
 // added to test google fonts when offline
 
 @font-face {

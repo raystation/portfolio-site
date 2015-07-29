@@ -445,3 +445,17 @@ function html_list_ringtones(){
 		echo "<a href='$path' target='_blank'>$name</a><br>";
 	}
 }
+function get_work_links(){
+	$a=array(
+		array("name"=>"NextLesson","src"=>"https://www.nextlesson.org/"),
+		array("name"=>"Airtable","src"=>"https://airtable.com/tblSC9RFZv1vZ4j43/viw6YjTAt8ysG52u3"),
+		array("name"=>"Google Drive","src"=>"https://drive.google.com/drive/u/1/my-drive"),
+		array("name"=>"Gmail","src"=>"https://mail.google.com/mail/u/1/#inbox"),
+		array("name"=>"Google Calendar","src"=>"https://www.google.com/calendar/b/1/render#main_7"),
+		array("name"=>"NL localhost","src"=>"http://localhost/nextlesson/"),
+		array("name"=>"Branding Guidelines","src"=>"http://localhost/nextlesson/brand-guide/"),
+		array("name"=>"website mockup","src"=>"http://localhost/nextlesson/mockups/website-mockup/"),
+		array("name"=>"InterestID","src"=>"https://nl-test-trevor.herokuapp.com/interestid/"),
+	);
+	return $a;
+}
