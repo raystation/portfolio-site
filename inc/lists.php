@@ -449,13 +449,16 @@ function get_work_links(){
 	$a=array(
 		array("name"=>"NextLesson","src"=>"https://www.nextlesson.org/"),
 		array("name"=>"Airtable","src"=>"https://airtable.com/tblSC9RFZv1vZ4j43/viw6YjTAt8ysG52u3"),
-		array("name"=>"Google Drive","src"=>"https://drive.google.com/drive/u/1/my-drive"),
 		array("name"=>"Gmail","src"=>"https://mail.google.com/mail/u/1/#inbox"),
+		array("name"=>"Google Drive","src"=>"https://drive.google.com/drive/u/1/my-drive"),
 		array("name"=>"Google Calendar","src"=>"https://www.google.com/calendar/b/1/render#main_7"),
 		array("name"=>"NL localhost","src"=>"http://localhost/nextlesson/"),
 		array("name"=>"Branding Guidelines","src"=>"http://localhost/nextlesson/brand-guide/"),
 		array("name"=>"website mockup","src"=>"http://localhost/nextlesson/mockups/website-mockup/"),
 		array("name"=>"InterestID","src"=>"https://nl-test-trevor.herokuapp.com/interestid/"),
+		array("name"=>"Heat Map - Home Page","src"=>"http://insights.hotjar.com/h?site=55869&heatmap=126642&token=e7f13ceb8abd757611c1be889eadd99b&device=desktop&type=click"),
+		array("name"=>"Heat Map - Pricing Page","src"=>"http://insights.hotjar.com/h?site=55869&heatmap=126860&token=9d5fb8daaa608aa189885958a67ee791&device=desktop&type=click"),
+		array("name"=>"All Covers","src"=>"http://localhost/nextlesson/thumb-new/lessons.php?page=review"),
 	);
 	return $a;
 }

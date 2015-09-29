@@ -6,6 +6,8 @@ require_once 'functions.php';
 if ( basename($_SERVER['PHP_SELF'])=="today.php" ) {
 	// $refresh="<meta http-equiv=\"refresh\" content=\"1800;URL='today.php'\">";
 	$refresh="<meta http-equiv=\"refresh\" content=\"1800;URL='today.php'\">";
+} else {
+	$refresh="";
 }
 ?>
 <!DOCTYPE html>

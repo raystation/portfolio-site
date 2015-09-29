@@ -580,6 +580,11 @@ $icon-width: 150px;
 }
 
 // TODAY
+.today {
+	li {
+		margin-bottom: 0.5em;
+	}
+}
 .today-header {
 	h2 {
 		font-size: 45px;
