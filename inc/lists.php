@@ -40,7 +40,7 @@ function list_new_favorite_things() {
 
 function list_games_playing() {
 	$container = array(
-		"name"=>"Game Rotation",
+		"name"=>"Video Game Rotation",
 		"list"=>array(
 			"Animal Crossing: New Leaf",
 			// "Zelda: A Link Between Worlds",
@@ -67,7 +67,7 @@ function list_games_playing() {
 
 function list_favorite_games() {
 	$list = array(
-		"name"=>"Favorite Games",
+		"name"=>"Fav Video Games",
 		"list"=>array(
 			"2048",
 			"Batman: Arkham Asylum",

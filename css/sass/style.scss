@@ -128,11 +128,12 @@ a,a:visited {
 .float-left 		{ float: left; }
 .last 					{ margin-right: 0px; }
 .visible 				{ display: inherit !important }
-.red				{ background-color: red; }
+.red						{ background-color: red; }
 .remove-right 	{ padding-right: 0; padding-top: 0;}
 .remove-bottom 	{ margin-bottom: 0; }
 .remove-top 		{ margin-top: 0px; }
-.add-top 		{ margin-top: 100px !important; }
+.add-top 				{ margin-top: 100px !important; }
+.double-bottom	{ margin-bottom: 60px !important; }
 .nolist 				{ list-style: none; }
 .nowrap, .nobreak 				{ white-space: nowrap; }
 .hide 					{ display: none; }
@@ -304,15 +305,23 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 }
 
 .textbox {
+	h1 {
+		font-size: 32px;
+		line-height: 1.5em;
+		font-weight: 400 !important;
+		text-transform: inherit;
+		color: $textbox-text-color;
+		a:link, a:visited {
+			color: $textbox-link-color;
+			@extend .underline;
+		}
+	}
+	color: darken($textbox-color,45%);
 	padding: 2em 3em;
-	font-size: 32px;
-	line-height: 1.5em;
-	font-weight: 400 !important;
 	background-color: $textbox-color;
-	color: $textbox-text-color;
 	// background-color: desaturate($link-color,50%);
 	a:link, a:visited {
-		color: $textbox-link-color;
+		color: darken($textbox-color,45%);
 		@extend .underline;
 	}
 
