@@ -80,7 +80,7 @@ if ( basename($_SERVER['PHP_SELF'])=="today.php" ) {
 			<nav class="sixteen columns">
 				<div class="title"><a href="./">Ray Yuen</a></div>
 				<ul>
-					<li><a class="<?php if ( $section == "work") { echo "active"; } ;?>" href="work">all works</a></li>
+					<li><a class="<?php if ( $section == "work") { echo "active"; } ;?>" href="work">work</a></li>
 					<li><a class="<?php if ( $section == "about") { echo "active"; } ;?>" href="about">about</a></li>
 
 					<?php //<li><a href="projects.php">projects</a></li> ?>
