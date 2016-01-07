@@ -2,11 +2,12 @@
 
 	function get_social_info(){
 		$social=array(
-			"@linkedin"=>"linkedin.com/in/rayuen",
+			"@instagram"=>"instagram.com/raystation",
 			"@twitter"=>"twitter.com/rayuen",
 			"@flickr"=>"flickr.com/rayuen",
+			"@dribbble"=>"dribbble.com/raystation",
+			"@linkedin"=>"linkedin.com/in/rayuen",
 			"@github"=>"github.com/raystation",
-			"@instagram"=>"instagram.com/raystation",
 		);
 		return $social;
 	}
