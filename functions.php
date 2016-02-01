@@ -246,7 +246,7 @@ function workthumb($num) {
   echo "<p>".$works[$num]["name"]."</p>\n";
 }
 
-function skeleton_print_thumbnail_4($array) {
+function skeleton_print_thumbnail_4($array,$vertical=false) {
 
   echo '</div><div class="container portfolio">'."\n";
   global $description;
@@ -262,7 +262,14 @@ function skeleton_print_thumbnail_4($array) {
   $alphacount;
   $omegacount;
   foreach ( $array as $array_item ) {
-    echo '<div class="four columns"><a href="'.$array_item["path"].'" alt="'.html_entity_decode($array_item["name"]).'"><img src="img/'.$array_item["path"].'/thumb.'.$array_item["thumb"].'"></a><p>'.$array_item["name"].'</p></div>';
+    $alt = html_entity_decode($array_item['name']);
+    $thumb = $vertical ? "thumb-v" : "thumb";
+    echo "
+    <div class='four columns'>
+      <a href='$array_item[path]' alt='$alt'><img src='img/$array_item[path]/$thumb.$array_item[thumb]'></a>
+      <p>$array_item[name]</p>
+    </div>
+    ";
     if ( $count == 4 ) {
       echo "<div class='clear'></div>";
       $count = 1;
