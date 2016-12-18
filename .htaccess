@@ -59,6 +59,8 @@ RewriteRule ^lesconcierges$ work?project=lesconcierges
 RewriteRule ^wired$ work?project=wired
 RewriteRule ^holiday-2014$ work?project=holiday-2014
 RewriteRule ^adelle-marcero$ work?project=adelle-marcero
+RewriteRule ^nextlesson-search-browse$ work?project=nextlesson-search-browse
+
 
 RewriteRule ^kabam$ hire-me?id=9999
 RewriteRule ^bigfish$ hire-me?id=510

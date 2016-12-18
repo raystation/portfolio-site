@@ -2,9 +2,13 @@
 
 
 	<div class="four columns alpha caption add-bottom">
-		<?php echo "<h5>".$title."</h5>\n";?>
-		<?php echo "<p>".$description."</p>";?>
-		<?php echo "<p>".$sidebar."</p>\n";?>
+		<?
+			echo "
+			<h5>$title</h5>
+			<p>$description</p>
+			<p>$sidebar</p>
+			";
+		?>
 
 		<div class="desktop">
 			<?php if ( $tools == !NULL) {
@@ -18,12 +22,25 @@
 			<?php related_check();?>
 		</div>
 
-	<div class="clear"></div>
+		<div class="clear"></div>
 
 	</div>
 
 	<div class="twelve columns omega description add-bottom">
-		<img class="scale-with-grid" src="<?php echo $path;?>/cover.jpg">
+		<!-- cover image -->
+		<?
+			if ( isset($moviep) ) {
+				echo "
+					<video width='320' height='240' controls>
+					  <source src='$movie' type='video/mp4'>
+					Your browser does not support the video tag.
+					</video>
+				";
+			} elseif ( file_exists("$path/cover.jpg") ) {
+				echo "<img class='scale-with-grid' src='$path/cover.jpg'>";
+			}
+		?>
+
 	</div>
 
 	<div class="description add-bottom">

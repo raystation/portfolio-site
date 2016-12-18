@@ -1617,6 +1617,7 @@ if ( $title == "NextLesson Search and Browse Page" ) {
 
 	$template = "art";
 	$path = "img/nextlesson-search-browse/";
+	$movie = "$path"."search-browse-bar-1.mp4";
 
 	$description = "I was comissioned to do some illustrations to show an example of how LesConcierges' new web interface and app would work with their existing service.";
 
@@ -1631,15 +1632,7 @@ if ( $title == "NextLesson Search and Browse Page" ) {
 	);
 
 	$img_info = array(
-		array("file" => "search-browse-bar-1.mp4", "alt" => "The hotel owner tells his assistant that he needs to schedule a flight to Shanghai"),
-		array("file" => "02.jpg", "alt" => "The assistant talks to someone at LesConcierges with her boss's request"),
-		array("file" => "03.jpg", "alt" => "The LesConcierges concierge does research and talks to other concierges"),
-		array("file" => "04.jpg", "alt" => "The hotel owner receives a message while he is busy and responds with a quick text back"),
-		array("file" => "05.jpg", "alt" => "He looks at the hotel options that are sent his way"),
-		array("file" => "06.jpg", "alt" => "On the flight over, someone he meets makes a food recommedation"),
-		array("file" => "07.jpg", "alt" => "On the flight, the hotel owner tells LesConcierges that he needs some reservations"),
-		array("file" => "08.jpg", "alt" => "During a meeting, the hotel owner receives a message that his reservation is confirmed"),
-		array("file" => "09.jpg", "alt" => "A survey is given afterwards to ensure quality"),
+		array("file" => "puzzle.jpg", "alt" => "The hotel owner tells his assistant that he needs to schedule a flight to Shanghai"),
 	);
 
 	$other = "
