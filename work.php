@@ -174,6 +174,10 @@
 		case 'adelle-marcero':
 		$title = 'Adelle Marcero Portfolio Site';
 		break;
+
+		case 'nextlesson-search-browse':
+		$title = 'NextLesson Search and Browse Page';
+		break;
 	}
 
 if ( !isset($title) ) { $title = "Work"; }

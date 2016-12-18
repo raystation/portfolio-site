@@ -264,6 +264,16 @@ function skeleton_print_thumbnail_4($array,$vertical=false) {
   foreach ( $array as $array_item ) {
     $alt = html_entity_decode($array_item['name']);
     $thumb = $vertical ? "thumb-v" : "thumb";
+
+    if ( file_exists( "$array_item[path]/logo.png" ) ) {
+      $logo = "$array_item[path]/logo.png";
+      $thumbnail_path = "<a href='$array_item[path]' alt='$alt'><img src='img/$logo'></a>";
+    }
+    if ( file_exists( "$array_item[path]/logo.svg" ) ) {
+      $logo = "$array_item[path]/logo.svg";
+      $thumbnail_path = "<a href='$array_item[path]' alt='$alt'><img src='img/$logo'></a>";
+    }
+
     echo "
     <div class='four columns'>
       <a href='$array_item[path]' alt='$alt'><img src='img/$array_item[path]/$thumb.$array_item[thumb]'></a>

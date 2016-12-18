@@ -1,6 +1,7 @@
 <?php
 
 $works = array(
+	array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-browse", "thumb" => "jpg" ),
 	array( "name" => "Holiday Card 2014","path" => "holiday-2014", "thumb" => "jpg" ),
 	array( "name" => "Adelle Marcero Portfolio Site","path" => "adelle-marcero", "thumb" => "jpg" ),
 	array( "name" => "Suspended Belief Studios","path" => "suspended-belief-studios", "thumb" => "jpg" ),
@@ -106,23 +107,19 @@ function museyon_sidebar() {
 
 if ( $title == "Museyon Guides" ) {
 
-	$path="img/museyon-guides/";
+	$path="img/museyon-guides";
 	$template="company";
 	$logo="svg";
 	$meta_description="I worked for a travel/history book company laying out their books.";
 	$description = '
-		"Smart guide books for travel junkies, culture-vultures, movie lovers and history buffs." Museyon Guides, a small publishing startup in New York, needed someone to design and layout their books. Their books liked to focus on the art, film and music of different places around the globe.
+		Museyon Guides, a small publishing startup in New York City, self&#8209;described as "smart guide books for travel junkies, culture-vultures, movie lovers and history buffs," needed someone to design and layout their books. Their books focused on the art, film and music of cultural hotspots around the globe.
 		</p><p>
-		I joined up just as they were concepting a new side book focused on <a href="chronicles-of-old-new-york">New York</a> history. That book went to be one of their top sellers so I was asked to go into full-time Chronicles mode. In the end, I helped them with seven books. In addition to other side books, I also did some banner ads, brochures and other marketing materials for&nbsp;them.
+		I joined up just as they were concepting a new book focused on <a href="chronicles-of-old-new-york">New York</a> history. That book went to be one of their top sellers so I was asked to go into full-time Chronicles mode. In the end, I helped  with seven books. In addition to other side books, I helped with various collateral—banner ads, brochures and other marketing materials.
 	';
 
 	$sidebar = "
 		<a href='http://www.museyon.com' target='_blank'>museyon.com</a>
 	";
-
-	$img_info = array(
-    		array("file" => "walter-white.gif", "alt" => ""),
-	);
 
 } // end MUSEYON GUIDES
 
@@ -132,20 +129,16 @@ if ( $title == "Museyon Guides" ) {
 
 if ( $title == "The Pok&eacute;mon Company" ) {
 
-	$path="img/pokemon/";
+	$path="img/pokemon";
 	$template="company";
 	$logo="svg";
 	$description = '
-		A brief rundown of the work I did at Pok&eacute;mon.
+		I worked at Pok&eacute;mon from 2015-2010. It was a great experience and a lot of fun. As part of a small in-house creative team, we produced many things including strategy guides, mini game and movie sites, localized logos, and marketing materials.
 	';
 
 	$sidebar = "
 		<a href='http://www.pokemon.com' target='_blank'>pokemon.com</a>
 	";
-
-	$img_info = array(
-		array("file" => "walter-white.gif", "alt" => ""),
-	);
 
 } //end Pokémon
 
@@ -154,7 +147,7 @@ if ( $title == "The Pok&eacute;mon Company" ) {
 
 if ( $title == "Suspended Belief Studios" ) {
 
-	$path="img/suspended-belief-studios/";
+	$path="img/suspended-belief-studios";
 
 	$description = 'Me and my friend Jeremy Klar started this company together. Originally intended to just make games, we started taking on some web development as well. Originally began in Brooklyn, we moved out to San Francisco to be closer to the gaming scene. Our company released two games and went on hiatus shortly after that.'
 	;
@@ -197,29 +190,26 @@ if ( $title == "StoryMaps" ) {
 	$path="img/storymaps/";
 
 	$description = "
-		A programmer I knew, <a href=\"https://github.com/seanh\">Sean Hammond</a>, was coding some software for a Ph.D. study that would assist children in the process of story creation. He called it StoryMaps. Essentially, StoryMaps breaks down the elements of traditional fairy tales into building blocks which children could use to invent new stories. They can create stories that contain their own original ideas while being structurally complete and well-formed.
+		A programmer I knew, <a href=\"https://github.com/seanh\">Sean Hammond</a>, was making software for a Ph.D. study that would assist children in the process of story creation. He called it StoryMaps. Essentially, it would break down the elements of traditional fairy tales into building blocks which children could use to invent new stories. They can create stories that contain their own original ideas while being structurally complete and well-formed.
 		</p><p>
-		A big challenge with this project was making the artwork generic enough so that the kids would still get to inject their own imagination into it. Some were more difficult than others, but I was up for the&nbsp;task.
-		</p><p>
-		Looking at tarot cards for inspiration, I sought to break each event down to it's core action. The main characters would all be represented by simple stick-like figures with no faces. Each image was accentuated with one color.
+		I wanted to make the artwork stylistically generic so that it wouldn't narrow your imagination. Looking at tarot cards and comics for inspiration, I sought to break each event down to it's core action. The main characters would all be represented by simple stick-like figures with no faces. Each image was accentuated with one color.
 		</p><p>
 		<div class='caption list-spacing-fix'>
 		<ul>Additional reading:
 			<li><a href='http://www.era.lib.ed.ac.uk/handle/1842/5294' target='_blank'>Sean's Ph.D. thesis</a></li>
-			<li><a href=\"https://github.com/seanh\">Sean's Github page</a></li>
 		<ul>
 		</div>
 
 		";
 
-	$sidebar = '<p>comic-like hand-drawn illustrations</p>
-	<p><a href="http://seanh.github.io/storymaps/">StoryMaps software</a>
+	$sidebar = '<p>Comic-like, hand-drawn illustrations</p>
+	<p><a href="http://seanh.github.io/storymaps/">StoryMaps Github page</a>
 	';
 
 	$tools=array(
-		array("skill"=>"Photoshop", "percent"=>20),
-		array("skill"=>"Illustrator", "percent"=>20),
-		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>30),
+		array("skill"=>"Photoshop", "percent"=>40),
+		// array("skill"=>"Illustrator", "percent"=>10),
+		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>60),
 	);
 
 	$img_info = array(
@@ -398,7 +388,6 @@ if ( $title == "Malado Baldwin" ) {
 	);
 
 } //end malado-baldwin-indexhibit
-
 
 // #MALADO-WORDPRESS-SITE
 // ===============================
@@ -1619,3 +1608,53 @@ if ( $title == "LesConcierges" ) {
 	";
 
 } //end LESCONCIERGES
+
+
+//  #NEXTLESSON SEARCH BROWSE
+// ===============================
+
+if ( $title == "NextLesson Search and Browse Page" ) {
+
+	$template = "art";
+	$path = "img/nextlesson-search-browse/";
+
+	$description = "I was comissioned to do some illustrations to show an example of how LesConcierges' new web interface and app would work with their existing service.";
+
+	$sidebar = "
+		Illustrations<br>
+		July 2014
+	";
+
+	$tools = array(
+		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>60),
+		array("skill"=>"Photoshop", "percent"=>40),
+	);
+
+	$img_info = array(
+		array("file" => "search-browse-bar-1.mp4", "alt" => "The hotel owner tells his assistant that he needs to schedule a flight to Shanghai"),
+		array("file" => "02.jpg", "alt" => "The assistant talks to someone at LesConcierges with her boss's request"),
+		array("file" => "03.jpg", "alt" => "The LesConcierges concierge does research and talks to other concierges"),
+		array("file" => "04.jpg", "alt" => "The hotel owner receives a message while he is busy and responds with a quick text back"),
+		array("file" => "05.jpg", "alt" => "He looks at the hotel options that are sent his way"),
+		array("file" => "06.jpg", "alt" => "On the flight over, someone he meets makes a food recommedation"),
+		array("file" => "07.jpg", "alt" => "On the flight, the hotel owner tells LesConcierges that he needs some reservations"),
+		array("file" => "08.jpg", "alt" => "During a meeting, the hotel owner receives a message that his reservation is confirmed"),
+		array("file" => "09.jpg", "alt" => "A survey is given afterwards to ensure quality"),
+	);
+
+	$other = "
+		<div class='eight columns alpha add-bottom'>
+			<a href='img/lesconcierges/sketch2.jpg' data-lightbox='les'><img class='scale-with-grid' src='img/lesconcierges/sketch2.jpg'></a>
+		</div>
+		<div class='eight columns omega add-bottom'>
+			<a href='img/lesconcierges/sketch3.jpg' data-lightbox='les'><img class='scale-with-grid' src='img/lesconcierges/sketch3.jpg'></a>
+		</div>
+		<div class='eight columns alpha add-bottom'>
+			<a href='img/lesconcierges/sketch4.jpg' data-lightbox='les'><img class='scale-with-grid' src='img/lesconcierges/sketch4.jpg'></a>
+		</div>
+		<div class='eight columns omega add-bottom'>
+			<a href='img/lesconcierges/sketch5.jpg' data-lightbox='les'><img class='scale-with-grid' src='img/lesconcierges/sketch5.jpg'></a>
+		</div>
+	";
+
+} //end NEXTLESSON SEARCH BROWSE
