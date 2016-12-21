@@ -2,13 +2,25 @@
 	<!-- basic -->
 
 	<?php
-		echo "<div class='slick'>\n";
-			foreach($img_info as $img) {
-			    echo
-			    "\t\t\t\t<div><img class='scale-with-grid tooltip add-bottom' src=\"".$path.$img["file"]."\" alt=\"".$img["alt"]."\"></div>\n";
-			    // "\t\t\t\t<div><img class='scale-with-grid tooltip add-bottom' title='".$img[alt]."' src=\"".$path.$img["file"]."\" alt=\"".$img["alt"]."\"></div>\n";
+		if (isset($img_info)) {
+			echo "<div class='slick'>\n";
+				foreach($img_info as $img) {
+				    echo
+				    "\t\t\t\t<div><img class='scale-with-grid tooltip add-bottom' src=\"".$path.$img["file"]."\" alt=\"".$img["alt"]."\"></div>\n";
+				    // "\t\t\t\t<div><img class='scale-with-grid tooltip add-bottom' title='".$img[alt]."' src=\"".$path.$img["file"]."\" alt=\"".$img["alt"]."\"></div>\n";
+				}
+			echo "\t\t\t</div>";
+		}
+		else
+		{
+			if ( file_exists("$path/cover.jpg") ) {
+				echo "<img src='$path/cover.jpg' alt='$title Top Image'>";
 			}
-		echo "\t\t\t</div>";
+			else
+			{
+				echo "<img src='img/hero_default.jpg' alt='$title Top Image'>";
+			}
+		}
 	?>
 	<?php echo "<h1 style='margin-top:40px;'>$title</h1>\n";?>
 

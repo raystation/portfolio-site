@@ -175,8 +175,20 @@
 		$title = 'Adelle Marcero Portfolio Site';
 		break;
 
+		case 'nextlesson':
+		$title = 'NextLesson';
+		break;
+
 		case 'nextlesson-search-browse':
 		$title = 'NextLesson Search and Browse Page';
+		break;
+
+		case 'nextlesson-interestid':
+		$title = 'InterestID';
+		break;
+
+		case 'nextlesson-pt':
+		$title = 'Interactive Performance Tasks';
 		break;
 	}
 

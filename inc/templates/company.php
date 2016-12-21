@@ -12,6 +12,10 @@
 				$projects=get_pokemon_projects();
 				break;
 
+				case "NextLesson":
+				$projects=get_nextlesson_projects();
+				break;
+
 				default:
 				break;
 			}
@@ -24,9 +28,14 @@
 					echo "<img class='scale-with-grid add-bottom desktop' alt='$title logo' src='$path/logo.svg'>";
 					echo "<img class='scale-with-grid add-bottom mobile' alt='$title logo' src='$path/logo-mobile.svg'>";
 				}
-				if (file_exists("$path/logo.png")) {
+				elseif (file_exists("$path/logo.png"))
+				{
 					echo "<img class='scale-with-grid add-bottom desktop' alt='$title logo' src='$path/logo.png'>";
 					echo "<img class='scale-with-grid add-bottom mobile' alt='$title logo' src='$path/logo-mobile.png'>";
+				}
+				else
+				{
+					echo "<img class='scale-with-grid add-bottom' src='img/hero_default.jpg' alt='$title Top Image'>";
 				}
 				// echo '<img src="'.$path.'logo.'.$logo.'" alt="'.$title.' logo" class="scale-with-grid add-bottom desktop">';
 				// echo '<img src="'.$path.'logo.'.$logo.'" alt="'.$title.' logo" class="scale-with-grid add-bottom desktop">';
@@ -35,7 +44,7 @@
 
 			<div class="twelve columns description alpha add-bottom">
 				<?php
-					echo "<h5>".$title."</h5>";
+					echo "<h2>".$title."</h2>";
 					echo "<p>".$description."</p>"
 				?>
 
@@ -52,6 +61,6 @@
 
 		</div> <!-- end sixteen -->
 
-		<?php skeleton_print_page_thumbnail_4($projects) ;?>
+		<? skeleton_print_page_thumbnail_4($projects) ;?>
 
 

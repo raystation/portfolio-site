@@ -298,11 +298,32 @@ function skeleton_print_page_thumbnail_4($array) {
   // populates page with thumbnails from $work
   $count=1;
   foreach ( $array as $array_item ) {
-    echo "\t".'<div class="four columns"><a href="'.$array_item["path"].'" alt="'.html_entity_decode($array_item["name"]).'"><img class="scale-with-grid" src="img/'.$array_item["path"].'/thumb.'.$array_item["thumb"].'"></a><p>'.$array_item["name"].'</p></div>'."\n";
-    if ( $count == 4 ) {
+
+    // checks for thumbnails
+    if ( file_exists("thumb.jpg") ) {
+      $thumbnail_img = "$array_item[path]/thumb.jpg";
+    }
+    elseif ( file_exists("thumb.svg") ) {
+      $thumbnail_img = "$array_item[path]/thumb.svg";
+    }
+    else
+    {
+      $thumbnail_img = "img/thumb-default.jpg";
+    }
+    $alt_text = html_entity_decode($array_item['name']);
+    // echo "\t".'<div class="four columns"><a href="'.$array_item["path"].'" alt="'.html_entity_decode($array_item["name"]).'"><img class="scale-with-grid" src='$thumbnail_img'></a><p>'.$array_item["name"].'</p></div>'."\n";
+    echo "
+    \t<div class='four columns'><a href='$array_item[path]' alt='$alt_text'>
+        <img class='scale-with-grid' src='$thumbnail_img'></a>
+        <p>$array_item[name]</p>
+      </div>\n";
+    if ( $count == 4 )
+    {
       echo "<div class='clear'></div>";
       $count = 1;
-    } else {
+    }
+    else
+    {
       $count++;
     }
   }

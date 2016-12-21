@@ -1,7 +1,13 @@
 <?php
 
 $works = array(
-	array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-browse", "thumb" => "jpg" ),
+	array( "name" => "NextLesson","path" => "nextlesson", "thumb" => "jpg" ),
+	// array( "name" => "Interactive Performance Tasks","path" => "nextlesson-pt", "thumb" => "jpg" ),
+	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars", "thumb" => "jpg" ),
+	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library", "thumb" => "jpg" ),
+	array( "name" => "Lesson Covers","path" => "nextlesson-covers", "thumb" => "jpg" ),
+	array( "name" => "InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
+	// array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-browse", "thumb" => "jpg" ),
 	array( "name" => "Holiday Card 2014","path" => "holiday-2014", "thumb" => "jpg" ),
 	array( "name" => "Adelle Marcero Portfolio Site","path" => "adelle-marcero", "thumb" => "jpg" ),
 	array( "name" => "Suspended Belief Studios","path" => "suspended-belief-studios", "thumb" => "jpg" ),
@@ -65,6 +71,15 @@ function get_pokemon_projects(){
 		array( "name" => "Pok&eacute;mon Toy&nbsp;Fair", "path" => "toy-fair", "thumb" => "jpg" ),
 		array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch", "thumb" => "jpg" ),
 		array( "name" => "Licensing Show", "path" => "licensing-show", "thumb" => "jpg" ),
+	);
+	return $works;
+}
+
+function get_nextlesson_projects(){
+	$works = array(
+		array( "name" => "nextlesson-search-browse","path" => "nextlesson-search-browse", "thumb" => "jpg" ),
+		array( "name" => "nextlesson-interestid","path" => "nextlesson-interestid", "thumb" => "jpg" ),
+		array( "name" => "nextlesson-covers", "path" => "nextlesson-covers", "thumb" => "jpg" ),
 	);
 	return $works;
 }
@@ -163,23 +178,27 @@ if ( $title == "Suspended Belief Studios" ) {
 
 } //end SUSPENDED BELIEF STUDIOS
 
-
-//  #PORTRAITS
+//  #NEXTLESSOn
 // ===============================
 
-if ( $title == "Walter White" ) {
+if ( $title == "NextLesson" ) {
 
-	$path="img/walter-white/";
+	$path="img/nextlesson";
 
-	$description;
+	$description = "Blue Bottle American Apparel wolf small batch, Wes Anderson fashion axe vinyl McSweeney's gluten-free messenger bag four loko photo booth dreamcatcher. Quinoa food truck Banksy semiotics single-origin coffee, authentic Tumblr. Bitters blog occupy, narwhal vinyl hella ugh kitsch freegan quinoa. Umami try-hard photo booth, post-ironic wayfarers VHS literally Odd Future. Fingerstache tofu food truck, heirloom pop-up Banksy Pinterest Odd Future tattooed seitan fap Thundercats. Drinking vinegar Brooklyn pour-over yr, stumptown +1 cliche art party PBR&B Pinterest. Tote bag PBR Marfa aesthetic, yr Portland post-ironic Vice hoodie four loko Austin kogi gastropub seitan brunch.";
 
-	$sidebar = "";
+	$template="company";
+	$logo="svg";
+
+	$sidebar = "Engaging K-12 educational Content</p>
+	<p><a href='http://nextlesson.org' target='_blank'>nextlesson.org</a>";
 
 	$img_info = array(
-		array("file" => "walter-white.gif", "alt" => ""),
 	);
 
-} //end PORTRAITS
+} //end NEXTLESSOn
+
+
 
 
 // #STORYMAPS
@@ -1615,9 +1634,9 @@ if ( $title == "LesConcierges" ) {
 
 if ( $title == "NextLesson Search and Browse Page" ) {
 
-	$template = "art";
-	$path = "img/nextlesson-search-browse/";
-	$movie = "$path"."search-browse-bar-1.mp4";
+	$template = "ui";
+	$path = "img/nextlesson-search-browse";
+	$movie = "$path/search-browse-bar-1.mp4";
 
 	$description = "I was comissioned to do some illustrations to show an example of how LesConcierges' new web interface and app would work with their existing service.";
 
@@ -1632,22 +1651,96 @@ if ( $title == "NextLesson Search and Browse Page" ) {
 	);
 
 	$img_info = array(
-		array("file" => "puzzle.jpg", "alt" => "The hotel owner tells his assistant that he needs to schedule a flight to Shanghai"),
+		// array("file" => "puzzle.jpg", "alt" => "The hotel owner tells his assistant that he needs to schedule a flight to Shanghai"),
 	);
 
 	$other = "
-		<div class='eight columns alpha add-bottom'>
-			<a href='img/lesconcierges/sketch2.jpg' data-lightbox='les'><img class='scale-with-grid' src='img/lesconcierges/sketch2.jpg'></a>
-		</div>
-		<div class='eight columns omega add-bottom'>
-			<a href='img/lesconcierges/sketch3.jpg' data-lightbox='les'><img class='scale-with-grid' src='img/lesconcierges/sketch3.jpg'></a>
-		</div>
-		<div class='eight columns alpha add-bottom'>
-			<a href='img/lesconcierges/sketch4.jpg' data-lightbox='les'><img class='scale-with-grid' src='img/lesconcierges/sketch4.jpg'></a>
-		</div>
-		<div class='eight columns omega add-bottom'>
-			<a href='img/lesconcierges/sketch5.jpg' data-lightbox='les'><img class='scale-with-grid' src='img/lesconcierges/sketch5.jpg'></a>
-		</div>
+	<video width='320' height='240' controls>
+		<source src='$movie' type='video/mp4'>
+		Your browser does not support the video tag.
+	</video>
 	";
 
 } //end NEXTLESSON SEARCH BROWSE
+
+
+//  #NEXTLESSON INTEREST ID
+// ===============================
+
+if ( $title == "InterestID" ) {
+
+	$template = "ui";
+	$path = "img/nextlesson-interestid";
+	// $movie = "$path/interestid-voting.mp4";
+
+	$description = "I was comissioned to do some illustrations to show an example of how LesConcierges' new web interface and app would work with their existing service.";
+
+	$sidebar = "
+		Illustrations<br>
+		July 2014
+	";
+
+	$tools = array(
+		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>60),
+		array("skill"=>"Photoshop", "percent"=>40),
+	);
+
+	$img_info = array(
+		// array("file" => "puzzle.jpg", "alt" => "The hotel owner tells his assistant that he needs to schedule a flight to Shanghai"),
+	);
+
+	$other = "
+	<video width='320' height='240' controls>
+		<source src='$path/interestid-voting.mp4' type='video/mp4'>
+		Your browser does not support the video tag.
+	</video>
+	<h3>Voting</h3>
+	<p>
+		Helvetica pickled kale chips Pinterest. Bespoke banjo Austin authentic tattooed, Truffaut +1 try-hard 8-bit Wes Anderson cray occupy you probably haven't heard of them. Hashtag irony ugh, scenester DIY Truffaut whatever twee organic. Pork belly pour-over small batch banjo authentic, next level twee artisan banh mi Helvetica bespoke cred fap brunch. Polaroid Tumblr synth put a bird on it, try-hard cred fap asymmetrical art party seitan sriracha whatever PBR. Actually single-origin coffee letterpress food truck literally Tonx. Cred ethical Wes Anderson food truck brunch, kitsch hoodie American Apparel selfies PBR&B biodiesel McSweeney's quinoa banjo craft beer.
+	</p>
+	<video width='320' height='240' controls>
+		<source src='$path/interestid-filters.mp4' type='video/mp4'>
+		Your browser does not support the video tag.
+	</video>
+	<h3>Filtering</h3>
+	<p>
+		Blue Bottle American Apparel wolf small batch, Wes Anderson fashion axe vinyl McSweeney's gluten-free messenger bag four loko photo booth dreamcatcher. Quinoa food truck Banksy semiotics single-origin coffee, authentic Tumblr. Bitters blog occupy, narwhal vinyl hella ugh kitsch freegan quinoa. Umami try-hard photo booth, post-ironic wayfarers VHS literally Odd Future. Fingerstache tofu food truck, heirloom pop-up Banksy Pinterest Odd Future tattooed seitan fap Thundercats. Drinking vinegar Brooklyn pour-over yr, stumptown +1 cliche art party PBR&B Pinterest. Tote bag PBR Marfa aesthetic, yr Portland post-ironic Vice hoodie four loko Austin kogi gastropub seitan brunch.
+	</p>
+	";
+
+} //end NEXTLESSON INTERESTID
+
+
+//  #NEXTLESSON INTERACTIVE PT
+// ===============================
+
+if ( $title == "Interactive Performance Tasks" ) {
+
+	$template = "ui";
+	$path = "img/nextlesson-pt";
+	$movie = "$path/interactive-pt-overview.mp4";
+
+	$description = "Kogi tofu jean shorts seitan. Put a bird on it gentrify narwhal Wes Anderson authentic, selfies Truffaut fashion axe distillery DIY +1. Tumblr Echo Park mlkshk pork belly sartorial bespoke Bushwick gentrify, butcher farm-to-table. Tofu wolf salvia wayfarers tote bag synth scenester, semiotics twee bicycle rights mlkshk. Ugh photo booth viral raw denim dreamcatcher. Wayfarers pork belly keytar next level kogi, Intelligentsia ugh cardigan literally retro Bushwick PBR. Church-key Intelligentsia bespoke, banh mi semiotics skateboard ethical chambray PBR&B chillwave iPhone pug kale chips +1 quinoa.";
+
+	$sidebar = "
+		Illustrations<br>
+		July 2014
+	";
+
+	$tools = array(
+		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>60),
+		array("skill"=>"Photoshop", "percent"=>40),
+	);
+
+	$img_info = array(
+		// array("file" => "puzzle.jpg", "alt" => "The hotel owner tells his assistant that he needs to schedule a flight to Shanghai"),
+	);
+
+	$other = "
+	<video width='320' height='240' controls>
+		<source src='$movie' type='video/mp4'>
+		Your browser does not support the video tag.
+	</video>
+	";
+
+} //end NEXTLESSON INTERACTIVE PT
