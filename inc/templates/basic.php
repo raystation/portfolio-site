@@ -1,3 +1,21 @@
+<?
+
+	if ( !is_null($path) ) {
+		// checks for ADDITIONAL_IMG folder for support images
+		if ( file_exists("$path/additional_img") ) {
+			$additional_img_html = skeleton_html(2,$path,$folder="additional_img");
+		} else {
+			$additional_img_html = "";
+		}
+	}
+	else
+	{
+		$path="";
+		$additional_img_html = "fill out information on work-info";
+	}
+
+?>
+
 <div class="sixteen columns">
 	<!-- basic -->
 
@@ -6,19 +24,26 @@
 			echo "<div class='slick'>\n";
 				foreach($img_info as $img) {
 				    echo
-				    "\t\t\t\t<div><img class='scale-with-grid tooltip add-bottom' src=\"".$path.$img["file"]."\" alt=\"".$img["alt"]."\"></div>\n";
-				    // "\t\t\t\t<div><img class='scale-with-grid tooltip add-bottom' title='".$img[alt]."' src=\"".$path.$img["file"]."\" alt=\"".$img["alt"]."\"></div>\n";
+				    // "\t\t\t\t<div><img class='scale-with-grid tooltip add-bottom' src=\"".$path.$img["file"]."\" alt=\"".$img["alt"]."\"></div>\n";
+				    "\t\t\t\t<div><img class='scale-with-grid tooltip add-bottom' src='$path/$img[file]' alt='$img[alt]'></div>\n";
 				}
 			echo "\t\t\t</div>";
 		}
 		else
 		{
+			if ( !isset($path) ) {
+				$title = !isset($path) ? $project : "";
+				$path = "fill out information on work-info";
+				$sidebar = "fill out information on work-info";
+				$description = "fill out information on work-info. Meggings kogi biodiesel Cosby sweater Blue Bottle. Freegan PBR&B mustache, plaid tousled organic craft beer direct trade lo-fi synth messenger bag selfies mixtape bespoke. Tote bag actually 8-bit viral hella, Helvetica banjo +1 McSweeney's Vice literally kogi you probably haven't heard of them ethical. Austin fixie kogi, pour-over mumblecore occupy flannel raw denim Shoreditch PBR&B next level Pitchfork authentic High Life. Vinyl slow-carb stumptown aesthetic authentic. Wolf cornhole VHS Truffaut Vice. Mlkshk cred lomo Marfa, tattooed artisan bicycle rights.";
+				$tools = array();
+			}
 			if ( file_exists("$path/cover.jpg") ) {
-				echo "<img src='$path/cover.jpg' alt='$title Top Image'>";
+				echo "<img class='scale-with-grid' src='$path/cover.jpg' alt='$title Top Image'>";
 			}
 			else
 			{
-				echo "<img src='img/hero_default.jpg' alt='$title Top Image'>";
+				echo "<img class='scale-with-grid' src='img/hero_default.jpg' alt='$title Top Image'>";
 			}
 		}
 	?>
@@ -26,9 +51,13 @@
 
 	<div class="twelve columns alpha description">
 
-		<?php echo "<p>$description</p>";?>
-
-		<?php related_check();?>
+		<?
+		echo "
+			<p>$description</p>
+			$additional_img_html
+		";
+		related_check();
+		?>
 
 	</div>
 

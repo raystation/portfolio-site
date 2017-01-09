@@ -2,11 +2,12 @@
 
 $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "thumb" => "jpg" ),
+	array( "name" => "Lesson Covers","path" => "nextlesson-covers", "thumb" => "jpg" ),
+	array( "name" => "InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
+	array( "name" => "NextLesson Glossary Images","path" => "nextlesson-glossary", "thumb" => "jpg" ),
 	// array( "name" => "Interactive Performance Tasks","path" => "nextlesson-pt", "thumb" => "jpg" ),
 	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars", "thumb" => "jpg" ),
 	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library", "thumb" => "jpg" ),
-	array( "name" => "Lesson Covers","path" => "nextlesson-covers", "thumb" => "jpg" ),
-	array( "name" => "InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
 	// array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-browse", "thumb" => "jpg" ),
 	array( "name" => "Holiday Card 2014","path" => "holiday-2014", "thumb" => "jpg" ),
 	array( "name" => "Adelle Marcero Portfolio Site","path" => "adelle-marcero", "thumb" => "jpg" ),
@@ -77,9 +78,15 @@ function get_pokemon_projects(){
 
 function get_nextlesson_projects(){
 	$works = array(
-		array( "name" => "nextlesson-search-browse","path" => "nextlesson-search-browse", "thumb" => "jpg" ),
-		array( "name" => "nextlesson-interestid","path" => "nextlesson-interestid", "thumb" => "jpg" ),
-		array( "name" => "nextlesson-covers", "path" => "nextlesson-covers", "thumb" => "jpg" ),
+		array( "name" => "Lesson Covers", "path" => "nextlesson-covers", "thumb" => "jpg" ),
+		// array( "name" => "Browsing Experience","path" => "nextlesson-search-browse", "thumb" => "jpg" ),
+		array( "name" => "Marketing & Collateral", "path" => "nextlesson-collateral", "thumb" => "jpg" ),
+		array( "name" => "InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
+		// array( "name" => "Graphics Library", "path" => "nextlesson-library", "thumb" => "jpg" ),
+		// array( "name" => "Profile Avatars", "path" => "nextlesson-avatars", "thumb" => "jpg" ),
+		array( "name" => "Glossary Terms", "path" => "nextlesson-glossary", "thumb" => "jpg" ),
+		// array( "name" => "Interactive Performance Tasks", "path" => "nextlesson-interative-pt", "thumb" => "jpg" ),
+		// array( "name" => "Printed Lesson", "path" => "nextlesson-pdf", "thumb" => "jpg" ),
 	);
 	return $works;
 }
@@ -116,6 +123,8 @@ function museyon_sidebar() {
 			Printed ". $date . "</p><p>
 			<a href=" .$url." target='_blank'>Buy a copy</a>";
 }
+
+#COMPANY
 
 //  #MUSEYON GUIDES
 // ===============================
@@ -178,14 +187,18 @@ if ( $title == "Suspended Belief Studios" ) {
 
 } //end SUSPENDED BELIEF STUDIOS
 
-//  #NEXTLESSOn
+//  #NEXTLESSON
 // ===============================
 
 if ( $title == "NextLesson" ) {
 
 	$path="img/nextlesson";
 
-	$description = "Blue Bottle American Apparel wolf small batch, Wes Anderson fashion axe vinyl McSweeney's gluten-free messenger bag four loko photo booth dreamcatcher. Quinoa food truck Banksy semiotics single-origin coffee, authentic Tumblr. Bitters blog occupy, narwhal vinyl hella ugh kitsch freegan quinoa. Umami try-hard photo booth, post-ironic wayfarers VHS literally Odd Future. Fingerstache tofu food truck, heirloom pop-up Banksy Pinterest Odd Future tattooed seitan fap Thundercats. Drinking vinegar Brooklyn pour-over yr, stumptown +1 cliche art party PBR&B Pinterest. Tote bag PBR Marfa aesthetic, yr Portland post-ironic Vice hoodie four loko Austin kogi gastropub seitan brunch.";
+	$description = "
+	NextLesson is a resource for teachers to find projects and lessons that engage students in real world problem solving basing lessons around familiar (and current) topics—like <a href='https://www.nextlesson.org/resources/q-pokemon' target='_blank'>Pok&eacute;mon Go</a>, <a href='https://www.nextlesson.org/resources/q-minecraft' target='_blank'>Minecraft</a>, <a href='https://www.nextlesson.org/resources/q-taylor%20swift' target='_blank'>Taylor Swift</a> or <a href='https://www.nextlesson.org/resources/interest-basketball-baseball-winter+sports-xtreme+sports-racket+sports-olympics-football-hockey' target='_blank'>sports</a></a>.
+	</p><p>
+	As <em>Head of Design</em> at NextLesson, I had to take care of all artwork and website design needs. Originally hired to work with marketing and to create all the <a href='nextlesson-covers'>lesson covers</a> on the site, I made interest icons for the <a href='nextlesson-interestid'>InterestID</a> tool, helped design the Interactive tool, and built a graphics library that freelancers could use to speed up artwork creation.
+	";
 
 	$template="company";
 	$logo="svg";
@@ -196,17 +209,14 @@ if ( $title == "NextLesson" ) {
 	$img_info = array(
 	);
 
-} //end NEXTLESSOn
-
-
-
+} //end NEXTLESSON
 
 // #STORYMAPS
 // ========================
 
 if ( $title == "StoryMaps" ) {
 
-	$path="img/storymaps/";
+	$path="img/storymaps";
 
 	$description = "
 		A programmer I knew, <a href=\"https://github.com/seanh\">Sean Hammond</a>, was making software for a Ph.D. study that would assist children in the process of story creation. He called it StoryMaps. Essentially, it would break down the elements of traditional fairy tales into building blocks which children could use to invent new stories. They can create stories that contain their own original ideas while being structurally complete and well-formed.
@@ -222,7 +232,7 @@ if ( $title == "StoryMaps" ) {
 		";
 
 	$sidebar = '<p>Comic-like, hand-drawn illustrations</p>
-	<p><a href="http://seanh.github.io/storymaps/">StoryMaps Github page</a>
+	<p><a href="http://seanh.github.io/storymaps">StoryMaps Github page</a>
 	';
 
 	$tools=array(
@@ -247,7 +257,7 @@ if ( $title == "StoryMaps" ) {
 
 if ( $title == "Indiginauts" ) {
 
-	$path="img/indiginauts/";
+	$path="img/indiginauts";
 
 	$description = "
 		This idea was the whole reason we started Suspended Belief Games. Based on an illustration I did for a group show in New York, the Indiginauts were space explorers in the vein of Star Fleet. They were peace-loving creatures that explored the stars. Were they decended from humans? Maybe. They loved nothing more than to explore, learn and record for others to&nbsp;see.
@@ -293,7 +303,7 @@ if ( $title == "Indiginauts" ) {
 
 if ( $title == "100 Principles of Game&nbsp;Design" ) {
 
-	$path="img/100-principles-of-game-design/";
+	$path="img/100-principles-of-game-design";
 
 	$description = "
 		Because of a scheduling problem, I was was asked to do the illustrations for a game design book. “Game design you say? This is my area of expertise!” The turnaround was tight, under a month for about 30 spot illustrations. The schedule wasn't the best, but I really wanted to do game illustrations. Exchanging sketches back and forth with the author, we decided that we could have a cast of  characters that could be reused which would greatly speed up the work, as well as establish a visual&nbsp;language.
@@ -307,12 +317,12 @@ if ( $title == "100 Principles of Game&nbsp;Design" ) {
 		array("skill"=>"Photoshop", "percent"=>20),
 	);
 
-	$sidebar = 'Published by Pearson</p>
-		<p>Written by <a href="https://twitter.com/subversified">Wendy Despain</a> <br>
+	$sidebar = "Published by Pearson</p>
+		<p>Written by <a href='https://twitter.com/subversified'>Wendy Despain</a> <br>
 		December 2012<br>
 		240 pages </p>
-		<p><a href="http://www.pearsonhighered.com/educator/product/100-Principles-of-Game-Design/9780321902498.page">Buy a copy</a></p>
-	';
+		<p><a href='https://www.amazon.com/100-Principles-Game-Design-DESPAIN/dp/0321902491/ref=sr_1_1?ie=UTF8&qid=1482367099&sr=8-1&keywords=100+principles+of+game+design' target='_blank'>Buy a copy</a></p>
+	";
 
 	$img_info = array(
 	    array("file" => "book-cover.jpg", "alt" => "Cover of the book"),
@@ -341,7 +351,7 @@ if ( $title == "100 Principles of Game&nbsp;Design" ) {
 
 if ( $title == "Project Animore" ) {
 
-	$path="img/project-animore/";
+	$path="img/project-animore";
 
 	$description = "
 	This was a game concept we explored on the idea of mixing things together. We never did figure out the best way to execute or make it fun in a free-to-play environment (where all the games were headed at the time on iOS). We also didn't have a developer at the time to actually test game ideas with so it was all a lot of speculation on what would and wouldn't work.
@@ -381,7 +391,7 @@ if ( $title == "Project Animore" ) {
 
 if ( $title == "Malado Baldwin" ) {
 
-	$path="img/malado-baldwin-indexhibit/";
+	$path="img/malado-baldwin-indexhibit";
 
 	$description = 'When my artist friend Malado approached me in 2009 about having a site that she could update on her own, I actually didn‘t know what the best solution was out there. I was more print focused back then and had a little HTML/CSS experience. I turned to illustrator <a href="http://peteroumanski.com" target="_blank">Peter Oumanski</a> who told me he had good success using Indexhibit as his CMS. So I set it up. It was easy and now Malado had something she use call her own and didn’t need to hire web designers to update.
 		</p><p>
@@ -413,7 +423,7 @@ if ( $title == "Malado Baldwin" ) {
 
 if ( $title == "Malado Baldwin Wordpress site" ) {
 
-	$path="img/malado-baldwin-wordpress/";
+	$path="img/malado-baldwin-wordpress";
 
 	$description = "
 		My friend Malado was growing out of her Indexhibit site and needed <em>more</em>. Responsiveness was the main thing she asked for, but not in those exact words since we didn’t know what that was at the time. I believe what she said was “These pictures look fine on the computer but too small on my phone.” When you're schmoozing it up at the gallery, you want to be able to show someone your painting on the fly while they are consuming free wine and cheese. There are sales to be made!
@@ -452,7 +462,7 @@ if ( $title == "Malado Baldwin Wordpress site" ) {
 
 if ( $title == "Sarah Walko website" ) {
 
-	$path="img/sarah-walko-wordpress/";
+	$path="img/sarah-walko-wordpress";
 
 	$description = "
 		My first experience building a site using Wordpress. I met artist Sarah Walko through my good artist friend Malado Baldwin. She expressed that she needed a site that she could update on her own and that she had experience with Wordpress through work. So I went about helping her figure out the best way to get this going for&nbsp;her.
@@ -484,7 +494,7 @@ if ( $title == "Sarah Walko website" ) {
 
 if ( $title == "Scavenger Hunt" ) {
 
-	$path="img/scavenger-hunt/";
+	$path="img/scavenger-hunt";
 
 	$description = 'SAN FRANCISCO, California — I submitted a t-shirt design to a Threadless contest. The challenge: make a fun tee for the <a href="http://www.chicagochildrensmuseum.org">Chicago Children\'s Museum</a>. The winner would get a ticket out to Chicago and like $1,000 in Threadless store credit or something. I did a bunch of research about the museum and found my imagination running wild with the activities you could do there (and mildly jealous that I wasn\'t a kid in Chicago!). I thought it would be wonderful to have a shirt that represented all the neat things kids could do at the&nbsp;museum.
 		</p><p>
@@ -518,7 +528,7 @@ if ( $title == "Scavenger Hunt" ) {
 
 if ( $title == "The 3" ) {
 
-	$path="img/the3/";
+	$path="img/the3";
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>70, "icon"=>"IL"),
@@ -563,7 +573,7 @@ if ( $title == "The 3" ) {
 
 if ( $title == "Edgeware" ) {
 
-	$path="img/edgeware/";
+	$path="img/edgeware";
 
 	$description = 'These are vector graphics proposed for a device that would help  Coast Guard patrols decide on the best course of action or even rules of engagement. They would input the conditions and the device would narrow down your options. I am not sure that this device was actually ever created but that’s the world of lucrative government contracts fer&nbsp;ya.';
 
@@ -592,7 +602,7 @@ if ( $title == "Edgeware" ) {
 
 if ( $title == "Egg Baby" ) {
 
-	$path="img/egg-baby/";
+	$path="img/egg-baby";
 
 	$description = 'A Brooklyn-based apparel company needed some illustrations for some of their clothing. Their work is targeted at infants, small boys and girls.';
 
@@ -621,7 +631,7 @@ if ( $title == "Egg Baby" ) {
 
 if ( $title == "Color Chameleon" ) {
 
-	$path="img/color-chameleon/";
+	$path="img/color-chameleon";
 
 
 	$description = 'Color Chameleon was one of the first ideas we tried to bring to life. We thought it would be fun to run from a zookeeper who was chasing after you. The thing you needed to do was match the color of the objects that were in your path so you could camoflague and gain distance on your pursuers.
@@ -668,7 +678,7 @@ if ( $title == "Color Chameleon" ) {
 
 if ( $title == "Art + Paris" ) {
 
-	$path="img/art-and-paris/";
+	$path="img/art-and-paris";
 
 	$description = '
 	<strong>Impressionists Post-Impressionists: The Ultimate Guide to Artists, Paintings and Places in Paris and Normandy</strong>. This was another book in the <em>Art+</em> series that Museyon was doing that they hadn’t done in a while since they started full steam with the Chronicles series. I personally had never laid out one of these, so I was eager to tackle something new.
@@ -681,7 +691,7 @@ if ( $title == "Art + Paris" ) {
 	$author = "Museyon&nbsp;Guides";
 	$pages = 328;
 	$date = "July 2012";
-	$url = "http://www.museyon.com/shop/art-paris-impressionists/";
+	$url = "http://www.museyon.com/shop/art-paris-impressionists";
 
 	$sidebar = museyon_sidebar();
 
@@ -712,7 +722,7 @@ if ( $title == "Art + Paris" ) {
 
 if ( $title == "Chronicles of Old&nbsp;London" ) {
 
-	$path="img/chronicles-of-old-london/";
+	$path="img/chronicles-of-old-london";
 
 	$tools=array(
 		array("skill"=>"Indesign", "percent"=>75),
@@ -733,7 +743,7 @@ if ( $title == "Chronicles of Old&nbsp;London" ) {
 	$author="Kevin&nbsp;Jackson";
 	$pages = 288;
 	$date = "May 2012";
-	$url = "http://www.museyon.com/shop/chronicles-of-old-london/";
+	$url = "http://www.museyon.com/shop/chronicles-of-old-london";
 
 	$sidebar = museyon_sidebar();
 
@@ -757,7 +767,7 @@ if ( $title == "Chronicles of Old&nbsp;London" ) {
 
 if ( $title == "Chronicles of Old&nbsp;Paris" ) {
 
-	$path="img/chronicles-of-old-paris/";
+	$path="img/chronicles-of-old-paris";
 
 	$description = '
 		<strong>Exploring the Historic City of Light</strong>. Paris. The city of love. This place has a very special place in my heart because this is was my first trip with my s.o. other than each other\'s cities (long distance!).</p><p>Where the Vegas book was rife with land grabbing deals, the American frontier, casinos and big personalities—the Paris book was about food, steadfastness, art and music. There\'s a story about the city being starved during a siege and them resorting to eating zoo animals instead of surrendering. Oh and the top restaurants fought over who got which animal. How amazing is that?
@@ -767,7 +777,7 @@ if ( $title == "Chronicles of Old&nbsp;Paris" ) {
 	$author="John&nbsp;Baxter";
 	$pages = 288;
 	$date = "May 2011";
-	$url = "http://www.museyon.com/shop/chronicles-of-old-paris/";
+	$url = "http://www.museyon.com/shop/chronicles-of-old-paris";
 
 	$sidebar = museyon_sidebar();
 
@@ -791,7 +801,7 @@ if ( $title == "Chronicles of Old&nbsp;Paris" ) {
 
 if ( $title == "City Style" ) {
 
-	$path="img/city-style/";
+	$path="img/city-style";
 
 	$description = '
 		A Field Guide to Global Fashion Capitals. The second book I worked on with Museyon, City Style was a completely one-off book on fashion. <a href="http://www.linkedin.com/in/thisisheatherc">Heather</a>, one of the editors, was a big nerd for art and fashion (she taught me about jean jackets).
@@ -804,7 +814,7 @@ if ( $title == "City Style" ) {
 	$author = "Museyon&nbsp;Guides";
 	$pages = 272;
 	$date = "October 2011";
-	$url = "http://www.museyon.com/shop/city-style/";
+	$url = "http://www.museyon.com/shop/city-style";
 
 	$sidebar = museyon_sidebar();
 
@@ -838,7 +848,7 @@ if ( $title == "City Style" ) {
 
 if ( $title == "Chronicles of Old&nbsp;Rome" ) {
 
-	$path="img/chronicles-of-old-rome/";
+	$path="img/chronicles-of-old-rome";
 
 
 	$description = '
@@ -879,12 +889,12 @@ if ( $title == "Chronicles of Old&nbsp;Rome" ) {
 
 if ( $title == "Chronicles of Old New&nbsp;York" ) {
 
-	$path="img/chronicles-of-old-new-york/";
+	$path="img/chronicles-of-old-new-york";
 
 	$description = '
 		<strong>Explore 400 years of Manhattan history</strong>. <em>Chronicles of Old New York</em> was the first book I worked on with Museyon Guides. The first half of the book details stories in and around New York City\'s history. The second half of the book featured walking tours which would highlight eight areas and provide references to the first half of the book. The historic content was pretty awesome. Gun duels, old taverns in the city (that George Washington went to!), rich capitalists that built the city...it was nice to know more about the city I lived in.
 		</p><p>
-		This book was to be an off-shoot book (up till this point, Museyon had been making a series of books called <a href="http://www.museyon.com/shop/art-travel-europe/">Art+</a> and <a href="http://www.museyon.com/shop/film-travel-asia-oceania-africa/">Film+</a>). We decided that we wanted to have a different look, but still keep the looks aligned. We worked together to establish some base rules and some standard layouts and with the skeleton of the book created, we went about populating the pages.
+		This book was to be an off-shoot book (up till this point, Museyon had been making a series of books called <a href="http://www.museyon.com/shop/art-travel-europe">Art+</a> and <a href="http://www.museyon.com/shop/film-travel-asia-oceania-africa">Film+</a>). We decided that we wanted to have a different look, but still keep the looks aligned. We worked together to establish some base rules and some standard layouts and with the skeleton of the book created, we went about populating the pages.
 		</p><p>
 		Since this was the first time we worked together, I had to make sure their production files were all up to snuff. The owner had a decent eye for design and some previous production experience with magazines, but the files were a copy-and-paste mess. I showed them how to automate the more menial tasks, like converting folders of images to CMYK, paragraph/character styles and indexing (because humans have better things to do!) They had me pretty involved in the design and photo selection process which I quite enjoyed.
 		</p><p>
@@ -926,14 +936,14 @@ if ( $title == "Chronicles of Old New&nbsp;York" ) {
 
 if ( $title == "Chronicles of Old&nbsp;Boston" ) {
 
-	$path="img/chronicles-of-old-boston/";
+	$path="img/chronicles-of-old-boston";
 
 	$description = '<strong>Exploring New England’s Historic Capital</strong>. No one can deny Boston’s historical signifigance in America’s history. Being able to read the stories of our forefathers and a broken mollasses tank that kills woman and children alike in the same book. Amazing. ';
 
 	$author="Charles&nbsp;Bahne";
 	$pages = 288;
 	$date = "April 2012";
-	$url="http://www.museyon.com/shop/chronicles-of-old-boston/";
+	$url="http://www.museyon.com/shop/chronicles-of-old-boston";
 
 	$sidebar = museyon_sidebar();
 
@@ -964,7 +974,7 @@ if ( $title == "Chronicles of Old&nbsp;Boston" ) {
 
 if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 
-	$path="img/chronicles-of-old-las-vegas/";
+	$path="img/chronicles-of-old-las-vegas";
 
 	$description = '
 		<strong>Exploring Sin City’s High-Stakes History</strong>. The third book I worked on with Museyon. With <a href="chronicles-of-old-new-york"><em>Chronicles of Old New York</em></a> selling very well, they decided to continue this series and asked me to help with 5 more books! Which cities? A few ideas were tossed around, but I had a feeling it was always going to be Vegas, baby. Mafia dons, casinos, Elvis, Liberace, nuclear tests...don\'t pretend like you don\'t want to know about this sort of stuff!
@@ -977,7 +987,7 @@ if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 	$author="James&nbsp;Roman";
 	$pages = 240;
 	$date = "February 2012";
-	$url = "http://www.museyon.com/shop/chronicles-of-old-las-vegas/";
+	$url = "http://www.museyon.com/shop/chronicles-of-old-las-vegas";
 
 	$tools=array(
 		array("skill"=>"Indesign", "percent"=>75),
@@ -1007,7 +1017,7 @@ if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 
 if ( $title == "Abriendo Puertas / Opening&nbsp;Doors" ) {
 
-	$path="img/abriendo-puertas/";
+	$path="img/abriendo-puertas";
 
 	$description = '<em>Abriendo Puertas / Opening Doors</em> is a non-profit dedicated to decreasing the drop-out rate of Latino kids by instilling good behaviors at home. They believe the answer starts at home so their primary focus is on educating their parents. AP/OD holds training sessions where they teach parents different things they could do with their kids to better engage them and acclimate them to a learning environment.
 		</p><p>
@@ -1043,7 +1053,7 @@ if ( $title == "Abriendo Puertas / Opening&nbsp;Doors" ) {
 
 if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 
-	$path="img/monkey-mo/";
+	$path="img/monkey-mo";
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>55),
@@ -1099,7 +1109,7 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 
 if ( $title == "The Rise of Darkrai" ) {
 
-	$path="img/darkrai/";
+	$path="img/darkrai";
 
 	$description = '
 	The Rise of Darkrai was the 10th Pok&eacute;mon movie made and the third movie I worked&nbsp;on.
@@ -1138,7 +1148,7 @@ if ( $title == "The Rise of Darkrai" ) {
 
 if ( $title == "Arceus and the Jewel of&nbsp;Life" ) {
 
-	$path="img/arceus/";
+	$path="img/arceus";
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>80),
@@ -1162,7 +1172,7 @@ if ( $title == "Arceus and the Jewel of&nbsp;Life" ) {
 
 if ( $title == "Pok&eacute;mon: 10th Anniversary" ) {
 
-	$path="img/10th-anniversary/";
+	$path="img/10th-anniversary";
 
 	$description = '
 	 	The celebrations began with a "Journey Across America" Mall Tour where we distributed exclusive Pok&eacute;mon and held game tournaments. Winners were invited to the national tournament. It all lead up to the big event at Bryant Park, where the National Game Tournament was held and all aspects of the Pok&eacute;mon products and brands were represented.
@@ -1202,7 +1212,7 @@ if ( $title == "Pok&eacute;mon: 10th Anniversary" ) {
 
 if ( $title == "Pok&eacute;mon: Toys'R'Us Feature Shop" ) {
 
-	$path="img/feature-shop/";
+	$path="img/feature-shop";
 
 	$description;
 
@@ -1232,7 +1242,7 @@ if ( $title == "Pok&eacute;mon: Toys'R'Us Feature Shop" ) {
 
 if ( $title == "Pok&eacute;mon: Toy Fair" ) {
 
-	$path="img/toy-fair/";
+	$path="img/toy-fair";
 
 	$description;
 
@@ -1260,7 +1270,7 @@ if ( $title == "Pok&eacute;mon: Toy Fair" ) {
 
 if ( $title == "Nerd Comics" ) {
 
-	$path="img/nerd-comics/";
+	$path="img/nerd-comics";
 
 	$description;
 
@@ -1280,7 +1290,7 @@ if ( $title == "Nerd Comics" ) {
 
 if ( $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon" ) {
 
-	$path="img/mystery-dungeon/";
+	$path="img/mystery-dungeon";
 
 	$description;
 
@@ -1307,7 +1317,7 @@ if ( $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon" ) {
 
 if ( $title == "Pocket Pok&eacute;dex" ) {
 
-	$path="img/pocket-pokedex/";
+	$path="img/pocket-pokedex";
 
 	$description;
 
@@ -1337,7 +1347,7 @@ if ( $title == "Pocket Pok&eacute;dex" ) {
 
 if ( $title == "Battle Revolution" ) {
 
-	$path="img/battle-revolution/";
+	$path="img/battle-revolution";
 
 	$description;
 
@@ -1363,7 +1373,7 @@ if ( $title == "Battle Revolution" ) {
 
 if ( $title == "Pok&eacute;mon: Diamond & Pearl Launch" ) {
 
-	$path="img/dp-launch/";
+	$path="img/dp-launch";
 
 	$description;
 
@@ -1399,7 +1409,7 @@ if ( $title == "Pok&eacute;mon: Diamond & Pearl Launch" ) {
 
 if ( $title == "Licensing Show" ) {
 
-	$path="img/licensing-show/";
+	$path="img/licensing-show";
 
 	$description;
 
@@ -1436,7 +1446,7 @@ if ( $title == "Licensing Show" ) {
 
 if ( $title == "Pok&eacute;mon: Logos" ) {
 
-	$path="img/pokemon-logos/";
+	$path="img/pokemon-logos";
 
 	$description;
 
@@ -1465,7 +1475,7 @@ if ( $title == "Pok&eacute;mon: Logos" ) {
 
 if ( $title == "Portfolio Site" ) {
 
-	$path="img/portfolio-site/";
+	$path="img/portfolio-site";
 
 	$description="yay!";
 
@@ -1490,7 +1500,7 @@ if ( $title == "Portfolio Site" ) {
 
 if ( $title == "Wired" ) {
 
-	$path="img/wired/";
+	$path="img/wired";
 
 	$description="Illustration for an \"advertorial\" for Norton in Wired Magazine. Norton wanted to show that in this digital life of ours, our precious, precious memories are all stored on our personal devices that can be lost or broken. For this adventuring family, the best solution is to use Norton services to back up your data.
 	</p>
@@ -1521,7 +1531,7 @@ if ( $title == "Wired" ) {
 
 if ( $title == "Holiday Card 2014" ) {
 
-	$path="img/holiday-2014/";
+	$path="img/holiday-2014";
 
 	$description="
 	For our holiday greeting, I decided to do a riff on the <em>exquisite corpse</em> game with fun costumes. Each figure is composed of a head, a body and feet. These parts are randomly selected on page load and with each refresh, it will randomly select another&nbsp;set.
@@ -1553,7 +1563,7 @@ if ( $title == "Holiday Card 2014" ) {
 
 if ( $title == "Adelle Marcero Portfolio Site" ) {
 
-	$path="img/adelle-marcero/";
+	$path="img/adelle-marcero";
 
 	$description="
 	I helped my friend Adelle Marcero with her portfolio site. I built it using simple PHP and CSS and linked to her holiday Etsy&nbsp;shop.
@@ -1585,7 +1595,7 @@ if ( $title == "Adelle Marcero Portfolio Site" ) {
 if ( $title == "LesConcierges" ) {
 
 	$template="art";
-	$path="img/lesconcierges/";
+	$path="img/lesconcierges";
 
 	$description="I was comissioned to do some illustrations to show an example of how LesConcierges' new web interface and app would work with their existing service.";
 
@@ -1629,7 +1639,7 @@ if ( $title == "LesConcierges" ) {
 } //end LESCONCIERGES
 
 
-//  #NEXTLESSON SEARCH BROWSE
+//  #NEXTLESSON #SEARCH BROWSE
 // ===============================
 
 if ( $title == "NextLesson Search and Browse Page" ) {
@@ -1664,7 +1674,7 @@ if ( $title == "NextLesson Search and Browse Page" ) {
 } //end NEXTLESSON SEARCH BROWSE
 
 
-//  #NEXTLESSON INTEREST ID
+//  #NEXTLESSON #INTERESTID
 // ===============================
 
 if ( $title == "InterestID" ) {
@@ -1673,7 +1683,11 @@ if ( $title == "InterestID" ) {
 	$path = "img/nextlesson-interestid";
 	// $movie = "$path/interestid-voting.mp4";
 
-	$description = "I was comissioned to do some illustrations to show an example of how LesConcierges' new web interface and app would work with their existing service.";
+	$description = "
+	InterestID is a tool for students to inform teachers what topics interest them. Students “thumbs up” or “thumbs down” various topics which are featured in NextLesson lessons.</p><p>
+	That information is available to teachers sorted by most popular categories. A click on the category connects the teacher to lessons where that topic is covered. Simple grade and subject filters allow the teacher to find the right lesson for their class if there are numerous results.</p><p>
+	As of January 2017, students have rated over 1,605,000+ interests. The more students rate and suggest new interests, the better we can tailor our learning materials and be more real-time and relevant.
+	";
 
 	$sidebar = "
 		Illustrations<br>
@@ -1696,7 +1710,6 @@ if ( $title == "InterestID" ) {
 	</video>
 	<h3>Voting</h3>
 	<p>
-		Helvetica pickled kale chips Pinterest. Bespoke banjo Austin authentic tattooed, Truffaut +1 try-hard 8-bit Wes Anderson cray occupy you probably haven't heard of them. Hashtag irony ugh, scenester DIY Truffaut whatever twee organic. Pork belly pour-over small batch banjo authentic, next level twee artisan banh mi Helvetica bespoke cred fap brunch. Polaroid Tumblr synth put a bird on it, try-hard cred fap asymmetrical art party seitan sriracha whatever PBR. Actually single-origin coffee letterpress food truck literally Tonx. Cred ethical Wes Anderson food truck brunch, kitsch hoodie American Apparel selfies PBR&B biodiesel McSweeney's quinoa banjo craft beer.
 	</p>
 	<video width='320' height='240' controls>
 		<source src='$path/interestid-filters.mp4' type='video/mp4'>
@@ -1704,43 +1717,70 @@ if ( $title == "InterestID" ) {
 	</video>
 	<h3>Filtering</h3>
 	<p>
-		Blue Bottle American Apparel wolf small batch, Wes Anderson fashion axe vinyl McSweeney's gluten-free messenger bag four loko photo booth dreamcatcher. Quinoa food truck Banksy semiotics single-origin coffee, authentic Tumblr. Bitters blog occupy, narwhal vinyl hella ugh kitsch freegan quinoa. Umami try-hard photo booth, post-ironic wayfarers VHS literally Odd Future. Fingerstache tofu food truck, heirloom pop-up Banksy Pinterest Odd Future tattooed seitan fap Thundercats. Drinking vinegar Brooklyn pour-over yr, stumptown +1 cliche art party PBR&B Pinterest. Tote bag PBR Marfa aesthetic, yr Portland post-ironic Vice hoodie four loko Austin kogi gastropub seitan brunch.
 	</p>
 	";
 
 } //end NEXTLESSON INTERESTID
 
-
-//  #NEXTLESSON INTERACTIVE PT
+//  #NEXTLESSON #GLOSSARY
 // ===============================
 
-if ( $title == "Interactive Performance Tasks" ) {
+if ( $title == "NextLesson Glossary Terms" ) {
 
-	$template = "ui";
-	$path = "img/nextlesson-pt";
-	$movie = "$path/interactive-pt-overview.mp4";
+	// $template = "ui";
+	$path = "img/nextlesson-glossary";
+	// $movie = "$path/interactive-pt-overview.mp4";
 
 	$description = "Kogi tofu jean shorts seitan. Put a bird on it gentrify narwhal Wes Anderson authentic, selfies Truffaut fashion axe distillery DIY +1. Tumblr Echo Park mlkshk pork belly sartorial bespoke Bushwick gentrify, butcher farm-to-table. Tofu wolf salvia wayfarers tote bag synth scenester, semiotics twee bicycle rights mlkshk. Ugh photo booth viral raw denim dreamcatcher. Wayfarers pork belly keytar next level kogi, Intelligentsia ugh cardigan literally retro Bushwick PBR. Church-key Intelligentsia bespoke, banh mi semiotics skateboard ethical chambray PBR&B chillwave iPhone pug kale chips +1 quinoa.";
 
 	$sidebar = "
 		Illustrations<br>
-		July 2014
+		2016
 	";
 
 	$tools = array(
-		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>60),
-		array("skill"=>"Photoshop", "percent"=>40),
+		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>20),
+		array("skill"=>"Illustrator", "percent"=>80),
 	);
 
 	$img_info = array(
-		// array("file" => "puzzle.jpg", "alt" => "The hotel owner tells his assistant that he needs to schedule a flight to Shanghai"),
+		array("file" => "01.jpg", "alt" => "Glossary Images"),
 	);
 
-	$other = "
-	<video width='320' height='240' controls>
-		<source src='$movie' type='video/mp4'>
-		Your browser does not support the video tag.
-	</video>
-	";
+	$other = "";
 
 } //end NEXTLESSON INTERACTIVE PT
+
+
+//  #NEXTLESSON #COVERS
+// ===============================
+
+if ( $title == "NextLesson Lesson Covers" ) {
+
+	// $template = "ui";
+	$path = "img/nextlesson-covers";
+	// $movie = "$path/interactive-pt-overview.mp4";
+
+	$description = "Kogi tofu jean shorts seitan. Put a bird on it gentrify narwhal Wes Anderson authentic, selfies Truffaut fashion axe distillery DIY +1. Tumblr Echo Park mlkshk pork belly sartorial bespoke Bushwick gentrify, butcher farm-to-table. Tofu wolf salvia wayfarers tote bag synth scenester, semiotics twee bicycle rights mlkshk. Ugh photo booth viral raw denim dreamcatcher. Wayfarers pork belly keytar next level kogi, Intelligentsia ugh cardigan literally retro Bushwick PBR. Church-key Intelligentsia bespoke, banh mi semiotics skateboard ethical chambray PBR&B chillwave iPhone pug kale chips +1 quinoa.
+		</p>
+		<img class='scale-with-grid' src='$path/02.jpg'>
+		The covers on the NextLesson site.
+		<p>
+	";
+
+	$sidebar = "
+		Illustrations<br>
+		2016
+	";
+
+	$tools = array(
+		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>20),
+		array("skill"=>"Illustrator", "percent"=>80),
+	);
+
+	$img_info = array(
+		array("file" => "01.jpg", "alt" => "Glossary Images"),
+		array("file" => "01.jpg", "alt" => "Glossary Images"),
+	);
+
+} //end NEXTLESSON COVER

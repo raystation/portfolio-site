@@ -37,14 +37,11 @@
 				{
 					echo "<img class='scale-with-grid add-bottom' src='img/hero_default.jpg' alt='$title Top Image'>";
 				}
-				// echo '<img src="'.$path.'logo.'.$logo.'" alt="'.$title.' logo" class="scale-with-grid add-bottom desktop">';
-				// echo '<img src="'.$path.'logo.'.$logo.'" alt="'.$title.' logo" class="scale-with-grid add-bottom desktop">';
-				// echo '<img src="'.$path.'logo-mobile.'.$logo.'" alt="'.$title.' logo" class="scale-with-grid add-bottom mobile">';
+				echo "<h2>".$title."</h2>";
 			?>
 
 			<div class="twelve columns description alpha add-bottom">
-				<?php
-					echo "<h2>".$title."</h2>";
+				<?
 					echo "<p>".$description."</p>"
 				?>
 
@@ -61,6 +58,8 @@
 
 		</div> <!-- end sixteen -->
 
-		<? skeleton_print_page_thumbnail_4($projects) ;?>
+		<?
+		skeleton_print_page_thumbnail_4($projects);
+		?>
 
 

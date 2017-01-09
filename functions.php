@@ -1,4 +1,52 @@
 <?
+function string_lower( $string ){
+  $string = ( strtolower ( $string ) );
+  $string = ( str_replace(" ", "-", $string ) );
+  $string = ( str_replace(",", "", $string ) );
+  $string = ( str_replace("'", "", $string ) );
+  return $string;
+}
+function get_files($dir){
+  $files = array_diff( scandir( $dir ), Array( ".", "..", ".DS_Store" ) );
+  $files = array_values($files);
+  $files = array_filter(array_merge(array(0), $files));
+  return $files;
+}
+function string_erase( $string, $replace ) {
+  $string = ( str_replace( $replace, "", $string ) );
+  return $string;
+}
+function replace_string( $string, $thing_to_replace, $replace_with ){
+  $string = ( str_replace($thing_to_replace, $replace_with, $string ) );
+  return $string;
+}
+function get_title($string){
+  $content = "";
+  $string = replace_string( $string, "img_", "");
+  $string = replace_string( $string, ".png", "");
+  $string = replace_string( $string, ".jpg", "");
+  $string = replace_string( $string, "_-_", "? ");
+  $string = replace_string( $string, "_-", "'");
+  $string = replace_string( $string, "_____", ": ");
+  $string = replace_string( $string, "____", "! ");
+  $string = replace_string( $string, "___", ", ");
+  $string = replace_string( $string, "__", " & ");
+  $string = replace_string( $string, "_", " ");
+  // $string = replace_string( $string, "-", " ");
+
+  // $pieces = explode(" ", $string);
+  // foreach ($pieces as $key => $piece) {
+  //   if ( strlen($piece) < 4 )
+  //   {
+  //     $content .= strtolower($piece) . " ";
+  //   }
+  //   else
+  //   {
+  //     $content .= ucwords($piece) . " ";
+  //   }
+  // }
+  return $string;
+}
 function list_html($array){
   echo "<ul>\n";
 
@@ -189,6 +237,12 @@ function related_check() {
     $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon"
 
     ) { include 'inc/related-pokemon.php'; }
+
+  if (
+    $title == "InterestID" or
+    $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon"
+
+    ) { include 'inc/related-nextlesson.php'; }
 }
 
 function print_skill_html(){
@@ -263,6 +317,8 @@ function skeleton_print_thumbnail_4($array,$vertical=false) {
   $omegacount;
   foreach ( $array as $array_item ) {
     $alt = html_entity_decode($array_item['name']);
+    // TODO: fix vertical thumbnail
+    // TODO: mobile: have two thumbnails next to each other
     $thumb = $vertical ? "thumb-v" : "thumb";
     // echo "$array_item[path]/thumb.jpg";
     if ( file_exists( "img/$array_item[path]/thumb.jpg" ) ) {
@@ -272,7 +328,9 @@ function skeleton_print_thumbnail_4($array,$vertical=false) {
     elseif ( file_exists( "img/$array_item[path]/thumb.svg" ) ) {
       $thumb = "$array_item[path]/thumb.svg";
       $thumbnail_path = "<a href='$array_item[path]' alt='$alt'><img src='img/$thumb'></a>";
-    } else {
+    }
+    else
+    {
       $thumbnail_path = "<a href='$array_item[path]' alt='default logo'><img src='img/thumb-default.jpg'></a>";
     }
 
@@ -300,11 +358,11 @@ function skeleton_print_page_thumbnail_4($array) {
   foreach ( $array as $array_item ) {
 
     // checks for thumbnails
-    if ( file_exists("thumb.jpg") ) {
-      $thumbnail_img = "$array_item[path]/thumb.jpg";
+    if ( file_exists("img/$array_item[path]/thumb.jpg") ) {
+      $thumbnail_img = "img/$array_item[path]/thumb.jpg";
     }
-    elseif ( file_exists("thumb.svg") ) {
-      $thumbnail_img = "$array_item[path]/thumb.svg";
+    elseif ( file_exists("img/$array_item[path]/thumb.svg") ) {
+      $thumbnail_img = "img/$array_item[path]/thumb.svg";
     }
     else
     {
@@ -418,4 +476,38 @@ function title_ellipsis($string,$limit=27){
         }
     }
     return $word;
+}
+function skeleton_html($columns=1,$path,$folder="additional_img"){
+  // prints img HTML with a path, columns and folders
+  $additional_img_html="";
+
+  $additional_img = get_files("$path/$folder");
+  foreach ($additional_img as $key => $img) {
+    $img_title = get_title($img);
+    if ($columns==2) {
+      if ($key % 2 == 0) {
+        $class = "omega";
+        $clearfix = "<div class='clearfix'></div>";
+      }
+      else {
+        $class = "alpha";
+        $clearfix = "";
+      }
+      $additional_img_html.="
+      <div class='six columns $class'>
+        <img class='scale-with-grid' src='$path/additional_img/$img' alt='$img_title'>
+        <p>$img_title</p>
+      </div>
+      $clearfix
+      ";
+    }
+    else
+    {
+      $additional_img_html.="
+      <img class='scale-with-grid' src='$path/additional_img/$img' alt='$img_title'>
+      <p>$img_title</p>
+      ";
+    }
+  }
+  return $additional_img_html;
 }

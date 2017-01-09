@@ -190,16 +190,46 @@
 		case 'nextlesson-pt':
 		$title = 'Interactive Performance Tasks';
 		break;
+
+		case 'nextlesson-avatars':
+		$title = 'Avatars';
+		break;
+
+		case 'nextlesson-library':
+		$title = 'Graphics Library';
+		break;
+
+		case 'nextlesson-glossary':
+		$title = 'NextLesson Glossary Terms';
+		break;
+
+		case 'nextlesson-covers':
+		$title = 'NextLesson Lesson Covers';
+		break;
 	}
 
 if ( !isset($title) ) { $title = "Work"; }
 include('inc/header.php');
+
+// IF THE PROJECT IS SET
 if ( isset($project) ) {
+
+	// IF THE TEMPLATE IS SET
 	if ( isset($template) ){
-		$template="inc/templates/".$template.".php";
-		if ( file_exists( $template ) ) { include $template; }
+
+		// DOUBLE CHECKS TO SEE IF THE TEMPLATE FILE EXISTS, ELSE BASIC
+		$template_path = "inc/templates/$template.php";
+		if ( file_exists( $template_path ) ) { include $template_path; }
 		else { include 'inc/templates/basic.php'; }
-	} else { include 'inc/templates/basic.php'; }
+
+	} else {
+		// TEMPLATE NOT SET, USE BASIC
+		include 'inc/templates/basic.php';
+	}
 }
+// TODO: have thumbnails not print on company page or consolidate
+
+//produces thumbnails for homepage and below the projects
 skeleton_print_thumbnail_4($works);
+
 include('inc/footer.php');

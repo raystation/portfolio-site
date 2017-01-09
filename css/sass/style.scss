@@ -29,7 +29,7 @@ $link-color: $primary-color;
 $link-hover-color: lighten($link-color,20%);
 
 // $textbox-color: $primary-color;
-$textbox-color: LightSkyBlue ;
+$textbox-color: LightSkyBlue;
 // $textbox-text-color: darken($textbox-color,40%);
 $textbox-text-color: white;
 $textbox-link-color: $textbox-text-color;
@@ -333,6 +333,9 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		padding: 0;
 		background-color: transparent;
 		color: $txt-color;
+		h1 {
+			color: $txt-color;
+		}
 		a:link, a:visited {
 			color: $link-color;
 		}
@@ -451,13 +454,13 @@ $icon-width: 150px;
 }
 
 .description {
-	a {
+	a:link, a:visited {
 		// @extend .underline;
 	}
 	p {
-		font-size: 16pt;
+		// font-size: $font-size;
 		line-height: 1.5em;
-		max-width: 31em;
+		max-width: 95%;
 	}
 }
 
@@ -544,7 +547,7 @@ $icon-width: 150px;
 }
 
 .bio {
-	font-size: 1.15em;
+	// font-size: 1.15em;
 	line-height: $line-height;
 }
 
