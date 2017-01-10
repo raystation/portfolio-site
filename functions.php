@@ -240,7 +240,13 @@ function related_check() {
 
   if (
     $title == "InterestID" or
-    $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon"
+    $title = 'NextLesson' or
+    $title = 'NextLesson Lesson Covers' or
+    $title = 'NextLesson Glossary Terms' or
+    $title = 'Interactive Performance Tasks' or
+    $title = 'NextLesson Search and Browse Page' or
+    $title = 'Avatars' or
+    $title = 'Graphics Library'
 
     ) { include 'inc/related-nextlesson.php'; }
 }
@@ -249,9 +255,25 @@ function print_skill_html(){
   global $tools;
   echo '<div class="chart">';
   foreach ( $tools as $tool) {
-    echo '<div class="outer"><div class="inner" style="width:'.$tool["percent"].'%;">'.$tool["skill"]."</div></div>\n";
+    // echo '<div class="outer"><div class="inner" style="width:'.$tool["percent"].'%;">'.$tool["skill"]."</div></div>\n";
+    echo "<div class='outer'><div class='inner' style='width:$tool[percent]%'>$tool[skill]</div></div>\n";
   }
   echo '</div>';
+}
+
+function related_projects_check( $company ){
+  // gets the function that returns the array with related projects
+  $company_function = "get_" . "$company" . "_projects";
+
+  if ( function_exists($company_function)) {
+    $projects_array = $company_function();
+  } else {
+    $projects_array = NULL;
+  }
+  return $projects_array;
+}
+function related_projects_html($array){
+
 }
 
 function get_date($timezone="America/Los_Angeles") {
@@ -323,15 +345,15 @@ function skeleton_print_thumbnail_4($array,$vertical=false) {
     // echo "$array_item[path]/thumb.jpg";
     if ( file_exists( "img/$array_item[path]/thumb.jpg" ) ) {
       $thumb = "$array_item[path]/thumb.jpg";
-      $thumbnail_path = "<a href='$array_item[path]' alt='$alt'><img src='img/$thumb'></a>";
+      $thumbnail_path = "<a href='$array_item[path]' alt='$alt'><img src='img/$thumb' class='scale-with-grid2'></a>";
     }
     elseif ( file_exists( "img/$array_item[path]/thumb.svg" ) ) {
       $thumb = "$array_item[path]/thumb.svg";
-      $thumbnail_path = "<a href='$array_item[path]' alt='$alt'><img src='img/$thumb'></a>";
+      $thumbnail_path = "<a href='$array_item[path]' alt='$alt'><img src='img/$thumb' class='scale-with-grid2'></a>";
     }
     else
     {
-      $thumbnail_path = "<a href='$array_item[path]' alt='default logo'><img src='img/thumb-default.jpg'></a>";
+      $thumbnail_path = "<a href='$array_item[path]' alt='default logo'><img src='img/thumb-default.jpg' class='scale-with-grid2'></a>";
     }
 
     echo "

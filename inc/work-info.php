@@ -2,8 +2,9 @@
 
 $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "thumb" => "jpg" ),
-	array( "name" => "Lesson Covers","path" => "nextlesson-covers", "thumb" => "jpg" ),
-	array( "name" => "InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
+	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "thumb" => "jpg" ),
+	array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing", "thumb" => "jpg" ),
+	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
 	array( "name" => "NextLesson Glossary Images","path" => "nextlesson-glossary", "thumb" => "jpg" ),
 	// array( "name" => "Interactive Performance Tasks","path" => "nextlesson-pt", "thumb" => "jpg" ),
 	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars", "thumb" => "jpg" ),
@@ -45,7 +46,7 @@ function get_SBS_projects(){
 	);
 	return $works;
 }
-function get_museyon_books(){
+function get_museyon_projects(){
 	$works = array(
 		array( "name" => "Chronicles of Old New&nbsp;York","path" => "chronicles-of-old-new-york","thumb" => "jpg" ),
 		array( "name" => "City Style","path" => "city-style","thumb" => "jpg" ),
@@ -77,14 +78,15 @@ function get_pokemon_projects(){
 }
 
 function get_nextlesson_projects(){
+	// TODO: use this instead of separate related php page!
 	$works = array(
-		array( "name" => "Lesson Covers", "path" => "nextlesson-covers", "thumb" => "jpg" ),
+		array( "name" => "NextLesson Lesson Covers", "path" => "nextlesson-covers", "thumb" => "jpg" ),
+		array( "name" => "NextLesson Marketing", "path" => "nextlesson-marketing", "thumb" => "jpg" ),
+		array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
+		array( "name" => "NextLesson Glossary Terms", "path" => "nextlesson-glossary", "thumb" => "jpg" ),
 		// array( "name" => "Browsing Experience","path" => "nextlesson-search-browse", "thumb" => "jpg" ),
-		array( "name" => "Marketing & Collateral", "path" => "nextlesson-collateral", "thumb" => "jpg" ),
-		array( "name" => "InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
 		// array( "name" => "Graphics Library", "path" => "nextlesson-library", "thumb" => "jpg" ),
 		// array( "name" => "Profile Avatars", "path" => "nextlesson-avatars", "thumb" => "jpg" ),
-		array( "name" => "Glossary Terms", "path" => "nextlesson-glossary", "thumb" => "jpg" ),
 		// array( "name" => "Interactive Performance Tasks", "path" => "nextlesson-interative-pt", "thumb" => "jpg" ),
 		// array( "name" => "Printed Lesson", "path" => "nextlesson-pdf", "thumb" => "jpg" ),
 	);
@@ -679,6 +681,7 @@ if ( $title == "Color Chameleon" ) {
 if ( $title == "Art + Paris" ) {
 
 	$path="img/art-and-paris";
+	$company = "Museyon";
 
 	$description = '
 	<strong>Impressionists Post-Impressionists: The Ultimate Guide to Artists, Paintings and Places in Paris and Normandy</strong>. This was another book in the <em>Art+</em> series that Museyon was doing that they hadn’t done in a while since they started full steam with the Chronicles series. I personally had never laid out one of these, so I was eager to tackle something new.
@@ -723,6 +726,7 @@ if ( $title == "Art + Paris" ) {
 if ( $title == "Chronicles of Old&nbsp;London" ) {
 
 	$path="img/chronicles-of-old-london";
+	$company = "Museyon";
 
 	$tools=array(
 		array("skill"=>"Indesign", "percent"=>75),
@@ -768,6 +772,7 @@ if ( $title == "Chronicles of Old&nbsp;London" ) {
 if ( $title == "Chronicles of Old&nbsp;Paris" ) {
 
 	$path="img/chronicles-of-old-paris";
+	$company = "Museyon";
 
 	$description = '
 		<strong>Exploring the Historic City of Light</strong>. Paris. The city of love. This place has a very special place in my heart because this is was my first trip with my s.o. other than each other\'s cities (long distance!).</p><p>Where the Vegas book was rife with land grabbing deals, the American frontier, casinos and big personalities—the Paris book was about food, steadfastness, art and music. There\'s a story about the city being starved during a siege and them resorting to eating zoo animals instead of surrendering. Oh and the top restaurants fought over who got which animal. How amazing is that?
@@ -802,6 +807,7 @@ if ( $title == "Chronicles of Old&nbsp;Paris" ) {
 if ( $title == "City Style" ) {
 
 	$path="img/city-style";
+	$company = "Museyon";
 
 	$description = '
 		A Field Guide to Global Fashion Capitals. The second book I worked on with Museyon, City Style was a completely one-off book on fashion. <a href="http://www.linkedin.com/in/thisisheatherc">Heather</a>, one of the editors, was a big nerd for art and fashion (she taught me about jean jackets).
@@ -849,7 +855,7 @@ if ( $title == "City Style" ) {
 if ( $title == "Chronicles of Old&nbsp;Rome" ) {
 
 	$path="img/chronicles-of-old-rome";
-
+	$company = "Museyon";
 
 	$description = '
 		<strong>Exploring Italy\'s Eternal City</strong>. After my move to San Francisco, I didn\'t get to work on as many big projects with Museyon anymore. One thing I still do on occasion is work on their maps. Normally there is another person who makes their maps, but because they are an intensive endeavor, I was asked to help out. I had good success with it because I was more familiar with the page margins, the software and being able to make all the fonts consistently the same&nbsp;size.
@@ -866,12 +872,10 @@ if ( $title == "Chronicles of Old&nbsp;Rome" ) {
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>70),
-		array("skill"=>"Google Maps", "percent"=>10),
-		array("skill"=>"Openmaps", "percent"=>10),
+		array("skill"=>"Google&nbsp;Maps&nbsp;/&nbsp;Openmaps", "percent"=>20),
 		array("skill"=>"Photoshop", "percent"=>5),
 		array("skill"=>"Indesign", "percent"=>5),
 	);
-	$tools = array("Illustrator","Photoshop","Indesign","Google Maps","Openmaps");
 
 	$img_info = array(
    		array("file" => "cover.jpg", "alt" => ""),
@@ -880,6 +884,7 @@ if ( $title == "Chronicles of Old&nbsp;Rome" ) {
    		array("file" => "02.jpg", "alt" => ""),
    		array("file" => "03.jpg", "alt" => ""),
 	);
+
 
 } //end chronicles-of-old-rome
 
@@ -890,6 +895,7 @@ if ( $title == "Chronicles of Old&nbsp;Rome" ) {
 if ( $title == "Chronicles of Old New&nbsp;York" ) {
 
 	$path="img/chronicles-of-old-new-york";
+	$company = "Museyon";
 
 	$description = '
 		<strong>Explore 400 years of Manhattan history</strong>. <em>Chronicles of Old New York</em> was the first book I worked on with Museyon Guides. The first half of the book details stories in and around New York City\'s history. The second half of the book featured walking tours which would highlight eight areas and provide references to the first half of the book. The historic content was pretty awesome. Gun duels, old taverns in the city (that George Washington went to!), rich capitalists that built the city...it was nice to know more about the city I lived in.
@@ -937,6 +943,7 @@ if ( $title == "Chronicles of Old New&nbsp;York" ) {
 if ( $title == "Chronicles of Old&nbsp;Boston" ) {
 
 	$path="img/chronicles-of-old-boston";
+	$company = "Museyon";
 
 	$description = '<strong>Exploring New England’s Historic Capital</strong>. No one can deny Boston’s historical signifigance in America’s history. Being able to read the stories of our forefathers and a broken mollasses tank that kills woman and children alike in the same book. Amazing. ';
 
@@ -975,6 +982,7 @@ if ( $title == "Chronicles of Old&nbsp;Boston" ) {
 if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 
 	$path="img/chronicles-of-old-las-vegas";
+	$company = "Museyon";
 
 	$description = '
 		<strong>Exploring Sin City’s High-Stakes History</strong>. The third book I worked on with Museyon. With <a href="chronicles-of-old-new-york"><em>Chronicles of Old New York</em></a> selling very well, they decided to continue this series and asked me to help with 5 more books! Which cities? A few ideas were tossed around, but I had a feeling it was always going to be Vegas, baby. Mafia dons, casinos, Elvis, Liberace, nuclear tests...don\'t pretend like you don\'t want to know about this sort of stuff!
@@ -1645,6 +1653,7 @@ if ( $title == "LesConcierges" ) {
 if ( $title == "NextLesson Search and Browse Page" ) {
 
 	$template = "ui";
+	$company = "NextLesson";
 	$path = "img/nextlesson-search-browse";
 	$movie = "$path/search-browse-bar-1.mp4";
 
@@ -1680,6 +1689,7 @@ if ( $title == "NextLesson Search and Browse Page" ) {
 if ( $title == "InterestID" ) {
 
 	$template = "ui";
+	$company = "NextLesson";
 	$path = "img/nextlesson-interestid";
 	// $movie = "$path/interestid-voting.mp4";
 
@@ -1709,8 +1719,7 @@ if ( $title == "InterestID" ) {
 		Your browser does not support the video tag.
 	</video>
 	<h3>Voting</h3>
-	<p>
-	</p>
+	<p></p>
 	<video width='320' height='240' controls>
 		<source src='$path/interestid-filters.mp4' type='video/mp4'>
 		Your browser does not support the video tag.
@@ -1729,9 +1738,17 @@ if ( $title == "NextLesson Glossary Terms" ) {
 
 	// $template = "ui";
 	$path = "img/nextlesson-glossary";
+	$company = "NextLesson";
 	// $movie = "$path/interactive-pt-overview.mp4";
 
-	$description = "Kogi tofu jean shorts seitan. Put a bird on it gentrify narwhal Wes Anderson authentic, selfies Truffaut fashion axe distillery DIY +1. Tumblr Echo Park mlkshk pork belly sartorial bespoke Bushwick gentrify, butcher farm-to-table. Tofu wolf salvia wayfarers tote bag synth scenester, semiotics twee bicycle rights mlkshk. Ugh photo booth viral raw denim dreamcatcher. Wayfarers pork belly keytar next level kogi, Intelligentsia ugh cardigan literally retro Bushwick PBR. Church-key Intelligentsia bespoke, banh mi semiotics skateboard ethical chambray PBR&B chillwave iPhone pug kale chips +1 quinoa.";
+	$description = "After releasing the initial version of our Interactive lessons, it was up to our Curriculum team to fill it with learning materials! As they were working on that, we worked on the next iteration. Since we had glossary terms, we thought having images to support them would be impactful, as well as being helpful for our younger user-base.
+		<p></p>
+		I had a whole library of image assets that we’ve slowly created over time, so this task wasn’t that time-intensive.
+		<image of cover and finished glossary term>
+		<p></p>
+		No—the bigger challenge was how to illustrate ideas and abstract concepts.
+ 		<image viable>
+	";
 
 	$sidebar = "
 		Illustrations<br>
@@ -1759,13 +1776,17 @@ if ( $title == "NextLesson Lesson Covers" ) {
 
 	// $template = "ui";
 	$path = "img/nextlesson-covers";
+	$company = "NextLesson";
 	// $movie = "$path/interactive-pt-overview.mp4";
 
-	$description = "Kogi tofu jean shorts seitan. Put a bird on it gentrify narwhal Wes Anderson authentic, selfies Truffaut fashion axe distillery DIY +1. Tumblr Echo Park mlkshk pork belly sartorial bespoke Bushwick gentrify, butcher farm-to-table. Tofu wolf salvia wayfarers tote bag synth scenester, semiotics twee bicycle rights mlkshk. Ugh photo booth viral raw denim dreamcatcher. Wayfarers pork belly keytar next level kogi, Intelligentsia ugh cardigan literally retro Bushwick PBR. Church-key Intelligentsia bespoke, banh mi semiotics skateboard ethical chambray PBR&B chillwave iPhone pug kale chips +1 quinoa.
-		</p>
-		<img class='scale-with-grid' src='$path/02.jpg'>
-		The covers on the NextLesson site.
-		<p>
+	$description = "
+		My first big task at NextLesson! We have numerous projects and lessons on the site and each one needed a cover.
+		<p></p>
+		Before I could hire out people to help with the covers, I needed to make sure I knew what I wanted. Planned in tandem with a redesigned search/browse page, we set about standardizing the displayed information as well as taking the first steps to form a distinctive “look.”
+		<p></p>
+		We set about making sure all covers had the same information in the same spot. Lesson type on top, logo in the bottom left, and title nice and big; everything else was up to the artist. I oversee a team of designers to make sure covers are created in a timely manner. I’ve created a graphics library that our freelancers use to facilitate faster turnaround.
+		<p></p>
+		Jump to 2 years and 2,034 covers later. Most of the back-covers are complete and a system is in place for new covers. Please see some of my favorite covers below.
 	";
 
 	$sidebar = "
@@ -1784,3 +1805,30 @@ if ( $title == "NextLesson Lesson Covers" ) {
 	);
 
 } //end NEXTLESSON COVER
+
+//  #NEXTLESSON #MARKETING
+// ===============================
+
+if ( $title == "NextLesson Marketing" ) {
+
+	$path = "img/nextlesson-marketing";
+	$company = "NextLesson";
+
+	$description = "Kogi tofu jean shorts seitan. Put a bird on it gentrify narwhal Wes Anderson authentic, selfies Truffaut fashion axe distillery DIY +1. Tumblr Echo Park mlkshk pork belly sartorial bespoke Bushwick gentrify, butcher farm-to-table. Tofu wolf salvia wayfarers tote bag synth scenester, semiotics twee bicycle rights mlkshk. Ugh photo booth viral raw denim dreamcatcher. Wayfarers pork belly keytar next level kogi, Intelligentsia ugh cardigan literally retro Bushwick PBR. Church-key Intelligentsia bespoke, banh mi semiotics skateboard ethical chambray PBR&B chillwave iPhone pug kale chips +1 quinoa.";
+
+	$sidebar = "
+		Illustrations<br>
+		2016
+	";
+
+	$tools = array(
+		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>20),
+		array("skill"=>"Illustrator", "percent"=>80),
+	);
+
+	// $img_info = array(
+	// 	array("file" => "01.jpg", "alt" => "Glossary Images"),
+	// 	array("file" => "01.jpg", "alt" => "Glossary Images"),
+	// );
+
+} //end NEXTLESSON MARKETING

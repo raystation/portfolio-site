@@ -187,6 +187,10 @@
 		$title = 'InterestID';
 		break;
 
+		case 'nextlesson-marketing':
+		$title = 'NextLesson Marketing';
+		break;
+
 		case 'nextlesson-pt':
 		$title = 'Interactive Performance Tasks';
 		break;

@@ -67,7 +67,7 @@ RewriteRule ^nextlesson-covers$ work?project=nextlesson-covers
 RewriteRule ^nextlesson-library$ work?project=nextlesson-library
 RewriteRule ^nextlesson-avatars$ work?project=nextlesson-avatars
 RewriteRule ^nextlesson-pdf$ work?project=nextlesson-pdf
-RewriteRule ^nextlesson-collateral$ work?project=nextlesson-collateral
+RewriteRule ^nextlesson-marketing$ work?project=nextlesson-marketing
 RewriteRule ^nextlesson-glossary$ work?project=nextlesson-glossary
 RewriteRule ^nextlesson-sports$ work?project=nextlesson-sports
 
