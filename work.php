@@ -75,13 +75,13 @@
 		$title = 'Indiginauts';
 		break;
 
-		case 'malado-baldwin-wordpress':
-		$title = 'Malado Baldwin Wordpress site';
-		break;
-
-		case 'malado-baldwin-indexhibit':
+		case 'malado-baldwin':
 		$title = 'Malado Baldwin';
 		break;
+
+		// case 'malado-baldwin-indexhibit':
+		// $title = 'Malado Baldwin';
+		// break;
 
 		case 'monkey-mo':
 		$title = 'Monkey Mo, Monkey&nbsp;Go!';
@@ -99,8 +99,8 @@
 		$title = "Pok&eacute;mon: Toys'R'Us Feature Shop";
 		break;
 
-		case 'sarah-walko-wordpress':
-		$title = 'Sarah Walko website';
+		case 'sarah-walko':
+		$title = 'Sarah Walko';
 		break;
 
 		case 'scavenger-hunt':
@@ -172,7 +172,7 @@
 		break;
 
 		case 'adelle-marcero':
-		$title = 'Adelle Marcero Portfolio Site';
+		$title = 'Adelle Marcero';
 		break;
 
 		case 'nextlesson':

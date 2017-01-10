@@ -28,9 +28,26 @@
 			<p>$description</p>
 			$other
 		";
-		?>
+		if ( isset($company) ) {
+			$related_projects_array = related_projects_check($company);
 
-		<?php related_check();?>
+			if ($related_projects_array !== NULL) {
+				echo "
+					<div class='clearfix'></div>
+					<div class='related'>
+					<hr style='margin-top:80px;width:75%'>
+					<h2>Related Projects:</h2>
+					<ul>
+				";
+				foreach ($related_projects_array as $key => $related_project) {
+					if ($related_project['name'] !== $title) {
+						echo "<li><a href='$related_project[path]'>$related_project[name]</a>";
+					}
+				}
+				echo "</ul></div>";
+			}
+		}
+		?>
 
 	</div>
 

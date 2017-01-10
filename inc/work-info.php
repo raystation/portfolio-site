@@ -25,18 +25,19 @@ $works = array(
 	array( "name" => "Monkey Mo, Monkey&nbsp;Go!","path" => "monkey-mo","thumb" => "jpg" ),
 	array( "name" => "Scavenger Hunt","path" => "scavenger-hunt","thumb" => "jpg" ),
 	array( "name" => "Color Chameleon","path" => "color-chameleon","thumb" => "jpg" ),
-	array( "name" => "Sarah Walko website","path" => "sarah-walko-wordpress","thumb" => "jpg" ),
+	array( "name" => "Chronicles of Old New&nbsp;York","path" => "chronicles-of-old-new-york","thumb" => "jpg" ),
+	array( "name" => "Sarah Walko","path" => "sarah-walko","thumb" => "jpg" ),
 	array( "name" => "Edgeware","path" => "edgeware","thumb" => "jpg" ),
 	array( "name" => "StoryMaps","path" => "storymaps","thumb" => "jpg" ),
-	array( "name" => "Malado Baldwin Wordpress website","path" => "malado-baldwin-wordpress","thumb" => "jpg" ),
+	array( "name" => "Malado Baldwin","path" => "malado-baldwin","thumb" => "jpg" ),
 	array( "name" => "Egg Baby","path" => "egg-baby","thumb" => "jpg" ),
-	array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit", "thumb" => "jpg" ),
+	// array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit", "thumb" => "jpg" ),
 	// array( "name" => "Portfolio Site","path" => "portfolio-site", "thumb" => "jpg" ),
 	// array( "name" => "idibon","path" => "idibon","thumb" => "jpg" ),
 	// array( "name" => "Nerd Comics", "path" => "nerd-comics", "thumb" => "jpg" ),
 );
 
-function get_SBS_projects(){
+function get_suspended_belief_studios_projects(){
 	$works = array(
 		array( "name" => "Indiginauts","path" => "indiginauts","thumb" => "jpg" ),
 		array( "name" => "The 3","path" => "the3","thumb" => "svg" ),
@@ -78,7 +79,6 @@ function get_pokemon_projects(){
 }
 
 function get_nextlesson_projects(){
-	// TODO: use this instead of separate related php page!
 	$works = array(
 		array( "name" => "NextLesson Lesson Covers", "path" => "nextlesson-covers", "thumb" => "jpg" ),
 		array( "name" => "NextLesson Marketing", "path" => "nextlesson-marketing", "thumb" => "jpg" ),
@@ -423,9 +423,9 @@ if ( $title == "Malado Baldwin" ) {
 // #MALADO-WORDPRESS-SITE
 // ===============================
 
-if ( $title == "Malado Baldwin Wordpress site" ) {
+if ( $title == "Malado Baldwin" ) {
 
-	$path="img/malado-baldwin-wordpress";
+	$path="img/malado-baldwin";
 
 	$description = "
 		My friend Malado was growing out of her Indexhibit site and needed <em>more</em>. Responsiveness was the main thing she asked for, but not in those exact words since we didn’t know what that was at the time. I believe what she said was “These pictures look fine on the computer but too small on my phone.” When you're schmoozing it up at the gallery, you want to be able to show someone your painting on the fly while they are consuming free wine and cheese. There are sales to be made!
@@ -436,7 +436,7 @@ if ( $title == "Malado Baldwin Wordpress site" ) {
 	";
 
 	$sidebar = 'Portfolio Website</p>
-		<p><a href="http://www.maladobaldwin.com/blog" target="_blank">link to site</a>';
+		<p><a href="http://www.maladobaldwin.com" target="_blank">maladobaldwin.com</a>';
 
 	$tools=array(
 		array("skill"=>"Wordpress&nbsp;Framework", "percent"=>30),
@@ -462,9 +462,9 @@ if ( $title == "Malado Baldwin Wordpress site" ) {
 // #SARAH-WALKO-WORDPRESS
 // ===============================
 
-if ( $title == "Sarah Walko website" ) {
+if ( $title == "Sarah Walko" ) {
 
-	$path="img/sarah-walko-wordpress";
+	$path="img/sarah-walko";
 
 	$description = "
 		My first experience building a site using Wordpress. I met artist Sarah Walko through my good artist friend Malado Baldwin. She expressed that she needed a site that she could update on her own and that she had experience with Wordpress through work. So I went about helping her figure out the best way to get this going for&nbsp;her.
@@ -1026,6 +1026,7 @@ if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 if ( $title == "Abriendo Puertas / Opening&nbsp;Doors" ) {
 
 	$path="img/abriendo-puertas";
+	//update screenshots and description
 
 	$description = '<em>Abriendo Puertas / Opening Doors</em> is a non-profit dedicated to decreasing the drop-out rate of Latino kids by instilling good behaviors at home. They believe the answer starts at home so their primary focus is on educating their parents. AP/OD holds training sessions where they teach parents different things they could do with their kids to better engage them and acclimate them to a learning environment.
 		</p><p>
@@ -1076,7 +1077,6 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 		The story follows the adventures of a little boy\'s adventure to the zoo and finding a new best friend. I put a lot of detail into this book and made it somewhat interactive. I hid animals in various spots so as to give children an activity to do after they&nbsp;finish.
 		</p>
 
-		<hr>
 		<div class="six columns alpha">
 			<a href="img/monkey-mo/classroom1.jpg" data-lightbox="monkey" data-title="The group"><img class="scale-with-grid" src="img/monkey-mo/classroom1.jpg" alt=""></a>
 		</div>
@@ -1520,6 +1520,7 @@ if ( $title == "Wired" ) {
 	";
 
 	$sidebar="Wired Magazine";
+	// add date of magazine
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>70),
@@ -1528,6 +1529,7 @@ if ( $title == "Wired" ) {
 	);
 
 	$img_info = array(
+		// add photo of magazine cover
 		array("file" => "car.jpg", "alt" => ""),
 		array("file" => "three.jpg", "alt" => ""),
 	);
@@ -1569,7 +1571,7 @@ if ( $title == "Holiday Card 2014" ) {
 //  #Adelle's site
 // ===============================
 
-if ( $title == "Adelle Marcero Portfolio Site" ) {
+if ( $title == "Adelle Marcero" ) {
 
 	$path="img/adelle-marcero";
 

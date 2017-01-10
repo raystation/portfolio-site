@@ -1,11 +1,11 @@
 		<?php
 			switch ( $title ) {
 				case 'Museyon Guides':
-				$projects=get_museyon_books();
+				$projects=get_museyon_projects();
 				break;
 
 				case "Suspended Belief Studios":
-				$projects=get_SBS_projects();
+				$projects=get_suspended_belief_studios_projects();
 				break;
 
 				case "The Pok&eacute;mon Company":

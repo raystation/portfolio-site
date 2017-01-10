@@ -196,60 +196,60 @@ function get_images($dir){
   $files = array_diff( scandir( $dir ), Array( ".", "..", ".DS_Store" ) );
   return $files;
 }
-function related_check() {
+// function related_check() {
 
-  global $title;
+//   global $title;
 
-  if (
-    $title == "Art + Paris" or
-    $title == "Chronicles of Old&nbsp;Rome" or
-    $title == "Chronicles of Old&nbsp;Boston" or
-    $title == "Chronicles of Old New&nbsp;York" or
-    $title == "Chronicles of Old&nbsp;London" or
-    $title == "Chronicles of Old Las&nbsp;Vegas" or
-    $title == "Chronicles of Old&nbsp;Paris" or
-    $title == "City Style"
+//   if (
+//     $title == "Art + Paris" or
+//     $title == "Chronicles of Old&nbsp;Rome" or
+//     $title == "Chronicles of Old&nbsp;Boston" or
+//     $title == "Chronicles of Old New&nbsp;York" or
+//     $title == "Chronicles of Old&nbsp;London" or
+//     $title == "Chronicles of Old Las&nbsp;Vegas" or
+//     $title == "Chronicles of Old&nbsp;Paris" or
+//     $title == "City Style"
 
-    ) { include 'inc/related-museyon.php'; }
+//     ) { include 'inc/related-museyon.php'; }
 
-  if (
-    $title == "The 3" or
-    $title == "Suspended Belief Studios" or
-    $title == "Indiginauts" or
-    $title == "Project Animore" or
-    $title == "Abriendo Puertas / Opening&nbsp;Doors" or
-    $title == "Color Chameleon"
+//   if (
+//     $title == "The 3" or
+//     $title == "Suspended Belief Studios" or
+//     $title == "Indiginauts" or
+//     $title == "Project Animore" or
+//     $title == "Abriendo Puertas / Opening&nbsp;Doors" or
+//     $title == "Color Chameleon"
 
-    ) { include 'inc/related-sb.php'; }
+//     ) { include 'inc/related-sb.php'; }
 
-  if (
-    $title == "Pok&eacute;mon: Toy Fair" or
-    $title == "Pok&eacute;mon: Logos" or
-    $title == "Pok&eacute;mon: Toys'R'Us Feature Shop" or
-    $title == "Pok&eacute;mon: 10th Anniversary" or
-    $title == "The Rise of Darkrai" or
-    $title == "Arceus and the Jewel of&nbsp;Life" or
-    $title == "Battle Revolution" or
-    $title == "Pocket Pok&eacute;dex" or
-    $title == "Pok&eacute;mon: Diamond & Pearl Launch" or
-    $title == "Pok&eacute;mon: Toy Fair" or
-    $title == "Licensing Show" or
-    $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon"
+//   if (
+//     $title == "Pok&eacute;mon: Toy Fair" or
+//     $title == "Pok&eacute;mon: Logos" or
+//     $title == "Pok&eacute;mon: Toys'R'Us Feature Shop" or
+//     $title == "Pok&eacute;mon: 10th Anniversary" or
+//     $title == "The Rise of Darkrai" or
+//     $title == "Arceus and the Jewel of&nbsp;Life" or
+//     $title == "Battle Revolution" or
+//     $title == "Pocket Pok&eacute;dex" or
+//     $title == "Pok&eacute;mon: Diamond & Pearl Launch" or
+//     $title == "Pok&eacute;mon: Toy Fair" or
+//     $title == "Licensing Show" or
+//     $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon"
 
-    ) { include 'inc/related-pokemon.php'; }
+//     ) { include 'inc/related-pokemon.php'; }
 
-  if (
-    $title == "InterestID" or
-    $title = 'NextLesson' or
-    $title = 'NextLesson Lesson Covers' or
-    $title = 'NextLesson Glossary Terms' or
-    $title = 'Interactive Performance Tasks' or
-    $title = 'NextLesson Search and Browse Page' or
-    $title = 'Avatars' or
-    $title = 'Graphics Library'
+//   if (
+//     $title == "InterestID" or
+//     $title = 'NextLesson' or
+//     $title = 'NextLesson Lesson Covers' or
+//     $title = 'NextLesson Glossary Terms' or
+//     $title = 'Interactive Performance Tasks' or
+//     $title = 'NextLesson Search and Browse Page' or
+//     $title = 'Avatars' or
+//     $title = 'Graphics Library'
 
-    ) { include 'inc/related-nextlesson.php'; }
-}
+//     ) { include 'inc/related-nextlesson.php'; }
+// }
 
 function print_skill_html(){
   global $tools;
