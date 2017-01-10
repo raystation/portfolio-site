@@ -1661,6 +1661,7 @@ if ( $title == "NextLesson Search and Browse Page" ) {
 
 	$description = "I was comissioned to do some illustrations to show an example of how LesConcierges' new web interface and app would work with their existing service.";
 
+	//TODO: update the sidebar information
 	$sidebar = "
 		Illustrations<br>
 		July 2014
@@ -1795,6 +1796,8 @@ if ( $title == "NextLesson Lesson Covers" ) {
 		Illustrations<br>
 		2016
 	";
+
+	//TODO: add in modal for the covers
 
 	$tools = array(
 		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>20),

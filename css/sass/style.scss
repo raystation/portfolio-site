@@ -467,88 +467,152 @@ $icon-width: 150px;
 // ABOUT ME
 // ======================================
 
-.chart > div {
-	font: 8pt sans-serif;
-	font-weight: bold;
-	background-color: lighten(silver,15%);
-	padding: 0;
-	margin: 0;
-	@include transition( all 0.5s ease-in-out );
+.resume {
+	font-size: 80%;
+	line-height: 1.35em;
 
-	> div {
+	.chart > div {
+		font: 8pt sans-serif;
+		font-weight: bold;
+		background-color: lighten(silver,15%);
+		padding: 0;
+		margin: 0;
 		@include transition( all 0.5s ease-in-out );
-		background-color: lighten($link-color,30%);
-		margin: 5px 0;
-		padding: 4px 0 4px 10px;
-	}
-	&:hover .inner {
-		@include transition( all 0.5s ease-in-out );
-		background-color: lighten($link-color,40%);
-	}
-}
 
-.tech-skills > div {
-	font: 8pt sans-serif;
-	font-weight: bold;
-	background-color: lighten(steelblue,35%);
-	padding: 4px;
-	margin: 4px 0;
-	@include transition( all 0.25s ease-in-out );
-
-	> div {
-		background-color: lighten($link-color,30%);
-		margin: 5px 0;
-		padding: 4px 0 4px 10px;
-	}
-	&:hover .inner {
-		@include transition( all 0.25s ease-in-out );
-		background-color: lighten(silver,10%);
-	}
-}
-
-.resume-title {
-	margin: 0;
-	color: steelblue;
-	font-weight: bold;
-	padding: 0;
-}
-
-.resume-pdf {
-	background-color: lavender;
-	padding:10px;
-	width: 50px;
-	height: 50px;
-	border-radius:5px;
-	@include transition( background-color 0.25s ease-in-out );
-	&:hover {
-		background-color: lightblue;
-		@include transition( background-color 0.25s ease-in-out );
-	}
-}
-
-#history {
-	ul { list-style: initial; list-style-position: inside; list-style-type: circle; }
-	li {
-		margin-bottom: 0.15em;
-		padding-left: 1em;
-		text-indent: -1em;
-		max-width: 80%;
-		@media #{$mobile} { max-width: 100%; }
-	}
-
-	strong a, strong a:visited {
-		color: black;
-		@include transition( all 0.25s ease-in-out );
-		&:hover {
-			@include transition( all 0.25s ease-in-out );
-			color: $link-color;
+		> div {
+			@include transition( all 0.5s ease-in-out );
+			background-color: lighten($link-color,30%);
+			margin: 5px 0;
+			padding: 4px 0 4px 10px;
+		}
+		&:hover .inner {
+			@include transition( all 0.5s ease-in-out );
+			background-color: lighten($link-color,40%);
 		}
 	}
-}
 
-.bio {
-	// font-size: 1.15em;
-	line-height: $line-height;
+	.tech-skills > div {
+		font: 8pt sans-serif;
+		font-weight: bold;
+		background-color: lighten(steelblue,35%);
+		padding: 4px;
+		margin: 4px 0;
+		@include transition( all 0.25s ease-in-out );
+
+		> div {
+			background-color: lighten($link-color,30%);
+			margin: 5px 0;
+			padding: 4px 0 4px 10px;
+		}
+		&:hover .inner {
+			@include transition( all 0.25s ease-in-out );
+			background-color: lighten(silver,10%);
+		}
+	}
+
+	.resume-title {
+		margin: 0;
+		color: steelblue;
+		font-weight: bold;
+		padding: 0;
+	}
+
+	.resume-pdf {
+		background-color: lavender;
+		padding:10px;
+		width: 50px;
+		height: 50px;
+		border-radius:5px;
+		@include transition( background-color 0.25s ease-in-out );
+		&:hover {
+			background-color: lightblue;
+			@include transition( background-color 0.25s ease-in-out );
+		}
+	}
+
+	.company {
+		// margin-bottom: 1em;
+		hr {
+			// border: 0;
+			height : 0;
+			background: none;
+			margin : 1.5em 0;
+			border: 1px dashed hsla(0, 0%, 90%, 1);
+		}
+		h2.job-title,
+		h3,
+		{
+			font-size: inherit;
+			line-height: 0.75em;
+			color: $txt-color;
+		}
+		h2.job-title {
+			font-weight: 900l
+		}
+		h3 {
+			font-size: inherit;
+			font-weight: normal;
+			a:link, a:visited {
+				@include transition( all 0.25s ease-in-out );
+				&:hover {
+					color: $link-color;
+					@include transition( all 0.25s ease-in-out );
+				}
+			}
+		}
+		ul {
+			list-style: initial;
+			list-style-position: inside;
+			// list-style-type: circle;
+			max-width: 90%;
+			li {
+				margin-bottom: 0.15em;
+				padding-left: 1em;
+				text-indent: -1em;
+				// max-width: 80%;
+				@media #{$mobile} { max-width: 100%; }
+			}
+		}
+
+		strong a, strong a:visited {
+			color: black;
+			@include transition( all 0.25s ease-in-out );
+			&:hover {
+				@include transition( all 0.25s ease-in-out );
+				color: $link-color;
+			}
+		}
+	}
+	#history {
+		ul {
+			list-style: initial;
+			list-style-position: inside;
+			list-style-type: circle;
+			max-width: 90%;
+			li {
+				margin-bottom: 0.15em;
+				padding-left: 1em;
+				text-indent: -1em;
+				// max-width: 80%;
+				@media #{$mobile} { max-width: 100%; }
+			}
+		}
+
+		strong a, strong a:visited {
+			color: black;
+			@include transition( all 0.25s ease-in-out );
+			&:hover {
+				@include transition( all 0.25s ease-in-out );
+				color: $link-color;
+			}
+		}
+	}
+
+	.bio {
+		// font-size: 1.15em;
+		line-height: $line-height;
+	}
+
 }
 
 

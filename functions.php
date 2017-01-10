@@ -1,4 +1,5 @@
 <?
+
 function string_lower( $string ){
   $string = ( strtolower ( $string ) );
   $string = ( str_replace(" ", "-", $string ) );
@@ -103,7 +104,7 @@ function print_list( $array, $results=5, $randomize=false, $heading=5 ){
   $content = "";
 
   // checks to make sure this is a special type of array with key name and list
-  // TODO: temporary fix where it doesn't check for special arrays
+  // TODO: Lists: temporary fix where it doesn't check for special arrays
   if ( isset($array["name"]) ) {
     $name = $array["name"];
     $array = $array["list"];
