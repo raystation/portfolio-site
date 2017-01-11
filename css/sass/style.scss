@@ -511,7 +511,9 @@ $icon-width: 150px;
 	}
 
 	.resume-title {
+		font-size: $font-size;
 		margin: 0;
+		margin-bottom: 10px;
 		color: steelblue;
 		font-weight: bold;
 		padding: 0;
@@ -531,20 +533,22 @@ $icon-width: 150px;
 	}
 
 	.company {
-		// margin-bottom: 1em;
-		hr {
-			// border: 0;
+		line-height: 1.5em;
+		margin-top: 1em;
+		hr.resume {
 			height : 0;
 			background: none;
-			margin : 1.5em 0;
+			margin-top: 3em;
 			border: 1px dashed hsla(0, 0%, 90%, 1);
+			max-width: 75%;
 		}
 		h2.job-title,
 		h3,
 		{
 			font-size: inherit;
-			line-height: 0.75em;
 			color: $txt-color;
+			margin: 0;
+			line-height: inherit;
 		}
 		h2.job-title {
 			font-weight: 900l
@@ -561,14 +565,15 @@ $icon-width: 150px;
 			}
 		}
 		ul {
+			margin-top: 1em;
 			list-style: initial;
 			list-style-position: inside;
 			// list-style-type: circle;
 			max-width: 90%;
 			li {
-				margin-bottom: 0.15em;
-				padding-left: 1em;
-				text-indent: -1em;
+				margin-bottom: 0.25em;
+				padding-left: 2em;
+				text-indent: -2em;
 				// max-width: 80%;
 				@media #{$mobile} { max-width: 100%; }
 			}
