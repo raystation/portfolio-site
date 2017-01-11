@@ -140,7 +140,10 @@ a,a:visited {
 .nowrap, .nobreak 				{ white-space: nowrap; }
 .hide 					{ display: none; }
 
-.list-spacing-fix li	{ margin-bottom: 0.15em !important; }
+.list-spacing-fix li	{
+	margin-bottom: 0.35em !important;
+	line-height: $line-height;
+}
 
 hr {
 	border: 0;
@@ -468,8 +471,8 @@ $icon-width: 150px;
 // ======================================
 
 .resume {
-	font-size: 80%;
-	line-height: 1.35em;
+	font-size: 90%;
+	// line-height: 1.25em;
 
 	.chart > div {
 		font: 8pt sans-serif;
@@ -511,7 +514,7 @@ $icon-width: 150px;
 	}
 
 	.resume-title {
-		font-size: $font-size;
+		font-size: $font-size*1.25;
 		margin: 0;
 		margin-bottom: 10px;
 		color: steelblue;
@@ -533,8 +536,10 @@ $icon-width: 150px;
 	}
 
 	.company {
-		line-height: 1.5em;
+
 		margin-top: 1em;
+		max-width: 90%;
+		@media #{$mobile} { max-width: 100%; }
 		hr.resume {
 			height : 0;
 			background: none;
@@ -551,31 +556,40 @@ $icon-width: 150px;
 			line-height: inherit;
 		}
 		h2.job-title {
-			font-weight: 900l
+			font-size: $font-size;
+			font-weight: 900;
+			margin-bottom: 0.25em;
 		}
 		h3 {
 			font-size: inherit;
 			font-weight: normal;
 			a:link, a:visited {
-				@include transition( all 0.25s ease-in-out );
+				// @include transition( all 0.25s ease-in-out );
+				color: $link-color;
+				// text-decoration: underline;
+				// @extend .underline;
 				&:hover {
-					color: $link-color;
-					@include transition( all 0.25s ease-in-out );
+					// color: $link-color;
+					// @include transition( all 0.25s ease-in-out );
 				}
 			}
+		}
+		p.description {
+			margin-top: 10px;
 		}
 		ul {
 			margin-top: 1em;
 			list-style: initial;
 			list-style-position: inside;
 			// list-style-type: circle;
-			max-width: 90%;
 			li {
 				margin-bottom: 0.25em;
 				padding-left: 2em;
 				text-indent: -2em;
-				// max-width: 80%;
-				@media #{$mobile} { max-width: 100%; }
+				// line-height: 90%;
+				a:link, a:visited {
+					@extend .underline;
+				}
 			}
 		}
 
