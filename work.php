@@ -175,6 +175,10 @@
 		$title = 'Adelle Marcero';
 		break;
 
+		case 'idibon':
+		$title = 'idibon';
+		break;
+
 		case 'nextlesson':
 		$title = 'NextLesson';
 		break;
@@ -184,15 +188,15 @@
 		break;
 
 		case 'nextlesson-interestid':
-		$title = 'InterestID';
+		$title = 'NextLesson InterestID';
 		break;
 
 		case 'nextlesson-marketing':
 		$title = 'NextLesson Marketing';
 		break;
 
-		case 'nextlesson-pt':
-		$title = 'Interactive Performance Tasks';
+		case 'nextlesson-interactive':
+		$title = 'NextLesson Interactive';
 		break;
 
 		case 'nextlesson-avatars':

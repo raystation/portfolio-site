@@ -6,7 +6,7 @@ $works = array(
 	array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing", "thumb" => "jpg" ),
 	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
 	array( "name" => "NextLesson Glossary Images","path" => "nextlesson-glossary", "thumb" => "jpg" ),
-	// array( "name" => "Interactive Performance Tasks","path" => "nextlesson-pt", "thumb" => "jpg" ),
+	// array( "name" => "NextLesson Interactive","path" => "nextlesson-interactive", "thumb" => "jpg" ),
 	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars", "thumb" => "jpg" ),
 	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library", "thumb" => "jpg" ),
 	// array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-browse", "thumb" => "jpg" ),
@@ -74,21 +74,6 @@ function get_pokemon_projects(){
 		array( "name" => "Pok&eacute;mon Toy&nbsp;Fair", "path" => "toy-fair", "thumb" => "jpg" ),
 		array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch", "thumb" => "jpg" ),
 		array( "name" => "Licensing Show", "path" => "licensing-show", "thumb" => "jpg" ),
-	);
-	return $works;
-}
-
-function get_nextlesson_projects(){
-	$works = array(
-		array( "name" => "NextLesson Lesson Covers", "path" => "nextlesson-covers", "thumb" => "jpg" ),
-		array( "name" => "NextLesson Marketing", "path" => "nextlesson-marketing", "thumb" => "jpg" ),
-		array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
-		array( "name" => "NextLesson Glossary Terms", "path" => "nextlesson-glossary", "thumb" => "jpg" ),
-		// array( "name" => "Browsing Experience","path" => "nextlesson-search-browse", "thumb" => "jpg" ),
-		// array( "name" => "Graphics Library", "path" => "nextlesson-library", "thumb" => "jpg" ),
-		// array( "name" => "Profile Avatars", "path" => "nextlesson-avatars", "thumb" => "jpg" ),
-		// array( "name" => "Interactive Performance Tasks", "path" => "nextlesson-interative-pt", "thumb" => "jpg" ),
-		// array( "name" => "Printed Lesson", "path" => "nextlesson-pdf", "thumb" => "jpg" ),
 	);
 	return $works;
 }
@@ -189,29 +174,6 @@ if ( $title == "Suspended Belief Studios" ) {
 
 } //end SUSPENDED BELIEF STUDIOS
 
-//  #NEXTLESSON
-// ===============================
-
-if ( $title == "NextLesson" ) {
-
-	$path="img/nextlesson";
-
-	$description = "
-	NextLesson is a resource for teachers to find projects and lessons that engage students in real world problem solving basing lessons around familiar (and current) topics—like <a href='https://www.nextlesson.org/resources/q-pokemon' target='_blank'>Pok&eacute;mon Go</a>, <a href='https://www.nextlesson.org/resources/q-minecraft' target='_blank'>Minecraft</a>, <a href='https://www.nextlesson.org/resources/q-taylor%20swift' target='_blank'>Taylor Swift</a> or <a href='https://www.nextlesson.org/resources/interest-basketball-baseball-winter+sports-xtreme+sports-racket+sports-olympics-football-hockey' target='_blank'>sports</a></a>.
-	</p><p>
-	As <em>Head of Design</em> at NextLesson, I had to take care of all artwork and website design needs. Originally hired to work with marketing and to create all the <a href='nextlesson-covers'>lesson covers</a> on the site, I made interest icons for the <a href='nextlesson-interestid'>InterestID</a> tool, helped design the Interactive tool, and built a graphics library that freelancers could use to speed up artwork creation.
-	";
-
-	$template="company";
-	$logo="svg";
-
-	$sidebar = "Engaging K-12 educational Content</p>
-	<p><a href='http://nextlesson.org' target='_blank'>nextlesson.org</a>";
-
-	$img_info = array(
-	);
-
-} //end NEXTLESSON
 
 // #STORYMAPS
 // ========================
@@ -249,6 +211,31 @@ if ( $title == "StoryMaps" ) {
 	    array("file" => "03.jpg", "alt" => "Spying / Villainy"),
 	    array("file" => "04.jpg", "alt" => "Wants / Finds Out"),
 	    array("file" => "05.jpg", "alt" => "Test / Magic Helper")
+	);
+
+} //end Storymaps
+
+
+// #idibon
+// ========================
+
+if ( $title == "idibon" ) {
+
+	$path="img/idibon";
+
+	$description = "Lumbersexual humblebrag asymmetrical, post-ironic kickstarter four loko kale chips bicycle rights venmo. Bushwick narwhal pickled selvage lo-fi, chartreuse celiac direct trade cliche pabst. XOXO taxidermy fingerstache brunch authentic, street art you probably haven't heard of them salvia.";
+
+	$sidebar = '<p>Comic-like, hand-drawn illustrations</p>
+	<p><a href="http://seanh.github.io/storymaps">StoryMaps Github page</a>
+	';
+
+	$tools=array(
+		array("skill"=>"Photoshop", "percent"=>40),
+		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>60),
+	);
+
+	$img_info = array(
+	    // array("file" => "01.jpg", "alt" => "Home / Split Up"),
 	);
 
 } //end Storymaps
@@ -1519,7 +1506,7 @@ if ( $title == "Wired" ) {
 	</p>
 	";
 
-	$sidebar="Wired Magazine";
+	$sidebar="Wired Magazine<br>2014";
 	// add date of magazine
 
 	$tools=array(
@@ -1649,6 +1636,215 @@ if ( $title == "LesConcierges" ) {
 } //end LESCONCIERGES
 
 
+
+// ================================================
+//  #NEXTLESSON
+// ================================================
+
+function get_nextlesson_projects(){
+	$works = array(
+		array( "name" => "NextLesson Lesson Covers", "path" => "nextlesson-covers", "thumb" => "jpg" ),
+		array( "name" => "NextLesson Marketing", "path" => "nextlesson-marketing", "thumb" => "jpg" ),
+		array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
+		array( "name" => "NextLesson Glossary Terms", "path" => "nextlesson-glossary", "thumb" => "jpg" ),
+		// array( "name" => "Browsing Experience","path" => "nextlesson-search-browse", "thumb" => "jpg" ),
+		// array( "name" => "Graphics Library", "path" => "nextlesson-library", "thumb" => "jpg" ),
+		// array( "name" => "Profile Avatars", "path" => "nextlesson-avatars", "thumb" => "jpg" ),
+		// array( "name" => "Interactive Performance Tasks", "path" => "nextlesson-interative-pt", "thumb" => "jpg" ),
+		// array( "name" => "Printed Lesson", "path" => "nextlesson-pdf", "thumb" => "jpg" ),
+	);
+	return $works;
+}
+
+if ( $title == "NextLesson" ) {
+
+	$path="img/nextlesson";
+
+	$description = "
+	NextLesson is a resource for teachers to find projects and lessons that engage students in real world problem solving basing lessons around familiar (and current) topics—like <a href='https://www.nextlesson.org/resources/q-pokemon' target='_blank'>Pok&eacute;mon Go</a>, <a href='https://www.nextlesson.org/resources/q-minecraft' target='_blank'>Minecraft</a>, <a href='https://www.nextlesson.org/resources/q-taylor%20swift' target='_blank'>Taylor Swift</a> or <a href='https://www.nextlesson.org/resources/interest-basketball-baseball-winter+sports-xtreme+sports-racket+sports-olympics-football-hockey' target='_blank'>sports</a></a>.
+	</p><p>
+	As <em>Head of Design</em> at NextLesson, I oversaw all artwork and website design needs. I was originally hired to assist Marketing and to create all the lesson covers on the site, but branched out very quickly as I saw many things that needed design help. I made student interest icons for the InterestID tool, helped design the Interactive tool, and built a graphics library that freelancers could use to speed up artwork creation.
+	";
+
+	$template="company";
+	$logo="svg";
+
+	$sidebar = "Engaging K-12 educational materials<br>
+	2014-2016</p>
+	<p><a href='http://nextlesson.org' target='_blank'>nextlesson.org</a>";
+
+	$img_info = array(
+	);
+
+} //end NEXTLESSON
+
+
+
+//  #NEXTLESSON #COVERS
+// ===============================
+
+if ( $title == "NextLesson Lesson Covers" ) {
+
+	// $template = "ui";
+	$path = "img/nextlesson-covers";
+	$company = "NextLesson";
+	// $movie = "$path/interactive-pt-overview.mp4";
+
+	$description = "
+		My first big task at NextLesson! We have numerous projects and lessons on the site and each one needed a cover.
+		<p></p>
+		Before I could get the team to help with the covers, I needed to make sure I knew what I wanted. Planned in tandem with a redesigned search/browse page, we set about standardizing the displayed information as well as taking the first steps to form a distinctive “look.”
+		<p></p>
+		We set about making sure all covers had the same information in the same spot. Lesson type on top, logo in the bottom left, and title nice and big; everything else was up to the artist. I oversee a team of designers to make sure covers are created in a timely manner. I’ve created a graphics library that our freelancers use to facilitate faster turnaround.
+		<p></p>
+		Jump to 2 years and 2,034 covers later. Most of the back-covers are complete and a system is in place for new covers. Please see some of my favorite covers below.
+	";
+
+	$sidebar = "
+		Design System and Illustrated Covers<br>
+		2014
+	";
+	$tools = array(
+		array("skill"=>"Photoshop", "percent"=>45),
+		array("skill"=>"Illustrator", "percent"=>30),
+		array("skill"=>"Spreadsheets", "percent"=>15),
+		array("skill"=>"Indesign", "percent"=>10),
+	);
+
+	$img_info = array(
+		array("file" => "01.jpg", "alt" => "Glossary Images"),
+		array("file" => "01.jpg", "alt" => "Glossary Images"),
+	);
+
+} //end NEXTLESSON COVER
+
+
+
+	//TODO: add in modal for the covers
+
+
+//  #NEXTLESSON #INTERESTID
+// ===============================
+
+if ( $title == "NextLesson InterestID" ) {
+
+	$template = "ui";
+	$company = "NextLesson";
+	$path = "img/nextlesson-interestid";
+	// $movie = "$path/interestid-voting.mp4";
+
+	$description = "
+	InterestID is a tool for students to inform teachers what topics interest them. Students “thumbs up” or “thumbs down” various topics which are featured in NextLesson lessons.</p><p>
+	That information is available to teachers sorted by most popular categories. A click on the category connects the teacher to lessons where that topic is covered. Simple grade and subject filters allow the teacher to find the right lesson for their class if there are numerous results.</p><p>
+	As of January 2017, students have rated over 1,605,000+ interests. The more students rate and suggest new interests, the better we can tailor our learning materials and be more real-time and relevant.
+	";
+
+	$sidebar = "
+		Student Interest Tool<br>
+		2015
+	";
+
+	$tools = array(
+		array("skill"=>"Illustrator", "percent"=>50),
+		array("skill"=>"Mockups&nbsp;(PHP+JS)", "percent"=>25),
+		array("skill"=>"Sketches", "percent"=>15),
+		array("skill"=>"Spreadsheets", "percent"=>10),
+	);
+
+	$img_info = array(
+		// array("file" => "puzzle.jpg", "alt" => "The hotel owner tells his assistant that he needs to schedule a flight to Shanghai"),
+	);
+
+	$other = "
+	<video width='320' height='240' controls>
+		<source src='$path/interestid-voting.mp4' type='video/mp4'>
+		Your browser does not support the video tag.
+	</video>
+	<h3>Voting</h3>
+	<p></p>
+	<video width='320' height='240' controls>
+		<source src='$path/interestid-filters.mp4' type='video/mp4'>
+		Your browser does not support the video tag.
+	</video>
+	<h3>Filtering</h3>
+	<p>
+	</p>
+	";
+
+} //end NEXTLESSON INTERESTID
+
+
+
+
+//  #NEXTLESSON #GLOSSARY
+// ===============================
+
+if ( $title == "NextLesson Glossary Terms" ) {
+
+	// $template = "ui";
+	$path = "img/nextlesson-glossary";
+	$company = "NextLesson";
+	// $movie = "$path/interactive-pt-overview.mp4";
+
+	$description = "After releasing the initial version of our Interactive lessons, it was up to our Curriculum team to fill it with learning materials! As they were working on that, we worked on the next iteration. Since we had glossary terms, we thought having images to support them would be impactful, as well as being helpful for our younger user-base.
+		<p></p>
+		I had a whole library of image assets that we’ve slowly created over time, so this task wasn’t that time-intensive.
+		<image of cover and finished glossary term>
+		<p></p>
+		No—the bigger challenge was how to illustrate ideas and abstract concepts.
+ 		<image viable>
+	";
+
+	$sidebar = "
+		Vector Illustrations<br>
+		2016
+	";
+
+	$tools = array(
+		array("skill"=>"Illustrator", "percent"=>70),
+		array("skill"=>"Sketches", "percent"=>30),
+	);
+
+	$img_info = array(
+		array("file" => "01.jpg", "alt" => "Glossary Images"),
+	);
+
+	$other = "";
+
+} //end NEXTLESSON GLOSSARY
+
+
+
+
+//  #NEXTLESSON #MARKETING
+// ===============================
+
+if ( $title == "NextLesson Marketing" ) {
+
+	$path = "img/nextlesson-marketing";
+	$company = "NextLesson";
+
+	$description = "Coming Soon.";
+
+	$sidebar = "
+		Marketing<br>
+		2014
+	";
+
+	$tools = array(
+		// array("skill"=>"Illustrator", "percent"=>80),
+	);
+
+	// $img_info = array(
+	// 	array("file" => "01.jpg", "alt" => "Glossary Images"),
+	// 	array("file" => "01.jpg", "alt" => "Glossary Images"),
+	// );
+
+} //end NEXTLESSON MARKETING
+
+
+
+
 //  #NEXTLESSON #SEARCH BROWSE
 // ===============================
 
@@ -1684,156 +1880,3 @@ if ( $title == "NextLesson Search and Browse Page" ) {
 	";
 
 } //end NEXTLESSON SEARCH BROWSE
-
-
-//  #NEXTLESSON #INTERESTID
-// ===============================
-
-if ( $title == "InterestID" ) {
-
-	$template = "ui";
-	$company = "NextLesson";
-	$path = "img/nextlesson-interestid";
-	// $movie = "$path/interestid-voting.mp4";
-
-	$description = "
-	InterestID is a tool for students to inform teachers what topics interest them. Students “thumbs up” or “thumbs down” various topics which are featured in NextLesson lessons.</p><p>
-	That information is available to teachers sorted by most popular categories. A click on the category connects the teacher to lessons where that topic is covered. Simple grade and subject filters allow the teacher to find the right lesson for their class if there are numerous results.</p><p>
-	As of January 2017, students have rated over 1,605,000+ interests. The more students rate and suggest new interests, the better we can tailor our learning materials and be more real-time and relevant.
-	";
-
-	$sidebar = "
-		Illustrations<br>
-		July 2014
-	";
-
-	$tools = array(
-		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>60),
-		array("skill"=>"Photoshop", "percent"=>40),
-	);
-
-	$img_info = array(
-		// array("file" => "puzzle.jpg", "alt" => "The hotel owner tells his assistant that he needs to schedule a flight to Shanghai"),
-	);
-
-	$other = "
-	<video width='320' height='240' controls>
-		<source src='$path/interestid-voting.mp4' type='video/mp4'>
-		Your browser does not support the video tag.
-	</video>
-	<h3>Voting</h3>
-	<p></p>
-	<video width='320' height='240' controls>
-		<source src='$path/interestid-filters.mp4' type='video/mp4'>
-		Your browser does not support the video tag.
-	</video>
-	<h3>Filtering</h3>
-	<p>
-	</p>
-	";
-
-} //end NEXTLESSON INTERESTID
-
-//  #NEXTLESSON #GLOSSARY
-// ===============================
-
-if ( $title == "NextLesson Glossary Terms" ) {
-
-	// $template = "ui";
-	$path = "img/nextlesson-glossary";
-	$company = "NextLesson";
-	// $movie = "$path/interactive-pt-overview.mp4";
-
-	$description = "After releasing the initial version of our Interactive lessons, it was up to our Curriculum team to fill it with learning materials! As they were working on that, we worked on the next iteration. Since we had glossary terms, we thought having images to support them would be impactful, as well as being helpful for our younger user-base.
-		<p></p>
-		I had a whole library of image assets that we’ve slowly created over time, so this task wasn’t that time-intensive.
-		<image of cover and finished glossary term>
-		<p></p>
-		No—the bigger challenge was how to illustrate ideas and abstract concepts.
- 		<image viable>
-	";
-
-	$sidebar = "
-		Illustrations<br>
-		2016
-	";
-
-	$tools = array(
-		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>20),
-		array("skill"=>"Illustrator", "percent"=>80),
-	);
-
-	$img_info = array(
-		array("file" => "01.jpg", "alt" => "Glossary Images"),
-	);
-
-	$other = "";
-
-} //end NEXTLESSON INTERACTIVE PT
-
-
-//  #NEXTLESSON #COVERS
-// ===============================
-
-if ( $title == "NextLesson Lesson Covers" ) {
-
-	// $template = "ui";
-	$path = "img/nextlesson-covers";
-	$company = "NextLesson";
-	// $movie = "$path/interactive-pt-overview.mp4";
-
-	$description = "
-		My first big task at NextLesson! We have numerous projects and lessons on the site and each one needed a cover.
-		<p></p>
-		Before I could hire out people to help with the covers, I needed to make sure I knew what I wanted. Planned in tandem with a redesigned search/browse page, we set about standardizing the displayed information as well as taking the first steps to form a distinctive “look.”
-		<p></p>
-		We set about making sure all covers had the same information in the same spot. Lesson type on top, logo in the bottom left, and title nice and big; everything else was up to the artist. I oversee a team of designers to make sure covers are created in a timely manner. I’ve created a graphics library that our freelancers use to facilitate faster turnaround.
-		<p></p>
-		Jump to 2 years and 2,034 covers later. Most of the back-covers are complete and a system is in place for new covers. Please see some of my favorite covers below.
-	";
-
-	$sidebar = "
-		Illustrations<br>
-		2016
-	";
-
-	//TODO: add in modal for the covers
-
-	$tools = array(
-		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>20),
-		array("skill"=>"Illustrator", "percent"=>80),
-	);
-
-	$img_info = array(
-		array("file" => "01.jpg", "alt" => "Glossary Images"),
-		array("file" => "01.jpg", "alt" => "Glossary Images"),
-	);
-
-} //end NEXTLESSON COVER
-
-//  #NEXTLESSON #MARKETING
-// ===============================
-
-if ( $title == "NextLesson Marketing" ) {
-
-	$path = "img/nextlesson-marketing";
-	$company = "NextLesson";
-
-	$description = "Kogi tofu jean shorts seitan. Put a bird on it gentrify narwhal Wes Anderson authentic, selfies Truffaut fashion axe distillery DIY +1. Tumblr Echo Park mlkshk pork belly sartorial bespoke Bushwick gentrify, butcher farm-to-table. Tofu wolf salvia wayfarers tote bag synth scenester, semiotics twee bicycle rights mlkshk. Ugh photo booth viral raw denim dreamcatcher. Wayfarers pork belly keytar next level kogi, Intelligentsia ugh cardigan literally retro Bushwick PBR. Church-key Intelligentsia bespoke, banh mi semiotics skateboard ethical chambray PBR&B chillwave iPhone pug kale chips +1 quinoa.";
-
-	$sidebar = "
-		Illustrations<br>
-		2016
-	";
-
-	$tools = array(
-		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>20),
-		array("skill"=>"Illustrator", "percent"=>80),
-	);
-
-	// $img_info = array(
-	// 	array("file" => "01.jpg", "alt" => "Glossary Images"),
-	// 	array("file" => "01.jpg", "alt" => "Glossary Images"),
-	// );
-
-} //end NEXTLESSON MARKETING
