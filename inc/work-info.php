@@ -1,4 +1,4 @@
-<?php
+<?
 
 $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "thumb" => "jpg" ),
@@ -1663,7 +1663,7 @@ if ( $title == "NextLesson" ) {
 	$description = "
 	NextLesson is a resource for teachers to find projects and lessons that engage students in real world problem solving basing lessons around familiar (and current) topics—like <a href='https://www.nextlesson.org/resources/q-pokemon' target='_blank'>Pok&eacute;mon Go</a>, <a href='https://www.nextlesson.org/resources/q-minecraft' target='_blank'>Minecraft</a>, <a href='https://www.nextlesson.org/resources/q-taylor%20swift' target='_blank'>Taylor Swift</a> or <a href='https://www.nextlesson.org/resources/interest-basketball-baseball-winter+sports-xtreme+sports-racket+sports-olympics-football-hockey' target='_blank'>sports</a></a>.
 	</p><p>
-	As <em>Head of Design</em> at NextLesson, I oversaw all artwork and website design needs. I was originally hired to assist Marketing and to create all the lesson covers on the site, but branched out very quickly as I saw many things that needed design help. I made student interest icons for the InterestID tool, helped design the Interactive tool, and built a graphics library that freelancers could use to speed up artwork creation.
+	As <em>Head of Design</em> at NextLesson, I oversaw all artwork and website design needs. I was originally hired to assist Marketing and to create all the lesson covers on the site, but quickly branched out as I saw many things that needed design help. I made student interest icons for the InterestID tool, helped design the Interactive tool, and built a graphics library that freelancers could use to speed up artwork creation.
 	";
 
 	$template="company";
@@ -1701,8 +1701,11 @@ if ( $title == "NextLesson Lesson Covers" ) {
 	";
 
 	$sidebar = "
+		<p>
 		Design System and Illustrated Covers<br>
-		2014
+		2014-2016
+		</p>
+		2,000+ covers
 	";
 	$tools = array(
 		array("skill"=>"Photoshop", "percent"=>45),
@@ -1712,8 +1715,11 @@ if ( $title == "NextLesson Lesson Covers" ) {
 	);
 
 	$img_info = array(
-		array("file" => "01.jpg", "alt" => "Glossary Images"),
-		array("file" => "01.jpg", "alt" => "Glossary Images"),
+		array("file" => "01.jpg", "alt" => "Cover View"),
+		array("file" => "Living-&-Playing-by-the-Golden-Rule.jpg", "alt" => "Living & Playing by the Golden Rule"),
+		array("file" => "crowd-control.jpg", "alt" => "Crowd Control"),
+		array("file" => "golden-gaming.jpg", "alt" => "Golden Gaming"),
+		array("file" => "bundles-of-fun.jpg", "alt" => "Bundles of Fun"),
 	);
 
 } //end NEXTLESSON COVER
@@ -1737,6 +1743,10 @@ if ( $title == "NextLesson InterestID" ) {
 	InterestID is a tool for students to inform teachers what topics interest them. Students “thumbs up” or “thumbs down” various topics which are featured in NextLesson lessons.</p><p>
 	That information is available to teachers sorted by most popular categories. A click on the category connects the teacher to lessons where that topic is covered. Simple grade and subject filters allow the teacher to find the right lesson for their class if there are numerous results.</p><p>
 	As of January 2017, students have rated over 1,605,000+ interests. The more students rate and suggest new interests, the better we can tailor our learning materials and be more real-time and relevant.
+	</p>
+	<p>
+	<img src='$path/laptop.jpg' alt='InterestID' class='scale-with-grid'>
+	</p>
 	";
 
 	$sidebar = "
@@ -1752,10 +1762,14 @@ if ( $title == "NextLesson InterestID" ) {
 	);
 
 	$img_info = array(
-		// array("file" => "puzzle.jpg", "alt" => "The hotel owner tells his assistant that he needs to schedule a flight to Shanghai"),
+		// array("file" => "cover.jpg", "alt" => "..."),
+		// array("file" => "interest-selection.jpg", "alt" => "InterestID liking and disliking"),
 	);
 
 	$other = "
+	<p>
+		Food truck Portland swag Pitchfork mustache semiotics, gluten-free raw denim ethical deep v hoodie YOLO Bushwick hella. Carles 3 wolf moon cred freegan slow-carb, banh mi direct trade High Life Helvetica street art.
+	</p>
 	<video width='320' height='240' controls>
 		<source src='$path/interestid-voting.mp4' type='video/mp4'>
 		Your browser does not support the video tag.
@@ -1835,10 +1849,12 @@ if ( $title == "NextLesson Marketing" ) {
 		// array("skill"=>"Illustrator", "percent"=>80),
 	);
 
-	// $img_info = array(
-	// 	array("file" => "01.jpg", "alt" => "Glossary Images"),
-	// 	array("file" => "01.jpg", "alt" => "Glossary Images"),
-	// );
+	$img_info = array(
+		array("file" => "01.jpg", "alt" => ""),
+		array("file" => "02.jpg", "alt" => ""),
+		array("file" => "03.jpg", "alt" => ""),
+		array("file" => "04.jpg", "alt" => ""),
+	);
 
 } //end NEXTLESSON MARKETING
 
@@ -1880,3 +1896,5 @@ if ( $title == "NextLesson Search and Browse Page" ) {
 	";
 
 } //end NEXTLESSON SEARCH BROWSE
+
+

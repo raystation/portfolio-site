@@ -1,3 +1,32 @@
+<?
+
+	if ( !is_null($path) ) {
+		// checks for ADDITIONAL_IMG folder for support images
+		if ( file_exists("$path/additional_img") ) {
+			$additional_img_html = skeleton_html(2,$path,$folder="additional_img");
+		} else {
+			$additional_img_html = "";
+		}
+
+		// fills the sidebar with a logo if it exists
+		if ( file_exists("$path/logo.jpg") ) {
+			$sidebar_logo = "<img src='$path/logo.jpg' alt='Logo' class='logo'>";
+		}
+		elseif ( file_exists("$path/logo.png") ) {
+			$sidebar_logo = "<img src='$path/logo.png' alt='Logo' class='logo'>";
+		}
+		else {
+			$sidebar_logo = "";
+		}
+	}
+	else
+	{
+		$path="";
+		$additional_img_html = "fill out information on work-info";
+	}
+
+?>
+
 <div class="sixteen columns">
 	<!-- basic -->
 	<?
@@ -51,9 +80,9 @@
 
 	</div>
 
-	<div class="four columns omega caption">
+	<div class="project-sidebar four columns omega caption">
 
-		<?php echo "<p>$sidebar</p>\n";?>
+		<?php echo "<p>$sidebar_logo $sidebar</p>\n";?>
 		<?php if ( $tools == !NULL) {
 			echo "<div class='list-spacing-fix'>\n";
 			echo "<hr><h6>Tools Used:</h6>\n";

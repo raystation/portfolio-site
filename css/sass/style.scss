@@ -310,34 +310,44 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 }
 
 .textbox {
+	max-width: 95%;
 	h1 {
-		font-size: 32px;
-		line-height: 1.5em;
+		font-size: 45px;
+		margin-top: 120px;
+		line-height: 1.35em;
 		font-weight: 400 !important;
 		text-transform: inherit;
-		color: $textbox-text-color;
+		// color: $textbox-text-color;
+		color: $txt-color;
 		a:link, a:visited {
 			color: $textbox-link-color;
 			@extend .underline;
 		}
 	}
-	color: darken($textbox-color,45%);
-	padding: 2em 3em;
-	background-color: $textbox-color;
-	// background-color: desaturate($link-color,50%);
-	a:link, a:visited {
-		color: darken($textbox-color,45%);
-		@extend .underline;
+	p {
+		color: lighten($txt-color,30%);
+		font-size: 30px;
+		line-height: 1.35em;
+		// color: darken($textbox-color,45%);
+		// padding: 2em 3em;
+		// background-color: $textbox-color;
+		a:link, a:visited {
+			color: darken($textbox-color,45%);
+			@extend .underline;
+		}
 	}
 
 	@media #{$mobile} {
-		font-size: $font-size*1.25;
 		line-height: $line-height;
 		padding: 0;
 		background-color: transparent;
 		color: $txt-color;
 		h1 {
+			font-size: $font-size*1.5;
 			color: $txt-color;
+		}
+		p {
+			font-size: $font-size;
 		}
 		a:link, a:visited {
 			color: $link-color;
@@ -377,6 +387,16 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		opacity: 1;
 		@include transition( all 0.25s ease-in-out );
 		// &:hover { opacity: 0.65; }
+	}
+}
+.project-sidebar {
+	// background-color: hsla(0, 0%, 90%, 1);
+	background-color: #f0f4f6;
+	padding: 1.5em 1.5em 3em 1.5em;
+	img.logo {
+		width: 100%;
+		padding: 10px;
+		// padding-top: 10px;
 	}
 }
 
@@ -464,6 +484,7 @@ $icon-width: 150px;
 		// font-size: $font-size;
 		line-height: 1.5em;
 		max-width: 95%;
+		// margin-bottom: 1em;
 	}
 }
 
@@ -569,11 +590,11 @@ $icon-width: 150px;
 			font-weight: normal;
 			a:link, a:visited {
 				// @include transition( all 0.25s ease-in-out );
-				color: $link-color;
+				color: $txt-color;
 				// text-decoration: underline;
 				// @extend .underline;
 				&:hover {
-					// color: $link-color;
+					color: $link-color;
 					// @include transition( all 0.25s ease-in-out );
 				}
 			}
@@ -583,16 +604,28 @@ $icon-width: 150px;
 		}
 		ul {
 			margin-top: 1em;
-			list-style: initial;
+			// list-style: initial;
 			list-style-position: inside;
 			// list-style-type: circle;
 			li {
+				color: lighten($txt-color,15%);
+				font-size: 90%;
 				margin-bottom: 0.25em;
-				padding-left: 2em;
-				text-indent: -2em;
+				padding-left: 1em;
+				text-indent: -1em;
 				// line-height: 90%;
+				@include transition( all 0.25s ease-in-out );
 				a:link, a:visited {
 					@extend .underline;
+				}
+				&:hover {
+					// color: black;
+					@include transition( all 0.25s ease-in-out );
+				}
+				&:before {
+				    content: "•"; /* Insert content that looks like bullets */
+				    padding-right: 8px;
+				    color: lighten($txt-color,10%); /* Or a color you prefer */
 				}
 			}
 		}

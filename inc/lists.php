@@ -1,4 +1,4 @@
-<?php
+<?
 
 function list_new_favorite_things() {
 	$list = array(
@@ -393,34 +393,38 @@ function list_funny_city_names() {
 }
 
 function list_tech_skills() {
+	//things I'm pretty good at
 	$list = array(
 		"name"=>"Technical Skills",
 		"list"=>array(
 			array("percent"=>99,"skill"=>"Hand-drawing skills"),
+			array("percent"=>93,"skill"=>"Vector Illustration"),
 			"clear",
 			array("percent"=>95,"skill"=>"Photoshop"),
 			array("percent"=>99.44,"skill"=>"Illustrator"),
 			array("percent"=>98,"skill"=>"Indesign"),
-			array("percent"=>89,"skill"=>"QuarkXPress"),
+			// array("percent"=>89,"skill"=>"QuarkXPress"),
 			"clear",
-			array("percent"=>95,"skill"=>"Microsoft Excel"),
-			"clear",
+			// array("percent"=>95,"skill"=>"Microsoft Excel"),
 			// array("percent"=>85,"skill"=>"Dreamweaver"),
 			// array("percent"=>52,"skill"=>"Flash"),
+			array("percent"=>85,"skill"=>"UI & UX"),
 			array("percent"=>90,"skill"=>"Sketch"),
-			array("percent"=>60,"skill"=>"Adobe CC"),
+			array("percent"=>70,"skill"=>"Adobe XD"),
 			"clear",
 			array("percent"=>95,"skill"=>"HTML"),
 			array("percent"=>93,"skill"=>"CSS/Sass"),
+			array("percent"=>90,"skill"=>"Responsive Web Design"),
 			// array("percent"=>92,"skill"=>"Sass"),
-			array("percent"=>70,"skill"=>"JQuery"),
-			array("percent"=>65,"skill"=>"JS"),
+			array("percent"=>60,"skill"=>"Javascript/JQuery"),
 			"clear",
 			array("percent"=>80,"skill"=>"PHP"),
 			array("percent"=>75,"skill"=>"Wordpress"),
 			"clear",
-			array("percent"=>85,"skill"=>"Git"),
-			// array("percent"=>30,"skill"=>"Ruby"),
+			array("percent"=>85,"skill"=>"Git and Github"),
+			"clear",
+			array("percent"=>90,"skill"=>"Page Layout"),
+			array("percent"=>95,"skill"=>"Pre-Press"),
 		)
 	);
 	return $list;

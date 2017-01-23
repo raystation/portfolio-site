@@ -7,12 +7,24 @@
 		} else {
 			$additional_img_html = "";
 		}
+
+		// fills the sidebar with a logo if it exists
+		if ( file_exists("$path/logo.jpg") ) {
+			$sidebar_logo = "<img src='$path/logo.jpg' alt='Logo' class='scale-with-grid'>";
+		}
+		elseif ( file_exists("$path/logo.png") ) {
+			$sidebar_logo = "<img src='$path/logo.png' alt='Logo' class='scale-with-grid'>";
+		}
+		else {
+			$sidebar_logo = "";
+		}
 	}
 	else
 	{
 		$path="";
 		$additional_img_html = "fill out information on work-info";
 	}
+
 
 ?>
 
@@ -82,7 +94,7 @@
 
 	</div>
 
-	<div class="four columns omega caption">
+	<div class="project-sidebar four columns omega caption">
 
 		<?php echo "<p>$sidebar</p>\n";?>
 		<?php if ( $tools == !NULL) {

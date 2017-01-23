@@ -37,7 +37,7 @@
 				{
 					echo "<img class='scale-with-grid add-bottom' src='img/hero_default.jpg' alt='$title Top Image'>";
 				}
-				echo "<h2>".$title."</h2>";
+				echo "<h1 style='margin-top:60px;'>".$title."</h1>";
 			?>
 
 			<div class="twelve columns description alpha add-bottom">
