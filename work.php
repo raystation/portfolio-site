@@ -226,14 +226,11 @@ include('inc/header.php');
 // IF THE PROJECT IS SET (VIEWING A PROJECT)
 // THEN IT WILL TAKE THE PROJECT OUT OF THE WORK ARRAY SO YOU DON'T GET IT IN THE RECENT PROJECTS
 if ( isset($project) ) {
-	// echo $title;
 	foreach ($works as $key => $work) {
-		echo "$key-";
 		if (array_search($title, $work)){
 			break;
 		};
 	}
-	echo $key;
 	unset($works[$key]);
 	$works = array_values($works);
 }
