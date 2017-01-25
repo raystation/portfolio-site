@@ -36,8 +36,7 @@
 
 			<div class="twelve columns add-bottom">
 				<p>All works &copy; <?php $date=get_date();echo $date["year"];?> Raymond Yuen.</p>
-				<p>Please do not reproduce without expressed written consent.</p>
-				<p class="add-bottom">Built with Skeleton.</p>
+				<p class="add-bottom">Please do not reproduce without expressed written consent.</p>
 				<p><? $pun = print_pun(); echo $pun; ?></p>
 			</div>
 

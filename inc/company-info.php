@@ -2750,7 +2750,7 @@ case 'google-doodle':
 
 		$copy="
 		<p>
-			Hi, I'm not certain of all the things that of a Google Doodler does, but the idea absolutely fascinates me! I want to continue to pursue a career which allows me to work in the intersection between design and art. At NextLesson, in addition to UI/UX design, I have a proven record of success managing a team to create the artwork on the site. I've linked to a few projects which I believe show a good range of media and solutions.
+			Hi, I'm not certain of all the things that a Google Doodler does, but the idea absolutely fascinates me! I want to continue to pursue a career which allows me to work in the intersection between design and art. At NextLesson, in addition to UI/UX design, I have a proven record of success managing a team to create the artwork on the site. I've linked to a few projects which I believe show a good range of media and solutions.
 		</p>
 		";
 
@@ -2789,6 +2789,107 @@ case 'google-doodle':
 		<p class='caption'>With the popularity of Pokemon Go, it was perfect to revisit this classic challenge.</p>
 
 		";
+
+		$closing=" ";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Creation of 2,034 Lesson and Project Covers.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"NextLesson InterestID",
+				"type"=>"jpg",
+				"desc"=>"UI/UX and creation of 3,831 icons.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Interactive Glossary",
+				"type"=>"jpg",
+				"desc" => "Visuals for glossary terms.",
+			),
+			array(
+				"path"=>"indiginauts",
+				"name"=>"Indiginauts",
+				"type"=>"jpg",
+				"desc"=>"Point 'n' click adventure game. Game concept/design, art, and UI.",
+			),
+			array(
+				"path"=>"color-chameleon",
+				"name"=>"Color Chameleon",
+				"type"=>"jpg",
+				"desc"=>"Game concept for a runner.",
+			),
+			array(
+				"path"=>"storymaps",
+				"name"=>"StoryMaps",
+				"type"=>"jpg",
+				"desc"=>"Hand-drawn illustrations for a story building app.",
+			),
+		);
+
+	break;
+
+case 'duckduckmoose':
+		$company="Duck Duck Moose";
+		$originaljobposting="http://www.duckduckmoose.com/2d-artist-illustrator/";
+		$logo="http://www.duckduckmoose.com/duckduckmoose/wp-content/themes/ddm/images/ddm-logo.png";
+		$jobTitle="2D Artist / Illustrator";
+		$date="January 25, 2017";
+		// $name="";
+		$email="careers@duckduckmoose.com";
+		$slider="";
+		$hiremepage = "http://rayuen.com/hire-me?id=duckduckmoose";
+		// $resume = "img/ray_yuen_resume-gd.pdf";
+
+		$job_details="<h6>2D Artist / Illustrator</h6>
+
+			<p>Duck Duck Moose, a wholly-owned subsidiary of Khan Academy, is an award-winning creator of educational children’s applications. We are looking for a talented full-time, in-house 2D Artist to join our Creative Team and focus on the execution of a variety of projects and future products. You will work with a small, collaborative team of engineers, product managers, and designers to create outstanding user experiences. Our ideal candidate will have a deep passion for great design, an outstanding attention to detail, an excellent sense of humor, and a love of games and children’s media.</p>
+
+			<p>Our 2D Artist will be responsible for contributing to various stages of design projects from conceptualization through implementation and create production-ready artwork. You will generate artwork of characters, environments, objects, and interfaces, and ensure the overall quality and consistency of all assets required. Your work will make an impact on families and young children all over the world.</p>
+
+			<h6>Skills and Requirements</h6>
+			<li>4+ years of relevant product experience on major releases in a studio, agency, or startup environment
+			<li>Expert-level knowledge of the latest Adobe Creative Suite software
+			<li>Ability to work collaboratively with the Creative Team, Engineers, and Product Managers to create the future of educational children’s apps
+			<li>Strong eye for design and visual storytelling
+			<li>Solid foundational 2D art skills using line, light, shadow, and color theory
+			<li>Understanding of anatomy, character design, perspective, lighting, and composition
+			<li>Ability to work within various and specific styles, including some that may be set by another artist
+			<li>Ability to generate pixel-perfect assets as deliverables
+			<li>Online portfolio demonstrating a variety of mobile and web projects
+			<li>Ability to work locally in our office in San Mateo, CA
+
+			<h6>Bonus Points</h6>
+			<li>3D art experience
+			<li>Video game concept or art production
+			<li>Animation and video production skills
+			<li>BFA/MFA in related field or equivalent experience
+
+			<h6>Perks</h6>
+			<li>Competitive salary
+			<li>Great Health, Dental, Vision Insurance, 401k
+			<li>Generous paid time off (PTO)
+			<li>A fun, supportive team and flexible work opportunities
+			<li>Weekly team lunches
+			<li>Fully stocked kitchen
+			<li>MacBook and Cintiq 22HD
+
+			<h6>About Duck Duck Moose (A wholly-owned subsidiary of Khan Academy)</h6>
+			<p>Duck Duck Moose, an award-winning creator of educational mobile apps for families, is a passionate team of engineers, artists, designers, and educators. Founded in 2008, the company has created 21 top-selling titles and has received 21 Parents’ Choice Awards, 18 Children’s Technology Review Awards, 12 Tech with Kids’ Best Pick App Awards, and a KAPi award for “Best Children’s App” at the International Consumer Electronics Show. Our team includes industry leaders from Disney, IDEO, Teach for America (Teach for All), Siebel Systems, Oracle, Zynga, and successful startups. Duck Duck Moose has joined Khan Academy, a nonprofit with a mission to provide a free, world-class education for anyone, anywhere.</p>
+
+			<p>Please forward your resume and portfolio to careers@duckduckmoose.com.</p>";
+
+		$copy="
+		<p>
+			Hi, I am a huge fan of Khan Academy! Having just left a great education startup, I wanted to see if there were  similiar opportunities out there when I saw your posting. I want to continue to pursue a career which allows me to work in the intersection between design and art. I've linked to a few projects which I believe show a good range of media and solutions.
+		</p>
+		";
+
+		$other="";
 
 		$sample_projects_array = array(
 			array(
