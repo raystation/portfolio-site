@@ -2750,7 +2750,7 @@ case 'google-doodle':
 
 		$copy="
 		<p>
-			Hi, I'm not certain of all the things that of a Google Doodler does, but the idea absolutely fascinates me! I want to continue to pursue a career which allows me to work in the intersection between design and art. At NextLesson, in addition to UI/UX design, I have a proven record of success managing a team to create the artwork on the site.
+			Hi, I'm not certain of all the things that of a Google Doodler does, but the idea absolutely fascinates me! I want to continue to pursue a career which allows me to work in the intersection between design and art. At NextLesson, in addition to UI/UX design, I have a proven record of success managing a team to create the artwork on the site. I've linked to a few projects which I believe show a good range of media and solutions.
 		</p>
 		";
 
@@ -2758,7 +2758,7 @@ case 'google-doodle':
 		<h5>More Samples</h5>
 
 		<div class='four columns add-bottom alpha caption'>
-			<a href='http://darthpickle.com/p/corpse/'><img class='scale-with-grid' src='img/exquisite-corpse/thumb.jpg'>Random Character Maker.</a> a PHP exercise.
+			<a href='http://darthpickle.com/p/corpse/'><img class='scale-with-grid' src='img/exquisite-corpse/thumb.jpg'>Random Character Maker.</a> A whimsical coding exercise.
 		</div>
 
 		<div class='four columns alpha caption'>
@@ -2771,7 +2771,7 @@ case 'google-doodle':
 
 		<div class='clearfix add-bottom'></div>
 		<p>
-			I would love to find out more about this opportunity and I think that with 14 years of creative experience, I could be a valuable team member. I have more work <a href='work'>here</a> and my resume here. Thanks!<br><br>
+			I would love♥ to find out more about this opportunity. With 14 years of creative experience, I believe I would be a valuable addition to any team. Please browse the <a href='work'>rest of my work</a> and look at my <a href='resume'>resume</a>. Thanks!<br><br>
 			Sincerely, Ray
 		</p>
 

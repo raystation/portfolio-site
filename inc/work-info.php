@@ -6,6 +6,7 @@ $works = array(
 	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
 	array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing", "thumb" => "jpg" ),
 	array( "name" => "NextLesson Glossary Images","path" => "nextlesson-glossary", "thumb" => "jpg" ),
+	array( "name" => "#Inktober2016","path" => "inktober-2016", "thumb" => "jpg" ),
 	// array( "name" => "NextLesson Interactive","path" => "nextlesson-interactive", "thumb" => "jpg" ),
 	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars", "thumb" => "jpg" ),
 	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library", "thumb" => "jpg" ),
@@ -1635,6 +1636,38 @@ if ( $title == "LesConcierges" ) {
 
 } //end LESCONCIERGES
 
+//  #Inktober 2016
+// ===============================
+
+if ( $title == "#Inktober2016" ) {
+
+	// $template="art";
+	$path="img/inktober-2016";
+
+	$additional_img_column_count=1;
+
+	$description="
+		All throughout October, I drew a picture everyday and posted it to Instagram and Twitter with the hashtag <a href='https://twitter.com/search?q=%23InkTober'>#Inktober</a>. Inktober is a drawing exercise occurs in October that my friend got me into. A bunch of people were posting images all over the world so it seems like fun!
+		</p>
+	";
+
+	$sidebar="
+		Illustration exercise<br>
+		October 2016
+	";
+
+	$tools=array(
+		array("skill"=>"<span class='nowrap'>Markers</span>", "percent"=>70),
+		array("skill"=>"<span class='nowrap'>Pencils</span>", "percent"=>30),
+		// array("skill"=>"Photoshop", "percent"=>40),
+	);
+
+	$img_info = array(
+		array("file" => "hero.jpg", "alt" => "NEKO ATSUME DOODLE"),
+	);
+
+} //end Inktober 2016
+
 
 
 // ================================================
@@ -1643,7 +1676,7 @@ if ( $title == "LesConcierges" ) {
 
 function get_nextlesson_projects(){
 	$works = array(
-		array( "name" => "NextLesson Lesson Covers", "path" => "nextlesson-covers", "thumb" => "jpg" ),
+		array( "name" => "NextLesson Project Covers", "path" => "nextlesson-covers", "thumb" => "jpg" ),
 		array( "name" => "NextLesson Marketing", "path" => "nextlesson-marketing", "thumb" => "jpg" ),
 		array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
 		array( "name" => "NextLesson Glossary Terms", "path" => "nextlesson-glossary", "thumb" => "jpg" ),

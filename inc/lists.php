@@ -436,7 +436,7 @@ function get_puns() {
     "What is the leading cause of divorce in long-term marriages? A stalemate.",
     "You wanna hear a joke about pizza? Never mind, it was too cheesy.",
     "I tried to catch some fog earlier. I mist.",
-    "I walked into my sister's room and tripped on a bra. It was a booby-trap.",
+    // "I walked into my sister's room and tripped on a bra. It was a booby-trap.",
     "A book just fell on my head, I only have my shelf to blame.",
     "I'm reading a book on anti-gravity, and it's impossible to put down.",
     "I'm glad I know sign language. It's become quite handy.",

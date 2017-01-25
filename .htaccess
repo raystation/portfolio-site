@@ -58,6 +58,7 @@ RewriteRule ^lesconcierges$ work?project=lesconcierges
 RewriteRule ^wired$ work?project=wired
 RewriteRule ^holiday-2014$ work?project=holiday-2014
 RewriteRule ^adelle-marcero$ work?project=adelle-marcero
+RewriteRule ^inktober-2016$ work?project=inktober-2016
 
 RewriteRule ^nextlesson$ work?project=nextlesson
 RewriteRule ^nextlesson-covers$ work?project=nextlesson-covers

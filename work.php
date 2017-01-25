@@ -214,6 +214,10 @@
 		case 'nextlesson-covers':
 		$title = 'NextLesson Lesson Covers';
 		break;
+
+		case 'inktober-2016':
+		$title = "#Inktober2016";
+		break;
 	}
 
 if ( !isset($title) ) { $title = "Work"; }
@@ -232,12 +236,24 @@ if ( isset($project) ) {
 
 	} else {
 		// TEMPLATE NOT SET, USE BASIC
+		$template = "basic";
 		include 'inc/templates/basic.php';
 	}
 }
 // TODO: have thumbnails not print on company page or consolidate
 
 //produces thumbnails for homepage and below the projects
-skeleton_print_thumbnail_4($works);
+
+if ( !isset($template) ) {
+	skeleton_print_thumbnail_4($works);
+} elseif ($template=="company") {
+	  echo "
+	  <div class='container add-top'>
+	  	<div class='sixteen columns add-bottom'><a href='work'>&#11013; Back to projects</a></div>
+	  </div>";
+}
+else {
+	skeleton_print_thumbnail_4($works,8);
+}
 
 include('inc/footer.php');

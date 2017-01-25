@@ -26,6 +26,7 @@ function get_title($string){
   $string = replace_string( $string, "img_", "");
   $string = replace_string( $string, ".png", "");
   $string = replace_string( $string, ".jpg", "");
+  $string = replace_string( $string, ".JPG", "");
   $string = replace_string( $string, "_-_", "? ");
   $string = replace_string( $string, "_-", "'");
   $string = replace_string( $string, "_____", ": ");
@@ -323,27 +324,30 @@ function workthumb($num) {
   echo "<p>".$works[$num]["name"]."</p>\n";
 }
 
-function skeleton_print_thumbnail_4($array,$vertical=false) {
+function skeleton_print_thumbnail_4($array,$project_count=0,$vertical=false) {
 
   echo '</div><div class="container portfolio">'."\n";
   global $description;
 
-  //adds home link if it's not the index page
+  //adds project link if it's not the index page
   if ( isset($description) ) {
     // echo '<hr>'."\n";
-    echo '<div class="sixteen columns add-bottom"><hr><a href="index">&#11013; Back to home</a></div>'."\n";
+    echo '<div class="sixteen columns add-bottom"><hr><a href="work">&#11013; Back to projects</a></div>'."\n";
   }
 
   // populates page with thumbnails from $work
   $count=1;
   $alphacount;
   $omegacount;
-  foreach ( $array as $array_item ) {
+
+  foreach ( $array as $key => $array_item ) {
     $alt = html_entity_decode($array_item['name']);
     // TODO: fix vertical thumbnail
     // TODO: mobile: have two thumbnails next to each other
     $thumb = $vertical ? "thumb-v" : "thumb";
     // echo "$array_item[path]/thumb.jpg";
+
+    // looks for thumbnail
     if ( file_exists( "img/$array_item[path]/thumb.jpg" ) ) {
       $thumb = "$array_item[path]/thumb.jpg";
       $thumbnail_path = "<a href='$array_item[path]' alt='$alt'><img src='img/$thumb' class='scale-with-grid2'></a>";
@@ -357,6 +361,7 @@ function skeleton_print_thumbnail_4($array,$vertical=false) {
       $thumbnail_path = "<a href='$array_item[path]' alt='default logo'><img src='img/thumb-default.jpg' class='scale-with-grid2'></a>";
     }
 
+
     echo "
     <div class='four columns'>
       $thumbnail_path
@@ -369,7 +374,12 @@ function skeleton_print_thumbnail_4($array,$vertical=false) {
     } else {
       $count++;
     }
+
+    if ($key == $project_count-1) {
+      break;
+    }
   }
+
 }
 
 function skeleton_print_page_thumbnail_4($array) {

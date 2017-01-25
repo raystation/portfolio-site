@@ -3,7 +3,10 @@
 	if ( !is_null($path) ) {
 		// checks for ADDITIONAL_IMG folder for support images
 		if ( file_exists("$path/additional_img") ) {
-			$additional_img_html = skeleton_html(2,$path,$folder="additional_img");
+			if ( !isset($additional_img_column_count) ) {
+				$additional_img_column_count = 2;
+			}
+			$additional_img_html = skeleton_html($additional_img_column_count,$path,$folder="additional_img");
 		} else {
 			$additional_img_html = "";
 		}
@@ -24,8 +27,6 @@
 		$path="";
 		$additional_img_html = "fill out information on work-info";
 	}
-
-
 ?>
 
 <div class="sixteen columns">
