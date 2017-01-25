@@ -1109,6 +1109,7 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 if ( $title == "The Rise of Darkrai" ) {
 
 	$path="img/darkrai";
+	$company = "Pokemon";
 
 	$description = '
 	The Rise of Darkrai was the 10th Pok&eacute;mon movie made and the third movie I worked&nbsp;on.
@@ -1148,13 +1149,14 @@ if ( $title == "The Rise of Darkrai" ) {
 if ( $title == "Arceus and the Jewel of&nbsp;Life" ) {
 
 	$path="img/arceus";
+	$company = "Pokemon";
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>80),
 		array("skill"=>"Photoshop", "percent"=>20),
 	);
 
-	$description="";
+	$description="Coming soon.";
 
 	$sidebar = "";
 
@@ -1172,6 +1174,7 @@ if ( $title == "Arceus and the Jewel of&nbsp;Life" ) {
 if ( $title == "Pok&eacute;mon: 10th Anniversary" ) {
 
 	$path="img/10th-anniversary";
+	$company = "Pokemon";
 
 	$description = '
 	 	The celebrations began with a "Journey Across America" Mall Tour where we distributed exclusive Pok&eacute;mon and held game tournaments. Winners were invited to the national tournament. It all lead up to the big event at Bryant Park, where the National Game Tournament was held and all aspects of the Pok&eacute;mon products and brands were represented.
@@ -1212,8 +1215,9 @@ if ( $title == "Pok&eacute;mon: 10th Anniversary" ) {
 if ( $title == "Pok&eacute;mon: Toys'R'Us Feature Shop" ) {
 
 	$path="img/feature-shop";
+	$company = "Pokemon";
 
-	$description;
+	$description="Coming soon.";
 
 	$sidebar = "Toys'R'Us Times Square";
 
@@ -1242,8 +1246,9 @@ if ( $title == "Pok&eacute;mon: Toys'R'Us Feature Shop" ) {
 if ( $title == "Pok&eacute;mon: Toy Fair" ) {
 
 	$path="img/toy-fair";
+	$company = "Pokemon";
 
-	$description;
+	$description="Coming soon.";
 
 	$sidebar = "
 		Trade Show Booth
@@ -1290,8 +1295,11 @@ if ( $title == "Nerd Comics" ) {
 if ( $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon" ) {
 
 	$path="img/mystery-dungeon";
+	$company = "Pokemon";
 
-	$description;
+	$description="
+		Logo creation. Strategy Guide creation. Mini-website development.
+	";
 
 	$sidebar = "
 		Strategy Guide <br />
@@ -1317,8 +1325,10 @@ if ( $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon" ) {
 if ( $title == "Pocket Pok&eacute;dex" ) {
 
 	$path="img/pocket-pokedex";
+	$company = "Pokemon";
 
-	$description;
+	// TODO: fill in missing Pokemon descriptions
+	$description="Coming soon.";
 
 	$sidebar = "
 		Book Design <br />
@@ -1347,8 +1357,9 @@ if ( $title == "Pocket Pok&eacute;dex" ) {
 if ( $title == "Battle Revolution" ) {
 
 	$path="img/battle-revolution";
+	$company = "Pokemon";
 
-	$description;
+	$description="Coming soon.";
 
 	$sidebar = "Strategy Guides <br />
 	Mini-website";
@@ -1373,8 +1384,9 @@ if ( $title == "Battle Revolution" ) {
 if ( $title == "Pok&eacute;mon: Diamond & Pearl Launch" ) {
 
 	$path="img/dp-launch";
+	$company = "Pokemon";
 
-	$description;
+	$description="Coming soon.";
 
 	$sidebar = "
 		Event at Nintendo World in New York <br />
@@ -1409,8 +1421,9 @@ if ( $title == "Pok&eacute;mon: Diamond & Pearl Launch" ) {
 if ( $title == "Licensing Show" ) {
 
 	$path="img/licensing-show";
+	$company = "Pokemon";
 
-	$description;
+	$description="Coming soon.";
 
 	$sidebar = "
 		Trade Show Booth
@@ -1446,8 +1459,9 @@ if ( $title == "Licensing Show" ) {
 if ( $title == "Pok&eacute;mon: Logos" ) {
 
 	$path="img/pokemon-logos";
+	$company = "Pokemon";
 
-	$description;
+	$description="Coming soon.";
 
 	$sidebar = "
 		Logo examples
@@ -1468,30 +1482,6 @@ if ( $title == "Pok&eacute;mon: Logos" ) {
 	);
 
 } //end POKEMON-LOGOS
-
-//  #PORTFOLIO-SITE
-// ===============================
-
-if ( $title == "Portfolio Site" ) {
-
-	$path="img/portfolio-site";
-
-	$description="yay!";
-
-	$sidebar="Logo examples";
-
-	$tools=array(
-		array("skill"=>"Sublime Text", "percent"=>70),
-		array("skill"=>"Git", "percent"=>10),
-		array("skill"=>"Photoshop", "percent"=>20),
-	);
-
-	$img_info = array(
-		array("file" => "01.jpg", "alt" => ""),
-		array("file" => "02.jpg", "alt" => ""),
-	);
-
-} //end PORTFOLIO SITE
 
 
 //  #WIRED
@@ -1780,9 +1770,8 @@ if ( $title == "NextLesson InterestID" ) {
 	That information is available to teachers sorted by most popular categories. A click on the category connects the teacher to lessons where that topic is covered. Simple grade and subject filters allow the teacher to find the right lesson for their class if there are numerous results.</p><p>
 	As of January 2017, students have rated over 1,605,000+ interests. The more students rate and suggest new interests, the better we can tailor our learning materials and be more real-time and relevant.
 	</p>
-	<p>
 	<img src='$path/laptop.jpg' alt='InterestID' class='scale-with-grid'>
-	</p>
+	<p class='caption'>The teacher experience(left) vs. the student experience(right)</p>
 	";
 
 	$sidebar = "
@@ -1803,21 +1792,24 @@ if ( $title == "NextLesson InterestID" ) {
 	);
 
 	$other = "
-	<p>
-		Food truck Portland swag Pitchfork mustache semiotics, gluten-free raw denim ethical deep v hoodie YOLO Bushwick hella. Carles 3 wolf moon cred freegan slow-carb, banh mi direct trade High Life Helvetica street art.
-	</p>
+	<h3>Rating Interests</h3>
 	<video width='320' height='240' controls>
 		<source src='$path/interestid-voting.mp4' type='video/mp4'>
 		Your browser does not support the video tag.
 	</video>
-	<h3>Voting</h3>
-	<p></p>
+	<p class='caption'>A student voting.</p>
+	<p>
+		To rate interests, you just press the <em>thumbs up</em> to 'like' or the <em>thumbs down</em> to 'dislike'. The first screen gives you interests that have not been rated in a random order, so you see new interests everytime you go on. After an interest is rated, it will disappear so your <em>unrated</em> view is a little less cluttered.
+	</p>
+
+	<h3>Filtering by Category and by Liked</h3>
 	<video width='320' height='240' controls>
 		<source src='$path/interestid-filters.mp4' type='video/mp4'>
 		Your browser does not support the video tag.
 	</video>
-	<h3>Filtering</h3>
+	<p class='caption'>A student voting.</p>
 	<p>
+		We put filters in so you can browse by category or by interests you've already liked or disliked.
 	</p>
 	";
 

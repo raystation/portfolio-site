@@ -105,7 +105,9 @@
 			print_skill_html();
 			echo "</div>\n";
 
-		}?>
+		}
+		// TODO: add in related projects in the sidebar
+		?>
 
 	</div>
 
