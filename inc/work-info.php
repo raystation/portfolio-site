@@ -3,8 +3,8 @@
 $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "thumb" => "jpg" ),
 	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "thumb" => "jpg" ),
-	array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing", "thumb" => "jpg" ),
 	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
+	array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing", "thumb" => "jpg" ),
 	array( "name" => "NextLesson Glossary Images","path" => "nextlesson-glossary", "thumb" => "jpg" ),
 	// array( "name" => "NextLesson Interactive","path" => "nextlesson-interactive", "thumb" => "jpg" ),
 	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars", "thumb" => "jpg" ),

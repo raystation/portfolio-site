@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 //converts title into lowercase and no spaces
 function downcasespace($string) {
@@ -13,12 +13,12 @@ switch ( $id ) {
 		$company="Hiring Manager";
 		$copy="
 		<p class=\"add-top\">
-			I have worked in the design field for over 8 years and have a solid traditional print background. I used to work at Pokemon, in a small in-house creative team consisting of 3 people. The experience that would most interest you was our work supporting the publishing department (primarily with strategy guides). We would usually have big a diverse range of design work centered around any major video-game or movie releases, so time and project management was essential. More recently, I've been working with an independent publisher designing and laying out their travel guides. 
+			I have worked in the design field for over 8 years and have a solid traditional print background. I used to work at Pokemon, in a small in-house creative team consisting of 3 people. The experience that would most interest you was our work supporting the publishing department (primarily with strategy guides). We would usually have big a diverse range of design work centered around any major video-game or movie releases, so time and project management was essential. More recently, I've been working with an independent publisher designing and laying out their travel guides.
 		</p>
 		<p>
 			I consider myself a very hard-working individual, willing to put in the extra time to see things finished. I have links below to my resume and some selected works. Thanks.
 		</p>";
-		break;	
+		break;
 
 	case '523':
 		$company="Room to Read";
@@ -33,16 +33,16 @@ switch ( $id ) {
 			With my experience working in print, web, and email, along with 8+ years in design and marketing, I believe I can be a strong candidate for the design position. Another reason I did not want to miss this opportunity is that I have a strong interest in moving into the non-profit sector to impact some positive change—I want to make the world a better place.
 		</p>
 		<p>
-		I have worked in small design departments where we had to manage and create artwork for different sized projects, from <a href=\"darkrai\">movie launches</a> to <a href=\"chronicles-of-old-new-york\">300 page books</a> to large-scale tent graphics for big events. We supported all the internal departments as well as enforced the brand standards. Any project that required more than a 3 person team could handle required us to manage an outside vendor. 
-		</p> 
+		I have worked in small design departments where we had to manage and create artwork for different sized projects, from <a href=\"darkrai\">movie launches</a> to <a href=\"chronicles-of-old-new-york\">300 page books</a> to large-scale tent graphics for big events. We supported all the internal departments as well as enforced the brand standards. Any project that required more than a 3 person team could handle required us to manage an outside vendor.
+		</p>
 		<p>
-		I am highly proficent in the Adobe Creative Suite through working in print/web production. Programming is a bit of a hobby of mine—I am extremely comfortable with HTML/CSS and am actively learning other web technologies, like Javascript/jQuery, PHP and Ruby on Rails. I am also highly skilled in <a href=\"monkey-mo\">drawing</a>. 
+		I am highly proficent in the Adobe Creative Suite through working in print/web production. Programming is a bit of a hobby of mine—I am extremely comfortable with HTML/CSS and am actively learning other web technologies, like Javascript/jQuery, PHP and Ruby on Rails. I am also highly skilled in <a href=\"monkey-mo\">drawing</a>.
 		</p>
 		<p>
 			Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume in PDF format below or an online version <a href=\"resume\">here</a>. Thank you!
 		</p>";
 
-		break;		
+		break;
 
 
 case '090':
@@ -58,16 +58,16 @@ case '090':
 			I am writing in regards to your designer position that was posted at the beginning of this month. I realize that this email may not be timely, but I hope I can still be considered for placement, or for a <a href=\"http://careers.williams-sonomainc.com/pottery-barn-teen/job/San-Francisco-Catalog-Production-Assistant-Pottery-Barn-Teen-CA-94111/59492600/\" target=\"_blank\">similiar position</a> in the future.
 		</p>
 		<p>
-			I have over <a href=\"resume#history\">8+ years</a> working in design and marketing. I come from a print-production background, more recently delving into web design/production. At The Pok&eacute;mon Company, I worked as part of a small team of three, supporting the various departments with their various needs. We worked on things like toy packaging, video-game launches, strategy guide localization, mini-movie websites...just to name a few. We did this all while maintaining the brand standards passed on from Japan. 
-		</p> 
+			I have over <a href=\"resume#history\">8+ years</a> working in design and marketing. I come from a print-production background, more recently delving into web design/production. At The Pok&eacute;mon Company, I worked as part of a small team of three, supporting the various departments with their various needs. We worked on things like toy packaging, video-game launches, strategy guide localization, mini-movie websites...just to name a few. We did this all while maintaining the brand standards passed on from Japan.
+		</p>
 		<p>
-		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. Programming is a bit of a hobby of mine—I am extremely comfortable with HTML/CSS and am actively learning other web languages, like Javascript/jQuery, PHP and Ruby on Rails. I am also highly skilled in <a href=\"monkey-mo\">drawing</a>. 
+		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. Programming is a bit of a hobby of mine—I am extremely comfortable with HTML/CSS and am actively learning other web languages, like Javascript/jQuery, PHP and Ruby on Rails. I am also highly skilled in <a href=\"monkey-mo\">drawing</a>.
 		</p>
 		<p>
 			Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume in PDF format below or an online version <a href=\"resume\">here</a>. Thank you!
 		</p>";
 
-		break;			
+		break;
 
 case '431':
 		$company="Twitch";
@@ -80,18 +80,18 @@ case '431':
 
 		$copy="
 		<p class=\"add-top\">
-			Hello! I've been hearing a lot about Twitch in the past few years and with my background in design and my passion for gaming, I think I could be a welcome addition to the team! 
+			Hello! I've been hearing a lot about Twitch in the past few years and with my background in design and my passion for gaming, I think I could be a welcome addition to the team!
 		</p>
 		<p>
 			When establishing branding, I always thought the best first step is to have someone who understands and likes the brand. Watching <em>League of Legend</em> and <em>GTA5</em> streams are one thing, but the <em>Twitch Plays Pokemon</em> phenomenon really changed the way I view your service and any opportunity to work for you guys couldn't be passed! After that, establishing a \"language\" that people can come to expect day after day is key.
 		</p>
 		<p>
-			I have over <a href=\"resume#history\">8+ years</a> working in design and marketing. I come from a print-production background, more recently delving into web design/production. At Pok&eacute;mon, I worked as part of a small team of three, supporting the various departments with their needs. In addition to enforcing the brand standards and guidelines, we worked on a variety of projects including toy packaging, video-game launches, brand standard guides for licensees, strategy guide localization, in-store branding, mini-movie websites...just to name a few. 
-		</p> 
-		<p>
-		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. Programming is a bit of a hobby of mine—I am extremely comfortable with HTML/CSS and am actively learning other web languages, like Javascript/jQuery, PHP and Ruby on Rails. I am also highly skilled in <a href=\"monkey-mo\">drawing</a>. 
+			I have over <a href=\"resume#history\">8+ years</a> working in design and marketing. I come from a print-production background, more recently delving into web design/production. At Pok&eacute;mon, I worked as part of a small team of three, supporting the various departments with their needs. In addition to enforcing the brand standards and guidelines, we worked on a variety of projects including toy packaging, video-game launches, brand standard guides for licensees, strategy guide localization, in-store branding, mini-movie websites...just to name a few.
 		</p>
-		
+		<p>
+		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. Programming is a bit of a hobby of mine—I am extremely comfortable with HTML/CSS and am actively learning other web languages, like Javascript/jQuery, PHP and Ruby on Rails. I am also highly skilled in <a href=\"monkey-mo\">drawing</a>.
+		</p>
+
 		<div class='four columns add-bottom alpha'><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>Pok&eacute;mon: Rise of Darkrai</a></div>
 
 		<div class='four columns add-bottom' ><a class='caption' href='Indiginauts'><img class='scale-with-grid' src='img/indiginauts/thumb.jpg'>Indiginauts</a></div>
@@ -103,7 +103,7 @@ case '431':
 		</p>
 		";
 
-		break;	
+		break;
 
 case '360':
 		$company="Guidebook";
@@ -119,11 +119,11 @@ case '360':
 			Hi there! I saw your job posting and y'all seem like fun people! I am a graphic designer and illustrator who likes to code on the side. With over <a href='resume#history'>8+ years</a> of experience in design and production and a passion for gaming(I saw Wiimotes, N64 controllers and CliffyB in the photos on your site), I think I could be a welcome addition to your team!
 		</p>
 		<p>I'm currently at a <a href='suspended-belief-studios'>gaming startup</a> that is winding down. I come from a print-production background, more recently delving into web design/production. While at Pok&eacute;mon, I worked in the creative department as part of a small team of three, supporting the various departments with their needs. In addition to enforcing the brand standards and guidelines, we worked on a variety of projects including toy packaging, video-game launches, brand standard guides for licensees, strategy guide localization, in-store branding, mini-movie websites...just to name a few. Projects usually all bunched up around video-game/TV/movie launches so good time-management was a must.
-		</p> 
-		<p>
-		I am <a href=\"resume#skills\">highly proficent</a> in <a href='color-chameleon'>Photoshop</a> and <a href='100-principles-of-game-design'>Illustrator</a> as I've been using them for a long time. I am extremely comfortable with HTML/CSS. Programming is a bit of a hobby of mine so I am actively learning other web languages, like Ruby and PHP. I am comfortable with using <a href='http://www.github.com/raystation' target='_blank'>git</a>. I am also highly skilled in <a href=\"monkey-mo\">drawing</a>. 
 		</p>
-		
+		<p>
+		I am <a href=\"resume#skills\">highly proficent</a> in <a href='color-chameleon'>Photoshop</a> and <a href='100-principles-of-game-design'>Illustrator</a> as I've been using them for a long time. I am extremely comfortable with HTML/CSS. Programming is a bit of a hobby of mine so I am actively learning other web languages, like Ruby and PHP. I am comfortable with using <a href='http://www.github.com/raystation' target='_blank'>git</a>. I am also highly skilled in <a href=\"monkey-mo\">drawing</a>.
+		</p>
+
 		<div class='four columns add-bottom alpha' ><a class='caption' href='color-chameleon'><img class='scale-with-grid' src='img/color-chameleon/thumb.jpg'>Color Chameleon</a></div>
 
 		<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
@@ -131,11 +131,11 @@ case '360':
 		<div class='four columns add-bottom omega'><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>Pok&eacute;mon: Rise of Darkrai</a></div>
 
 		<p>
-			Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume in PDF format below or an online version <a href=\"resume\">here</a>. If you find that I am not appropriate for this position, I would also like to be considered for the <a href='http://www.jobscore.com/jobs2/guidebook/marketing-designer/d5Xvfa360r449jiGakhP3Q?name=UC+Berkeley+Start-Up+Fair&ref=rss&sid=68'>Marketing Designer</a>. Thank you!			
+			Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume in PDF format below or an online version <a href=\"resume\">here</a>. If you find that I am not appropriate for this position, I would also like to be considered for the <a href='http://www.jobscore.com/jobs2/guidebook/marketing-designer/d5Xvfa360r449jiGakhP3Q?name=UC+Berkeley+Start-Up+Fair&ref=rss&sid=68'>Marketing Designer</a>. Thank you!
 		</p>
 		";
 
-		break;			
+		break;
 
 case '101':
 		$company="Academia.edu";
@@ -158,7 +158,7 @@ case '101':
 		<p>
 		I am <a href=\"resume#skills\">highly proficent</a> in <a href='color-chameleon'>Photoshop</a> and <a href='100-principles-of-game-design'>Illustrator</a> as I've been using them for a long time. I am extremely comfortable with HTML/CSS. Programming is a bit of a hobby of mine so I am actively learning other web languages, like Ruby and PHP. I've only learned a little Javascript, but this could be a good excuse to get amazing at it.
 		</p>
-		
+
 		<div class='four columns add-bottom alpha' ><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>Abriendo Puertas / Opening Doors</a></div>
 
 		<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
@@ -166,11 +166,11 @@ case '101':
 		<div class='four columns add-bottom omega'><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
 		<div class='clear'></div>
 
-		<p>Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href=\"resume\">here</a> or below for a PDF. Thank you!			
+		<p>Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href=\"resume\">here</a> or below for a PDF. Thank you!
 		</p>
 		";
 
-		break;	
+		break;
 
 case '510':
 		$company="Big Fish";
@@ -197,9 +197,9 @@ case '510':
 			&bull; <a href='100-principles-of-game-design'>100 Principles of Game Design</a>
 		</p>
 		<p>
-			
+
 		</p>
-		
+
 		<div class='four columns add-bottom alpha' ><a class='caption' href='indiginauts'><img class='scale-with-grid' src='img/indiginauts/thumb.jpg'>Indiginauts</a></div>
 
 		<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
@@ -207,7 +207,7 @@ case '510':
 		<div class='four columns add-bottom omega'><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
 		<div class='clear'></div>
 
-		<p>Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href=\"resume\">here</a> or below for a PDF. Thank you!			
+		<p>Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href=\"resume\">here</a> or below for a PDF. Thank you!
 		</p>
 		";
 
@@ -249,20 +249,20 @@ case '510':
 
 			<div class='clear'></div>";
 
-		$post="	
+		$post="
 			<h6>Aztec Gold Art Test - June 23, 2014</h6>
-			
+
 			<div class='one-third column alpha'><a href='img/big-fish/1_cropped.jpg'><img src='img/big-fish/1.jpg' class='scale-with-grid2 add-bottom'></a></div>
 			<div class='one-third column' ><a href='img/big-fish/2_cropped.jpg'><img src='img/big-fish/2.jpg' class='scale-with-grid2 add-bottom'></a></div>
 			<div class='one-third column omega'><a href='img/big-fish/3_cropped.jpg'><img src='img/big-fish/3.jpg' class='scale-with-grid2 add-bottom'></a></div>
 			<a href='img/big-fish/big-fish-01_cropped.jpg'><img src='img/big-fish/big-fish-01.png' class='scale-with-grid2 add-bottom'></a>
-			
+
 			<hr>
-			
+
 			<h6>Additional Works - July 9, 2014</h6>
-			
+
 			<a href='img/big-fish/Plat_insert5.jpg'><img src='img/big-fish/Plat_insert5.jpg' class='scale-with-grid2 add-bottom'></a>
-			
+
 			<div class='one-third column alpha'><a href='img/big-fish/Poster_Rotom_1.jpg'><img src='img/big-fish/Poster_Rotom_1.jpg' class='scale-with-grid2 add-bottom'></a></div>
 			<div class='one-third column'><a href='img/big-fish/Poster_Rotom_2.jpg'><img src='img/big-fish/Poster_Rotom_2.jpg' class='scale-with-grid2 add-bottom'></a></div>
 			<div class='one-third column omega'><a href='img/big-fish/Poster_Shaymin.jpg'><img src='img/big-fish/Poster_Shaymin.jpg' class='scale-with-grid2 add-bottom'></a></div>
@@ -283,7 +283,7 @@ case '510':
 
 		// $plugin=array("js/jQueryRotate.js",'$(document).ready(function() {$(".flip").click(function() {$(this).rotate(-90); }); }); ');
 
-		break;					
+		break;
 
 case '212':
 		$company="Crunchyroll";
@@ -303,9 +303,9 @@ case '212':
 		</p>
 		<p>
 			I have over <a href=\"resume#history\">8+ years</a> working in design and marketing. At <em>The Pok&eacute;mon Company</em>, I worked in the creative department as part of a small team of three, supporting the internal departments with their various needs. In addition to enforcing the brand standards and guidelines, we worked on projects like toy packaging, video-game launches, strategy guide localization, <a href='darkrai'>mini-movie websites</a>...just to name a few. When projects were too big to be handled in-house, we managed outside vendors and got things produced in a timely manner.
-		</p> 
+		</p>
 		<p>
-		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. I became a master in Illustrator since all the Pok&eacute;mon artwork is in that format. 
+		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. I became a master in Illustrator since all the Pok&eacute;mon artwork is in that format.
 		</p>
 
 		<div class='four columns add-bottom alpha' ><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>Rise of Darkrai</a></div>
@@ -313,7 +313,7 @@ case '212':
 		<div class='four columns add-bottom '><a class='caption' href='arceus'><img class='scale-with-grid' src='img/arceus/thumb.jpg'>Arceus</a></div>
 
 		<div class='four columns add-bottom omega'><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
-		<div class='clear'></div>		
+		<div class='clear'></div>
 
 		<p>
 			Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href=\"resume\">here</a> or a PDF version below. Thank you!
@@ -354,9 +354,9 @@ case '212':
 						<li>Jiraiya</li>
 					</ul>
 			</div>
-			";	
+			";
 
-		break;		
+		break;
 
 	case '415':
 	$company="Toca Boca";
@@ -369,11 +369,11 @@ case '212':
 
 	$copy="
 	<p class=\"add-top\">
-		Hallå! I saw your posting and after looking you guys up, decided I LOVE what you guys do! Y'all seem so fun! I am a designer and an illustrator with some experience in programming. I am looking for a position where I can contribute to a team and do amazing work and also have fun doing it. I am a firm believer in the play experience—people learn by doing. 
+		Hallå! I saw your posting and after looking you guys up, decided I LOVE what you guys do! Y'all seem so fun! I am a designer and an illustrator with some experience in programming. I am looking for a position where I can contribute to a team and do amazing work and also have fun doing it. I am a firm believer in the play experience—people learn by doing.
 	</p>
 	<p>
-		I am currently winding down with my gaming startup. We worked on a few big projects, where I contributed original artwork, UI design, logo design and game design. I also used to work at Pok&eacute;mon where we serviced all the internal departments with their creative needs. 
-	</p> 
+		I am currently winding down with my gaming startup. We worked on a few big projects, where I contributed original artwork, UI design, logo design and game design. I also used to work at Pok&eacute;mon where we serviced all the internal departments with their creative needs.
+	</p>
 	<p>
 	I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. I've been using Photoshop since high school and all the Pok&eacute;mon artwork was in Illustrator format.
 	</p>
@@ -388,7 +388,7 @@ case '212':
 	<p>
 		Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
 	</p><hr><p>
-	
+
 	Update June 13, 2014: <br>
 	asked to do a homework assignment. <br />
 	<a href='http://rayuen.com/projects/toca-boca-homework.pdf'>link to homework</a>
@@ -411,7 +411,7 @@ case '212':
 	</p>
 	<p>
 		I think one of the reason I really like the YMCA is that it's a family environment. I usually go to the Y to play basketball with the teens, but if there are just children around, I will play <a href='http://www.wikihow.com/Play-Horse-(the-Basketball-Game)'>H-O-R-S-E</a> with them (if they aren't too shy). I love kids! I've considered volunteering my time, but thought I should get some regular income first.
-	</p> 
+	</p>
 	<p>
 		I have publishing, design and production experience from over <a href=\"resume#history\">8+ years</a> working in in-house creative departments and supporting marketing departments. I used to work at <em>Equinox Fitness Clubs</em> where we maintained over 13 clubs in the New York metro area. We produced collateral (a lot of it by hand) like business cards, membership cards, posters for special classes, special promotion tickets, quarterly reports...
 	</p>
@@ -421,13 +421,13 @@ case '212':
 	<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
 
 	<div class='four columns add-bottom omega'><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>The Rise of Darkrai</a></div>
-	<div class='clear'></div>	
+	<div class='clear'></div>
 
 	<p>
 		Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
 	</p>";
 
-	break;					
+	break;
 
 	case '404':
 	$company="Code for America";
@@ -440,25 +440,25 @@ case '212':
 
 	$copy="
 	<p class=\"add-top\">
-		Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming. The work you do sounds interesting—I've been learning programming and I can definitly understand the motivations for your non-profit. I am looking for a position where I can apply my unique skills and also be at a place where I can affect positive change. 
+		Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming. The work you do sounds interesting—I've been learning programming and I can definitly understand the motivations for your non-profit. I am looking for a position where I can apply my unique skills and also be at a place where I can affect positive change.
 	</p>
 	<p>
 		I've selected three pieces for your approval below.
 	</p>
 
 	<div class='four columns add-bottom alpha'><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>ap-od.org</a></div>
-	
+
 	<div class='four columns add-bottom' ><a class='caption' href='chronicles-of-old-new-york'><img class='scale-with-grid' src='img/chronicles-of-old-new-york/thumb.jpg'>Chronicles of Old NY</a></div>
 
 	<div class='four columns add-bottom omega'><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
 
-	<div class='clear'></div>	
+	<div class='clear'></div>
 
 	<p>
 		Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
 	</p>";
 
-	break;		
+	break;
 
 	case '102':
 	$company="Education Superhighway";
@@ -471,25 +471,25 @@ case '212':
 
 	$copy="
 	<p class=\"add-top\">
-		Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming. The work you do sounds interesting—I am looking for a position where I can apply my unique skills and also be at a place where I can affect positive change. 
+		Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming. The work you do sounds interesting—I am looking for a position where I can apply my unique skills and also be at a place where I can affect positive change.
 	</p>
 	<p>
-	I have over <a href=\"resume#history\">8+ years</a> working in design and marketing (and some <a href='chronicles-of-old-new-york'>publishing</a>). At <em>The Pok&eacute;mon Company</em>, I worked in the creative department as part of a small team of three, supporting the internal departments with their various needs. In addition to enforcing the brand standards and guidelines, we worked on projects like toy packaging, video-game launches, strategy guide localization, <a href='darkrai'>mini-movie websites</a>...just to name a few. When projects were too big to be handled in-house, we managed outside vendors and got things produced in a timely manner. I've selected three pieces for your approval below which I think would be relevant to the conversation. 
+	I have over <a href=\"resume#history\">8+ years</a> working in design and marketing (and some <a href='chronicles-of-old-new-york'>publishing</a>). At <em>The Pok&eacute;mon Company</em>, I worked in the creative department as part of a small team of three, supporting the internal departments with their various needs. In addition to enforcing the brand standards and guidelines, we worked on projects like toy packaging, video-game launches, strategy guide localization, <a href='darkrai'>mini-movie websites</a>...just to name a few. When projects were too big to be handled in-house, we managed outside vendors and got things produced in a timely manner. I've selected three pieces for your approval below which I think would be relevant to the conversation.
 	</p>
 
 	<div class='four columns add-bottom alpha'><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>ap-od.org</a></div>
-	
+
 	<div class='four columns add-bottom' ><a class='caption' href='chronicles-of-old-new-york'><img class='scale-with-grid' src='img/chronicles-of-old-new-york/thumb.jpg'>Chronicles of Old NY</a></div>
 
 	<div class='four columns add-bottom omega'><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
 
-	<div class='clear'></div>	
+	<div class='clear'></div>
 
 	<p>
 		Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
 	</p>";
 
-	break;	
+	break;
 
 	case '911':
 	$company="San Francisco Public Press";
@@ -509,18 +509,18 @@ case '212':
 	</p>
 
 	<div class='four columns add-bottom alpha'><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>ap-od.org</a></div>
-	
+
 	<div class='four columns add-bottom' ><a class='caption' href='chronicles-of-old-new-york'><img class='scale-with-grid' src='img/chronicles-of-old-new-york/thumb.jpg'>Chronicles of Old NY</a></div>
 
 	<div class='four columns add-bottom omega'><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
 
-	<div class='clear'></div>	
+	<div class='clear'></div>
 
 	<p>
 		Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
 	</p>";
 
-	break;	
+	break;
 
 	case '314':
 	$company="<a href='http://www.funplus.com' target='_blank'>FunPlus</a>";
@@ -534,16 +534,16 @@ case '212':
 		Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming. I love what you guys do! I am looking for a position where I can contribute my <a href=\"resume#skills\">unique skills</a> in a productive and fun environment.
 	</p>
 	<p>
-		I am winding down from my <a href='suspended-belief-studios'>gaming startup</a> with my friend. I am as fascianted by game design as I am with the visuals. While I don't have experience working on a live free-to-play game, hopefully my \"gaming-resume\" will more than make up for that. I play a ton of games (casual, midcore, hardcore) and have evolved with the iOS market into it's current free-to-play phase and have been playing console games since the NES/Sega Master System. I love games! 
+		I am winding down from my <a href='suspended-belief-studios'>gaming startup</a> with my friend. I am as fascianted by game design as I am with the visuals. While I don't have experience working on a live free-to-play game, hopefully my \"gaming-resume\" will more than make up for that. I play a ton of games (casual, midcore, hardcore) and have evolved with the iOS market into it's current free-to-play phase and have been playing console games since the NES/Sega Master System. I love games!
 	</p>
 
 	<div class='four columns add-bottom alpha'><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
-	
+
 	<div class='four columns add-bottom' ><a class='caption' href='indiginauts'><img class='scale-with-grid' src='img/indiginauts/thumb.jpg'>Indiginauts</a></div>
 
 	<div class='four columns add-bottom omega'><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
 
-	<div class='clear'></div>	
+	<div class='clear'></div>
 
 	<p>
 		You can find my work <a href='index'>here</a>. Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href='resume'>here</a> or a PDF version below. Thank you!
@@ -587,7 +587,7 @@ case '212':
 	</div>
 	";
 
-	break;	
+	break;
 
 	case '002':
 	$company="Chronicle Books";
@@ -598,16 +598,16 @@ case '212':
 
 	$copy="
 	<p class=\"add-top\">
-		Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming. I am looking for a position where I can contribute my varied skills and have fun. I have over 8+ years of experience in design from both the creative and production side. It's probably a bit more senior than you are expecting, but hey I thought I would give it a shot—I don't see as many publishing positions out here (compared to NY). 
+		Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming. I am looking for a position where I can contribute my varied skills and have fun. I have over 8+ years of experience in design from both the creative and production side. It's probably a bit more senior than you are expecting, but hey I thought I would give it a shot—I don't see as many publishing positions out here (compared to NY).
 	</p>
 
 	<div class='four columns add-bottom alpha'><a class='caption' href='chronicles-of-old-new-york'><img class='scale-with-grid' src='img/chronicles-of-old-new-york/thumb.jpg'>Chronicles of Old NY</a></div>
-	
+
 	<div class='four columns add-bottom' ><a class='caption' href='art+paris'><img class='scale-with-grid' src='img/art-and-paris/thumb.jpg'>Art + Paris</a></div>
 
 	<div class='four columns add-bottom omega'><a class='caption' href='monkey-mo'><img class='scale-with-grid' src='img/monkey-mo/thumb.jpg'>Monkey Mo, Monkey Go!</a></div>
 
-	<div class='clear'></div>	
+	<div class='clear'></div>
 	<p>
 		Check out my resume here <a href='resume'>rayuen.com/resume</a> or a PDF version below. <br>
 		Check out my portfolio here <a href='work'>rayuen.com/work</a> <br>
@@ -617,7 +617,7 @@ case '212':
 		Please let me know if I can provide any other sort of information or if we can set up a meeting. Thank you!
 	</p>";
 
-	break;		
+	break;
 
 	case '480px':
 	$company="Moboom";
@@ -629,19 +629,19 @@ case '212':
 
 	$copy="
 	<p class=\"add-top\">
-		Hello! I saw your posting and wanted to get in touch. You guys look like you do some interesting stuff. I am a  designer and illustrator with some programming experience looking for a place to apply my varied skills in a fun environment. I have over 8+ years of design experience working from both the creative/marketing and production side. 
+		Hello! I saw your posting and wanted to get in touch. You guys look like you do some interesting stuff. I am a  designer and illustrator with some programming experience looking for a place to apply my varied skills in a fun environment. I have over 8+ years of design experience working from both the creative/marketing and production side.
 	</p>
 	<p>
-		As mobile devices become the norm, responsive design is becoming more and more important. I want to be on the fore-front of this movement! 
+		As mobile devices become the norm, responsive design is becoming more and more important. I want to be on the fore-front of this movement!
 	</p>
 
 	<div class='four columns add-bottom alpha'><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>The Rise of Darkrai</a></div>
-	
+
 	<div class='four columns add-bottom' ><a class='caption' href='color-chameleon'><img class='scale-with-grid' src='img/color-chameleon/thumb.jpg'>Color Chameleon</a></div>
 
 	<div class='four columns add-bottom omega'><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>Abriendo Puertas</a></div>
 
-	<div class='clear'></div>	
+	<div class='clear'></div>
 	<p>
 		My resume here <a href='resume'>rayuen.com/resume</a> or a PDF version below. <br>
 		My portfolio here <a href='work'>rayuen.com</a> <br>
@@ -652,7 +652,7 @@ case '212':
 	</p>";
 
 
-	break;	
+	break;
 
 
 	case 'O2B':
@@ -665,19 +665,19 @@ case '212':
 
 	$copy="
 	<p class=\"add-top\">
-		Hello! I saw your posting and wanted to get in touch. <em>airbnb</em> seems like a rad place to work. I am a  designer and illustrator with some programming experience looking for a place to apply my varied skills in a fun environment. 
+		Hello! I saw your posting and wanted to get in touch. <em>airbnb</em> seems like a rad place to work. I am a  designer and illustrator with some programming experience looking for a place to apply my varied skills in a fun environment.
 	</p>
 	<p>
 		I have over 8+ years of design experience working from both the creative/marketing and production side. I used to work in-house at Pok&eacute;mon where we maintained the brand as well as serviced the other internal departments. I've been learning some programming to further my interacive skills.
 	</p>
 
 	<div class='four columns add-bottom alpha'><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>The Rise of Darkrai</a></div>
-	
+
 	<div class='four columns add-bottom' ><a class='caption' href='color-chameleon'><img class='scale-with-grid' src='img/color-chameleon/thumb.jpg'>Color Chameleon</a></div>
 
 	<div class='four columns add-bottom omega'><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>Abriendo Puertas</a></div>
 
-	<div class='clear'></div>	
+	<div class='clear'></div>
 	<p>
 		My resume here <a href='resume'>rayuen.com/resume</a> or a PDF version below. <br>
 		My portfolio here <a href='work'>rayuen.com</a> <br>
@@ -688,7 +688,7 @@ case '212':
 	</p>";
 
 
-	break;		
+	break;
 
 	case '789':
 	$company="Zipongo";
@@ -700,19 +700,19 @@ case '212':
 
 	$copy="
 	<p class=\"add-top\">
-		Hello! You guys seem like you do some interesting work and I wanted to get in touch. I am a  designer and illustrator with programming experience looking for a place to apply my varied skills in a fun environment. 
+		Hello! You guys seem like you do some interesting work and I wanted to get in touch. I am a  designer and illustrator with programming experience looking for a place to apply my varied skills in a fun environment.
 	</p>
 	<p>
 		I have over 8+ years of design experience working from both the creative/marketing and production side. I used to work in-house at Pok&eacute;mon where we maintained the brand as well as serviced the other internal departments. I've been learning some programming to further my interacive skills.
 	</p>
-	
+
 	<div class='four columns add-bottom alpha' ><a class='caption' href='color-chameleon'><img class='scale-with-grid' src='img/color-chameleon/thumb.jpg'>Color Chameleon</a></div>
 
 	<div class='four columns add-bottom '><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
 
 	<div class='four columns add-bottom omega'><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>Abriendo Puertas</a></div>
 
-	<div class='clear'></div>	
+	<div class='clear'></div>
 	<p>
 		My resume here <a href='resume'>rayuen.com/resume</a> or a PDF version below. <br>
 		My portfolio here <a href='work'>rayuen.com</a> <br>
@@ -723,7 +723,7 @@ case '212':
 	</p>";
 
 
-	break;	
+	break;
 
 
 	case 'C02b':
@@ -736,19 +736,19 @@ case '212':
 
 	$copy="
 	<p class='add-top'>
-		Hello! I saw your posting and wanted to pass along my information. I am a designer and illustrator with experience in <a href='http://www.github.com/raystation' target='_blank'>programming</a>. I am looking for a position where I can grow as a designer and have fun doing it! 
+		Hello! I saw your posting and wanted to pass along my information. I am a designer and illustrator with experience in <a href='http://www.github.com/raystation' target='_blank'>programming</a>. I am looking for a position where I can grow as a designer and have fun doing it!
 	</p>
 	<p>
-		I have over <a href='resume#history'>8+ years</a> of design experience working from both the creative/marketing and production side. I used to work at Pok&eacute;mon where we maintained the brand as well as serviced the other internal departments. Most of my experience is in print and production, but I have since been learning programming to further my interacive skills. 
+		I have over <a href='resume#history'>8+ years</a> of design experience working from both the creative/marketing and production side. I used to work at Pok&eacute;mon where we maintained the brand as well as serviced the other internal departments. Most of my experience is in print and production, but I have since been learning programming to further my interacive skills.
 	</p>
-	
+
 	<div class='four columns add-bottom alpha' ><hr><a class='caption' href='color-chameleon'><img class='scale-with-grid' src='img/color-chameleon/thumb.jpg'>Color Chameleon</a></div>
 
 	<div class='four columns add-bottom '><hr><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
 
 	<div class='four columns add-bottom omega'><hr><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>Abriendo Puertas</a></div>
 
-	<div class='clear'></div>	
+	<div class='clear'></div>
 	<p>
 		My resume here <a href='resume'>rayuen.com/resume</a> or a PDF version below. <br>
 		My portfolio here <a href='work'>rayuen.com</a> <br>
@@ -759,7 +759,7 @@ case '212':
 	</p>";
 
 
-	break;	
+	break;
 
 
 	case '9112':
@@ -772,19 +772,19 @@ case '212':
 
 	$copy="
 		<p class='add-top'>
-			Hello! I saw your posting and wanted to pass along my information. I am a designer and illustrator with experience in programming. I am looking for a position where I can grow as a designer and work somewhere where I can affect positive change. 
+			Hello! I saw your posting and wanted to pass along my information. I am a designer and illustrator with experience in programming. I am looking for a position where I can grow as a designer and work somewhere where I can affect positive change.
 		</p>
 		<p>
-			I have over <a href='resume#history'>8+ years</a> of design experience working from both the creative/marketing and production sides. I used to work at Pok&eacute;mon where we maintained the brand as well as serviced the other internal departments. Projects varied greatly, from trade booth planning, strategy guide creation, e-learning intitiatives, and game launch parties just to name a few. 
+			I have over <a href='resume#history'>8+ years</a> of design experience working from both the creative/marketing and production sides. I used to work at Pok&eacute;mon where we maintained the brand as well as serviced the other internal departments. Projects varied greatly, from trade booth planning, strategy guide creation, e-learning intitiatives, and game launch parties just to name a few.
 		</p>
-		
+
 		<div class='four columns add-bottom alpha' ><hr><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>The Rise of Darkrai</a></div>
 
 		<div class='four columns add-bottom '><hr><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
 
 		<div class='four columns add-bottom omega'><hr><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>Abriendo Puertas</a></div>
 
-		<div class='clear'></div>	
+		<div class='clear'></div>
 		<p>
 			My resume here <a href='resume'>rayuen.com/resume</a> or a PDF version below. <br>
 			My portfolio here <a href='work'>rayuen.com</a> <br>
@@ -796,7 +796,7 @@ case '212':
 	";
 
 
-	break;	
+	break;
 
 	case '582':
 	$company="Triple Aught Design";
@@ -808,10 +808,10 @@ case '212':
 
 	$copy="
 		<p class='add-top'>
-			Hello! I saw your posting and wanted to get in touch. I am a designer and illustrator with experience in programming. I am looking for a position in a smallish company where I can create some amazing work and have fun. 
+			Hello! I saw your posting and wanted to get in touch. I am a designer and illustrator with experience in programming. I am looking for a position in a smallish company where I can create some amazing work and have fun.
 		</p>
 		<p>
-			I currently work for a gaming startup that is winding down. I had to do a little bit of everything, from artwork to design to web development. I also used to work at Pok&eacute;mon where everything creative streamed through our department.   
+			I currently work for a gaming startup that is winding down. I had to do a little bit of everything, from artwork to design to web development. I also used to work at Pok&eacute;mon where everything creative streamed through our department.
 		</p>
 		<p>
 			Check my resume here <a href='resume'>rayuen.com/resume</a> or a PDF version below. <br>
@@ -824,7 +824,7 @@ case '212':
 	";
 
 
-	break;		
+	break;
 
 	case '809':
 	$company="Bonhams";
@@ -852,7 +852,7 @@ case '212':
 	";
 
 
-	break;	
+	break;
 
 	case '350':
 	$company="Playworks";
@@ -866,7 +866,7 @@ case '212':
 			Hello! I saw your posting and wanted to send along my information. I strongly believe in the power of play and this opportunity sounds great! I am a designer and illustrator with experience in programming. I am looking for a position where I can grow as a designer, learn new things and have fun!
 		</p>
 		<p>
-			I have over 8 years of design experience from both the marketing/creative and the production side. The most relevant experience is from Pok&eacute;mon as an in-house designer. I was part of a small team of three where all creative streamed through us. We also enforced brand standards with the internal departments as well as with external vendors. 
+			I have over 8 years of design experience from both the marketing/creative and the production side. The most relevant experience is from Pok&eacute;mon as an in-house designer. I was part of a small team of three where all creative streamed through us. We also enforced brand standards with the internal departments as well as with external vendors.
 		</p>
 		<p>
 			Resume: <a href='resume'>rayuen.com/resume</a> (PDF version below) <br>
@@ -878,7 +878,7 @@ case '212':
 	";
 
 
-	break;		
+	break;
 
 	case '099':
 	$company="Astro gaming";
@@ -893,7 +893,7 @@ case '212':
 			Hello! I just saw your job posting and wanted to see if this position was still available. With my work experience and my love of video games, I am definitly interested in finding out more about this opportunity.
 		</p>
 		<p>
-			I have over 8 years of design experience from both the marketing/creative and the production side. The most relevant experience is from Pok&eacute;mon as an in-house designer. I was part of a small team of three where all creative streamed through us. We also enforced brand standards with the internal departments as well as with external vendors. I am a master of the tools of the trade and have some programming experience as well. 
+			I have over 8 years of design experience from both the marketing/creative and the production side. The most relevant experience is from Pok&eacute;mon as an in-house designer. I was part of a small team of three where all creative streamed through us. We also enforced brand standards with the internal departments as well as with external vendors. I am a master of the tools of the trade and have some programming experience as well.
 		</p>
 		<p>
 			Resume: <a href='resume'>rayuen.com/resume</a> (PDF version below) <br>
@@ -905,7 +905,7 @@ case '212':
 	";
 
 
-	break;		
+	break;
 
 	case '191':
 	$company="FILTER";
@@ -919,7 +919,7 @@ case '212':
 			Hello! I just saw your job posting and wanted to see if this position was still available. With my work experience and my love of video games, I am definitly interested in finding out more about this opportunity.
 		</p>
 		<p>
-			I have over 8 years of design experience from both the marketing/creative and the production side. The most relevant experience is from Pok&eacute;mon as an in-house designer. I was part of a small team of three where all creative streamed through us. We also enforced brand standards with the internal departments as well as with external vendors. I am a master of the tools of the trade and have some programming experience as well. 
+			I have over 8 years of design experience from both the marketing/creative and the production side. The most relevant experience is from Pok&eacute;mon as an in-house designer. I was part of a small team of three where all creative streamed through us. We also enforced brand standards with the internal departments as well as with external vendors. I am a master of the tools of the trade and have some programming experience as well.
 		</p>
 		<p>
 			Resume: <a href='resume'>rayuen.com/resume</a> (PDF version below) <br>
@@ -931,7 +931,7 @@ case '212':
 	";
 
 
-	break;	
+	break;
 
 	case 'viz':
 	$company="VIZ Media";
@@ -947,7 +947,7 @@ case '212':
 			Hello! I just saw your job posting and wanted to get in touch because this sounds like an amazing job for a company I am excited about! With my work experience and my interest in <span class='underline tooltip' title=\"LUFFY: I'M GONNA BE THE KING OF THE PIRATES!\">manga</span> and anime, I am definitely interested in finding out more about this opportunity!
 		</p>
 		<p>
-			I have over eight years of design experience from both the marketing/creative and the production side. My most relevant experience comes from Pok&eacute;mon as an in-house designer. I was part of a small team of three which all creative streamed through. We also enforced brand standards with the internal departments as well as with external vendors. I am a master of the <span class='underline tooltip' title='Photoshop, Illustrator, Indesign'>tools</span> of the trade and have relevant <span class='underline tooltip' title='HTML, CSS/Sass, PHP, Javascript'>programming</span> experience as well. 
+			I have over eight years of design experience from both the marketing/creative and the production side. My most relevant experience comes from Pok&eacute;mon as an in-house designer. I was part of a small team of three which all creative streamed through. We also enforced brand standards with the internal departments as well as with external vendors. I am a master of the <span class='underline tooltip' title='Photoshop, Illustrator, Indesign'>tools</span> of the trade and have relevant <span class='underline tooltip' title='HTML, CSS/Sass, PHP, Javascript'>programming</span> experience as well.
 		</p>
 		<p>
 			Resume: <a href='resume' class='tooltip' title='PDF version below'>rayuen.com/resume</a><br>
@@ -1022,12 +1022,12 @@ case '212':
 			<li>Neji</li>
 			<li>Sasori</li>
 			<li>Gaara</li>
-		</div>	
+		</div>
 	";
 	$other2="<img src='http://pekandarattyre.files.wordpress.com/2012/06/luffy-1.gif' class='tooltip' alt='GOMU GOMU NOOOOO!' title='GOMU GOMU NO...!' >";
 
 
-break;	
+break;
 
 case 'church':
 	$jobTitle="PT associate / independent&nbsp;contractor";
@@ -1068,16 +1068,16 @@ case 'church':
 		Of the matters relating to Wordpress, I have experience setting up and helping friends get the CMS running on their <a href='sarah-walko-wordpress'>sites</a>. I have a working knowledge of PHP and Wordpress components which I am actively learning more of in hopes of building more dynamic feature-rich sites(programming has quickly become a hobby of mine)! Since learning of responsive design, I am dumb-founded how major brands still have sites that still don't responsive to tablets and phones. Needless to say, I have experience with responsive frameworks and can build one from the <a href='abriend-puertas'>ground up</a> if need be. Feel free to take a look at the code of my sites on <a href='http://www.github.com/raystation' target='_blank'>Github</a>.
 		</p>
 		<p>
-			If you would like to set up a chat, please feel free to get back to me or you can try to find me at the <a href='http://cartoonart.org' target='_blank'>Cartoon Art 
-			um</a> or a <a href='http://sf.funcheap.com/monthly-drink-draw-knockout/' target='_blank'>Drink and&nbsp;Draw</a>! 
+			If you would like to set up a chat, please feel free to get back to me or you can try to find me at the <a href='http://cartoonart.org' target='_blank'>Cartoon Art
+			um</a> or a <a href='http://sf.funcheap.com/monthly-drink-draw-knockout/' target='_blank'>Drink and&nbsp;Draw</a>!
 		<p>
 			Resume: <a href='resume' class='tooltip' title='PDF version below'>rayuen.com/resume</a><br>
 			Portfolio: <a href='work'>rayuen.com</a>
 		</p>
-	
+
 	";
 
-	break;	
+	break;
 
 	case 'ad101':
 		$jobTitle="Mid-level Designer";
@@ -1117,20 +1117,20 @@ case 'church':
 
 		$copy="
 			<p class='add-top'>
-				Hi! I saw your posting and it sounded interesting! I am a designer/illustrator with programming experience. I am looking for a place where I can continue to hone my UI/UX chops while also drawing from my varied work experience. 
+				Hi! I saw your posting and it sounded interesting! I am a designer/illustrator with programming experience. I am looking for a place where I can continue to hone my UI/UX chops while also drawing from my varied work experience.
 			</p><p>
 				My <a href='resume'>resume</a> will reveal my extensive production experience as well as more recent experiences with illustration, digital and programming. I have first-hand knowledge of building responsive websites from the ground up using HTML, CSS, JQuery and PHP as well as familiarity with the <span class='underline tooltip' title='Wordpress, Bootstrap, Foundation, Skeleton'>popular frameworks</span>.
 			</p><p>
-				If you would like to set up a chat, please feel free to get back to me or you can try to find me at the <a href='http://cartoonart.org' target='_blank'>Cartoon Art 
-				Museum</a> or a <a href='http://sf.funcheap.com/monthly-drink-draw-knockout/' target='_blank'>Drink and&nbsp;Draw</a>! 
+				If you would like to set up a chat, please feel free to get back to me or you can try to find me at the <a href='http://cartoonart.org' target='_blank'>Cartoon Art
+				Museum</a> or a <a href='http://sf.funcheap.com/monthly-drink-draw-knockout/' target='_blank'>Drink and&nbsp;Draw</a>!
 			<p>
 				Resume: <a href='resume' class='tooltip' title='PDF version below'>rayuen.com/resume</a><br>
 				Portfolio: <a href='work'>rayuen.com</a>
 			</p>
-		
+
 		";
 
-		break;	
+		break;
 
 		case 'QTpi':
 		$jobTitle="Graphic Designer";
@@ -1138,9 +1138,9 @@ case 'church':
 		$email="jobs@teacollection.com";
 		$date="July 2, 2014";
 		$logo="http://s.tea-global.net/mas_assets/theme/tea_collection/images/logo-new.png";
-		
+
 		$originaljobposting="http://www.coroflot.com/jobs/56674/Graphic-Designer";
-		
+
 		$job_details="
 		<h6>Position Title: Graphic Designer </h6>
 		<p>Reports to: Design Director </p>
@@ -1160,12 +1160,12 @@ case 'church':
 		<li>Update social media platforms such as Facebook, Twitter, Pinterest, and the Tea blog. </li>
 		<li>Update seasonal product packaging (i.e., hangtags, size stickers). </li>
 		<li>Design in-Store collateral. </li>
-		<li>Work with internal departments (Merchandising and Sales) to provide posters and sales collateral in time for seasonal trade shows/</li>events. 
+		<li>Work with internal departments (Merchandising and Sales) to provide posters and sales collateral in time for seasonal trade shows/</li>events.
 		<li>Assist team during studio photo shoots (i.e., prepping products, renting equipment, propping etc.). </li>
 		<li>Assist Graphic Design Manager with catalog production. </li>
 		<li>Fulfill online image requests. </li>
 		<hr>
-		<h6>Qualifications:</h6> 
+		<h6>Qualifications:</h6>
 		<li>5+ years’ work experience in a graphic design position, product/fashion based company a plus </li>
 		<li>Great sense of design, fashion and meticulous attention to detail. </li>
 		<li>Proficiency with HTML, CSS, Adobe Illustrator, Photoshop, Acrobat, and Microsoft Office </li>
@@ -1184,8 +1184,8 @@ case 'church':
 		<p class='add-top'>
 			Hi! I saw your posting and wanted to pass along my information. I'm a designer/illustrator with some web design skills. I am looking for a fun cool place where I can continue to hone my UI/UX and web design skills while also drawing from my wide range of skills.
 		</p><p>
-			My <a href='resume'>resume</a> will reveal my extensive production experience as well as more recent experiences with illustration, digital and programming. I have over 8+ years of experience working in branding and production supporting marketing, licensing, and publishing initiatives. 
-		</p>		
+			My <a href='resume'>resume</a> will reveal my extensive production experience as well as more recent experiences with illustration, digital and programming. I have over 8+ years of experience working in branding and production supporting marketing, licensing, and publishing initiatives.
+		</p>
 		";
 
 		$project1=array("museyon-guides","Museyon Guides", "Design and layout of 300+ page travel books, not unlike catalogues!");
@@ -1194,15 +1194,15 @@ case 'church':
 
 		$sample_works = "
 			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
-			
+
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project1[0]."'><img class='scale-with-grid' src='img/".$project1[0]."/thumb.svg'>".$project1[1].".</a> ".$project1[2]."</div>
-			
+
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project2[0]."'><img class='scale-with-grid' src='img/".$project2[0]."/thumb.jpg'>".$project2[1].".</a> ".$project2[2]."</div>
 
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.svg'>".$project3[1].".</a> ".$project3[2]."</div>
 
-			<div class='clear'></div>	
-			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a> and my <a href='resume'>resume</a>. </p>		
+			<div class='clear'></div>
+			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a> and my <a href='resume'>resume</a>. </p>
 			";
 
 		break;
@@ -1245,30 +1245,30 @@ case 'ad101':
 
 		$copy="
 			<p class='add-top'>
-				Hi! I saw your posting and it sounded interesting! I am a designer/illustrator with programming experience. I am looking for a place where I can continue to hone my UI/UX chops while also drawing from my varied work experience. 
+				Hi! I saw your posting and it sounded interesting! I am a designer/illustrator with programming experience. I am looking for a place where I can continue to hone my UI/UX chops while also drawing from my varied work experience.
 			</p><p>
 				My <a href='resume'>resume</a> will reveal my extensive production experience as well as more recent experiences with illustration, digital and programming. I have first-hand knowledge of building responsive websites from the ground up using HTML, CSS, JQuery and PHP as well as familiarity with the <span class='underline tooltip' title='Wordpress, Bootstrap, Foundation, Skeleton'>popular frameworks</span>.
 			</p><p>
-				If you would like to set up a chat, please feel free to get back to me or you can try to find me at the <a href='http://cartoonart.org' target='_blank'>Cartoon Art 
-				Museum</a> or a <a href='http://sf.funcheap.com/monthly-drink-draw-knockout/' target='_blank'>Drink and&nbsp;Draw</a>! 
+				If you would like to set up a chat, please feel free to get back to me or you can try to find me at the <a href='http://cartoonart.org' target='_blank'>Cartoon Art
+				Museum</a> or a <a href='http://sf.funcheap.com/monthly-drink-draw-knockout/' target='_blank'>Drink and&nbsp;Draw</a>!
 			<p>
 				Resume: <a href='resume' class='tooltip' title='PDF version below'>rayuen.com/resume</a><br>
 				Portfolio: <a href='work'>rayuen.com</a>
 			</p>
-		
+
 		";
 
 
-		break;	
+		break;
 
 		case 'cas-1':
 		$jobTitle="Graphic Designer";
 		$company="California Academy of Sciences";
 		$date="July 3, 2014";
 		$logo="http://www.coroflot.com/user_files/job_employer_logos/442008_aI8WzpdQM6gSU5XlFAjCVuJA_.jpg";
-		
+
 		$originaljobposting="http://www.coroflot.com/jobs/56706/Graphic-Designer";
-		
+
 		$job_details="
 		<h6>POSITION SUMMARY: </h6>
 
@@ -1343,10 +1343,10 @@ case 'ad101':
 
 		$copy="
 		<p class='add-top'>
-			Hi! I saw your posting and wanted to pass along my information. I'm a designer/illustrator with extensive in-house experience. I am looking for a design position in a fun place and nothing sounds more fun to me than a learning institution with an aquarium and a&nbsp;rainforest!  
+			Hi! I saw your posting and wanted to pass along my information. I'm a designer/illustrator with extensive in-house experience. I am looking for a design position in a fun place and nothing sounds more fun to me than a learning institution with an aquarium and a&nbsp;rainforest!
 		</p><p>
-			My <a href='resume'>resume</a> will reveal my extensive production experience as well as more recent experiences with illustration, digital and programming. I have over 8+ years of experience working in branding and production supporting marketing, licensing, and publishing initiatives. 
-		</p>		
+			My <a href='resume'>resume</a> will reveal my extensive production experience as well as more recent experiences with illustration, digital and programming. I have over 8+ years of experience working in branding and production supporting marketing, licensing, and publishing initiatives.
+		</p>
 		";
 
 		$project1=array("pokemon","The Pok&eacute;mon Company", "Overall support of all internal departments with creative needs. All artwork flowed through our department and we had to figure out how to get it created.");
@@ -1355,18 +1355,18 @@ case 'ad101':
 
 		$sample_works = "
 			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
-			
+
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project1[0]."'><img class='scale-with-grid' src='img/".$project1[0]."/thumb.svg'>".$project1[1].".</a> ".$project1[2]."</div>
-			
+
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project2[0]."'><img class='scale-with-grid' src='img/".$project2[0]."/thumb.jpg'>".$project2[1].".</a> ".$project2[2]."</div>
 
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.svg'>".$project3[1].".</a> ".$project3[2]."</div>
 
-			<div class='clear'></div>	
+			<div class='clear'></div>
 			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a> and my <a href='resume'>resume</a>. </p>
 		";
 
-		break;			
+		break;
 
 		case 'cm-2':
 		$jobTitle="Book Designer";
@@ -1374,9 +1374,9 @@ case 'ad101':
 		$date="July 3, 2014";
 		$email="jobs@callistomedia.com";
 		$logo="http://www.coroflot.com/user_files/job_employer_logos/0_sfcZ3EcR5a7fBnY7xRizo6JJl.png";
-		
+
 		$originaljobposting="http://www.coroflot.com/jobs/56701/Book-Designer";
-		
+
 		$job_details="
 		<h6>Responsibilities</h6>
 		<li>Report to the Creative Director and collaborate closely with Design and Editorial colleagues</li>
@@ -1408,8 +1408,8 @@ case 'ad101':
 		<p class='add-top'>
 			Hi! I saw your posting and wanted to pass along my information. I'm a designer/illustrator with extensive in-house design experience. I am looking for a design position in a fun place and learn more about the future of publishing!
 		</p><p>
-			My <a href='resume'>resume</a> will reveal my extensive production experience as well as more recent experiences with illustration, digital and programming. I have over 8+ years of experience working in branding and production supporting marketing, licensing, and publishing initiatives. 
-		</p>		
+			My <a href='resume'>resume</a> will reveal my extensive production experience as well as more recent experiences with illustration, digital and programming. I have over 8+ years of experience working in branding and production supporting marketing, licensing, and publishing initiatives.
+		</p>
 		";
 
 		$project1=array("museyon-guides","Museyon Guides", "Art direction and production for 300+ page travel books. Took books from conception to finish.");
@@ -1418,14 +1418,14 @@ case 'ad101':
 
 		$sample_works = "
 			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
-			
+
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project1[0]."'><img class='scale-with-grid' src='img/".$project1[0]."/thumb.svg'>".$project1[1].".</a> ".$project1[2]."</div>
-			
+
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project2[0]."'><img class='scale-with-grid' src='img/".$project2[0]."/thumb.svg'>".$project2[1].".</a> ".$project2[2]."</div>
 
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.jpg'>".$project3[1].".</a> ".$project3[2]."</div>
 
-			<div class='clear'></div>	
+			<div class='clear'></div>
 			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a> and my <a href='resume'>resume</a>. </p>
 		";
 
@@ -1438,17 +1438,17 @@ case 'ad101':
 		$company="Docusign";
 		$date="July 9, 2014";
 		$email;
-		
-		
+
+
 		$job_details="
-		
+
 		<h3 class='center'>Designer/Jr. Art Director</h3>
 		<h6 class='center'>Marketing | San Francisco, CA</h6>
 		<p>DocuSign is the industry leader for eSignatures and digital transaction management. We bring delightful experiences to millions of people every day and our worldwide network continues to grow by leaps and bounds. Are you interested in joining a fun and tech savvy company? Would you like to receive random hugs from people who have benefited from using your product? Can you work in a fast paced, deadline and results driven atmosphere? Do you want to collaborate with an amazing group of peers who’ll inspire you in new ways every day? If so, we would like to meet you. We’re looking for Designer/Junior Art Director to join our small, tight-knit, in-house creative team in San Francisco, California.
 		</p>
 		<p>As a Designer/Junior Art Director you will work on producing amazing visual experiences, managing competing timelines, organizing design assets, and contributing to the creative pool of ideas. Our candidate should be able to create cutting-edge designs and explain their thought process to non-creative. They should have outstanding visual design skills and advanced knowledge of Photoshop, Illustrator and InDesign.
 		</p>
-		<hr>		
+		<hr>
 		<h6>Responsibilities </h6>
 		<li>Simultaneously design everything from animated banners to full-blown web experiences within short timelines and often on the same day</li>
 		<li>Work collaboratively with other creative professionals to create cohesive visual messaging and set consistently higher standards in design across the DocuSign brand</li>
@@ -1479,7 +1479,7 @@ case 'ad101':
 		<p class='add-top'>
 			Hello! I saw your posting and wanted to get in touch. I'm a designer/illustrator with programming experience. I am looking for a position in a place where I can be a collaborative member to a team and to continue to learn more on the digital side.
 		</p><p>
-			My <a href='resume'>resume</a> will reveal my extensive production experience, as well as more recent experiences with illustration and programming. I have over 8+ years of experience working in branding and production supporting marketing, licensing, and publishing initiatives.		
+			My <a href='resume'>resume</a> will reveal my extensive production experience, as well as more recent experiences with illustration and programming. I have over 8+ years of experience working in branding and production supporting marketing, licensing, and publishing initiatives.
 		";
 
 		$project1=array("pokemon","The Pok&eacute;mon Company", "Overall support of all internal departments with creative needs. Fast-paced environment and we worked to bring projects from outside vendors in-house.");
@@ -1488,14 +1488,14 @@ case 'ad101':
 
 		$sample_works = "
 			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
-			
+
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project1[0]."'><img class='scale-with-grid' src='img/".$project1[0]."/thumb.svg'>".$project1[1].".</a> ".$project1[2]."</div>
-			
+
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project2[0]."'><img class='scale-with-grid' src='img/".$project2[0]."/thumb.jpg'>".$project2[1].".</a> ".$project2[2]."</div>
 
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.svg'>".$project3[1].".</a> ".$project3[2]."</div>
 
-			<div class='clear'></div>	
+			<div class='clear'></div>
 			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a> and my <a href='resume'>resume</a>. </p>
 		";
 
@@ -1503,7 +1503,7 @@ case 'ad101':
 		ps. While most of my work in the past years have been focused on children's brands or children's related properties and may seem a bit \"childish\", I can reassure you that I can work in a more clean and \"professional\" style! I just haven't had the opportunity in a while!
 		";
 
-		break;		
+		break;
 
 		case 'opentable':
 		$originaljobposting="http://www.opentable.com/careers/#alljobs?nl=1&jvi=osebZfwA,Job&jvs=Indeed&jvk=Job";
@@ -1537,7 +1537,7 @@ case 'ad101':
 		<li>Comfort trying new things with a tendency to ask for forgiveness rather than ask for permission.</li>
 		<li>Possess a healthy sense of humor.</li>
 		";
-		
+
 		$copy="
 		<p class='add-top'>
 			Hey! You guys are an app on my phone! In that case I need to send my information along! I am a designer/illustrator with programming experience. I am looking for a fun job where I can continute to learn and to contribute my unique skills to a collaborative team.</p><p>
@@ -1550,14 +1550,14 @@ case 'ad101':
 
 		$sample_works = "
 			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
-			
+
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project1[0]."'><img class='scale-with-grid' src='img/".$project1[0]."/thumb.svg'>".$project1[1].".</a> ".$project1[2]."</div>
-			
+
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project2[0]."'><img class='scale-with-grid' src='img/".$project2[0]."/thumb.jpg'>".$project2[1].".</a> ".$project2[2]."</div>
 
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.svg'>".$project3[1].".</a> ".$project3[2]."</div>
 
-			<div class='clear'></div>	
+			<div class='clear'></div>
 			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a> and my <a href='resume'>resume</a>. </p>
 		";
 
@@ -1572,10 +1572,10 @@ case 'ad101':
 		$email="jobs@anyperk.com";
 
 		$job_details;
-		
+
 		$copy="
 		<p class='add-top'>
-		Hello, I saw your posting and wanted to pass along my information. I am a graphic designer with programming experience. I am looking for a fun place where I can continue to hone my creative skills while also learning new ones.	
+		Hello, I saw your posting and wanted to pass along my information. I am a graphic designer with programming experience. I am looking for a fun place where I can continue to hone my creative skills while also learning new ones.
 		";
 
 		$project1=array("pokemon","The Pok&eacute;mon Company", "Overall support of all internal departments with creative needs. Fast-paced environment where we worked to bring projects from outside vendors in-house. Take a look at the Toy Fair trade booth!");
@@ -1584,18 +1584,18 @@ case 'ad101':
 
 		$sample_works = "
 			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position. They may seem 'kiddy' but this was the nature of the work...meaning this isn't all I am capable of.</p>
-			
+
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project1[0]."'><img class='scale-with-grid' src='img/".$project1[0]."/thumb.svg'>".$project1[1].".</a> ".$project1[2]."</div>
-			
+
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project2[0]."'><img class='scale-with-grid' src='img/".$project2[0]."/thumb.jpg'>".$project2[1].".</a> ".$project2[2]."</div>
 
 			<div class='four columns add-bottom alpha caption' ><hr><a href='".$project3[0]."'><img class='scale-with-grid' src='img/".$project3[0]."/thumb.svg'>".$project3[1].".</a> ".$project3[2]."</div>
 
-			<div class='clear'></div>	
+			<div class='clear'></div>
 			<p>Please feel contact me with any questions and to take a look at the rest of my <a href='work'>work</a> and my <a href='resume'>resume</a>. </p>
 		";
 
-		break;	
+		break;
 
 		case 'airbnb-production':
 		$originaljobposting="https://www.airbnb.com/jobs/departments/position/2276?gh_src=r5qfbo";
@@ -1606,9 +1606,9 @@ case 'ad101':
 		$email;
 
 		$job_details="
-	
+
 			<h6 class='center add-top'>Responsibilities</h6>
-			
+
 				<li>Assist the Product Design team in implementing precise visual design.</li>
 				<li>Supply graphics across many different mediums: web, iOS, Android and print.</li>
 				<li>Work with developers to ensure implementation is to specification.</li>
@@ -1627,21 +1627,21 @@ case 'ad101':
 				<li>Proficiency with Apple hardware and software.</li>
 
 			<h6 class='center add-top'>Bonus Skills</h6>
-			
+
 				<li>Strong sketching skills</li>
 				<li>Information design skills</li>
 				<li>BFA/MFA or equivalent industry experience</li>
 				<li>Icon design</li>
-			
+
 
 		";
-		
+
 		$copy="
 			<p class='add-top'>
 			Hello, I saw your posting and wanted to pass along my information. I am a graphic designer and illustrator with programming experience. I am looking for a fun place where I can continue to hone my creative skills while also learning new ones. Career-wise, I would like to acquire more skills relating to front-end dev and UI positions, so I think this position would put me in a good place to be exposed to that sort of thing.
 			</p><p>
 
-			I have many years of print production experience and more recently some web production experience. My portfolio will not be as diverse as others being print-based, but I am a very fast learner and have great ideas as evidenced by my recent experiments into unlocking the secrets of PHP and JS.  
+			I have many years of print production experience and more recently some web production experience. My portfolio will not be as diverse as others being print-based, but I am a very fast learner and have great ideas as evidenced by my recent experiments into unlocking the secrets of PHP and JS.
 
 			</p><p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
 		";
@@ -1655,7 +1655,7 @@ case 'ad101':
 		$project2=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
 		$project2["desc"]="Trivia game where I developed the UI and overall flow of the game.";
 
-		break;					
+		break;
 
 		case 'zen':
 		$originaljobposting="http://boards.greenhouse.io/zenpayroll/jobs/8623#.U9anxoBdX_r";
@@ -1667,7 +1667,7 @@ case 'ad101':
 		$email;
 
 		$job_details="
-	
+
 			<p>ZenPayroll is on a mission to provide delightful, modern payroll to businesses everywhere. We're proud to have built a product that our customers love. Our entire team cares deeply about design, and we are all passionate about creating memorable, delightful experiences that make people smile. Thinking about our users as *people* with feelings, desires and aspirations, is one of the things that makes our product design so unique.</p>
 
 			<p>As a ZenPayroll Designer, you will have the authority and freedom to create detailed graphics, but you can also dramatically influence how users interact with our product and how they should feel. Design is one of the strongest tenets of our company - we believe great design leads to delightful experiences.  Expect to be challenged every day.</p>
@@ -1702,7 +1702,7 @@ case 'ad101':
 			<li>Javascript knowledge</li>
 			<li>Great portfolio of infographics, iconography, or illustration work</li>
 			<li>Ability to surprise us with your recent work/projects. We love surprises.</li>
-			
+
 
 		";
 		$copy="
@@ -1728,7 +1728,7 @@ case 'ad101':
 				<p class="remove-bottom">August 5, 2014</p>
 				<h5 class="add-bottom">Phone Call Followup</h5>
 				<p class="add-bottom">David,<br>I pulled together some examples of cleaner and more modern stuff. I took it to mean less decorative/ornamental, colorful and cluttered. The big gap in my portfolio is lack of clean digital works, where I have lots of clean print works.</p>
-				
+
 				<h5>Equinox Fitness Clubs</h5>
 				<p>This was a mailer that was sent to a limited audience living in affluent neighborhoods surrounding our more "suburban" gyms.</p>
 				<a href="img/zen/EQX-b-cov-1.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/EQX-b-cov-1.jpg"></a>
@@ -1741,9 +1741,9 @@ case 'ad101':
 				<div class="six columns omega">
 					<a href="img/zen/EQX-b-back-2.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/EQX-b-back-2.jpg"></a>
 				</div>
-				
+
 				<p>The interior highlighted distinguishing aspects of gym, along with sexy photos of trainers and gyms. </p>
-				
+
 				<div class="six columns alpha">
 					<a href="img/zen/EQX-b-int-1.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/EQX-b-int-1.jpg"></a>
 				</div>
@@ -1786,7 +1786,7 @@ case 'ad101':
 
 
 				<p>This is <a href="chronicles-of-old-new-boston">Chronicles of Old Boston</a>.</p>
-				
+
 				<a href="img/chronicles-of-old-boston/cover.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/chronicles-of-old-boston/cover.jpg"></a>
 
 				<p>I implemented this design system from the first Chronicles book and have been perfected it through six books.</p>
@@ -1809,7 +1809,7 @@ case 'ad101':
 
 
 				<p>This is <a href="city-style">City Style</a>. This design was probably the boldest step we took in terms of brand style. It was a deliberate decision given the material. Each chapter had unique magazine-like photo spreads with bold typography and lines to anchor everything.</p>
-				
+
 				<a href="img/city-style/forward.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/city-style/forward.jpg"></a>
 
 				<div class="six columns alpha">
@@ -1834,7 +1834,7 @@ case 'ad101':
 				<a href="img/zen/Brochure_051210-1.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/Brochure_051210-1.jpg"></a>
 
 				<p>The most current books were given two page spreads and a smattering of delectable photos from the book. The photos were of various sizes, so I spent some time arranging and scaling them to fit the page width.</p>
-		
+
 				<div class="six columns alpha">
 					<a href="img/zen/Brochure_051210-2.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/Brochure_051210-2.jpg"></a>
 					<a href="img/zen/Brochure_051210-5.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/zen/Brochure_051210-5.jpg"></a>
@@ -1869,11 +1869,11 @@ case 'ad101':
 				<a href="img/idibon/powerhouse-language_v.png" data-lightbox="zen"><img class="scale-with-grid" src="img/idibon/powerhouse-language_v.png"></a>
 				<a href="img/idibon/derby2-01.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/idibon/derby2-01.jpg"></a>
 				<a href="img/idibon/bball_observed_hq.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/idibon/bball_observed_hq.jpg"></a>
-				
+
 				<h5>Wedding Invite</h5>
 				<p>I worked with a Chinese couple to develop their wedding invites. They did not want a traditional Chinese invite so I helped them make a simple bilingual invite. I worked with a letterpresser to get these produced. </p>
 				<a href="img/chrichard/Chrichard-invite1.png" data-lightbox="zen"><img class="scale-with-grid" src="img/chrichard/Chrichard-invite1.png"></a>
-				
+
 
 				<p>I do understand your concerns and I hope that this helps convince you that I can design in other styles given the opportunity! Please let me know if you still have doubts.</p>
 				<p>Ray</p>
@@ -1894,7 +1894,7 @@ case 'ad101':
 		$email;
 
 		$job_details="
-	
+
 			<p>The AWESOME Graphic Designer will work in a team to produce a broad range of marketing collateral to promote games across a variety of media outlets.</p>
 
 			<h6>Responsibilities:</h6>
@@ -1920,13 +1920,13 @@ case 'ad101':
 				<li>Highly creative, high organizational skills, with keen attention to detail.</li>
 				<li>Excellent written and oral communication skills.</li>
 				<li>Bachelor’s degree in graphic design/visual communications.</li>
-			
+
 
 		";
-		
+
 		$copy="
 			<p class='add-top'>
-				Hello, I saw your posting and wanted to get in touch. I love the gaming space and the people that work in it so when I saw a position at your company, I wanted to pass along my info. I am a graphic designer and illustrator who recently just left a gaming startup. I am looking for a fun place where I can continue to hone my creative skills, develop new skills and stay on top of new trends. 
+				Hello, I saw your posting and wanted to get in touch. I love the gaming space and the people that work in it so when I saw a position at your company, I wanted to pass along my info. I am a graphic designer and illustrator who recently just left a gaming startup. I am looking for a fun place where I can continue to hone my creative skills, develop new skills and stay on top of new trends.
 			</p><p>Very briefly, I have worked at in-house creative departments, like Pokemon, where I gained a lot of production experience working on a variety of projects from small to large-scale.</p>
 			</p><p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
 		";
@@ -1940,7 +1940,7 @@ case 'ad101':
 		$project1=array("path"=>"pokemon-logos","name"=>"Pok&eacute;mon logos","type"=>"jpg");
 		$project1["desc"]="Logos we developed for various movies and television shows at Pokemon.";
 
-		break;	
+		break;
 
 		case 'gymboree':
 		$originaljobposting="https://gymboree.tms.hrdepartment.com/jobs/8606/Senior-Web-Creative-DesignerSan-Francisco-CA";
@@ -1952,16 +1952,16 @@ case 'ad101':
 		$email;
 
 		$job_details="
-			
+
 			<p>The Gymboree Corporation is the leading specialty children’s retailer with over 1,200 stores domestically and internationally and generating over 1 billion in sales yearly. The Gymboree Corporation continues to grow and expand at a rapid pace but without sacrificing our commitment to quality. Most of all, we pride ourselves in hiring great people with the talent it takes to keep up with our growth. </p>
 
 			<p>The Sr. Web Creative Designer will work closely with the creative team to develop and produce creative for the ecommerce website, email campaigns, deliver HTML coding and online marketing for all brands. This person will work closely with copywriters and business partners to design original layouts on a tight schedule. S/he will work with business and copy teams to clarify objectives, revise creative and ensure accuracy for all projects. The Sr. Web Designer will actively participate and help drive the creative process by presenting well-developed creative solutions to meet the given objectives. This person will be responsible for executing product line updates for all ecommerce website, as well as hand-coding HTML for emails and deploying them in an accurate and timely manner. S/he will work with the email service provider to manage day to day operations while resolving issues and refining processes for launching emails. S/he will be responsible for staying current on industry trends, while keeping all brands at the forefront for site/email design and best practices. The Sr. Web Designer will work across Creative disciplines to drive the best customer experience solution. S/he will be responsible for conducting photo shoots to provide additional imagery for site and email creative. S/he will supervise and develop other designers and contractors while balancing personal workflow and priorities. This person will be responsible for giving effective feedback to drive successful designs and design systems, while inspiring and enhancing the efforts of a creative team.</p>
-			 
+
 			<h6>Job Requirements :</h6>
 			<p>BFA in Graphic Design, Interaction Design, Visual Studies or other design-related field preferred. 5-7 years of professional experience in web design or multimedia required. The candidate must have strong graphic design, layout, typography, image manipulation, and color correction skills. The candidate must also have relevant experience (ideally in a retail or ecommerce environment) with a lifestyle-oriented “trend-setting” brand. This person must be extremely proficient in Photoshop, Illustrator, Dreamweaver & HTML. This person must also have proficiency in Flash and must be familiar with InDesign. S/he must be detail-oriented, well organized and able to thrive in deadline driven environment. The ideal candidate will have the ability to manage competing, high priority projects while identifying creative solutions quickly. This person will also have the ability to self-direct under ambiguous and changing circumstances. The candidate must have strong written and verbal communications skills. S/he must be willing to be flexible in job duties and take on added responsibility when necessary.</p>
 
 		";
-		
+
 		$copy="
 			<p class='add-top'>
 				Hello, I saw your posting and wanted to get in touch. I am a designer and and illustrator with some programming experience. I am looking for a job where I can apply my unique skills and experience while staying on the cutting edge for new technologies.
@@ -1980,7 +1980,7 @@ case 'ad101':
 		$project1=array("path"=>"abriendo-puertas","name"=>"ap-od.org","type"=>"jpg");
 		$project1["desc"]="Responsive informational site we developed for a non-profit. Hand-coded HTML/CSS on a minimal <span class='nobreak'>front-end</span> framework.";
 
-		break;		
+		break;
 
 		case 'relayrides':
 		$originaljobposting="https://relayrides.com/jobs/graphic-design";
@@ -1992,9 +1992,9 @@ case 'ad101':
 		$email="<a href=\"mailto:jobs@relayrides.com\">jobs@relayrides.com</a>";
 
 		$job_details="
-			
+
 			<p>We’re looking for a talented graphic designer to help us build the world’s largest peer-to-peer car rental marketplace. Here at our SOMA headquarters, you’ll be working as part of our growing design team, across the entirety of our customer experience, creating everything from toolbar icons to digital advertising to product illustrations and back again. You’ll have the chance to work side-by-side with our engineering, marketing, and product design staff, as together we change the way that millions of people travel.</p>
-			 
+
 			<h6>Requirements :</h6>
 			<li>A stellar visual portfolio, highlighting your attention to the finest details and the elegance of your craft.</li>
 			<li>Excellent communication skills. From napkin sketches to high-fidelity comps, you can get your ideas across to a variety of audiences.</li>
@@ -2010,10 +2010,10 @@ case 'ad101':
 			<li>Refine our visual brand identity, and keep our brand identity consistent across multiple channels.</li>
 			<li>Work directly with our marketing & analytics team to craft beautiful, enticing digital marketing campaigns that range from email campaigns to web promotional pages, including direct ads of all sorts.</li>
 		";
-		
+
 		$copy="
 			<p class='add-top'>
-				Hello, I saw your posting and you guys seem very interesting! I am a designer and and illustrator with some programming experience. I have started on the road to being a digital designer and want to be in a team environment where I am honing those skills. 
+				Hello, I saw your posting and you guys seem very interesting! I am a designer and and illustrator with some programming experience. I have started on the road to being a digital designer and want to be in a team environment where I am honing those skills.
 			</p><p>
 				I have many years of print production experience working at in-house <a href='pokemon'>creative departments</a>. I just left a <a href='suspended-belief-studios'>gaming startup</a> where I did everything from game design, UI, interaction, game illustration, websites, logo design to content. I love the challenge of solving puzzles and enjoy watching plans come together!
 
@@ -2041,12 +2041,12 @@ case 'ad101':
 		$email;
 
 		$job_details;
-		
+
 		$copy="
 			<p class='add-top'>
-				Hello, I saw your posting and wanted to pass along my information. I am a graphic designer looking for a home! 
+				Hello, I saw your posting and wanted to pass along my information. I am a graphic designer looking for a home!
 			</p><p>
-				I have many years of print production experience working at in-house <a href='pokemon'>creative departments</a> servicing brands. I worked on a variety of projects, from small to large-scale. 
+				I have many years of print production experience working at in-house <a href='pokemon'>creative departments</a> servicing brands. I worked on a variety of projects, from small to large-scale.
 			</p><p>
 				I have linked to three samples which I think will directly address some of the things you are looking for in this position.</p>
 		";
@@ -2073,12 +2073,12 @@ case 'ad101':
 		$email;
 
 		$job_details;
-		
+
 		$copy="
 			<p class='add-top'>
-				Hello, I saw your posting and wanted to pass along my information. I am a graphic designer looking for a home! 
+				Hello, I saw your posting and wanted to pass along my information. I am a graphic designer looking for a home!
 			</p><p>
-				I have many years of print production experience working at in-house <a href='pokemon'>creative departments</a> servicing brands. I worked on a variety of projects, from small to large-scale. 
+				I have many years of print production experience working at in-house <a href='pokemon'>creative departments</a> servicing brands. I worked on a variety of projects, from small to large-scale.
 			</p><p>
 				I have linked to three samples which I think will directly address some of the things you are looking for in this position.</p>
 		";
@@ -2144,10 +2144,10 @@ case 'ad101':
 			<li>Familiarity with Agile Project Management methodology a plus</li>
 			<li>A passion for science, technology, and science education is a strong plus</li>
 		";
-		
+
 		$copy="
 			<p class='add-top'>
-				Hello, I saw your posting and wanted to pass along my information. I am very interested in working for an institution of learning! I am a graphic designer and illustrator with programming experience. I am looking for a fun position in education, where I can apply my unique skillset while also learning new things along the way. 
+				Hello, I saw your posting and wanted to pass along my information. I am very interested in working for an institution of learning! I am a graphic designer and illustrator with programming experience. I am looking for a fun position in education, where I can apply my unique skillset while also learning new things along the way.
 			</p><p>
 				I have many years of print production experience working at <span class='nobreak'>in-house</span> <a href='pokemon'>creative departments</a> servicing brands. I also just recently left a gaming startup where I was essentially the creative department. The experience I gained there, partnered with my passion for gaming, will inform the interaction decisions I make—hopefully into engaging and fun experiences. One of the big challenges with interaction is knowing when to \"get out of the way\" and let the content speak for itself; it's a constant measuring of minimal vs. ornamental.
 			</p><p>
@@ -2186,7 +2186,7 @@ case 'ad101':
 			<li>Work closely with marketing team to coordinate projects and communicate technical issues.</li>
 			<li>Debug and troubleshoot layout and scripting issues across a variety of browsers.</li>
 			<li>Collaborate on other traditional graphic design/marketing projects.</li>
-			
+
 			<h6>REQUIREMENTS</h6>
 			<li>3+years of experience designing and creating consumer websites.</li>
 			<li>Ability to create standards-compliant, valid HTML/CSS files by hand from design comps -- must be pixel perfect.</li>
@@ -2205,24 +2205,24 @@ case 'ad101':
 			<p>Provide a portfolio highlighting examples of developed websites exhibiting your expertise in HTML / HTML5, CSS 3, jQuery, responsive web.</p>
 			<p>Be nimble, and ready to work in a fast-paced environment on a small team.</p>
 		";
-		
+
 		$copy="
 			<p class='add-top'>
 				Hello, I saw your posting and the position sounds like just the thing I am currently looking for! I wanted to send along my information because I am an aspiring front-end dev transitioning from a print world.
 			</p><p>
-				Because I am transitioning doesn't mean I should be overlooked! I am a super-fast learner and a puzzle solver. Between freelance gigs and job-hunting, I picked up the basics of PHP and have been starting to dissect how Wordpress works. <a href='https://github.com/raystation/farnsworth-wp' target='_blank'>Custom</a> themes baby! For a while, my attention was unfocused, and just started looking into a bunch of languages like JS and Ruby, but I've sorta settled into PHP and front-end frameworks (for now). I think working with you guys would give me the perfect excuse to continue my path of learning! 
+				Because I am transitioning doesn't mean I should be overlooked! I am a super-fast learner and a puzzle solver. Between freelance gigs and job-hunting, I picked up the basics of PHP and have been starting to dissect how Wordpress works. <a href='https://github.com/raystation/farnsworth-wp' target='_blank'>Custom</a> themes baby! For a while, my attention was unfocused, and just started looking into a bunch of languages like JS and Ruby, but I've sorta settled into PHP and front-end frameworks (for now). I think working with you guys would give me the perfect excuse to continue my path of learning!
 			</p><p>
 				I have linked to three samples which I think will directly address some of the things I think you are looking for in this position.</p>
 		";
 
 		$sample_works="
-			
+
 			<h5><a href='rayuen.com/abriendo-puertas'>Abriendo Puertas</a></h5>
 			<p>Responsive informational site we developed for a non-profit. Hand-coded HTML/CSS on a minimal <span class='nobreak'>front-end</span> framework.</p>
 			<h5><a href='http://rayuen.com/projects/ipsum-generator/'>Lorem Ipsum generator</a></h5>
 			<p>Recent experiement. Proof of concept right now (so it looks horrible). The program takes a list of words and randomly generates paragraphs of lorem ipsum filler text based on a few parameters.</p>
 			<h5><a href='https://github.com/raystation/farnsworth-wp/'>Wordpress for friend</a></h5>
-			<p>Making a Wordpress theme from scratch, based on the Foundation front-end framework. Not finished yet, so just runs locally. Only have a link to the souce.</p>			
+			<p>Making a Wordpress theme from scratch, based on the Foundation front-end framework. Not finished yet, so just runs locally. Only have a link to the souce.</p>
 
 		";
 
@@ -2234,7 +2234,7 @@ case 'ad101':
 // 	<div class='inner tooltip' title='test' style='width:20%;background-color:orange'>Web Design</div>
 // 	<div class='inner tooltip' title='test' style='width:20%;background-color:green'>Gaming</div>
 // 	<div class='caption add-bottom'>Areas of Exploration</div>
-// </div>		
+// </div>
 
 case 'experiment':
 		$originaljobposting="https://experiment.com/jobs";
@@ -2246,14 +2246,14 @@ case 'experiment':
 		$email;
 
 		$job_details="";
-		
+
 		$copy="
 			<p class='add-top'>
-				Hello, someone passed along the job portrait you <a href='https://medium.com/job-portraits/experiment-is-hiring-a-product-designer-to-change-the-world-of-science-dfa58739c55e' target='_blank'>posted on Medium</a> and my interest is sufficently piqued that I am writing this to you. With long form pieces like this, it gives people the opportunity to inject their imagination and I imagined myself solving interesting problems, experimenting (no <span class='tooltip underline' title='hover over my portrait for a pun'>pun</span> intended there) and learning new things. 
+				Hello, someone passed along the job portrait you <a href='https://medium.com/job-portraits/experiment-is-hiring-a-product-designer-to-change-the-world-of-science-dfa58739c55e' target='_blank'>posted on Medium</a> and my interest is sufficently piqued that I am writing this to you. With long form pieces like this, it gives people the opportunity to inject their imagination and I imagined myself solving interesting problems, experimenting (no <span class='tooltip underline' title='hover over my portrait for a pun'>pun</span> intended there) and learning new things.
 			</p><p>
 				I am a graphic designer and illustrator with programming experience. Career-wise, I've jumped around a bit—the past four years have been an exploration of illustration, publishing, web design, programming, interaction and game design.
 			</p><p>
-				I have many years of print production experience working at <span class='nobreak'>in-house</span> <a href='pokemon'>creative departments</a> servicing brands. I also just recently left a gaming startup where I was essentially the creative department. 
+				I have many years of print production experience working at <span class='nobreak'>in-house</span> <a href='pokemon'>creative departments</a> servicing brands. I also just recently left a gaming startup where I was essentially the creative department.
 			</p><p>
 				I have linked to three samples which I think will directly address some of the things you are looking for in this position.</p>
 		";
@@ -2324,7 +2324,7 @@ case 'experiment':
 			<li>Can detect a pixel out-of-place from a mile away.</li>
 			<li>Likes teaching design theory to engineering and sales.</li>
 
-			
+
 			<h6>Perks</h6>
 			<li>Intelligent, driven team members.</li>
 			<li>Product-centric company.</li>
@@ -2384,13 +2384,13 @@ case 'experiment':
 
 			<div class='clear'></div>
 			";
-		
+
 		$copy="
 			<p class='add-top'>
 				Hello, I saw your posting and wanted to get in touch because you guys sound awesome. I am a designer/illustrator with some programming experience. I am looking for a fun place to work where I can be part of a team and contribute my unique skill set. Plus, I have always had a life-long passion for gaming!
 			</p>
 			<p>
-				Working at in-house design departments, I have many years of design and production experience. We (the creative and branding team) supported internal departments with various creative needs—including publishing, marketing and licensing initiatives. My working experience is mainly print-based, but I have been expanding in the past two years, delving into web technologies(I am currently going back and forth between PHP and Javascript right&nbsp;now). 
+				Working at in-house design departments, I have many years of design and production experience. We (the creative and branding team) supported internal departments with various creative needs—including publishing, marketing and licensing initiatives. My working experience is mainly print-based, but I have been expanding in the past two years, delving into web technologies(I am currently going back and forth between PHP and Javascript right&nbsp;now).
 			</p>
 			<p>
 				I linked below to three projects which I believe might be of some&nbsp;interest.
@@ -2420,9 +2420,9 @@ case 'experiment':
 		$hiremepage = downcasespace("http://rayuen.com/hire-me?id=$company");
 
 		$job_details="
-			
+
 			<p>Dropcam is seeking a web designer to deliver an informative, engaging and compelling experience on Dropcam.com. You’ll work closely with the marketing team and across the company to tell the Dropcam story and help manage the Dropcam store.</p>
-			
+
 			<h6>RESPONSIBILITIES</h6>
 			<li>Own the Dropcam.com store experience from content to functionality working closely with the marketing, product and engineering teams. Build short and medium term strategic plans for the site.</li>
 			<li>Define, design and manage the implementation of website features and functionality with technical teams to support business objectives.</li>
@@ -2430,7 +2430,7 @@ case 'experiment':
 			<li>Be a customer advocate creating a easy and engaging user experience that fits with our brand guidelines and personality.</li>
 			<li>Ongoing site optimizations working with data analyst to execute regular A|B tests of different designs.</li>
 			<li>Manage all the web assets including banners, videos, images, landing pages and copy.</li>
-			
+
 			<h6>REQUIREMENTS</h6>
 
 			<li>2 - 4 years experience of web design</li>
@@ -2442,10 +2442,10 @@ case 'experiment':
 			<li>Personality that thrives in a fast-paced, exciting work environment</li>
 			<li>High attention to detail</li>
 		";
-	
+
 		$copy="
 			<p class='add-top'>
-				Hello, I saw your posting and wanted to pass along my information. I am a designer/illustrator with some programming experience. I am looking for a place make where I can contribute my creative experience and make a full transition into a web role. After looking over your job posting, I think Dropcam could be a perfect place to do that. 
+				Hello, I saw your posting and wanted to pass along my information. I am a designer/illustrator with some programming experience. I am looking for a place make where I can contribute my creative experience and make a full transition into a web role. After looking over your job posting, I think Dropcam could be a perfect place to do that.
 			</p>
 			<p>
 				I have many years of print experience working in in-house design positions. In the past two years I have tried to immerse myself in everything that a web designer would be doing. I helped my friends build simple websites. i've dived into responsive design and am learning a little programming. Currently I am jumping back and forth between PHP and Javascript and am enjoying the learning experience.
@@ -2475,16 +2475,16 @@ case 'experiment':
 
 		$copy="
 		<p class=\"add-top\">
-			Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming and have over 8+ years of experience in design from both the creative/marketing and production side. I am looking for a position where I can contribute my varied skills and have fun. 
+			Hello! I saw your posting and wanted to get in touch. I am a graphic designer and illustrator with some experience in programming and have over 8+ years of experience in design from both the creative/marketing and production side. I am looking for a position where I can contribute my varied skills and have fun.
 		</p>
 
 		<div class='four columns add-bottom alpha'><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>The Rise of Darkrai</a></div>
-		
+
 		<div class='four columns add-bottom' ><a class='caption' href='color-chameleon'><img class='scale-with-grid' src='img/color-chameleon/thumb.jpg'>Color Chameleon</a></div>
 
 		<div class='four columns add-bottom omega'><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>Abriendo Puertas</a></div>
 
-		<div class='clear'></div>	
+		<div class='clear'></div>
 		<p>
 			Check out my resume here <a href='resume'>rayuen.com/resume</a> or a PDF version below. <br>
 			Check out my portfolio here <a href='work'>rayuen.com/work</a> <br>
@@ -2536,7 +2536,7 @@ case 'experiment':
 		$job_details="
 			<h6>Visual Designer</h6>
 			<p>Kabam - San Francisco, CA</p>
-			<p>Kabam is the leader in the western world for free-to-play core games with 1st and 3rd party published titles available on mobile devices via the Apple Store, Google Play and on the Web via Facebook, Yahoo, Kabam.com and other leading platforms. In 2013 Kabam revenues grew by 100 percent to more than $360 million. Kabam has 800 employees across three continents, with corporate headquarters in San Francisco. The company's investors include Google, Warner Brothers, MGM, SK Telecom, Intel, Canaan Partners, Redpoint Ventures and Pinnacle Ventures. More information about Kabam can be found at www.kabam.com.</p> 
+			<p>Kabam is the leader in the western world for free-to-play core games with 1st and 3rd party published titles available on mobile devices via the Apple Store, Google Play and on the Web via Facebook, Yahoo, Kabam.com and other leading platforms. In 2013 Kabam revenues grew by 100 percent to more than $360 million. Kabam has 800 employees across three continents, with corporate headquarters in San Francisco. The company's investors include Google, Warner Brothers, MGM, SK Telecom, Intel, Canaan Partners, Redpoint Ventures and Pinnacle Ventures. More information about Kabam can be found at www.kabam.com.</p>
 			<p>The Visual Designer will be responsible for creating all manner of product marketing and advertising creative for Kabam’s first party studio’s games. </p>
 			<hr>
 			<h6>WHAT YOU'LL DO:</h6>
@@ -2555,10 +2555,10 @@ case 'experiment':
 
 			<li>Provide feedback and direction for the creation of key art assets produced by external agencies </li>
 
-			<li>Collaborate with video/multimedia artist to generate ideas and storyboards for : 30 and : 15 User Acquisition video ad units</li> 
+			<li>Collaborate with video/multimedia artist to generate ideas and storyboards for : 30 and : 15 User Acquisition video ad units</li>
 			<li>Maintain and adhere to strict file preparation, file structure and naming convention guidelines </li>
 			<li>Prepare all master psd files such that resizing and localization is as streamlined as possible. </li>
-			<li>Career Progression: This role is a mid-level position that will be integral to Kabam’s User Acquisition, Product Marketing, BizDev and Lifecycle marketing success</li> 
+			<li>Career Progression: This role is a mid-level position that will be integral to Kabam’s User Acquisition, Product Marketing, BizDev and Lifecycle marketing success</li>
 			<hr>
 			<h6>Benefits:</h6>
 			<li>Full Health, Dental, and Vision; 401k matching; $250 gym reimbursement; $1000 per year educational stipend; daily catered lunches; tons of snacks, drinks, etc. </li>
@@ -2588,15 +2588,15 @@ case 'experiment':
 				<p class="remove-bottom">August 20, 2014</p>
 				<h5 class="add-bottom">Interview for third-party visual designer</h5>
 				<p class="add-bottom">I\'ve included some things below that may be relevant to the conversation at hand.</p>
-				
+
 				<h5>WIRED magazine</h5>
 				<p>Spot illustrations for a Norton advertorial in the September 2014 issue of Wired magazine. Not yet out in newstands, layout not final.</p>
-				
+
 				<a href="img/wired/car.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/wired/car.jpg"></a>
 				<a href="img/wired/three.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/wired/three.jpg"></a>
 
 				<h5>Something....darker</h5>
-				
+
 				<a href="img/kabam/hell-fire.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/kabam/hell-fire.jpg"></a>
 
 				<p>I have been trying to make some art works in the style of a Kabam game to gear up for the next Kabam interview. I tried to emulate a workflow that I thought I would be going through here. I\'ve included the original pieces I worked off to show my work process.</p>
@@ -2611,10 +2611,10 @@ case 'experiment':
 					<a href="img/kabam/cloud.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/kabam/cloud.jpg"></a>
 				</div>
 				<div class="clear"></div>
-				
+
 				<h5>Lesconcierges</h5>
 				<a href="img/lesconcierges/01.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/lesconcierges/01.jpg"></a>
-				
+
 				<div class="four columns  alpha">
 					<a href="img/lesconcierges/08.jpg" data-lightbox="zen"><img class="scale-with-grid" src="img/lesconcierges/08.jpg"></a>
 				</div>
@@ -2647,7 +2647,7 @@ case 'experiment':
 
 			<p>We are ready and eager to better merchandise our product! Specifically, we are in need of a graphic designer who can create a cohesive look for our site, curriculum and brand. For about 75% of the work time you would be creating kid-friendly, illustrative graphics for all our curriculum (including cover images, app icons, characters, etc.). The other 25% of the time you will need to do some corporate branding projects (brochures, flyers, signage). </p>
 
-			<p>This is a big opportunity for someone who want to make their mark at a startup. The only thing we are set on is our logo; everything else is fair game and we encourage you to own it!	</p>	
+			<p>This is a big opportunity for someone who want to make their mark at a startup. The only thing we are set on is our logo; everything else is fair game and we encourage you to own it!	</p>
 			<p>About you:</p>
 			<li>Incredible visual portfolio: Highlights your attention to the finest details and the elegance of your craft.
 			<li>Playful style: You have created graphics specifically geared towards kids or have done work that could be considered kid-friendly. We want someone who is excited about getting graphics for students!
@@ -2658,7 +2658,7 @@ case 'experiment':
 			<li>Some experience in UI/UX. This is not one the primary focuses of this role but we find an extra brain on this matter to always be helpful.</li>
 			<p>We're a group of smart, driven individuals who also know how to enjoy ourselves and have a good time. We're self-described foodies - we celebrate Pizza Fridays and various team members enjoy bringing treats as afternoon munchies. </p>
 		";
-	
+
 		$slider='
 			<div class="slick-index">
 				<div><img class="scale-with-grid" src="img/wired/car.jpg"></div>
@@ -2676,10 +2676,10 @@ case 'experiment':
 				Thanks for sending me a note about your startup. I have been interested in moving into education so I am sending my information along. I am a designer and illustrator with some programming experience. I am looking for a place where I can contribute my unique skills, learn new stuff, meet new people and have fun!
 			</p>
 			<p>
-				I have many years of print experience working in in-house design positions. In the past three years I have explored illustration, programming and publishing. 
+				I have many years of print experience working in in-house design positions. In the past three years I have explored illustration, programming and publishing.
 			</p>
 			<p>
-				I linked to three projects which I believe might be of some&nbsp;interest.					
+				I linked to three projects which I believe might be of some&nbsp;interest.
 		";
 
 		$project1=array("path"=>"indiginauts","name"=>"Indignauts", "type"=>"jpg");
@@ -2692,6 +2692,144 @@ case 'experiment':
 		$project3["desc"]="Unrealized <span class='nobreak'>free-to-play</span> game concept about mixing animal parts&nbsp;up.";
 
 
-	break;		
+	break;
+
+case 'google-doodle':
+		$originaljobposting="https://www.google.com/about/careers/jobs#!t=jo&jid=/google/creative-lead-doodle-team-1600-amphitheatre-pkwy-mountain-view-ca-2277940017";
+		$logo="https://www.wired.com/wp-content/uploads/2015/09/google-logo-1200x630.jpg";
+		$jobTitle="Creative Lead, Doodle Team";
+		$company="Google / Doodle Team";
+		$date="January 24, 2017";
+		// $name="";
+		$email="";
+		$slider="";
+		$hiremepage = "http://rayuen.com/hire-me?id=google-doodle";
+		$resume = "img/ray_yuen_resume-gd.pdf";
+
+		$job_details="As a User Experience (UX) leader, you help define and drive the future of Google design. You identify and set product strategy, envision complex UX ecosystems and inspire teams to push the boundaries of what’s possible. You possess a clear vision of the future of user experience and have the courage to pursue forward-thinking design.
+
+			In this role, you will apply your passion for brand, craft, and design fidelity to guide research and design processes, mentor talented members of your team, and collaborate with leaders of other UX and Engineering teams to create innovative experiences across all of Google’s products.
+
+			The Doodle Team is a fast-paced, highly autonomous environment where passion, craft, and teamwork meet in service of making Google more delightful via our custom homepage logos, experiences inside the Google Search app and more.
+
+			As a Doodle Team Creative Lead, you’ll manage and inspire a team of highly creative, designers, illustrators, and animators to keep finding new ways to surprise, delight, and inform Google’s hundreds of millions of users on the company’s most visible surfaces. Operating at the intersection of art and technology, this role will require deep collaborations with cross-functional team members in product management, engineering, marketing, and others to create world-class illustrations, animations, games, and more.
+
+			Making the world's information universally accessible and useful doesn't stop at the desktop. The Mobile team builds tools to get you the information you need no matter where you are. Android has become the world's most popular mobile ecosystem, powering billions of devices, from smartphones to tablets, watches to TVs and everything in between. Whether adding to the core Android experience, forging new markets for digital content, creating immersive and portable versions of our products or managing relationships with a global community of developers, the Mobile team is giving you Google on the go.
+
+			Responsibilities
+			Nurture and manage a talented team of artists..
+			Present work to executives and communicate to a variety of stakeholders.
+			Collaborate across organizational boundaries to launch complex, innovative projects.
+			Balance creative intuition with data for maximum impact.
+			Qualifications
+			Minimum qualifications:
+			10 years of experience producing or directing creative work.
+
+			Preferred qualifications:
+			Experience with art direction and/or editorial creative work at a major online or print publication and a general knowledge of how design impacts engineering and vice versa, along with a knack for constructing dynamic designs that are technically practicable.
+			Demonstrated enthusiasm for creating in new media and technologies and ability to manage budgets and help define contracts and agreements and ability to thrive in a rapid paced environment on multiple projects.
+			Strong skills in one or more of the following: illustration, design, animation, interaction design with a body of work that exudes whimsy and wit and comfort with digital and traditional visual art media.
+			Ability to work collaboratively and apply creative feedback in a team environment.
+			The ability to manage ambiguity and work autonomously.
+			Demonstrated success leading a team and expert communication and interpersonal skills and deep network of outside artists and creatives for potential collaboration & recruitment.
+		";
+
+		// $slider='
+		// 	<div class="slick-index">
+		// 		<div><img class="scale-with-grid" src="img/wired/car.jpg"></div>
+		// 		<div><img class="scale-with-grid" src="img/100-principles-of-game-design/slider.jpg"></div>
+		// 		<div><img class="scale-with-grid" src="img/edgeware/slider.jpg"></div>
+		// 		<div><img class="scale-with-grid" src="img/lesconcierges/slider.jpg"></div>
+		// 		<div><img class="scale-with-grid" src="img/monkey-mo/cover.jpg"></div>
+		// 		<div><img class="scale-with-grid" src="img/scavenger-hunt/01-thumb.jpg"></div>
+		// 		<div><img class="scale-with-grid" src="img/project-animore/slider.jpg"></div>
+		// 		<div><img class="scale-with-grid" src="img/indiginauts/bridge.jpg"></div>
+		// 	</div>
+		// ';
+
+
+		$copy="
+		<p>
+			Hi, I'm not certain of all the things that of a Google Doodler does, but the idea absolutely fascinates me! I want to continue to pursue a career which allows me to work in the intersection between design and art. At NextLesson, in addition to UI/UX design, I have a proven record of success managing a team to create the artwork on the site.
+		</p>
+		";
+
+		$other="
+		<h5>More Samples</h5>
+
+		<div class='four columns add-bottom alpha caption'>
+			<a href='http://darthpickle.com/p/corpse/'><img class='scale-with-grid' src='img/exquisite-corpse/thumb.jpg'>Random Character Maker.</a> a PHP exercise.
+		</div>
+
+		<div class='four columns alpha caption'>
+			<a href='http://squeakyhsu.com/create-me/'><img class='scale-with-grid' src='img/doodles/avatar-thumb.jpg'>Custom Avatar Maker.</a> Hackday exercise using my artwork.
+		</div>
+
+		<div class='four columns alpha caption'>
+			<a href='http://rayuen.com/p/nextlesson/brand-guide/characters'><img class='scale-with-grid' src='img/doodles/characters-thumb.jpg'>Characters system.</a> Developed the rules for the characters on the NextLesson site.
+		</div>
+
+		<div class='clearfix add-bottom'></div>
+		<p>
+			I would love to find out more about this opportunity and I think that with 14 years of creative experience, I could be a valuable team member. I have more work <a href='work'>here</a> and my resume here. Thanks!<br><br>
+			Sincerely, Ray
+		</p>
+
+		<hr class='separator'>
+
+		<h5>Bonus</h5>
+		<p>I've spread my love of drawing with doodle challenges to my coworkers at Pok&eacute;mon and NextLesson.</p>
+		<img class='scale-with-grid' src='img/doodles/doodle-wall-2.jpg' alt='Doodle Wall'>
+		<p class='caption'>Facilitated regular doodle practice for all employees and frequent visitors.</p>
+
+		<img class='scale-with-grid' src='img/doodles/doodle-wall-1.jpg' alt='Doodle Wall'>
+		<p class='caption'>Close up of cartoon characters drawn from memory.</p>
+
+		<img class='scale-with-grid' src='img/doodles/pokemon-2.jpg' alt='Pokemon From Memory'>
+		<p class='caption'>With the popularity of Pokemon Go, it was perfect to revisit this classic challenge.</p>
+
+		";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Creation of 2,034 Lesson and Project Covers.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"NextLesson InterestID",
+				"type"=>"jpg",
+				"desc"=>"UI/UX and creation of 3,831 icons.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Interactive Glossary",
+				"type"=>"jpg",
+				"desc" => "Visuals for glossary terms.",
+			),
+			array(
+				"path"=>"indiginauts",
+				"name"=>"Indiginauts",
+				"type"=>"jpg",
+				"desc"=>"Point 'n' click adventure game. Game concept/design, art, and UI.",
+			),
+			array(
+				"path"=>"color-chameleon",
+				"name"=>"Color Chameleon",
+				"type"=>"jpg",
+				"desc"=>"Game concept for a runner.",
+			),
+			array(
+				"path"=>"storymaps",
+				"name"=>"StoryMaps",
+				"type"=>"jpg",
+				"desc"=>"Hand-drawn illustrations for a story building app.",
+			),
+		);
+
+	break;
+
 }
 

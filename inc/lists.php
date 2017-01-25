@@ -403,11 +403,7 @@ function list_tech_skills() {
 			array("percent"=>95,"skill"=>"Photoshop"),
 			array("percent"=>99.44,"skill"=>"Illustrator"),
 			array("percent"=>98,"skill"=>"Indesign"),
-			// array("percent"=>89,"skill"=>"QuarkXPress"),
 			"clear",
-			// array("percent"=>95,"skill"=>"Microsoft Excel"),
-			// array("percent"=>85,"skill"=>"Dreamweaver"),
-			// array("percent"=>52,"skill"=>"Flash"),
 			array("percent"=>85,"skill"=>"UI & UX"),
 			array("percent"=>90,"skill"=>"Sketch"),
 			array("percent"=>70,"skill"=>"Adobe XD"),
@@ -415,8 +411,7 @@ function list_tech_skills() {
 			array("percent"=>95,"skill"=>"HTML"),
 			array("percent"=>93,"skill"=>"CSS/Sass"),
 			array("percent"=>90,"skill"=>"Responsive Web Design"),
-			// array("percent"=>92,"skill"=>"Sass"),
-			array("percent"=>60,"skill"=>"Javascript/JQuery"),
+			array("percent"=>60,"skill"=>"JS/JQuery"),
 			"clear",
 			array("percent"=>80,"skill"=>"PHP"),
 			array("percent"=>75,"skill"=>"Wordpress"),
@@ -425,6 +420,11 @@ function list_tech_skills() {
 			"clear",
 			array("percent"=>90,"skill"=>"Page Layout"),
 			array("percent"=>95,"skill"=>"Pre-Press"),
+			// array("percent"=>89,"skill"=>"QuarkXPress"),
+			// array("percent"=>95,"skill"=>"Microsoft Excel"),
+			// array("percent"=>85,"skill"=>"Dreamweaver"),
+			// array("percent"=>52,"skill"=>"Flash"),
+			// array("percent"=>92,"skill"=>"Sass"),
 		)
 	);
 	return $list;
