@@ -3,7 +3,7 @@
 	<!-- Footer
 	==================================================  -->
 
-	<footer class="band" id="footer">
+	<footer id="footer">
 
 		<div class="container">
 

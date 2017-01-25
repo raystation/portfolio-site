@@ -59,7 +59,7 @@
 		</div> <!-- end sixteen -->
 
 		<?
-		skeleton_print_page_thumbnail_4($projects);
+			skeleton_print_page_thumbnail_4($projects);
 		?>
 
 

@@ -64,8 +64,8 @@
 				echo "
 					<div class='clearfix'></div>
 					<div class='related'>
-					<hr style='margin-top:80px;width:75%'>
-					<h2>Related Projects:</h2>
+					<hr style='margin-top:40px;width:10%'>
+					<h3>Related Projects</h3>
 					<ul>
 				";
 				foreach ($related_projects_array as $key => $related_project) {

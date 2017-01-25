@@ -42,7 +42,7 @@ function get_suspended_belief_studios_projects(){
 	$works = array(
 		array( "name" => "Indiginauts","path" => "indiginauts","thumb" => "jpg" ),
 		array( "name" => "The 3","path" => "the3","thumb" => "svg" ),
-		array( "name" => "Abriendo Puertas / Opening&nbsp;Doors","path" => "abriendo-puertas","thumb" => "jpg" ),
+		// array( "name" => "Abriendo Puertas / Opening&nbsp;Doors","path" => "abriendo-puertas","thumb" => "jpg" ),
 		array( "name" => "Project Animore","path" => "project-animore","thumb" => "jpg" ),
 		array( "name" => "Color Chameleon","path" => "color-chameleon","thumb" => "jpg" ),
 	);
@@ -248,6 +248,7 @@ if ( $title == "idibon" ) {
 if ( $title == "Indiginauts" ) {
 
 	$path="img/indiginauts";
+	$company = "Suspended Belief Studios";
 
 	$description = "
 		This idea was the whole reason we started Suspended Belief Games. Based on an illustration I did for a group show in New York, the Indiginauts were space explorers in the vein of Star Fleet. They were peace-loving creatures that explored the stars. Were they decended from humans? Maybe. They loved nothing more than to explore, learn and record for others to&nbsp;see.
@@ -342,6 +343,7 @@ if ( $title == "100 Principles of Game&nbsp;Design" ) {
 if ( $title == "Project Animore" ) {
 
 	$path="img/project-animore";
+	$company = "Suspended Belief Studios";
 
 	$description = "
 	This was a game concept we explored on the idea of mixing things together. We never did figure out the best way to execute or make it fun in a free-to-play environment (where all the games were headed at the time on iOS). We also didn't have a developer at the time to actually test game ideas with so it was all a lot of speculation on what would and wouldn't work.
@@ -519,6 +521,7 @@ if ( $title == "Scavenger Hunt" ) {
 if ( $title == "The 3" ) {
 
 	$path="img/the3";
+	$company = "Suspended Belief Studios";
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>70, "icon"=>"IL"),
@@ -622,7 +625,7 @@ if ( $title == "Egg Baby" ) {
 if ( $title == "Color Chameleon" ) {
 
 	$path="img/color-chameleon";
-
+	$company = "Suspended Belief Studios";
 
 	$description = 'Color Chameleon was one of the first ideas we tried to bring to life. We thought it would be fun to run from a zookeeper who was chasing after you. The thing you needed to do was match the color of the objects that were in your path so you could camoflague and gain distance on your pursuers.
 		</p><p>

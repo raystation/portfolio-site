@@ -118,7 +118,6 @@ a,a:visited {
 .right 					{ text-align: right; }
 .padding 				{ padding: 10px; }
 .fixed 					{ height: 80%; }
-.band 					{ width: 100%; background-color: $footer-color; padding: 2em 0 8em 0; color: $footer-text-color; }
 .navband				{ width: 100%; }
 .uppercase			{ text-transform: uppercase; }
 .none 					{ display: none; }
@@ -694,6 +693,10 @@ $icon-width: 150px;
 
 #footer {
 	margin-top: 60px;
+	width: 100%;
+	background-color: $footer-color;
+	padding: 2em 0 4em 0;
+	color: $footer-text-color;
 
 	p, & ul {
 		font-size: smaller;
@@ -716,6 +719,7 @@ $icon-width: 150px;
 		}
 	}
 	.emoji {
+		display: none;
 		// margin-top: 5em;
 		text-align: center;
 		// text-align: right;

@@ -253,7 +253,7 @@ if ( !isset($template) ) {
 	  </div>";
 }
 else {
-	skeleton_print_thumbnail_4($works,8);
+	skeleton_print_thumbnail_4($works,4);
 }
 
 include('inc/footer.php');

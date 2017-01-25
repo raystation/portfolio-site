@@ -264,8 +264,10 @@ function print_skill_html(){
 }
 
 function related_projects_check( $company ){
+  $company_convert =string_lower($company);
+  $company_convert = replace_string($company_convert,"-","_");
   // gets the function that returns the array with related projects
-  $company_function = "get_" . "$company" . "_projects";
+  $company_function = "get_" . "$company_convert" . "_projects";
 
   if ( function_exists($company_function)) {
     $projects_array = $company_function();
@@ -324,15 +326,13 @@ function workthumb($num) {
   echo "<p>".$works[$num]["name"]."</p>\n";
 }
 
-function skeleton_print_thumbnail_4($array,$project_count=0,$vertical=false) {
+function skeleton_print_thumbnail_4($array,$project_count=0, $header=false, $vertical=false) {
 
   echo '</div><div class="container portfolio">'."\n";
   global $description;
-
-  //adds project link if it's not the index page
   if ( isset($description) ) {
-    // echo '<hr>'."\n";
-    echo '<div class="sixteen columns add-bottom"><hr><a href="work">&#11013; Back to projects</a></div>'."\n";
+    echo "<div class='sixteen columns add-bottom add-top'><hr><h2>Recent Projects</h2></div>";
+
   }
 
   // populates page with thumbnails from $work
@@ -379,6 +379,12 @@ function skeleton_print_thumbnail_4($array,$project_count=0,$vertical=false) {
       break;
     }
   }
+  //adds project link if it's not the index page
+  if ( isset($description) ) {
+    // echo '<hr>'."\n";
+    echo "<div class='sixteen columns add-bottom'><h5>&#11013; <a class='underline' href='work'>Back to all projects</a></h5></div>";
+  }
+  echo "</div>";
 
 }
 
