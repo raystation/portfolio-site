@@ -108,6 +108,7 @@
 	</script>
 	<script src="js/job-details.js"></script>
 	<?php
+		echo $footer_add;
 		if ( isset($plugin) ) {
 			echo "<script src='".$plugin[0]."'></script>";
 			echo "<script>".$plugin[1]."</script>";

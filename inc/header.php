@@ -1,5 +1,6 @@
 <?
 $meta_description="";
+$footer_add="";
 require_once 'inc/work-info.php';
 require_once 'functions.php';
 ?>

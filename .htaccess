@@ -79,5 +79,7 @@ RewriteRule ^dropcam$ hire-me?id=dropcam
 RewriteRule ^google-doodle$ hire-me?id=google-doodle
 RewriteRule ^duckduckmoose$ hire-me?id=duckduckmoose
 RewriteRule ^ixl-illustration-coordinator$ hire-me?id=ixl-illustration-coordinator
+RewriteRule ^facebook-illustrator-designer-cultural-moments$ hire-me?id=facebook-illustrator-designer-cultural-moments
+RewriteRule ^facebook-illustrator-designer-messenger$ hire-me?id=facebook-illustrator-designer-messenger
 
 RewriteRule ^holiday2014$ http://www.rayuen.com/p/holiday-card/holiday
