@@ -1,6 +1,6 @@
 <?
 	$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
-	$section="work";
+	$section = "work";
 
 	switch ( $project ) {
 		default:
@@ -244,7 +244,7 @@ if ( isset($project) ) {
 		// DOUBLE CHECKS TO SEE IF THE TEMPLATE FILE EXISTS, ELSE BASIC
 		$template_path = "inc/templates/$template.php";
 		if ( file_exists( $template_path ) ) { include $template_path; }
-		else { include 'inc/templates/basic.php'; }
+		// else { include 'inc/templates/basic.php'; }
 
 	} else {
 		// TEMPLATE NOT SET, USE BASIC
@@ -258,7 +258,8 @@ if ( isset($project) ) {
 
 if ( !isset($template) ) {
 	skeleton_print_thumbnail_4($works);
-} elseif ($template=="company") {
+}
+elseif ($template=="company") {
 	  echo "
 	  <div class='container add-top'>
 	  	<div class='sixteen columns add-bottom'><a href='work'>&#11013; Back to projects</a></div>

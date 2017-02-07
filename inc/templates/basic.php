@@ -59,11 +59,10 @@
 				echo "<img class='scale-with-grid' src='img/hero_default.jpg' alt='$title Top Image'>";
 			}
 		}
+		echo "<h1 style='margin-top:80px;'>$title</h1>\n";
 	?>
-	<?php echo "<h1 style='margin-top:80px;'>$title</h1>\n";?>
 
 	<div class="twelve columns alpha description">
-
 		<?
 		echo "
 			<p>$description</p>

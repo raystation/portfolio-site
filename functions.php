@@ -1,5 +1,20 @@
 <?
 
+# Install PSR-0-compatible class autoloader
+spl_autoload_register(function($class){
+  require preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\\')).'.php';
+});
+
+# Get Markdown class
+use Michelf\Markdown;
+
+function markdown_convert($file){
+  # Read file and pass content through the Markdown parser
+  $text = file_get_contents($file);
+  $html = Markdown::defaultTransform($text);
+  return $html;
+}
+
 function string_lower( $string ){
   $string = ( strtolower ( $string ) );
   $string = ( str_replace(" ", "-", $string ) );

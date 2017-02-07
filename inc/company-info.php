@@ -1,4 +1,7 @@
-<?php
+<?
+
+// TODO: include Markdown parser
+require_once 'functions.php';
 
 //converts title into lowercase and no spaces
 function downcasespace($string) {
@@ -2931,6 +2934,258 @@ case 'duckduckmoose':
 		);
 
 	break;
+
+case 'ixl-illustration-coordinator':
+		$originaljobposting="https://www.ixl.com/company/jobs?jvi=ojtG4fwg&jvs=Indeed";
+		$logo="http://grapesforlife.com/wp-content/uploads/2014/08/mzl.pptgpfrl-e1417376137299.png";
+		$jobTitle="Illustration Coordinator";
+		$company="IXL / Learning";
+		$date="January 26, 2017";
+		// $name="";
+		$email="";
+		$slider="";
+		$hiremepage = "http://rayuen.com/hire-me?id=ixl-illustration-coordinator";
+		// $resume = "img/ray_yuen_resume.pdf";
+
+		$job_details="
+		<p>IXL Learning, a leading edtech company with products used by 6 million students worldwide, is seeking an illustration coordinator to oversee the creation of fun and delightful visuals for our educational content. In this role, you will brainstorming creative ideas, iterate with a team of illustrators, and collaborate with our design and engineering teams on technical requirements. We find it immensely satisfying to develop products that impact the lives of millions of students around the globe, and we are eager to have you join our team.</p>
+
+		<h6>RESPONSIBILITIES</h6>
+
+		<li>Brainstorm fun, creative ideas for illustrations
+		<li>Collaborate with the curriculum design team to write illustration specifications that meet educational goals
+		<li>Effectively communicate specifications to illustrators and iterate with them until all project requirements are satisfied
+		<li>Ensure illustrations meet IXL’s aesthetic, educational, and technical requirements
+		<li>Collaborate with engineers to determine SVG file formatting guidelines
+		<li>Occasionally edit SVG files; no prior experience editing SVGs is necessary, and training will be provided
+		<li>Manage and track multiple illustration projects simultaneously
+		<li>Successfully deliver high quality illustrations on-time
+		<li>Assist in hiring and training contract illustrators
+		<li>Pitch in with other UI tasks as needed; collaborate with visual designers to create new UI elements, style guides, and brand guidelines
+
+		<h6>QUALIFICATIONS</h6>
+		<li>BA/BS
+		<li>Creative mindset with a strong design aesthetic
+		<li>Insight into what makes things fun
+		<li>Strong communication skills
+		<li>Proven track record of excellent project management and strong organizational skills
+		<li>Experience with children ages 4-11
+		<li>Ability to provide effective feedback to illustrators; good awareness of when to encourage creative freedom and when to provide specific design direction
+		<li>Proficiency with Adobe Illustrator and Photoshop
+		<li>Understanding of fundamental visual design principles and basic illustration techniques
+		<li>Willingness to learn how to edit and process vector files in a text editor and terminal
+		<li>Highly self-motivated with a strong attention to detail
+		<li>Knowledge of HTML/CSS; additional programming experience is a plus
+		<li>Ability to quickly convey ideas through sketches is a plus
+		<li>Interest or experience in K-12 math, English language arts, science, or social studies education is a plus
+		<li>Experience managing projects with off-site contractors is a plus
+		";
+
+		$copy="
+		<p>
+			Hi! Having just left a great education startup and really enjoying the experience, I wanted to keep exploring this path. I want to continue to pursue a career which allows me to work in the intersection between design and art. With my whimsical nature and years of creative experience, I believe I can be a valuable addition to this team.
+		</p>
+		<p>
+			I've linked to a few projects below which show proven results in illustration and management.
+		</p>
+		";
+
+		// $closing=" ";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Creation of 2,034 Lesson and Project Covers.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"NextLesson InterestID",
+				"type"=>"jpg",
+				"desc"=>"UI/UX and creation of 3,831 icons.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Interactive Glossary",
+				"type"=>"jpg",
+				"desc" => "Visuals for glossary terms.",
+			),
+			array(
+				"path"=>"indiginauts",
+				"name"=>"Indiginauts",
+				"type"=>"jpg",
+				"desc"=>"Point 'n' click adventure game. Game concept/design, art, and UI.",
+			),
+			array(
+				"path"=>"color-chameleon",
+				"name"=>"Color Chameleon",
+				"type"=>"jpg",
+				"desc"=>"Game concept for a runner.",
+			),
+			array(
+				"path"=>"storymaps",
+				"name"=>"StoryMaps",
+				"type"=>"jpg",
+				"desc"=>"Hand-drawn illustrations for a story building app.",
+			),
+		);
+
+		$other = "
+		<hr class='separator'>
+
+		<h5>Bonus</h5>
+		<p>I've spread my love of drawing with doodle challenges to my coworkers at Pok&eacute;mon and NextLesson.</p>
+		<img class='scale-with-grid' src='img/doodles/doodle-wall-2.jpg' alt='Doodle Wall'>
+		<p class='caption'>Facilitated regular doodle practice for all employees and frequent visitors.</p>
+
+		<img class='scale-with-grid' src='img/doodles/doodle-wall-1.jpg' alt='Doodle Wall'>
+		<p class='caption'>Close up of cartoon characters drawn from memory.</p>
+
+		<img class='scale-with-grid' src='img/doodles/pokemon-2.jpg' alt='Pokemon From Memory'>
+		<p class='caption'>With the popularity of Pokemon Go, it was perfect to revisit this classic challenge.</p>
+		";
+	break;
+
+	// QUORA - STAFF PRODUCT DESIGNER
+	case '12121':
+		$originaljobposting="https://www.quora.com/careers/staff_product_designer";
+		$logo="https://upload.wikimedia.org/wikipedia/commons/9/91/Quora_logo_2015.svg";
+		$jobTitle="Staff Product Designer";
+		$company="Quora";
+		$date="January 31, 2017";
+		// $name="";
+		$email="";
+		$slider="";
+		$hiremepage = "http://rayuen.com/hire-me?id=12121";
+		// $resume = "img/ray_yuen_resume.pdf";
+
+		// $job_details = $Parsedown->text("/jobs/quora-staff-product-designer.md");
+		$job_details = "
+<p>The vast majority of knowledge —from theories to stories, facts to opinions, politics to painting, cooking to coding, etymology to raw experience— isn't online. When it is, it's scattered across social networks, buried in forums, languishing on unknown blogs, or hidden behind journal paywalls. Typical Internet users struggle to know what's true, relevant, or useful. Worse: most of them never share their knowledge, knowledge which could help others live better, happier, more fulfilling lives.</p>
+
+<p>Our mission is to create a repository for all human knowledge, and to do that, we have to design a system that rewards people for sharing knowledge, makes discovering relevant knowledge easy, and learns over time what's credible and interesting for each user. It's a complex social systems problem, so holistic product design has always been a critical function at Quora. Design reports directly to the CEO and is deeply involved in product strategy, and we utilize a broader spectrum of skills than do most other companies: from psychology, urban planning, game design, and economics through UI / IxD / UX to typography, and much, much more, a diverse array of approaches and skills —and a diverse team— help us craft a product we intend to be truly global in impact.</p>
+
+<p>Our company culture informs how we structure our design roles. We value care, rigor, self-awareness, candor, and holism, so designers at Quora must be autonomously responsible, pragmatic, falsification-oriented, communicative, and empathetic, and to achieve the level of independence required to drive product, front-end technical skills are required. Quora exists today on the web, mobile, and voice-interaction platforms like Alexa and Google Home, and Product Designers work across all these surfaces and at many depths: taking on projects from features to interactions, ranking to UI, internationalization to moderation systems.</p>
+
+<p>As a Staff Product Designer, your expertise and impact will make you a leader within the design team and the company as a whole. You'll be expected to influence product strategy, design processes and practices, and how other designers approach their projects.</p>
+
+<p>If you're interested in democratizing access to knowledge and are looking for autonomy and impact, we'd love to talk to you.
+</p>
+
+<h6>Responsibilities:</h6>
+<li>Become a leader within the design team and company as a whole by leveraging your perspective and expertise to improve the output of those around you
+<li>Work on a product team focused on a major, user-facing area of Quora. Identify high-impact opportunities, design features in pursuit of goals, and explain the rationale for your decisions.
+<li>Collaborate with engineers to define features and functionality, with other designers for feedback and critique, and with data scientists and user researchers to evaluate the impact of your work.
+<li>Design interactions for new features, applying existing design patterns and creating new ones, across our platforms.
+<li>Build what you design using a custom web framework developed by Quora that makes front-end development easy and efficient.
+<li>Work quickly and effectively on multiple projects. Ship new features, bug fixes, and small improvements multiple times a week.
+
+<h6>Requirements:</h6>
+
+<li>4+ years experience working on successful products that have shipped to users.
+<li>A portfolio demonstrating relevant design capabilities is required.
+<li>Technical competence with front-end technologies: HTML, CSS, JS. Experience with server-side languages like Python is a plus. (Designers at Quora code).
+<li>Ability to think at a high level about a complex, social product, and to clearly explain reasons for new features and changes.
+<li>Experience building clear, effective interactions to accomplish product or business goals.
+<li>Demonstrated visual design skill, especially in the construction of visual hierarchies, and attention to detail on typography, spacing, and color.
+<li>Interest in using data and user research to inform design decisions. Experience with effective A/B testing is a plus.
+<li>The number of years of professional experience you have isn't important to us.
+<li>Interest or experience in designing for ads, mobile, or user growth is a plus.
+<li>We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.";
+
+		$copy="
+		<p>
+			Hi! I am writing in regard to the staff product designer position. Having just been let go from an education startup where I had a really positive experience, I would really like to continue exploring places centered on knowledge and learning.
+		</p>
+		<p>
+			I've linked to three projects below which I think will be relevant to this position.
+		</p>
+		";
+
+		// $closing=" ";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Creation of 2,034 Lesson and Project Covers.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"NextLesson InterestID",
+				"type"=>"jpg",
+				"desc"=>"UI/UX and creation of 3,831 icons.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Interactive Glossary",
+				"type"=>"jpg",
+				"desc" => "Visuals for glossary terms.",
+			),
+		);
+
+		// $other = "";
+	break;
+
+
+	// TWITCH - UI/UX DESIGNER/DEVELOPER
+	case 'updownleftright':
+		$originaljobposting="https://jobs.lever.co/twitch/97767178-c6df-4fb3-9c9d-97e6bdfd2d10";
+		$logo="https://lever-client-logos.s3.amazonaws.com/twitch.png";
+		$jobTitle="UI/UX Designer/Developer";
+		$company="Twitch";
+		$date="January 31, 2017";
+		// $name="";
+		$email="";
+		$slider="";
+		$portrait="about-me/star-trek.gif";
+		$hiremepage = "http://rayuen.com/hire-me?id=updownleftright";
+		// $resume = "img/ray_yuen_resume.pdf";
+
+		$job_details = markdown_convert("jobs/twitch-ui-ux-designer.md");
+
+		$copy="
+		<p>Hey there, as an avid video game player for <em>many</em> years and a designer/illustrator wanting to work more into UI/UX design, this opportunity seems really interesting!
+		</p>
+		<p>With my experience at education startup NextLesson working to build products and UI/UX solutions, I believe I would be a great fit for this position.
+		</p>
+		<p>I've linked to three projects below which I think will be relevant to this position.
+		</p>
+		";
+
+		// $closing=" ";
+		$slider='
+			<div class="sixteen columns">
+				<img class="scale-with-grid" src="img/wired/car.jpg">
+			</div>
+		';
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Creation of 2,034 Lesson and Project Covers.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"NextLesson InterestID",
+				"type"=>"jpg",
+				"desc"=>"UI/UX and creation of 3,831 icons.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Interactive Glossary",
+				"type"=>"jpg",
+				"desc" => "Visuals for glossary terms.",
+			),
+		);
+
+		// $other = "";
+	break;
+
 
 }
 
