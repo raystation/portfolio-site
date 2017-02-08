@@ -3248,7 +3248,7 @@ case 'ixl-illustration-coordinator':
 		$jobTitle="Illustrator/Designer - Cultural Moments";
 		$logo="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png";
 		$date="February 6, 2017";
-		// $name="";
+		// $name="Ray Yuen";
 		$email="";
 		$slider="";
 		$portrait="GIFS/me-vector.jpg";
@@ -3258,7 +3258,7 @@ case 'ixl-illustration-coordinator':
 		$job_details = markdown_convert("jobs/facebook-illustrator-designer-messenger.md");
 
 		$copy="
-		<p>Hey there, as an avid video game player for <em>many</em> years and a designer/illustrator wanting to work more into UI/UX design, this opportunity seems really interesting!
+		<p>Hey there, as an avid<span class='tooltip' title='I was there when Mario vs. Sonic was serious'>*</span> video game player for <em>many</em> years and a designer/illustrator wanting to work more into UI/UX design, this opportunity seems really interesting!
 		</p>
 		<p>With my experience at education startup NextLesson working to build products and UI/UX solutions, I believe I would be a great fit for this position.
 		</p>

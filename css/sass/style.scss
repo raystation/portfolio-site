@@ -63,6 +63,16 @@ $mobile-portrait: "only screen and (max-width: 479px)";
 	.#{$color}	{ background-color: #{$color}; }
 }
 
+@mixin underline($stroke:1,$color:$link-color) {
+    border-bottom: $stroke solid rgba($color, 0.25);
+	@include transition( all 0.25s ease-in-out );
+    &:hover {
+		@include transition( all 0.25s ease-in-out );
+    	border-bottom: $stroke solid rgba($color, 0.5);
+    }
+}
+// .box { @include border-radius(10px); }
+
 /* # SITE STYLES
 ================================================== */
 
@@ -442,6 +452,64 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 			margin-top: 1em;
 			font-weight:900;
 			font-size: 120%;
+		}
+	}
+	.landing-page {
+		font-size: 22px;
+		// color: lighten($txt-color,30%);
+		line-height: $line-height;
+		a:link, a:visited {
+			&:hover {
+				// @include underline(3px,$primary-color);
+			}
+			background-color: #F5F8FA;
+			color: $primary-color;
+		}
+		p {
+			// max-width: 80%;
+		}
+		h1 {
+			font-size: 32px;
+			margin-bottom: 2em;
+		}
+		h2.heading {
+			// margin-bottom: 4em;
+			// font-family: Georgia, serif;
+			font-weight: 900;
+			// font-style: italic;
+			font-size: 32px;
+			line-height: 1.5em;
+			.job-title {}
+		}
+		img {
+		  // float: left;
+		  display: block;
+		  margin-bottom: 8px;
+		}
+		.date {
+			margin-top: 70px;
+			// font-family: courier;
+			// color: lighten($txt-color,20%);
+			// text-align: right;
+		}
+		.tooltip {
+			color: $link-color;
+			// margin-right: -4px;
+			// font-style: italic;
+			// background-color: #F5F8FA;
+			// padding: 0 15px;
+		}
+		ul.skills {
+			text-align: center;
+			li {
+				display: inline-block;
+				background-color: #E1E8ED;
+				margin-right: 15px;
+				padding: 2px 15px;
+				border-radius: 14px;
+				margin-bottom: 0.5em;
+				// line-height: 1em;
+			}
 		}
 	}
 }
