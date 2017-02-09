@@ -9,6 +9,14 @@ function downcasespace($string) {
 	$string = strtolower($string);
 	return $string;
 }
+function markdown_exist($filename){
+	if ( file_exists($filename) ) {
+		$copy = markdown_convert( $filename );
+		return $copy;
+	} else {
+		return NULL;
+	}
+}
 
 switch ( $id ) {
 
@@ -3187,62 +3195,8 @@ case 'ixl-illustration-coordinator':
 	break;
 
 	// FACEBOOK - ILLUSTRATOR/DESIGNER - CULTURAL MOMENTS
-	case 'facebook-illustrator-designer-messenger':
-		$originaljobposting="https://www.facebook.com/careers/jobs/a0I1200000JXv61EAD/";
-		$company="Facebook";
-		$jobTitle="UI/UX Designer/Developer";
-		$logo="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png";
-		$date="February 6, 2017";
-		// $name="";
-		$email="";
-		$slider="";
-		$portrait="GIFS/me-vector.jpg";
-		$hiremepage = "http://rayuen.com/facebook-illustrator-designer-messenger";
-		// $resume = "img/ray_yuen_resume.pdf";
-
-		$job_details = markdown_convert("jobs/facebook-illustrator-designer-messenger.md");
-
-		$copy="
-		<p>Hey there, as an avid video game player for <em>many</em> years and a designer/illustrator wanting to work more into UI/UX design, this opportunity seems really interesting!
-		</p>
-		<p>With my experience at education startup NextLesson working to build products and UI/UX solutions, I believe I would be a great fit for this position.
-		</p>
-		<p>I've linked to three projects below which I think will be relevant to this position.
-		</p>
-		";
-
-		// $closing=" ";
-		// $slider='
-		// 	<div class="sixteen columns">
-		// 		<img class="scale-with-grid" src="img/wired/car.jpg">
-		// 	</div>
-		// ';
-
-		$sample_projects_array = array(
-			array(
-				"path"=>"nextlesson-covers",
-				"name"=>"NextLesson Covers",
-				"type"=>"jpg",
-				"desc"=>"Creation of 2,034 Lesson and Project Covers.",
-			),
-			array(
-				"path"=>"nextlesson-interestid",
-				"name"=>"NextLesson InterestID",
-				"type"=>"jpg",
-				"desc"=>"UI/UX and creation of 3,831 icons.",
-			),
-			array(
-				"path"=>"nextlesson-glossary",
-				"name"=>"NextLesson Interactive Glossary",
-				"type"=>"jpg",
-				"desc" => "Visuals for glossary terms.",
-			),
-		);
-
-		// $other = "";
-	break;
-	// FACEBOOK - ILLUSTRATOR/DESIGNER - CULTURAL MOMENTS
 	case 'facebook-illustrator-designer-cultural-moments':
+		$short_name = "facebook-illustrator-designer-cultural-moments";
 		$originaljobposting="https://www.facebook.com/careers/jobs/a0I1200000JXv61EAD/";
 		$company="Facebook";
 		$jobTitle="Illustrator/Designer - Cultural Moments";
@@ -3255,16 +3209,8 @@ case 'ixl-illustration-coordinator':
 		$hiremepage = "http://rayuen.com/facebook-illustrator-designer-cultural-moments";
 		// $resume = "img/ray_yuen_resume.pdf";
 
-		$job_details = markdown_convert("jobs/facebook-illustrator-designer-messenger.md");
-
-		$copy="
-		<p>Hey there, as an avid<span class='tooltip' title='I was there when Mario vs. Sonic was serious'>*</span> video game player for <em>many</em> years and a designer/illustrator wanting to work more into UI/UX design, this opportunity seems really interesting!
-		</p>
-		<p>With my experience at education startup NextLesson working to build products and UI/UX solutions, I believe I would be a great fit for this position.
-		</p>
-		<p>I've linked to three projects below which I think will be relevant to this position.
-		</p>
-		";
+		$job_details = markdown_convert("jobs/$short_name".".md");
+		$copy = markdown_convert("jobs/$short_name-letter".".md");
 
 		// $closing=" ";
 		// $slider='
@@ -3278,13 +3224,13 @@ case 'ixl-illustration-coordinator':
 				"path"=>"nextlesson-covers",
 				"name"=>"NextLesson Covers",
 				"type"=>"jpg",
-				"desc"=>"Creation of 2,034 Lesson and Project Covers.",
+				"desc"=>"Creation of Lesson and Project Covers.",
 			),
 			array(
 				"path"=>"nextlesson-interestid",
 				"name"=>"NextLesson InterestID",
 				"type"=>"jpg",
-				"desc"=>"UI/UX and creation of 3,831 icons.",
+				"desc"=>"UI/UX and creation of icons.",
 			),
 			array(
 				"path"=>"nextlesson-glossary",
@@ -3299,6 +3245,7 @@ case 'ixl-illustration-coordinator':
 
 	// FACEBOOK - ILLUSTRATOR/DESIGNER - MESSENGER
 	case 'facebook-illustrator-designer-messenger':
+		$short_name = "facebook-illustrator-designer-messenger";
 		$originaljobposting="https://www.facebook.com/careers/jobs/a0I1200000JXv4nEAD/";
 		$company="Facebook";
 		$jobTitle="Illustrator/Designer - Messenger";
@@ -3312,6 +3259,8 @@ case 'ixl-illustration-coordinator':
 		// $resume = "img/ray_yuen_resume.pdf";
 
 		$job_details = markdown_convert("jobs/facebook-illustrator-designer-messenger.md");
+		$job_details = markdown_exist("jobs/facebook-illustrator-designer-messenger.md");
+		// $job_details = markdown_convert("jobs/facebook-illustrator-designer-messenger.md");
 
 		$copy="
 		<p>Hey there, as an avid video game player for <em>many</em> years and a designer/illustrator wanting to work more into UI/UX design, this opportunity seems really interesting!

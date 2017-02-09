@@ -22,7 +22,7 @@
 // VARIABLES ==================================================
 $primary-color: #0072CE;
 // $bkg-color: LightSteelBlue;
-$bkg-color: lighten(whitesmoke,5%);
+$bkg-color: lighten(#F5F8FA,5%);
 $txt-color: lighten(black,30%);
 
 $link-color: $primary-color;
@@ -34,8 +34,8 @@ $textbox-color: LightSkyBlue;
 $textbox-text-color: white;
 $textbox-link-color: $textbox-text-color;
 
-$footer-color: darken($bkg-color,7%);
-$footer-text-color: darken($footer-color,40%);
+$footer-color: darken($bkg-color,4%);
+$footer-text-color: darken($footer-color,50%);
 
 $font-size: 14pt;
 $line-height: 1.45em;
@@ -50,12 +50,12 @@ $mobile: "only screen and (max-width: 767px)";
 $mobile-landscape: "only screen and (min-width: 480px) and (max-width: 767px)";
 $mobile-portrait: "only screen and (max-width: 479px)";
 
-@media #{$desktop-large} 		{ .mobile {display:none;} .desktop {display:inherit;} }
-@media #{$desktop} 					{ .mobile {display:none;} .desktop {display:inherit;} }
-@media #{$tablet-portrait} 	{ .mobile {display:none;} .desktop {display:inherit;} }
-@media #{$mobile} 					{ .mobile {display:inherit;} .desktop {display:none;} }
-@media #{$mobile-landscape} { .mobile {display:inherit;} .desktop {display:none;} }
-@media #{$mobile-portrait} 	{ .mobile {display:inherit;} .desktop {display:none;} }
+@media #{$desktop-large} 			{ .mobile {display:none;} 		.desktop {display:inherit;} }
+@media #{$desktop} 					{ .mobile {display:none;} 		.desktop {display:inherit;} }
+@media #{$tablet-portrait} 		{ .mobile {display:none;} 		.desktop {display:inherit;} }
+@media #{$mobile} 					{ .mobile {display:inherit;} 	.desktop {display:none;} }
+@media #{$mobile-landscape} 	{ .mobile {display:inherit;} 	.desktop {display:none;} }
+@media #{$mobile-portrait} 		{ .mobile {display:inherit;} 	.desktop {display:none;} }
 
 
 // MIXIN ==================================================
@@ -63,7 +63,7 @@ $mobile-portrait: "only screen and (max-width: 479px)";
 	.#{$color}	{ background-color: #{$color}; }
 }
 
-@mixin underline($stroke:1,$color:$link-color) {
+@mixin underline($stroke:3px,$color:$link-color) {
     border-bottom: $stroke solid rgba($color, 0.25);
 	@include transition( all 0.25s ease-in-out );
     &:hover {
@@ -456,51 +456,73 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	}
 	.landing-page {
 		font-size: 22px;
-		// color: lighten($txt-color,30%);
-		line-height: $line-height;
-		a:link, a:visited {
-			&:hover {
-				// @include underline(3px,$primary-color);
-			}
-			background-color: #F5F8FA;
-			color: $primary-color;
-		}
+		line-height: 1.5em;
 		p {
-			// max-width: 80%;
+			@media #{$mobile}
+			 {
+				font-size: 20x;
+				line-height: 1.35em;
+			}
+			a:link, a:visited {
+				&:hover {
+					// @include underline(3px,$primary-color);
+				}
+				background-color: #F5F8FA;
+				color: $primary-color;
+			}
+		}
+		h1,h2,h3,h4,h5,h6 {
+			margin-bottom: 1em;
+			// @include underline(3px,$primary-color);
 		}
 		h1 {
 			font-size: 32px;
-			margin-bottom: 2em;
 		}
 		h2.heading {
-			// margin-bottom: 4em;
-			// font-family: Georgia, serif;
 			font-weight: 900;
-			// font-style: italic;
 			font-size: 32px;
 			line-height: 1.5em;
 			.job-title {}
 		}
+		h3 {
+			font-size: 25px;
+		}
 		img {
-		  // float: left;
 		  display: block;
 		  margin-bottom: 8px;
 		}
+		form {
+			display: inline-block;
+		}
+		button {
+			margin-top: 3em;
+			background-color: #24B273;
+			border-radius: 10px;
+			border: 0;
+			border-bottom: 8px solid darken(#24B273,10%);
+			font-size: 20px;
+			padding: 10px 25px;
+			margin-right: 10px;
+			color: white;
+			display: inline-block;
+			position: relative;
+			&:hover {
+				top: 2px;
+				border-width: 6px;
+				background-color: lighten(#24B273,5%);
+			}
+		}
 		.date {
 			margin-top: 70px;
-			// font-family: courier;
-			// color: lighten($txt-color,20%);
-			// text-align: right;
 		}
 		.tooltip {
 			color: $link-color;
-			// margin-right: -4px;
-			// font-style: italic;
-			// background-color: #F5F8FA;
-			// padding: 0 15px;
+		}
+		.sample-projects {
+			margin-top: 2em;
 		}
 		ul.skills {
-			text-align: center;
+			// text-align: center;
 			li {
 				display: inline-block;
 				background-color: #E1E8ED;
@@ -511,7 +533,32 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 				// line-height: 1em;
 			}
 		}
+		.checklist {
+			li {margin-bottom: 0;}
+			@media only screen and (min-width: 800px) {
+				@include column-count(2);
+				@include column-gap(1em);
+			}
+		}
+		.original-job-button-minimal {
+			// margin-top: 5em;
+			display: inline-block;
+			font-size: 16px;
+			color: darken($bkg-color,10%);
+			// @include underline();
+		}
 	}
+}
+.quick-bio {
+	width: 100%;
+	padding: 3em;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f8fa+0,ffffff+46 */
+	background: #f5f8fa; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f5f8fa 0%, #ffffff 46%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #f5f8fa 0%,#ffffff 46%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #f5f8fa 0%,#ffffff 46%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f8fa', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
 }
 
 // $icon-width: 150px;
@@ -544,6 +591,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 
 .original-job-details {
 	color: lighten($txt-color,30%);
+	margin-top: 1em;
 	p,ul,li {font-size: 1rem;}
 	hr,ul,h1,h2,h3,h4,h5,h6 { @include column-span(all); }
 	h1,h2,h3,h4,h5,h6 {
@@ -557,6 +605,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		margin: 2em 0;
 		text-align: center;
 	}
+	line-height: 1.15em;
 	ul {
 		font-weight: 800;
 	}
@@ -768,8 +817,6 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	}
 
 }
-
-
 
 // FOOTER
 // =====================================

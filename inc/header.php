@@ -83,4 +83,4 @@ require_once 'functions.php';
 		</div>
 	</header>
 
-	<div class="container add-bottom opacity-fade">
+	<div class="container main-container add-bottom opacity-fade" >
