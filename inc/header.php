@@ -3,6 +3,7 @@ $meta_description="";
 $footer_add="";
 require_once 'inc/work-info.php';
 require_once 'functions.php';
+$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
@@ -73,8 +74,8 @@ require_once 'functions.php';
 			<nav class="sixteen columns">
 				<div class="title"><a href="./">Ray Yuen</a></div>
 				<ul>
-					<li><a class="<?php if ( $section == "work") { echo "active"; } ;?>" href="work">work</a></li>
-					<li><a class="<?php if ( $section == "about") { echo "active"; } ;?>" href="about">about</a></li>
+					<li><a class="<? if ( $section == "work") { echo "active"; } ;?>" href="work?id=<? echo $id;?>">work</a></li>
+					<li><a class="<? if ( $section == "about") { echo "active"; } ;?>" href="about?id=<? echo $id;?>">about</a></li>
 
 					<?php //<li><a href="projects.php">projects</a></li> ?>
 				</ul>

@@ -1,5 +1,6 @@
 <?
 	$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
+	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
 	$section = "work";
 
 	switch ( $project ) {
@@ -221,6 +222,43 @@
 	}
 
 if ( !isset($title) ) { $title = "Work"; }
+
+// COMING FROM THE JOB LANDING PAGE, THIS WILL GENERATE A SECONDARY NAV BAR ON THE BOTTOM
+if ($id) {
+	include_once "inc/company-info.php";
+	if ($sample_projects_array) {
+		$sample_projects_html="";
+		foreach ($sample_projects_array as $key => $sample_project) {
+
+			$project_number = $key+1;
+
+			if ($sample_project['path'] == $project) {
+				$active_style = "active";
+			} else {
+				$active_style = "";
+			}
+
+			$sample_projects_html.="
+				<a href='work?project=$sample_project[path]&id=$id' class='tooltip $active_style' title='$sample_project[name]'>#$project_number</a>
+			";
+		}
+	}
+	$landing_page_nav = "
+		<div class='back-to-landing-page-menu'>
+			<div class='container'>
+				<div class='twelve columns'>
+					<strong>Highlighted Projects for $company:</strong> $sample_projects_html
+				</div>
+				<div class='four columns' style='text-align:right;'>
+					<a href='./hire-me?id=$id'>&#11013; back to job application</a>
+				</div>
+			</div>
+		</div>
+	";
+} else {
+	$landing_page_nav="";
+}
+
 include('inc/header.php');
 
 // IF THE PROJECT IS SET (VIEWING A PROJECT)
@@ -268,5 +306,7 @@ elseif ($template=="company") {
 else {
 	skeleton_print_thumbnail_4($works,4);
 }
+
+echo $landing_page_nav;
 
 include('inc/footer.php');

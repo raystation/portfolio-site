@@ -4,7 +4,7 @@ RewriteRule ^work$ work.php
 RewriteRule ^about$ about.php
 RewriteRule ^index$ index.php
 RewriteRule ^hire-me$ hire-me.php
-RewriteRule ^resume$ about?id=resume
+RewriteRule ^resume$ about?view=resume
 RewriteRule ^portraits$ work?project=portraits
 RewriteRule ^ringtones$ ringtones.php
 RewriteRule ^today$ today.php
