@@ -514,6 +514,10 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		}
 		.date {
 			margin-top: 70px;
+			a:link, a:visited {
+				background-color: $bkg-color;
+				color: $txt-color;
+			}
 		}
 		.tooltip {
 			color: $link-color;
