@@ -1,6 +1,13 @@
 <?
 	$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
 	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+
+	if ( isset($id) ) {
+		$id_html = "?id=$id";
+	} else {
+		$id_html="";
+	}
+
 	$section = "work";
 
 	switch ( $project ) {
@@ -300,7 +307,7 @@ if ( !isset($template) ) {
 elseif ($template=="company") {
 	  echo "
 	  <div class='container add-top'>
-	  	<div class='sixteen columns add-bottom'><a href='work?id=$id'>&#11013; Back to projects</a></div>
+	  	<div class='sixteen columns add-bottom'><a href='work$id_html'>&#11013; Back to projects</a></div>
 	  </div>";
 }
 else {

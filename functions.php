@@ -344,6 +344,11 @@ function workthumb($num) {
 function skeleton_print_thumbnail_4($array,$project_count=0, $header=false, $vertical=false) {
 
   $id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+  if ( isset($id) ) {
+    $id_html = "?id=$id";
+  } else {
+    $id_html="";
+  }
 
   echo '</div><div class="container portfolio">'."\n";
   global $description;
@@ -377,12 +382,18 @@ function skeleton_print_thumbnail_4($array,$project_count=0, $header=false, $ver
     {
       $thumb = "thumb-default.jpg";
     }
-    $thumbnail_path = "<a href='work?project=$array_item[path]&id=$id' alt='default logo'><img src='img/$thumb' class='scale-with-grid2'></a>";
 
+    if (isset($id)) {
+      $project_path = "work?project=$array_item[path]&id=$id";
+    } else {
+      $project_path = $array_item['path'];
+    }
+
+    $thumbnail = "<a href='$project_path' alt='default logo'><img src='img/$thumb' class='scale-with-grid2'></a>";
 
     echo "
     <div class='four columns'>
-      $thumbnail_path
+      $thumbnail
       <p>$array_item[name]</p>
     </div>
     ";
@@ -400,7 +411,7 @@ function skeleton_print_thumbnail_4($array,$project_count=0, $header=false, $ver
   //adds project link if it's not the index page
   if ( isset($description) ) {
     // echo '<hr>'."\n";
-    echo "<div class='sixteen columns add-bottom'>&#11013; <a class='underline' href='work?id=$id'>Back to all projects</a></div>";
+    echo "<div class='sixteen columns add-bottom'>&#11013; <a class='underline' href='work$id_html'>Back to all projects</a></div>";
   }
   echo "</div>";
 

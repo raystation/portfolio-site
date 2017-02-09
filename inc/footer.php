@@ -1,29 +1,38 @@
 <?
-	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
-	$email_subject = "";
-	$email_text = "";
-	if ( !isset($id)) {
-		$id="";
-		$jobTitle="";
-		$jobTitle="";
-		include_once "inc/lists.php";
-		$email_subject = get_spoilers();
-		$rand = array_rand($email_subject);
-		$email_subject = $email_subject[$rand];
-		$email_subject = get_email_body($email_subject);
-	} else {
+
+$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+if ( isset($id) ) {
+	$id_html = "?id=$id";
+} else {
+	$id_html="";
+}
+
+$email_subject = "";
+$email_text = "";
+if ( !isset($id)) {
+	$id="";
+	$jobTitle="";
+	include_once "inc/lists.php";
+	$email_subject = get_spoilers();
+	$rand = array_rand($email_subject);
+	$email_subject = $email_subject[$rand];
+	$email_subject = get_email_body($email_subject);
+} else {
+	if ( isset($company)) {
+		include_once "inc/company-info.php";
 		$subject = "re: $company - $jobTitle";
 		$email_subject = get_email_body($subject);
-
-		include_once "inc/lists.php";
-		$email_text = get_spoilers();
-		$rand = array_rand($email_text);
-		$email_text = $email_text[$rand];
-		$email_text = get_email_body($email_text);
 	}
 
+	include_once "inc/lists.php";
+	$email_text = get_spoilers();
+	$rand = array_rand($email_text);
+	$email_text = $email_text[$rand];
+	$email_text = get_email_body($email_text);
+}
 
-	// echo $email_text;
+
+// echo $email_text;
 
 ?>
 	</div> <!-- end container -->
@@ -37,9 +46,9 @@
 
 			<div class="four columns add-bottom">
 				<ul>
-					<li><a href="./">home</a>
-					<li><a href="work?id=<? echo $id;?>">work</a>
-					<li><a href="about">about</a>
+					<li><a href="./<? echo $id_html;?>">home</a>
+					<li><a href="work<? echo $id_html;?>">work</a>
+					<li><a href="about<? echo $id_html;?>">about</a>
 				</ul>
 			</div>
 
