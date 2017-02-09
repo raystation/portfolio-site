@@ -300,7 +300,7 @@ if ( !isset($template) ) {
 elseif ($template=="company") {
 	  echo "
 	  <div class='container add-top'>
-	  	<div class='sixteen columns add-bottom'><a href='work'>&#11013; Back to projects</a></div>
+	  	<div class='sixteen columns add-bottom'><a href='work?id=$id'>&#11013; Back to projects</a></div>
 	  </div>";
 }
 else {

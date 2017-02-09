@@ -343,6 +343,8 @@ function workthumb($num) {
 
 function skeleton_print_thumbnail_4($array,$project_count=0, $header=false, $vertical=false) {
 
+  $id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+
   echo '</div><div class="container portfolio">'."\n";
   global $description;
   if ( isset($description) ) {
@@ -365,16 +367,17 @@ function skeleton_print_thumbnail_4($array,$project_count=0, $header=false, $ver
     // looks for thumbnail
     if ( file_exists( "img/$array_item[path]/thumb.jpg" ) ) {
       $thumb = "$array_item[path]/thumb.jpg";
-      $thumbnail_path = "<a href='$array_item[path]' alt='$alt'><img src='img/$thumb' class='scale-with-grid2'></a>";
+      // $thumbnail_path = "<a href='$array_item[path]' alt='$alt'><img src='img/$thumb' class='scale-with-grid2'></a>";
     }
     elseif ( file_exists( "img/$array_item[path]/thumb.svg" ) ) {
       $thumb = "$array_item[path]/thumb.svg";
-      $thumbnail_path = "<a href='$array_item[path]' alt='$alt'><img src='img/$thumb' class='scale-with-grid2'></a>";
+      // $thumbnail_path = "<a href='$array_item[path]' alt='$alt'><img src='img/$thumb' class='scale-with-grid2'></a>";
     }
     else
     {
-      $thumbnail_path = "<a href='$array_item[path]' alt='default logo'><img src='img/thumb-default.jpg' class='scale-with-grid2'></a>";
+      $thumb = "thumb-default.jpg";
     }
+    $thumbnail_path = "<a href='work?project=$array_item[path]&id=$id' alt='default logo'><img src='img/$thumb' class='scale-with-grid2'></a>";
 
 
     echo "
@@ -397,7 +400,7 @@ function skeleton_print_thumbnail_4($array,$project_count=0, $header=false, $ver
   //adds project link if it's not the index page
   if ( isset($description) ) {
     // echo '<hr>'."\n";
-    echo "<div class='sixteen columns add-bottom'>&#11013; <a class='underline' href='work'>Back to all projects</a></div>";
+    echo "<div class='sixteen columns add-bottom'>&#11013; <a class='underline' href='work?id=$id'>Back to all projects</a></div>";
   }
   echo "</div>";
 
@@ -564,4 +567,9 @@ function skeleton_html($columns=1,$path,$folder="additional_img"){
     }
   }
   return $additional_img_html;
+}
+function get_email_body($text){
+  $email_text = replace_string( $text, " ", "%20");
+  $email_text = replace_string( $email_text, "'", "%27");
+  return $email_text;
 }

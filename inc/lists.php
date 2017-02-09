@@ -496,3 +496,19 @@ function get_work_links(){
 	);
 	return $a;
 }
+
+function get_spoilers(){
+	$array=array(
+		"I am Batman.",
+		"He was a ghost the whole time.",
+		"They were on Earth the whole time.",
+		"He was that guy's father.",
+		"The whole thing was a dream.",
+		"They were toys the whole time.",
+		"Turns out we were the bad guys the whole time.",
+		"Ned's dead.",
+		"They needed a bigger boat.",
+		"That person was imaginary the whole time.",
+	);
+	return $array;
+}

@@ -1,3 +1,31 @@
+<?
+	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+	$email_subject = "";
+	$email_text = "";
+	if ( !isset($id)) {
+		$id="";
+		$jobTitle="";
+		$jobTitle="";
+		include_once "inc/lists.php";
+		$email_subject = get_spoilers();
+		$rand = array_rand($email_subject);
+		$email_subject = $email_subject[$rand];
+		$email_subject = get_email_body($email_subject);
+	} else {
+		$subject = "re: $company - $jobTitle";
+		$email_subject = get_email_body($subject);
+
+		include_once "inc/lists.php";
+		$email_text = get_spoilers();
+		$rand = array_rand($email_text);
+		$email_text = $email_text[$rand];
+		$email_text = get_email_body($email_text);
+	}
+
+
+	// echo $email_text;
+
+?>
 	</div> <!-- end container -->
 
 	<!-- Footer
@@ -10,14 +38,14 @@
 			<div class="four columns add-bottom">
 				<ul>
 					<li><a href="./">home</a>
-					<li><a href="work">work</a>
+					<li><a href="work?id=<? echo $id;?>">work</a>
 					<li><a href="about">about</a>
 				</ul>
 			</div>
 
 			<div class="four columns add-bottom">
 				<ul>
-					<li><a href="mailto:rayuen@gmail.com?subject=">email</a>
+					<li><a href="mailto:rayuen@gmail.com?body=<? echo $email_text;?>&subject=<? echo $email_subject;?>">email</a>
 				</ul>
 			</div>
 
