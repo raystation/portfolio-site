@@ -82,8 +82,16 @@
 					<ul>
 				";
 				foreach ($related_projects_array as $key => $related_project) {
+
+
+					if ( isset($id) ) {
+						$project_path =  "work?id=$related_project[path]&id=$id";
+					} else {
+						$project_path = $related_project['path'];
+					}
+
 					if ($related_project['name'] !== $title) {
-						echo "<li><a href='$related_project[path]'>$related_project[name]</a>";
+						echo "<li><a href='$project_path'>$related_project[name]</a>";
 					}
 				}
 				echo "</ul></div>";

@@ -3069,39 +3069,7 @@ case 'ixl-illustration-coordinator':
 		// $resume = "img/ray_yuen_resume.pdf";
 
 		// $job_details = $Parsedown->text("/jobs/quora-staff-product-designer.md");
-		$job_details = "
-<p>The vast majority of knowledge —from theories to stories, facts to opinions, politics to painting, cooking to coding, etymology to raw experience— isn't online. When it is, it's scattered across social networks, buried in forums, languishing on unknown blogs, or hidden behind journal paywalls. Typical Internet users struggle to know what's true, relevant, or useful. Worse: most of them never share their knowledge, knowledge which could help others live better, happier, more fulfilling lives.</p>
-
-<p>Our mission is to create a repository for all human knowledge, and to do that, we have to design a system that rewards people for sharing knowledge, makes discovering relevant knowledge easy, and learns over time what's credible and interesting for each user. It's a complex social systems problem, so holistic product design has always been a critical function at Quora. Design reports directly to the CEO and is deeply involved in product strategy, and we utilize a broader spectrum of skills than do most other companies: from psychology, urban planning, game design, and economics through UI / IxD / UX to typography, and much, much more, a diverse array of approaches and skills —and a diverse team— help us craft a product we intend to be truly global in impact.</p>
-
-<p>Our company culture informs how we structure our design roles. We value care, rigor, self-awareness, candor, and holism, so designers at Quora must be autonomously responsible, pragmatic, falsification-oriented, communicative, and empathetic, and to achieve the level of independence required to drive product, front-end technical skills are required. Quora exists today on the web, mobile, and voice-interaction platforms like Alexa and Google Home, and Product Designers work across all these surfaces and at many depths: taking on projects from features to interactions, ranking to UI, internationalization to moderation systems.</p>
-
-<p>As a Staff Product Designer, your expertise and impact will make you a leader within the design team and the company as a whole. You'll be expected to influence product strategy, design processes and practices, and how other designers approach their projects.</p>
-
-<p>If you're interested in democratizing access to knowledge and are looking for autonomy and impact, we'd love to talk to you.
-</p>
-
-<h6>Responsibilities:</h6>
-<li>Become a leader within the design team and company as a whole by leveraging your perspective and expertise to improve the output of those around you
-<li>Work on a product team focused on a major, user-facing area of Quora. Identify high-impact opportunities, design features in pursuit of goals, and explain the rationale for your decisions.
-<li>Collaborate with engineers to define features and functionality, with other designers for feedback and critique, and with data scientists and user researchers to evaluate the impact of your work.
-<li>Design interactions for new features, applying existing design patterns and creating new ones, across our platforms.
-<li>Build what you design using a custom web framework developed by Quora that makes front-end development easy and efficient.
-<li>Work quickly and effectively on multiple projects. Ship new features, bug fixes, and small improvements multiple times a week.
-
-<h6>Requirements:</h6>
-
-<li>4+ years experience working on successful products that have shipped to users.
-<li>A portfolio demonstrating relevant design capabilities is required.
-<li>Technical competence with front-end technologies: HTML, CSS, JS. Experience with server-side languages like Python is a plus. (Designers at Quora code).
-<li>Ability to think at a high level about a complex, social product, and to clearly explain reasons for new features and changes.
-<li>Experience building clear, effective interactions to accomplish product or business goals.
-<li>Demonstrated visual design skill, especially in the construction of visual hierarchies, and attention to detail on typography, spacing, and color.
-<li>Interest in using data and user research to inform design decisions. Experience with effective A/B testing is a plus.
-<li>The number of years of professional experience you have isn't important to us.
-<li>Interest or experience in designing for ads, mobile, or user growth is a plus.
-<li>We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.";
-
+		$job_details = markdown_convert("jobs/quora-staff-product-designer.md");
 		$copy="
 		<p>
 			Hi! I am writing in regard to the staff product designer position. Having just been let go from an education startup where I had a really positive experience, I would really like to continue exploring places centered on knowledge and learning.
@@ -3323,6 +3291,73 @@ case 'ixl-illustration-coordinator':
 				"type"=>"jpg",
 				"desc"=>"Hand-drawn illustrations for a story building app.",
 			),
+		);
+
+		// $other = "";
+	break;
+
+	// SENIOR UI/UX DESIGNER: ADS & PROMOTIONS PLATFORM
+	case "twitch-senior-ui-ux-designer-ads-and-promotions-platform":
+		$short_name = "twitch-senior-ui-ux-designer-ads-and-promotions-platform";
+		$originaljobposting="https://jobs.lever.co/twitch/761145e5-ddb5-4501-b939-91279c979695";
+		$company="Twitch";
+		$jobTitle="Senior UI/UX Designer: Ads & Promotions Platform";
+		$logo="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png";
+		$date="February 15, 2017";
+		// $name="Ray Yuen";
+		$email="";
+		$slider="";
+		$portrait="GIFS/me-pixel.gif";
+		$hiremepage = "http://rayuen.com/twitch-senior-ui-ux-designer-ads-and-promotions-platform";
+		// $resume = "img/ray_yuen_resume.pdf";
+
+		$job_details = markdown_convert("jobs/$short_name".".md");
+		$copy = markdown_convert("jobs/$short_name-letter".".md");
+
+		// $closing=" ";
+		// $slider='
+		// 	<div class="sixteen columns">
+		// 		<img class="scale-with-grid" src="img/wired/car.jpg">
+		// 	</div>
+		// ';
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Creation of Lesson and Project Covers.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"NextLesson InterestID",
+				"type"=>"jpg",
+				"desc"=>"UI/UX and creation of icons.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Interactive Glossary",
+				"type"=>"jpg",
+				"desc" => "Visuals for glossary terms.",
+			),
+			// array(
+			// 	"path"=>"indiginauts",
+			// 	"name"=>"Indiginauts",
+			// 	"type"=>"jpg",
+			// 	"desc"=>"Point 'n' click adventure game. Game concept/design, art, and UI.",
+			// ),
+			// array(
+			// 	"path"=>"color-chameleon",
+			// 	"name"=>"Color Chameleon",
+			// 	"type"=>"jpg",
+			// 	"desc"=>"Game concept for a runner.",
+			// ),
+			// array(
+			// 	"path"=>"storymaps",
+			// 	"name"=>"StoryMaps",
+			// 	"type"=>"jpg",
+			// 	"desc"=>"Hand-drawn illustrations for a story building app.",
+			// ),
 		);
 
 		// $other = "";

@@ -354,7 +354,6 @@ function skeleton_print_thumbnail_4($array,$project_count=0, $header=false, $ver
   global $description;
   if ( isset($description) ) {
     echo "<div class='sixteen columns add-bottom add-top'><hr><h2>Recent Projects</h2></div>";
-
   }
 
   // populates page with thumbnails from $work
@@ -423,6 +422,8 @@ function skeleton_print_page_thumbnail_4($array) {
   echo "</div><div class='container portfolio'>";
   // populates page with thumbnails from $work
   $count=1;
+  $id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+
   foreach ( $array as $array_item ) {
 
     // checks for thumbnails
@@ -437,9 +438,15 @@ function skeleton_print_page_thumbnail_4($array) {
       $thumbnail_img = "img/thumb-default.jpg";
     }
     $alt_text = html_entity_decode($array_item['name']);
-    // echo "\t".'<div class="four columns"><a href="'.$array_item["path"].'" alt="'.html_entity_decode($array_item["name"]).'"><img class="scale-with-grid" src='$thumbnail_img'></a><p>'.$array_item["name"].'</p></div>'."\n";
+
+    if (isset($id)) {
+      $project_path = "work?project=$array_item[path]&id=$id";
+    } else {
+      $project_path = $array_item['path'];
+    }
+
     echo "
-    \t<div class='four columns'><a href='$array_item[path]' alt='$alt_text'>
+    \t<div class='four columns'><a href='$project_path' alt='$alt_text'>
         <img class='scale-with-grid' src='$thumbnail_img'></a>
         <p>$array_item[name]</p>
       </div>\n";

@@ -576,7 +576,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 			}
 		}
 		.original-job-button-minimal {
-			// margin-top: 5em;
+			margin-top: 2em;
 			display: inline-block;
 			font-size: 16px;
 			color: darken($bkg-color,10%);
@@ -614,6 +614,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	padding: 0.25em;
 	margin: 0 auto;
 	margin-bottom: 20px;
+	// margin-top: 20px !important;
 	border-radius: 0.5em;
 	width: 200px;
 	text-align: center;
@@ -636,6 +637,11 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	h2,h3,h4,h5,h6 {
 		color: hsla(0, 0%, 40%, 1)
 	}
+	em {
+		// text-decoration: underline;
+		font-style: normal;
+		background-color: yellow;
+	}
 	h6,hr {
 		margin: 2em 0;
 		text-align: center;
@@ -643,6 +649,10 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	line-height: 1.15em;
 	ul {
 		font-weight: 800;
+		li {
+			 list-style-type: circle;
+			 line-height: 1.2em;
+		}
 	}
 	@media only screen and (min-width: 800px) {
 		@include column-count(2);
