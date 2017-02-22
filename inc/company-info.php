@@ -1,4 +1,5 @@
 <?
+$p_break = "</p><p>";
 
 // TODO: include Markdown parser
 require_once 'functions.php';
@@ -3314,6 +3315,7 @@ case 'ixl-illustration-coordinator':
 		$job_details = markdown_convert("jobs/$short_name".".md");
 		$copy = markdown_convert("jobs/$short_name-letter".".md");
 
+		//
 		// $closing=" ";
 		// $slider='
 		// 	<div class="sixteen columns">
@@ -3333,6 +3335,76 @@ case 'ixl-illustration-coordinator':
 				"name"=>"NextLesson InterestID",
 				"type"=>"jpg",
 				"desc"=>"UI/UX and creation of icons.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Interactive Glossary",
+				"type"=>"jpg",
+				"desc" => "Visuals for glossary terms.",
+			),
+			// array(
+			// 	"path"=>"indiginauts",
+			// 	"name"=>"Indiginauts",
+			// 	"type"=>"jpg",
+			// 	"desc"=>"Point 'n' click adventure game. Game concept/design, art, and UI.",
+			// ),
+			// array(
+			// 	"path"=>"color-chameleon",
+			// 	"name"=>"Color Chameleon",
+			// 	"type"=>"jpg",
+			// 	"desc"=>"Game concept for a runner.",
+			// ),
+			// array(
+			// 	"path"=>"storymaps",
+			// 	"name"=>"StoryMaps",
+			// 	"type"=>"jpg",
+			// 	"desc"=>"Hand-drawn illustrations for a story building app.",
+			// ),
+		);
+
+	// HUMBLE-BUNDLE-SENIOR-DESIGNER
+	case "humble-bundle-senior-designer":
+		$short_name = "humble-bundle-senior-designer";
+		$originaljobposting="https://boards.greenhouse.io/humblebundle/jobs/58978?gh_src=p7budj";
+		$company="Humble Bundle";
+		$jobTitle="Senior Designer";
+		$date="February 21, 2017";
+		$name="Dave Johnson";
+		$email="dave@johnsonjobs.com";
+		$portrait="GIFS/me-pixel.gif";
+		$hiremepage = "http://rayuen.com/$short_name";
+
+		$slider="";
+		// $resume = "img/ray_yuen_resume.pdf";
+
+		$job_details = markdown_convert("jobs/$short_name".".md");
+		// $copy = markdown_convert("jobs/$short_name-letter".".md");
+		$copy = "
+			Thanks for sending that note along. You've found me at a very fortuitous time as I am on the job hunt! Having bought bundles in the past<span class='tooltip' title='2010. I picked up World of Goo and Braid...wow, that was a while ago...'>*</span> and hearing about your recent charity work, I am very interested to learn more about this opportunity.
+			$p_break
+			I'm linking to three projects below that should give you a better understanding of me. The first project, InterestID, is a tool that allows K12 students to <em>rate</em> interests<span class='tooltip' title='allowing teachers to have a better understanding of which lessons might interest their students more'>*</span>, like movies and sports.
+		";
+
+		//
+		// $closing=" ";
+		// $slider='
+		// 	<div class="sixteen columns">
+		// 		<img class="scale-with-grid" src="img/wired/car.jpg">
+		// 	</div>
+		// ';
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"NextLesson InterestID",
+				"type"=>"jpg",
+				"desc"=>"UI/UX and creation of icons.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Creation of Lesson and Project Covers.",
 			),
 			array(
 				"path"=>"nextlesson-glossary",
