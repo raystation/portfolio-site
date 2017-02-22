@@ -10,6 +10,12 @@ RewriteRule ^ringtones$ ringtones.php
 RewriteRule ^today$ today.php
 RewriteRule ^jobs$ about?id=jobs
 
+RewriteRule ^illustration$ work?f=illustration
+RewriteRule ^ui-ux$ work?f=ui-ux
+RewriteRule ^web-design$ work?f=web-design
+RewriteRule ^print-design$ work?f=print-design
+RewriteRule ^places-i-worked$ work?f=places-i-worked
+
 RewriteRule ^pokemon$ work?project=pokemon
 RewriteRule ^feature-shop$ work?project=feature-shop
 RewriteRule ^arceus$ work?project=arceus

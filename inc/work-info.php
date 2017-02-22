@@ -1,99 +1,118 @@
 <?
 
 $works = array(
-	array( "name" => "NextLesson","path" => "nextlesson", "thumb" => "jpg" ),
-	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "thumb" => "jpg" ),
-	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
-	// array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing", "thumb" => "jpg" ),
-	array( "name" => "NextLesson Glossary Images","path" => "nextlesson-glossary", "thumb" => "jpg" ),
-	array( "name" => "#Inktober2016","path" => "inktober-2016", "thumb" => "jpg" ),
-	// array( "name" => "NextLesson Interactive","path" => "nextlesson-interactive", "thumb" => "jpg" ),
-	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars", "thumb" => "jpg" ),
-	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library", "thumb" => "jpg" ),
-	// array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-browse", "thumb" => "jpg" ),
-	array( "name" => "Holiday Card 2014","path" => "holiday-2014", "thumb" => "jpg" ),
-	array( "name" => "Adelle Marcero Portfolio Site","path" => "adelle-marcero", "thumb" => "jpg" ),
-	array( "name" => "Suspended Belief Studios","path" => "suspended-belief-studios", "thumb" => "jpg" ),
-	array( "name" => "Pok&eacute;mon","path" => "pokemon","thumb" => "svg" ),
-	array( "name" => "Wired","path" => "wired", "thumb" => "jpg" ),
-	array( "name" => "Indiginauts", "path" => "indiginauts", "thumb" => "jpg" ),
-	array( "name" => "LesConcierges","path" => "lesconcierges", "thumb" => "jpg" ),
-	array( "name" => "The 3", "path" => "the3", "thumb" => "svg" ),
-	array( "name" => "Museyon Guides", "path" => "museyon-guides", "thumb" => "svg" ),
-	array( "name" => "Abriendo Puertas / Opening&nbsp;Doors", "path" => "abriendo-puertas",	"thumb" => "jpg" ),
-	array( "name" => "Project Animore", "path" => "project-animore", "thumb" => "jpg" ),
-	array( "name" => "100 Principles of Game&nbsp;Design","path" => "100-principles-of-game-design","thumb" => "jpg" ),
-	array( "name" => "Monkey Mo, Monkey&nbsp;Go!","path" => "monkey-mo","thumb" => "jpg" ),
-	array( "name" => "Scavenger Hunt","path" => "scavenger-hunt","thumb" => "jpg" ),
-	array( "name" => "Color Chameleon","path" => "color-chameleon","thumb" => "jpg" ),
-	array( "name" => "Chronicles of Old New&nbsp;York","path" => "chronicles-of-old-new-york","thumb" => "jpg" ),
-	array( "name" => "Sarah Walko","path" => "sarah-walko","thumb" => "jpg" ),
-	array( "name" => "Edgeware","path" => "edgeware","thumb" => "jpg" ),
-	array( "name" => "StoryMaps","path" => "storymaps","thumb" => "jpg" ),
-	array( "name" => "Malado Baldwin","path" => "malado-baldwin","thumb" => "jpg" ),
-	array( "name" => "Egg Baby","path" => "egg-baby","thumb" => "jpg" ),
-	// array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit", "thumb" => "jpg" ),
-	// array( "name" => "Portfolio Site","path" => "portfolio-site", "thumb" => "jpg" ),
-	// array( "name" => "idibon","path" => "idibon","thumb" => "jpg" ),
-	// array( "name" => "Nerd Comics", "path" => "nerd-comics", "thumb" => "jpg" ),
+	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") ),
+	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("web-design","illustration","ui-ux") ),
+	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("web-design","illustration","ui-ux") ),
+	// array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing" ),
+	array( "name" => "NextLesson Glossary Images","path" => "nextlesson-glossary","tags"=>array("illustration") ),
+	// array( "name" => "NextLesson Interactive","path" => "nextlesson-interactive" ),
+	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars" ),
+	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library" ),
+	// array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-browse" ),
+	array( "name" => "The 3", "path" => "the3", "tags"=>array("illustration","ui-ux") ),
+	array( "name" => "Indiginauts", "path" => "indiginauts", "tags" => array("illustration","ui-ux") ),
+	array( "name" => "Pok&eacute;mon", "path" => "pokemon","tags"=>array("places-i-worked") ),
+	array( "name" => "Wired", "path" => "wired", "tags" => array("illustration") ),
+	array( "name" => "Abriendo Puertas / Opening&nbsp;Doors", "path" => "abriendo-puertas",	"tags"=>array("web-design") ),
+	array( "name" => "Color Chameleon", "path" => "color-chameleon", "tags" => array("illustration","ui-ux") ),
+	array( "name" => "Adelle Marcero Portfolio Site", "path" => "adelle-marcero","tags"=>array("web-design", "ui-ux") ),
+	array( "name" => "LesConcierges","path" => "lesconcierges", "tags" => array("illustration") ),
+	array( "name" => "Museyon Guides", "path" => "museyon-guides", "tags"=>array("places-i-worked") ),
+	array( "name" => "Project Animore", "path" => "project-animore", "tags" => array("illustration","ui-ux") ),
+	array( "name" => "#Inktober2016","path" => "inktober-2016", "tags" => array("illustration") ),
+	array( "name" => "100 Principles of Game&nbsp;Design", "path" => "100-principles-of-game-design", "tags" => array("illustration") ),
+	array( "name" => "Holiday Card 2014", "path" => "holiday-2014", "tags" => array("illustration") ),
+	array( "name" => "Monkey Mo, Monkey&nbsp;Go!", "path" => "monkey-mo", "tags" => array("illustration", "print-design") ),
+	array( "name" => "Scavenger Hunt", "path" => "scavenger-hunt", "tags" => array("illustration") ),
+	array( "name" => "Suspended Belief Studios", "path" => "suspended-belief-studios", "tags" => array("places-i-worked") ),
+	array( "name" => "Chronicles of Old New&nbsp;York", "path" => "chronicles-of-old-new-york", "tags"=>array("print-design") ),
+	array( "name" => "Sarah Walko", "path" => "sarah-walko", "tags"=>array("web-design") ),
+	array( "name" => "Edgeware", "path" => "edgeware", "tags"=>array("illustration") ),
+	array( "name" => "StoryMaps", "path" => "storymaps", "tags" => array("illustration") ),
+	array( "name" => "Malado Baldwin", "path" => "malado-baldwin", "tags"=>array("web-design") ),
+	array( "name" => "Egg Baby", "path" => "egg-baby", "tags" => array("illustration") ),
+	array( "name" => "Chronicles of Old New&nbsp;York","path" => "chronicles-of-old-new-york","tags"=>array("print-design")),
+	array( "name" => "City Style","path" => "city-style","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old Las&nbsp;Vegas","path" => "chronicles-of-old-las-vegas","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old&nbsp;Boston","path" => "chronicles-of-old-boston","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old&nbsp;Paris","path" => "chronicles-of-old-paris","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old&nbsp;London", "path" => "chronicles-of-old-london", "tags"=>array("print-design")),
+	array( "name" => "Art + Paris","path" => "art-and-paris","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old&nbsp;Rome","path" => "chronicles-of-old-rome","tags"=>array("print-design")),
+	array( "name" => "The Rise of Darkrai","path" => "darkrai", "tags"=>array("print-design","ui-ux") ),
+	array( "name" => "Arceus and the Jewel of&nbsp;Life","path" => "arceus", "tags"=>array("print-design","ui-ux") ),
+	array( "name" => "Pok&eacute;mon: Toys 'R' Us Feature Shop", "path" => "feature-shop", "tags"=>array("print-design") ),
+	array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos", "tags"=>array("print-design") ),
+	array( "name" => "Pok&eacute;mon 10th&nbsp;Anniversary","path" => "10th-anniversary","tags"=>array("print-design") ),
+	array( "name" => "Pok&eacute;mon: Mystery&nbsp;Dungeon", "path" => "mystery-dungeon", "tags"=>array("print-design") ),
+	array( "name" => "Battle Revolution", "path" => "battle-revolution", "tags"=>array("print-design","ui-ux") ),
+	array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex", "tags"=>array("print-design") ),
+	array( "name" => "Pok&eacute;mon Toy&nbsp;Fair", "path" => "toy-fair", "tags"=>array("print-design") ),
+	array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch", "tags"=>array("print-design") ),
+	array( "name" => "Licensing Show", "path" => "licensing-show", "tags"=>array("print-design") ),
+	// array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit" ),
+	// array( "name" => "Portfolio Site","path" => "portfolio-site" ),
+	// array( "name" => "idibon","path" => "idibon","tags"=>array("illustration") ),
+	// array( "name" => "Nerd Comics", "path" => "nerd-comics" ),
 );
 
 function get_suspended_belief_studios_projects(){
 	$works = array(
-		array( "name" => "Indiginauts","path" => "indiginauts","thumb" => "jpg" ),
+		array( "name" => "Indiginauts","path" => "indiginauts" ),
 		array( "name" => "The 3","path" => "the3","thumb" => "svg" ),
-		// array( "name" => "Abriendo Puertas / Opening&nbsp;Doors","path" => "abriendo-puertas","thumb" => "jpg" ),
-		array( "name" => "Project Animore","path" => "project-animore","thumb" => "jpg" ),
-		array( "name" => "Color Chameleon","path" => "color-chameleon","thumb" => "jpg" ),
+		// array( "name" => "Abriendo Puertas / Opening&nbsp;Doors","path" => "abriendo-puertas ),
+		array( "name" => "Project Animore","path" => "project-animore" ),
+		array( "name" => "Color Chameleon","path" => "color-chameleon" ),
 	);
 	return $works;
 }
 function get_museyon_projects(){
 	$works = array(
-		array( "name" => "Chronicles of Old New&nbsp;York","path" => "chronicles-of-old-new-york","thumb" => "jpg" ),
-		array( "name" => "City Style","path" => "city-style","thumb" => "jpg" ),
-		array( "name" => "Chronicles of Old Las&nbsp;Vegas","path" => "chronicles-of-old-las-vegas","thumb" => "jpg" ),
-		array( "name" => "Chronicles of Old&nbsp;Boston","path" => "chronicles-of-old-boston","thumb" => "jpg" ),
-		array( "name" => "Chronicles of Old&nbsp;Paris","path" => "chronicles-of-old-paris","thumb" => "jpg" ),
-		array( "name" => "Chronicles of Old&nbsp;London", "path" => "chronicles-of-old-london", "thumb" => "jpg" ),
-		array( "name" => "Art + Paris","path" => "art-and-paris","thumb" => "jpg" ),
-		array( "name" => "Chronicles of Old&nbsp;Rome","path" => "chronicles-of-old-rome","thumb" => "jpg" ),
+		array( "name" => "Chronicles of Old New&nbsp;York","path" => "chronicles-of-old-new-york" ),
+		array( "name" => "City Style","path" => "city-style" ),
+		array( "name" => "Chronicles of Old Las&nbsp;Vegas","path" => "chronicles-of-old-las-vegas" ),
+		array( "name" => "Chronicles of Old&nbsp;Boston","path" => "chronicles-of-old-boston" ),
+		array( "name" => "Chronicles of Old&nbsp;Paris","path" => "chronicles-of-old-paris" ),
+		array( "name" => "Chronicles of Old&nbsp;London", "path" => "chronicles-of-old-london" ),
+		array( "name" => "Art + Paris","path" => "art-and-paris" ),
+		array( "name" => "Chronicles of Old&nbsp;Rome","path" => "chronicles-of-old-rome" ),
 	);
 	return $works;
 }
 
 function get_pokemon_projects(){
 	$works = array(
-		array( "name" => "The Rise of Darkrai","path" => "darkrai", "thumb" => "jpg" ),
-		array( "name" => "Arceus and the Jewel of&nbsp;Life","path" => "arceus", "thumb" => "jpg" ),
-		array( "name" => "Pok&eacute;mon: Toys 'R' Us Feature Shop", "path" => "feature-shop", "thumb" => "jpg" ),
-		array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos", "thumb" => "jpg" ),
-		array( "name" => "Pok&eacute;mon 10th&nbsp;Anniversary","path" => "10th-anniversary","thumb" => "jpg" ),
-		array( "name" => "Pok&eacute;mon: Mystery&nbsp;Dungeon", "path" => "mystery-dungeon", "thumb" => "jpg" ),
-		array( "name" => "Battle Revolution", "path" => "battle-revolution", "thumb" => "jpg" ),
-		array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex", "thumb" => "jpg" ),
-		array( "name" => "Pok&eacute;mon Toy&nbsp;Fair", "path" => "toy-fair", "thumb" => "jpg" ),
-		array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch", "thumb" => "jpg" ),
-		array( "name" => "Licensing Show", "path" => "licensing-show", "thumb" => "jpg" ),
+		array( "name" => "The Rise of Darkrai","path" => "darkrai" ),
+		array( "name" => "Arceus and the Jewel of&nbsp;Life","path" => "arceus" ),
+		array( "name" => "Pok&eacute;mon: Toys 'R' Us Feature Shop", "path" => "feature-shop" ),
+		array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos" ),
+		array( "name" => "Pok&eacute;mon 10th&nbsp;Anniversary","path" => "10th-anniversary" ),
+		array( "name" => "Pok&eacute;mon: Mystery&nbsp;Dungeon", "path" => "mystery-dungeon" ),
+		array( "name" => "Battle Revolution", "path" => "battle-revolution" ),
+		array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex" ),
+		array( "name" => "Pok&eacute;mon Toy&nbsp;Fair", "path" => "toy-fair" ),
+		array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch" ),
+		array( "name" => "Licensing Show", "path" => "licensing-show" ),
 	);
 	return $works;
 }
 
 //order of the projects
 
-$projects = array(
-	array( "name" => "Tesla", "path" => "", "thumb" => "thumb.jpg" ),
-	array( "name" => "Palin comics", "path" => "", "thumb" => "thumb.jpg" ),
-	array( "name" => "GIF Drawings","path" => "", "thumb" => "thumb.jpg" ),
-	array( "name" => "GIFS", "path" => "", "thumb" => "thumb.jpg" )
-);
+// $projects = array(
+// 	array( "name" => "Tesla", "path" => "", "thumb" => "thumb.jpg" ),
+// 	array( "name" => "Palin comics", "path" => "", "thumb" => "thumb.jpg" ),
+// 	array( "name" => "GIF Drawings","path" => "", "thumb" => "thumb.jpg" ),
+// 	array( "name" => "GIFS", "path" => "", "thumb" => "thumb.jpg" )
+// );
 
-$portraits = array(
-	array( "name" => "Walter White", "path" => "walter-white", "thumb" => "thumb.jpg" ),
-	array( "name" => "Palin comics", "path" => "", "thumb" => "thumb.jpg" ),
-	array( "name" => "GIF Drawings", "path" => "", "thumb" => "thumb.jpg" ),
-	array( "name" => "GIFS", "path" => "", "thumb" => "thumb.jpg" )
-);
+// $portraits = array(
+// 	array( "name" => "Walter White", "path" => "walter-white", "thumb" => "thumb.jpg" ),
+// 	array( "name" => "Palin comics", "path" => "", "thumb" => "thumb.jpg" ),
+// 	array( "name" => "GIF Drawings", "path" => "", "thumb" => "thumb.jpg" ),
+// 	array( "name" => "GIFS", "path" => "", "thumb" => "thumb.jpg" )
+// );
 
 // MUSEYON  ========================
 
@@ -1669,15 +1688,15 @@ if ( $title == "#Inktober2016" ) {
 
 function get_nextlesson_projects(){
 	$works = array(
-		array( "name" => "NextLesson Project Covers", "path" => "nextlesson-covers", "thumb" => "jpg" ),
-		array( "name" => "NextLesson Marketing", "path" => "nextlesson-marketing", "thumb" => "jpg" ),
-		array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid", "thumb" => "jpg" ),
-		array( "name" => "NextLesson Glossary Terms", "path" => "nextlesson-glossary", "thumb" => "jpg" ),
-		// array( "name" => "Browsing Experience","path" => "nextlesson-search-browse", "thumb" => "jpg" ),
-		// array( "name" => "Graphics Library", "path" => "nextlesson-library", "thumb" => "jpg" ),
-		// array( "name" => "Profile Avatars", "path" => "nextlesson-avatars", "thumb" => "jpg" ),
-		// array( "name" => "Interactive Performance Tasks", "path" => "nextlesson-interative-pt", "thumb" => "jpg" ),
-		// array( "name" => "Printed Lesson", "path" => "nextlesson-pdf", "thumb" => "jpg" ),
+		array( "name" => "NextLesson Project Covers", "path" => "nextlesson-covers" ),
+		array( "name" => "NextLesson Marketing", "path" => "nextlesson-marketing" ),
+		array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid" ),
+		array( "name" => "NextLesson Glossary Terms", "path" => "nextlesson-glossary" ),
+		// array( "name" => "Browsing Experience","path" => "nextlesson-search-browse" ),
+		// array( "name" => "Graphics Library", "path" => "nextlesson-library" ),
+		// array( "name" => "Profile Avatars", "path" => "nextlesson-avatars" ),
+		// array( "name" => "Interactive Performance Tasks", "path" => "nextlesson-interative-pt" ),
+		// array( "name" => "Printed Lesson", "path" => "nextlesson-pdf" ),
 	);
 	return $works;
 }

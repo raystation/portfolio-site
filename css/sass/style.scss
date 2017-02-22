@@ -456,7 +456,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 			padding: 2px 15px;
 			border-radius: 14px;
 			a:link, a:visited {
-				color: black;
+				color: hsla(0, 0%, 30%, 1);
 			}
 			@include transition( all 0.125s ease-in-out );
 			&:hover {

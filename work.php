@@ -2,8 +2,12 @@
 	$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
 	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
 
-	$filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
-	$filter_list_html = get_filter_list_html($filter);
+
+	$selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
+	$filter_list_html = get_filter_list_html($selected_filter);
+
+	//projects to show on the front page
+	$number_of_thumbnails = 99;
 
 	if ( isset($id) ) {
 		$id_html = "?id=$id";
@@ -306,13 +310,12 @@ if ( isset($project) ) {
 //produces thumbnails for homepage and below the projects
 
 if ( !isset($template) ) {
-	// echo "
-	// 	<div class='sixteen columns filters'>
-	// 		<ul>
-	// 			$filter_list_html
-	// 		</ul>
-	// 	</div>
-	// ";
+	echo "
+		<div class='sixteen columns filters'>
+			<ul>$filter_list_html</ul>
+		</div>
+	";
+	// echo "// <div class='sixteen columns'> // 	<h2>Selected Works</h2> // </div>";
 	skeleton_print_thumbnail_4($works);
 }
 elseif ($template=="company") {
@@ -322,7 +325,7 @@ elseif ($template=="company") {
 	  </div>";
 }
 else {
-	skeleton_print_thumbnail_4($works,4);
+	skeleton_print_thumbnail_4($works,"",4);
 }
 
 echo $landing_page_nav;
@@ -333,23 +336,31 @@ include('inc/footer.php');
 
 function get_filters(){
 	$filter_list = array(
-		array( "skill"=>"Hand-drawn", "url"=>"hand-drawn" ),
-		array( "skill"=>"Illustration", "url"=>"illustration" ),
-		array( "skill"=>"UI & UX", "url"=>"ui-ux" ),
-		array( "skill"=>"HTML + CSS/Sass", "url"=>"html-css-sass" ),
-		array( "skill"=>"Print Design", "url"=>"print-design" ),
+		array( "skill"=>"UI/UX", "url"=>"ui-ux"),
+		array( "skill"=>"Web Design", "url"=>"web-design"),
+		array( "skill"=>"Illustration", "url"=>"illustration"),
+		array( "skill"=>"Print Design", "url"=>"print-design"),
+		array( "skill"=>"Places I Worked", "url"=>"places-i-worked"),
 	);
 	return $filter_list;
 }
 function get_filter_list_html( $selected_filter ){
 	$html="";
 	$filters = get_filters();
+
+	if ($selected_filter=="") {
+		$html.="<li class='active'><a href='work'>All</a>";
+	} else {
+		$html.="<li><a href='work'>All</a>";
+	}
+
 	foreach ($filters as $key => $filter) {
-		$class="";
 		if ( $selected_filter == $filter['url'] ) {
 			$class="class='active'";
+			$html.="<li class='active'><a href='work'>$filter[skill]</a>";
+		} else {
+			$html.="<li><a href='$filter[url]'>$filter[skill]</a>";
 		}
-		$html.="<li $class><a href='work.php?f=$filter[url]'>$filter[skill]</a>";
 	}
 	return $html;
 }

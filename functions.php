@@ -341,7 +341,12 @@ function workthumb($num) {
   echo "<p>".$works[$num]["name"]."</p>\n";
 }
 
-function skeleton_print_thumbnail_4($array,$project_count=0, $header=false, $vertical=false) {
+function skeleton_print_thumbnail_4(
+  $works_array,
+  $number_of_projects=0,
+  $header=false,
+  $vertical=false) {
+
 
   $id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
   if ( isset($id) ) {
@@ -356,12 +361,29 @@ function skeleton_print_thumbnail_4($array,$project_count=0, $header=false, $ver
     echo "<div class='sixteen columns add-bottom add-top'><hr><h2>Recent Projects</h2></div>";
   }
 
+  // checks array for matching tags, if so, then it will push to a new array
+  $selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
+  // if the filter is selected
+  $filtered_array="";
+  if ( isset($selected_filter) ) {
+
+    foreach ($works_array as $key => $work) {
+      $tags = $work['tags'];
+      foreach ($tags as $key => $tag) {
+        if ($tag==$selected_filter) {
+          $filtered_array[]=$work;
+        }
+      }
+    }
+    // replace array with filtered array
+    $works_array = $filtered_array;
+  }
   // populates page with thumbnails from $work
   $count=1;
   $alphacount;
   $omegacount;
 
-  foreach ( $array as $key => $array_item ) {
+  foreach ( $works_array as $key => $array_item ) {
     $alt = html_entity_decode($array_item['name']);
     // TODO: fix vertical thumbnail
     // TODO: mobile: have two thumbnails next to each other
@@ -402,9 +424,10 @@ function skeleton_print_thumbnail_4($array,$project_count=0, $header=false, $ver
     } else {
       $count++;
     }
-
-    if ($key == $project_count-1) {
-      break;
+    if ($number_of_projects!=="all") {
+      if ($key == $number_of_projects-1) {
+        break;
+      }
     }
   }
   //adds project link if it's not the index page

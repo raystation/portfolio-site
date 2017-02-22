@@ -3382,7 +3382,7 @@ case 'ixl-illustration-coordinator':
 		$copy = "
 			Thanks for sending that note along. You've found me at a very fortuitous time as I am on the job hunt! Having bought bundles in the past<span class='tooltip' title='2010. I picked up World of Goo and Braid...wow, that was a while ago...'>*</span> and hearing about your recent charity work, I am very interested to learn more about this opportunity.
 			$p_break
-			I'm linking to three projects below that should give you a better understanding of me. The first project, InterestID, is a tool that allows K12 students to <em>rate</em> interests<span class='tooltip' title='allowing teachers to have a better understanding of which lessons might interest their students more'>*</span>, like movies and sports.
+			I'm linking to three projects below that should give you a better understanding of projects where I've worked on a product or lead a team. The first project, InterestID, is a tool that allows K12 students to <em>rate</em> interests<span class='tooltip' title='allowing teachers to have a better understanding of which lessons might interest their students more'>*</span>, like movies and sports. Covers and Glossary terms were more content-driven, where I was in charge of artwork creation.
 		";
 
 		//
