@@ -82,5 +82,6 @@ RewriteRule ^ixl-illustration-coordinator$ hire-me?id=ixl-illustration-coordinat
 RewriteRule ^facebook-illustrator-designer-cultural-moments$ hire-me?id=facebook-illustrator-designer-cultural-moments
 RewriteRule ^facebook-illustrator-designer-messenger$ hire-me?id=facebook-illustrator-designer-messenger
 RewriteRule ^twitch-senior-ui-ux-designer-ads-and-promotions-platform$ hire-me?id=twitch-senior-ui-ux-designer-ads-and-promotions-platform
+RewriteRule ^humble-bundle-senior-designer$ hire-me?id=humble-bundle-senior-designer
 
 RewriteRule ^holiday2014$ http://www.rayuen.com/p/holiday-card/holiday

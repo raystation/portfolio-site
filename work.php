@@ -2,6 +2,9 @@
 	$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
 	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
 
+	$filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
+	$filter_list_html = get_filter_list_html($filter);
+
 	if ( isset($id) ) {
 		$id_html = "?id=$id";
 	} else {
@@ -280,6 +283,7 @@ if ( isset($project) ) {
 	$works = array_values($works);
 }
 
+// GRABS THE TEMPLATE FILE
 // IF THE PROJECT IS SET
 if ( isset($project) ) {
 
@@ -302,6 +306,13 @@ if ( isset($project) ) {
 //produces thumbnails for homepage and below the projects
 
 if ( !isset($template) ) {
+	// echo "
+	// 	<div class='sixteen columns filters'>
+	// 		<ul>
+	// 			$filter_list_html
+	// 		</ul>
+	// 	</div>
+	// ";
 	skeleton_print_thumbnail_4($works);
 }
 elseif ($template=="company") {
@@ -317,3 +328,28 @@ else {
 echo $landing_page_nav;
 
 include('inc/footer.php');
+
+// ========================
+
+function get_filters(){
+	$filter_list = array(
+		array( "skill"=>"Hand-drawn", "url"=>"hand-drawn" ),
+		array( "skill"=>"Illustration", "url"=>"illustration" ),
+		array( "skill"=>"UI & UX", "url"=>"ui-ux" ),
+		array( "skill"=>"HTML + CSS/Sass", "url"=>"html-css-sass" ),
+		array( "skill"=>"Print Design", "url"=>"print-design" ),
+	);
+	return $filter_list;
+}
+function get_filter_list_html( $selected_filter ){
+	$html="";
+	$filters = get_filters();
+	foreach ($filters as $key => $filter) {
+		$class="";
+		if ( $selected_filter == $filter['url'] ) {
+			$class="class='active'";
+		}
+		$html.="<li $class><a href='work.php?f=$filter[url]'>$filter[skill]</a>";
+	}
+	return $html;
+}
