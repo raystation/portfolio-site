@@ -33,6 +33,7 @@ $textbox-color: LightSkyBlue;
 // $textbox-text-color: darken($textbox-color,40%);
 $textbox-text-color: white;
 $textbox-link-color: $textbox-text-color;
+$filter-color: #E1E8ED;
 
 $footer-color: darken($bkg-color,4%);
 $footer-text-color: darken($footer-color,50%);
@@ -438,6 +439,34 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		opacity: 1 !important;
 		color: white !important;
 		@include underline(2px);
+	}
+}
+
+.filters {
+	ul {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		li {
+			display: inline-block;
+			margin-right: 1em;
+			margin-bottom: 10px;
+			background-color: #E1E8ED;
+			margin-right: 15px;
+			padding: 2px 15px;
+			border-radius: 14px;
+			a:link, a:visited {
+				color: black;
+			}
+			@include transition( all 0.125s ease-in-out );
+			&:hover {
+				background-color: darken($filter-color,15%);
+				@include transition( all 0.125s ease-in-out );
+			}
+		}
+		li.active {
+			background-color: darken($filter-color,15%);
+		}
 	}
 }
 
