@@ -33,7 +33,6 @@ $works = array(
 	array( "name" => "StoryMaps", "path" => "storymaps", "tags" => array("illustration") ),
 	array( "name" => "Malado Baldwin", "path" => "malado-baldwin", "tags"=>array("web-dev") ),
 	array( "name" => "Egg Baby", "path" => "egg-baby", "tags" => array("illustration") ),
-	array( "name" => "Chronicles of Old New&nbsp;York","path" => "chronicles-of-old-new-york","tags"=>array("print-design")),
 	array( "name" => "City Style","path" => "city-style","tags"=>array("print-design")),
 	array( "name" => "Chronicles of Old Las&nbsp;Vegas","path" => "chronicles-of-old-las-vegas","tags"=>array("print-design")),
 	array( "name" => "Chronicles of Old&nbsp;Boston","path" => "chronicles-of-old-boston","tags"=>array("print-design")),

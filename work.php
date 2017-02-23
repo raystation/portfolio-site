@@ -363,7 +363,11 @@ function get_filter_list_html( $selected_filter ){
 	foreach ($filters as $key => $filter) {
 		if ( $selected_filter == $filter['url'] ) {
 			$class="class='active'";
-			$html.="<li class='active'><a href='work$id_html'>&times; $filter[skill]</a>";
+			if (!is_null($id)) {
+				$html.="<li class='active'><a href='work.php?$id_html'>&times; $filter[skill]</a>";
+			} else {
+				$html.="<li class='active'><a href='work'>&times; $filter[skill]</a>";
+			}
 		} else {
 			if ( isset($id) ) {
 				$html.="<li><a href='work.php?f=$filter[url]$id_html'>$filter[skill]</a>";
