@@ -64,6 +64,23 @@ function get_title($string){
   // }
   return $string;
 }
+
+//converts title into lowercase and no spaces
+function downcasespace($string) {
+  $string = str_replace(" ", "", $string);
+  $string = strtolower($string);
+  return $string;
+}
+function markdown_exist($filename){
+  if ( file_exists($filename) ) {
+    $copy = markdown_convert( $filename );
+    return $copy;
+  } else {
+    return NULL;
+  }
+}
+
+
 function list_html($array){
   echo "<ul>\n";
 

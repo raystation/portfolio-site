@@ -4,21 +4,6 @@ $p_break = "</p><p>";
 // TODO: include Markdown parser
 require_once 'functions.php';
 
-//converts title into lowercase and no spaces
-function downcasespace($string) {
-	$string = str_replace(" ", "", $string);
-	$string = strtolower($string);
-	return $string;
-}
-function markdown_exist($filename){
-	if ( file_exists($filename) ) {
-		$copy = markdown_convert( $filename );
-		return $copy;
-	} else {
-		return NULL;
-	}
-}
-
 switch ( $id ) {
 
 	default:
@@ -2945,32 +2930,34 @@ case 'duckduckmoose':
 	break;
 
 case 'ixl-illustration-coordinator':
-		$originaljobposting="https://www.ixl.com/company/jobs?jvi=ojtG4fwg&jvs=Indeed";
+		$originaljobposting="https://www.ixl.com/company/jobs?p=job%2FojtG4fwg";
 		$logo="http://grapesforlife.com/wp-content/uploads/2014/08/mzl.pptgpfrl-e1417376137299.png";
 		$jobTitle="Illustration Coordinator";
 		$company="IXL / Learning";
 		$date="January 26, 2017";
-		// $name="";
+		$name="Linda Vo";
 		$email="";
 		$slider="";
 		$hiremepage = "http://rayuen.com/hire-me?id=ixl-illustration-coordinator";
 		// $resume = "img/ray_yuen_resume.pdf";
 
 		$job_details="
+		<h1>$company</h1>
+		<h2>$jobTitle</h2>
 		<p>IXL Learning, a leading edtech company with products used by 6 million students worldwide, is seeking an illustration coordinator to oversee the creation of fun and delightful visuals for our educational content. In this role, you will brainstorming creative ideas, iterate with a team of illustrators, and collaborate with our design and engineering teams on technical requirements. We find it immensely satisfying to develop products that impact the lives of millions of students around the globe, and we are eager to have you join our team.</p>
 
 		<h6>RESPONSIBILITIES</h6>
 
-		<li>Brainstorm fun, creative ideas for illustrations
-		<li>Collaborate with the curriculum design team to write illustration specifications that meet educational goals
-		<li>Effectively communicate specifications to illustrators and iterate with them until all project requirements are satisfied
-		<li>Ensure illustrations meet IXL’s aesthetic, educational, and technical requirements
-		<li>Collaborate with engineers to determine SVG file formatting guidelines
-		<li>Occasionally edit SVG files; no prior experience editing SVGs is necessary, and training will be provided
-		<li>Manage and track multiple illustration projects simultaneously
-		<li>Successfully deliver high quality illustrations on-time
-		<li>Assist in hiring and training contract illustrators
-		<li>Pitch in with other UI tasks as needed; collaborate with visual designers to create new UI elements, style guides, and brand guidelines
+		<li>&#10004; Brainstorm fun, creative ideas for illustrations
+		<li>&#10004; Collaborate with the curriculum design team to write illustration specifications that meet educational goals
+		<li>&#10004; Effectively communicate specifications to illustrators and iterate with them until all project requirements are satisfied
+		<li>&#10004; Ensure illustrations meet IXL’s aesthetic, educational, and technical requirements
+		<li>&#10004; Collaborate with engineers to determine SVG file formatting guidelines
+		<li>&#10004; Occasionally edit SVG files; no prior experience editing SVGs is necessary, and training will be provided
+		<li>&#10004; Manage and track multiple illustration projects simultaneously
+		<li>&#10004; Successfully deliver high quality illustrations on-time
+		<li>&#10004; Assist in hiring and training contract illustrators
+		<li>&#10004; Pitch in with other UI tasks as needed; collaborate with visual designers to create new UI elements, style guides, and brand guidelines
 
 		<h6>QUALIFICATIONS</h6>
 		<li>BA/BS
@@ -3106,62 +3093,6 @@ case 'ixl-illustration-coordinator':
 		// $other = "";
 	break;
 
-
-	// TWITCH - UI/UX DESIGNER/DEVELOPER
-	case 'updownleftright':
-		$originaljobposting="https://jobs.lever.co/twitch/97767178-c6df-4fb3-9c9d-97e6bdfd2d10";
-		$logo="https://lever-client-logos.s3.amazonaws.com/twitch.png";
-		$jobTitle="UI/UX Designer/Developer";
-		$company="Twitch";
-		$date="January 31, 2017";
-		// $name="";
-		$email="";
-		$slider="";
-		$portrait="about-me/star-trek.gif";
-		$hiremepage = "http://rayuen.com/hire-me?id=updownleftright";
-		// $resume = "img/ray_yuen_resume.pdf";
-
-		$job_details = markdown_convert("jobs/twitch-ui-ux-designer.md");
-
-		$copy="
-		<p>Hey there, as an avid video game player for <em>many</em> years and a designer/illustrator wanting to work more into UI/UX design, this opportunity seems really interesting!
-		</p>
-		<p>With my experience at education startup NextLesson working to build products and UI/UX solutions, I believe I would be a great fit for this position.
-		</p>
-		<p>I've linked to three projects below which I think will be relevant to this position.
-		</p>
-		";
-
-		// $closing=" ";
-		$slider='
-			<div class="sixteen columns">
-				<img class="scale-with-grid" src="img/wired/car.jpg">
-			</div>
-		';
-
-		$sample_projects_array = array(
-			array(
-				"path"=>"nextlesson-covers",
-				"name"=>"NextLesson Covers",
-				"type"=>"jpg",
-				"desc"=>"Creation of 2,034 Lesson and Project Covers.",
-			),
-			array(
-				"path"=>"nextlesson-interestid",
-				"name"=>"NextLesson InterestID",
-				"type"=>"jpg",
-				"desc"=>"UI/UX and creation of 3,831 icons.",
-			),
-			array(
-				"path"=>"nextlesson-glossary",
-				"name"=>"NextLesson Interactive Glossary",
-				"type"=>"jpg",
-				"desc" => "Visuals for glossary terms.",
-			),
-		);
-
-		// $other = "";
-	break;
 
 	// FACEBOOK - ILLUSTRATOR/DESIGNER - CULTURAL MOMENTS
 	case "facebook-illustrator-designer-cultural-moments":
@@ -3301,34 +3232,30 @@ case 'ixl-illustration-coordinator':
 	case "twitch-senior-ui-ux-designer-ads-and-promotions-platform":
 		$short_name = "twitch-senior-ui-ux-designer-ads-and-promotions-platform";
 		$originaljobposting="https://jobs.lever.co/twitch/761145e5-ddb5-4501-b939-91279c979695";
+
 		$company="Twitch";
 		$jobTitle="Senior UI/UX Designer: Ads & Promotions Platform";
+
+		$slider_img="";
 		$logo="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png";
-		$date="February 15, 2017";
-		// $name="Ray Yuen";
+		$date="February 23, 2017";
+		$name="";
 		$email="";
-		$slider="";
 		$portrait="GIFS/me-pixel.gif";
-		$hiremepage = "http://rayuen.com/twitch-senior-ui-ux-designer-ads-and-promotions-platform";
+		$hiremepage = "http://rayuen.com/$short_name";
 		// $resume = "img/ray_yuen_resume.pdf";
 
-		$job_details = markdown_convert("jobs/$short_name".".md");
-		$copy = markdown_convert("jobs/$short_name-letter".".md");
+		$job_details = markdown_convert("jobs/$short_name.md");
+		$copy = markdown_convert("jobs/$short_name-letter.md");
 
-		//
-		// $closing=" ";
-		// $slider='
-		// 	<div class="sixteen columns">
-		// 		<img class="scale-with-grid" src="img/wired/car.jpg">
-		// 	</div>
-		// ';
+		$closing="";
 
 		$sample_projects_array = array(
 			array(
-				"path"=>"nextlesson-covers",
-				"name"=>"NextLesson Covers",
+				"path"=>"the-3",
+				"name"=>"The 3",
 				"type"=>"jpg",
-				"desc"=>"Creation of Lesson and Project Covers.",
+				"desc"=>"UI for a trivia game",
 			),
 			array(
 				"path"=>"nextlesson-interestid",
@@ -3342,25 +3269,8 @@ case 'ixl-illustration-coordinator':
 				"type"=>"jpg",
 				"desc" => "Visuals for glossary terms.",
 			),
-			// array(
-			// 	"path"=>"indiginauts",
-			// 	"name"=>"Indiginauts",
-			// 	"type"=>"jpg",
-			// 	"desc"=>"Point 'n' click adventure game. Game concept/design, art, and UI.",
-			// ),
-			// array(
-			// 	"path"=>"color-chameleon",
-			// 	"name"=>"Color Chameleon",
-			// 	"type"=>"jpg",
-			// 	"desc"=>"Game concept for a runner.",
-			// ),
-			// array(
-			// 	"path"=>"storymaps",
-			// 	"name"=>"StoryMaps",
-			// 	"type"=>"jpg",
-			// 	"desc"=>"Hand-drawn illustrations for a story building app.",
-			// ),
 		);
+	break;
 
 	// HUMBLE-BUNDLE-SENIOR-DESIGNER
 	case "humble-bundle-senior-designer":
@@ -3374,7 +3284,7 @@ case 'ixl-illustration-coordinator':
 		$portrait="GIFS/me-pixel.gif";
 		$hiremepage = "http://rayuen.com/$short_name";
 
-		$slider="";
+		$slider_img="";
 		// $resume = "img/ray_yuen_resume.pdf";
 
 		$job_details = markdown_convert("jobs/$short_name".".md");
@@ -3385,13 +3295,8 @@ case 'ixl-illustration-coordinator':
 			I'm linking to three projects below that should give you a better understanding of projects where I've worked on a product or lead a team. The first project, InterestID, is a tool that allows K12 students to <em>rate</em> interests<span class='tooltip' title='allowing teachers to have a better understanding of which lessons might interest their students more'>*</span>, like movies and sports. Covers and Glossary terms were more content-driven, where I was in charge of artwork creation.
 		";
 
-		//
-		// $closing=" ";
-		// $slider='
-		// 	<div class="sixteen columns">
-		// 		<img class="scale-with-grid" src="img/wired/car.jpg">
-		// 	</div>
-		// ';
+		$closing="";
+		$slider="";
 
 		$sample_projects_array = array(
 			array(
@@ -3412,29 +3317,34 @@ case 'ixl-illustration-coordinator':
 				"type"=>"jpg",
 				"desc" => "Visuals for glossary terms.",
 			),
-			// array(
-			// 	"path"=>"indiginauts",
-			// 	"name"=>"Indiginauts",
-			// 	"type"=>"jpg",
-			// 	"desc"=>"Point 'n' click adventure game. Game concept/design, art, and UI.",
-			// ),
-			// array(
-			// 	"path"=>"color-chameleon",
-			// 	"name"=>"Color Chameleon",
-			// 	"type"=>"jpg",
-			// 	"desc"=>"Game concept for a runner.",
-			// ),
-			// array(
-			// 	"path"=>"storymaps",
-			// 	"name"=>"StoryMaps",
-			// 	"type"=>"jpg",
-			// 	"desc"=>"Hand-drawn illustrations for a story building app.",
-			// ),
 		);
 
 		// $other = "";
 	break;
-
-
 }
 
+if ( isset($slider_img) ) {
+	$slider = "
+		<div class='sixteen columns'>
+			<img class='scale-with-grid' src='$slider_img'>
+		</div>
+	";
+}
+
+// ========================
+// FUNCTIONS
+
+function get_project_thumbnail_details( $projects ){
+	// $projects = projects info to return
+	$array = array();
+
+	// grabs the info from $works array
+	include_once "inc/work-info.php";
+
+	foreach ($projects as $project) {
+		$key = array_search($work, $project);
+		$array[] = $work[$key];
+	}
+
+	return $array;
+}
