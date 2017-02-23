@@ -350,21 +350,23 @@ function get_filter_list_html( $selected_filter ){
 	// IS THE PERSON COMING FROM A JOB LANDING PAGE
 	// checks to see if $id is set
 	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+	$id_html = !is_null($id) ? "?id=$id" : "";
 
 	// sets ALL
 	if ($selected_filter=="") {
-		$html.="<li class='active'><a href='work?id=$id'>All</a>";
+		$html.="<li class='active'><a href='work$id_html'>All</a>";
 	} else {
-		$html.="<li><a href='work?id=$id'>All</a>";
+		$html.="<li><a href='work$id_html'>All</a>";
 	}
 
+	$id_html = !is_null($id) ? "&id=$id" : "";
 	foreach ($filters as $key => $filter) {
 		if ( $selected_filter == $filter['url'] ) {
 			$class="class='active'";
-			$html.="<li class='active'><a href='work?id=$id'>$filter[skill]</a>";
+			$html.="<li class='active'><a href='work$id_html'>&times; $filter[skill]</a>";
 		} else {
 			if ( isset($id) ) {
-				$html.="<li><a href='work.php?f=$filter[url]&id=$id'>$filter[skill]</a>";
+				$html.="<li><a href='work.php?f=$filter[url]$id_html'>$filter[skill]</a>";
 			} else {
 				$html.="<li><a href='$filter[url]'>$filter[skill]</a>";
 			}
