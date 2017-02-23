@@ -351,6 +351,7 @@ function skeleton_print_thumbnail_4(
   // CHECKS FOR PROJECT ID AND FILTER
   $id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
   $selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
+  // TODO: get a filtered array in another function
 
   // PASSES AN ID IF IT EXISTS
   if ( isset($id) ) {
@@ -405,7 +406,7 @@ function skeleton_print_thumbnail_4(
 
     $project_path = $array_item["path"];
     $img_formats = array("jpg","svg","png");
-    foreach ($img_formats as $key => $img_format) {
+    foreach ($img_formats as $img_format) {
       // goes through the array of img formats, it it exists, it returns $thumb, else it will be the default img
       if ( file_exists("img/$project_path/thumb.$img_format") ) {
         $thumb = "img/$project_path/thumb.$img_format";
@@ -434,10 +435,8 @@ function skeleton_print_thumbnail_4(
     } else {
       $count++;
     }
-    if ($number_of_projects!=="all") {
-      if ($key == $number_of_projects-1) {
-        break;
-      }
+    if ($key == $number_of_projects-1) {
+      break;
     }
   }
   //adds project link if it's not the index page

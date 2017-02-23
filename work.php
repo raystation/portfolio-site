@@ -325,7 +325,7 @@ elseif ($template=="company") {
 	  </div>";
 }
 else {
-	skeleton_print_thumbnail_4($works,"",4);
+	skeleton_print_thumbnail_4($works,4);
 }
 
 echo $landing_page_nav;

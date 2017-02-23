@@ -440,6 +440,12 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		color: white !important;
 		@include underline(2px);
 	}
+	.x-button {
+		// float: right;
+		position: absolute;
+		right: 10px;
+		bottom: 5px;
+	}
 }
 
 .filters {
