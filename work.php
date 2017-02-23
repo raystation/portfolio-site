@@ -337,7 +337,7 @@ include('inc/footer.php');
 function get_filters(){
 	$filter_list = array(
 		array( "skill"=>"UI/UX", "url"=>"ui-ux"),
-		array( "skill"=>"Web Design", "url"=>"web-design"),
+		array( "skill"=>"Web Dev", "url"=>"web-dev"),
 		array( "skill"=>"Illustration", "url"=>"illustration"),
 		array( "skill"=>"Print Design", "url"=>"print-design"),
 		array( "skill"=>"Places I Worked", "url"=>"places-i-worked"),

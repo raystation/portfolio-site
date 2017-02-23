@@ -375,6 +375,10 @@ function skeleton_print_thumbnail_4(
         }
       }
     }
+    if ($filtered_array=="") {
+      echo "nothing to show";
+      return;
+    }
     // replace array with filtered array
     $works_array = $filtered_array;
   }
