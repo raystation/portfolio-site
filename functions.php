@@ -343,27 +343,31 @@ function workthumb($num) {
 
 function skeleton_print_thumbnail_4(
   $works_array,
-  $number_of_projects=0,
-  $header=false,
-  $vertical=false) {
+  $number_of_projects=0
+  // $header=false,
+  // $vertical=false
+  ) {
 
-
+  // CHECKS FOR PROJECT ID AND FILTER
   $id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+  $selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
+
+  // PASSES AN ID IF IT EXISTS
   if ( isset($id) ) {
     $id_html = "?id=$id";
   } else {
     $id_html="";
   }
 
+  // THE HEADER
   echo '</div><div class="container portfolio">'."\n";
   global $description;
   if ( isset($description) ) {
     echo "<div class='sixteen columns add-bottom add-top'><hr><h2>Recent Projects</h2></div>";
   }
 
+  // FILTERS
   // checks array for matching tags, if so, then it will push to a new array
-  $selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
-  // if the filter is selected
   $filtered_array="";
   if ( isset($selected_filter) ) {
 
@@ -382,6 +386,9 @@ function skeleton_print_thumbnail_4(
     // replace array with filtered array
     $works_array = $filtered_array;
   }
+
+
+  // SKELETON PRINT
   // populates page with thumbnails from $work
   $count=1;
   $alphacount;
@@ -391,20 +398,19 @@ function skeleton_print_thumbnail_4(
     $alt = html_entity_decode($array_item['name']);
     // TODO: fix vertical thumbnail
     // TODO: mobile: have two thumbnails next to each other
-    $thumb = $vertical ? "thumb-v" : "thumb";
+    // $thumb = $vertical ? "thumb-v" : "thumb";
     // echo "$array_item[path]/thumb.jpg";
 
     // looks for thumbnail
-    if ( file_exists( "img/$array_item[path]/thumb.jpg" ) ) {
-      $thumb = "$array_item[path]/thumb.jpg";
-      // $thumbnail_path = "<a href='$array_item[path]' alt='$alt'><img src='img/$thumb' class='scale-with-grid2'></a>";
-    }
-    elseif ( file_exists( "img/$array_item[path]/thumb.svg" ) ) {
-      $thumb = "$array_item[path]/thumb.svg";
-      // $thumbnail_path = "<a href='$array_item[path]' alt='$alt'><img src='img/$thumb' class='scale-with-grid2'></a>";
-    }
-    else
-    {
+
+    $project_path = $array_item["path"];
+    $img_formats = array("jpg","svg","png");
+    foreach ($img_formats as $key => $img_format) {
+      // goes through the array of img formats, it it exists, it returns $thumb, else it will be the default img
+      if ( file_exists("img/$project_path/thumb.$img_format") ) {
+        $thumb = "img/$project_path/thumb.$img_format";
+        break;
+      }
       $thumb = "thumb-default.jpg";
     }
 
@@ -413,8 +419,11 @@ function skeleton_print_thumbnail_4(
     } else {
       $project_path = $array_item['path'];
     }
+    // if ( isset($selected_filter) {
+    //   $project_path = "$project_path&f=$selected_filter";
+    // }
 
-    $thumbnail = "<a href='$project_path' alt='default logo'><img src='img/$thumb' class='scale-with-grid2'></a>";
+    $thumbnail = "<a href='$project_path' alt='default logo'><img src='$thumb' class='scale-with-grid2'></a>";
 
     echo "
     <div class='four columns'>
