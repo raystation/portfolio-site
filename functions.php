@@ -419,9 +419,6 @@ function skeleton_print_thumbnail_4(
     } else {
       $project_path = $array_item['path'];
     }
-    // if ( isset($selected_filter) {
-    //   $project_path = "$project_path&f=$selected_filter";
-    // }
 
     $thumbnail = "<a href='$project_path' alt='default logo'><img src='$thumb' class='scale-with-grid2'></a>";
 
