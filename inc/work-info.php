@@ -1,4 +1,5 @@
 <?
+$p_break = "</p><p>";
 
 $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") ),
@@ -271,19 +272,17 @@ if ( $title == "Indiginauts" ) {
 
 	$description = "
 		This idea was the whole reason we started Suspended Belief Games. Based on an illustration I did for a group show in New York, the Indiginauts were space explorers in the vein of Star Fleet. They were peace-loving creatures that explored the stars. Were they decended from humans? Maybe. They loved nothing more than to explore, learn and record for others to&nbsp;see.
-		</p><p>
+		$p_break
 		Well, that was the original idea. Now they are wise-cracking repairmen. We developed the game as a simplified <span class='tooltip underline' title='Point and Touch?'>point-and-click</span> geared toward mobile devices. The main goal was to take everything we learned from classic point-and-clicks, like <em>Monkey Island</em>, and streamline and simplify. Top it off with an engaging story, developed characters and fun artwork.
-		</p><p>
-		Here's an <a href='http://indiginauts.com' target='_blank'>initial build</a>.
 		";
 
-	$sidebar = '
-		Point \'n\' click adventure<br>
-		iOS, Web<br>
-		Estimated release 2014</p>
-		<p><a href="http://www.suspendedbeliefgames.com">Suspended Belief Studios</a><br>
-		<a href="http://www.indiginauts.com" target="_blank">Demo Link</a>
-	';
+	$sidebar = "
+		iOS & Web Point 'n' Click Adventure</p>
+		<p><a href='suspended-belief-studios'>Suspended Belief Studios</a><p>
+		<p>Game Design: Ray Yuen, Jeremy Klar</p>
+		<p>Art: Ray Yuen, Sun Park</p>
+		<p>Developer: Dubit
+	";
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>55),
@@ -377,10 +376,12 @@ if ( $title == "Project Animore" ) {
 		array("skill"=>"Illustrator", "percent"=>40),
 	);
 
-	$sidebar = 'iOS runner<br>
-		Art by Ray&nbsp;Yuen &amp; Sun&nbsp;Park<br>
-		Rated G!
-	';
+	$sidebar = "
+		iOS Runner</p>
+		<p><a href='suspended-belief-studios'>Suspended Belief Studios</a><p>
+		<p>Game Concept: Ray Yuen, Jeremy Klar</p>
+		<p>Art: Ray Yuen, Sun Park
+	";
 
 	$img_info = array(
 	    array("file" => "01.jpg", "alt" => "Farm Screen"),
@@ -559,12 +560,11 @@ if ( $title == "The 3" ) {
 	;
 
 	$sidebar = '
-		Platform: iPhone 4 and up. Playable on iPads. <br>
-		Price: Free<br>
-		<a href="https://itunes.apple.com/us/app/the-3-great-trivia/id694924959?mt=8" target="_blank">link to iTunes store</a></p>
-		<p>A <a href="suspended-belief-studios">Suspended Belief</a> Joint.</p>
-		<p>Game Design: <br>Ray Yuen, Jeremy Klar</p>
-		<p>Developer: <br>Smartwave Studios</p>
+		iOS Trivia Game</p>
+		<p><a href="suspended-belief-studios">Suspended Belief Studios</a><p>
+		<p>Game Design: Ray Yuen, Jeremy Klar</p>
+		<p>Art & Design: Ray Yuen</p>
+		<p>Developer: Smartwave Studios
 	';
 
 	$img_info = array(
@@ -646,24 +646,21 @@ if ( $title == "Color Chameleon" ) {
 	$path="img/color-chameleon";
 	$company = "Suspended Belief Studios";
 
-	$description = 'Color Chameleon was one of the first ideas we tried to bring to life. We thought it would be fun to run from a zookeeper who was chasing after you. The thing you needed to do was match the color of the objects that were in your path so you could camoflague and gain distance on your pursuers.
-		</p><p>
-		We went through a few iterations in a 2-D perspective but we ultimately scrapped it because we couldn\'t figure out how to program it on our own. We ulitimately decided to put our money into our original idea, Indiginauts, and hire developers to help with that. We put this on the shelf.
-		</p><p>
-		After the success of <em>Jet Pack Joyride</em> and <em>Temple Run</em>, my business partner Jeremy once again brought up the idea of doing this game. He made the chameleon bipedal and changed the idea so that he was running through a forest picking up bugs. He needed to change to the color of the bugs to pick them up. We had another artist at this point so we made up a bunch of artwork, but once again, the game wasn\'t how we hoped so we put it back on the shelf.
-		</p><p>
-		<strong>Epilogue</strong>: Jeremy couldn\'t let the idea of a "runner" go and has created a game called <a href="https://itunes.apple.com/us/app/color-surfer/id836439737?mt=8" target="_blank">"Color Surfer."</a> It\'s no longer a chameleon, but a spaceship! Give it a try!
-	';
+	$description = "Color Chameleon was one of the first ideas we tried to bring to life. We thought it would be fun to run from a zookeeper who was chasing after you. The thing you needed to do was match the color of the objects that were in your path so you could camoflague and gain distance on your pursuers.
+		$p_break
+		We went through a few iterations in a 2-D perspective but we ultimately scrapped it because we couldn't figure out how to program it on our own. We ulitimately decided to put our money into our original idea, Indiginauts, and hire developers to help with that. We put this on the shelf.
+		$p_break
+		After the success of <em>Jet Pack Joyride</em> and <em>Temple Run</em>, my business partner Jeremy once again brought up the idea of doing this game. He made the chameleon bipedal and changed the idea so that he was running through a forest picking up bugs. He needed to change to the color of the bugs to pick them up. We had another artist at this point so we made up a bunch of artwork, but once again, the game wasn't how we hoped so we put it back on the shelf.
+	";
 
-	$sidebar = '
+	$sidebar = "
 		iOS runner</p>
-		<p>First iteration:
-		Art by Ray&nbsp;Yuen</p>
-		<p>Second iteration:
-		Art by Ray&nbsp;Yuen &amp; Sun Park</p>
-	';
+		<p><a href='suspended-belief-studios'>Suspended Belief Studios</a></p>
+		<p>Game Design: Jeremy Klar, Ray Yuen</p>
+		<p>Art by Ray&nbsp;Yuen, Sun&nbsp;Park</p>
+	";
 
-	$tools=array(
+	$tools = array(
 		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>50),
 		array("skill"=>"Photoshop", "percent"=>45),
 	);
@@ -1707,7 +1704,7 @@ if ( $title == "NextLesson" ) {
 
 	$description = "
 	NextLesson is a resource for teachers to find projects and lessons that engage students in real world problem solving basing lessons around familiar (and current) topics—like <a href='https://www.nextlesson.org/resources/q-pokemon' target='_blank'>Pok&eacute;mon Go</a>, <a href='https://www.nextlesson.org/resources/q-minecraft' target='_blank'>Minecraft</a>, <a href='https://www.nextlesson.org/resources/q-taylor%20swift' target='_blank'>Taylor Swift</a> or <a href='https://www.nextlesson.org/resources/interest-basketball-baseball-winter+sports-xtreme+sports-racket+sports-olympics-football-hockey' target='_blank'>sports</a></a>.
-	</p><p>
+	$p_break
 	As <em>Head of Design</em> at NextLesson, I oversaw all artwork and website design needs. I was originally hired to assist Marketing and to create all the lesson covers on the site, but quickly branched out as I saw many things that needed design help. I made student interest icons for the InterestID tool, helped design the Interactive tool, and built a graphics library that freelancers could use to speed up artwork creation.
 	";
 
@@ -1737,9 +1734,9 @@ if ( $title == "NextLesson Lesson Covers" ) {
 
 	$description = "
 		My first big task at NextLesson! We have numerous projects and lessons on the site and each one needed a cover.
-		<p></p>
+		$p_break
 		Before I could get the team to help with the covers, I needed to make sure I knew what I wanted. Planned in tandem with a redesigned search/browse page, we set about standardizing the displayed information as well as taking the first steps to form a distinctive “look.”
-		<p></p>
+		$p_break
 		We set about making sure all covers had the same information in the same spot. Lesson type on top, logo in the bottom left, and title nice and big; everything else was up to the artist. I oversee a team of designers to make sure covers are created in a timely manner. I’ve created a graphics library that our freelancers use to facilitate faster turnaround.
 		<p></p>
 		Jump to 2 years and 2,034 covers later. Most of the back-covers are complete and a system is in place for new covers. Please see some of my favorite covers below.
@@ -1848,10 +1845,10 @@ if ( $title == "NextLesson Glossary Terms" ) {
 	// $movie = "$path/interactive-pt-overview.mp4";
 
 	$description = "After releasing the initial version of our Interactive lessons, it was up to our Curriculum team to fill it with learning materials! As they were working on that, we worked on the next iteration. Since we had glossary terms, we thought having images to support them would be impactful, as well as being helpful for our younger user-base.
-		<p></p>
+		$p_break
 		I had a whole library of image assets that we’ve slowly created over time, so this task wasn’t that time-intensive.
 		<image of cover and finished glossary term>
-		<p></p>
+		$p_break
 		No—the bigger challenge was how to illustrate ideas and abstract concepts.
  		<image viable>
 	";

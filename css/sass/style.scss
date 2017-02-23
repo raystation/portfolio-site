@@ -600,7 +600,15 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 				padding: 2px 15px;
 				border-radius: 14px;
 				margin-bottom: 0.5em;
-				// line-height: 1em;
+				@include transition( all 0.125s);
+				&:hover {
+					@include transition( all 0.125s);
+					background-color: #CCD6DD;
+				}
+
+				a:link, a:visited {
+					color: black;
+				}
 			}
 		}
 		.checklist {
