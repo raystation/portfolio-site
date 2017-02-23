@@ -1,9 +1,22 @@
-<?	
+<?
 	$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
-	$section="work";
+	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
 
-	// TODO:automatically find out what the title of the post is
-	
+
+	$selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
+	$filter_list_html = get_filter_list_html($selected_filter);
+
+	//projects to show on the front page
+	$number_of_thumbnails = 99;
+
+	if ( isset($id) ) {
+		$id_html = "?id=$id";
+	} else {
+		$id_html="";
+	}
+
+	$section = "work";
+
 	switch ( $project ) {
 		default:
 		$pageTitle = "Ray Yuen | Work";
@@ -47,7 +60,7 @@
 
 		case 'chronicles-of-old-rome':
 		$title = 'Chronicles of Old&nbsp;Rome';
-		break;		
+		break;
 
 		case 'chronicles-of-old-paris':
 		$title = 'Chronicles of Old&nbsp;Paris';
@@ -77,13 +90,13 @@
 		$title = 'Indiginauts';
 		break;
 
-		case 'malado-baldwin-wordpress':
-		$title = 'Malado Baldwin Wordpress site';
-		break;
-
-		case 'malado-baldwin-indexhibit':
+		case 'malado-baldwin':
 		$title = 'Malado Baldwin';
 		break;
+
+		// case 'malado-baldwin-indexhibit':
+		// $title = 'Malado Baldwin';
+		// break;
 
 		case 'monkey-mo':
 		$title = 'Monkey Mo, Monkey&nbsp;Go!';
@@ -101,8 +114,8 @@
 		$title = "Pok&eacute;mon: Toys'R'Us Feature Shop";
 		break;
 
-		case 'sarah-walko-wordpress':
-		$title = 'Sarah Walko website';
+		case 'sarah-walko':
+		$title = 'Sarah Walko';
 		break;
 
 		case 'scavenger-hunt':
@@ -123,7 +136,7 @@
 
 		case 'museyon-guides':
 		$title = 'Museyon Guides';
-		break;		
+		break;
 
 		case 'pokemon':
 		$title = 'The Pok&eacute;mon Company';
@@ -131,31 +144,31 @@
 
 		case 'toy-fair':
 		$title = 'Pok&eacute;mon: Toy Fair';
-		break;		
+		break;
 
 		case 'mystery-dungeon':
 		$title = 'Pok&eacute;mon: Mystery&nbsp;Dungeon';
-		break;		
+		break;
 
 		case 'battle-revolution':
 		$title = 'Battle Revolution';
-		break;		
+		break;
 
 		case 'pocket-pokedex':
 		$title = 'Pocket Pok&eacute;dex';
-		break;		
+		break;
 
 		case 'dp-launch':
 		$title = 'Pok&eacute;mon: Diamond & Pearl Launch';
-		break;		
+		break;
 
 		case 'licensing-show':
 		$title = 'Licensing Show';
-		break;		
+		break;
 
 		case 'pokemon-logos':
 		$title = 'Pok&eacute;mon: Logos';
-		break;	
+		break;
 
 		case 'portfolio-site':
 		$title = 'Portfolio Site';
@@ -167,17 +180,187 @@
 
 		case 'wired':
 		$title = 'Wired';
-		break;		
+		break;
+
+		case 'holiday-2014':
+		$title = 'Holiday Card 2014';
+		break;
+
+		case 'adelle-marcero':
+		$title = 'Adelle Marcero';
+		break;
+
+		case 'idibon':
+		$title = 'idibon';
+		break;
+
+		case 'nextlesson':
+		$title = 'NextLesson';
+		break;
+
+		case 'nextlesson-search-browse':
+		$title = 'NextLesson Search and Browse Page';
+		break;
+
+		case 'nextlesson-interestid':
+		$title = 'NextLesson InterestID';
+		break;
+
+		case 'nextlesson-marketing':
+		$title = 'NextLesson Marketing';
+		break;
+
+		case 'nextlesson-interactive':
+		$title = 'NextLesson Interactive';
+		break;
+
+		case 'nextlesson-avatars':
+		$title = 'Avatars';
+		break;
+
+		case 'nextlesson-library':
+		$title = 'Graphics Library';
+		break;
+
+		case 'nextlesson-glossary':
+		$title = 'NextLesson Glossary Terms';
+		break;
+
+		case 'nextlesson-covers':
+		$title = 'NextLesson Lesson Covers';
+		break;
+
+		case 'inktober-2016':
+		$title = "#Inktober2016";
+		break;
 	}
-	
+
 if ( !isset($title) ) { $title = "Work"; }
-include('inc/header.php');
-if ( isset($project) ) { 
-	if ( isset($template) ){
-		$template="inc/templates/".$template.".php";
-		if ( file_exists( $template ) ) { include $template; }
-		else { include 'inc/templates/basic.php'; }
-	} else { include 'inc/templates/basic.php'; }
+
+// COMING FROM THE JOB LANDING PAGE, THIS WILL GENERATE A SECONDARY NAV BAR ON THE BOTTOM
+if ($id) {
+	include_once "inc/company-info.php";
+	if ($sample_projects_array) {
+		$sample_projects_html="";
+		foreach ($sample_projects_array as $key => $sample_project) {
+
+			$project_number = $key+1;
+
+			if ($sample_project['path'] == $project) {
+				$active_style = "active";
+			} else {
+				$active_style = "";
+			}
+
+			$sample_projects_html.="
+				<a href='work?project=$sample_project[path]&id=$id' class='tooltip $active_style' title='$sample_project[name]'>#$project_number</a>
+			";
+		}
+	}
+	$landing_page_nav = "
+		<div class='back-to-landing-page-menu'>
+			<div class='container'>
+				<div class='twelve columns'>
+					<strong>Highlighted Projects for $company:</strong> $sample_projects_html
+				</div>
+				<div class='four columns' style='text-align:right;'>
+					<a href='./hire-me?id=$id'>&#11013; back to job application</a>
+				</div>
+			</div>
+		</div>
+	";
+} else {
+	$landing_page_nav="";
 }
-skeleton_print_thumbnail_4($works);
-include('inc/footer.php'); 
+
+include('inc/header.php');
+
+// IF THE PROJECT IS SET (VIEWING A PROJECT)
+// THEN IT WILL TAKE THE PROJECT OUT OF THE WORK ARRAY SO YOU DON'T GET IT IN THE RECENT PROJECTS
+if ( isset($project) ) {
+	foreach ($works as $key => $work) {
+		if (array_search($title, $work)){
+			break;
+		};
+	}
+	unset($works[$key]);
+	$works = array_values($works);
+}
+
+// GRABS THE TEMPLATE FILE
+// IF THE PROJECT IS SET
+if ( isset($project) ) {
+
+	// IF THE TEMPLATE IS SET
+	if ( isset($template) ){
+
+		// DOUBLE CHECKS TO SEE IF THE TEMPLATE FILE EXISTS, ELSE BASIC
+		$template_path = "inc/templates/$template.php";
+		if ( file_exists( $template_path ) ) { include $template_path; }
+		// else { include 'inc/templates/basic.php'; }
+
+	} else {
+		// TEMPLATE NOT SET, USE BASIC
+		$template = "basic";
+		include 'inc/templates/basic.php';
+	}
+}
+// TODO: have thumbnails not print on company page or consolidate
+
+//produces thumbnails for homepage and below the projects
+
+if ( !isset($template) ) {
+	echo "
+		<div class='sixteen columns filters'>
+			<ul>$filter_list_html</ul>
+		</div>
+	";
+	// echo "// <div class='sixteen columns'> // 	<h2>Selected Works</h2> // </div>";
+	skeleton_print_thumbnail_4($works);
+}
+elseif ($template=="company") {
+	  echo "
+	  <div class='container add-top'>
+	  	<div class='sixteen columns add-bottom'><a href='work$id_html'>&#11013; Back to projects</a></div>
+	  </div>";
+}
+else {
+	skeleton_print_thumbnail_4($works,"",4);
+}
+
+echo $landing_page_nav;
+
+include('inc/footer.php');
+
+// ========================
+
+function get_filters(){
+	$filter_list = array(
+		array( "skill"=>"UI/UX", "url"=>"ui-ux"),
+		array( "skill"=>"Web Dev", "url"=>"web-dev"),
+		array( "skill"=>"Illustration", "url"=>"illustration"),
+		array( "skill"=>"Print Design", "url"=>"print-design"),
+		array( "skill"=>"Places I Worked", "url"=>"places-i-worked"),
+	);
+	return $filter_list;
+}
+function get_filter_list_html( $selected_filter ){
+	$html="";
+	$filters = get_filters();
+
+	if ($selected_filter=="") {
+		$html.="<li class='active'><a href='work'>All</a>";
+	} else {
+		$html.="<li><a href='work'>All</a>";
+	}
+
+	foreach ($filters as $key => $filter) {
+		if ( $selected_filter == $filter['url'] ) {
+			$class="class='active'";
+			$html.="<li class='active'><a href='work'>$filter[skill]</a>";
+		} else {
+			$html.="<li><a href='$filter[url]'>$filter[skill]</a>";
+		}
+	}
+	return $html;
+}

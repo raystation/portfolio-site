@@ -4,10 +4,17 @@ RewriteRule ^work$ work.php
 RewriteRule ^about$ about.php
 RewriteRule ^index$ index.php
 RewriteRule ^hire-me$ hire-me.php
-RewriteRule ^resume$ about?id=resume
+RewriteRule ^resume$ about?view=resume
 RewriteRule ^portraits$ work?project=portraits
 RewriteRule ^ringtones$ ringtones.php
+RewriteRule ^today$ today.php
 RewriteRule ^jobs$ about?id=jobs
+
+RewriteRule ^illustration$ work?f=illustration
+RewriteRule ^ui-ux$ work?f=ui-ux
+RewriteRule ^web-dev$ work?f=web-dev
+RewriteRule ^print-design$ work?f=print-design
+RewriteRule ^places-i-worked$ work?f=places-i-worked
 
 RewriteRule ^pokemon$ work?project=pokemon
 RewriteRule ^feature-shop$ work?project=feature-shop
@@ -46,19 +53,41 @@ RewriteRule ^nerd-comics$ work?project=nerd-comics
 RewriteRule ^edgeware$ work?project=edgeware
 RewriteRule ^egg-baby$ work?project=egg-baby
 RewriteRule ^idibon$ work?project=idibon
-RewriteRule ^malado-baldwin-indexhibit$ work?project=malado-baldwin-indexhibit
-RewriteRule ^malado-baldwin-wordpress$ work?project=malado-baldwin-wordpress
+RewriteRule ^malado-baldwin$ work?project=malado-baldwin
 RewriteRule ^monkey-mo$ work?project=monkey-mo
-RewriteRule ^sarah-walko-wordpress$ work?project=sarah-walko-wordpress
+RewriteRule ^sarah-walko$ work?project=sarah-walko
 RewriteRule ^scavenger-hunt$ work?project=scavenger-hunt
 RewriteRule ^storymaps$ work?project=storymaps
 RewriteRule ^tiger-tiger$ work?project=tiger-tiger
 RewriteRule ^portfolio-site$ work?project=portfolio-site
 RewriteRule ^lesconcierges$ work?project=lesconcierges
 RewriteRule ^wired$ work?project=wired
+RewriteRule ^holiday-2014$ work?project=holiday-2014
+RewriteRule ^adelle-marcero$ work?project=adelle-marcero
+RewriteRule ^inktober-2016$ work?project=inktober-2016
+
+RewriteRule ^nextlesson$ work?project=nextlesson
+RewriteRule ^nextlesson-covers$ work?project=nextlesson-covers
+RewriteRule ^nextlesson-interestid$ work?project=nextlesson-interestid
+RewriteRule ^nextlesson-glossary$ work?project=nextlesson-glossary
+RewriteRule ^nextlesson-interative$ work?project=nextlesson-interative
+RewriteRule ^nextlesson-search-browse$ work?project=nextlesson-search-browse
+RewriteRule ^nextlesson-library$ work?project=nextlesson-library
+RewriteRule ^nextlesson-avatars$ work?project=nextlesson-avatars
+RewriteRule ^nextlesson-pdf$ work?project=nextlesson-pdf
+RewriteRule ^nextlesson-marketing$ work?project=nextlesson-marketing
+RewriteRule ^nextlesson-sports$ work?project=nextlesson-sports
 
 RewriteRule ^kabam$ hire-me?id=9999
 RewriteRule ^bigfish$ hire-me?id=510
 RewriteRule ^zenpayroll$ hire-me?id=zen
 RewriteRule ^dropcam$ hire-me?id=dropcam
+RewriteRule ^google-doodle$ hire-me?id=google-doodle
+RewriteRule ^duckduckmoose$ hire-me?id=duckduckmoose
+RewriteRule ^ixl-illustration-coordinator$ hire-me?id=ixl-illustration-coordinator
+RewriteRule ^facebook-illustrator-designer-cultural-moments$ hire-me?id=facebook-illustrator-designer-cultural-moments
+RewriteRule ^facebook-illustrator-designer-messenger$ hire-me?id=facebook-illustrator-designer-messenger
+RewriteRule ^twitch-senior-ui-ux-designer-ads-and-promotions-platform$ hire-me?id=twitch-senior-ui-ux-designer-ads-and-promotions-platform
+RewriteRule ^humble-bundle-senior-designer$ hire-me?id=humble-bundle-senior-designer
 
+RewriteRule ^holiday2014$ http://www.rayuen.com/p/holiday-card/holiday

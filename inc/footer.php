@@ -1,51 +1,91 @@
+<?
+
+$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+if ( isset($id) ) {
+	$id_html = "?id=$id";
+} else {
+	$id_html="";
+}
+
+$email_subject = "";
+$email_text = "";
+if ( !isset($id)) {
+	$id="";
+	$jobTitle="";
+	include_once "inc/lists.php";
+	$email_subject = get_spoilers();
+	$rand = array_rand($email_subject);
+	$email_subject = $email_subject[$rand];
+	$email_subject = get_email_body($email_subject);
+} else {
+	if ( isset($company)) {
+		include_once "inc/company-info.php";
+		$subject = "re: $company - $jobTitle";
+		$email_subject = get_email_body($subject);
+	}
+
+	include_once "inc/lists.php";
+	$email_text = get_spoilers();
+	$rand = array_rand($email_text);
+	$email_text = $email_text[$rand];
+	$email_text = get_email_body($email_text);
+}
+
+
+// echo $email_text;
+
+?>
 	</div> <!-- end container -->
-	
+
 	<!-- Footer
 	==================================================  -->
 
-	<footer class="band">
+	<footer id="footer">
 
 		<div class="container">
 
+			<div class="four columns add-bottom">
+				<ul>
+					<li><a href="./<? echo $id_html;?>">home</a>
+					<li><a href="work<? echo $id_html;?>">work</a>
+					<li><a href="about<? echo $id_html;?>">about</a>
+				</ul>
+			</div>
+
+			<div class="four columns add-bottom">
+				<ul>
+					<li><a href="mailto:rayuen@gmail.com?body=<? echo $email_text;?>&subject=<? echo $email_subject;?>">email</a>
+				</ul>
+			</div>
+
+			<div class="four columns">
+				<ul>
+					<li><a href="ringtones.php">ringtones</a>
+					<!-- <li><a href="jobs">jobs</a> -->
+				</ul>
+			</div>
+
+			<div class="four columns"></div>
+
 			<div class="sixteen columns">
-				<div class="four columns alpha add-bottom">
-					<ul>
-						<li><a href="./">home</a></li>
-						<li><a href="work">work</a></li>
-						<li><a href="about">about</a></li>
-					</ul>
-				</div>
-
-				<div class="four columns add-bottom">
-					<ul>
-						<li><a href="mailto:rayuen@gmail.com?subject=">email</a></li>
-					</ul>
-				</div>
-
-				<div class="four columns">
-					<ul>
-						<li><a href="ringtones.php">ringtones</a></li>
-						<li><a href="jobs">jobs</a></li>
-					</ul>
-				</div>
-
-				<div class="four columns omega"></div>
-
 				<hr>
+			</div>
 
-					<p>All works &copy; <?php $date=get_date();echo $date["year"];?> Raymond Yuen.</p>
-					<p>Please do not reproduce without expressed written consent.</p>
-					<p class="add-bottom">Built with Skeleton.</p>
-					<p><? $pun = print_pun(); echo $pun; ?></p>
+			<div class="twelve columns add-bottom">
+				<p>All works &copy; <?php $date=get_date();echo $date["year"];?> Raymond Yuen.</p>
+				<p class="add-bottom">Please do not reproduce without expressed written consent.</p>
+				<p><? $pun = print_pun(); echo $pun; ?></p>
+			</div>
 
+			<div class="four columns  emoji">
+				<? //get_emoji(3);?>
 			</div>
 
 		</div> <!-- END CONTAINER -->
 
+
 	</footer>
 
-	
-	
 	<!-- Slick
 	================================================== -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -74,9 +114,9 @@
 			  fade: true,
 			  pauseOnHover: false
 			});
-		});		
+		});
 	</script>
-				
+
 
 	<!-- Lightbox 2.7.1
 	==================================================  -->
@@ -90,7 +130,7 @@
 		var headroom = new Headroom(myElement, {
 		  "tolerance": 10,
 		  "offset": 50,
-		});		
+		});
 		headroom.init();
 	</script>
 
@@ -101,10 +141,11 @@
             	animation: 'fade',
             	delay: 200
             });
-        }); 
+        });
 	</script>
 	<script src="js/job-details.js"></script>
-	<?php  
+	<?php
+		echo $footer_add;
 		if ( isset($plugin) ) {
 			echo "<script src='".$plugin[0]."'></script>";
 			echo "<script>".$plugin[1]."</script>";
@@ -113,8 +154,6 @@
 
 <!-- End Document
 ================================================== -->
-	
-	<?php dev_tools($livereload=true,$responsive=false) ;?>
 
 </body>
 </html>

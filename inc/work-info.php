@@ -1,283 +1,118 @@
-<?php 
-
-
-function pr($var){
-	if ( !is_null($var) ) {
-		echo $var;
-		return true;
-	} else {
-		return false;
-	}
-}
+<?
 
 $works = array(
-	array( "name" => "Pok&eacute;mon","path" => "pokemon","thumb" => "svg" ), 
-	array( "name" => "Suspended Belief Studios","path" => "suspended-belief-studios", "thumb" => "jpg" ), 
-	array( "name" => "Indiginauts", "path" => "indiginauts", "thumb" => "jpg" ), 
-	array( "name" => "The 3", "path" => "the3", "thumb" => "svg" ), 
-	array( "name" => "Museyon Guides", "path" => "museyon-guides", "thumb" => "svg" ), 
-	array( "name" => "Abriendo Puertas / Opening&nbsp;Doors", "path" => "abriendo-puertas",	"thumb" => "jpg" ), 
-	array( "name" => "Project Animore", "path" => "project-animore", "thumb" => "jpg" ), 
-	array( "name" => "100 Principles of Game&nbsp;Design","path" => "100-principles-of-game-design","thumb" => "jpg" ),
-	array( "name" => "Monkey Mo, Monkey&nbsp;Go!","path" => "monkey-mo","thumb" => "jpg" ), 
-	array( "name" => "Scavenger Hunt","path" => "scavenger-hunt","thumb" => "jpg" ), 
-	array( "name" => "Color Chameleon","path" => "color-chameleon","thumb" => "jpg" ), 
-	array( "name" => "Sarah Walko website","path" => "sarah-walko-wordpress","thumb" => "jpg" ), 
-	array( "name" => "Edgeware","path" => "edgeware","thumb" => "jpg" ), 
-	array( "name" => "StoryMaps","path" => "storymaps","thumb" => "jpg" ),
-	array( "name" => "Malado Baldwin Wordpress website","path" => "malado-baldwin-wordpress","thumb" => "jpg" ),
-	array( "name" => "Egg Baby","path" => "egg-baby","thumb" => "jpg" ), 
-	array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit", "thumb" => "jpg" ),
-	// array( "name" => "Portfolio Site","path" => "portfolio-site", "thumb" => "jpg" ),
-	array( "name" => "LesConcierges","path" => "lesconcierges", "thumb" => "jpg" ),
-	array( "name" => "Wired","path" => "wired", "thumb" => "jpg" ),
-	// array( "name" => "idibon","path" => "idibon","thumb" => "jpg" ),
-	// array( "name" => "Nerd Comics", "path" => "nerd-comics", "thumb" => "jpg" ),
+	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") ),
+	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("web-dev","illustration","ui-ux") ),
+	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("web-dev","illustration","ui-ux") ),
+	// array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing" ),
+	array( "name" => "NextLesson Glossary Images","path" => "nextlesson-glossary","tags"=>array("illustration") ),
+	// array( "name" => "NextLesson Interactive","path" => "nextlesson-interactive" ),
+	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars" ),
+	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library" ),
+	// array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-browse" ),
+	array( "name" => "The 3", "path" => "the3", "tags"=>array("illustration","ui-ux") ),
+	array( "name" => "Indiginauts", "path" => "indiginauts", "tags" => array("illustration","ui-ux") ),
+	array( "name" => "Pok&eacute;mon", "path" => "pokemon","tags"=>array("places-i-worked") ),
+	array( "name" => "Wired", "path" => "wired", "tags" => array("illustration") ),
+	array( "name" => "Abriendo Puertas / Opening&nbsp;Doors", "path" => "abriendo-puertas",	"tags"=>array("web-dev") ),
+	array( "name" => "Color Chameleon", "path" => "color-chameleon", "tags" => array("illustration","ui-ux") ),
+	array( "name" => "Adelle Marcero Portfolio Site", "path" => "adelle-marcero","tags"=>array("web-dev", "ui-ux") ),
+	array( "name" => "LesConcierges","path" => "lesconcierges", "tags" => array("illustration") ),
+	array( "name" => "Museyon Guides", "path" => "museyon-guides", "tags"=>array("places-i-worked") ),
+	array( "name" => "Project Animore", "path" => "project-animore", "tags" => array("illustration","ui-ux") ),
+	array( "name" => "#Inktober2016","path" => "inktober-2016", "tags" => array("illustration") ),
+	array( "name" => "100 Principles of Game&nbsp;Design", "path" => "100-principles-of-game-design", "tags" => array("illustration") ),
+	array( "name" => "Holiday Card 2014", "path" => "holiday-2014", "tags" => array("illustration") ),
+	array( "name" => "Monkey Mo, Monkey&nbsp;Go!", "path" => "monkey-mo", "tags" => array("illustration", "print-design") ),
+	array( "name" => "Scavenger Hunt", "path" => "scavenger-hunt", "tags" => array("illustration") ),
+	array( "name" => "Suspended Belief Studios", "path" => "suspended-belief-studios", "tags" => array("places-i-worked") ),
+	array( "name" => "Chronicles of Old New&nbsp;York", "path" => "chronicles-of-old-new-york", "tags"=>array("print-design") ),
+	array( "name" => "Sarah Walko", "path" => "sarah-walko", "tags"=>array("web-dev") ),
+	array( "name" => "Edgeware", "path" => "edgeware", "tags"=>array("illustration") ),
+	array( "name" => "StoryMaps", "path" => "storymaps", "tags" => array("illustration") ),
+	array( "name" => "Malado Baldwin", "path" => "malado-baldwin", "tags"=>array("web-dev") ),
+	array( "name" => "Egg Baby", "path" => "egg-baby", "tags" => array("illustration") ),
+	array( "name" => "Chronicles of Old New&nbsp;York","path" => "chronicles-of-old-new-york","tags"=>array("print-design")),
+	array( "name" => "City Style","path" => "city-style","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old Las&nbsp;Vegas","path" => "chronicles-of-old-las-vegas","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old&nbsp;Boston","path" => "chronicles-of-old-boston","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old&nbsp;Paris","path" => "chronicles-of-old-paris","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old&nbsp;London", "path" => "chronicles-of-old-london", "tags"=>array("print-design")),
+	array( "name" => "Art + Paris","path" => "art-and-paris","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old&nbsp;Rome","path" => "chronicles-of-old-rome","tags"=>array("print-design")),
+	array( "name" => "The Rise of Darkrai","path" => "darkrai", "tags"=>array("print-design","ui-ux") ),
+	array( "name" => "Arceus and the Jewel of&nbsp;Life","path" => "arceus", "tags"=>array("print-design","ui-ux") ),
+	array( "name" => "Pok&eacute;mon: Toys 'R' Us Feature Shop", "path" => "feature-shop", "tags"=>array("print-design") ),
+	array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos", "tags"=>array("print-design") ),
+	array( "name" => "Pok&eacute;mon 10th&nbsp;Anniversary","path" => "10th-anniversary","tags"=>array("print-design") ),
+	array( "name" => "Pok&eacute;mon: Mystery&nbsp;Dungeon", "path" => "mystery-dungeon", "tags"=>array("print-design") ),
+	array( "name" => "Battle Revolution", "path" => "battle-revolution", "tags"=>array("print-design","ui-ux") ),
+	array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex", "tags"=>array("print-design") ),
+	array( "name" => "Pok&eacute;mon Toy&nbsp;Fair", "path" => "toy-fair", "tags"=>array("print-design") ),
+	array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch", "tags"=>array("print-design") ),
+	array( "name" => "Licensing Show", "path" => "licensing-show", "tags"=>array("print-design") ),
+	// array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit" ),
+	// array( "name" => "Portfolio Site","path" => "portfolio-site" ),
+	// array( "name" => "idibon","path" => "idibon","tags"=>array("illustration") ),
+	// array( "name" => "Nerd Comics", "path" => "nerd-comics" ),
 );
 
-function get_SBS_projects(){
+function get_suspended_belief_studios_projects(){
 	$works = array(
-		array( "name" => "Indiginauts","path" => "indiginauts","thumb" => "jpg" ), 
+		array( "name" => "Indiginauts","path" => "indiginauts" ),
 		array( "name" => "The 3","path" => "the3","thumb" => "svg" ),
-		array( "name" => "Abriendo Puertas / Opening&nbsp;Doors","path" => "abriendo-puertas","thumb" => "jpg" ), 
-		array( "name" => "Project Animore","path" => "project-animore","thumb" => "jpg" ),
-		array( "name" => "Color Chameleon","path" => "color-chameleon","thumb" => "jpg" ), 
+		// array( "name" => "Abriendo Puertas / Opening&nbsp;Doors","path" => "abriendo-puertas ),
+		array( "name" => "Project Animore","path" => "project-animore" ),
+		array( "name" => "Color Chameleon","path" => "color-chameleon" ),
 	);
 	return $works;
 }
-function get_museyon_books(){
+function get_museyon_projects(){
 	$works = array(
-		array( "name" => "Chronicles of Old New&nbsp;York","path" => "chronicles-of-old-new-york","thumb" => "jpg" ),
-		array( "name" => "City Style","path" => "city-style","thumb" => "jpg" ), 
-		array( "name" => "Chronicles of Old Las&nbsp;Vegas","path" => "chronicles-of-old-las-vegas","thumb" => "jpg" ),
-		array( "name" => "Chronicles of Old&nbsp;Boston","path" => "chronicles-of-old-boston","thumb" => "jpg" ), 
-		array( "name" => "Chronicles of Old&nbsp;Paris","path" => "chronicles-of-old-paris","thumb" => "jpg" ), 
-		array( "name" => "Chronicles of Old&nbsp;London", "path" => "chronicles-of-old-london", "thumb" => "jpg" ),
-		array( "name" => "Art + Paris","path" => "art-and-paris","thumb" => "jpg" ),
-		array( "name" => "Chronicles of Old&nbsp;Rome","path" => "chronicles-of-old-rome","thumb" => "jpg" ),
+		array( "name" => "Chronicles of Old New&nbsp;York","path" => "chronicles-of-old-new-york" ),
+		array( "name" => "City Style","path" => "city-style" ),
+		array( "name" => "Chronicles of Old Las&nbsp;Vegas","path" => "chronicles-of-old-las-vegas" ),
+		array( "name" => "Chronicles of Old&nbsp;Boston","path" => "chronicles-of-old-boston" ),
+		array( "name" => "Chronicles of Old&nbsp;Paris","path" => "chronicles-of-old-paris" ),
+		array( "name" => "Chronicles of Old&nbsp;London", "path" => "chronicles-of-old-london" ),
+		array( "name" => "Art + Paris","path" => "art-and-paris" ),
+		array( "name" => "Chronicles of Old&nbsp;Rome","path" => "chronicles-of-old-rome" ),
 	);
 	return $works;
 }
 
 function get_pokemon_projects(){
 	$works = array(
-		array( "name" => "The Rise of Darkrai","path" => "darkrai", "thumb" => "jpg" ), 
-		array( "name" => "Arceus and the Jewel of&nbsp;Life","path" => "arceus", "thumb" => "jpg" ),
-		array( "name" => "Pok&eacute;mon: Toys 'R' Us Feature Shop", "path" => "feature-shop", "thumb" => "jpg" ), 
-		array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos", "thumb" => "jpg" ), 
-		array( "name" => "Pok&eacute;mon 10th&nbsp;Anniversary","path" => "10th-anniversary","thumb" => "jpg" ),
-		array( "name" => "Pok&eacute;mon: Mystery&nbsp;Dungeon", "path" => "mystery-dungeon", "thumb" => "jpg" ),
-		array( "name" => "Battle Revolution", "path" => "battle-revolution", "thumb" => "jpg" ),
-		array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex", "thumb" => "jpg" ),
-		array( "name" => "Pok&eacute;mon Toy&nbsp;Fair", "path" => "toy-fair", "thumb" => "jpg" ),
-		array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch", "thumb" => "jpg" ),
-		array( "name" => "Licensing Show", "path" => "licensing-show", "thumb" => "jpg" ),
+		array( "name" => "The Rise of Darkrai","path" => "darkrai" ),
+		array( "name" => "Arceus and the Jewel of&nbsp;Life","path" => "arceus" ),
+		array( "name" => "Pok&eacute;mon: Toys 'R' Us Feature Shop", "path" => "feature-shop" ),
+		array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos" ),
+		array( "name" => "Pok&eacute;mon 10th&nbsp;Anniversary","path" => "10th-anniversary" ),
+		array( "name" => "Pok&eacute;mon: Mystery&nbsp;Dungeon", "path" => "mystery-dungeon" ),
+		array( "name" => "Battle Revolution", "path" => "battle-revolution" ),
+		array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex" ),
+		array( "name" => "Pok&eacute;mon Toy&nbsp;Fair", "path" => "toy-fair" ),
+		array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch" ),
+		array( "name" => "Licensing Show", "path" => "licensing-show" ),
 	);
 	return $works;
 }
 
-
-function html_print_tech_skills() {
-	include_once "inc/lists.php";
-	$array=list_tech_skills();
-	$name=$array["name"];
-	$list=$array["list"];
-	$bkgcolor="196,216,250";
-
-	foreach ($list as $list_item) {
-
-		if ( $list_item == "clear") { 
-			echo "<div class='clear'></div>";
-		} else {
-			$percent=$list_item["percent"];
-			$opacity=$percent*0.01;
-			echo '<div style="width: '.$percent.'%;background-color:rgba('.$bkgcolor.','.$opacity.');">'.$list_item["skill"].'<span class="float-right nobreak">'.$percent.'</span></div>';
-		}
-	}
-}
-
-function horizontal_bar_chart_100 ( $data ) {
-	echo "<div class='bar-chart'></>";
-}
-
-
-function related_check() {
-	
-	global $title;
-
-	if ( 
-		$title == "Art + Paris" or 
-		$title == "Chronicles of Old&nbsp;Rome" or 
-		$title == "Chronicles of Old&nbsp;Boston" or 
-		$title == "Chronicles of Old New&nbsp;York" or 
-		$title == "Chronicles of Old&nbsp;London" or 
-		$title == "Chronicles of Old Las&nbsp;Vegas" or 
-		$title == "Chronicles of Old&nbsp;Paris" or 
-		$title == "City Style"
-		
-		) { include 'inc/related-museyon.php'; }
-
-	if ( 
-		$title == "The 3" or 
-		$title == "Suspended Belief Studios" or 
-		$title == "Indiginauts" or 
-		$title == "Project Animore" or 
-		$title == "Abriendo Puertas / Opening&nbsp;Doors" or 
-		$title == "Color Chameleon"
-
-		) { include 'inc/related-sb.php'; }	
-
-	if ( 
-		$title == "Pok&eacute;mon: Toy Fair" or 
-		$title == "Pok&eacute;mon: Logos" or 
-		$title == "Pok&eacute;mon: Toys'R'Us Feature Shop" or 
-		$title == "Pok&eacute;mon: 10th Anniversary" or 
-		$title == "The Rise of Darkrai" or 
-		$title == "Arceus and the Jewel of&nbsp;Life" or
-		$title == "Battle Revolution" or
-		$title == "Pocket Pok&eacute;dex" or
-		$title == "Pok&eacute;mon: Diamond & Pearl Launch" or
-		$title == "Pok&eacute;mon: Toy Fair" or
-		$title == "Licensing Show" or
-		$title == "Pok&eacute;mon: Mystery&nbsp;Dungeon"
-
-		) { include 'inc/related-pokemon.php'; }
-}
-
-function print_skill_html(){
-	global $tools;
-	echo '<div class="chart">';
-	foreach ( $tools as $tool) {
-		echo '<div class="outer"><div class="inner" style="width:'.$tool["percent"].'%;">'.$tool["skill"]."</div></div>\n";
-	}
-	echo '</div>';
-}
-
-function get_date() {
-	date_default_timezone_set('America/Los_Angeles');
-	$date["year"]=date('Y');
-	$date["day"]=date('D');
-	return $date;
-}
-
-function dev_tools($livereload=true,$responsive=true) {
-	if ($responsive==true) {
-		echo '<div class="responsive-indicator"></div>';
-	}
-	if ($livereload==true) { 
-		echo "<script>document.write('<script src=\"http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1\"></' + 'script>')</script>"; 
-	}
-}
-
 //order of the projects
 
-$projects = array(
-	array( "name" => "Tesla", "path" => "", "thumb" => "thumb.jpg" ),
-	array( "name" => "Palin comics", "path" => "", "thumb" => "thumb.jpg" ),
-	array( "name" => "GIF Drawings","path" => "", "thumb" => "thumb.jpg" ),
-	array( "name" => "GIFS", "path" => "", "thumb" => "thumb.jpg" )
-);
+// $projects = array(
+// 	array( "name" => "Tesla", "path" => "", "thumb" => "thumb.jpg" ),
+// 	array( "name" => "Palin comics", "path" => "", "thumb" => "thumb.jpg" ),
+// 	array( "name" => "GIF Drawings","path" => "", "thumb" => "thumb.jpg" ),
+// 	array( "name" => "GIFS", "path" => "", "thumb" => "thumb.jpg" )
+// );
 
-$portraits = array(
-	array( "name" => "Walter White", "path" => "walter-white", "thumb" => "thumb.jpg" ),
-	array( "name" => "Palin comics", "path" => "", "thumb" => "thumb.jpg" ),
-	array( "name" => "GIF Drawings", "path" => "", "thumb" => "thumb.jpg" ),
-	array( "name" => "GIFS", "path" => "", "thumb" => "thumb.jpg" )
-);
-
-function get_puns() {
-	$puns = array(
-		"I stayed up all night wondering where the sun went. Then it dawned on me.",
-		"It doesn't matter how much you push the envelope. It'll still be stationary.",
-		"What is the leading cause of divorce in long-term marriages? A stalemate.",
-		"You wanna hear a joke about pizza? Never mind, it was too cheesy.",
-		"I tried to catch some fog earlier. I mist.",
-		"I walked into my sister's room and tripped on a bra. It was a booby-trap.",
-		"A book just fell on my head, I only have my shelf to blame.",
-		"I'm reading a book on anti-gravity, and it's impossible to put down.",
-		"I'm glad I know sign language. It's become quite handy.",
-		"I forgot how to throw a boomerang. But it came back to me.",
-		"I once heard a joke about amnesia... But I forget how it goes.",
-		"The frustrated cannibal threw up his hands.",
-		"There was once a crossed-eyed teacher... who had issues controlling his pupils.",
-		"Newspaper headline reads: Cartoonist found dead at home, details are sketchy.",
-		"What did the cannibal get when he showed up to the party late? A cold shoulder.",
-		"A boiled egg in the morning is really hard to beat.",
-	);
-	return $puns;
-}
-
-function print_pun() {
-	$puns=get_puns();
-	shuffle($puns);
-	return $puns[0];
-}
-
-function sf_weather() {
-	include 'inc/phpweatherlib.php';
-	$weatherObj=new WeatherLib("KSFO");
-	$weather=array();
-	$weather["temp"]=intval( $weatherObj->get_temp_f() );
-	$weather["condition"]=$weatherObj->get_weather_string();
-	return $weather;
-}
-
-// fills in the div with links to the thumbnail and title
-//deprecated
-function workthumb($num) {
-	global $works;
-	if ( $works[$num] == NULL) {
-		return;
-	}
-	echo '<a href="'.$works[$num]["path"].'"><img src="img/'.$works[$num]["path"].'/thumb.'.$works[$num]["thumb"].'" class="scale-with-grid"></a>'."\n";
-	echo "<p>".$works[$num]["name"]."</p>\n";
-} 
-
-function skeleton_print_thumbnail_4($array) {
-
-	echo '</div><div class="container portfolio">'."\n";
-	global $description;
-
-	//adds home link if it's not the index page
-	if ( isset($description) ) { 
-		// echo '<hr>'."\n"; 
-		echo '<div class="sixteen columns add-bottom"><hr><a href="index">&#11013; Back to home</a></div>'."\n"; 
-	} 
-
-	// populates page with thumbnails from $work	
-	$count=1;
-	$alphacount;
-	$omegacount;
-	foreach ( $array as $array_item ) {
-		echo '<div class="four columns"><a href="'.$array_item["path"].'" alt="'.html_entity_decode($array_item["name"]).'"><img src="img/'.$array_item["path"].'/thumb.'.$array_item["thumb"].'"></a><p>'.$array_item["name"].'</p></div>';
-		if ( $count == 4 ) { 
-			echo "<div class='clear'></div>";
-			$count = 1;
-		} else {
-			$count++;
-		}
-	}
-}
-
-function skeleton_print_page_thumbnail_4($array) {
-	global $description;
-	global $path;
-	echo "</div><div class='container portfolio'>";
-	// populates page with thumbnails from $work
-	$count=1;
-	foreach ( $array as $array_item ) {
-		echo "\t".'<div class="four columns"><a href="'.$array_item["path"].'" alt="'.html_entity_decode($array_item["name"]).'"><img class="scale-with-grid" src="img/'.$array_item["path"].'/thumb.'.$array_item["thumb"].'"></a><p>'.$array_item["name"].'</p></div>'."\n";
-		if ( $count == 4 ) { 
-			echo "<div class='clear'></div>";
-			$count = 1;
-		} else {
-			$count++;
-		}
-	}
-	echo "</div>";
-}
-
-
+// $portraits = array(
+// 	array( "name" => "Walter White", "path" => "walter-white", "thumb" => "thumb.jpg" ),
+// 	array( "name" => "Palin comics", "path" => "", "thumb" => "thumb.jpg" ),
+// 	array( "name" => "GIF Drawings", "path" => "", "thumb" => "thumb.jpg" ),
+// 	array( "name" => "GIFS", "path" => "", "thumb" => "thumb.jpg" )
+// );
 
 // MUSEYON  ========================
 
@@ -296,28 +131,26 @@ function museyon_sidebar() {
 			<a href=" .$url." target='_blank'>Buy a copy</a>";
 }
 
+#COMPANY
+
 //  #MUSEYON GUIDES
 // ===============================
 
 if ( $title == "Museyon Guides" ) {
 
-	$path="img/museyon-guides/";
+	$path="img/museyon-guides";
 	$template="company";
 	$logo="svg";
 	$meta_description="I worked for a travel/history book company laying out their books.";
 	$description = '
-		"Smart guide books for travel junkies, culture-vultures, movie lovers and history buffs." Museyon Guides, a small publishing startup in New York, needed someone to design and layout their books. Their books liked to focus on the art, film and music of different places around the globe. 
+		Museyon Guides, a small publishing startup in New York City, self&#8209;described as "smart guide books for travel junkies, culture-vultures, movie lovers and history buffs," needed someone to design and layout their books. Their books focused on the art, film and music of cultural hotspots around the globe.
 		</p><p>
-		I joined up just as they were concepting a new side book focused on <a href="chronicles-of-old-new-york">New York</a> history. That book went to be one of their top sellers so I was asked to go into full-time Chronicles mode. In the end, I helped them with seven books. In addition to other side books, I also did some banner ads, brochures and other marketing materials for&nbsp;them.
+		I joined up just as they were concepting a new book focused on <a href="chronicles-of-old-new-york">New York</a> history. That book went to be one of their top sellers so I was asked to go into full-time Chronicles mode. In the end, I helped  with seven books. In addition to other side books, I helped with various collateral—banner ads, brochures and other marketing materials.
 	';
-	
+
 	$sidebar = "
 		<a href='http://www.museyon.com' target='_blank'>museyon.com</a>
 	";
-
-	$img_info = array(
-    		array("file" => "walter-white.gif", "alt" => ""),
-	);	
 
 } // end MUSEYON GUIDES
 
@@ -327,20 +160,16 @@ if ( $title == "Museyon Guides" ) {
 
 if ( $title == "The Pok&eacute;mon Company" ) {
 
-	$path="img/pokemon/";
+	$path="img/pokemon";
 	$template="company";
 	$logo="svg";
 	$description = '
-		A brief rundown of the work I did at Pok&eacute;mon. 			
+		I worked at Pok&eacute;mon from 2015-2010. It was a great experience and a lot of fun. As part of a small in-house creative team, we produced many things including strategy guides, mini game and movie sites, localized logos, and marketing materials.
 	';
-	
+
 	$sidebar = "
 		<a href='http://www.pokemon.com' target='_blank'>pokemon.com</a>
 	";
-
-	$img_info = array(
-		array("file" => "walter-white.gif", "alt" => ""),
-	);	
 
 } //end Pokémon
 
@@ -349,39 +178,21 @@ if ( $title == "The Pok&eacute;mon Company" ) {
 
 if ( $title == "Suspended Belief Studios" ) {
 
-	$path="img/suspended-belief-studios/";
+	$path="img/suspended-belief-studios";
 
-	$description = 'Me and my friend Jeremy Klar started this company together. Originally intended to just make games, we have since taken on some web development as well. Originally began in Brooklyn, we moved out to San Francisco to be closer to the gaming scene.' 
+	$description = 'Me and my friend Jeremy Klar started this company together. Originally intended to just make games, we started taking on some web development as well. Originally began in Brooklyn, we moved out to San Francisco to be closer to the gaming scene. Our company released two games and went on hiatus shortly after that.'
 	;
 
 	$template="company";
 	$logo="svg";
-	
+
 	$sidebar = "Design studio.</p>
-	<p><a href=\"http://www.suspendedbeliefgames.com\">suspendedbeliefgames.com</a>";
+	<p><a href='pages/sb-studios1/' target='_blank' >suspendedbeliefgames.com</a>";
 
 	$img_info = array(
-	);	
+	);
 
 } //end SUSPENDED BELIEF STUDIOS
-
-
-//  #PORTRAITS
-// ===============================
-
-if ( $title == "Walter White" ) {
-
-	$path="img/walter-white/";
-
-	$description;
-	
-	$sidebar = "";
-
-	$img_info = array(
-		array("file" => "walter-white.gif", "alt" => ""),
-	);	
-
-} //end PORTRAITS
 
 
 // #STORYMAPS
@@ -389,32 +200,29 @@ if ( $title == "Walter White" ) {
 
 if ( $title == "StoryMaps" ) {
 
-	$path="img/storymaps/";
+	$path="img/storymaps";
 
 	$description = "
-		A programmer I knew, <a href=\"https://github.com/seanh\">Sean Hammond</a>, was coding some software for a Ph.D. study that would assist children in the process of story creation. He called it StoryMaps. Essentially, StoryMaps breaks down the elements of traditional fairy tales into building blocks which children could use to invent new stories. They can create stories that contain their own original ideas while being structurally complete and well-formed.
+		A programmer I knew, <a href=\"https://github.com/seanh\">Sean Hammond</a>, was making software for a Ph.D. study that would assist children in the process of story creation. He called it StoryMaps. Essentially, it would break down the elements of traditional fairy tales into building blocks which children could use to invent new stories. They can create stories that contain their own original ideas while being structurally complete and well-formed.
 		</p><p>
-		A big challenge with this project was making the artwork generic enough so that the kids would still get to inject their own imagination into it. Some were more difficult than others, but I was up for the task.
-		</p><p>
-		Looking at tarot cards for inspiration, I sought to break each event down to it's core action. The main characters would all be represented by simple stick-like figures with no faces. Each image was accentuated with one color.
+		I wanted to make the artwork stylistically generic so that it wouldn't narrow your imagination. Looking at tarot cards and comics for inspiration, I sought to break each event down to it's core action. The main characters would all be represented by simple stick-like figures with no faces. Each image was accentuated with one color.
 		</p><p>
 		<div class='caption list-spacing-fix'>
 		<ul>Additional reading:
 			<li><a href='http://www.era.lib.ed.ac.uk/handle/1842/5294' target='_blank'>Sean's Ph.D. thesis</a></li>
-			<li><a href=\"https://github.com/seanh\">Sean's Github page</a></li>
 		<ul>
 		</div>
-		
+
 		";
 
-	$sidebar = '<p>comic-like hand-drawn illustrations</p>
-	<p><a href="http://seanh.github.io/storymaps/">StoryMaps software</a>
+	$sidebar = '<p>Comic-like, hand-drawn illustrations</p>
+	<p><a href="http://seanh.github.io/storymaps">StoryMaps Github page</a>
 	';
 
 	$tools=array(
-		array("skill"=>"Photoshop", "percent"=>20),
-		array("skill"=>"Illustrator", "percent"=>20),
-		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>30),
+		array("skill"=>"Photoshop", "percent"=>40),
+		// array("skill"=>"Illustrator", "percent"=>10),
+		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>60),
 	);
 
 	$img_info = array(
@@ -425,7 +233,32 @@ if ( $title == "StoryMaps" ) {
 	    array("file" => "05.jpg", "alt" => "Test / Magic Helper")
 	);
 
-} //end Storymaps	
+} //end Storymaps
+
+
+// #idibon
+// ========================
+
+if ( $title == "idibon" ) {
+
+	$path="img/idibon";
+
+	$description = "Lumbersexual humblebrag asymmetrical, post-ironic kickstarter four loko kale chips bicycle rights venmo. Bushwick narwhal pickled selvage lo-fi, chartreuse celiac direct trade cliche pabst. XOXO taxidermy fingerstache brunch authentic, street art you probably haven't heard of them salvia.";
+
+	$sidebar = '<p>Comic-like, hand-drawn illustrations</p>
+	<p><a href="http://seanh.github.io/storymaps">StoryMaps Github page</a>
+	';
+
+	$tools=array(
+		array("skill"=>"Photoshop", "percent"=>40),
+		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>60),
+	);
+
+	$img_info = array(
+	    // array("file" => "01.jpg", "alt" => "Home / Split Up"),
+	);
+
+} //end Storymaps
 
 
 // #INDIGINAUTS
@@ -433,14 +266,15 @@ if ( $title == "StoryMaps" ) {
 
 if ( $title == "Indiginauts" ) {
 
-	$path="img/indiginauts/";
+	$path="img/indiginauts";
+	$company = "Suspended Belief Studios";
 
 	$description = "
-		This idea was the whole reason we started Suspended Belief Games. Based on an illustration I did for a group show in New York, the Indiginauts were space explorers in the vein of Star Fleet. They were peace-loving creatures that explored the stars. Were they decended from humans? Maybe. They loved nothing more than to explore, learn and record for others to see.
+		This idea was the whole reason we started Suspended Belief Games. Based on an illustration I did for a group show in New York, the Indiginauts were space explorers in the vein of Star Fleet. They were peace-loving creatures that explored the stars. Were they decended from humans? Maybe. They loved nothing more than to explore, learn and record for others to&nbsp;see.
 		</p><p>
 		Well, that was the original idea. Now they are wise-cracking repairmen. We developed the game as a simplified <span class='tooltip underline' title='Point and Touch?'>point-and-click</span> geared toward mobile devices. The main goal was to take everything we learned from classic point-and-clicks, like <em>Monkey Island</em>, and streamline and simplify. Top it off with an engaging story, developed characters and fun artwork.
 		</p><p>
-		Currently we are still working on our <a href='http://indiginauts.com' target='_blank'>first build</a>. We are doing internal testing of the game and I am still producing artwork for the&nbsp;game.
+		Here's an <a href='http://indiginauts.com' target='_blank'>initial build</a>.
 		";
 
 	$sidebar = '
@@ -450,14 +284,14 @@ if ( $title == "Indiginauts" ) {
 		<p><a href="http://www.suspendedbeliefgames.com">Suspended Belief Studios</a><br>
 		<a href="http://www.indiginauts.com" target="_blank">Demo Link</a>
 	';
-	
+
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>55),
 		array("skill"=>"Hand&nbsp;Drawn&nbsp;Illustrations", "percent"=>35),
 		array("skill"=>"Illustrator", "percent"=>5),
 		array("skill"=>"Flash", "percent"=>5),
-	);	
-	
+	);
+
 	$img_info = array(
 	    array("file" => "logo.jpg", "alt" => "Indiginauts logo"),
 	    array("file" => "01.jpg", "alt" => "Title screen"),
@@ -471,7 +305,7 @@ if ( $title == "Indiginauts" ) {
 	    array("file" => "character-sheet.jpg", "alt" => "some various character poses")
 	);
 
-} //end Indiginauts	
+} //end Indiginauts
 
 
 // #100 PRINCIPLES OF GAME DESIGN
@@ -479,26 +313,26 @@ if ( $title == "Indiginauts" ) {
 
 if ( $title == "100 Principles of Game&nbsp;Design" ) {
 
-	$path="img/100-principles-of-game-design/";
+	$path="img/100-principles-of-game-design";
 
 	$description = "
-		Because of a scheduling problem, I was was asked to do the illustrations for a game design book. “Game design you say? This is my area of expertise!” The turnaround was tight, under a month for about 30 spot illustrations. The schedule wasn't the best, but I really wanted to do game illustrations. Exchanging sketches back and forth with the author, we decided that we could have a cast of  characters that could be reused which would greatly speed up the work, as well as establish a visual language.
+		Because of a scheduling problem, I was was asked to do the illustrations for a game design book. “Game design you say? This is my area of expertise!” The turnaround was tight, under a month for about 30 spot illustrations. The schedule wasn't the best, but I really wanted to do game illustrations. Exchanging sketches back and forth with the author, we decided that we could have a cast of  characters that could be reused which would greatly speed up the work, as well as establish a visual&nbsp;language.
 		</p><p>
-		After a month of my regular schedule at work and then spending my time at night creating the illustrations, I was stretched thin. In the end however, I was quite proud of the work and I took another step in mastering a pure vector art style.
+		After a month of my regular schedule at work and then spending my time at night creating the illustrations, I was stretched thin. In the end however, I was quite proud of the work and I took another step in mastering a pure vector art&nbsp;style.
 		";
-	
+
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>45),
 		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>35),
 		array("skill"=>"Photoshop", "percent"=>20),
-	);	
+	);
 
-	$sidebar = 'Published by Pearson</p>
-		<p>Written by <a href="https://twitter.com/subversified">Wendy Despain</a> <br>
+	$sidebar = "Published by Pearson</p>
+		<p>Written by <a href='https://twitter.com/subversified'>Wendy Despain</a> <br>
 		December 2012<br>
 		240 pages </p>
-		<p><a href="http://www.pearsonhighered.com/educator/product/100-Principles-of-Game-Design/9780321902498.page">Buy a copy</a></p>
-	';
+		<p><a href='https://www.amazon.com/100-Principles-Game-Design-DESPAIN/dp/0321902491/ref=sr_1_1?ie=UTF8&qid=1482367099&sr=8-1&keywords=100+principles+of+game+design' target='_blank'>Buy a copy</a></p>
+	";
 
 	$img_info = array(
 	    array("file" => "book-cover.jpg", "alt" => "Cover of the book"),
@@ -519,7 +353,7 @@ if ( $title == "100 Principles of Game&nbsp;Design" ) {
 	    array("file" => "working-memory.jpg", "alt" => "some various character poses"),
 	);
 
-} //end 100-principles-of-game-design	
+} //end 100-principles-of-game-design
 
 
 // #ANIMORE
@@ -527,7 +361,8 @@ if ( $title == "100 Principles of Game&nbsp;Design" ) {
 
 if ( $title == "Project Animore" ) {
 
-	$path="img/project-animore/";
+	$path="img/project-animore";
+	$company = "Suspended Belief Studios";
 
 	$description = "
 	This was a game concept we explored on the idea of mixing things together. We never did figure out the best way to execute or make it fun in a free-to-play environment (where all the games were headed at the time on iOS). We also didn't have a developer at the time to actually test game ideas with so it was all a lot of speculation on what would and wouldn't work.
@@ -536,11 +371,11 @@ if ( $title == "Project Animore" ) {
 	</p><p>
 	I mean, did you see that honey bear house?
 	";
-	
+
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>60),
 		array("skill"=>"Illustrator", "percent"=>40),
-	);	
+	);
 
 	$sidebar = 'iOS runner<br>
 		Art by Ray&nbsp;Yuen &amp; Sun&nbsp;Park<br>
@@ -567,7 +402,7 @@ if ( $title == "Project Animore" ) {
 
 if ( $title == "Malado Baldwin" ) {
 
-	$path="img/malado-baldwin-indexhibit/";
+	$path="img/malado-baldwin-indexhibit";
 
 	$description = 'When my artist friend Malado approached me in 2009 about having a site that she could update on her own, I actually didn‘t know what the best solution was out there. I was more print focused back then and had a little HTML/CSS experience. I turned to illustrator <a href="http://peteroumanski.com" target="_blank">Peter Oumanski</a> who told me he had good success using Indexhibit as his CMS. So I set it up. It was easy and now Malado had something she use call her own and didn’t need to hire web designers to update.
 		</p><p>
@@ -579,9 +414,9 @@ if ( $title == "Malado Baldwin" ) {
 		array("skill"=>"Photoshop", "percent"=>20),
 		array("skill"=>"HTML", "percent"=>20),
 		array("skill"=>"CSS", "percent"=>30),
-	); 	
+	);
 
-	$sidebar = "Portfolio Website </p>	
+	$sidebar = "Portfolio Website </p>
 		<p><a href='http://www.maladobaldwin.com' target='_blank'>maladobaldwin.com</a>
 	";
 
@@ -590,17 +425,16 @@ if ( $title == "Malado Baldwin" ) {
 		array("file" => "02.jpg", "alt" => "Projects page"),
 		array("file" => "03.jpg", "alt" => "Projects page"),
 		array("file" => "04.jpg", "alt" => "Malado's bio page"),
-	);	
+	);
 
 } //end malado-baldwin-indexhibit
-
 
 // #MALADO-WORDPRESS-SITE
 // ===============================
 
-if ( $title == "Malado Baldwin Wordpress site" ) {
+if ( $title == "Malado Baldwin" ) {
 
-	$path="img/malado-baldwin-wordpress/";
+	$path="img/malado-baldwin";
 
 	$description = "
 		My friend Malado was growing out of her Indexhibit site and needed <em>more</em>. Responsiveness was the main thing she asked for, but not in those exact words since we didn’t know what that was at the time. I believe what she said was “These pictures look fine on the computer but too small on my phone.” When you're schmoozing it up at the gallery, you want to be able to show someone your painting on the fly while they are consuming free wine and cheese. There are sales to be made!
@@ -611,7 +445,7 @@ if ( $title == "Malado Baldwin Wordpress site" ) {
 	";
 
 	$sidebar = 'Portfolio Website</p>
-		<p><a href="http://www.maladobaldwin.com/blog" target="_blank">link to site</a>';
+		<p><a href="http://www.maladobaldwin.com" target="_blank">maladobaldwin.com</a>';
 
 	$tools=array(
 		array("skill"=>"Wordpress&nbsp;Framework", "percent"=>30),
@@ -629,7 +463,7 @@ if ( $title == "Malado Baldwin Wordpress site" ) {
 	    array("file" => "05.jpg", "alt" => "Artwork Detail"),
 	    array("file" => "07.jpg", "alt" => "Artwork Detail"),
 	    array("file" => "08.jpg", "alt" => "CV Details")
-	);	
+	);
 
 } //end malado-baldwin-wordpress
 
@@ -637,14 +471,14 @@ if ( $title == "Malado Baldwin Wordpress site" ) {
 // #SARAH-WALKO-WORDPRESS
 // ===============================
 
-if ( $title == "Sarah Walko website" ) {
+if ( $title == "Sarah Walko" ) {
 
-	$path="img/sarah-walko-wordpress/";
+	$path="img/sarah-walko";
 
 	$description = "
 		My first experience building a site using Wordpress. I met artist Sarah Walko through my good artist friend Malado Baldwin. She expressed that she needed a site that she could update on her own and that she had experience with Wordpress through work. So I went about helping her figure out the best way to get this going for&nbsp;her.
 		</p><p>
-		After figuring out all the nessesary information on her hosting, the actual Wordpress install really was about 5 minutes (this is something they boast)! We worked together on learning about a fresh WP install and soon was figuring out best practices for theme management, plugins and navigation. PRETTY COOL. So cool that <a href='malado-baldwin-wordpress'>Malado </a> wanted a site just like Sarah’s! 
+		After figuring out all the nessesary information on her hosting, the actual Wordpress install really was about 5 minutes (this is something they boast)! We worked together on learning about a fresh WP install and soon was figuring out best practices for theme management, plugins and navigation. PRETTY COOL. So cool that <a href='malado-baldwin-wordpress'>Malado </a> wanted a site just like Sarah’s!
 	";
 
 	$sidebar = 'Portfolio Website</p>
@@ -661,9 +495,9 @@ if ( $title == "Sarah Walko website" ) {
 	    array("file" => "01.jpg", "alt" => "Revolving Header"),
 	    array("file" => "02.jpg", "alt" => "Revolving Header"),
 	    array("file" => "03.jpg", "alt" => "Artwork Detail")
-	);	
+	);
 
-} //end sarah-walko-wordpress	
+} //end sarah-walko-wordpress
 
 
 // #SCAVENGER-HUNT
@@ -671,7 +505,7 @@ if ( $title == "Sarah Walko website" ) {
 
 if ( $title == "Scavenger Hunt" ) {
 
-	$path="img/scavenger-hunt/";
+	$path="img/scavenger-hunt";
 
 	$description = 'SAN FRANCISCO, California — I submitted a t-shirt design to a Threadless contest. The challenge: make a fun tee for the <a href="http://www.chicagochildrensmuseum.org">Chicago Children\'s Museum</a>. The winner would get a ticket out to Chicago and like $1,000 in Threadless store credit or something. I did a bunch of research about the museum and found my imagination running wild with the activities you could do there (and mildly jealous that I wasn\'t a kid in Chicago!). I thought it would be wonderful to have a shirt that represented all the neat things kids could do at the&nbsp;museum.
 		</p><p>
@@ -695,9 +529,9 @@ if ( $title == "Scavenger Hunt" ) {
 	$img_info = array(
 	    array("file" => "01-thumb.jpg", "alt" => "Tee shirt"),
 	    array("file" => "02-thumb.jpg", "alt" => "Tee shirt detail")
-	);	
+	);
 
-} //end scavenger-hunt	
+} //end scavenger-hunt
 
 
 // #THE3
@@ -705,25 +539,26 @@ if ( $title == "Scavenger Hunt" ) {
 
 if ( $title == "The 3" ) {
 
-	$path="img/the3/";
+	$path="img/the3";
+	$company = "Suspended Belief Studios";
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>70, "icon"=>"IL"),
 		array("skill"=>"Photoshop", "percent"=>20, "icon"=>"PS"),
 		array("skill"=>"OmniGraffle", "percent"=>10,),
-	);	
+	);
 
 	$description = '
 		Our first foray into the iPhone games arena was a trivia game. &ldquo;The&nbsp;3&rdquo; centered around the basic concept of multiple choice trivia with timely usage of powerups.
 		</p>
-		<p> 
+		<p>
 			In our first iteration, you had to type out the answers, but that wasn\'t working out how we hoped and took way too long. It became more of a fast typing game. In our second iteration, we implemented multiple choice with 5 right and wrong answers and set the game time around 2 minutes. We liked this, but ultimately decided that it seemed like people were reading more than they should be, so we decided to cut down the questions and answers to 3, set the timer at one minute and consciously try to keep the wording for questions minimal if possible. We next implemented a system of power-ups and then for the next month went about procuring and writing good trivia questions.
 		</p>
 		<p>
 			We released the game free in the <a href="https://itunes.apple.com/us/app/the-3-great-trivia/id694924959?mt=8" target="_blank">App Store</a> with in-app purchases for new categories as a way to generate revenue. It was also a chance for us to get to know first-hand how the App Store worked and seeing how a game would do with ads and without signifigant marketing dollars put behind it. Currently, it is still in stealth release because we still keep finding <span class="tooltip underline" title="FREAKIN\' google spreadsheet!">mistakes</span> in the questions, but we are hoping to squash all the&nbsp;mistakes.'
 	;
 
-	$sidebar = '	
+	$sidebar = '
 		Platform: iPhone 4 and up. Playable on iPads. <br>
 		Price: Free<br>
 		<a href="https://itunes.apple.com/us/app/the-3-great-trivia/id694924959?mt=8" target="_blank">link to iTunes store</a></p>
@@ -740,7 +575,7 @@ if ( $title == "The 3" ) {
 	    array("file" => "07.jpg", "alt" => "Old UI Designs"),
 	    array("file" => "06.jpg", "alt" => "Old Logo designs"),
 	    array("file" => "05.jpg", "alt" => "Old Designs"),
-	);	
+	);
 
 } //end The 3
 
@@ -750,7 +585,7 @@ if ( $title == "The 3" ) {
 
 if ( $title == "Edgeware" ) {
 
-	$path="img/edgeware/";
+	$path="img/edgeware";
 
 	$description = 'These are vector graphics proposed for a device that would help  Coast Guard patrols decide on the best course of action or even rules of engagement. They would input the conditions and the device would narrow down your options. I am not sure that this device was actually ever created but that’s the world of lucrative government contracts fer&nbsp;ya.';
 
@@ -760,7 +595,7 @@ if ( $title == "Edgeware" ) {
 		array("skill"=>"Photoshop", "percent"=>70),
 		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>10),
 		array("skill"=>"Illustrator", "percent"=>20),
-	);	
+	);
 
 	$img_info = array(
 	    array("file" => "01.jpg", "alt" => "Boat"),
@@ -769,7 +604,7 @@ if ( $title == "Edgeware" ) {
 	    array("file" => "04.jpg", "alt" => "Speedometer"),
 	    array("file" => "05.jpg", "alt" => "Cargo Crates"),
 	    array("file" => "06.jpg", "alt" => "Boat Hiding")
-	);	
+	);
 
 } //end edgeware
 
@@ -779,7 +614,7 @@ if ( $title == "Edgeware" ) {
 
 if ( $title == "Egg Baby" ) {
 
-	$path="img/egg-baby/";
+	$path="img/egg-baby";
 
 	$description = 'A Brooklyn-based apparel company needed some illustrations for some of their clothing. Their work is targeted at infants, small boys and girls.';
 
@@ -790,7 +625,7 @@ if ( $title == "Egg Baby" ) {
 		array("skill"=>"Photoshop", "percent"=>20),
 		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>75),
 		array("skill"=>"Illustrator", "percent"=>5),
-	);	
+	);
 
 	$img_info = array(
 	    array("file" => "miss-egg.jpg", "alt" => "Little Miss Egg, the mascot"),
@@ -798,7 +633,7 @@ if ( $title == "Egg Baby" ) {
 	    array("file" => "hare.jpg", "alt" => "The Hare"),
 	    array("file" => "penguin.jpg", "alt" => "Penguin vs. Fish"),
 	    array("file" => "yeti.jpg", "alt" => "Yeti"),
-	);	
+	);
 
 } //end egg-baby
 
@@ -808,8 +643,8 @@ if ( $title == "Egg Baby" ) {
 
 if ( $title == "Color Chameleon" ) {
 
-	$path="img/color-chameleon/";
-
+	$path="img/color-chameleon";
+	$company = "Suspended Belief Studios";
 
 	$description = 'Color Chameleon was one of the first ideas we tried to bring to life. We thought it would be fun to run from a zookeeper who was chasing after you. The thing you needed to do was match the color of the objects that were in your path so you could camoflague and gain distance on your pursuers.
 		</p><p>
@@ -824,14 +659,14 @@ if ( $title == "Color Chameleon" ) {
 		iOS runner</p>
 		<p>First iteration:
 		Art by Ray&nbsp;Yuen</p>
-		<p>Second iteration: 
-		Art by Ray&nbsp;Yuen &amp; Sun Park</p>				
+		<p>Second iteration:
+		Art by Ray&nbsp;Yuen &amp; Sun Park</p>
 	';
 
 	$tools=array(
 		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>50),
 		array("skill"=>"Photoshop", "percent"=>45),
-	);	
+	);
 
 	$img_info = array(
 	    array("file" => "title.jpg", "alt" => "Title Screen on the iPhone"),
@@ -845,7 +680,7 @@ if ( $title == "Color Chameleon" ) {
 	    array("file" => "04.jpg", "alt" => "Objects"),
 	    array("file" => "03.jpg", "alt" => "Rock details"),
 	    array("file" => "05.jpg", "alt" => "Character Selection by Sun Park"),
-	);	
+	);
 
 } //end color-chameleon
 
@@ -855,7 +690,8 @@ if ( $title == "Color Chameleon" ) {
 
 if ( $title == "Art + Paris" ) {
 
-	$path="img/art-and-paris/";
+	$path="img/art-and-paris";
+	$company = "Museyon";
 
 	$description = '
 	<strong>Impressionists Post-Impressionists: The Ultimate Guide to Artists, Paintings and Places in Paris and Normandy</strong>. This was another book in the <em>Art+</em> series that Museyon was doing that they hadn’t done in a while since they started full steam with the Chronicles series. I personally had never laid out one of these, so I was eager to tackle something new.
@@ -868,7 +704,7 @@ if ( $title == "Art + Paris" ) {
 	$author = "Museyon&nbsp;Guides";
 	$pages = 328;
 	$date = "July 2012";
-	$url = "http://www.museyon.com/shop/art-paris-impressionists/";
+	$url = "http://www.museyon.com/shop/art-paris-impressionists";
 
 	$sidebar = museyon_sidebar();
 
@@ -876,7 +712,7 @@ if ( $title == "Art + Paris" ) {
 		array("skill"=>"Indesign", "percent"=>75),
 		array("skill"=>"Photoshop", "percent"=>20),
 		array("skill"=>"Illustrator", "percent"=>5),
-	);	
+	);
 
 	$img_info = array(
 	    array("file" => "09.jpg", "alt" => "Lady in the Toilet by Morisot"),
@@ -889,7 +725,7 @@ if ( $title == "Art + Paris" ) {
 	    array("file" => "05.jpg", "alt" => "Musée du Louvre page"),
 	    array("file" => "06.jpg", "alt" => "Walking Tour page"),
 	    array("file" => "07.jpg", "alt" => "Van Gogh"),
-	);	
+	);
 
 } //end art-and-paris
 
@@ -899,13 +735,14 @@ if ( $title == "Art + Paris" ) {
 
 if ( $title == "Chronicles of Old&nbsp;London" ) {
 
-	$path="img/chronicles-of-old-london/";
+	$path="img/chronicles-of-old-london";
+	$company = "Museyon";
 
 	$tools=array(
 		array("skill"=>"Indesign", "percent"=>75),
 		array("skill"=>"Photoshop", "percent"=>20),
 		array("skill"=>"Illustrator", "percent"=>5),
-	);	
+	);
 
 	$description = '
 		<strong>Exploring England’s Historic Capital</strong>. The last Chronicles book I laid out. By this seventh book, the process for creation was pretty automatic. The conversations moved on from design to better content and better flow. <em>&ldquo;Is this drawing of Jack the Ripper too graphic?&rdquo; &ldquo;Is it not graphic enough?&rdquo; &ldquo;Is this too many photos of the Royal Wedding?&rdquo;</em>
@@ -920,7 +757,7 @@ if ( $title == "Chronicles of Old&nbsp;London" ) {
 	$author="Kevin&nbsp;Jackson";
 	$pages = 288;
 	$date = "May 2012";
-	$url = "http://www.museyon.com/shop/chronicles-of-old-london/";
+	$url = "http://www.museyon.com/shop/chronicles-of-old-london";
 
 	$sidebar = museyon_sidebar();
 
@@ -934,7 +771,7 @@ if ( $title == "Chronicles of Old&nbsp;London" ) {
 	    array("file" => "05.jpg", "alt" => "Spread"),
 	    array("file" => "06.jpg", "alt" => "South Bank Walking Tour"),
 	    array("file" => "07.jpg", "alt" => "London map"),
-	);	
+	);
 
 } //end chronicles-of-old-london
 
@@ -944,7 +781,8 @@ if ( $title == "Chronicles of Old&nbsp;London" ) {
 
 if ( $title == "Chronicles of Old&nbsp;Paris" ) {
 
-	$path="img/chronicles-of-old-paris/";
+	$path="img/chronicles-of-old-paris";
+	$company = "Museyon";
 
 	$description = '
 		<strong>Exploring the Historic City of Light</strong>. Paris. The city of love. This place has a very special place in my heart because this is was my first trip with my s.o. other than each other\'s cities (long distance!).</p><p>Where the Vegas book was rife with land grabbing deals, the American frontier, casinos and big personalities—the Paris book was about food, steadfastness, art and music. There\'s a story about the city being starved during a siege and them resorting to eating zoo animals instead of surrendering. Oh and the top restaurants fought over who got which animal. How amazing is that?
@@ -954,7 +792,7 @@ if ( $title == "Chronicles of Old&nbsp;Paris" ) {
 	$author="John&nbsp;Baxter";
 	$pages = 288;
 	$date = "May 2011";
-	$url = "http://www.museyon.com/shop/chronicles-of-old-paris/";
+	$url = "http://www.museyon.com/shop/chronicles-of-old-paris";
 
 	$sidebar = museyon_sidebar();
 
@@ -962,13 +800,13 @@ if ( $title == "Chronicles of Old&nbsp;Paris" ) {
 		array("skill"=>"Indesign", "percent"=>75),
 		array("skill"=>"Photoshop", "percent"=>20),
 		array("skill"=>"Illustrator", "percent"=>5),
-	);	
+	);
 
 	$img_info = array(
 		array("file" => "cover.jpg", "alt" => "Book Cover"),
 		array("file" => "01.jpg", "alt" => "Montmarte"),
 		array("file" => "02.jpg", "alt" => "Napoleon"),
-	);	
+	);
 
 } //end chronicles-of-old-paris
 
@@ -978,12 +816,13 @@ if ( $title == "Chronicles of Old&nbsp;Paris" ) {
 
 if ( $title == "City Style" ) {
 
-	$path="img/city-style/";
+	$path="img/city-style";
+	$company = "Museyon";
 
 	$description = '
 		A Field Guide to Global Fashion Capitals. The second book I worked on with Museyon, City Style was a completely one-off book on fashion. <a href="http://www.linkedin.com/in/thisisheatherc">Heather</a>, one of the editors, was a big nerd for art and fashion (she taught me about jean jackets).
 		</p><p>
-		This was basically me and Heather\'s book, so we basically got to do most everything we wanted. With Heather manning the phones and email trying to get approved photos from fashion houses, I went about establishing a variant of the Museyon style for the book\'s skeleton. It was structured, but loose enough that it allowed each city to have it\'s own look and feel. We wanted the book to have a a magazine feel to them with bold type design with big photos that spoke for themselves. We may have gotten a little carried away in the beginning with many pages being full photos and the page count going up, but we course-corrected and got ourselves back to the target page count. 
+		This was basically me and Heather\'s book, so we basically got to do most everything we wanted. With Heather manning the phones and email trying to get approved photos from fashion houses, I went about establishing a variant of the Museyon style for the book\'s skeleton. It was structured, but loose enough that it allowed each city to have it\'s own look and feel. We wanted the book to have a a magazine feel to them with bold type design with big photos that spoke for themselves. We may have gotten a little carried away in the beginning with many pages being full photos and the page count going up, but we course-corrected and got ourselves back to the target page count.
 		</p><p>
 			Epilogue: This book really refined the working relationship that would serve us well in the coming year as we go into full <a href="chronicles-of-old-las-vegas"><em>Chronicles</em></a>&nbsp;mode.
 		';
@@ -991,7 +830,7 @@ if ( $title == "City Style" ) {
 	$author = "Museyon&nbsp;Guides";
 	$pages = 272;
 	$date = "October 2011";
-	$url = "http://www.museyon.com/shop/city-style/";
+	$url = "http://www.museyon.com/shop/city-style";
 
 	$sidebar = museyon_sidebar();
 
@@ -999,7 +838,7 @@ if ( $title == "City Style" ) {
 		array("skill"=>"Indesign", "percent"=>75),
 		array("skill"=>"Photoshop", "percent"=>20),
 		array("skill"=>"Illustrator", "percent"=>5),
-	);	
+	);
 
 	$img_info = array(
 	    array("file" => "03.jpg", "alt" => "Fashion Forward"),
@@ -1015,7 +854,7 @@ if ( $title == "City Style" ) {
 	    array("file" => "ny.jpg", "alt" => "New York opening spread"),
 	    array("file" => "ny1.jpg", "alt" => "New York spread"),
 	    array("file" => "dir.jpg", "alt" => "Designer Directory")
-	);	
+	);
 
 } //end city-style
 
@@ -1025,11 +864,11 @@ if ( $title == "City Style" ) {
 
 if ( $title == "Chronicles of Old&nbsp;Rome" ) {
 
-	$path="img/chronicles-of-old-rome/";
-
+	$path="img/chronicles-of-old-rome";
+	$company = "Museyon";
 
 	$description = '
-		<strong>Exploring Italy\'s Eternal City</strong>. After my move to San Francisco, I didn\'t get to work on as many big projects with Museyon anymore. One thing I still do on occasion is work on their maps. Normally there is another person who makes their maps, but because they are an intensive endeavor, I was asked to help out. I had good success with it because I was more familiar with the page margins, the software and being able to make all the fonts consistently the same&nbsp;size. 
+		<strong>Exploring Italy\'s Eternal City</strong>. After my move to San Francisco, I didn\'t get to work on as many big projects with Museyon anymore. One thing I still do on occasion is work on their maps. Normally there is another person who makes their maps, but because they are an intensive endeavor, I was asked to help out. I had good success with it because I was more familiar with the page margins, the software and being able to make all the fonts consistently the same&nbsp;size.
 		</p><p>
 		That being said, they are still an intensive endeavor that involves some pretty detailed Illustrator work. And street labeling. So much street labeling.
 	';
@@ -1043,12 +882,10 @@ if ( $title == "Chronicles of Old&nbsp;Rome" ) {
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>70),
-		array("skill"=>"Google Maps", "percent"=>10),
-		array("skill"=>"Openmaps", "percent"=>10),
+		array("skill"=>"Google&nbsp;Maps&nbsp;/&nbsp;Openmaps", "percent"=>20),
 		array("skill"=>"Photoshop", "percent"=>5),
 		array("skill"=>"Indesign", "percent"=>5),
-	);	
-	$tools = array("Illustrator","Photoshop","Indesign","Google Maps","Openmaps");
+	);
 
 	$img_info = array(
    		array("file" => "cover.jpg", "alt" => ""),
@@ -1056,7 +893,8 @@ if ( $title == "Chronicles of Old&nbsp;Rome" ) {
    		array("file" => "01.jpg", "alt" => ""),
    		array("file" => "02.jpg", "alt" => ""),
    		array("file" => "03.jpg", "alt" => ""),
-	);	
+	);
+
 
 } //end chronicles-of-old-rome
 
@@ -1066,27 +904,28 @@ if ( $title == "Chronicles of Old&nbsp;Rome" ) {
 
 if ( $title == "Chronicles of Old New&nbsp;York" ) {
 
-	$path="img/chronicles-of-old-new-york/";
+	$path="img/chronicles-of-old-new-york";
+	$company = "Museyon";
 
 	$description = '
 		<strong>Explore 400 years of Manhattan history</strong>. <em>Chronicles of Old New York</em> was the first book I worked on with Museyon Guides. The first half of the book details stories in and around New York City\'s history. The second half of the book featured walking tours which would highlight eight areas and provide references to the first half of the book. The historic content was pretty awesome. Gun duels, old taverns in the city (that George Washington went to!), rich capitalists that built the city...it was nice to know more about the city I lived in.
 		</p><p>
-		This book was to be an off-shoot book (up till this point, Museyon had been making a series of books called <a href="http://www.museyon.com/shop/art-travel-europe/">Art+</a> and <a href="http://www.museyon.com/shop/film-travel-asia-oceania-africa/">Film+</a>). We decided that we wanted to have a different look, but still keep the looks aligned. We worked together to establish some base rules and some standard layouts and with the skeleton of the book created, we went about populating the pages. 
+		This book was to be an off-shoot book (up till this point, Museyon had been making a series of books called <a href="http://www.museyon.com/shop/art-travel-europe">Art+</a> and <a href="http://www.museyon.com/shop/film-travel-asia-oceania-africa">Film+</a>). We decided that we wanted to have a different look, but still keep the looks aligned. We worked together to establish some base rules and some standard layouts and with the skeleton of the book created, we went about populating the pages.
 		</p><p>
-		Since this was the first time we worked together, I had to make sure their production files were all up to snuff. The owner had a decent eye for design and some previous production experience with magazines, but the files were a copy-and-paste mess. I showed them how to automate the more menial tasks, like converting folders of images to CMYK, paragraph/character styles and indexing (because humans have better things to do!) They had me pretty involved in the design and photo selection process which I quite enjoyed. 
+		Since this was the first time we worked together, I had to make sure their production files were all up to snuff. The owner had a decent eye for design and some previous production experience with magazines, but the files were a copy-and-paste mess. I showed them how to automate the more menial tasks, like converting folders of images to CMYK, paragraph/character styles and indexing (because humans have better things to do!) They had me pretty involved in the design and photo selection process which I quite enjoyed.
 		</p><p>
 		<strong>Epilogue</strong>: We worked really well together and this book actually became their best selling book which lead to them doing more in the <em>Chronicles</em> series (which meant more work for me! Yeah!). They eventually asked me to do more in the series, but that took some time. In the meantime, they asked me to layout a <a href="city-style">fashion book</a>.';
-	
+
 	$author = "James&nbsp;Roman";
 	$pages = 260;
 	$date = "June 2010";
 	$url = "http://www.museyon.com/shop/chronicles-of-old-new-york";
-	
+
 	$tools=array(
 		array("skill"=>"Indesign", "percent"=>75),
 		array("skill"=>"Photoshop", "percent"=>20),
 		array("skill"=>"Illustrator", "percent"=>5),
-	);	
+	);
 
 	$sidebar = museyon_sidebar();
 
@@ -1103,7 +942,7 @@ if ( $title == "Chronicles of Old New&nbsp;York" ) {
    		array("file" => "09.jpg", "alt" => ""),
    		array("file" => "01.jpg", "alt" => ""),
    		array("file" => "burr.jpg", "alt" => ""),
-	);	
+	);
 
 } //end chronicles-of-old-new-york
 
@@ -1113,14 +952,15 @@ if ( $title == "Chronicles of Old New&nbsp;York" ) {
 
 if ( $title == "Chronicles of Old&nbsp;Boston" ) {
 
-	$path="img/chronicles-of-old-boston/";
+	$path="img/chronicles-of-old-boston";
+	$company = "Museyon";
 
 	$description = '<strong>Exploring New England’s Historic Capital</strong>. No one can deny Boston’s historical signifigance in America’s history. Being able to read the stories of our forefathers and a broken mollasses tank that kills woman and children alike in the same book. Amazing. ';
 
 	$author="Charles&nbsp;Bahne";
 	$pages = 288;
 	$date = "April 2012";
-	$url="http://www.museyon.com/shop/chronicles-of-old-boston/";
+	$url="http://www.museyon.com/shop/chronicles-of-old-boston";
 
 	$sidebar = museyon_sidebar();
 
@@ -1141,7 +981,7 @@ if ( $title == "Chronicles of Old&nbsp;Boston" ) {
 		array("file" => "05.jpg", "alt" => ""),
 		array("file" => "06.jpg", "alt" => ""),
 		array("file" => "08.jpg", "alt" => ""),
-	);	
+	);
 
 } //end chronicles-of-old-boston
 
@@ -1151,7 +991,8 @@ if ( $title == "Chronicles of Old&nbsp;Boston" ) {
 
 if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 
-	$path="img/chronicles-of-old-las-vegas/";
+	$path="img/chronicles-of-old-las-vegas";
+	$company = "Museyon";
 
 	$description = '
 		<strong>Exploring Sin City’s High-Stakes History</strong>. The third book I worked on with Museyon. With <a href="chronicles-of-old-new-york"><em>Chronicles of Old New York</em></a> selling very well, they decided to continue this series and asked me to help with 5 more books! Which cities? A few ideas were tossed around, but I had a feeling it was always going to be Vegas, baby. Mafia dons, casinos, Elvis, Liberace, nuclear tests...don\'t pretend like you don\'t want to know about this sort of stuff!
@@ -1164,7 +1005,7 @@ if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 	$author="James&nbsp;Roman";
 	$pages = 240;
 	$date = "February 2012";
-	$url = "http://www.museyon.com/shop/chronicles-of-old-las-vegas/";
+	$url = "http://www.museyon.com/shop/chronicles-of-old-las-vegas";
 
 	$tools=array(
 		array("skill"=>"Indesign", "percent"=>75),
@@ -1172,7 +1013,7 @@ if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 		array("skill"=>"Illustrator", "percent"=>5),
 	);
 
-	
+
 	$sidebar = museyon_sidebar();
 
 	$img_info = array(
@@ -1184,7 +1025,7 @@ if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 	    array("file" => "05.jpg", "alt" => "Neon Boneyard"),
 	    array("file" => "06.jpg", "alt" => ""),
 	    array("file" => "02.jpg", "alt" => "naked ladies"),
-	);	
+	);
 
 } //end chronicles-of-old-las-vegas
 
@@ -1194,13 +1035,14 @@ if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 
 if ( $title == "Abriendo Puertas / Opening&nbsp;Doors" ) {
 
-	$path="img/abriendo-puertas/";
+	$path="img/abriendo-puertas";
+	//update screenshots and description
 
 	$description = '<em>Abriendo Puertas / Opening Doors</em> is a non-profit dedicated to decreasing the drop-out rate of Latino kids by instilling good behaviors at home. They believe the answer starts at home so their primary focus is on educating their parents. AP/OD holds training sessions where they teach parents different things they could do with their kids to better engage them and acclimate them to a learning environment.
 		</p><p>
-		AP/OD needed an informational site where parents and educators could come to find out more about the organization, where trainings would be, and a place where educators could access teaching materials. After getting approval on the overall look of the site, we built the site based on the Skeleton framework. After a few rounds of going back and forth, we streamlined the content of the site with PHP. They now have beautiful site that looks good on all devices.
+		AP/OD needed an informational site where parents and educators could come to find out more about the organization, where trainings would be, and a place where educators could access teaching materials. After getting approval on the overall look of the site, we built the site based on the Skeleton framework. After a few rounds of going back and forth, we streamlined the content of the site with PHP. They now have a beautiful site that looks great on all&nbsp;devices.
 		';
-	
+
 	$sidebar = "Responsive Website</p>
 		<p><a href='http://ap-od.org' target='_blank'>ap-od.org</a>
 	";
@@ -1220,7 +1062,7 @@ if ( $title == "Abriendo Puertas / Opening&nbsp;Doors" ) {
 		array("file" => "03.jpg", "alt" => ""),
 		array("file" => "04.jpg", "alt" => ""),
 		array("file" => "05.jpg", "alt" => ""),
-	);	
+	);
 
 } //end abriendo-puertas
 
@@ -1230,7 +1072,7 @@ if ( $title == "Abriendo Puertas / Opening&nbsp;Doors" ) {
 
 if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 
-	$path="img/monkey-mo/";
+	$path="img/monkey-mo";
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>55),
@@ -1242,10 +1084,9 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 	$description = '
 		Teaming up again with author Lin Fong O\'Neil, we worked together to create another children\'s book. Lin wanted to make another book about another animal in the Chinese zodiac and when she asked me what I wanted to do, I responded with "Monkey!" Monkeys are rad&nbsp;obviously.
 		</p><p>
-		The story follows the adventures of a little boy\'s adventure to the zoo and finding a new best friend. I put a lot of detail into this book and made it somewhat interactive. I hid animals in various spots so as give children an activity to do after they finish.
+		The story follows the adventures of a little boy\'s adventure to the zoo and finding a new best friend. I put a lot of detail into this book and made it somewhat interactive. I hid animals in various spots so as to give children an activity to do after they&nbsp;finish.
 		</p>
 
-		<hr>
 		<div class="six columns alpha">
 			<a href="img/monkey-mo/classroom1.jpg" data-lightbox="monkey" data-title="The group"><img class="scale-with-grid" src="img/monkey-mo/classroom1.jpg" alt=""></a>
 		</div>
@@ -1256,7 +1097,7 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 		The time I read the book to a kindergarten class and then taught them how to draw monkeys. That was a good day!
 		'
 		;
-	
+
 	$sidebar = "Children's Book<br>Published 2010</p>
 		<p>written by: Lin Fong O'Neill, <a href='http://www.lotuswriting.com'>Lotus&nbsp;Writing</a><br>Illustrated: by Ray Yuen</p>
 		<p>Hand-drawn and inked, coloring done in Photoshop</p>
@@ -1276,7 +1117,7 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 		array("file" => "05.jpg", "alt" => ""),
 		array("file" => "07.jpg", "alt" => ""),
 		array("file" => "10.jpg", "alt" => ""),
-	);	
+	);
 
 } //end monkey-mo
 
@@ -1286,7 +1127,8 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 
 if ( $title == "The Rise of Darkrai" ) {
 
-	$path="img/darkrai/";
+	$path="img/darkrai";
+	$company = "Pokemon";
 
 	$description = '
 	The Rise of Darkrai was the 10th Pok&eacute;mon movie made and the third movie I worked&nbsp;on.
@@ -1300,7 +1142,7 @@ if ( $title == "The Rise of Darkrai" ) {
 		array("skill"=>"Illustrator", "percent"=>80),
 		array("skill"=>"Photoshop", "percent"=>20),
 	);
-	
+
 	$sidebar = "February 2008</p>
 				<p><strong>Creative</strong>: Chris&nbsp;Brixey, Ray&nbsp;Yuen</p>
 				<p><strong>Interactive</strong>: Masahiro&nbsp;Manabe</p>
@@ -1315,7 +1157,7 @@ if ( $title == "The Rise of Darkrai" ) {
 		array("file" => "02.jpg", "alt" => "home screen"),
 		array("file" => "03.jpg", "alt" => "home screen"),
 		array("file" => "04.jpg", "alt" => "home screen"),
-	);	
+	);
 
 } //end THE RISE OF DARKRAI
 
@@ -1325,22 +1167,23 @@ if ( $title == "The Rise of Darkrai" ) {
 
 if ( $title == "Arceus and the Jewel of&nbsp;Life" ) {
 
-	$path="img/arceus/";
+	$path="img/arceus";
+	$company = "Pokemon";
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>80),
 		array("skill"=>"Photoshop", "percent"=>20),
 	);
 
-	$description;
-	
+	$description="Coming soon.";
+
 	$sidebar = "";
 
 	$img_info = array(
 		array("file" => "03.jpg", "alt" => ""),
 		array("file" => "01.jpg", "alt" => ""),
 		array("file" => "02.jpg", "alt" => ""),
-	);	
+	);
 
 } //end arceus
 
@@ -1349,7 +1192,8 @@ if ( $title == "Arceus and the Jewel of&nbsp;Life" ) {
 
 if ( $title == "Pok&eacute;mon: 10th Anniversary" ) {
 
-	$path="img/10th-anniversary/";
+	$path="img/10th-anniversary";
+	$company = "Pokemon";
 
 	$description = '
 	 	The celebrations began with a "Journey Across America" Mall Tour where we distributed exclusive Pok&eacute;mon and held game tournaments. Winners were invited to the national tournament. It all lead up to the big event at Bryant Park, where the National Game Tournament was held and all aspects of the Pok&eacute;mon products and brands were represented.
@@ -1360,7 +1204,7 @@ if ( $title == "Pok&eacute;mon: 10th Anniversary" ) {
 		array("skill"=>"Photoshop", "percent"=>20),
 		array("skill"=>"Indesign", "percent"=>10),
 	);
-	
+
 	$sidebar = "Bryant Park";
 
 	$img_info = array(
@@ -1380,7 +1224,7 @@ if ( $title == "Pok&eacute;mon: 10th Anniversary" ) {
 		array("file" => "13.jpg", "alt" => ""),
 		array("file" => "14.jpg", "alt" => ""),
 		array("file" => "15.jpg", "alt" => ""),
-	);	
+	);
 
 } //end arceus
 
@@ -1389,10 +1233,11 @@ if ( $title == "Pok&eacute;mon: 10th Anniversary" ) {
 
 if ( $title == "Pok&eacute;mon: Toys'R'Us Feature Shop" ) {
 
-	$path="img/feature-shop/";
+	$path="img/feature-shop";
+	$company = "Pokemon";
 
-	$description;
-	
+	$description="Coming soon.";
+
 	$sidebar = "Toys'R'Us Times Square";
 
 	$tools=array(
@@ -1409,7 +1254,7 @@ if ( $title == "Pok&eacute;mon: Toys'R'Us Feature Shop" ) {
 		array("file" => "06.jpg", "alt" => ""),
 		array("file" => "07.jpg", "alt" => ""),
 		array("file" => "08.jpg", "alt" => ""),
-	);	
+	);
 
 } //end TOYS R US
 
@@ -1419,10 +1264,11 @@ if ( $title == "Pok&eacute;mon: Toys'R'Us Feature Shop" ) {
 
 if ( $title == "Pok&eacute;mon: Toy Fair" ) {
 
-	$path="img/toy-fair/";
+	$path="img/toy-fair";
+	$company = "Pokemon";
 
-	$description;
-	
+	$description="Coming soon.";
+
 	$sidebar = "
 		Trade Show Booth
 	";
@@ -1437,7 +1283,7 @@ if ( $title == "Pok&eacute;mon: Toy Fair" ) {
 		array("file" => "02.jpg", "alt" => ""),
 		array("file" => "03.jpg", "alt" => ""),
 		array("file" => "04.jpg", "alt" => ""),
-	);	
+	);
 
 } //end TOY FAIR
 
@@ -1447,17 +1293,17 @@ if ( $title == "Pok&eacute;mon: Toy Fair" ) {
 
 if ( $title == "Nerd Comics" ) {
 
-	$path="img/nerd-comics/";
+	$path="img/nerd-comics";
 
 	$description;
-	
+
 	$sidebar = "";
 
 	$img_info = array(
 		array("file" => "darwin.gif", "alt" => ""),
 		array("file" => "inspiration.gif", "alt" => ""),
 		array("file" => "marvels.gif", "alt" => ""),
-	);	
+	);
 
 } //end NERD COMICS
 
@@ -1467,12 +1313,15 @@ if ( $title == "Nerd Comics" ) {
 
 if ( $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon" ) {
 
-	$path="img/mystery-dungeon/";
+	$path="img/mystery-dungeon";
+	$company = "Pokemon";
 
-	$description;
-	
+	$description="
+		Logo creation. Strategy Guide creation. Mini-website development.
+	";
+
 	$sidebar = "
-		Strategy Guide <br />	
+		Strategy Guide <br />
 		Mini-website Creation
 	";
 
@@ -1484,7 +1333,7 @@ if ( $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon" ) {
 	$img_info = array(
 		array("file" => "01.jpg", "alt" => ""),
 		array("file" => "02.jpg", "alt" => ""),
-	);	
+	);
 
 } //end MYSTERY DUNGEON
 
@@ -1494,10 +1343,12 @@ if ( $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon" ) {
 
 if ( $title == "Pocket Pok&eacute;dex" ) {
 
-	$path="img/pocket-pokedex/";
+	$path="img/pocket-pokedex";
+	$company = "Pokemon";
 
-	$description;
-	
+	// TODO: fill in missing Pokemon descriptions
+	$description="Coming soon.";
+
 	$sidebar = "
 		Book Design <br />
 
@@ -1514,7 +1365,7 @@ if ( $title == "Pocket Pok&eacute;dex" ) {
 		array("file" => "03.jpg", "alt" => ""),
 		array("file" => "04.jpg", "alt" => ""),
 		array("file" => "05.jpg", "alt" => ""),
-	);	
+	);
 
 } //end POCKET POKEDEX
 
@@ -1524,10 +1375,11 @@ if ( $title == "Pocket Pok&eacute;dex" ) {
 
 if ( $title == "Battle Revolution" ) {
 
-	$path="img/battle-revolution/";
+	$path="img/battle-revolution";
+	$company = "Pokemon";
 
-	$description;
-	
+	$description="Coming soon.";
+
 	$sidebar = "Strategy Guides <br />
 	Mini-website";
 
@@ -1540,20 +1392,21 @@ if ( $title == "Battle Revolution" ) {
 		array("file" => "01.jpg", "alt" => ""),
 		array("file" => "02.jpg", "alt" => ""),
 		array("file" => "03.jpg", "alt" => ""),
-	);	
+	);
 
 } //end BATTLE REVOLUTION
 
 
-//  #DIAMOND-AND-PEARL 
+//  #DIAMOND-AND-PEARL
 // ===============================
 
 if ( $title == "Pok&eacute;mon: Diamond & Pearl Launch" ) {
 
-	$path="img/dp-launch/";
+	$path="img/dp-launch";
+	$company = "Pokemon";
 
-	$description;
-	
+	$description="Coming soon.";
+
 	$sidebar = "
 		Event at Nintendo World in New York <br />
 		Rockefeller Center
@@ -1576,7 +1429,7 @@ if ( $title == "Pok&eacute;mon: Diamond & Pearl Launch" ) {
 		array("file" => "09.jpg", "alt" => ""),
 		array("file" => "10.jpg", "alt" => ""),
 		array("file" => "11.jpg", "alt" => ""),
-	);	
+	);
 
 } //end DIAMOND-AND-PEARL
 
@@ -1586,10 +1439,11 @@ if ( $title == "Pok&eacute;mon: Diamond & Pearl Launch" ) {
 
 if ( $title == "Licensing Show" ) {
 
-	$path="img/licensing-show/";
+	$path="img/licensing-show";
+	$company = "Pokemon";
 
-	$description;
-	
+	$description="Coming soon.";
+
 	$sidebar = "
 		Trade Show Booth
 	";
@@ -1613,7 +1467,7 @@ if ( $title == "Licensing Show" ) {
 		array("file" => "09.jpg", "alt" => ""),
 		array("file" => "10.jpg", "alt" => ""),
 		array("file" => "11.jpg", "alt" => ""),
-	);	
+	);
 
 } //end LICENSING-SHOW
 
@@ -1623,10 +1477,11 @@ if ( $title == "Licensing Show" ) {
 
 if ( $title == "Pok&eacute;mon: Logos" ) {
 
-	$path="img/pokemon-logos/";
+	$path="img/pokemon-logos";
+	$company = "Pokemon";
 
-	$description;
-	
+	$description="Coming soon.";
+
 	$sidebar = "
 		Logo examples
 	";
@@ -1643,33 +1498,9 @@ if ( $title == "Pok&eacute;mon: Logos" ) {
 		array("file" => "galactic-battles.jpg", "alt" => ""),
 		array("file" => "giratina.jpg", "alt" => ""),
 		array("file" => "battle-frontier.jpg", "alt" => ""),
-	);	
+	);
 
 } //end POKEMON-LOGOS
-
-//  #PORTFOLIO-SITE
-// ===============================
-
-if ( $title == "Portfolio Site" ) {
-
-	$path="img/portfolio-site/";
-
-	$description="yay!";
-	
-	$sidebar="Logo examples";
-
-	$tools=array(
-		array("skill"=>"Sublime Text", "percent"=>70),
-		array("skill"=>"Git", "percent"=>10),
-		array("skill"=>"Photoshop", "percent"=>20),
-	);
-
-	$img_info = array(
-		array("file" => "01.jpg", "alt" => ""),
-		array("file" => "02.jpg", "alt" => ""),
-	);
-
-} //end PORTFOLIO SITE
 
 
 //  #WIRED
@@ -1677,7 +1508,7 @@ if ( $title == "Portfolio Site" ) {
 
 if ( $title == "Wired" ) {
 
-	$path="img/wired/";
+	$path="img/wired";
 
 	$description="Illustration for an \"advertorial\" for Norton in Wired Magazine. Norton wanted to show that in this digital life of ours, our precious, precious memories are all stored on our personal devices that can be lost or broken. For this adventuring family, the best solution is to use Norton services to back up your data.
 	</p>
@@ -1687,8 +1518,9 @@ if ( $title == "Wired" ) {
 	The first idea–dad taking an underwater portrait–was rejected. I actually didn't get a reason, but so I hustled with the other option of the family in a road-trip scenario.
 	</p>
 	";
-	
-	$sidebar="Wired Magazine";
+
+	$sidebar="Wired Magazine<br>2014";
+	// add date of magazine
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>70),
@@ -1697,11 +1529,75 @@ if ( $title == "Wired" ) {
 	);
 
 	$img_info = array(
+		// add photo of magazine cover
 		array("file" => "car.jpg", "alt" => ""),
 		array("file" => "three.jpg", "alt" => ""),
 	);
 
 } //end WIRED
+
+//  #Holiday Card 2014
+// ===============================
+
+if ( $title == "Holiday Card 2014" ) {
+
+	$path="img/holiday-2014";
+
+	$description="
+	For our holiday greeting, I decided to do a riff on the <em>exquisite corpse</em> game with fun costumes. Each figure is composed of a head, a body and feet. These parts are randomly selected on page load and with each refresh, it will randomly select another&nbsp;set.
+	";
+
+	$sidebar="
+	Holiday 2014 <br>
+	<a href='http://www.rayuen.com/holiday2014' target='_blank'>link to site</a>
+	";
+
+	$tools=array(
+		array("skill"=>"Illustrator", "percent"=>65),
+		array("skill"=>"HTML/CSS", "percent"=>10),
+		array("skill"=>"JS", "percent"=>5),
+		array("skill"=>"PHP", "percent"=>20),
+	);
+
+	$img_info = array(
+		array("file" => "01.jpg", "alt" => "Yeti + Reintaur"),
+		array("file" => "02.jpg", "alt" => "Grinch + Animal Princess"),
+		array("file" => "03.jpg", "alt" => "New Years + Santa"),
+		array("file" => "04.jpg", "alt" => "Grinch + Elf Centaur"),
+	);
+
+} //end Holiday 2014
+
+//  #Adelle's site
+// ===============================
+
+if ( $title == "Adelle Marcero" ) {
+
+	$path="img/adelle-marcero";
+
+	$description="
+	I helped my friend Adelle Marcero with her portfolio site. I built it using simple PHP and CSS and linked to her holiday Etsy&nbsp;shop.
+	";
+
+	$sidebar="
+	Adelle Marcero Portfolio Site <br>
+	<a href='http://adelle.ink' target='_blank'>adelle.ink</a>
+	";
+
+	$tools=array(
+		array("skill"=>"HTML/CSS", "percent"=>40),
+		array("skill"=>"PHP", "percent"=>60),
+	);
+
+	$img_info = array(
+		array("file" => "homepage.jpg", "alt" => "Adelle Marcero home page"),
+		array("file" => "jimi.jpg", "alt" => "Jimi Hendrix by Adelle Marcero"),
+		array("file" => "beasties.jpg", "alt" => "The Beastie Boys by Adelle Marcero"),
+		array("file" => "about.jpg", "alt" => "Adelle Marcero about page"),
+		array("file" => "footer.jpg", "alt" => "the footer"),
+	);
+
+} //adelle's site
 
 //  #LESCONCIERGES
 // ===============================
@@ -1709,10 +1605,10 @@ if ( $title == "Wired" ) {
 if ( $title == "LesConcierges" ) {
 
 	$template="art";
-	$path="img/lesconcierges/";
+	$path="img/lesconcierges";
 
 	$description="I was comissioned to do some illustrations to show an example of how LesConcierges' new web interface and app would work with their existing service.";
-	
+
 	$sidebar="
 		Illustrations<br>
 		July 2014
@@ -1747,7 +1643,305 @@ if ( $title == "LesConcierges" ) {
 		</div>
 		<div class='eight columns omega add-bottom'>
 			<a href='img/lesconcierges/sketch5.jpg' data-lightbox='les'><img class='scale-with-grid' src='img/lesconcierges/sketch5.jpg'></a>
-		</div>		
+		</div>
 	";
 
 } //end LESCONCIERGES
+
+//  #Inktober 2016
+// ===============================
+
+if ( $title == "#Inktober2016" ) {
+
+	// $template="art";
+	$path="img/inktober-2016";
+
+	$additional_img_column_count=1;
+
+	$description="
+		All throughout October, I drew a picture everyday and posted it to Instagram and Twitter with the hashtag <a href='https://twitter.com/search?q=%23InkTober'>#Inktober</a>. Inktober is a drawing exercise occurs in October that my friend got me into. A bunch of people were posting images all over the world so it seems like fun!
+		</p>
+	";
+
+	$sidebar="
+		Illustration exercise<br>
+		October 2016
+	";
+
+	$tools=array(
+		array("skill"=>"<span class='nowrap'>Markers</span>", "percent"=>70),
+		array("skill"=>"<span class='nowrap'>Pencils</span>", "percent"=>30),
+		// array("skill"=>"Photoshop", "percent"=>40),
+	);
+
+	$img_info = array(
+		array("file" => "hero.jpg", "alt" => "NEKO ATSUME DOODLE"),
+	);
+
+} //end Inktober 2016
+
+
+
+// ================================================
+//  #NEXTLESSON
+// ================================================
+
+function get_nextlesson_projects(){
+	$works = array(
+		array( "name" => "NextLesson Project Covers", "path" => "nextlesson-covers" ),
+		array( "name" => "NextLesson Marketing", "path" => "nextlesson-marketing" ),
+		array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid" ),
+		array( "name" => "NextLesson Glossary Terms", "path" => "nextlesson-glossary" ),
+		// array( "name" => "Browsing Experience","path" => "nextlesson-search-browse" ),
+		// array( "name" => "Graphics Library", "path" => "nextlesson-library" ),
+		// array( "name" => "Profile Avatars", "path" => "nextlesson-avatars" ),
+		// array( "name" => "Interactive Performance Tasks", "path" => "nextlesson-interative-pt" ),
+		// array( "name" => "Printed Lesson", "path" => "nextlesson-pdf" ),
+	);
+	return $works;
+}
+
+if ( $title == "NextLesson" ) {
+
+	$path="img/nextlesson";
+
+	$description = "
+	NextLesson is a resource for teachers to find projects and lessons that engage students in real world problem solving basing lessons around familiar (and current) topics—like <a href='https://www.nextlesson.org/resources/q-pokemon' target='_blank'>Pok&eacute;mon Go</a>, <a href='https://www.nextlesson.org/resources/q-minecraft' target='_blank'>Minecraft</a>, <a href='https://www.nextlesson.org/resources/q-taylor%20swift' target='_blank'>Taylor Swift</a> or <a href='https://www.nextlesson.org/resources/interest-basketball-baseball-winter+sports-xtreme+sports-racket+sports-olympics-football-hockey' target='_blank'>sports</a></a>.
+	</p><p>
+	As <em>Head of Design</em> at NextLesson, I oversaw all artwork and website design needs. I was originally hired to assist Marketing and to create all the lesson covers on the site, but quickly branched out as I saw many things that needed design help. I made student interest icons for the InterestID tool, helped design the Interactive tool, and built a graphics library that freelancers could use to speed up artwork creation.
+	";
+
+	$template="company";
+	$logo="svg";
+
+	$sidebar = "Engaging K-12 educational materials<br>
+	2014-2016</p>
+	<p><a href='http://nextlesson.org' target='_blank'>nextlesson.org</a>";
+
+	$img_info = array(
+	);
+
+} //end NEXTLESSON
+
+
+
+//  #NEXTLESSON #COVERS
+// ===============================
+
+if ( $title == "NextLesson Lesson Covers" ) {
+
+	// $template = "ui";
+	$path = "img/nextlesson-covers";
+	$company = "NextLesson";
+	// $movie = "$path/interactive-pt-overview.mp4";
+
+	$description = "
+		My first big task at NextLesson! We have numerous projects and lessons on the site and each one needed a cover.
+		<p></p>
+		Before I could get the team to help with the covers, I needed to make sure I knew what I wanted. Planned in tandem with a redesigned search/browse page, we set about standardizing the displayed information as well as taking the first steps to form a distinctive “look.”
+		<p></p>
+		We set about making sure all covers had the same information in the same spot. Lesson type on top, logo in the bottom left, and title nice and big; everything else was up to the artist. I oversee a team of designers to make sure covers are created in a timely manner. I’ve created a graphics library that our freelancers use to facilitate faster turnaround.
+		<p></p>
+		Jump to 2 years and 2,034 covers later. Most of the back-covers are complete and a system is in place for new covers. Please see some of my favorite covers below.
+	";
+
+	$sidebar = "
+		<p>
+		Design System and Illustrated Covers<br>
+		2014-2016
+		</p>
+		2,000+ covers
+	";
+	$tools = array(
+		array("skill"=>"Photoshop", "percent"=>45),
+		array("skill"=>"Illustrator", "percent"=>30),
+		array("skill"=>"Spreadsheets", "percent"=>15),
+		array("skill"=>"Indesign", "percent"=>10),
+	);
+
+	$img_info = array(
+		array("file" => "01.jpg", "alt" => "Cover View"),
+		array("file" => "Living-&-Playing-by-the-Golden-Rule.jpg", "alt" => "Living & Playing by the Golden Rule"),
+		array("file" => "crowd-control.jpg", "alt" => "Crowd Control"),
+		array("file" => "golden-gaming.jpg", "alt" => "Golden Gaming"),
+		array("file" => "bundles-of-fun.jpg", "alt" => "Bundles of Fun"),
+	);
+
+} //end NEXTLESSON COVER
+
+
+
+	//TODO: add in modal for the covers
+
+
+//  #NEXTLESSON #INTERESTID
+// ===============================
+
+if ( $title == "NextLesson InterestID" ) {
+
+	$template = "ui";
+	$company = "NextLesson";
+	$path = "img/nextlesson-interestid";
+	// $movie = "$path/interestid-voting.mp4";
+
+	$description = "
+	InterestID is a tool for students to inform teachers what topics interest them. Students “thumbs up” or “thumbs down” various topics which are featured in NextLesson lessons.</p><p>
+	That information is available to teachers sorted by most popular categories. A click on the category connects the teacher to lessons where that topic is covered. Simple grade and subject filters allow the teacher to find the right lesson for their class if there are numerous results.</p><p>
+	As of January 2017, students have rated over 1,605,000+ interests. The more students rate and suggest new interests, the better we can tailor our learning materials and be more real-time and relevant.
+	</p>
+	<img src='$path/laptop.jpg' alt='InterestID' class='scale-with-grid'>
+	<p class='caption'>The teacher experience(left) vs. the student experience(right)</p>
+	";
+
+	$sidebar = "
+		Student Interest Tool<br>
+		2015
+	";
+
+	$tools = array(
+		array("skill"=>"Illustrator", "percent"=>50),
+		array("skill"=>"Mockups&nbsp;(PHP+JS)", "percent"=>25),
+		array("skill"=>"Sketches", "percent"=>15),
+		array("skill"=>"Spreadsheets", "percent"=>10),
+	);
+
+	$img_info = array(
+		// array("file" => "cover.jpg", "alt" => "..."),
+		// array("file" => "interest-selection.jpg", "alt" => "InterestID liking and disliking"),
+	);
+
+	$other = "
+	<h3>Rating Interests</h3>
+	<video width='320' height='240' controls>
+		<source src='$path/interestid-voting.mp4' type='video/mp4'>
+		Your browser does not support the video tag.
+	</video>
+	<p class='caption'>A student voting.</p>
+	<p>
+		To rate interests, you just press the <em>thumbs up</em> to 'like' or the <em>thumbs down</em> to 'dislike'. The first screen gives you interests that have not been rated in a random order, so you see new interests everytime you go on. After an interest is rated, it will disappear so your <em>unrated</em> view is a little less cluttered.
+	</p>
+
+	<h3>Filtering by Category and by Liked</h3>
+	<video width='320' height='240' controls>
+		<source src='$path/interestid-filters.mp4' type='video/mp4'>
+		Your browser does not support the video tag.
+	</video>
+	<p class='caption'>A student voting.</p>
+	<p>
+		We put filters in so you can browse by category or by interests you've already liked or disliked.
+	</p>
+	";
+
+} //end NEXTLESSON INTERESTID
+
+
+
+
+//  #NEXTLESSON #GLOSSARY
+// ===============================
+
+if ( $title == "NextLesson Glossary Terms" ) {
+
+	// $template = "ui";
+	$path = "img/nextlesson-glossary";
+	$company = "NextLesson";
+	// $movie = "$path/interactive-pt-overview.mp4";
+
+	$description = "After releasing the initial version of our Interactive lessons, it was up to our Curriculum team to fill it with learning materials! As they were working on that, we worked on the next iteration. Since we had glossary terms, we thought having images to support them would be impactful, as well as being helpful for our younger user-base.
+		<p></p>
+		I had a whole library of image assets that we’ve slowly created over time, so this task wasn’t that time-intensive.
+		<image of cover and finished glossary term>
+		<p></p>
+		No—the bigger challenge was how to illustrate ideas and abstract concepts.
+ 		<image viable>
+	";
+
+	$sidebar = "
+		Vector Illustrations<br>
+		2016
+	";
+
+	$tools = array(
+		array("skill"=>"Illustrator", "percent"=>70),
+		array("skill"=>"Sketches", "percent"=>30),
+	);
+
+	$img_info = array(
+		array("file" => "01.jpg", "alt" => "Glossary Images"),
+	);
+
+	$other = "";
+
+} //end NEXTLESSON GLOSSARY
+
+
+
+
+//  #NEXTLESSON #MARKETING
+// ===============================
+
+if ( $title == "NextLesson Marketing" ) {
+
+	$path = "img/nextlesson-marketing";
+	$company = "NextLesson";
+
+	$description = "Coming Soon.";
+
+	$sidebar = "
+		Marketing<br>
+		2014
+	";
+
+	$tools = array(
+		// array("skill"=>"Illustrator", "percent"=>80),
+	);
+
+	$img_info = array(
+		array("file" => "01.jpg", "alt" => ""),
+		array("file" => "02.jpg", "alt" => ""),
+		array("file" => "03.jpg", "alt" => ""),
+		array("file" => "04.jpg", "alt" => ""),
+	);
+
+} //end NEXTLESSON MARKETING
+
+
+
+
+//  #NEXTLESSON #SEARCH BROWSE
+// ===============================
+
+if ( $title == "NextLesson Search and Browse Page" ) {
+
+	$template = "ui";
+	$company = "NextLesson";
+	$path = "img/nextlesson-search-browse";
+	$movie = "$path/search-browse-bar-1.mp4";
+
+	$description = "I was comissioned to do some illustrations to show an example of how LesConcierges' new web interface and app would work with their existing service.";
+
+	//TODO: update the sidebar information
+	$sidebar = "
+		Illustrations<br>
+		July 2014
+	";
+
+	$tools = array(
+		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>60),
+		array("skill"=>"Photoshop", "percent"=>40),
+	);
+
+	$img_info = array(
+		// array("file" => "puzzle.jpg", "alt" => "The hotel owner tells his assistant that he needs to schedule a flight to Shanghai"),
+	);
+
+	$other = "
+	<video width='320' height='240' controls>
+		<source src='$movie' type='video/mp4'>
+		Your browser does not support the video tag.
+	</video>
+	";
+
+} //end NEXTLESSON SEARCH BROWSE
+
+

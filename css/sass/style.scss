@@ -16,21 +16,33 @@
 @import 'tooltipster';
 @import 'responsive-indicator';
 @import "compass/css3";
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 // VARIABLES ==================================================
-$bkg-color: white;
+$primary-color: #0072CE;
+// $bkg-color: LightSteelBlue;
+$bkg-color: lighten(#F5F8FA,5%);
 $txt-color: lighten(black,30%);
-$link-color: steelblue;
-$footer-color: darken($bkg-color,7%);
-$footer-text-color: darken($footer-color,40%);
-$link-hover-color: darken($link-color,40%);
 
-$font-size: 13pt;
-$line-height: 1.45em;	
-$caption-font-size: 10pt;
-$body-font: "Arvo";
+$link-color: $primary-color;
+$link-hover-color: lighten($link-color,20%);
+
+// $textbox-color: $primary-color;
+$textbox-color: LightSkyBlue;
+// $textbox-text-color: darken($textbox-color,40%);
+$textbox-text-color: white;
+$textbox-link-color: $textbox-text-color;
+$filter-color: #E1E8ED;
+
+$footer-color: darken($bkg-color,4%);
+$footer-text-color: darken($footer-color,50%);
+
+$font-size: 14pt;
+$line-height: 1.45em;
+$caption-font-size: 11pt;
+// $body-font: "Arvo";
+$body-font: "Circular";
 
 $desktop-large: "only screen and (min-width: 960px)";
 $desktop: "only screen and (max-width: 959px)";
@@ -39,12 +51,12 @@ $mobile: "only screen and (max-width: 767px)";
 $mobile-landscape: "only screen and (min-width: 480px) and (max-width: 767px)";
 $mobile-portrait: "only screen and (max-width: 479px)";
 
-@media #{$desktop-large} 		{ .mobile {display:none;} .desktop {display:inherit;} }
-@media #{$desktop} 					{ .mobile {display:none;} .desktop {display:inherit;} }
-@media #{$tablet-portrait} 	{ .mobile {display:none;} .desktop {display:inherit;} }
-@media #{$mobile} 					{ .mobile {display:inherit;} .desktop {display:none;} }
-@media #{$mobile-landscape} { .mobile {display:inherit;} .desktop {display:none;} }
-@media #{$mobile-portrait} 	{ .mobile {display:inherit;} .desktop {display:none;} }
+@media #{$desktop-large} 			{ .mobile {display:none;} 		.desktop {display:inherit;} }
+@media #{$desktop} 					{ .mobile {display:none;} 		.desktop {display:inherit;} }
+@media #{$tablet-portrait} 		{ .mobile {display:none;} 		.desktop {display:inherit;} }
+@media #{$mobile} 					{ .mobile {display:inherit;} 	.desktop {display:none;} }
+@media #{$mobile-landscape} 	{ .mobile {display:inherit;} 	.desktop {display:none;} }
+@media #{$mobile-portrait} 		{ .mobile {display:inherit;} 	.desktop {display:none;} }
 
 
 // MIXIN ==================================================
@@ -52,28 +64,41 @@ $mobile-portrait: "only screen and (max-width: 479px)";
 	.#{$color}	{ background-color: #{$color}; }
 }
 
+@mixin underline($stroke:3px,$color:$link-color) {
+    border-bottom: $stroke solid rgba($color, 0.25);
+	@include transition( all 0.25s ease-in-out );
+    &:hover {
+		@include transition( all 0.25s ease-in-out );
+    	border-bottom: $stroke solid rgba($color, 0.5);
+    }
+}
+// .box { @include border-radius(10px); }
+
 /* # SITE STYLES
 ================================================== */
 
-* {	@include box-sizing(border-box); }
+* { @include box-sizing(border-box); }
 
 
 body, html { width: 100%; }
-body { 
+body {
+	padding-top: 20px;
 	font-family: $body-font, Helvetica, sans-serif;
 	font-size: $font-size;
 	line-height: $line-height;
-	background-color: $bkg-color; 
+	background-color: $bkg-color;
 	color: $txt-color;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-	-webkit-text-size-adjust: 100%;	
+	-webkit-text-size-adjust: 100%;
 	margin-top: 70px;
 }
 h1, h2, h3, h4, h5, h6 {
-	@extend .uppercase;
-	@extend .montserrat;
+	@extend .special-font;
 	color: $link-color;
+}
+h1 {
+	// @extend .uppercase;
 }
 
 h5 {
@@ -83,7 +108,7 @@ a,a:visited {
 	color: $link-color;
 	text-decoration: none;
 	@include transition( all 0.25s ease-in-out );
-	&:hover { 
+	&:hover {
 		color: $link-hover-color;
 		@include transition( all 0.25s ease-in-out );
 	}
@@ -93,7 +118,7 @@ a,a:visited {
 =========================== */
 
 .dots 				{ background-image: url('.../img/bg2.gif');	}
-@each $color in steelblue, silver, white, yellow, whitesmoke, greenyellow, lavender {
+@each $color in "steelblue", "silver", "white", "yellow", "whitesmoke", "greenyellow", "lavender" {
 	.#{$color} { background-color: #{$color}; }
 }
 
@@ -104,28 +129,33 @@ a,a:visited {
 .right 					{ text-align: right; }
 .padding 				{ padding: 10px; }
 .fixed 					{ height: 80%; }
-.band 					{ width: 100%; background-color: $footer-color; padding: 2em 0 8em 0; color: $footer-text-color; }
 .navband				{ width: 100%; }
 .uppercase			{ text-transform: uppercase; }
 .none 					{ display: none; }
 .hidden 				{ visibility: hidden; }
 .bold 					{ font-weight: 900; }
 .arvo 					{ font-family: Arvo, Times, serif; }
-.montserrat 		{ font-family: Montserrat, Helvetica, sans-serif; }
+.special-font 		{ font-family: Circular, Helvetica, sans-serif; }
 .float-right 		{ float: right; }
 .float-left 		{ float: left; }
 .last 					{ margin-right: 0px; }
 .visible 				{ display: inherit !important }
+.red						{ background-color: red; }
 .remove-right 	{ padding-right: 0; padding-top: 0;}
 .remove-bottom 	{ margin-bottom: 0; }
 .remove-top 		{ margin-top: 0px; }
+.add-top 				{ margin-top: 100px !important; }
+.double-bottom	{ margin-bottom: 60px !important; }
 .nolist 				{ list-style: none; }
 .nowrap, .nobreak 				{ white-space: nowrap; }
 .hide 					{ display: none; }
 
-.list-spacing-fix li	{ margin-bottom: 0.15em !important; }
+.list-spacing-fix li	{
+	margin-bottom: 0.35em !important;
+	line-height: $line-height;
+}
 
-hr { 
+hr {
 	border: 0;
 	height : 15px;
 	background: url('../img/bg/dots.gif') repeat-x;
@@ -177,93 +207,11 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	hr { margin-bottom: .5em; }
 }
 
-.bio {
-	font-size: 1.15em;
-	line-height: $line-height;
-}
-
-.index-right-column {
-	// padding-right: 0px;
-	// padding-top: 0px;
-	// hr:first-child { margin-top: 0; }
-	font-size:0.75em;
-	ul, li { margin-bottom: 0; }
-	@media #{$mobile} {
-		padding-left: 0px;
-	}
-}
-
 .opacity-fade {
 	a > img {
-		@include transition( opacity 0.25s ease-in-out ); 
+		@include transition( opacity 0.25s ease-in-out );
 		&:hover { opacity: 0.65; }
 	}
-}
-
-.textbox {
-	padding: 2em 3em;
-	font-size: 32px;
-	line-height: 1.25em;
-	font-weight: 400 !important;
-	background-color: lavender;
-
-	@media #{$mobile} {
-		font-size: $font-size*1.25;
-		line-height: $line-height;
-		padding: 0;
-		background-color: transparent;
-	}
-}
-
-.related {
-	font-size: 90%;
-	line-height: 1.4em;
-	li {
-		margin-bottom: 0.4em;
-	}
-}
-
-.description {
-	a {  
-		// @extend .underline;
-	}
-	p {
-	font-size: 16pt;
-	line-height: 1.5em;
-	}
-}
-
-.original-job-button {
-	background-color: $link-color;
-	color: white;
-	padding: 0.25em;
-	margin: 0 auto;
-	margin-bottom: 20px;
-	border-radius: 0.5em;
-	width: 200px;
-	text-align: center;
-	@extend .uppercase;
-	@extend .montserrat;	
-	&:hover {
-		background-color: $link-hover-color;
-	}
-}
-
-.original-job-details {
-	color: lighten($txt-color,30%);
-	p,ul,li {font-size: 1rem;}
-	hr,ul,h1,h2,h3,h4,h5,h6 { @include column-span(all); }
-	h6,hr {
-		margin: 2em 0;
-		text-align: center;
-	}
-	ul {
-		font-weight: 800;
-	}
-	@media only screen and (min-width: 800px) {
-		@include column-count(2);
-		@include column-gap(1em);
-	}	
 }
 
 // HEADER
@@ -279,7 +227,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	padding: 25px 0 10px 0;
 	font-size: 14pt;
 	@include transition( all 0.75s ease-in-out );
-	
+
 	.active {
 		border-bottom: 3px solid lighten($link-color,30%);
 		padding: 5px 1px;
@@ -294,22 +242,32 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 
 	nav {
 		@extend .uppercase;
-		@extend .montserrat;
+		@extend .special-font;
 		letter-spacing: 0.15em;
 
 		.title {
 			font-size: 25px;
+			font-weight: 900;
 			text-align: left;
 			float: left;
 			@media #{$mobile} {
 				font-size: 1.25rem;
 			}
 
-			a, a:visited { 
-				color: black; 
+			a, a:visited {
+				color: black;
 				&:hover {
 					color: gray;
 				}
+			}
+			&::after {
+				content: "\2301"; //hexcode of &#8961; http://www.evotech.net/blog/2007/08/css-javascript-character-entities/
+				content: "\270F";
+				color: red;
+				font-size: 150%;
+				position: absolute;
+				top: -1px;
+				margin-left: 8px;
 			}
 		}
 		ul {
@@ -320,16 +278,16 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 				display: inline;
 				list-style: none;
 				margin-right: 2em;
-				@media #{$mobile} { 
+				@media #{$mobile} {
 					font-size: 0.9rem;
 					margin-right: 0.25em;
 				}
 				&:last-child { margin-right: 0; }
 				a, a:visited {
 					@include transition(all 0.25s);
-					font-weight: 400;
+					font-weight: 900;
 					color: gray;
-					&:hover { 
+					&:hover {
 						@include transition(all 0.25s);
 						color: black;
 					}
@@ -349,31 +307,170 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	// transform: translateY( -100% );
 }
 
-// PORTFOLIO PAGE 
+// INDEX
+// ======================================
+
+.index-text {
+	li {
+		// font-size: 16pt;
+		font-weight: 100;
+		max-width: 32em;
+		line-height: 1.75em;
+	}
+}
+
+.textbox {
+	max-width: 95%;
+	h1 {
+		font-size: 45px;
+		margin-top: 120px;
+		line-height: 1.35em;
+		font-weight: 400 !important;
+		text-transform: inherit;
+		// color: $textbox-text-color;
+		color: $txt-color;
+		a:link, a:visited {
+			color: $textbox-link-color;
+			@extend .underline;
+		}
+	}
+	p {
+		color: lighten($txt-color,30%);
+		font-size: 30px;
+		line-height: 1.35em;
+		// color: darken($textbox-color,45%);
+		// padding: 2em 3em;
+		// background-color: $textbox-color;
+		a:link, a:visited {
+			color: darken($textbox-color,45%);
+			@extend .underline;
+		}
+	}
+
+	@media #{$mobile} {
+		line-height: $line-height;
+		padding: 0;
+		background-color: transparent;
+		color: $txt-color;
+		h1 {
+			font-size: $font-size*1.5;
+			color: $txt-color;
+		}
+		p {
+			font-size: $font-size;
+		}
+		a:link, a:visited {
+			color: $link-color;
+		}
+	}
+}
+
+.index-right-column {
+	// padding-right: 0px;
+	// padding-top: 0px;
+	// hr:first-child { margin-top: 0; }
+	font-size:0.75em;
+	ul, li { margin-bottom: 0; }
+	@media #{$mobile} {
+		padding-left: 0px;
+	}
+}
+
+// PORTFOLIO PAGE
 // ======================================
 
 .portfolio {
 	p {
 		@extend .uppercase;
 		@extend .center;
-		@extend .montserrat;
+		@extend .special-font;
 		@extend .bold;
 		line-height: 1.25em;
 		font-size: 0.75em;
 		letter-spacing: 0.15em;
-		@media #{$mobile} { 
+		@media #{$mobile} {
 			font-size: 1em;
-		}		
-	}	
+		}
+	}
 	img {
 		@extend .scale-with-grid2;
 		opacity: 1;
 		@include transition( all 0.25s ease-in-out );
-		&:hover { opacity: 0.65; }
+		// &:hover { opacity: 0.65; }
+	}
+}
+.project-sidebar {
+	// background-color: hsla(0, 0%, 90%, 1);
+	background-color: #f0f4f6;
+	padding: 1.5em 1.5em 3em 1.5em;
+	img.logo {
+		width: 100%;
+		padding: 10px;
+		// padding-top: 10px;
+	}
+}
+.back-to-landing-page-menu {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: darken($link-color,10%);
+	z-index: 10;
+	padding: 8px 0 12px 0;
+	line-height: 1.25em;
+	font-size: 90%;
+	color: white;
+	strong {
+		color: white;
+		margin-right: 5px;
+	}
+	a:link, a:visited {
+		color: white;
+		opacity: 0.5;
+		padding: 0	3px;
+		// margin-right: 5px;
+		&:hover {
+			// @include underline(1px);
+			opacity: 1;
+			color: white;
+		}
+	}
+	.active {
+		opacity: 1 !important;
+		color: white !important;
+		@include underline(2px);
 	}
 }
 
-// HIRE ME 
+.filters {
+	ul {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		li {
+			display: inline-block;
+			margin-right: 1em;
+			margin-bottom: 10px;
+			background-color: #E1E8ED;
+			margin-right: 15px;
+			padding: 2px 15px;
+			border-radius: 14px;
+			a:link, a:visited {
+				color: hsla(0, 0%, 30%, 1);
+			}
+			@include transition( all 0.125s ease-in-out );
+			&:hover {
+				background-color: darken($filter-color,15%);
+				@include transition( all 0.125s ease-in-out );
+			}
+		}
+		li.active {
+			background-color: darken($filter-color,15%);
+		}
+	}
+}
+
+// HIRE ME
 // ======================================
 
 .bar-chart {
@@ -395,8 +492,140 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		margin-bottom: 0.5em;
 	}
 }
+.cover-letter {
+	hr.separator {
+		margin: 30px 0;
+		width: 10%;
+	}
+	h5 {
+		margin-top: 1em;
+	}
+	.sidebar {
+		.logo {
+			width: 100%;
+			padding: 2em;
+			// padding-top: em;
+		}
+		img.portrait {
+			width: 100%;
+		}
+		h6 {
+			margin-top: 1em;
+			font-weight:900;
+			font-size: 120%;
+		}
+	}
+	.landing-page {
+		font-size: 22px;
+		line-height: 1.5em;
+		p {
+			@media #{$mobile}
+			 {
+				font-size: 20x;
+				line-height: 1.35em;
+			}
+			a:link, a:visited {
+				&:hover {
+					@include underline(3px,$primary-color);
+				}
+				// background-color: #F5F8FA;
+				color: $primary-color;
+			}
+		}
+		h1,h2,h3,h4,h5,h6 {
+			margin-bottom: 1em;
+			// @include underline(3px,$primary-color);
+		}
+		h1 {
+			font-size: 32px;
+		}
+		h2.heading {
+			font-weight: 900;
+			font-size: 32px;
+			line-height: 1.5em;
+			.job-title {}
+		}
+		h3 {
+			font-size: 25px;
+		}
+		img {
+		  display: block;
+		  margin-bottom: 8px;
+		}
+		.button {
+			margin-top: 3em;
+			background-color: #24B273;
+			border-radius: 10px;
+			border: 0;
+			border-bottom: 8px solid darken(#24B273,10%);
+			font-size: 20px;
+			padding: 10px 25px;
+			margin-right: 10px;
+			display: inline-block;
+			position: relative;
+			a:link, a:visited {
+				color: white;
+			}
+			&:hover {
+				top: 2px;
+				border-width: 6px;
+				background-color: lighten(#24B273,5%);
+			}
+		}
+		.date {
+			margin-top: 70px;
+			a:link, a:visited {
+				background-color: $bkg-color;
+				color: $txt-color;
+			}
+		}
+		.tooltip {
+			color: $link-color;
+		}
+		.sample-projects {
+			margin-top: 2em;
+		}
+		ul.skills {
+			// text-align: center;
+			li {
+				display: inline-block;
+				background-color: #E1E8ED;
+				margin-right: 15px;
+				padding: 2px 15px;
+				border-radius: 14px;
+				margin-bottom: 0.5em;
+				// line-height: 1em;
+			}
+		}
+		.checklist {
+			li {margin-bottom: 0;}
+			@media only screen and (min-width: 800px) {
+				@include column-count(2);
+				@include column-gap(1em);
+			}
+		}
+		.original-job-button-minimal {
+			margin-top: 2em;
+			display: inline-block;
+			font-size: 16px;
+			color: darken($bkg-color,10%);
+			// @include underline();
+		}
+	}
+}
+.quick-bio {
+	width: 100%;
+	padding: 3em;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f8fa+0,ffffff+46 */
+	background: #f5f8fa; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f5f8fa 0%, #ffffff 46%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #f5f8fa 0%,#ffffff 46%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #f5f8fa 0%,#ffffff 46%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f8fa', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 
-$icon-width: 150px;
+}
+
+// $icon-width: 150px;
 
 .space-page {
 	h5 {
@@ -404,27 +633,98 @@ $icon-width: 150px;
 	}
 	img {
 		margin-bottom: 1em;
-		border: 1px solid silver; 
+		border: 1px solid silver;
 	}
 }
-	
 
-// ABOUT ME 
-// ======================================
+.original-job-button {
+	background-color: $link-color;
+	color: white;
+	padding: 0.25em;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	// margin-top: 20px !important;
+	border-radius: 0.5em;
+	width: 200px;
+	text-align: center;
+	@extend .uppercase;
+	@extend .special-font;
+	&:hover {
+		background-color: $link-hover-color;
+	}
+}
 
+.original-job-details {
+	color: lighten($txt-color,30%);
+	margin-top: 1em;
+	p,ul,li {font-size: 1rem;}
+	hr,ul,h1,h2,h3,h4,h5,h6 { @include column-span(all); }
+	h1,h2,h3,h4,h5,h6 {
+		color: black;
+		margin-top: 1em;
+	}
+	h2,h3,h4,h5,h6 {
+		color: hsla(0, 0%, 40%, 1)
+	}
+	em {
+		// text-decoration: underline;
+		font-style: normal;
+		background-color: yellow;
+	}
+	h6,hr {
+		margin: 2em 0;
+		text-align: center;
+	}
+	line-height: 1.15em;
+	ul {
+		font-weight: 800;
+		li {
+			 list-style-type: circle;
+			 line-height: 1.2em;
+		}
+	}
+	@media only screen and (min-width: 800px) {
+		@include column-count(2);
+		@include column-gap(1em);
+	}
+}
+
+.related {
+	font-size: 90%;
+	line-height: 1.4em;
+	li {
+		margin-bottom: 0.4em;
+	}
+}
+
+.description {
+	a:link, a:visited {
+		// @extend .underline;
+	}
+	p {
+		// font-size: $font-size;
+		line-height: 1.5em;
+		max-width: 95%;
+		// margin-bottom: 1em;
+	}
+}
+
+// CHART CSS
 .chart > div {
-	font: 8pt sans-serif;
-	font-weight: bold;
+	font-size: 8pt;
+	font-family: sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.5px;
 	background-color: lighten(silver,15%);
 	padding: 0;
 	margin: 0;
 	@include transition( all 0.5s ease-in-out );
-	
+
 	> div {
 		@include transition( all 0.5s ease-in-out );
-		background-color: lighten($link-color,30%);
-		margin: 5px 0;
-		padding: 4px 0 4px 10px;
+		background-color: lighten($link-color,40%);
+		margin: 2px 0;
+		padding: 2px 0 2px 10px;
 	}
 	&:hover .inner {
 		@include transition( all 0.5s ease-in-out );
@@ -432,70 +732,175 @@ $icon-width: 150px;
 	}
 }
 
-.tech-skills > div {
-	font: 8pt sans-serif;
-	font-weight: bold;
-	background-color: lighten(steelblue,35%);
-	padding: 4px;
-	margin: 4px 0;
-	@include transition( all 0.25s ease-in-out );
-	
-	> div {
-		background-color: lighten($link-color,30%);
-		margin: 5px 0;
-		padding: 4px 0 4px 10px;
-	}
-	&:hover .inner {
+// ABOUT ME
+// ======================================
+
+.resume {
+	font-size: 90%;
+	// line-height: 1.25em;
+
+
+	.tech-skills > div {
+		font: 8pt sans-serif;
+		font-weight: bold;
+		background-color: lighten(steelblue,35%);
+		padding: 4px;
+		margin: 4px 0;
 		@include transition( all 0.25s ease-in-out );
-		background-color: lighten(silver,10%);
-	}
-}
 
-.resume-title {
-	margin: 0;
-	color: steelblue;
-	font-weight: bold;
-	padding: 0;
-}
-
-.resume-pdf {
-	background-color: lavender;
-	padding:10px;
-	width: 50px;
-	height: 50px;
-	border-radius:5px;
-	@include transition( background-color 0.25s ease-in-out ); 
-	&:hover { 
-		background-color: lightblue; 
-		@include transition( background-color 0.25s ease-in-out ); 
-	}
-}
-
-#history {
-	ul { list-style: initial; list-style-position: inside; list-style-type: circle; }
-	li { 
-		margin-bottom: 0.15em; 
-		padding-left: 1em;
-		text-indent: -1em;
-		max-width: 80%;
-		@media #{$mobile} { max-width: 100%; }
-	}
-
-	strong a, strong a:visited {
-		color: black;
-		@include transition( all 0.25s ease-in-out );
-		&:hover {
+		> div {
+			background-color: lighten($link-color,30%);
+			margin: 5px 0;
+			padding: 4px 0 4px 10px;
+		}
+		&:hover .inner {
 			@include transition( all 0.25s ease-in-out );
-			color: $link-color;
+			background-color: lighten(silver,10%);
 		}
 	}
-}
 
+	.resume-title {
+		font-size: $font-size*1.25;
+		margin: 0;
+		margin-bottom: 10px;
+		color: steelblue;
+		font-weight: bold;
+		padding: 0;
+	}
+
+	.resume-pdf {
+		background-color: lavender;
+		padding:10px;
+		width: 50px;
+		height: 50px;
+		border-radius:5px;
+		@include transition( background-color 0.25s ease-in-out );
+		&:hover {
+			background-color: lightblue;
+			@include transition( background-color 0.25s ease-in-out );
+		}
+	}
+
+	.company {
+
+		margin-top: 1em;
+		max-width: 90%;
+		@media #{$mobile} { max-width: 100%; }
+		hr.resume {
+			height : 0;
+			background: none;
+			margin-top: 3em;
+			border: 1px dashed hsla(0, 0%, 90%, 1);
+			max-width: 75%;
+		}
+		h2.job-title,
+		h3,
+		{
+			font-size: inherit;
+			color: $txt-color;
+			margin: 0;
+			line-height: inherit;
+		}
+		h2.job-title {
+			font-size: $font-size;
+			font-weight: 900;
+			margin-bottom: 0.25em;
+		}
+		h3 {
+			font-size: inherit;
+			font-weight: normal;
+			a:link, a:visited {
+				// @include transition( all 0.25s ease-in-out );
+				color: $txt-color;
+				// text-decoration: underline;
+				// @extend .underline;
+				&:hover {
+					color: $link-color;
+					// @include transition( all 0.25s ease-in-out );
+				}
+			}
+		}
+		p.description {
+			margin-top: 10px;
+		}
+		ul {
+			margin-top: 1em;
+			// list-style: initial;
+			list-style-position: inside;
+			// list-style-type: circle;
+			li {
+				color: lighten($txt-color,15%);
+				font-size: 90%;
+				margin-bottom: 0.25em;
+				padding-left: 1em;
+				text-indent: -1em;
+				// line-height: 90%;
+				@include transition( all 0.25s ease-in-out );
+				a:link, a:visited {
+					@extend .underline;
+				}
+				&:hover {
+					// color: black;
+					@include transition( all 0.25s ease-in-out );
+				}
+				&:before {
+				    content: "•"; /* Insert content that looks like bullets */
+				    padding-right: 8px;
+				    color: lighten($txt-color,10%); /* Or a color you prefer */
+				}
+			}
+		}
+
+		strong a, strong a:visited {
+			color: black;
+			@include transition( all 0.25s ease-in-out );
+			&:hover {
+				@include transition( all 0.25s ease-in-out );
+				color: $link-color;
+			}
+		}
+	}
+	#history {
+		ul {
+			list-style: initial;
+			list-style-position: inside;
+			list-style-type: circle;
+			max-width: 90%;
+			li {
+				margin-bottom: 0.15em;
+				padding-left: 1em;
+				text-indent: -1em;
+				// max-width: 80%;
+				@media #{$mobile} { max-width: 100%; }
+			}
+		}
+
+		strong a, strong a:visited {
+			color: black;
+			@include transition( all 0.25s ease-in-out );
+			&:hover {
+				@include transition( all 0.25s ease-in-out );
+				color: $link-color;
+			}
+		}
+	}
+
+	.bio {
+		// font-size: 1.15em;
+		line-height: $line-height;
+	}
+
+}
 
 // FOOTER
 // =====================================
 
-footer {
+#footer {
+	margin-top: 60px;
+	width: 100%;
+	background-color: $footer-color;
+	padding: 2em 0 4em 0;
+	color: $footer-text-color;
 
 	p, & ul {
 		font-size: smaller;
@@ -512,25 +917,126 @@ footer {
 		line-height: 1.75em;
 		color: $footer-text-color;
 		@include transition(all 1.0s);
-		&:hover { 
-			color: darken($footer-text-color,50%); 
+		&:hover {
+			color: darken($footer-text-color,50%);
 			@include transition(all 1.0s);
 		}
 	}
+	.emoji {
+		display: none;
+		// margin-top: 5em;
+		text-align: center;
+		// text-align: right;
+		// background-color: red;
+		img {
+			// width: 25%;
+			// margin-left: 5px;
+			// padding: 0.5em;
+			// margin: 2px;
+
+		}
+	}
 }
+
+// VIDEO
+video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+// TODAY
+.today {
+	li {
+		margin-bottom: 0.5em;
+	}
+}
+.today-header {
+	h2 {
+		font-size: 45px;
+		font-weight: 900;
+		text-transform: capitalize;
+		margin-bottom: 10px;
+	}
+	p#weather {
+		font-weight: 900;
+		font-size: 22px;
+	}
+}
+
+	input {
+		font-weight: 100;
+		font-size: 25px;
+		border: 0px;
+		box-shadow: 0px;
+		padding: 10px 15px 10px 15px;
+		//margin: 5px 0 5px 0;
+		margin: 0px;
+		// display: inline-block;
+	}
+
+	input.searchbar {
+		color: #909090;
+		background-color: #F5F8FA;
+		font-family: Georgia;
+		margin-right: 0px;
+		display: inline-block;
+		border-radius: 4em;
+		border: 0;
+		padding-left: 1em;
+		&:hover {
+			background-color: #E1E8ED;
+		}
+	}
+	input.button {
+		text-align: center;
+		background: #F5F8FA;
+		color: #8899A6;
+		font-family: Helvetica;
+		font-weight: 100;
+		font-size: 0.9em;
+		padding: 2px 10px;
+		margin-left: 10px;
+		// display: inline-block;
+	}
+
+	input:focus
+	{
+	outline: none;
+	border: 0;
+	}
+
+	input.button:hover {
+		background-color: red;
+		color: white;
+	}
 
 
 // added to test google fonts when offline
 
 @font-face {
-  font-family: 'Arvo';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Arvo'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/BM-nqL-L5PgjKPDNaleWB_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+  font-family: 'Circular';
+  src:
+	  url('fonts/circular-book.woff') format('woff'),
+	  url('fonts/circular-book.ttf') format('truetype');
+	  font-weight: normal;
 }
 @font-face {
-  font-family: 'Arvo';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Arvo Bold'), local('Arvo-Bold'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/_OKjjqM9ed2qvTR07QdjWwLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+  font-family: 'Circular';
+  src: url('fonts/circular-medium.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('fonts/circular-medium.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+       font-weight: bold;
 }
+
+// @font-face {
+//   font-family: 'Arvo';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Arvo'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/BM-nqL-L5PgjKPDNaleWB_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+// }
+// @font-face {
+//   font-family: 'Arvo';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: local('Arvo Bold'), local('Arvo-Bold'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/_OKjjqM9ed2qvTR07QdjWwLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+// }

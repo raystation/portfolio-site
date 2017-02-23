@@ -6,7 +6,9 @@
 - add in alts for images
 
 # TO DO
-- conversational slideshow during interviews
+- scan image folders
+	- take out ds-store
+	- filter out thumbnail
 - separate lists functionality from data
 - randomize the logo  (cartoony, pixel)
 - add icons for "tools"
@@ -16,6 +18,7 @@
 - hover state, get rid of labels below thumbnails
 
 # TO DO DONE
+- x conversational slideshow during interviews
 - x refactor list random getting
 - x index, put off for now
 - x currently learning
@@ -25,7 +28,6 @@
 - x about ?resume ?hire-me
 - x fake jobs page
 	- x sandwich logisitcs
-
 
 # RESUME ADDITIONS
 - Strong project organizational skills required; able to successfully juggle multiple projects and to prioritize tasks
