@@ -2,7 +2,6 @@
 	$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
 	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
 
-
 	$selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
 	$filter_list_html = get_filter_list_html($selected_filter);
 
@@ -275,11 +274,21 @@ if ($id) {
 
 include('inc/header.php');
 
+// if (isset($title)) {
+// 	foreach ($works as $key => $work) {
+// 		if (array_search($title, $work)){
+// 			$tags = $work['tags'];
+// 			break;
+// 		};
+// 	}
+// }
+
 // IF THE PROJECT IS SET (VIEWING A PROJECT)
 // THEN IT WILL TAKE THE PROJECT OUT OF THE WORK ARRAY SO YOU DON'T GET IT IN THE RECENT PROJECTS
 if ( isset($project) ) {
 	foreach ($works as $key => $work) {
 		if (array_search($title, $work)){
+			// $tags = $work['tags'];
 			break;
 		};
 	}

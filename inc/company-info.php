@@ -3161,117 +3161,6 @@ case 'ixl-illustration-coordinator':
 		// $other = "";
 	break;
 
-	// FACEBOOK - ILLUSTRATOR/DESIGNER - MESSENGER
-	case "facebook-illustrator-designer-messenger":
-		$short_name = "facebook-illustrator-designer-messenger";
-		$originaljobposting="https://www.facebook.com/careers/jobs/a0I1200000JXv61EAD/";
-		$company="Facebook";
-		$jobTitle="Illustrator/Designer - Messenger";
-		$logo="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png";
-		$date="February 8, 2017";
-		// $name="Ray Yuen";
-		$email="";
-		$slider="";
-		$portrait="GIFS/me-vector.jpg";
-		$hiremepage = "http://rayuen.com/facebook-illustrator-designer-cultural-moments";
-		// $resume = "img/ray_yuen_resume.pdf";
-
-		$job_details = markdown_convert("jobs/$short_name".".md");
-		$copy = markdown_convert("jobs/$short_name-letter".".md");
-
-		// $closing=" ";
-		// $slider='
-		// 	<div class="sixteen columns">
-		// 		<img class="scale-with-grid" src="img/wired/car.jpg">
-		// 	</div>
-		// ';
-
-		$sample_projects_array = array(
-			array(
-				"path"=>"nextlesson-covers",
-				"name"=>"NextLesson Covers",
-				"type"=>"jpg",
-				"desc"=>"Creation of Lesson and Project Covers.",
-			),
-			array(
-				"path"=>"nextlesson-interestid",
-				"name"=>"NextLesson InterestID",
-				"type"=>"jpg",
-				"desc"=>"UI/UX and creation of icons.",
-			),
-			array(
-				"path"=>"nextlesson-glossary",
-				"name"=>"NextLesson Interactive Glossary",
-				"type"=>"jpg",
-				"desc" => "Visuals for glossary terms.",
-			),
-			array(
-				"path"=>"indiginauts",
-				"name"=>"Indiginauts",
-				"type"=>"jpg",
-				"desc"=>"Point 'n' click adventure game. Game concept/design, art, and UI.",
-			),
-			array(
-				"path"=>"color-chameleon",
-				"name"=>"Color Chameleon",
-				"type"=>"jpg",
-				"desc"=>"Game concept for a runner.",
-			),
-			array(
-				"path"=>"storymaps",
-				"name"=>"StoryMaps",
-				"type"=>"jpg",
-				"desc"=>"Hand-drawn illustrations for a story building app.",
-			),
-		);
-
-		// $other = "";
-	break;
-
-	// SENIOR UI/UX DESIGNER: ADS & PROMOTIONS PLATFORM
-	case "twitch-senior-ui-ux-designer-ads-and-promotions-platform":
-		$short_name = "twitch-senior-ui-ux-designer-ads-and-promotions-platform";
-		$originaljobposting="https://jobs.lever.co/twitch/761145e5-ddb5-4501-b939-91279c979695";
-
-		$company="Twitch";
-		$jobTitle="Senior UI/UX Designer: Ads & Promotions Platform";
-
-		$slider_img="";
-		$logo="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png";
-		$date="February 23, 2017";
-		$name="";
-		$email="";
-		$portrait="GIFS/me-pixel.gif";
-		$hiremepage = "http://rayuen.com/$short_name";
-		// $resume = "img/ray_yuen_resume.pdf";
-
-		$job_details = markdown_convert("jobs/$short_name.md");
-		$copy = markdown_convert("jobs/$short_name-letter.md");
-
-		$closing="";
-
-		$sample_projects_array = array(
-			array(
-				"path"=>"the-3",
-				"name"=>"The 3",
-				"type"=>"jpg",
-				"desc"=>"UI for a trivia game",
-			),
-			array(
-				"path"=>"nextlesson-interestid",
-				"name"=>"NextLesson InterestID",
-				"type"=>"jpg",
-				"desc"=>"UI/UX and creation of icons.",
-			),
-			array(
-				"path"=>"nextlesson-glossary",
-				"name"=>"NextLesson Interactive Glossary",
-				"type"=>"jpg",
-				"desc" => "Visuals for glossary terms.",
-			),
-		);
-	break;
-
 	// HUMBLE-BUNDLE-SENIOR-DESIGNER
 	case "humble-bundle-senior-designer":
 		$short_name = "humble-bundle-senior-designer";
@@ -3319,16 +3208,52 @@ case 'ixl-illustration-coordinator':
 			),
 		);
 
-		// $other = "";
+		$other = "";
 	break;
-}
 
-if ( isset($slider_img) ) {
-	$slider = "
-		<div class='sixteen columns'>
-			<img class='scale-with-grid' src='$slider_img'>
-		</div>
-	";
+	// FACEBOOK-ILLUSTRATOR-DESIGNER-MESSENGER
+	case "facebook-illustrator-designer-messenger":
+		$short_name = "facebook-illustrator-designer-messenger";
+		$originaljobposting="https://www.facebook.com/careers/jobs/a0I1200000JXv4nEAD/";
+
+		$company="Facebook";
+		$jobTitle="Illustrator/Designer - Messenger";
+
+		$slider_img="";
+		$date="February 23, 2017";
+		$name="";
+		$email="";
+		// $portrait="GIFS/me-pixel.gif";
+		$hiremepage = "http://rayuen.com/$short_name";
+		// $resume = "img/ray_yuen_resume.pdf";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = markdown_exist("jobs/$short_name-letter.md");
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"storymaps",
+				"name"=>"Storymaps",
+				"type"=>"jpg",
+				"desc"=>"Story creation tool.",
+			),
+			array(
+				"path"=>"project-animore",
+				"name"=>"Project Animore",
+				"type"=>"jpg",
+				"desc" => "UI and Character Design for game concept.",
+			),
+		);
+	break;
+
 }
 
 // ========================

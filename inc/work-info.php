@@ -6,7 +6,7 @@ $works = array(
 	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("web-dev","illustration","ui-ux") ),
 	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("web-dev","illustration","ui-ux") ),
 	// array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing" ),
-	array( "name" => "NextLesson Glossary Images","path" => "nextlesson-glossary","tags"=>array("illustration") ),
+	array( "name" => "NextLesson Glossary Images", "path" => "nextlesson-glossary", "tags"=>array("illustration") ),
 	// array( "name" => "NextLesson Interactive","path" => "nextlesson-interactive" ),
 	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars" ),
 	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library" ),

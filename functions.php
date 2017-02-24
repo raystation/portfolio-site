@@ -14,6 +14,14 @@ function markdown_convert($file){
   $html = Markdown::defaultTransform($text);
   return $html;
 }
+function markdown_exist($filename){
+  if ( file_exists($filename) ) {
+    $copy = markdown_convert( $filename );
+    return $copy;
+  } else {
+    return "error. markdown file does not exist.";
+  }
+}
 
 function string_lower( $string ){
   $string = ( strtolower ( $string ) );
@@ -71,16 +79,6 @@ function downcasespace($string) {
   $string = strtolower($string);
   return $string;
 }
-function markdown_exist($filename){
-  if ( file_exists($filename) ) {
-    $copy = markdown_convert( $filename );
-    return $copy;
-  } else {
-    return NULL;
-  }
-}
-
-
 function list_html($array){
   echo "<ul>\n";
 
