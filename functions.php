@@ -19,7 +19,7 @@ function markdown_exist($filename){
     $copy = markdown_convert( $filename );
     return $copy;
   } else {
-    return "error. markdown file does not exist.";
+    return FALSE;
   }
 }
 

@@ -1,4 +1,20 @@
 <?
+
+$short_name = "";
+$originaljobposting="";
+$company="";
+$jobTitle="";
+$slider_img="";
+$date="";
+$name="";
+$email="";
+$portrait="";
+$hiremepage="";
+$job_details="";
+$copy="";
+$closing="";
+$sample_projects_array=array();
+
 $p_break = "</p><p>";
 
 // TODO: include Markdown parser
@@ -3214,8 +3230,8 @@ case 'ixl-illustration-coordinator':
 	// FACEBOOK-ILLUSTRATOR-DESIGNER-MESSENGER
 	case "facebook-illustrator-designer-messenger":
 		$short_name = "facebook-illustrator-designer-messenger";
-		$originaljobposting="https://www.facebook.com/careers/jobs/a0I1200000JXv4nEAD/";
 
+		$originaljobposting="https://www.facebook.com/careers/jobs/a0I1200000JXv4nEAD/";
 		$company="Facebook";
 		$jobTitle="Illustrator/Designer - Messenger";
 
@@ -3224,11 +3240,7 @@ case 'ixl-illustration-coordinator':
 		$name="";
 		$email="";
 		// $portrait="GIFS/me-pixel.gif";
-		$hiremepage = "http://rayuen.com/$short_name";
 		// $resume = "img/ray_yuen_resume.pdf";
-
-		$job_details = markdown_exist("jobs/$short_name.md");
-		$copy = markdown_exist("jobs/$short_name-letter.md");
 
 		$closing="";
 
@@ -3250,6 +3262,204 @@ case 'ixl-illustration-coordinator':
 				"name"=>"Project Animore",
 				"type"=>"jpg",
 				"desc" => "UI and Character Design for game concept.",
+			),
+		);
+		$hiremepage = "http://rayuen.com/$short_name";
+		$job_details = markdown_exist("jobs/$short_name.md"); $copy = markdown_exist("jobs/$short_name-letter.md");
+	break;
+
+	//#EVENTBRITE-SENIOR-DESIGNER--BRAND-COMMUNICATIONS
+	case "eventbrite-senior-designer-brand-communications":
+		$short_name = "eventbrite-senior-designer-brand-communications";
+		$originaljobposting="https://jobs.lever.co/eventbrite/6f6682cb-c452-4dd9-ad4e-b3ef9130dcdf";
+		$company="Eventbrite";
+		$jobTitle="Senior Designer - Brand Communications";
+		$date="February 25, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = markdown_exist("jobs/$short_name-letter.md");
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"dp-launch",
+				"name"=>"Pokémon: Diamond & Pearl Launch",
+				"type"=>"jpg",
+				"desc"=>"Branding, Events Signage and Collateral.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+		);
+	break;
+
+
+	//WEEBLY-BRAND-DESIGNER
+	case "weebly-brand-designer":
+		$short_name = "weebly-brand-designer";
+		$originaljobposting="https://careers.weebly.com/job.html?gh_jid=78937&gh_src=73a14v1#78937";
+		$company="Weebly";
+		$jobTitle="Brand Designer";
+		$date="February 25, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "I just wanted to pass along my info for this position. I've been to a Dribbble meetup at your office and the Weebly designers I spoke to seem really upbeat and interesting. I'm linking to three projects below.";
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"dp-launch",
+				"name"=>"Pokémon: Diamond & Pearl Launch",
+				"type"=>"jpg",
+				"desc"=>"Branding, Events Signage and Collateral.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+		);
+	break;
+
+	//MINTED-VISUAL-INTERACTIVE-DESIGNER
+	case "12510":
+		$short_name = "minted-visual-interactive-designer";
+		$originaljobposting="http://jobs.jobvite.com/careers/minted/job/oFkL4fwy";
+		$company="Minted";
+		$jobTitle="Visual/Interactive Designer: Onsite/Holiday";
+		$date="February 25, 2017";
+		$hiremepage = "http://rayuen.com/hire-me?id=12510";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "
+			Saw your posting and wanted to pass along my info. With my unique skillsets in design, illustration and web development, I believe that I would be a great fit for this position.
+			$p_break
+			I've linked to three projects which I think will communicate my experience.
+		";
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"type"=>"jpg",
+				"desc"=>"UI/UX and creation of 3,831 icons.",
+			),
+			array(
+				"path"=>"project-animore",
+				"name"=>"Project Animore",
+				"type"=>"jpg",
+				"desc"=>"UI and Character Design for game concept.",
+			),
+		);
+	break;
+
+
+	//OPENDOOR-BRAND-DESIGNER
+	case "opendoor-brand-designer":
+		$short_name = "opendoor-brand-designer";
+		$originaljobposting="http://jobs.jobvite.com/careers/minted/job/oFkL4fwy";
+		$company="Opendoor";
+		$jobTitle="Brand Designer";
+		$date="February 25, 2017";
+		$hiremepage = "http://rayuen.com/hire-me?id=$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "
+			Saw your posting and wanted to pass along my info. I'm looking for a fun place where I can hone my creative skills in design and web development. Your team sounds great and a perfect place for me to grow.
+			$p_break
+			I've linked to three projects which I think should communicate my experience.
+		";
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"type"=>"jpg",
+				"desc"=>"UI/UX and creation of 3,831 icons.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"type"=>"jpg",
+				"desc"=>"Layout and Pre-press of a series of travel guides.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+		);
+	break;
+
+	//EXPLORATORIUM-DIRECTOR-OF-DESIGN
+	case "exploratorium-director-of-design":
+		$short_name = "exploratorium-director-of-design";
+		$originaljobposting="https://careers.weebly.com/job.html?gh_jid=78937&gh_src=73a14v1#78937";
+		$company="Exploration";
+		$jobTitle="Director of Design";
+		$date="February 26, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "
+			Hello, I was excited to see this job posted!<span class='tooltip' title='reposted? I thought I saw this job over Christmas'>*</span> I love the Exploratorium and as an eager learner and child-at-heart, I'd love to find out more about this opportunity.
+			$p_break
+			I am a designer with over 10+ years of creative experience from print to web. Most recently, I was Head of Design at <a href='work?project=nextlesson&id=$short_name'>NextLesson</a>, an edtech startup, where I lead a team of designers and illustrators with assignment and art direction. I developed and maintained the visual style through training and asset libraries which facilitated faster turnaround on projects.
+			$p_break
+			I've linked to three projects below for you to look over.
+		";
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Chronicles of Old New York",
+				"type"=>"jpg",
+				"desc"=>"Design and layout of many travel books for Museyon Guides.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"type"=>"jpg",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
 			),
 		);
 	break;

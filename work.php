@@ -349,7 +349,8 @@ function get_filters(){
 		array( "skill"=>"Web Dev", "url"=>"web-dev"),
 		array( "skill"=>"Illustration", "url"=>"illustration"),
 		array( "skill"=>"Print Design", "url"=>"print-design"),
-		array( "skill"=>"Places I Worked", "url"=>"places-i-worked"),
+		array( "skill"=>"Branding", "url"=>"branding"),
+		// array( "skill"=>"Places I Worked", "url"=>"places-i-worked"),
 	);
 	return $filter_list;
 }

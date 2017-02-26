@@ -11,7 +11,9 @@ $bio_array = array(
   "education" => "Rochester Institute of Technology<br>September 1998 - May 2002<br>BFA. Graphic Design",
 );
 $bio_array['about_me'] = "
- I am interested in working on a collaborative team making cool things and continuing to grow as a designer.</p><p>I'm a designer, illustrator, amateur programmer living and working in San Francisco. I've worked in games, publishing, marketing and most recently in education helping students get more engaged in their school work with topics they care about.
+ I am interested in working on a collaborative team making cool things and continuing to grow as a designer.
+ $p_break
+I'm a designer, illustrator, programmer living and working in San Francisco. I've worked in games, publishing, marketing, and most recently in edtech at NextLesson building products.
 ";
 // $bio_array['about_me'] = $about_me;
 
