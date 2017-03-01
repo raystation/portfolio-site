@@ -638,3 +638,14 @@ function get_email_body($text){
   $email_text = replace_string( $email_text, "'", "%27");
   return $email_text;
 }
+function check_for_img_format($path,$filename='thumb'){
+  $img_formats = array("jpg","svg","png");
+  foreach ($img_formats as $img_format) {
+    // goes through the array of img formats, it it exists, it returns $thumb, else it will be the default img
+    if ( file_exists("$path/$filename.$img_format") ) {
+      $thumb = "$path/$filename.$img_format";
+      return $thumb;
+    }
+  }
+  return FALSE;
+}

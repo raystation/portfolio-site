@@ -1263,10 +1263,18 @@ if ( $title == "Pok&eacute;mon: Toy Fair" ) {
 	$path="img/toy-fair";
 	$company = "Pokemon";
 
-	$description="Coming soon.";
+	$description="
+		The Pok&eacute;mon Booth at Toy Fair 2006, in addition to new opportunities in product development, was an opportunity to promote our 10th Anniversary and our U.S. mall tour.
+		$p_break
+		While Pok&eacute;mon still had a presence in the US, recognition had waned over time. Our strategy that year was to have every event support our 10th anniversary and build up to our <a href='10th-anniversary'>video game tournament</a> in New York City's Bryant Park.
+		$p_break
+		Working with a production company to produce the fixtures and graphics, we assembled the booth the day before the show started. The booth featured the <em>four pillars</em> of the Pok&eacute;mon brand—the video game, television show, movies and trading card game. We commissioned a special statue to be built which featured the new Pok&eacute;mon from the that year's movie release. The back-wall was composed of a time-line of key events and memorabilia in Pok&eacute;mon history leading up to the present.
+	";
 
 	$sidebar = "
-		Trade Show Booth
+		Trade Show Booth<br>
+		Jacob Javits Center, NYC<br>
+		2006
 	";
 
 	$tools=array(

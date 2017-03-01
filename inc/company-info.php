@@ -3128,7 +3128,8 @@ case 'ixl-illustration-coordinator':
 		$job_details = markdown_convert("jobs/$short_name".".md");
 		$copy = markdown_convert("jobs/$short_name-letter".".md");
 
-		// $closing=" ";
+		$closing="<p>I've also applied to <a href='facebook-illustrator-designer-messenger'>another position</a> which has a similiar job description. Please feel free to contact me with any questions and to take a look at the rest of my <a href='work?id=$id'>work</a> and my <a href='resume?id=$id'>resume</a>.</p>
+		<p>Sincerely, <br>Ray</p> ";
 		// $slider='
 		// 	<div class="sixteen columns">
 		// 		<img class="scale-with-grid" src="img/wired/car.jpg">
@@ -3184,8 +3185,8 @@ case 'ixl-illustration-coordinator':
 		$company="Humble Bundle";
 		$jobTitle="Senior Designer";
 		$date="February 21, 2017";
-		$name="Dave Johnson";
-		$email="dave@johnsonjobs.com";
+		// $name="Dave Johnson";
+		// $email="dave@johnsonjobs.com";
 		$portrait="GIFS/me-pixel.gif";
 		$hiremepage = "http://rayuen.com/$short_name";
 
@@ -3242,7 +3243,8 @@ case 'ixl-illustration-coordinator':
 		// $portrait="GIFS/me-pixel.gif";
 		// $resume = "img/ray_yuen_resume.pdf";
 
-		$closing="";
+		$closing="<p>I've also applied to <a href='facebook-illustrator-designer-cultural-moments'>another position</a> which has a similiar job description. Please feel free to contact me with any questions and to take a look at the rest of my <a href='work?id=$id'>work</a> and my <a href='resume?id=$id'>resume</a>.</p>
+		<p>Sincerely, <br>Ray</p> ";
 
 		$sample_projects_array = array(
 			array(
@@ -3426,16 +3428,16 @@ case 'ixl-illustration-coordinator':
 	case "exploratorium-director-of-design":
 		$short_name = "exploratorium-director-of-design";
 		$originaljobposting="https://careers.weebly.com/job.html?gh_jid=78937&gh_src=73a14v1#78937";
-		$company="Exploration";
+		$company="Exploratorium";
 		$jobTitle="Director of Design";
-		$date="February 26, 2017";
+		$date="February 27, 2017";
 		$hiremepage = "http://rayuen.com/$short_name";
 
 		$job_details = markdown_exist("jobs/$short_name.md");
 		$copy = "
-			Hello, I was excited to see this job posted!<span class='tooltip' title='reposted? I thought I saw this job over Christmas'>*</span> I love the Exploratorium and as an eager learner and child-at-heart, I'd love to find out more about this opportunity.
+			I was excited to see this job reposted!<span class='tooltip' title='Reposted? I thought I saw this job over Christmas'>*</span> I love the Exploratorium and as an eager learner and child-at-heart, I'd love to find out more about this opportunity.
 			$p_break
-			I am a designer with over 10+ years of creative experience from print to web. Most recently, I was Head of Design at <a href='work?project=nextlesson&id=$short_name'>NextLesson</a>, an edtech startup, where I lead a team of designers and illustrators with assignment and art direction. I developed and maintained the visual style through training and asset libraries which facilitated faster turnaround on projects.
+			I am a designer with over 14+ years of creative experience from print to web. Most recently, I was Head of Design at <a href='work?project=nextlesson&id=$short_name'>NextLesson</a>, an edtech startup, where I lead a team of designers and illustrators with assignment and art direction. I developed and maintained the visual style through training and asset libraries which facilitated faster turnaround on projects.
 			$p_break
 			I've linked to three projects below for you to look over.
 		";
@@ -3454,6 +3456,189 @@ case 'ixl-illustration-coordinator':
 				"name"=>"InterestID",
 				"type"=>"jpg",
 				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+		);
+	break;
+
+	//WRKSHP-UI-UX-DESIGNER
+	case "47398457894":
+		$short_name = "wrkshp-ui-ux-designer";
+		$originaljobposting="https://boards.greenhouse.io/3876393/jobs/575423";
+		$company="Wrkshp";
+		$jobTitle="UI/UX Designer";
+		$date="February 27, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "
+			I found your open UX/UI role through Indeed and wanted to apply because I believe my many years of design, production, and illustration experience would translate well in this role! Being a gamer of many years, I can bring that playfulness, sense of humor, and imagination that gamers are known for. For the past couple of years I’ve been doing branding, art direction, illustration, and UI/UX at NextLesson, an edtech company<a href='I think my ideal job is in education or gaming.'>*</a>.
+		";
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Chronicles of Old New York",
+				"type"=>"jpg",
+				"desc"=>"Design and layout of many travel books for Museyon Guides.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"type"=>"jpg",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+		);
+	break;
+
+
+	//ASANA-MARKETING-DESIGNER
+	case "asana-marketing-designer":
+		$short_name = "asana-marketing-designer";
+		$originaljobposting="https://asana.com/jobs/product-designer";
+		$company="Asana";
+		$jobTitle="Marketing Designer";
+		$date="February 27, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "I found this role through your website and wanted to apply because you guys seem pretty awesome! For the past two years I’ve been at an edtech startup <a href='work?project=nextlesson&id=$short_name'>NextLesson</a> doing branding, art production, illustration, and UI/UX.";
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"type"=>"jpg",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"the3",
+				"name"=>"The 3",
+				"type"=>"jpg",
+				"desc"=>"Game design and UI for mobile trivia game.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+		);
+	break;
+
+	//AFAR-MEDIA
+	case "afar-media":
+		$short_name = "afar-media";
+		$originaljobposting="https://asana.com/jobs/product-designer";
+		$company="AFAR Media";
+		$jobTitle="UX/Visual Designer";
+		$date="February 27, 2017";
+		$hiremepage = "http://rayuen.com/hire-me?id=$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "
+			I found your open UX/UI role through Craigslist and wanted to apply because it sounds like it could be a great place for me to grow. For the past two years I’ve been at an edtech startup <a href='work?project=nextlesson&id=$short_name'>NextLesson</a> doing branding, art production, illustration, and UI/UX. Managing art took most of my time and I'd love a role where I can focus more on UX.
+		";
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"type"=>"jpg",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"the3",
+				"name"=>"The 3",
+				"type"=>"jpg",
+				"desc"=>"Game design and UI for mobile trivia game.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+		);
+	break;
+
+	//MEDIUM-SENIOR-VISUAL-DESIGNER
+	case "medium-senior-visual-designer":
+		$short_name = "medium-senior-visual-designer";
+		$originaljobposting="https://medium.com/jobs-at-medium/senior-visual-designer-cc881858650d#.j24irwnu8";
+		$company="Medium";
+		$jobTitle="Senior Visual Designer";
+		$date="February 28, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "I found this role through your website and wanted to apply because I think y'all are pretty awesome!<a href='tooltop' title='I instantly recognized your attention to detail on the site—hanging quotes, beautiful typography, following legibility rules used in print.'>*</a> For the past two years I’ve been at an edtech startup <a href='work?project=nextlesson&id=$short_name'>NextLesson</a> doing branding, art production, illustration, and UI/UX. I worked with a great team and produced some of my best work there and I want to continue that trend—growing, learning, experimenting...and having fun doing it!
+		";
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Covers",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides",
+			),
+		);
+	break;
+
+	//AFAR-MEDIA
+	case "afar-media":
+		$short_name = "afar-media";
+		$originaljobposting="https://asana.com/jobs/product-designer";
+		$company="AFAR Media";
+		$jobTitle="UX/Visual Designer";
+		$date="February 27, 2017";
+		$hiremepage = "http://rayuen.com/hire-me?id=$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "
+			I found your open UX/UI role through Craigslist and wanted to apply because it sounds like it could be a great place for me to grow. For the past two years I’ve been at an edtech startup <a href='work?project=nextlesson&id=$short_name'>NextLesson</a> doing branding, art production, illustration, and UI/UX. Managing art took most of my time and I'd love a role where I can focus more on UX.
+		";
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"type"=>"jpg",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"the3",
+				"name"=>"The 3",
+				"type"=>"jpg",
+				"desc"=>"Game design and UI for mobile trivia game.",
 			),
 			array(
 				"path"=>"toy-fair",
