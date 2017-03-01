@@ -649,3 +649,7 @@ function check_for_img_format($path,$filename='thumb'){
   }
   return FALSE;
 }
+function get_quick_intro(){
+  include_once "inc/resume.php";
+  return $quick_intro;
+}

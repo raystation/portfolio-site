@@ -263,7 +263,7 @@ if ($id) {
 					<strong>Highlighted Projects for $company:</strong> $sample_projects_html
 				</div>
 				<div class='four columns' style='text-align:right;'>
-					<a href='./hire-me?id=$id'>&#11013; back to job application</a>
+					<a href='./hire-me?id=$id'>&#11013; back to job inquiry</a>
 				</div>
 			</div>
 		</div>

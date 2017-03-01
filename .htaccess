@@ -93,6 +93,7 @@ RewriteRule ^eventbrite-senior-designer-brand-communications$ hire-me?id=eventbr
 RewriteRule ^weebly-brand-designer$ hire-me?id=weebly-brand-designer
 RewriteRule ^exploratorium-director-of-design$ hire-me?id=exploratorium-director-of-design
 RewriteRule ^asana-product-designer$ hire-me?id=asana-product-designer
+RewriteRule ^asana-marketing-designer$ hire-me?id=asana-marketing-designer
 RewriteRule ^medium-senior-visual-designer$ hire-me?id=medium-senior-visual-designer
 
 RewriteRule ^holiday2014$ http://www.rayuen.com/p/holiday-card/holiday
