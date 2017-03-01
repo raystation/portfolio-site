@@ -1,32 +1,41 @@
 <?
 
-	if ( !is_null($path) ) {
-		// checks for ADDITIONAL_IMG folder for support images
-		if ( file_exists("$path/additional_img") ) {
-			if ( !isset($additional_img_column_count) ) {
-				$additional_img_column_count = 2;
-			}
-			$additional_img_html = skeleton_html($additional_img_column_count,$path,$folder="additional_img");
-		} else {
-			$additional_img_html = "";
-		}
+$tags_html="";
+if ( isset($tags) ) {
+	foreach ($tags as $key => $tag) {
+		$tags_html .= "
+			<li><a href='work?f=$tag'>$tag</a>
+		";
+	}
+}
 
-		// fills the sidebar with a logo if it exists
-		if ( file_exists("$path/logo.jpg") ) {
-			$sidebar_logo = "<img src='$path/logo.jpg' alt='Logo' class='scale-with-grid'>";
+if ( !is_null($path) ) {
+	// checks for ADDITIONAL_IMG folder for support images
+	if ( file_exists("$path/additional_img") ) {
+		if ( !isset($additional_img_column_count) ) {
+			$additional_img_column_count = 2;
 		}
-		elseif ( file_exists("$path/logo.png") ) {
-			$sidebar_logo = "<img src='$path/logo.png' alt='Logo' class='scale-with-grid'>";
-		}
-		else {
-			$sidebar_logo = "";
-		}
+		$additional_img_html = skeleton_html($additional_img_column_count,$path,$folder="additional_img");
+	} else {
+		$additional_img_html = "";
 	}
-	else
-	{
-		$path="";
-		$additional_img_html = "fill out information on work-info";
+
+	// fills the sidebar with a logo if it exists
+	if ( file_exists("$path/logo.jpg") ) {
+		$sidebar_logo = "<img src='$path/logo.jpg' alt='Logo' class='scale-with-grid'>";
 	}
+	elseif ( file_exists("$path/logo.png") ) {
+		$sidebar_logo = "<img src='$path/logo.png' alt='Logo' class='scale-with-grid'>";
+	}
+	else {
+		$sidebar_logo = "";
+	}
+}
+else
+{
+	$path="";
+	$additional_img_html = "fill out information on work-info";
+}
 ?>
 
 <div class="sixteen columns">
@@ -67,6 +76,7 @@
 		echo "
 			<p>$description</p>
 			$additional_img_html
+			<ul class='tags'>$tags_html</ul>
 		";
 		// related_check();
 
@@ -110,12 +120,13 @@
 			echo "<hr><h6>Tools Used:</h6>\n";
 			include 'inc/lists.php';
 			print_skill_html();
-			echo "</div>\n";
-
+			echo "
+			</div>
+			";
 		}
 		// TODO: add in related projects in the sidebar
+
 		?>
 
 	</div>
-
 </div> <!-- end sixteen -->

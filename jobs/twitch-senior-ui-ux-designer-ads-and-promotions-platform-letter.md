@@ -1,1 +1,0 @@
-Hello! Being a huge fan of video games and Twitch, I'm sending over my info. I believe with my background

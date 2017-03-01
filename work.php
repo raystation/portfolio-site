@@ -2,7 +2,6 @@
 	$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
 	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
 
-
 	$selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
 	$filter_list_html = get_filter_list_html($selected_filter);
 
@@ -275,11 +274,21 @@ if ($id) {
 
 include('inc/header.php');
 
+// if (isset($title)) {
+// 	foreach ($works as $key => $work) {
+// 		if (array_search($title, $work)){
+// 			$tags = $work['tags'];
+// 			break;
+// 		};
+// 	}
+// }
+
 // IF THE PROJECT IS SET (VIEWING A PROJECT)
 // THEN IT WILL TAKE THE PROJECT OUT OF THE WORK ARRAY SO YOU DON'T GET IT IN THE RECENT PROJECTS
 if ( isset($project) ) {
 	foreach ($works as $key => $work) {
 		if (array_search($title, $work)){
+			// $tags = $work['tags'];
 			break;
 		};
 	}
@@ -325,7 +334,7 @@ elseif ($template=="company") {
 	  </div>";
 }
 else {
-	skeleton_print_thumbnail_4($works,"",4);
+	skeleton_print_thumbnail_4($works,4);
 }
 
 echo $landing_page_nav;
@@ -340,26 +349,41 @@ function get_filters(){
 		array( "skill"=>"Web Dev", "url"=>"web-dev"),
 		array( "skill"=>"Illustration", "url"=>"illustration"),
 		array( "skill"=>"Print Design", "url"=>"print-design"),
-		array( "skill"=>"Places I Worked", "url"=>"places-i-worked"),
+		array( "skill"=>"Branding", "url"=>"branding"),
+		// array( "skill"=>"Places I Worked", "url"=>"places-i-worked"),
 	);
 	return $filter_list;
 }
 function get_filter_list_html( $selected_filter ){
 	$html="";
 	$filters = get_filters();
+	// IS THE PERSON COMING FROM A JOB LANDING PAGE
+	// checks to see if $id is set
+	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+	$id_html = !is_null($id) ? "?id=$id" : "";
 
+	// sets ALL
 	if ($selected_filter=="") {
-		$html.="<li class='active'><a href='work'>All</a>";
+		$html.="<li class='active'><a href='work$id_html'>All</a>";
 	} else {
-		$html.="<li><a href='work'>All</a>";
+		$html.="<li><a href='work$id_html'>All</a>";
 	}
 
+	$id_html = !is_null($id) ? "&id=$id" : "";
 	foreach ($filters as $key => $filter) {
 		if ( $selected_filter == $filter['url'] ) {
 			$class="class='active'";
-			$html.="<li class='active'><a href='work'>$filter[skill]</a>";
+			if (!is_null($id)) {
+				$html.="<li class='active'><a href='work.php?$id_html'>&times; $filter[skill]</a>";
+			} else {
+				$html.="<li class='active'><a href='work'>&times; $filter[skill]</a>";
+			}
 		} else {
-			$html.="<li><a href='$filter[url]'>$filter[skill]</a>";
+			if ( isset($id) ) {
+				$html.="<li><a href='work.php?f=$filter[url]$id_html'>$filter[skill]</a>";
+			} else {
+				$html.="<li><a href='$filter[url]'>$filter[skill]</a>";
+			}
 		}
 	}
 	return $html;

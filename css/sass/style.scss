@@ -409,6 +409,32 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		// padding-top: 10px;
 	}
 }
+ul.tags {
+	margin: 0;
+	margin-top: 1em;
+	padding: 0;
+	li {
+		background-color: red;
+		display: inline-block;
+		margin-right: 1em;
+		margin-bottom: 10px;
+		background-color: #E1E8ED;
+		margin-right: 15px;
+		padding: 2px 15px;
+		border-radius: 14px;
+		a:link, a:visited {
+			color: hsla(0, 0%, 30%, 1);
+		}
+		@include transition( all 0.125s ease-in-out );
+		&:hover {
+			background-color: darken($filter-color,15%);
+			@include transition( all 0.125s ease-in-out );
+		}
+	}
+	li.active {
+		background-color: darken($filter-color,15%);
+	}
+}
 .back-to-landing-page-menu {
 	position: fixed;
 	left: 0;
@@ -439,6 +465,12 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		opacity: 1 !important;
 		color: white !important;
 		@include underline(2px);
+	}
+	.x-button {
+		// float: right;
+		position: absolute;
+		right: 10px;
+		bottom: 5px;
 	}
 }
 
@@ -594,7 +626,15 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 				padding: 2px 15px;
 				border-radius: 14px;
 				margin-bottom: 0.5em;
-				// line-height: 1em;
+				@include transition( all 0.125s);
+				&:hover {
+					@include transition( all 0.125s);
+					background-color: #CCD6DD;
+				}
+
+				a:link, a:visited {
+					color: black;
+				}
 			}
 		}
 		.checklist {

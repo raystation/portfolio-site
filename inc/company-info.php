@@ -1,23 +1,24 @@
 <?
+
+$short_name = "";
+$originaljobposting="";
+$company="";
+$jobTitle="";
+$slider_img="";
+$date="";
+$name="";
+$email="";
+$portrait="";
+$hiremepage="";
+$job_details="";
+$copy="";
+$closing="";
+$sample_projects_array=array();
+
 $p_break = "</p><p>";
 
 // TODO: include Markdown parser
 require_once 'functions.php';
-
-//converts title into lowercase and no spaces
-function downcasespace($string) {
-	$string = str_replace(" ", "", $string);
-	$string = strtolower($string);
-	return $string;
-}
-function markdown_exist($filename){
-	if ( file_exists($filename) ) {
-		$copy = markdown_convert( $filename );
-		return $copy;
-	} else {
-		return NULL;
-	}
-}
 
 switch ( $id ) {
 
@@ -2945,32 +2946,34 @@ case 'duckduckmoose':
 	break;
 
 case 'ixl-illustration-coordinator':
-		$originaljobposting="https://www.ixl.com/company/jobs?jvi=ojtG4fwg&jvs=Indeed";
+		$originaljobposting="https://www.ixl.com/company/jobs?p=job%2FojtG4fwg";
 		$logo="http://grapesforlife.com/wp-content/uploads/2014/08/mzl.pptgpfrl-e1417376137299.png";
 		$jobTitle="Illustration Coordinator";
 		$company="IXL / Learning";
 		$date="January 26, 2017";
-		// $name="";
+		$name="Linda Vo";
 		$email="";
 		$slider="";
 		$hiremepage = "http://rayuen.com/hire-me?id=ixl-illustration-coordinator";
 		// $resume = "img/ray_yuen_resume.pdf";
 
 		$job_details="
+		<h1>$company</h1>
+		<h2>$jobTitle</h2>
 		<p>IXL Learning, a leading edtech company with products used by 6 million students worldwide, is seeking an illustration coordinator to oversee the creation of fun and delightful visuals for our educational content. In this role, you will brainstorming creative ideas, iterate with a team of illustrators, and collaborate with our design and engineering teams on technical requirements. We find it immensely satisfying to develop products that impact the lives of millions of students around the globe, and we are eager to have you join our team.</p>
 
 		<h6>RESPONSIBILITIES</h6>
 
-		<li>Brainstorm fun, creative ideas for illustrations
-		<li>Collaborate with the curriculum design team to write illustration specifications that meet educational goals
-		<li>Effectively communicate specifications to illustrators and iterate with them until all project requirements are satisfied
-		<li>Ensure illustrations meet IXL’s aesthetic, educational, and technical requirements
-		<li>Collaborate with engineers to determine SVG file formatting guidelines
-		<li>Occasionally edit SVG files; no prior experience editing SVGs is necessary, and training will be provided
-		<li>Manage and track multiple illustration projects simultaneously
-		<li>Successfully deliver high quality illustrations on-time
-		<li>Assist in hiring and training contract illustrators
-		<li>Pitch in with other UI tasks as needed; collaborate with visual designers to create new UI elements, style guides, and brand guidelines
+		<li>&#10004; Brainstorm fun, creative ideas for illustrations
+		<li>&#10004; Collaborate with the curriculum design team to write illustration specifications that meet educational goals
+		<li>&#10004; Effectively communicate specifications to illustrators and iterate with them until all project requirements are satisfied
+		<li>&#10004; Ensure illustrations meet IXL’s aesthetic, educational, and technical requirements
+		<li>&#10004; Collaborate with engineers to determine SVG file formatting guidelines
+		<li>&#10004; Occasionally edit SVG files; no prior experience editing SVGs is necessary, and training will be provided
+		<li>&#10004; Manage and track multiple illustration projects simultaneously
+		<li>&#10004; Successfully deliver high quality illustrations on-time
+		<li>&#10004; Assist in hiring and training contract illustrators
+		<li>&#10004; Pitch in with other UI tasks as needed; collaborate with visual designers to create new UI elements, style guides, and brand guidelines
 
 		<h6>QUALIFICATIONS</h6>
 		<li>BA/BS
@@ -3107,62 +3110,6 @@ case 'ixl-illustration-coordinator':
 	break;
 
 
-	// TWITCH - UI/UX DESIGNER/DEVELOPER
-	case 'updownleftright':
-		$originaljobposting="https://jobs.lever.co/twitch/97767178-c6df-4fb3-9c9d-97e6bdfd2d10";
-		$logo="https://lever-client-logos.s3.amazonaws.com/twitch.png";
-		$jobTitle="UI/UX Designer/Developer";
-		$company="Twitch";
-		$date="January 31, 2017";
-		// $name="";
-		$email="";
-		$slider="";
-		$portrait="about-me/star-trek.gif";
-		$hiremepage = "http://rayuen.com/hire-me?id=updownleftright";
-		// $resume = "img/ray_yuen_resume.pdf";
-
-		$job_details = markdown_convert("jobs/twitch-ui-ux-designer.md");
-
-		$copy="
-		<p>Hey there, as an avid video game player for <em>many</em> years and a designer/illustrator wanting to work more into UI/UX design, this opportunity seems really interesting!
-		</p>
-		<p>With my experience at education startup NextLesson working to build products and UI/UX solutions, I believe I would be a great fit for this position.
-		</p>
-		<p>I've linked to three projects below which I think will be relevant to this position.
-		</p>
-		";
-
-		// $closing=" ";
-		$slider='
-			<div class="sixteen columns">
-				<img class="scale-with-grid" src="img/wired/car.jpg">
-			</div>
-		';
-
-		$sample_projects_array = array(
-			array(
-				"path"=>"nextlesson-covers",
-				"name"=>"NextLesson Covers",
-				"type"=>"jpg",
-				"desc"=>"Creation of 2,034 Lesson and Project Covers.",
-			),
-			array(
-				"path"=>"nextlesson-interestid",
-				"name"=>"NextLesson InterestID",
-				"type"=>"jpg",
-				"desc"=>"UI/UX and creation of 3,831 icons.",
-			),
-			array(
-				"path"=>"nextlesson-glossary",
-				"name"=>"NextLesson Interactive Glossary",
-				"type"=>"jpg",
-				"desc" => "Visuals for glossary terms.",
-			),
-		);
-
-		// $other = "";
-	break;
-
 	// FACEBOOK - ILLUSTRATOR/DESIGNER - CULTURAL MOMENTS
 	case "facebook-illustrator-designer-cultural-moments":
 		$short_name = "facebook-illustrator-designer-cultural-moments";
@@ -3181,7 +3128,8 @@ case 'ixl-illustration-coordinator':
 		$job_details = markdown_convert("jobs/$short_name".".md");
 		$copy = markdown_convert("jobs/$short_name-letter".".md");
 
-		// $closing=" ";
+		$closing="<p>I've also applied to <a href='facebook-illustrator-designer-messenger'>another position</a> which has a similiar job description. Please feel free to contact me with any questions and to take a look at the rest of my <a href='work?id=$id'>work</a> and my <a href='resume?id=$id'>resume</a>.</p>
+		<p>Sincerely, <br>Ray</p> ";
 		// $slider='
 		// 	<div class="sixteen columns">
 		// 		<img class="scale-with-grid" src="img/wired/car.jpg">
@@ -3229,138 +3177,6 @@ case 'ixl-illustration-coordinator':
 
 		// $other = "";
 	break;
-
-	// FACEBOOK - ILLUSTRATOR/DESIGNER - MESSENGER
-	case "facebook-illustrator-designer-messenger":
-		$short_name = "facebook-illustrator-designer-messenger";
-		$originaljobposting="https://www.facebook.com/careers/jobs/a0I1200000JXv61EAD/";
-		$company="Facebook";
-		$jobTitle="Illustrator/Designer - Messenger";
-		$logo="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png";
-		$date="February 8, 2017";
-		// $name="Ray Yuen";
-		$email="";
-		$slider="";
-		$portrait="GIFS/me-vector.jpg";
-		$hiremepage = "http://rayuen.com/facebook-illustrator-designer-cultural-moments";
-		// $resume = "img/ray_yuen_resume.pdf";
-
-		$job_details = markdown_convert("jobs/$short_name".".md");
-		$copy = markdown_convert("jobs/$short_name-letter".".md");
-
-		// $closing=" ";
-		// $slider='
-		// 	<div class="sixteen columns">
-		// 		<img class="scale-with-grid" src="img/wired/car.jpg">
-		// 	</div>
-		// ';
-
-		$sample_projects_array = array(
-			array(
-				"path"=>"nextlesson-covers",
-				"name"=>"NextLesson Covers",
-				"type"=>"jpg",
-				"desc"=>"Creation of Lesson and Project Covers.",
-			),
-			array(
-				"path"=>"nextlesson-interestid",
-				"name"=>"NextLesson InterestID",
-				"type"=>"jpg",
-				"desc"=>"UI/UX and creation of icons.",
-			),
-			array(
-				"path"=>"nextlesson-glossary",
-				"name"=>"NextLesson Interactive Glossary",
-				"type"=>"jpg",
-				"desc" => "Visuals for glossary terms.",
-			),
-			array(
-				"path"=>"indiginauts",
-				"name"=>"Indiginauts",
-				"type"=>"jpg",
-				"desc"=>"Point 'n' click adventure game. Game concept/design, art, and UI.",
-			),
-			array(
-				"path"=>"color-chameleon",
-				"name"=>"Color Chameleon",
-				"type"=>"jpg",
-				"desc"=>"Game concept for a runner.",
-			),
-			array(
-				"path"=>"storymaps",
-				"name"=>"StoryMaps",
-				"type"=>"jpg",
-				"desc"=>"Hand-drawn illustrations for a story building app.",
-			),
-		);
-
-		// $other = "";
-	break;
-
-	// SENIOR UI/UX DESIGNER: ADS & PROMOTIONS PLATFORM
-	case "twitch-senior-ui-ux-designer-ads-and-promotions-platform":
-		$short_name = "twitch-senior-ui-ux-designer-ads-and-promotions-platform";
-		$originaljobposting="https://jobs.lever.co/twitch/761145e5-ddb5-4501-b939-91279c979695";
-		$company="Twitch";
-		$jobTitle="Senior UI/UX Designer: Ads & Promotions Platform";
-		$logo="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png";
-		$date="February 15, 2017";
-		// $name="Ray Yuen";
-		$email="";
-		$slider="";
-		$portrait="GIFS/me-pixel.gif";
-		$hiremepage = "http://rayuen.com/twitch-senior-ui-ux-designer-ads-and-promotions-platform";
-		// $resume = "img/ray_yuen_resume.pdf";
-
-		$job_details = markdown_convert("jobs/$short_name".".md");
-		$copy = markdown_convert("jobs/$short_name-letter".".md");
-
-		//
-		// $closing=" ";
-		// $slider='
-		// 	<div class="sixteen columns">
-		// 		<img class="scale-with-grid" src="img/wired/car.jpg">
-		// 	</div>
-		// ';
-
-		$sample_projects_array = array(
-			array(
-				"path"=>"nextlesson-covers",
-				"name"=>"NextLesson Covers",
-				"type"=>"jpg",
-				"desc"=>"Creation of Lesson and Project Covers.",
-			),
-			array(
-				"path"=>"nextlesson-interestid",
-				"name"=>"NextLesson InterestID",
-				"type"=>"jpg",
-				"desc"=>"UI/UX and creation of icons.",
-			),
-			array(
-				"path"=>"nextlesson-glossary",
-				"name"=>"NextLesson Interactive Glossary",
-				"type"=>"jpg",
-				"desc" => "Visuals for glossary terms.",
-			),
-			// array(
-			// 	"path"=>"indiginauts",
-			// 	"name"=>"Indiginauts",
-			// 	"type"=>"jpg",
-			// 	"desc"=>"Point 'n' click adventure game. Game concept/design, art, and UI.",
-			// ),
-			// array(
-			// 	"path"=>"color-chameleon",
-			// 	"name"=>"Color Chameleon",
-			// 	"type"=>"jpg",
-			// 	"desc"=>"Game concept for a runner.",
-			// ),
-			// array(
-			// 	"path"=>"storymaps",
-			// 	"name"=>"StoryMaps",
-			// 	"type"=>"jpg",
-			// 	"desc"=>"Hand-drawn illustrations for a story building app.",
-			// ),
-		);
 
 	// HUMBLE-BUNDLE-SENIOR-DESIGNER
 	case "humble-bundle-senior-designer":
@@ -3369,12 +3185,12 @@ case 'ixl-illustration-coordinator':
 		$company="Humble Bundle";
 		$jobTitle="Senior Designer";
 		$date="February 21, 2017";
-		$name="Dave Johnson";
-		$email="dave@johnsonjobs.com";
+		// $name="Dave Johnson";
+		// $email="dave@johnsonjobs.com";
 		$portrait="GIFS/me-pixel.gif";
 		$hiremepage = "http://rayuen.com/$short_name";
 
-		$slider="";
+		$slider_img="";
 		// $resume = "img/ray_yuen_resume.pdf";
 
 		$job_details = markdown_convert("jobs/$short_name".".md");
@@ -3385,13 +3201,8 @@ case 'ixl-illustration-coordinator':
 			I'm linking to three projects below that should give you a better understanding of projects where I've worked on a product or lead a team. The first project, InterestID, is a tool that allows K12 students to <em>rate</em> interests<span class='tooltip' title='allowing teachers to have a better understanding of which lessons might interest their students more'>*</span>, like movies and sports. Covers and Glossary terms were more content-driven, where I was in charge of artwork creation.
 		";
 
-		//
-		// $closing=" ";
-		// $slider='
-		// 	<div class="sixteen columns">
-		// 		<img class="scale-with-grid" src="img/wired/car.jpg">
-		// 	</div>
-		// ';
+		$closing="";
+		$slider="";
 
 		$sample_projects_array = array(
 			array(
@@ -3412,29 +3223,448 @@ case 'ixl-illustration-coordinator':
 				"type"=>"jpg",
 				"desc" => "Visuals for glossary terms.",
 			),
-			// array(
-			// 	"path"=>"indiginauts",
-			// 	"name"=>"Indiginauts",
-			// 	"type"=>"jpg",
-			// 	"desc"=>"Point 'n' click adventure game. Game concept/design, art, and UI.",
-			// ),
-			// array(
-			// 	"path"=>"color-chameleon",
-			// 	"name"=>"Color Chameleon",
-			// 	"type"=>"jpg",
-			// 	"desc"=>"Game concept for a runner.",
-			// ),
-			// array(
-			// 	"path"=>"storymaps",
-			// 	"name"=>"StoryMaps",
-			// 	"type"=>"jpg",
-			// 	"desc"=>"Hand-drawn illustrations for a story building app.",
-			// ),
 		);
 
-		// $other = "";
+		$other = "";
+	break;
+
+	// FACEBOOK-ILLUSTRATOR-DESIGNER-MESSENGER
+	case "facebook-illustrator-designer-messenger":
+		$short_name = "facebook-illustrator-designer-messenger";
+
+		$originaljobposting="https://www.facebook.com/careers/jobs/a0I1200000JXv4nEAD/";
+		$company="Facebook";
+		$jobTitle="Illustrator/Designer - Messenger";
+
+		$slider_img="";
+		$date="February 23, 2017";
+		$name="";
+		$email="";
+		// $portrait="GIFS/me-pixel.gif";
+		// $resume = "img/ray_yuen_resume.pdf";
+
+		$closing="<p>I've also applied to <a href='facebook-illustrator-designer-cultural-moments'>another position</a> which has a similiar job description. Please feel free to contact me with any questions and to take a look at the rest of my <a href='work?id=$id'>work</a> and my <a href='resume?id=$id'>resume</a>.</p>
+		<p>Sincerely, <br>Ray</p> ";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"storymaps",
+				"name"=>"Storymaps",
+				"type"=>"jpg",
+				"desc"=>"Story creation tool.",
+			),
+			array(
+				"path"=>"project-animore",
+				"name"=>"Project Animore",
+				"type"=>"jpg",
+				"desc" => "UI and Character Design for game concept.",
+			),
+		);
+		$hiremepage = "http://rayuen.com/$short_name";
+		$job_details = markdown_exist("jobs/$short_name.md"); $copy = markdown_exist("jobs/$short_name-letter.md");
+	break;
+
+	//#EVENTBRITE-SENIOR-DESIGNER--BRAND-COMMUNICATIONS
+	case "eventbrite-senior-designer-brand-communications":
+		$short_name = "eventbrite-senior-designer-brand-communications";
+		$originaljobposting="https://jobs.lever.co/eventbrite/6f6682cb-c452-4dd9-ad4e-b3ef9130dcdf";
+		$company="Eventbrite";
+		$jobTitle="Senior Designer - Brand Communications";
+		$date="February 25, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = markdown_exist("jobs/$short_name-letter.md");
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"dp-launch",
+				"name"=>"Pokémon: Diamond & Pearl Launch",
+				"type"=>"jpg",
+				"desc"=>"Branding, Events Signage and Collateral.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+		);
 	break;
 
 
+	//WEEBLY-BRAND-DESIGNER
+	case "weebly-brand-designer":
+		$short_name = "weebly-brand-designer";
+		$originaljobposting="https://careers.weebly.com/job.html?gh_jid=78937&gh_src=73a14v1#78937";
+		$company="Weebly";
+		$jobTitle="Brand Designer";
+		$date="February 25, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "I just wanted to pass along my info for this position. I've been to a Dribbble meetup at your office and the Weebly designers I spoke to seem really upbeat and interesting. I'm linking to three projects below.";
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"dp-launch",
+				"name"=>"Pokémon: Diamond & Pearl Launch",
+				"type"=>"jpg",
+				"desc"=>"Branding, Events Signage and Collateral.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+		);
+	break;
+
+	//MINTED-VISUAL-INTERACTIVE-DESIGNER
+	case "12510":
+		$short_name = "minted-visual-interactive-designer";
+		$originaljobposting="http://jobs.jobvite.com/careers/minted/job/oFkL4fwy";
+		$company="Minted";
+		$jobTitle="Visual/Interactive Designer: Onsite/Holiday";
+		$date="February 25, 2017";
+		$hiremepage = "http://rayuen.com/hire-me?id=12510";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "
+			Saw your posting and wanted to pass along my info. With my unique skillsets in design, illustration and web development, I believe that I would be a great fit for this position.
+			$p_break
+			I've linked to three projects which I think will communicate my experience.
+		";
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"type"=>"jpg",
+				"desc"=>"UI/UX and creation of 3,831 icons.",
+			),
+			array(
+				"path"=>"project-animore",
+				"name"=>"Project Animore",
+				"type"=>"jpg",
+				"desc"=>"UI and Character Design for game concept.",
+			),
+		);
+	break;
+
+
+	//OPENDOOR-BRAND-DESIGNER
+	case "opendoor-brand-designer":
+		$short_name = "opendoor-brand-designer";
+		$originaljobposting="http://jobs.jobvite.com/careers/minted/job/oFkL4fwy";
+		$company="Opendoor";
+		$jobTitle="Brand Designer";
+		$date="February 25, 2017";
+		$hiremepage = "http://rayuen.com/hire-me?id=$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "
+			Saw your posting and wanted to pass along my info. I'm looking for a fun place where I can hone my creative skills in design and web development. Your team sounds great and a perfect place for me to grow.
+			$p_break
+			I've linked to three projects which I think should communicate my experience.
+		";
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"type"=>"jpg",
+				"desc"=>"UI/UX and creation of 3,831 icons.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"type"=>"jpg",
+				"desc"=>"Layout and Pre-press of a series of travel guides.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"NextLesson Covers",
+				"type"=>"jpg",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+		);
+	break;
+
+	//EXPLORATORIUM-DIRECTOR-OF-DESIGN
+	case "exploratorium-director-of-design":
+		$short_name = "exploratorium-director-of-design";
+		$originaljobposting="https://careers.weebly.com/job.html?gh_jid=78937&gh_src=73a14v1#78937";
+		$company="Exploratorium";
+		$jobTitle="Director of Design";
+		$date="February 27, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "
+			I was excited to see this job reposted!<span class='tooltip' title='Reposted? I thought I saw this job over Christmas'>*</span> I love the Exploratorium and as an eager learner and child-at-heart, I'd love to find out more about this opportunity.
+			$p_break
+			I am a designer with over 14+ years of creative experience from print to web. Most recently, I was Head of Design at <a href='work?project=nextlesson&id=$short_name'>NextLesson</a>, an edtech startup, where I lead a team of designers and illustrators with assignment and art direction. I developed and maintained the visual style through training and asset libraries which facilitated faster turnaround on projects.
+			$p_break
+			I've linked to three projects below for you to look over.
+		";
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Chronicles of Old New York",
+				"type"=>"jpg",
+				"desc"=>"Design and layout of many travel books for Museyon Guides.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"type"=>"jpg",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+		);
+	break;
+
+	//WRKSHP-UI-UX-DESIGNER
+	case "47398457894":
+		$short_name = "wrkshp-ui-ux-designer";
+		$originaljobposting="https://boards.greenhouse.io/3876393/jobs/575423";
+		$company="Wrkshp";
+		$jobTitle="UI/UX Designer";
+		$date="February 27, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "
+			I found your open UX/UI role through Indeed and wanted to apply because I believe my many years of design, production, and illustration experience would translate well in this role! Being a gamer of many years, I can bring that playfulness, sense of humor, and imagination that gamers are known for. For the past couple of years I’ve been doing branding, art direction, illustration, and UI/UX at NextLesson, an edtech company<a href='I think my ideal job is in education or gaming.'>*</a>.
+		";
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Chronicles of Old New York",
+				"type"=>"jpg",
+				"desc"=>"Design and layout of many travel books for Museyon Guides.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"type"=>"jpg",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+		);
+	break;
+
+
+	//ASANA-MARKETING-DESIGNER
+	case "asana-marketing-designer":
+		$short_name = "asana-marketing-designer";
+		$originaljobposting="https://asana.com/jobs/product-designer";
+		$company="Asana";
+		$jobTitle="Marketing Designer";
+		$date="February 27, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "I found this role through your website and wanted to apply because you guys seem pretty awesome! For the past two years I’ve been at an edtech startup <a href='work?project=nextlesson&id=$short_name'>NextLesson</a> doing branding, art production, illustration, and UI/UX.";
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"type"=>"jpg",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"the3",
+				"name"=>"The 3",
+				"type"=>"jpg",
+				"desc"=>"Game design and UI for mobile trivia game.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+		);
+	break;
+
+	//AFAR-MEDIA
+	case "afar-media":
+		$short_name = "afar-media";
+		$originaljobposting="https://asana.com/jobs/product-designer";
+		$company="AFAR Media";
+		$jobTitle="UX/Visual Designer";
+		$date="February 27, 2017";
+		$hiremepage = "http://rayuen.com/hire-me?id=$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "
+			I found your open UX/UI role through Craigslist and wanted to apply because it sounds like it could be a great place for me to grow. For the past two years I’ve been at an edtech startup <a href='work?project=nextlesson&id=$short_name'>NextLesson</a> doing branding, art production, illustration, and UI/UX. Managing art took most of my time and I'd love a role where I can focus more on UX.
+		";
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"type"=>"jpg",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"the3",
+				"name"=>"The 3",
+				"type"=>"jpg",
+				"desc"=>"Game design and UI for mobile trivia game.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+		);
+	break;
+
+	//MEDIUM-SENIOR-VISUAL-DESIGNER
+	case "medium-senior-visual-designer":
+		$short_name = "medium-senior-visual-designer";
+		$originaljobposting="https://medium.com/jobs-at-medium/senior-visual-designer-cc881858650d#.j24irwnu8";
+		$company="Medium";
+		$jobTitle="Senior Visual Designer";
+		$date="February 28, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "I found this role through your website and wanted to apply because I think y'all are pretty awesome!<a href='tooltop' title='I instantly recognized your attention to detail on the site—hanging quotes, beautiful typography, following legibility rules used in print.'>*</a> For the past two years I’ve been at an edtech startup <a href='work?project=nextlesson&id=$short_name'>NextLesson</a> doing branding, art production, illustration, and UI/UX. I worked with a great team and produced some of my best work there and I want to continue that trend—growing, learning, experimenting...and having fun doing it!
+		";
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Covers",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides",
+			),
+		);
+	break;
+
+	//AFAR-MEDIA
+	case "afar-media":
+		$short_name = "afar-media";
+		$originaljobposting="https://asana.com/jobs/product-designer";
+		$company="AFAR Media";
+		$jobTitle="UX/Visual Designer";
+		$date="February 27, 2017";
+		$hiremepage = "http://rayuen.com/hire-me?id=$short_name";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "
+			I found your open UX/UI role through Craigslist and wanted to apply because it sounds like it could be a great place for me to grow. For the past two years I’ve been at an edtech startup <a href='work?project=nextlesson&id=$short_name'>NextLesson</a> doing branding, art production, illustration, and UI/UX. Managing art took most of my time and I'd love a role where I can focus more on UX.
+		";
+
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"type"=>"jpg",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"the3",
+				"name"=>"The 3",
+				"type"=>"jpg",
+				"desc"=>"Game design and UI for mobile trivia game.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+		);
+	break;
+
 }
 
+// ========================
+// FUNCTIONS
+
+function get_project_thumbnail_details( $projects ){
+	// $projects = projects info to return
+	$array = array();
+
+	// grabs the info from $works array
+	include_once "inc/work-info.php";
+
+	foreach ($projects as $project) {
+		$key = array_search($work, $project);
+		$array[] = $work[$key];
+	}
+
+	return $array;
+}

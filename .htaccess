@@ -14,6 +14,7 @@ RewriteRule ^illustration$ work?f=illustration
 RewriteRule ^ui-ux$ work?f=ui-ux
 RewriteRule ^web-dev$ work?f=web-dev
 RewriteRule ^print-design$ work?f=print-design
+RewriteRule ^branding$ work?f=branding
 RewriteRule ^places-i-worked$ work?f=places-i-worked
 
 RewriteRule ^pokemon$ work?project=pokemon
@@ -86,8 +87,12 @@ RewriteRule ^google-doodle$ hire-me?id=google-doodle
 RewriteRule ^duckduckmoose$ hire-me?id=duckduckmoose
 RewriteRule ^ixl-illustration-coordinator$ hire-me?id=ixl-illustration-coordinator
 RewriteRule ^facebook-illustrator-designer-cultural-moments$ hire-me?id=facebook-illustrator-designer-cultural-moments
-RewriteRule ^facebook-illustrator-designer-messenger$ hire-me?id=facebook-illustrator-designer-messenger
-RewriteRule ^twitch-senior-ui-ux-designer-ads-and-promotions-platform$ hire-me?id=twitch-senior-ui-ux-designer-ads-and-promotions-platform
 RewriteRule ^humble-bundle-senior-designer$ hire-me?id=humble-bundle-senior-designer
+RewriteRule ^facebook-illustrator-designer-messenger$ hire-me?id=facebook-illustrator-designer-messenger
+RewriteRule ^eventbrite-senior-designer-brand-communications$ hire-me?id=eventbrite-senior-designer-brand-communications
+RewriteRule ^weebly-brand-designer$ hire-me?id=weebly-brand-designer
+RewriteRule ^exploratorium-director-of-design$ hire-me?id=exploratorium-director-of-design
+RewriteRule ^asana-product-designer$ hire-me?id=asana-product-designer
+RewriteRule ^medium-senior-visual-designer$ hire-me?id=medium-senior-visual-designer
 
 RewriteRule ^holiday2014$ http://www.rayuen.com/p/holiday-card/holiday
