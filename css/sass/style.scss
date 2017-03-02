@@ -399,14 +399,24 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		// &:hover { opacity: 0.65; }
 	}
 }
-.project-sidebar {
-	// background-color: hsla(0, 0%, 90%, 1);
-	background-color: #f0f4f6;
-	padding: 1.5em 1.5em 3em 1.5em;
-	img.logo {
-		width: 100%;
-		padding: 10px;
-		// padding-top: 10px;
+.project-details {
+	h1.title { margin-top: 40px; }
+	.intro {
+		p {
+			// font-size: 120%;
+			line-height: 1.5em;
+			max-width: 95%;
+		}
+	}
+	.project-sidebar {
+		// border-left: solid 1px black;
+		// background-color: #f0f4f6;
+		// padding: 1.5em 1.5em 3em 1.5em;
+		img.logo {
+			width: 100%;
+			padding: 10px;
+			// padding-top: 10px;
+		}
 	}
 }
 ul.tags {
@@ -532,28 +542,12 @@ ul.tags {
 	h5 {
 		margin-top: 1em;
 	}
-	.sidebar {
-		.logo {
-			width: 100%;
-			padding: 2em;
-			// padding-top: em;
-		}
-		img.portrait {
-			width: 100%;
-		}
-		h6 {
-			margin-top: 1em;
-			font-weight:900;
-			font-size: 120%;
-		}
-	}
 	.landing-page {
 		font-size: 22px;
 		line-height: 1.5em;
 		p {
-			@media #{$mobile}
-			 {
-				font-size: 20x;
+			@media #{$mobile} {
+				font-size: 18px !important;
 				line-height: 1.35em;
 			}
 			a:link, a:visited {
@@ -575,34 +569,20 @@ ul.tags {
 			font-weight: 900;
 			font-size: 32px;
 			line-height: 1.5em;
+			@media #{$mobile}
+			 {
+				font-size: 25px;
+				line-height: 1.35em;
+			}
 			.job-title {}
 		}
 		h3 {
 			font-size: 25px;
+			margin-top: 2em;
 		}
 		img {
 		  display: block;
 		  margin-bottom: 8px;
-		}
-		.button {
-			margin-top: 3em;
-			background-color: #24B273;
-			border-radius: 10px;
-			border: 0;
-			border-bottom: 8px solid darken(#24B273,10%);
-			font-size: 20px;
-			padding: 10px 25px;
-			margin-right: 10px;
-			display: inline-block;
-			position: relative;
-			a:link, a:visited {
-				color: white;
-			}
-			&:hover {
-				top: 2px;
-				border-width: 6px;
-				background-color: lighten(#24B273,5%);
-			}
 		}
 		.date {
 			margin-top: 70px;
@@ -617,13 +597,20 @@ ul.tags {
 		.sample-projects {
 			margin-top: 2em;
 		}
+		.checklist {
+			li {margin-bottom: 0;}
+			@media only screen and (min-width: 800px) {
+				@include column-count(2);
+				@include column-gap(1em);
+			}
+		}
 		ul.skills {
-			// text-align: center;
 			li {
+				font-size: 0.75em;
 				display: inline-block;
 				background-color: #E1E8ED;
 				margin-right: 15px;
-				padding: 2px 15px;
+				padding: 1px 13px;
 				border-radius: 14px;
 				margin-bottom: 0.5em;
 				@include transition( all 0.125s);
@@ -631,17 +618,34 @@ ul.tags {
 					@include transition( all 0.125s);
 					background-color: #CCD6DD;
 				}
-
 				a:link, a:visited {
 					color: black;
 				}
+				@media #{$mobile} {
+					font-size: 14px;
+					padding: 0px 10px;
+					margin-right: 5px;
+				}
 			}
 		}
-		.checklist {
-			li {margin-bottom: 0;}
-			@media only screen and (min-width: 800px) {
-				@include column-count(2);
-				@include column-gap(1em);
+		.button {
+			margin-top: 3em;
+			background-color: #24B273;
+			border-radius: 10px;
+			border: 0;
+			border-bottom: 4px solid darken(#24B273,10%);
+			font-size: 18px;
+			padding: 5px 15px;
+			margin-right: 10px;
+			display: inline-block;
+			position: relative;
+			a:link, a:visited {
+				color: white;
+			}
+			&:hover {
+				top: 1px;
+				border-width: 2px;
+				background-color: lighten(#24B273,5%);
 			}
 		}
 		.original-job-button-minimal {
@@ -652,10 +656,30 @@ ul.tags {
 			// @include underline();
 		}
 	}
+	.sidebar {
+		.logo {
+			width: 100%;
+			padding: 2em;
+			// padding-top: em;
+		}
+		img.portrait {
+			width: 100%;
+		}
+		h6 {
+			margin-top: 1em;
+			font-weight:900;
+			font-size: 120%;
+		}
+	}
 }
 .quick-bio {
 	width: 100%;
-	padding: 3em;
+	padding-top: 3em;
+	img.portrait {
+		@media #{$mobile} {
+			max-width: 50% !important;
+		}
+	}
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f8fa+0,ffffff+46 */
 	background: #f5f8fa; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f5f8fa 0%, #ffffff 46%); /* FF3.6-15 */

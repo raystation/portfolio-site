@@ -7,6 +7,7 @@ $works = array(
 	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("web-dev","illustration","ui-ux","branding") ),
 	// array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing" ),
 	array( "name" => "NextLesson Glossary Images", "path" => "nextlesson-glossary", "tags"=>array("illustration") ),
+	array( "name" => "NextLesson Characters", "path" => "nextlesson-characters", "tags"=>array("illustration") ),
 	// array( "name" => "NextLesson Interactive","path" => "nextlesson-interactive" ),
 	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars" ),
 	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library" ),
@@ -1945,6 +1946,47 @@ if ( $title == "NextLesson Search and Browse Page" ) {
 		Your browser does not support the video tag.
 	</video>
 	";
+
+} //end NEXTLESSON SEARCH BROWSE
+
+
+
+
+//  #NEXTLESSON #SEARCH BROWSE
+// ===============================
+
+if ( $title == "NextLesson Characters" ) {
+
+	// $template = "ui";
+	$company = "NextLesson";
+	$path = "img/nextlesson-characters";
+	$movie = "$path/search-browse-bar-1.mp4";
+
+	$description = "Tumblr fashion axe locavore, readymade squid 8-bit artisan VHS irony Tonx vegan paleo. Readymade cardigan forage irony. 90's beard Wes Anderson mumblecore Tonx, High Life roof party retro Cosby sweater vinyl. Cardigan mumblecore chillwave +1 gluten-free direct trade. Keffiyeh cred Godard dreamcatcher, ennui beard forage slow-carb Neutra. Deep v Williamsburg whatever freegan, 8-bit squid butcher Truffaut banh mi brunch try-hard. Bushwick bitters messenger bag, cliche roof party irony Banksy deep v 3 wolf moon hashtag twee.";
+
+	$sidebar = "
+		Character Designs
+	";
+
+	$content = "
+		Lumbersexual humblebrag asymmetrical, post-ironic kickstarter four loko kale chips bicycle rights venmo. Bushwick narwhal pickled selvage lo-fi, chartreuse celiac direct trade cliche pabst. XOXO taxidermy fingerstache brunch authentic, street art you probably haven't heard of them salvia. Farm-to-table forage pug freegan, chicharrones synth microdosing pitchfork chillwave mumblecore art party. Fashion axe bespoke iPhone, neutra vice chartreuse four dollar toast shabby chic polaroid swag. Hashtag etsy kickstarter DIY scenester everyday carry, cold-pressed pickled fixie mlkshk. Tilde etsy artisan, microdosing schlitz 3 wolf moon put a bird on it yr pork belly VHS drinking vinegar disrupt tote bag franzen hella.
+	";
+
+	$tools = array(
+		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>60),
+		array("skill"=>"Photoshop", "percent"=>40),
+	);
+	$img_info = array(
+		array("file" => "01.jpg", "alt" => ""),
+	);
+
+	$other = "
+	<video width='320' height='240' controls>
+		<source src='$movie' type='video/mp4'>
+		Your browser does not support the video tag.
+	</video>
+	";
+	$additional_img_column_count = 1;
 
 } //end NEXTLESSON SEARCH BROWSE
 

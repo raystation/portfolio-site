@@ -27,7 +27,7 @@
 
 ?>
 
-<div class="sixteen columns">
+<div class="sixteen columns project-details">
 	<!-- basic -->
 	<?
 

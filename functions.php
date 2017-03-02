@@ -293,6 +293,21 @@ function print_skill_html(){
   echo '</div>';
 }
 
+function get_skill_html( $tools ){
+  $content = "";
+  include_once "inc/lists.php";
+  if ( isset($tools) ) {
+    foreach ( $tools as $tool) {
+      $content .= "<div class='outer'><div class='inner' style='width:$tool[percent]%'>$tool[skill]</div></div>";
+    }
+  }
+  else {
+    return FALSE;
+  }
+  $html = "<div class='chart'>$content</div>";
+  return $html;
+}
+
 function related_projects_check( $company ){
   $company_convert =string_lower($company);
   $company_convert = replace_string($company_convert,"-","_");

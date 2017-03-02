@@ -232,6 +232,10 @@
 		case 'inktober-2016':
 		$title = "#Inktober2016";
 		break;
+
+		case 'nextlesson-characters':
+		$title = "NextLesson Characters";
+		break;
 	}
 
 if ( !isset($title) ) { $title = "Work"; }

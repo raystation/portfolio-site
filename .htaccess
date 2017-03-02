@@ -78,6 +78,7 @@ RewriteRule ^nextlesson-avatars$ work?project=nextlesson-avatars
 RewriteRule ^nextlesson-pdf$ work?project=nextlesson-pdf
 RewriteRule ^nextlesson-marketing$ work?project=nextlesson-marketing
 RewriteRule ^nextlesson-sports$ work?project=nextlesson-sports
+RewriteRule ^nextlesson-characters$ work?project=nextlesson-characters
 
 RewriteRule ^kabam$ hire-me?id=9999
 RewriteRule ^bigfish$ hire-me?id=510
