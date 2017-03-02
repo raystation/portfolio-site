@@ -95,5 +95,6 @@ RewriteRule ^exploratorium-director-of-design$ hire-me?id=exploratorium-director
 RewriteRule ^asana-product-designer$ hire-me?id=asana-product-designer
 RewriteRule ^asana-marketing-designer$ hire-me?id=asana-marketing-designer
 RewriteRule ^medium-senior-visual-designer$ hire-me?id=medium-senior-visual-designer
+RewriteRule ^merrill-morris-partners$ hire-me?id=merrill-morris-partners
 
 RewriteRule ^holiday2014$ http://www.rayuen.com/p/holiday-card/holiday

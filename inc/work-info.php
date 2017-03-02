@@ -1039,7 +1039,7 @@ if ( $title == "Abriendo Puertas / Opening&nbsp;Doors" ) {
 		AP/OD needed an informational site where parents and educators could come to find out more about the organization, where trainings would be, and a place where educators could access teaching materials. After getting approval on the overall look of the site, we built the site based on the Skeleton framework. After a few rounds of going back and forth, we streamlined the content of the site with PHP. They now have a beautiful site that looks great on all&nbsp;devices.
 		';
 
-	$sidebar = "Responsive Website</p>
+	$sidebar = "Informational Responsive Website for a non-profit</p>
 		<p><a href='http://ap-od.org' target='_blank'>ap-od.org</a>
 	";
 	$tools=array(

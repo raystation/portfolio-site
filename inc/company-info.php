@@ -3613,6 +3613,45 @@ case 'ixl-illustration-coordinator':
 		);
 	break;
 
+
+	//MERRILL-MORRIS-PARTNERS
+	case "merrill-morris-partners":
+		$short_name = "merrill-morris-partners";
+		// $originaljobposting="https://medium.com/jobs-at-medium/senior-visual-designer-cc881858650d#.j24irwnu8";
+		$company="Merrill Morris Partners";
+		$date="March 1, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+
+		$intro_paragraph="So you need a website refresh?";
+		$job_details = "<a target='_blank' href='http://www.merrill-morris.com/'>http://www.merrill-morris.com/</a>";
+		$copy = "
+			Manuel told me a bit about what you need and I think this is certainly something I can help you with. I have over 15+ years of creative experience and have helped clients and friends develop their websites. At a quick glance, I can help make your site viewable on smart phones and try to improve the quality of your images<span class='tooltip' title=\"your projects are big in scope, the boxed in images don't do it justice\">*</span>.
+			$p_break
+			I'm linking to three projects which should give you an idea on my experience. And also, click around this portfolio site and see make a note on how I organize content and use navigation. Little things like that will go a long way in make your site more \"useable\".
+		";
+		$closing = "
+			I'd love the opportunity to share more of my work with you and answer any questions you have. Please feel free to contact me and to take a look at the rest of <a href='work?f=web-dev&id=merrill-morris-partners'>my work</a>.
+		";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit",
+			),
+			array(
+				"path"=>"sarah-walko",
+				"name"=>"Sarah Walko",
+				"desc" => "Client updatable Portfolio site.",
+			),
+			array(
+				"path"=>"adelle-marcero",
+				"name"=>"Adelle Marcero",
+				"desc"=>"Personal Portfolio site",
+			),
+		);
+	break;
+
 }
 
 // ========================
