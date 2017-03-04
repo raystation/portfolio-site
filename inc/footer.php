@@ -114,6 +114,14 @@ if ( !isset($id)) {
 			  fade: true,
 			  pauseOnHover: false
 			});
+			$('.content-slideshow').slick({
+			  accessibility: true,
+			  lazyLoad: 'progressive',
+			  autoplay: true,
+			  autoplaySpeed: 4000,
+			  dots: false,
+			  pauseOnHover: false
+			});
 		});
 	</script>
 

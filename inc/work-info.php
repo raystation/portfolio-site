@@ -1697,6 +1697,7 @@ function get_nextlesson_projects(){
 		array( "name" => "NextLesson Marketing", "path" => "nextlesson-marketing" ),
 		array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid" ),
 		array( "name" => "NextLesson Glossary Terms", "path" => "nextlesson-glossary" ),
+		array( "name" => "NextLesson Characters", "path" => "nextlesson-characters" ),
 		// array( "name" => "Browsing Experience","path" => "nextlesson-search-browse" ),
 		// array( "name" => "Graphics Library", "path" => "nextlesson-library" ),
 		// array( "name" => "Profile Avatars", "path" => "nextlesson-avatars" ),
@@ -1765,18 +1766,15 @@ if ( $title == "NextLesson Lesson Covers" ) {
 	);
 
 	$img_info = array(
-		array("file" => "01.jpg", "alt" => "Cover View"),
+		// array("file" => "01.jpg", "alt" => "Cover View"),
 		array("file" => "Living-&-Playing-by-the-Golden-Rule.jpg", "alt" => "Living & Playing by the Golden Rule"),
 		array("file" => "crowd-control.jpg", "alt" => "Crowd Control"),
 		array("file" => "golden-gaming.jpg", "alt" => "Golden Gaming"),
 		array("file" => "bundles-of-fun.jpg", "alt" => "Bundles of Fun"),
 	);
+	// $auto_slideshow = "additional_imgs";
 
 } //end NEXTLESSON COVER
-
-
-
-	//TODO: add in modal for the covers
 
 
 //  #NEXTLESSON #INTERESTID
@@ -1962,30 +1960,64 @@ if ( $title == "NextLesson Characters" ) {
 	$path = "img/nextlesson-characters";
 	$movie = "$path/search-browse-bar-1.mp4";
 
-	$description = "Tumblr fashion axe locavore, readymade squid 8-bit artisan VHS irony Tonx vegan paleo. Readymade cardigan forage irony. 90's beard Wes Anderson mumblecore Tonx, High Life roof party retro Cosby sweater vinyl. Cardigan mumblecore chillwave +1 gluten-free direct trade. Keffiyeh cred Godard dreamcatcher, ennui beard forage slow-carb Neutra. Deep v Williamsburg whatever freegan, 8-bit squid butcher Truffaut banh mi brunch try-hard. Bushwick bitters messenger bag, cliche roof party irony Banksy deep v 3 wolf moon hashtag twee.";
+	$description = "At NextLesson, in order to unify our covers and illustrations, developed a system of posable characters that could be used in a variety of situations. I developed a set of rules that which specified proportions and color choices depending on grade. Using these rules and an in-house assets library, contractors were able to make covers that consistently conveyed our visual standards as well as speeding up turn-around time.
+	";
 
 	$sidebar = "
 		Character Designs
 	";
 
-	$content = "
-		Lumbersexual humblebrag asymmetrical, post-ironic kickstarter four loko kale chips bicycle rights venmo. Bushwick narwhal pickled selvage lo-fi, chartreuse celiac direct trade cliche pabst. XOXO taxidermy fingerstache brunch authentic, street art you probably haven't heard of them salvia. Farm-to-table forage pug freegan, chicharrones synth microdosing pitchfork chillwave mumblecore art party. Fashion axe bespoke iPhone, neutra vice chartreuse four dollar toast shabby chic polaroid swag. Hashtag etsy kickstarter DIY scenester everyday carry, cold-pressed pickled fixie mlkshk. Tilde etsy artisan, microdosing schlitz 3 wolf moon put a bird on it yr pork belly VHS drinking vinegar disrupt tote bag franzen hella.
-	";
+	include_once "functions.php";
+	$avatar_html = "";
+	$avatars = get_files("$path/avatars");
+	shuffle($avatars);
+	$class="";
+	$count = 1;
+	foreach ($avatars as $key => $avatar) {
+		if ( $count == 1 ) {
+			$class = "alpha";
+		} elseif ( $count == 4 ) {
+			$class = "omega";
+			$count = 0;
+		}
+		$avatar_html.="<div class='four columns add-bottom $class'><img src='$path/avatars/$avatar' alt='NextLesson Avatar $key'></div>";
+		$class = "";
+		$count++;
+	}
 
+	$content = "
+		<figure class='add-bottom'>
+			<img src='$path/templates/body-rules.png' alt=''>
+			<figcaption>Body Rules</figcaption>
+		</figure>
+		<figure class='add-bottom'>
+			<img src='$path/templates/expressions.png' alt=''>
+			<figcaption>Facial Expressions</figcaption>
+		</figure>
+		<figure class='add-bottom'>
+			<img src='$path/templates/portrait-rules.png' alt=''>
+			<figcaption>Different Head Proportions</figcaption>
+		</figure>
+		<figure>
+			$avatar_html
+			<figcaption>The selection of avatars</figcaption>
+		</figure>
+	";
 	$tools = array(
 		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>60),
 		array("skill"=>"Photoshop", "percent"=>40),
 	);
 	$img_info = array(
-		array("file" => "01.jpg", "alt" => ""),
+		array("file" =>"01.jpg", "alt" => ""),
+		array( "file"=>"slider/Classroom.jpg", "alt"=>""),
+		array( "file"=>"slider/Grandma.png", "alt"=>""),
+		array( "file"=>"slider/Kid_reading_the_temperature.png", "alt"=>""),
+		array( "file"=>"slider/Laptop_kid.png", "alt"=>""),
+		array( "file"=>"slider/Sports.png", "alt"=>""),
+		array( "file"=>"slider/Girls_in_profile.png", "alt"=>""),
 	);
 
-	$other = "
-	<video width='320' height='240' controls>
-		<source src='$movie' type='video/mp4'>
-		Your browser does not support the video tag.
-	</video>
-	";
+	// $other = "";
 	$additional_img_column_count = 1;
 
 } //end NEXTLESSON SEARCH BROWSE

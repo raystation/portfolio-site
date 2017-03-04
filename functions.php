@@ -57,19 +57,6 @@ function get_title($string){
   $string = replace_string( $string, "___", ", ");
   $string = replace_string( $string, "__", " & ");
   $string = replace_string( $string, "_", " ");
-  // $string = replace_string( $string, "-", " ");
-
-  // $pieces = explode(" ", $string);
-  // foreach ($pieces as $key => $piece) {
-  //   if ( strlen($piece) < 4 )
-  //   {
-  //     $content .= strtolower($piece) . " ";
-  //   }
-  //   else
-  //   {
-  //     $content .= ucwords($piece) . " ";
-  //   }
-  // }
   return $string;
 }
 
@@ -648,6 +635,24 @@ function skeleton_html($columns=1,$path,$folder="additional_img"){
   }
   return $additional_img_html;
 }
+function get_slider_html($path,$folder="additional_img"){
+  // prints img HTML with a path, columns and folders
+  $content="";
+
+  $additional_img = get_files("$path/$folder");
+  foreach ($additional_img as $key => $img) {
+    $img_title = get_title($img);
+    $content .="
+    <div class='additional-image-slideshow'><img class='scale-with-grid' src='$path/additional_img/$img' alt='$img_title'></div>
+    ";
+  }
+  $html = "
+    <div class='slick'>
+     $content
+    </div>
+  ";
+  return $html;
+}
 function get_email_body($text){
   $email_text = replace_string( $text, " ", "%20");
   $email_text = replace_string( $email_text, "'", "%27");
@@ -658,8 +663,8 @@ function check_for_img_format($path,$filename='thumb'){
   foreach ($img_formats as $img_format) {
     // goes through the array of img formats, it it exists, it returns $thumb, else it will be the default img
     if ( file_exists("$path/$filename.$img_format") ) {
-      $thumb = "$path/$filename.$img_format";
-      return $thumb;
+      $img = "$path/$filename.$img_format";
+      return $img;
     }
   }
   return FALSE;

@@ -66,10 +66,13 @@ if ( isset($company) ) {
 	}
 }
 
-// ADDITIONAL IMAGES
 if ( !is_null($path) ) {
-	// checks for ADDITIONAL_IMG folder for support images
-	if ( file_exists("$path/additional_img") ) {
+	// ADDITIONAL IMAGES
+	// checks for ADDITIONAL_IMG folder
+
+	if ( isset($auto_slideshow) ) {
+		$additional_img_html = get_slider_html( $path );
+	} elseif ( file_exists("$path/additional_img") ) {
 		if ( !isset($additional_img_column_count) ) {
 			$additional_img_column_count = 2;
 		}
@@ -77,20 +80,17 @@ if ( !is_null($path) ) {
 	} else {
 		$additional_img_html = "";
 	}
-	// fills the sidebar with a logo if it exists
-	if ( file_exists("$path/logo.jpg") ) {
-		$sidebar_logo = "<img src='$path/logo.jpg' alt='Logo' class='scale-with-grid'>";
-	}
-	elseif ( file_exists("$path/logo.png") ) {
-		$sidebar_logo = "<img src='$path/logo.png' alt='Logo' class='scale-with-grid'>";
-	}
-	else {
-		$sidebar_logo = "";
+
+	// SIDEBAR LOGO // fills the sidebar with a logo if it exists
+	$sidebar_logo = "";
+	$sidebar_logo_path = check_for_img_format($path,"logo");
+	if ($sidebar_logo_path) {
+		$sidebar_logo = "<img src='$sidebar_logo_path' alt='Logo' class='scale-with-grid'>";
 	}
 }
 else
 {
-	$path="";
+	$path = "";
 	$additional_img_html = "fill out information on work-info";
 }
 
@@ -117,12 +117,14 @@ $page = "
 		<p>$description</p>
 	</div>
 	<div class='project-sidebar four columns omega caption'>
+		$sidebar_logo
 		<p>$sidebar</p>
 		$tools_html
 	</div>
 	$content
 	$additional_img_html
 	$tags_html
+	$related_project_html
 </div> <!-- end sixteen -->
 ";
 // TODO: add in related projects in the sidebar
