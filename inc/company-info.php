@@ -3588,7 +3588,6 @@ case 'ixl-illustration-coordinator':
 		$jobTitle="Senior Visual Designer";
 		$date="February 28, 2017";
 		$hiremepage = "http://rayuen.com/$short_name";
-
 		$job_details = markdown_exist("jobs/$short_name.md");
 		$copy = "I found this role through your website and wanted to apply because I think y'all are pretty awesome!<span class='tooltip' title='I instantly recognized your attention to detail on the site—hanging quotes, beautiful typography, following legibility rules used in print.'>*</span> For the past two years I’ve been at an edtech startup <a href='work?project=nextlesson&id=$short_name'>NextLesson</a> doing branding, art production, illustration, and UI/UX. I worked with a great team, produced some of my best work, and I want to continue that trend—growing, learning, experimenting...and having fun doing it!
 		";
@@ -3612,7 +3611,6 @@ case 'ixl-illustration-coordinator':
 			),
 		);
 	break;
-
 
 	//MERRILL-MORRIS-PARTNERS
 	case "merrill-morris-partners":
@@ -3651,6 +3649,41 @@ case 'ixl-illustration-coordinator':
 			),
 		);
 	break;
+
+	//GITHUB-GRAPHIC-DESIGNER
+	case "github-graphic-designer":
+		$short_name = "github-graphic-designer";
+		$originaljobposting="https://boards.greenhouse.io/github/jobs/621188#.WL326xIrLBK";
+		$company="Github";
+		$jobTitle="Graphic Designer";
+		$date="March 9, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+		$slider_img = "jobs/$short_name.jpg";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "I found this role through your website and wanted to apply because it sounds like a fun job. For the past two years I’ve been at edtech startup <a href='work?project=nextlesson&id=$short_name'>NextLesson</a> doing branding, art production, illustration, and product UI/UX. I worked with a great team, produced some of my best work, and I want to continue that trend—learning new technologies, experimenting with art styles, and keeping up to date on trends.
+		";
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Covers",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+		);
+	break;
+
 
 }
 

@@ -1,6 +1,9 @@
 <?
 $meta_description="";
 $footer_add="";
+$work_class = "";
+$about_class = "";
+
 require_once 'inc/work-info.php';
 require_once 'functions.php';
 
@@ -81,10 +84,18 @@ if ( isset($id) ) {
 			<nav class="sixteen columns">
 				<div class="title"><a href="./">Ray Yuen</a></div>
 				<ul>
-					<li><a class="<? if ( $section == "work") { echo "active"; } ;?>" href="work<? echo $id_html;?>">work</a></li>
-					<li><a class="<? if ( $section == "about") { echo "active"; } ;?>" href="about<? echo $id_html;?>">about</a></li>
-
-					<?php //<li><a href="projects.php">projects</a></li> ?>
+					<?
+						if (isset($section)) {
+							if ($section=="work" ) {
+								$work_class="active";
+							}
+							if ($section=="about") {
+								$about_class="active";
+							}
+						}
+					?>
+					<li><a class="<? echo $work_class;?>" href="work<? echo $id_html;?>">work</a></li>
+					<li><a class="<? echo $about_class;?>" href="about<? echo $id_html;?>">about</a></li>
 				</ul>
 
 			</nav>

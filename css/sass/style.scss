@@ -82,7 +82,7 @@ $mobile-portrait: "only screen and (max-width: 479px)";
 
 body, html { width: 100%; }
 body {
-	padding-top: 20px;
+	// padding-top: 20px;
 	font-family: $body-font, Helvetica, sans-serif;
 	font-size: $font-size;
 	line-height: $line-height;
@@ -224,7 +224,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	left: 0;
 	right: 0;
 	z-index: 9999;
-	background-color: $bkg-color;
+	background-color: darken($bkg-color,5%);
 	padding: 25px 0 10px 0;
 	font-size: 14pt;
 	@include transition( all 0.75s ease-in-out );
