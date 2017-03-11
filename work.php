@@ -330,8 +330,8 @@ if ( !isset($template) ) {
 		</div>
 	";
 	// echo "// <div class='sixteen columns'> // 	<h2>Selected Works</h2> // </div>";
-	// skeleton_print_thumbnail_4($works);
-	full_thumbnail($works);
+	skeleton_print_thumbnail_4($works);
+	// full_thumbnail($works);
 }
 elseif ($template=="company") {
 	  echo "
