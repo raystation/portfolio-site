@@ -522,6 +522,45 @@ ul.tags {
 	}
 }
 
+// FLEX
+.full-thumbnails {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	// max-width: 1440px;
+	margin: 0 auto;
+	padding: 0;
+	.fl-thumb {
+		width: 100%;
+		position: relative;
+		border: 0;
+		line-height: 0;
+		background-color: #8899A6;
+		@media (min-width: 420px) {width: 50%;}
+		@media (min-width: 1400px) {width: calc(100%/3);}
+		.title,
+		.tags {
+			left: 10px;
+			position: absolute;
+			color: white;
+			line-height: 1em;
+		}
+		.title {
+			top: 10px;
+			font-size: 30px;
+		}
+		.tags {
+			background-color: hsla(0, 0%, 0%, 0.5);
+			bottom: 10px;
+		}
+		img {
+			background-color: #fff;
+			width: 100%;
+			padding-bottom: -20px;
+		}
+	}
+}
+
 // HIRE ME
 // ======================================
 

@@ -323,15 +323,13 @@ if ( isset($project) ) {
 //produces thumbnails for homepage and below the projects
 
 if ( !isset($template) ) {
-	// DEFAULT VIEW
 	echo "
 		<div class='sixteen columns filters'>
 			<ul>$filter_list_html</ul>
 		</div>
 	";
 	// echo "// <div class='sixteen columns'> // 	<h2>Selected Works</h2> // </div>";
-	// skeleton_print_thumbnail_4($works);
-	full_thumbnail($works);
+	skeleton_print_thumbnail_4($works);
 }
 elseif ($template=="company") {
 	  echo "
@@ -340,7 +338,6 @@ elseif ($template=="company") {
 	  </div>";
 }
 else {
-	// RECENT PROJECTS
 	skeleton_print_thumbnail_4($works,4);
 }
 
@@ -394,38 +391,4 @@ function get_filter_list_html( $selected_filter ){
 		}
 	}
 	return $html;
-}
-
-function full_thumbnail($works){
-	$content="";
-	foreach ($works as $key => $work) {
-		$path = "img/".$work["path"];
-		$tags_html="";
-		foreach ( $work['tags'] as $key => $tag) {
-			$tags_html .= "$tag ";
-		}
-		$thumb = check_for_img_format( $path , "thumb-hd");
-		if ( $thumb==FALSE ) {
-			$thumb = check_for_img_format( $path );
-			if ( $thumb==FALSE ) {
-				$thumb = "http://placehold.it/400x273&text=$work[name] thumbnail missing";
-			}
-		}
-
-		$content .= "
-			<div class='fl-thumb'>
-				<!--<div class='title'>$work[name]</div>-->
-				<img src='$thumb'>
-				<!--<div class='tags'>$tags_html</div>-->
-			</div>
-		";
-		$tags_html = "";
-	}
-	echo "
-		</div>
-		<div class='full-thumbnails'>
-			$content
-		</div>
-		<div class='container'>
-	";
 }
