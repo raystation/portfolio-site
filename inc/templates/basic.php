@@ -9,7 +9,11 @@ $img_slider_html="";
 if (isset($img_info)) {
 	$img_slider_html .= "<div class='slick'>";
 		foreach($img_info as $img) {
-		    $img_slider_html .= "<div><img class='scale-with-grid tooltip add-bottom' src='$path/$img[file]' alt='$img[alt]'></div>";
+			$outline_class="";
+			if (isset($img['class'])) {
+				$outline_class="thumb-outline";
+			}
+		    $img_slider_html .= "<div><img class='scale-with-grid tooltip add-bottom $outline_class' src='$path/$img[file]' alt='$img[alt]'></div>";
 		}
 	$img_slider_html .= "</div>";
 }

@@ -1535,7 +1535,7 @@ if ( $title == "Wired" ) {
 
 	$img_info = array(
 		// add photo of magazine cover
-		array("file" => "car.jpg", "alt" => ""),
+		array("file" => "wired-car.jpg", "alt" => ""),
 		array("file" => "three.jpg", "alt" => ""),
 	);
 
@@ -1871,6 +1871,7 @@ if ( $title == "NextLesson Glossary Terms" ) {
 
 	$img_info = array(
 		array("file" => "01.jpg", "alt" => "Glossary Images"),
+		array("file" => "02.png", "alt"=>"Glossary Images", "class"=>"outline"),
 	);
 
 	$other = "";
