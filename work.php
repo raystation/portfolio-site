@@ -399,20 +399,24 @@ function get_filter_list_html( $selected_filter ){
 function full_thumbnail($works){
 	$content="";
 	foreach ($works as $key => $work) {
-		// name
-		// path
-		// tags
 		$path = "img/".$work["path"];
 		$tags_html="";
 		foreach ( $work['tags'] as $key => $tag) {
 			$tags_html .= "$tag ";
 		}
-		$thumb = check_for_img_format( $path );
+		$thumb = check_for_img_format( $path , "thumb-hd");
+		if ( $thumb==FALSE ) {
+			$thumb = check_for_img_format( $path );
+			if ( $thumb==FALSE ) {
+				$thumb = "http://placehold.it/400x273&text=$work[name] thumbnail missing";
+			}
+		}
+
 		$content .= "
 			<div class='fl-thumb'>
-				<div class='title'>$work[name]</div>
+				<!--<div class='title'>$work[name]</div>-->
 				<img src='$thumb'>
-				<div class='tags'>$tags_html</div>
+				<!--<div class='tags'>$tags_html</div>-->
 			</div>
 		";
 		$tags_html = "";
