@@ -2,7 +2,7 @@
 //last updated January 10, 2017
 $p_break = "</p><p>";
 $quick_intro = "
-  I'm a designer, illustrator, and programmer living and working in San Francisco. I've worked in games, publishing, marketing, and most recently in edtech at NextLesson building products.
+  I'm a visual designer and programmer living and working in San Francisco. I've worked in games, publishing, marketing, and most recently in edtech at NextLesson building products.
 ";
 
 $bio_array = array(
@@ -23,7 +23,7 @@ $bio_array['about_me'] = "
 $work_history_array = array(
 
   "nextlesson" => array(
-    "job_title" => "Head of Design",
+    "job_title" => "Head of Design / Advisor",
     "company" => "NextLesson",
     "url" => "nextlesson",
     "description" => "Oversaw artwork needs, managed UX and designed UI. Designed website, interactive learning platform, offline printed materials and a student interest tool. Oversaw the creation of 2,034 covers for lessons and projects. Developed art asset repo to assist art needs. Supported Marketing initiatives with collateral, conference artwork, blog design and newsletter design.",
@@ -112,7 +112,7 @@ $work_history_array = array(
     "job_title" => "In-house Graphic Designer",
     "company" => "The Pok&eacute;mon Company",
     "url" => "pokemon.com",
-    "description" => "Worked in a small inhouse team. Keeper of the artwork. Enforcer of the brand. Supported video-game releases, video-game strategy guides, movie/TV releases, marketing campaigns. Developed system to bring publishing strategy guides in-house. Assisted internal departments with their creative needs.",
+    "description" => "Worked in a small in-house team. Keeper of the artwork. Enforcer of the brand. Supported video-game releases, video-game strategy guides, movie/TV releases, marketing campaigns. Developed system to bring publishing strategy guides in-house. Assisted internal departments with their creative needs.",
     "location" => "New York City",
     "start" => "9/2005",
     "end" => "1/2010",
