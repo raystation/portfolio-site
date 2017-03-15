@@ -10,10 +10,15 @@ if (isset($img_info)) {
 	$img_slider_html .= "<div class='slick'>";
 		foreach($img_info as $img) {
 			$outline_class="";
+			$caption_text="";
+			// this is if we want thumbnails
 			if (isset($img['class'])) {
 				$outline_class="thumb-outline";
 			}
-		    $img_slider_html .= "<div><img class='scale-with-grid tooltip add-bottom $outline_class' src='$path/$img[file]' alt='$img[alt]'></div>";
+			if (isset($img['caption'])) {
+				$caption_text = $img['alt'];
+			}
+		    $img_slider_html .= "<div><img class='scale-with-grid tooltip add-bottom $outline_class' src='$path/$img[file]' alt='$img[alt]'>$caption_text</div>";
 		}
 	$img_slider_html .= "</div>";
 }
