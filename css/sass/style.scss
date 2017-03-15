@@ -150,6 +150,7 @@ a,a:visited {
 .nowrap, .nobreak 				{ white-space: nowrap; }
 .hide 					{ display: none; }
 .photo-outline {border: 1px solid #CCD6DD; padding: 1em; margin-bottom: 15px;}
+.thumb-outline { border: 2px solid #CCD6DD; }
 
 .list-spacing-fix li	{
 	margin-bottom: 0.35em !important;
@@ -531,33 +532,44 @@ ul.tags {
 	margin: 0 auto;
 	padding: 0;
 	.fl-thumb {
-		width: 100%;
+		width: 50%;
 		position: relative;
 		border: 0;
+		background-color: black;
+		height: 100%;
 		line-height: 0;
-		background-color: #8899A6;
-		@media (min-width: 420px) {width: 50%;}
-		@media (min-width: 1400px) {width: calc(100%/3);}
-		.title,
-		.tags {
-			left: 10px;
+		font-size: 0;
+		margin-bottom: -2px;
+		@media (min-width: 768px) {width: calc(100%/4);}
+		@media (min-width: 1400px) {width: calc(100%/5);}
+		@include transition( all 0.25s);
+		.title {
+			opacity: 0;
+			left: 20px;
+			top: 20px;
 			position: absolute;
+			z-index: 9;
 			color: white;
 			line-height: 1em;
-		}
-		.title {
-			top: 10px;
-			font-size: 30px;
-		}
-		.tags {
-			background-color: hsla(0, 0%, 0%, 0.5);
-			bottom: 10px;
+			font-size: 35px;
+			margin-right: 0.5em;
+			font-weight: 900;
 		}
 		img {
-			background-color: #fff;
-			width: 100%;
-			padding-bottom: -20px;
+			width: 100.5%;
+			height: 100%;
+			opacity: 1;
+			line-height: 0;
+			font-size: 0;
 		}
+	}
+	.fl-thumb:hover img {
+		opacity: 0.25;
+		@include transition( all 0.25s);
+	}
+	.fl-thumb:hover .title {
+		opacity: 1;
+		@include transition( all 0.25s);
 	}
 }
 
@@ -1053,9 +1065,8 @@ ul.tags {
 
 // VIDEO
 video {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+    width: 100% !important;
+    height: auto !important;
 }
 
 // TODAY

@@ -1535,7 +1535,7 @@ if ( $title == "Wired" ) {
 
 	$img_info = array(
 		// add photo of magazine cover
-		array("file" => "car.jpg", "alt" => ""),
+		array("file" => "wired-car.jpg", "alt" => ""),
 		array("file" => "three.jpg", "alt" => ""),
 	);
 
@@ -1850,13 +1850,17 @@ if ( $title == "NextLesson Glossary Terms" ) {
 	$company = "NextLesson";
 	// $movie = "$path/interactive-pt-overview.mp4";
 
-	$description = "After releasing the initial version of our Interactive lessons, it was up to our Curriculum team to fill it with learning materials! As they were working on that, we worked on the next iteration. Since we had glossary terms, we thought having images to support them would be impactful, as well as being helpful for our younger user-base.
+	$description = "After releasing the initial version of the Interactive lessons, it was up to our Curriculum team to fill it with learning materials! As they were working on that, we worked on the next iteration. To support our glossary terms, we thought having would be impactful, as well helpful for our younger and users.
 		$p_break
-		I had a whole library of image assets that we’ve slowly created over time, so this task wasn’t that time-intensive.
-		<image of cover and finished glossary term>
-		$p_break
-		No—the bigger challenge was how to illustrate ideas and abstract concepts.
- 		<image viable>
+		We had a variety of things to illustrate-including careers, mathematic principles, as well as terms specific to industries. Luckily, I had a whole library of image assets that I'd slowly created over time, making this task a little less time-intensive. However, it did require a bit more thought over how to illustrate abstract those terms, like &ldquo;viable&rdquo; and &ldquo;hypothesize.&rdquo;
+		</p>
+		<img src='$path/02.png' alt='' class='thumb-outline scale-with-grid' />
+		<p>The glossary terms as they appear in the sidebar.</p>
+		<video class='thumb-outline' width='800' height='600' controls>
+			<source src='img/nextlesson-glossary/glossary.mp4' type='video/mp4'>
+			Your browser does not support the video tag.
+		</video>
+		<p>Video: Two ways to access the glossary definitions.
 	";
 
 	$sidebar = "
@@ -1870,8 +1874,38 @@ if ( $title == "NextLesson Glossary Terms" ) {
 	);
 
 	$img_info = array(
-		array("file" => "01.jpg", "alt" => "Glossary Images"),
+		array("file"=>"glos/Agility.png", "alt"=>"Agility", "caption"=>TRUE),
+		array("file"=>"glos/Baker.png", "alt"=>"Baker", "caption"=>TRUE),
+		array("file"=>"glos/Budget.png", "alt"=>"Budget", "caption"=>TRUE),
+		array("file"=>"glos/Calorie.png", "alt"=>"Calorie", "caption"=>TRUE),
+		array("file"=>"glos/Consume.png", "alt"=>"Consume", "caption"=>TRUE),
+		array("file"=>"glos/Cost_of_Production.png", "alt"=>"Cost of Production", "caption"=>TRUE),
+		array("file"=>"glos/Counting_Principle.png", "alt"=>"Counting Principle", "caption"=>TRUE),
+		// array("file"=>"glos/Coupons.png", "alt"=>"Coupons", "caption"=>TRUE),
+		array("file"=>"glos/Critically_Endangered.png", "alt"=>"Critically Endangered", "caption"=>TRUE),
+		array("file"=>"glos/Critique.png", "alt"=>"Critique", "caption"=>TRUE),
+		array("file"=>"glos/Entrepreneur.png", "alt"=>"Entrepreneur", "caption"=>TRUE),
+		array("file"=>"glos/Field_Goal.png", "alt"=>"Field Goal", "caption"=>TRUE),
+		array("file"=>"glos/Foul.png", "alt"=>"Foul", "caption"=>TRUE),
+		array("file"=>"glos/Hypothesize.png", "alt"=>"Hypothesize", "caption"=>TRUE),
+		array("file"=>"glos/List_Price.png", "alt"=>"List Price", "caption"=>TRUE),
+		array("file"=>"glos/Marketing_Analyst.png", "alt"=>"Marketing Analyst", "caption"=>TRUE),
+		array("file"=>"glos/Marketing.png", "alt"=>"Marketing", "caption"=>TRUE),
+		array("file"=>"glos/Median.png", "alt"=>"Median", "caption"=>TRUE),
+		array("file"=>"glos/Negotiate.png", "alt"=>"Negotiate", "caption"=>TRUE),
+		array("file"=>"glos/Operator.png", "alt"=>"Operator", "caption"=>TRUE),
+		array("file"=>"glos/Personal_Shopper.png", "alt"=>"Personal Shopper", "caption"=>TRUE),
+		array("file"=>"glos/Pricing_Structure.png", "alt"=>"Pricing Structure", "caption"=>TRUE),
+		array("file"=>"glos/Production_Costs.png", "alt"=>"Production Costs", "caption"=>TRUE),
+		// array("file"=>"glos/Program.png", "alt"=>"Program", "caption"=>TRUE),
+		array("file"=>"glos/Revenue.png", "alt"=>"Revenue", "caption"=>TRUE),
+		array("file"=>"glos/Royalties.png", "alt"=>"Royalties", "caption"=>TRUE),
+		array("file"=>"glos/Stage_Manager.png", "alt"=>"Stage Manager", "caption"=>TRUE),
+		array("file"=>"glos/Telephoto_Lens.png", "alt"=>"Telephoto Lens", "caption"=>TRUE),
+		array("file"=>"glos/Viable.png", "alt"=>"Viable", "caption"=>TRUE),
+		array("file"=>"glos/Video_Wall.png", "alt"=>"Video Wall", "caption"=>TRUE),
 	);
+	shuffle($img_info);
 
 	$other = "";
 

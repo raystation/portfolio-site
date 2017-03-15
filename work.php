@@ -404,19 +404,21 @@ function full_thumbnail($works){
 		foreach ( $work['tags'] as $key => $tag) {
 			$tags_html .= "$tag ";
 		}
-		$thumb = check_for_img_format( $path , "thumb-hd");
+		// checks for retina
+		$hd_thumb = check_for_img_format( $path , "thumb-hd");
+		if ($hd_thumb) {
+			$hd_thumb = "srcset='$hd_thumb 2x'";
+		}
+
+		$thumb = check_for_img_format( $path );
 		if ( $thumb==FALSE ) {
-			$thumb = check_for_img_format( $path );
-			if ( $thumb==FALSE ) {
-				$thumb = "http://placehold.it/400x273&text=$work[name] thumbnail missing";
-			}
+			$thumb = "http://placehold.it/400x273&text=$work[name] thumbnail missing";
 		}
 
 		$content .= "
 			<div class='fl-thumb'>
-				<!--<div class='title'>$work[name]</div>-->
-				<img src='$thumb'>
-				<!--<div class='tags'>$tags_html</div>-->
+				<div class='title'>$work[name]</div>
+				<a href='$work[path]'><img src='$thumb' $hd_thumb></a>
 			</div>
 		";
 		$tags_html = "";
