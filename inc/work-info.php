@@ -23,7 +23,7 @@ $works = array(
 	array( "name" => "Museyon Guides", "path" => "museyon-guides", "tags"=>array("places-i-worked") ),
 	array( "name" => "Project Animore", "path" => "project-animore", "tags" => array("illustration","ui-ux") ),
 	array( "name" => "#Inktober2016","path" => "inktober-2016", "tags" => array("illustration") ),
-	array( "name" => "100 Principles of Game&nbsp;Design", "path" => "100-principles-of-game-design", "tags" => array("illustration") ),
+	array( "name" => "100 Principles of Game Design", "path" => "100-principles-of-game-design", "tags" => array("illustration") ),
 	array( "name" => "Holiday Card 2014", "path" => "holiday-2014", "tags" => array("illustration") ),
 	array( "name" => "Monkey Mo, Monkey&nbsp;Go!", "path" => "monkey-mo", "tags" => array("illustration", "print-design") ),
 	array( "name" => "Scavenger Hunt", "path" => "scavenger-hunt", "tags" => array("illustration") ),
@@ -45,8 +45,8 @@ $works = array(
 	array( "name" => "Arceus and the Jewel of&nbsp;Life","path" => "arceus", "tags"=>array("print-design","ui-ux") ),
 	array( "name" => "Pok&eacute;mon: Toys 'R' Us Feature Shop", "path" => "feature-shop", "tags"=>array("print-design") ),
 	array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos", "tags"=>array("print-design","branding") ),
-	array( "name" => "Pok&eacute;mon 10th&nbsp;Anniversary","path" => "10th-anniversary","tags"=>array("print-design","branding") ),
-	array( "name" => "Pok&eacute;mon: Mystery&nbsp;Dungeon", "path" => "mystery-dungeon", "tags"=>array("print-design") ),
+	array( "name" => "Pok&eacute;mon 10th Anniversary","path" => "10th-anniversary","tags"=>array("print-design","branding") ),
+	array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon", "tags"=>array("print-design") ),
 	array( "name" => "Battle Revolution", "path" => "battle-revolution", "tags"=>array("print-design","ui-ux") ),
 	array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex", "tags"=>array("print-design") ),
 	array( "name" => "Pok&eacute;mon Toy&nbsp;Fair", "path" => "toy-fair", "tags"=>array("print-design","branding") ),
@@ -88,8 +88,8 @@ function get_pokemon_projects(){
 		array( "name" => "Arceus and the Jewel of&nbsp;Life","path" => "arceus" ),
 		array( "name" => "Pok&eacute;mon: Toys 'R' Us Feature Shop", "path" => "feature-shop" ),
 		array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos" ),
-		array( "name" => "Pok&eacute;mon 10th&nbsp;Anniversary","path" => "10th-anniversary" ),
-		array( "name" => "Pok&eacute;mon: Mystery&nbsp;Dungeon", "path" => "mystery-dungeon" ),
+		array( "name" => "Pok&eacute;mon 10th Anniversary","path" => "10th-anniversary" ),
+		array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon" ),
 		array( "name" => "Battle Revolution", "path" => "battle-revolution" ),
 		array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex" ),
 		array( "name" => "Pok&eacute;mon Toy&nbsp;Fair", "path" => "toy-fair" ),
@@ -310,7 +310,7 @@ if ( $title == "Indiginauts" ) {
 // #100 PRINCIPLES OF GAME DESIGN
 // ===============================
 
-if ( $title == "100 Principles of Game&nbsp;Design" ) {
+if ( $title == "100 Principles of Game Design" ) {
 
 	$path="img/100-principles-of-game-design";
 
@@ -1316,7 +1316,7 @@ if ( $title == "Nerd Comics" ) {
 //  #MYSTERY#DUNGEON
 // ===============================
 
-if ( $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon" ) {
+if ( $title == "Pok&eacute;mon: Mystery Dungeon" ) {
 
 	$path="img/mystery-dungeon";
 	$company = "Pokemon";

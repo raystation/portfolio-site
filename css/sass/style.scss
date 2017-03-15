@@ -540,19 +540,21 @@ ul.tags {
 		line-height: 0;
 		font-size: 0;
 		margin-bottom: -2px;
-		@media (min-width: 768px) {width: calc(100%/4);}
+		@media (min-width: 768px) {width: calc(100%/3);}
+		@media (min-width: 1024px) {width: calc(100%/4);}
 		@media (min-width: 1400px) {width: calc(100%/5);}
 		@include transition( all 0.25s);
 		.title {
 			opacity: 0;
-			left: 20px;
-			top: 20px;
+			left: 0px;
+			top: 0px;
+			width: 100%;
 			position: absolute;
 			z-index: 9;
 			color: white;
 			line-height: 1em;
-			font-size: 35px;
-			margin-right: 0.5em;
+			font-size: 30px;
+			padding: 0.5em 0.5em 0 0.5em;
 			font-weight: 900;
 		}
 		img {
