@@ -2,5 +2,11 @@
 *.DS_Store
 *z_deprecated/
 *jobs/
-inc/company-info.php
 sftp-config.json
+inc/company-info.php
+
+jobs/asana-marketing-designer.md
+
+jobs/humble-bundle-senior-designer.md
+
+jobs/opendoor-brand-designer.md
