@@ -1,16 +1,51 @@
-#Medium
-##Senior Visual Designer
+#Supercell
+##Graphic Designer
 
-Medium has become a must-write destination for doers and thinkers around the world. We want to create a space where ideas are democratized and the platform rewards quality, not clickbait. We are creator-friendly — in both the economic and intellectual property rights we afford them. We respect user privacy. And we value transparency above all else.
+###Description
+We want our players to love every experience with our game worlds and characters, both when playing our games and in everyday life. The Marketing Art team is responsible for the look and feel of our brands outside of the games themselves. We create loading screens, event designs, merchandising concepts, help guide TV animation, and much, much more. It’s a unique responsibility for a unique team distributed across every Supercell office in the world.
 
-Design is key to all of this. As a team, we work closely with engineers, product managers, product scientists, and support. We also work with, and learn from, each other. We move pixels and make prototypes, but first and foremost we think and we write. We’re never happy with what’s out there, and we know how to channel this into something positive.
+With so many people in so many different places, communication and collaboration is incredibly important, but the most important value is the ability and confidence to experiment. We’re looking for highly skilled artists with really big ideas. You’ll have the freedom to learn, try and do new, innovative things in the industry and collaborate with an incredibly talented team!
 
-We’re building something that never existed before. We face a lot of product challenges: designing a writing experience that balances self-expression with platform consistency; crafting an interaction universe that works for incidental visitors and for power users alike; shaping a space that allows for exchanging ideas and disagreement, but encourages mindfulness and safety.
-The company design challenges are as fascinating. How do we move fast but ensure design quality? How do we empower everyone in the company to be a designer? How do we get better at giving and receiving feedback? How can design and engineering work best together? How do we prioritize what’s next when there’s so much to do?
+###About the role
+Do you have an excellent eye for composition, color, and form? A love for popular culture? Sub-cultures? Are you an ocular fiend obsessing over details that nobody else can see? And maybe you’ve been looking at it so long you’re not sure what you’re looking at anymore? You need help. Or - you could come and work with like-minded people in our San Francisco based Marketing Art Team. Supercell is currently looking for a full-time Graphic Designer to help us manage and develop creatives for our online marketing space.
 
-None of these have obvious solutions and we love it this way. Help us solve the unsolvable… and then create frameworks and system to do it better, faster, and with more style next time around.
+You will work closely with the Art Lead, 3D artists, and Art producer as we strive for the highest quality artwork possible. In the creative process we encourage independence, critical thinking, and strong and open communication. Our art teams are small and agile, taking responsibility is a must and a passion for excellence in the details is essential to our success.
 
-###Who are you?
-You like what Medium The Company and Medium The Product are about. You’ve designed and shipped mobile and web products. You enjoy both craft and deliberate, long-term system thinking. You worked with — maybe led — teams of designers. You are confident, but willing to learn… and teach. You know how, and when, to change your mind. You are self-driven, and don’t mind uncertainty and compromise.
+We are looking for passionate artists who want to help define and build game brands that will last for decades to come. To do this you’ll be asked to collaborate with our Supercell artists all over the world. This means traveling to Korea, Japan, China, and Finland to learn, teach, communicate, share, and generally make cool stuff happen.
 
-We are designing from Medium offices in San Francisco, but we’re happy to consider people from around the world who are willing to relocate.
+We want to grow, and become a beacon of artistic quality - can you help us get there?
+
+###Requirements
+* Art Direct & create digital marketing assets, including but not limited to: mobile featuring art, batches of digital banners and rich media on a recurring basis
+* Create content for game website, social media and other multimedia venues
+* Work closely with internal stakeholders and external creative partners to ensure that the visual identity is in line with the global marketing strategy
+* Help to evaluate, select, and manage our roster of external creative vendors
+* High understanding of digital trends and trials on new media
+* Community art support
+
+###Experience
+* 5+ years experience on a marketing art team with time spent giving clear graphic design art direction
+* Strong sense of graphic design, layout, typography, UI/UX and front•end web development. Bonus if experienced in video production
+* Experience giving detailed feedback and communicate direction between both internal team and external partners
+* Strong understanding of marketing design and best practices for Western market
+* Advanced knowledge and experience of Photoshop and Illustrator
+* High understanding on web and mobile environment
+* To be able to succeed, you need to be a strong team player, passionate, committed and in general an autonomous person with a high level of initiative and energy
+* Game industry experience is a plus
+* Online portfolio and/or demo reel is required and must be included with application
+
+###Why you'll love it here
+* Independence and a lack of bureaucracy that clears the way for you to do the best work possible
+* Awesome compensation and benefits
+* We create great teams and take very good care of them
+* Put smiles on the faces of the 100 million people who play our games every single day
+* Travel to our offices in Helsinki, Seoul, San Francisco, Tokyo and Shanghai as well as annual company offsite meetings
+* Work with kind, humble teams that inspire
+
+###About Supercell
+
+Supercell aims to create games that millions of people will play for years or decades to come. We believe the best people make the best games, and that’s who we’re looking for. If you love games and are passionate about playing and crafting them, and you’re looking for a job that provides you ownership and independence, you’re in the right place.
+
+Supercell isn’t an entertainment company, it isn’t a start-up, and it isn’t just any game company. Our focus sets us apart. Focus means saying no a lot. To release four games, we have killed fourteen. We’ve shut down marketing campaigns because they weren’t perfect for our players, and we’ve scrapped a ton of game features that were simply too niche.
+
+We also believe that focus means staying small. We hire only the most passionate doers and arm them with the trust and support to make the biggest impact possible. As part of a small, independent team at Supercell, you’ll be free to dream and succeed (and sometimes fail) big!

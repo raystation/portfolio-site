@@ -1,4 +1,6 @@
 *.sass-cache/
 *.DS_Store
 *z_deprecated/
+*jobs/
+inc/company-info.php
 sftp-config.json

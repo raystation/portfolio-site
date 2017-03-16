@@ -3684,6 +3684,40 @@ case 'ixl-illustration-coordinator':
 		);
 	break;
 
+	//SUPERCELL
+	case "supercell":
+		$short_name = "supercell-graphic-designer";
+		$originaljobposting="http://supercell.com/en/careers/graphic-designer/199/";
+		$company="Supercell";
+		$jobTitle="Graphic Designer";
+		$date="March 15, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+		// $slider_img = "jobs/$short_name.jpg";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "I found this role through Indeed and wanted to apply because it sounds like a fun job. I'm a creative veteran of over 10 years with skills in branding, art production, illustration, and product UI/UX. I believe I would be great for this job because of my experience running creative departments at various companies including Pok&eacute;mon, an education startup and a gaming startup. That and I love gaming!
+		";
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Covers",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+		);
+	break;
+
 
 }
 
