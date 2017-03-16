@@ -27,7 +27,7 @@ $works = array(
 	array( "name" => "Holiday Card 2014", "path" => "holiday-2014", "tags" => array("illustration") ),
 	array( "name" => "Monkey Mo, Monkey&nbsp;Go!", "path" => "monkey-mo", "tags" => array("illustration", "print-design") ),
 	array( "name" => "Scavenger Hunt", "path" => "scavenger-hunt", "tags" => array("illustration") ),
-	array( "name" => "Suspended Belief Studios", "patph" => "suspended-belief-studios", "tags" => array("places-i-worked") ),
+	array( "name" => "Suspended Belief Studios", "path" => "suspended-belief-studios", "tags" => array("places-i-worked") ),
 	array( "name" => "Chronicles of Old New&nbsp;York", "path" => "chronicles-of-old-new-york", "tags"=>array("print-design") ),
 	array( "name" => "Sarah Walko", "path" => "sarah-walko", "tags"=>array("web-dev") ),
 	array( "name" => "Edgeware", "path" => "edgeware", "tags"=>array("illustration") ),
