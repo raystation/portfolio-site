@@ -580,7 +580,30 @@ ul.tags {
 		@include transition( all 0.25s);
 	}
 }
-
+.fl-additional-img {
+	width: 100%;
+	max-width: 1440px;
+	// @media (min-width: 1400px) {max-width: 80%; }
+	margin: 0 auto;
+	// background-color: #F5F8FA;
+	display: flex;
+	-webkit-display: flex;
+	-ms-display: flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	.tile {
+		line-height: 0;
+		width: calc(100%/2);
+		padding: 4px;
+		img {
+			width: 100%;
+		}
+		// @media (min-width: 768px) {width: calc(100%/3);}
+		@media (min-width: 1024px) {width: calc(100%/3);}
+		// @media (min-width: 1400px) {width: calc(100%/4);}
+	}
+}
 // HIRE ME
 // ======================================
 
@@ -1024,6 +1047,8 @@ ul.tags {
 	}
 
 }
+
+
 
 // FOOTER
 // =====================================

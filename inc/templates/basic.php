@@ -86,7 +86,8 @@ if ( !is_null($path) ) {
 		if ( !isset($additional_img_column_count) ) {
 			$additional_img_column_count = 2;
 		}
-		$additional_img_html = skeleton_html($additional_img_column_count,$path,$folder="additional_img");
+		// $additional_img_html = skeleton_html($additional_img_column_count,$path,$folder="additional_img");
+		$additional_img_html = flex_tiles(4,$path,$folder="additional_img");
 	} else {
 		$additional_img_html = "";
 	}

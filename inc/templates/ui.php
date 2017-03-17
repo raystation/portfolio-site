@@ -4,6 +4,7 @@
 		// checks for ADDITIONAL_IMG folder for support images
 		if ( file_exists("$path/additional_img") ) {
 			$additional_img_html = skeleton_html(2,$path,$folder="additional_img");
+			// $additional_img_html = flex_tiles(4,$path,$folder="additional_img");
 		} else {
 			$additional_img_html = "";
 		}

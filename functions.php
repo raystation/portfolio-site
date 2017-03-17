@@ -673,3 +673,26 @@ function get_quick_intro(){
   include_once "inc/resume.php";
   return $quick_intro;
 }
+function flex_tiles($columns=4,$path,$folder="additional_img") {
+  $content = "";
+  $imgs = get_files("$path/$folder");
+  foreach ($imgs as $key => $img ) {
+    $title = get_title($img);
+    $content .= "
+      <div class='tile'>
+        <img src='$path/$folder/$img' alt='$title'>
+      </div>
+    ";
+  }
+
+  $html = "
+    </div>
+    </div>
+    <div class='fl-additional-img'>
+      $content
+    </div>
+    <div class='container'>
+    <div class='sixteen columns'>
+  ";
+  return $html;
+}
