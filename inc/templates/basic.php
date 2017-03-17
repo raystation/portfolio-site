@@ -3,6 +3,7 @@
 // TAGS
 $tags = isset($tags) ? get_tags($tags) : null;
 $tags_html = isset($tags) ? "<ul class='tags'>$tags</ul>" : null;
+$project_path="";
 
 // MAKES THE TOP SLIDER
 $img_slider_html="";
@@ -63,7 +64,7 @@ if ( isset($company) ) {
 		";
 		foreach ($related_projects_array as $key => $related_project) {
 			if ( isset($id) ) {
-				$project_path =  "work?id=$related_project[path]&id=$id";
+				$project_path = "work?project=$related_project[path]&id=$id";
 			} else {
 				$project_path = $related_project['path'];
 			}

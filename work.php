@@ -306,12 +306,9 @@ if ( isset($project) ) {
 
 	// IF THE TEMPLATE IS SET
 	if ( isset($template) ){
-
 		// DOUBLE CHECKS TO SEE IF THE TEMPLATE FILE EXISTS, ELSE BASIC
 		$template_path = "inc/templates/$template.php";
 		if ( file_exists( $template_path ) ) { include $template_path; }
-		// else { include 'inc/templates/basic.php'; }
-
 	} else {
 		// TEMPLATE NOT SET, USE BASIC
 		$template = "basic";
@@ -403,6 +400,13 @@ function full_thumbnail($works){
 	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
 	$selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
 
+	// PASSES AN ID IF IT EXISTS
+	if ( isset($id) ) {
+	  $id_html = "?id=$id";
+	} else {
+	  $id_html="";
+	}
+
 	// FILTERS
 	// checks array for matching tags, if so, then it will push to a new array
 	$filtered_array="";
@@ -425,6 +429,8 @@ function full_thumbnail($works){
 	}
 
 	foreach ($works as $key => $work) {
+
+
 		$path = "img/".$work["path"];
 		$tags_html="";
 		foreach ( $work['tags'] as $key => $tag) {
@@ -441,10 +447,16 @@ function full_thumbnail($works){
 			$thumb = "http://placehold.it/400x273&text=$work[name] thumbnail missing";
 		}
 
+		if (isset($id)) {
+		  $project_path = "work?project=$work[path]&id=$id";
+		} else {
+		  $project_path = $work['path'];
+		}
+
 		$content .= "
 			<div class='fl-thumb'>
 				<div class='title'>$work[name]</div>
-				<a href='$work[path]'><img src='$thumb' $hd_thumb></a>
+				<a href='$project_path'><img src='$thumb' $hd_thumb></a>
 			</div>
 		";
 		$tags_html = "";
