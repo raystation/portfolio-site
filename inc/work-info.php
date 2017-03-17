@@ -1799,6 +1799,7 @@ if ( $title == "NextLesson InterestID" ) {
 	$sidebar = "
 		Student Interest Tool<br>
 		2015
+		<a href='https://www.nextlesson.org/interestid/' target='_blank'>link to project</a>
 	";
 
 	$tools = array(

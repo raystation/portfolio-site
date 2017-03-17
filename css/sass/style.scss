@@ -35,8 +35,10 @@ $textbox-text-color: white;
 $textbox-link-color: $textbox-text-color;
 $filter-color: #E1E8ED;
 
-$footer-color: darken($bkg-color,4%);
-$footer-text-color: darken($footer-color,50%);
+// $footer-color: darken($bkg-color,4%);
+$footer-color: #262c30;
+// $footer-text-color: darken($footer-color,50%);
+$footer-text-color: #688a9e;
 
 $font-size: 14pt;
 $line-height: 1.45em;
@@ -1032,11 +1034,14 @@ ul.tags {
 	background-color: $footer-color;
 	padding: 2em 0 4em 0;
 	color: $footer-text-color;
-
 	p, & ul {
 		font-size: smaller;
 		line-height: 1.75em;
 		margin-bottom: 0.25em;
+	}
+	hr {
+		background: none;
+		border-bottom: 1px solid $footer-text-color;
 	}
 
 	li {
@@ -1046,7 +1051,8 @@ ul.tags {
 	a:link, a:visited {
 		font-family: inherit;
 		line-height: 1.75em;
-		color: $footer-text-color;
+		color: white;
+		font-size: 1.25em;
 		@include transition(all 1.0s);
 		&:hover {
 			color: darken($footer-text-color,50%);
