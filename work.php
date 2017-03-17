@@ -330,8 +330,8 @@ if ( !isset($template) ) {
 		</div>
 	";
 	// echo "// <div class='sixteen columns'> // 	<h2>Selected Works</h2> // </div>";
-	skeleton_print_thumbnail_4($works);
-	// full_thumbnail($works);
+	// skeleton_print_thumbnail_4($works);
+	full_thumbnail($works);
 }
 elseif ($template=="company") {
 	  echo "
@@ -398,6 +398,32 @@ function get_filter_list_html( $selected_filter ){
 
 function full_thumbnail($works){
 	$content="";
+
+	// CHECKS FOR PROJECT ID AND FILTER
+	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+	$selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
+
+	// FILTERS
+	// checks array for matching tags, if so, then it will push to a new array
+	$filtered_array="";
+	if ( isset($selected_filter) ) {
+
+	  foreach ($works as $key => $work) {
+	    $tags = $work['tags'];
+	    foreach ($tags as $key => $tag) {
+	      if ($tag==$selected_filter) {
+	        $filtered_array[]=$work;
+	      }
+	    }
+	  }
+	  if ($filtered_array=="") {
+	    echo "nothing to show";
+	    return;
+	  }
+	  // replace array with filtered array
+	  $works = $filtered_array;
+	}
+
 	foreach ($works as $key => $work) {
 		$path = "img/".$work["path"];
 		$tags_html="";
