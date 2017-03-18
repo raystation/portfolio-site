@@ -4,6 +4,7 @@
 $tags = isset($tags) ? get_tags($tags) : null;
 $tags_html = isset($tags) ? "<ul class='tags'>$tags</ul>" : null;
 $project_path="";
+if (!isset($thumbnail_size)) {$thumbnail_size="medium";}
 
 // MAKES THE TOP SLIDER
 $img_slider_html="";
@@ -87,7 +88,7 @@ if ( !is_null($path) ) {
 			$additional_img_column_count = 2;
 		}
 		// $additional_img_html = skeleton_html($additional_img_column_count,$path,$folder="additional_img");
-		$additional_img_html = flex_tiles(4,$path,$folder="additional_img");
+		$additional_img_html = flex_tiles($thumbnail_size,$path,$folder="additional_img");
 	} else {
 		$additional_img_html = "";
 	}

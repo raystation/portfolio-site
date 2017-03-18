@@ -1693,7 +1693,7 @@ if ( $title == "#Inktober2016" ) {
 
 function get_nextlesson_projects(){
 	$works = array(
-		array( "name" => "NextLesson Project Covers", "path" => "nextlesson-covers" ),
+		array( "name" => "NextLesson Lesson/Project Covers", "path" => "nextlesson-covers" ),
 		array( "name" => "NextLesson Marketing", "path" => "nextlesson-marketing" ),
 		array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid" ),
 		array( "name" => "NextLesson Glossary Terms", "path" => "nextlesson-glossary" ),
@@ -1782,7 +1782,7 @@ if ( $title == "NextLesson Lesson Covers" ) {
 
 if ( $title == "NextLesson InterestID" ) {
 
-	$template = "ui";
+	// $template = "ui";
 	$company = "NextLesson";
 	$path = "img/nextlesson-interestid";
 	// $movie = "$path/interestid-voting.mp4";
@@ -1810,11 +1810,12 @@ if ( $title == "NextLesson InterestID" ) {
 	);
 
 	$img_info = array(
-		// array("file" => "cover.jpg", "alt" => "..."),
+		array("file" => "cover.jpg", "alt" => "Screenshot of the tool"),
 		// array("file" => "interest-selection.jpg", "alt" => "InterestID liking and disliking"),
 	);
+	$thumbnail_size = "small";
 
-	$other = "
+	$content = "
 	<h3>Rating Interests</h3>
 	<video width='320' height='240' controls>
 		<source src='$path/interestid-voting.mp4' type='video/mp4'>
@@ -1846,7 +1847,6 @@ if ( $title == "NextLesson InterestID" ) {
 
 if ( $title == "NextLesson Glossary Terms" ) {
 
-	// $template = "ui";
 	$path = "img/nextlesson-glossary";
 	$company = "NextLesson";
 	// $movie = "$path/interactive-pt-overview.mp4";
@@ -1854,7 +1854,8 @@ if ( $title == "NextLesson Glossary Terms" ) {
 	$description = "After releasing the initial version of the Interactive lessons, it was up to our Curriculum team to fill it with learning materials! As they were working on that, we worked on the next iteration. To support our glossary terms, we thought having would be impactful, as well helpful for our younger and users.
 		$p_break
 		We had a variety of things to illustrate-including careers, mathematic principles, as well as terms specific to industries. Luckily, I had a whole library of image assets that I'd slowly created over time, making this task a little less time-intensive. However, it did require a bit more thought over how to illustrate abstract those terms, like &ldquo;viable&rdquo; and &ldquo;hypothesize.&rdquo;
-		</p>
+	";
+	$content = "
 		<img src='$path/02.png' alt='' class='thumb-outline scale-with-grid' />
 		<p>The glossary terms as they appear in the sidebar.</p>
 		<video class='thumb-outline' width='800' height='600' controls>
@@ -1907,6 +1908,8 @@ if ( $title == "NextLesson Glossary Terms" ) {
 		array("file"=>"glos/Video_Wall.png", "alt"=>"Video Wall", "caption"=>TRUE),
 	);
 	shuffle($img_info);
+
+	$thumbnail_size="large";
 
 	$other = "";
 
@@ -1990,10 +1993,8 @@ if ( $title == "NextLesson Search and Browse Page" ) {
 
 if ( $title == "NextLesson Characters" ) {
 
-	// $template = "ui";
-	$company = "NextLesson";
 	$path = "img/nextlesson-characters";
-	$movie = "$path/search-browse-bar-1.mp4";
+	$company = "NextLesson";
 
 	$description = "At NextLesson, in order to unify our covers and illustrations, developed a system of posable characters that could be used in a variety of situations. I developed a set of rules that which specified proportions and color choices depending on grade. Using these rules and an in-house assets library, contractors were able to make covers that consistently conveyed our visual standards as well as speeding up turn-around time.
 	";
@@ -2002,40 +2003,37 @@ if ( $title == "NextLesson Characters" ) {
 		Character Designs
 	";
 
-	include_once "functions.php";
-	$avatar_html = "";
-	$avatars = get_files("$path/avatars");
-	shuffle($avatars);
-	$class="";
-	$count = 1;
-	foreach ($avatars as $key => $avatar) {
-		if ( $count == 1 ) {
-			$class = "alpha";
-		} elseif ( $count == 4 ) {
-			$class = "omega";
-			$count = 0;
-		}
-		$avatar_html.="<div class='four columns add-bottom $class'><img src='$path/avatars/$avatar' alt='NextLesson Avatar $key'></div>";
-		$class = "";
-		$count++;
-	}
+	// include_once "functions.php";
+	// $avatar_html = "";
+	// $avatars = get_files("$path/avatars");
+	// shuffle($avatars);
+	// $class="";
+	// $count = 1;
+	// foreach ($avatars as $key => $avatar) {
+	// 	if ( $count == 1 ) {
+	// 		$class = "alpha";
+	// 	} elseif ( $count == 4 ) {
+	// 		$class = "omega";
+	// 		$count = 0;
+	// 	}
+	// 	$avatar_html.="<div class='four columns add-bottom $class'><img src='$path/avatars/$avatar' alt='NextLesson Avatar $key'></div>";
+	// 	$class = "";
+	// 	$count++;
+	// }
+	$thumbnail_size = "small";
 
 	$content = "
 		<figure class='add-bottom'>
-			<img src='$path/templates/body-rules.png' alt=''>
+			<img src='$path/templates/body-rules.png' alt='Body rules'>
 			<figcaption>Body Rules</figcaption>
 		</figure>
 		<figure class='add-bottom'>
-			<img src='$path/templates/expressions.png' alt=''>
+			<img src='$path/templates/expressions.png' alt='Facial Expression rules'>
 			<figcaption>Facial Expressions</figcaption>
 		</figure>
 		<figure class='add-bottom'>
-			<img src='$path/templates/portrait-rules.png' alt=''>
+			<img src='$path/templates/portrait-rules.png' alt='Head Proportion rules'>
 			<figcaption>Different Head Proportions</figcaption>
-		</figure>
-		<figure>
-			$avatar_html
-			<figcaption>The selection of avatars</figcaption>
 		</figure>
 	";
 	$tools = array(
@@ -2052,9 +2050,6 @@ if ( $title == "NextLesson Characters" ) {
 		array( "file"=>"slider/Girls_in_profile.png", "alt"=>""),
 	);
 
-	// $other = "";
-	$additional_img_column_count = 1;
-
-} //end NEXTLESSON SEARCH BROWSE
+} //end NEXTLESSON CHARACTERS
 
 
