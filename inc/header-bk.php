@@ -88,7 +88,7 @@ if (isset($section)) {
 	<!-- Primary Page Layout
 	================================================== -->
 
-	<!--<header class="navband headroom" style='display:none;'>
+	<header class="navband headroom">
 		<div class="container">
 			<nav class="sixteen columns">
 				<div class="title"><a href="./">Ray Yuen</a></div>
@@ -98,22 +98,6 @@ if (isset($section)) {
 				</ul>
 
 			</nav>
-		</div>
-	</header>-->
-
-	<header class="navband headroom">
-		<div class="header">
-			<div id="title"><a href="./">Ray Yuen</a></div>
-			<div id='nav'>
-				<ul>
-					<li><a class="<? echo $work_class;?>" href="work<? echo $id_html;?>">work</a>
-					<li style='margin-right:15px;'><a class="<? echo $about_class;?>" href="about<? echo $id_html;?>">about</a>
-					<li><a href="mailto:rayuen@gmail.com"><img class='header-icon' src="img/icon/email.svg"></a>
-					<li><a href="http://www.linkedin.com/in/rayuen" target='_blank'><img class='header-icon' src="img/icon/linkedin.svg"></a>
-					<li><a href="https://dribbble.com/raystation" target='_blank'><img class='header-icon' src="img/icon/dribbble.svg"></a>
-					<!--<li><img class='header-icon' src="img/icon/twitter.svg">-->
-				</ul>
-			</div>
 		</div>
 	</header>
 

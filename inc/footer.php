@@ -137,13 +137,13 @@ if ( !isset($id)) {
 	<!-- headroom -->
 	<script src="js/headroom.min.js"></script>
 	<script>
-		var myElement = document.querySelector("header");
-		// var headroom  = new Headroom(myElement);
-		var headroom = new Headroom(myElement, {
-		  "tolerance": 10,
-		  "offset": 50,
-		});
-		headroom.init();
+		// var myElement = document.querySelector("header");
+		// // var headroom  = new Headroom(myElement);
+		// var headroom = new Headroom(myElement, {
+		//   "tolerance": 10,
+		//   "offset": 50,
+		// });
+		// headroom.init();
 	</script>
 
 	<script src="js/jquery.tooltipster.min.js"></script>
