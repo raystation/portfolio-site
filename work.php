@@ -292,10 +292,12 @@ include('inc/header.php');
 if ( isset($project) ) {
 	foreach ($works as $key => $work) {
 		if (array_search($title, $work)){
-			// $tags = $work['tags'];
+			$current_project_tags = $work['tags'];
+			// var_dump($tags);
 			break;
 		};
 	}
+	// $tags = $works[$key][$tags];
 	unset($works[$key]);
 	$works = array_values($works);
 }
@@ -331,15 +333,16 @@ if ( !isset($template) ) {
 	full_thumbnail($works);
 }
 elseif ($template=="company") {
-	  echo "
-	  <div class='container add-top'>
-	  	<div class='sixteen columns add-bottom'><a href='work$id_html'>&#11013; Back to projects</a></div>
-	  </div>";
-}
+	echo "
+	<div class='container add-top'>
+		<div class='sixteen columns add-bottom'><a href='work$id_html'>&#11013; Back to projects</a></div>
+	</div>";
+	}
 else {
 	// RECENT PROJECTS
-	// todo: make this related instead of recent?
+
 	if (isset($company)) {
+		// PRINTS RELATED PROJECTS BY COMPANY NAME [4]
 		$function_name = strtolower($company);
 		$function_name = replace_string( $function_name, " ", "_" );
 
@@ -347,17 +350,44 @@ else {
 		if ( function_exists( $possible_array ) ) {
 			$related_array = $possible_array();
 			foreach ($related_array as $key => $related_item) {
-				// echo "$related_item[name]<br>";
 				if (array_search($title, $related_item)) {
 					$current_project = $key;
 				}
 			}
 			if (isset($current_project)) {unset($related_array[$current_project]);}
-			// var_dump($related_array);
 			$related_array = array_values($related_array);
 			skeleton_print_thumbnail_4($related_array,4, "Related Projects");
 		}
 	} else {
+		// PRINT RELATED PROJECTS BY TAG[4]
+		// get tags, make array of all tags
+		// $tags = $works[$project]['tags'];
+		// var_dump($current_project_tags);
+		// $related_projects_by_tag = array();
+
+		// $x=0; //step counter
+		// $project_count=4;
+		// while ( $x !== $project_count ) {
+		// 	$same_tags_array = array_intersect( $current_project_tags, $works[$x]["tags"] );
+		// 	if ($same_tags_array) {
+		// 		// var_dump($same_tags_array);
+		// 		foreach ($same_tags_array as $key => $tag) {
+		// 			// echo "$tag ";
+		// 			$related_projects_by_tag[] = $works[$x];
+		// 		}
+		// 		// echo "<br>";
+		// 		$same_tags_array="";
+		// 		$project_count++;
+		// 	} else {
+		// 		echo "$x - no match<br>";
+		// 	}
+		// 	$x++;
+		// }
+		// foreach ($related_projects_by_tag as $key => $project) {
+		// 	echo "$project[name]<br>";
+		// }
+
+		// PRINTS OUR 4 RECENT PROJECTS
 		skeleton_print_thumbnail_4($works,4);
 	}
 }
@@ -432,32 +462,12 @@ function full_thumbnail($works){
 	// checks array for matching tags, if so, then it will push to a new array
 	$filtered_array="";
 	if ( isset($selected_filter) ) {
-
-	  foreach ($works as $key => $work) {
-	    $tags = $work['tags'];
-	    foreach ($tags as $key => $tag) {
-	      if ($tag==$selected_filter) {
-	        $filtered_array[]=$work;
-	      }
-	    }
-	  }
-	  if ($filtered_array=="") {
-	    echo "nothing to show";
-	    return;
-	  }
-	  // replace array with filtered array
-	  $works = $filtered_array;
+		$works = return_filtered_array_by_term( $works, $selected_filter);
 	}
 
+	// PRINTS OUT THUMBNAILS
 	foreach ($works as $key => $work) {
-
-
 		$path = "img/".$work["path"];
-		$tags_html="";
-		foreach ( $work['tags'] as $key => $tag) {
-			$tags_html .= "$tag ";
-		}
-		// checks for retina
 		$hd_thumb = check_for_img_format( $path , "thumb-hd");
 		if ($hd_thumb) {
 			$hd_thumb = "srcset='$hd_thumb 2x'";
@@ -482,7 +492,7 @@ function full_thumbnail($works){
 				</a>
 			</div>
 		";
-		$tags_html = "";
+		// $tags_html = "";
 	}
 	echo "
 		</div>
