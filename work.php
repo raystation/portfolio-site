@@ -362,42 +362,42 @@ else {
 		// PRINT RELATED PROJECTS BY TAG[4]
 		// get tags, make array of all tags
 		// $tags = $works[$project]['tags'];
-		var_dump($current_project_tags);
-		echo "<br>";
-		$related_projects_by_tag = array();
+		// var_dump($current_project_tags);
+		// echo "<br>";
+		// $related_projects_by_tag = array();
 
-		$x=0; //step counter
-		$project_count=4;
-		$related_projects_count=0;
-		while ( $related_projects_count <= $project_count ) {
-			$same_tags_array = array_intersect( $current_project_tags, $works[$x]["tags"] );
+		// $x=0; //step counter
+		// $project_count=4;
+		// $related_projects_count=0;
+		// while ( $related_projects_count <= $project_count ) {
+		// 	$same_tags_array = array_intersect( $current_project_tags, $works[$x]["tags"] );
 
-			$temp_title = $works[$x]["path"];
-			if ($same_tags_array) {
-				// var_dump($same_tags_array);
-				echo "$x: $temp_title - match ";
-				foreach ($same_tags_array as $key => $tag) {
-					echo "[$tag] ";
-					if (!in_array($works[$x], $related_projects_by_tag)) {
-						$related_projects_by_tag[] = $works[$x];
-						$related_projects_count++;
-					}
-				}
-				echo "<br>";
-				$same_tags_array="";
-			} else {
-				echo "$x: $temp_title - no match<br>";
-			}
+		// 	$temp_title = $works[$x]["path"];
+		// 	if ($same_tags_array) {
+		// 		// var_dump($same_tags_array);
+		// 		echo "$x: $temp_title - match ";
+		// 		foreach ($same_tags_array as $key => $tag) {
+		// 			echo "[$tag] ";
+		// 			if (!in_array($works[$x], $related_projects_by_tag)) {
+		// 				$related_projects_by_tag[] = $works[$x];
+		// 				$related_projects_count++;
+		// 			}
+		// 		}
+		// 		echo "<br>";
+		// 		$same_tags_array="";
+		// 	} else {
+		// 		echo "$x: $temp_title - no match<br>";
+		// 	}
 
-			$x++;
-			if ($related_projects_count == 4) {
-				break;
-			}
-			if ($x == count($works)) {
-				break;
-			}
-		}
-		skeleton_print_thumbnail_4($related_projects_by_tag,4,"Related Projects by Tag");
+		// 	$x++;
+		// 	if ($related_projects_count == 4) {
+		// 		break;
+		// 	}
+		// 	if ($x == count($works)) {
+		// 		break;
+		// 	}
+		// }
+		// skeleton_print_thumbnail_4($related_projects_by_tag,4,"Related Projects by Tag");
 
 		// foreach ($related_projects_by_tag as $key => $project) {
 		// 	echo "Related Project $key: $project[name]<br>";

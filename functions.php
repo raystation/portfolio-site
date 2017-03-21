@@ -681,7 +681,7 @@ function flex_tiles($thumbnail_size="medium",$path,$folder="additional_img") {
     $title = get_title($img);
     $content .= "
       <div class='$thumbnail_size'>
-        <img src='$path/$folder/$img' alt='$title'>
+        <img src='img/thumb-default.jpg' data-src='$path/$folder/$img' alt='$title'>
       </div>
     ";
   }

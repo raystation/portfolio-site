@@ -136,6 +136,7 @@ if ( !isset($id)) {
 
 	<!-- headroom -->
 	<script src="js/headroom.min.js"></script>
+	<script src="js/jquery.unveil.js"></script>
 	<script>
 		// var myElement = document.querySelector("header");
 		// // var headroom  = new Headroom(myElement);
@@ -146,7 +147,11 @@ if ( !isset($id)) {
 		// headroom.init();
 	</script>
 
-	<script src="js/jquery.tooltipster.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("img").unveil();
+		});
+	</script>
 	<script>
         $(document).ready(function() {
             $('.tooltip').tooltipster({
