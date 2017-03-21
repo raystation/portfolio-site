@@ -22,7 +22,7 @@
 		break;
 
 		case '100-principles-of-game-design':
-		$title = '100 Principles of Game&nbsp;Design';
+		$title = '100 Principles of Game Design';
 		break;
 
 		case 'abriendo-puertas':
@@ -264,7 +264,7 @@ if ($id) {
 		<div class='back-to-landing-page-menu'>
 			<div class='container'>
 				<div class='twelve columns'>
-					<strong>Highlighted Projects for $company:</strong> $sample_projects_html
+					<strong>Highlighted Projects for $hiring_company:</strong> $sample_projects_html
 				</div>
 				<div class='four columns' style='text-align:right;'>
 					<a href='./hire-me?id=$id'>&#11013; back to job inquiry</a>
@@ -338,7 +338,28 @@ elseif ($template=="company") {
 }
 else {
 	// RECENT PROJECTS
-	skeleton_print_thumbnail_4($works,4);
+	// todo: make this related instead of recent?
+	if (isset($company)) {
+		$function_name = strtolower($company);
+		$function_name = replace_string( $function_name, " ", "_" );
+
+		$possible_array = "get_". $function_name ."_projects";
+		if ( function_exists( $possible_array ) ) {
+			$related_array = $possible_array();
+			foreach ($related_array as $key => $related_item) {
+				// echo "$related_item[name]<br>";
+				if (array_search($title, $related_item)) {
+					$current_project = $key;
+				}
+			}
+			if (isset($current_project)) {unset($related_array[$current_project]);}
+			// var_dump($related_array);
+			$related_array = array_values($related_array);
+			skeleton_print_thumbnail_4($related_array,4, "Related Projects");
+		}
+	} else {
+		skeleton_print_thumbnail_4($works,4);
+	}
 }
 
 echo $landing_page_nav;
@@ -455,8 +476,10 @@ function full_thumbnail($works){
 
 		$content .= "
 			<div class='fl-thumb'>
-				<div class='title'>$work[name]</div>
-				<a href='$project_path'><img src='$thumb' $hd_thumb></a>
+				<a href='$project_path'>
+					<div class='title'>$work[name]</div>
+					<img src='$thumb' $hd_thumb>
+				</a>
 			</div>
 		";
 		$tags_html = "";

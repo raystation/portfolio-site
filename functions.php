@@ -360,7 +360,8 @@ function workthumb($num) {
 
 function skeleton_print_thumbnail_4(
   $works_array,
-  $number_of_projects=0
+  $number_of_projects=0,
+  $header_text = "Recent Projects"
   // $header=false,
   // $vertical=false
   ) {
@@ -381,7 +382,7 @@ function skeleton_print_thumbnail_4(
   echo '</div><div class="container portfolio">'."\n";
   global $description;
   if ( isset($description) ) {
-    echo "<div class='sixteen columns add-bottom add-top'><hr><h2>Recent Projects</h2></div>";
+    echo "<div class='sixteen columns add-bottom add-top'><hr><h2>$header_text</h2></div>";
   }
 
   // FILTERS

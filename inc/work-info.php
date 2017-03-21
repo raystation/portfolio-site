@@ -43,9 +43,9 @@ $works = array(
 	array( "name" => "Chronicles of Old&nbsp;Rome","path" => "chronicles-of-old-rome","tags"=>array("print-design")),
 	array( "name" => "The Rise of Darkrai","path" => "darkrai", "tags"=>array("print-design","ui-ux") ),
 	array( "name" => "Arceus and the Jewel of&nbsp;Life","path" => "arceus", "tags"=>array("print-design","ui-ux") ),
-	array( "name" => "Pok&eacute;mon: Toys 'R' Us Feature Shop", "path" => "feature-shop", "tags"=>array("print-design") ),
+	array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop", "path" => "feature-shop", "tags"=>array("print-design") ),
 	array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos", "tags"=>array("print-design","branding") ),
-	array( "name" => "Pok&eacute;mon 10th Anniversary","path" => "10th-anniversary","tags"=>array("print-design","branding") ),
+	array( "name" => "Pok&eacute;mon: 10th Anniversary","path" => "10th-anniversary","tags"=>array("print-design","branding") ),
 	array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon", "tags"=>array("print-design") ),
 	array( "name" => "Battle Revolution", "path" => "battle-revolution", "tags"=>array("print-design","ui-ux") ),
 	array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex", "tags"=>array("print-design") ),
@@ -86,9 +86,9 @@ function get_pokemon_projects(){
 	$works = array(
 		array( "name" => "The Rise of Darkrai","path" => "darkrai" ),
 		array( "name" => "Arceus and the Jewel of&nbsp;Life","path" => "arceus" ),
-		array( "name" => "Pok&eacute;mon: Toys 'R' Us Feature Shop", "path" => "feature-shop" ),
+		array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop", "path" => "feature-shop" ),
 		array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos" ),
-		array( "name" => "Pok&eacute;mon 10th Anniversary","path" => "10th-anniversary" ),
+		array( "name" => "Pok&eacute;mon: 10th Anniversary","path" => "10th-anniversary" ),
 		array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon" ),
 		array( "name" => "Battle Revolution", "path" => "battle-revolution" ),
 		array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex" ),
@@ -1073,7 +1073,7 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>55),
-		array("skill"=>"Hand-drawn&nbsp;illustrations", "percent"=>30),
+		array("skill"=>"Hand&#8209;drawn&nbsp;illustrations", "percent"=>30),
 		array("skill"=>"Indesign", "percent"=>10),
 		array("skill"=>"Illustrator", "percent"=>5),
 	);
@@ -1529,7 +1529,7 @@ if ( $title == "Wired" ) {
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>70),
-		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>20),
+		array("skill"=>"Hand&#8209;drawn&nbsp;illustrations", "percent"=>20),
 		array("skill"=>"Photoshop", "percent"=>10),
 	);
 
@@ -1693,8 +1693,8 @@ if ( $title == "#Inktober2016" ) {
 
 function get_nextlesson_projects(){
 	$works = array(
-		array( "name" => "NextLesson Lesson/Project Covers", "path" => "nextlesson-covers" ),
-		array( "name" => "NextLesson Marketing", "path" => "nextlesson-marketing" ),
+		array( "name" => "NextLesson Lesson Covers", "path" => "nextlesson-covers" ),
+		// array( "name" => "NextLesson Marketing", "path" => "nextlesson-marketing" ),
 		array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid" ),
 		array( "name" => "NextLesson Glossary Terms", "path" => "nextlesson-glossary" ),
 		array( "name" => "NextLesson Characters", "path" => "nextlesson-characters" ),
