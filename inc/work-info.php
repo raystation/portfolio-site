@@ -18,7 +18,7 @@ $works = array(
 	array( "name" => "Wired", "path" => "wired", "tags" => array("illustration") ),
 	array( "name" => "Abriendo Puertas / Opening&nbsp;Doors", "path" => "abriendo-puertas",	"tags"=>array("web-dev","branding") ),
 	array( "name" => "Color Chameleon", "path" => "color-chameleon", "tags" => array("illustration","ui-ux") ),
-	array( "name" => "Adelle Marcero Portfolio Site", "path" => "adelle-marcero","tags"=>array("web-dev", "ui-ux") ),
+	array( "name" => "Adelle Marcero", "path" => "adelle-marcero","tags"=>array("web-dev", "ui-ux") ),
 	array( "name" => "LesConcierges","path" => "lesconcierges", "tags" => array("illustration") ),
 	array( "name" => "Museyon Guides", "path" => "museyon-guides", "tags"=>array("places-i-worked") ),
 	array( "name" => "Project Animore", "path" => "project-animore", "tags" => array("illustration","ui-ux") ),
