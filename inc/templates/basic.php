@@ -84,9 +84,9 @@ if ( !is_null($path) ) {
 	if ( isset($auto_slideshow) ) {
 		$additional_img_html = get_slider_html( $path );
 	} elseif ( file_exists("$path/additional_img") ) {
-		if ( !isset($additional_img_column_count) ) {
-			$additional_img_column_count = 2;
-		}
+		// if ( !isset($additional_img_column_count) ) {
+		// 	$additional_img_column_count = 2;
+		// }
 		// $additional_img_html = skeleton_html($additional_img_column_count,$path,$folder="additional_img");
 		$additional_img_html = flex_tiles($thumbnail_size,$path,$folder="additional_img");
 	} else {

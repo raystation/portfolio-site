@@ -677,6 +677,24 @@ function get_quick_intro(){
 function flex_tiles($thumbnail_size="medium",$path,$folder="additional_img") {
   $content = "";
   $imgs = get_files("$path/$folder");
+
+  if ($thumbnail_size="variable-height") {
+    foreach ($imgs as $key => $img){
+      $title = get_title($img);
+      $content.="<img src='img/thumb-default.jpg' data-src='$path/$folder/$img' alt='$title'>";
+    }
+    return "
+      </div>
+      </div>
+      <div class='variable-height'>
+        $content
+      </div>
+      <div class='container'>
+      <div class='sixteen columns'>
+    ";
+
+  }
+
   foreach ($imgs as $key => $img ) {
     $title = get_title($img);
     $content .= "

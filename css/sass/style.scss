@@ -619,6 +619,22 @@ ul.tags {
 		// @media (min-width: 1400px) {width: calc(100%/4);}
 	}
 }
+.variable-height {
+	img {
+		width:100%;
+		margin: 0 5px 5px 5px;
+	}
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	line-height: 0;
+	width: 100%;
+	column-count: 2;
+	// column-width: auto;
+	column-gap: 0;
+	@media (min-width: 500px) {column-count: 3;}
+	@media (min-width: 1440px) {column-count: 4;}
+}
 .flex-container {
 	width: 100%;
 	max-width: 1440px;

@@ -1669,7 +1669,8 @@ if ( $title == "#Inktober2016" ) {
 	// $template="art";
 	$path="img/inktober-2016";
 
-	$additional_img_column_count=1;
+	// $additional_img_column_count=1;
+	$thumbnail_size="variable-height";
 
 	$description="
 		All throughout October, I drew a picture everyday and posted it to Instagram and Twitter with the hashtag <a href='https://twitter.com/search?q=%23InkTober'>#Inktober</a>. Inktober is a drawing exercise occurs in October that my friend got me into. A bunch of people were posting images all over the world so it seems like fun!
