@@ -630,10 +630,16 @@ ul.tags {
 	line-height: 0;
 	width: 100%;
 	column-count: 2;
-	// column-width: auto;
+	-webkit-column-count: 2;
+	-ms-column-count: 2;
+	column-width: auto;
+	-webkit-column-width: auto;
+	-ms-column-width: auto;
 	column-gap: 0;
-	@media (min-width: 500px) {column-count: 3;}
-	@media (min-width: 1440px) {column-count: 4;}
+	-webkit-column-gap: 0;
+	-ms-column-gap: 0;
+	@media (min-width: 500px) {column-count: 3; -webkit-column-count: 3; -ms-column-count: 3;}
+	@media (min-width: 1440px) {column-count: 4; -webkit-column-count: 4; -ms-column-count: 4;}
 }
 .flex-container {
 	width: 100%;
