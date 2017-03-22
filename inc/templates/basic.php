@@ -125,7 +125,7 @@ $page = "
 <div class='project-details sixteen columns'>
 	$img_slider_html
 	<h1>$title</h1>
-	<div class='twelve columns alpha intro'>
+	<div class='twelve columns alpha'>
 		<p>$description</p>
 	</div>
 	<div class='project-sidebar four columns omega caption'>

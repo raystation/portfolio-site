@@ -407,13 +407,14 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 .project-details {
 	h1.title { margin-top: 40px; }
 	img {width: 100%;}
+	p {max-width: 95%; }
 	.intro {
+		color: lighten($primary-color,10%);
+		font-weight: 900;
 		margin-bottom: 2em;
-		p {
-			// font-size: 120%;
-			line-height: 1.5em;
-			max-width: 95%;
-		}
+		font-size: 140%;
+		line-height: 1.5em;
+		max-width: 95%;
 	}
 	.project-sidebar {
 		// border-left: solid 1px black;
@@ -660,8 +661,8 @@ ul.tags {
 				li {
 					margin-bottom: 10px;
 					display: inline-block;
-					// margin-right: .75em;
-					background-color: red;
+					margin-right: .75em;
+					// background-color: red;
 					text-transform: uppercase;
 					// letter-spacing: 2px;
 					a:link, a:visited {

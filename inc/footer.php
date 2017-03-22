@@ -135,7 +135,8 @@ if ( !isset($id)) {
 	<script src="js/lightbox.min.js"></script>
 
 	<!-- headroom -->
-	<script src="js/headroom.min.js"></script>
+	<!-- <script src="js/headroom.min.js"></script> -->
+	<script src="js/jquery.tooltipster.min.js"></script>
 	<script src="js/jquery.unveil.js"></script>
 	<script>
 		// var myElement = document.querySelector("header");
@@ -148,17 +149,17 @@ if ( !isset($id)) {
 	</script>
 
 	<script>
+      $(document).ready(function() {
+          $('.tooltip').tooltipster({
+          	animation: 'fade',
+          	delay: 200
+          });
+      });
+	</script>
+	<script>
 		$(document).ready(function() {
 			$("img").unveil();
 		});
-	</script>
-	<script>
-        $(document).ready(function() {
-            $('.tooltip').tooltipster({
-            	animation: 'fade',
-            	delay: 200
-            });
-        });
 	</script>
 	<script src="js/job-details.js"></script>
 	<?php

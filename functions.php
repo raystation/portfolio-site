@@ -460,7 +460,7 @@ function skeleton_print_thumbnail_4(
   //adds project link if it's not the index page
   if ( isset($description) ) {
     // echo '<hr>'."\n";
-    echo "<div class='sixteen columns add-bottom'>&#11013; <a class='underline' href='work$id_html'>Back to all projects</a></div>";
+    echo "<div class='sixteen columns add-bottom'>&#11013; <a class='' href='work$id_html'>Back to all projects</a></div>";
   }
   echo "</div>";
 

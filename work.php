@@ -389,6 +389,8 @@ else {
 				} else {
 					// echo "$temp_title not added to array<br>";
 				}
+			} else {
+				break;
 			}
 			if ($i == count($works)-1 ) {
 				$i=0;
@@ -398,7 +400,6 @@ else {
 			if ($i==60) {
 				break;
 			}
-
 		}
 		skeleton_print_thumbnail_4($related_projects_by_tag,0,"Related Projects");
 

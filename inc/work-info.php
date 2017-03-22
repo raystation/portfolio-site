@@ -1267,7 +1267,7 @@ if ( $title == "Pok&eacute;mon: Toy Fair" ) {
 	$description="
 		The Pok&eacute;mon Booth at Toy Fair 2006, in addition to new opportunities in product development, was an opportunity to promote our 10th Anniversary and our U.S. mall tour.
 		$p_break
-		While Pok&eacute;mon still had a presence in the US, recognition had waned over time. Our strategy that year was to have every event support our 10th anniversary and build up to our <a href='10th-anniversary'>video game tournament</a> in New York City's Bryant Park.
+		While Pok&eacute;mon still had a presence in the US, recognition had waned over time. Our strategy that year was to have every event support our 10th Anniversary and build up to our <a href='10th-anniversary'>video game tournament</a> in New York City's Bryant Park.
 		$p_break
 		Working with a production company to produce the fixtures and graphics, we assembled the booth the day before the show started. The booth featured the <em>four pillars</em> of the Pok&eacute;mon brand—the video game, television show, movies and trading card game. We commissioned a special statue to be built which featured the new Pok&eacute;mon from the that year's movie release. The back-wall was composed of a time-line of key events and memorabilia in Pok&eacute;mon history leading up to the present.
 	";
@@ -1351,12 +1351,20 @@ if ( $title == "Pocket Pok&eacute;dex" ) {
 	$path="img/pocket-pokedex";
 	$company = "Pokemon";
 
-	// TODO: fill in missing Pokemon descriptions
-	$description="Coming soon.";
+	$description="
+	<span class='intro'>Challenge: To create a pocket reference guide to aid in collecting and training Pok&eacute;mon to compliment the Diamond and Pearl releases on the portable game system Nintendo DS.</span>
+	$p_break
+	To support the release of each core Pok&eacute;mon game, we published a strategy guide consisting of a walkthrough and Pok&eacute;dex. Every new game adds 100+ new Pok&eacute;mon so this book basically gets bigger every year. In order to successfully design this book, we identified what you would be doing and when you would be doing&nbsp;it.
+	$p_break
+	<img src='$path/pocket-pokedex-functions.png' alt='Pocket Pok&eacute;dex Functions' />
+	$p_break
+	Everything you do in the game is centered around two things—collecting and battling. At a minimum, we needed to cover these two activities or this book would just <span class='tooltip underline' title='For context, smartphones were in their infancy at this point.'>not be useful</span>. “Gotta catch ‘em all” is the mantra and consisting of <span class='tooltip underline' title='there are now 802!'>493 Pok&eacute;mon</span> (at the time), it’s not an easy undertaking. For battling, it was useful to know Pok&eacute;mon type weaknesses and move guides.
+	$p_break
+	In terms of the layout, we sorted by Pok&eacute;dex number. It’s not the most intuitive sorting for new comers, but we felt it made more sense. It matches up with the in-game Pok&eacute;dex and naturally reflects generations and evolution lines. We put the most important information on the outside margin for when you are skimming the pages. The National Pok&eacute;dex number doubled as a page number. Nice big picture of the Pok&eacute;mon. The Pok&eacute;mon type. We had some extra space so we included some extra information like size and egg groups. In the appendix, we included some more reference material and&nbsp;trivia.
+	";
 
 	$sidebar = "
 		Book Design <br />
-
 	";
 
 	$tools=array(
