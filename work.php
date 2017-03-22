@@ -356,7 +356,8 @@ else {
 			}
 			if (isset($current_project)) {unset($related_array[$current_project]);}
 			$related_array = array_values($related_array);
-			skeleton_print_thumbnail_4($related_array,4, "Related Projects");
+			shuffle($related_array);
+			skeleton_print_thumbnail_4($related_array,4, "Other $company Projects");
 		}
 	} else {
 		// PRINT RELATED PROJECTS BY TAG[4]
@@ -364,11 +365,43 @@ else {
 		// $tags = $works[$project]['tags'];
 		// var_dump($current_project_tags);
 		// echo "<br>";
-		// $related_projects_by_tag = array();
 
-		// $x=0; //step counter
-		// $project_count=4;
-		// $related_projects_count=0;
+
+		// searches for other projects just based on first tag, doesn't do the second.
+		$related_projects_by_tag = array();
+
+		$x=0; //step counter
+		$project_count=8;
+		$related_projects_count=1;
+		$tag_search=0;
+
+		$current_project_tag = $current_project_tags[0]; //the tags on the current project
+		for ($i=0;  $related_projects_count <= $project_count; $i++) {
+			$temp_title = $works[$i]["path"];
+
+			if ( isset($works[$i]['tags'][$tag_search]) ) {
+				$compare_project_tag = $works[$i]['tags'][$tag_search];
+
+				if ( $current_project_tag == $compare_project_tag && !in_array($compare_project_tag, $related_projects_by_tag) ) {
+					$related_projects_by_tag[] = $works[$i];
+					$related_projects_count++;
+					// echo "$temp_title added with tag: $current_project_tag<br>";
+				} else {
+					// echo "$temp_title not added to array<br>";
+				}
+			}
+			if ($i == count($works)-1 ) {
+				$i=0;
+				$tag_search++;
+			}
+			// SAFEGUARD
+			if ($i==60) {
+				break;
+			}
+
+		}
+		skeleton_print_thumbnail_4($related_projects_by_tag,0,"Related Projects");
+
 		// while ( $related_projects_count <= $project_count ) {
 		// 	$same_tags_array = array_intersect( $current_project_tags, $works[$x]["tags"] );
 
@@ -404,7 +437,7 @@ else {
 		// }
 
 		// PRINTS OUR 4 RECENT PROJECTS
-		skeleton_print_thumbnail_4($works,4);
+		// skeleton_print_thumbnail_4($works,4,"Recent Projects");
 	}
 }
 

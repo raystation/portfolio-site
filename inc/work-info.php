@@ -3,8 +3,8 @@ $p_break = "</p><p>";
 
 $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") ),
-	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("web-dev","illustration","ui-ux") ),
-	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("web-dev","illustration","ui-ux","branding") ),
+	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("ui-ux","illustration","web-dev") ),
+	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("illustration","ui-ux","branding","web-dev") ),
 	// array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing" ),
 	array( "name" => "NextLesson Glossary Images", "path" => "nextlesson-glossary", "tags"=>array("illustration") ),
 	array( "name" => "NextLesson Characters", "path" => "nextlesson-characters", "tags"=>array("illustration") ),
@@ -12,7 +12,7 @@ $works = array(
 	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars" ),
 	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library" ),
 	// array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-browse" ),
-	array( "name" => "The 3", "path" => "the3", "tags"=>array("illustration","ui-ux") ),
+	array( "name" => "The 3", "path" => "the3", "tags"=>array("ui-ux") ),
 	array( "name" => "Indiginauts", "path" => "indiginauts", "tags" => array("illustration","ui-ux") ),
 	array( "name" => "Pok&eacute;mon", "path" => "pokemon","tags"=>array("places-i-worked") ),
 	array( "name" => "Wired", "path" => "wired", "tags" => array("illustration") ),

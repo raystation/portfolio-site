@@ -650,15 +650,18 @@ ul.tags {
 		}
 		#nav {
 			.header-icon {
+				display: none;
 				height: 16px;
 				width: 16px;
+				@media (min-width: 400px) {display:inherit;}
 			}
 			ul {
 				padding: 0; margin: 0;
 				li {
 					margin-bottom: 10px;
 					display: inline-block;
-					margin-right: .75em;
+					// margin-right: .75em;
+					background-color: red;
 					text-transform: uppercase;
 					// letter-spacing: 2px;
 					a:link, a:visited {
