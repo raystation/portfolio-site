@@ -43,33 +43,14 @@ if ( !isset($id)) {
 	<footer id="footer">
 
 		<div class="container">
-
-			<div class="four columns add-bottom">
-				<ul>
-					<li><a href="./<? echo $id_html;?>">home</a>
-				</ul>
+			<div class='sixteen columns'>
+				<div class='flex-footer'>
+					<a href="./<? echo $id_html;?>">home</a>
+					<a href="work<? echo $id_html;?>">work</a>
+					<a href="about<? echo $id_html;?>">about</a>
+					<a href="mailto:rayuen@gmail.com?body=<? echo $email_text;?>&subject=<? echo $email_subject;?>">email</a>
+				</div>
 			</div>
-
-			<div class="four columns add-bottom">
-				<ul>
-					<li><a href="work<? echo $id_html;?>">work</a>
-				</ul>
-			</div>
-
-			<div class="four columns">
-				<ul>
-					<li><a href="about<? echo $id_html;?>">about</a>
-					<!--<li><a href="ringtones.php">ringtones</a>-->
-					<!-- <li><a href="jobs">jobs</a> -->
-				</ul>
-			</div>
-
-			<div class="four columns">
-				<ul>
-					<li><a href="mailto:rayuen@gmail.com?body=<? echo $email_text;?>&subject=<? echo $email_subject;?>">email</a>
-				</ul>
-			</div>
-
 
 			<div class="sixteen columns">
 				<hr>
