@@ -103,7 +103,10 @@ if (isset($section)) {
 
 	<header class="navband headroom">
 		<div class="header">
-			<div id="title"><a href="./">Ray Yuen</a></div>
+			<div id="title"><a href="./">
+			Ray Yuen
+			<!-- <img src="img/logo-rayuen.svg" style='height:30px;'> -->
+			</a></div>
 			<div id='nav'>
 				<ul>
 					<li><a class="<? echo $work_class;?>" href="work<? echo $id_html;?>">work</a>
