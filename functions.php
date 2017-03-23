@@ -784,6 +784,9 @@ function full_thumbnail($works,$number_of_thumbnails=99,$class=""){
     }
     // $tags_html = "";
   }
+  if (count($works) <= 10) {
+    $class="reduce-width";
+  }
   echo "
     </div>
     <div class='full-thumbnails $class'>

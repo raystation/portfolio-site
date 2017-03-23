@@ -36,6 +36,7 @@ $textbox-link-color: $textbox-text-color;
 $filter-color: #E1E8ED;
 
 // $footer-color: darken($bkg-color,4%);
+$header-color: #F8D31C;
 $footer-color: #262c30;
 // $footer-text-color: darken($footer-color,50%);
 $footer-text-color: #688a9e;
@@ -665,7 +666,7 @@ ul.tags {
 	// -ms-flex-wrap: wrap;
 }
 .navband {
-	background-color: $footer-color;
+	background-color: $header-color;
 	padding: 0; margin: 0;
 	padding: 10px 20px 0px 20px;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -677,7 +678,7 @@ ul.tags {
 		justify-content: space-between;
 		#title {
 			a:link, a:visited {
-				color: white;
+				color: black;
 				font-weight: 900;
 				// text-transform: uppercase;
 				font-size: 30px;
@@ -701,7 +702,7 @@ ul.tags {
 					// letter-spacing: 2px;
 					a:link, a:visited {
 						font-weight: 900;
-						color: white;
+						color: black;
 					}
 					&:last-of-type {
 						margin-right: 0;
