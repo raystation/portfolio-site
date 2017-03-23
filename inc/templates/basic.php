@@ -133,7 +133,7 @@ $page = "
 		<p>$sidebar</p>
 		$tools_html
 	</div>
-	$content
+	<div class='content'>$content</div>
 	$additional_img_html
 	$tags_html
 </div> <!-- end sixteen -->

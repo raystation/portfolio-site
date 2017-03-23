@@ -678,7 +678,7 @@ function flex_tiles($thumbnail_size="medium",$path,$folder="additional_img") {
   $content = "";
   $imgs = get_files("$path/$folder");
 
-  if ($thumbnail_size="variable-height") {
+  if ($thumbnail_size=="variable-height") {
     foreach ($imgs as $key => $img){
       $title = get_title($img);
       $content.="<img src='img/thumb-default.jpg' data-src='$path/$folder/$img' alt='$title'>";
@@ -692,7 +692,6 @@ function flex_tiles($thumbnail_size="medium",$path,$folder="additional_img") {
       <div class='container'>
       <div class='sixteen columns'>
     ";
-
   }
 
   foreach ($imgs as $key => $img ) {
@@ -730,4 +729,66 @@ function return_filtered_array_by_term( $array, $term ){
   } else {
     return $filtered_array;
   }
+}
+
+function full_thumbnail($works,$number_of_thumbnails=99,$class=""){
+  $content="";
+
+  // CHECKS FOR PROJECT ID AND FILTER
+  $id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+  $selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
+
+  // PASSES AN ID IF IT EXISTS
+  if ( isset($id) ) {
+    $id_html = "?id=$id";
+  } else {
+    $id_html="";
+  }
+
+  // FILTERS
+  // checks array for matching tags, if so, then it will push to a new array
+  $filtered_array="";
+  if ( isset($selected_filter) ) {
+    $works = return_filtered_array_by_term( $works, $selected_filter);
+  }
+
+  // PRINTS OUT THUMBNAILS
+  foreach ($works as $key => $work) {
+    $path = "img/".$work["path"];
+    $hd_thumb = check_for_img_format( $path , "thumb-hd");
+    if ($hd_thumb) {
+      $hd_thumb = "srcset='$hd_thumb 2x'";
+    }
+
+    $thumb = check_for_img_format( $path );
+    if ( $thumb==FALSE ) {
+      $thumb = "http://placehold.it/400x273&text=$work[name] thumbnail missing";
+    }
+
+    if (isset($id)) {
+      $project_path = "work?project=$work[path]&id=$id";
+    } else {
+      $project_path = $work['path'];
+    }
+
+    $content .= "
+      <div class='fl-thumb'>
+        <a href='$project_path'>
+          <div class='title'>$work[name]</div>
+          <img src='$thumb' $hd_thumb>
+        </a>
+      </div>
+    ";
+    if ($key == $number_of_thumbnails-1){
+      break;
+    }
+    // $tags_html = "";
+  }
+  echo "
+    </div>
+    <div class='full-thumbnails $class'>
+      $content
+    </div>
+    <div class='container'>
+  ";
 }

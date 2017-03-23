@@ -1523,9 +1523,10 @@ if ( $title == "Wired" ) {
 
 	$path="img/wired";
 
-	$description="Illustration for an \"advertorial\" for Norton in Wired Magazine. Norton wanted to show that in this digital life of ours, our precious, precious memories are all stored on our personal devices that can be lost or broken. For this adventuring family, the best solution is to use Norton services to back up your data.
+	$description="Illustration for a Norton \"advertorial\" in Wired Magazine. Norton wanted to show that in this digital life of ours, our precious, precious memories are all stored on our personal devices that can be lost or broken. For this adventuring family, the best solution is to use Norton services to back up your data.";
+	$content="
 	</p>
-		<img src='img/wired/family.jpg' class='scale-with-grid'>
+		<img src='img/wired/family.jpg' class='scale-with-grid photo-outline'>
 		<img src='img/wired/rejected-01.jpg' class='scale-with-grid'>
 	<p>
 	The first idea–dad taking an underwater portrait–was rejected. I actually didn't get a reason, but so I hustled with the other option of the family in a road-trip scenario.

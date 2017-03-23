@@ -147,6 +147,7 @@ a,a:visited {
 .remove-bottom 	{ margin-bottom: 0; }
 .remove-top 		{ margin-top: 0px; }
 .add-top 				{ margin-top: 100px !important; }
+.half-top 				{ margin-top: 40px !important; }
 .double-bottom	{ margin-bottom: 60px !important; }
 .nolist 				{ list-style: none; }
 .nowrap, .nobreak 				{ white-space: nowrap; }
@@ -581,6 +582,17 @@ ul.tags {
 		@include transition( all 0.25s);
 	}
 }
+.reduce-width {
+	max-width: 1000px;
+	.fl-thumb {
+		@media (min-width: 768px) {width: calc(100%/3);}
+		// @media (min-width: 1024px) {width: calc(100%/3);}
+		@media (min-width: 1400px) {width: calc(100%/3);}
+		.title {
+			font-size: 20px;
+		}
+	}
+}
 .fl-additional-img {
 	width: 100%;
 	max-width: 1440px;
@@ -626,7 +638,7 @@ ul.tags {
 	}
 	width: 100%;
 	max-width: 1440px;
-	margin: 0 auto;
+	padding: 0 auto;
 	line-height: 0;
 	width: 100%;
 	column-count: 2;
