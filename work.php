@@ -262,14 +262,13 @@ if ($id) {
 	}
 	$landing_page_nav = "
 		<div class='back-to-landing-page-menu'>
-			<div class='container'>
-				<div class='twelve columns'>
-					<strong>Highlighted Projects for $hiring_company:</strong> $sample_projects_html
+				<div class=''>
+					<strong>Highlighted Projects for $hiring_company:</strong>
+					$sample_projects_html
 				</div>
-				<div class='four columns' style='text-align:right;'>
+				<div class='back-button-job'>
 					<a href='./hire-me?id=$id'>&#11013; back to job inquiry</a>
 				</div>
-			</div>
 		</div>
 	";
 } else {

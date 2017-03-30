@@ -24,7 +24,7 @@ $works = array(
 	array( "name" => "Project Animore", "path" => "project-animore", "tags" => array("illustration","ui-ux") ),
 	array( "name" => "#Inktober2016","path" => "inktober-2016", "tags" => array("illustration") ),
 	array( "name" => "100 Principles of Game Design", "path" => "100-principles-of-game-design", "tags" => array("illustration") ),
-	array( "name" => "Holiday Card 2014", "path" => "holiday-2014", "tags" => array("illustration") ),
+	array( "name" => "Holiday Card 2014", "path" => "holiday-2014", "tags" => array("web-dev","illustration") ),
 	array( "name" => "Monkey Mo, Monkey&nbsp;Go!", "path" => "monkey-mo", "tags" => array("illustration", "print-design") ),
 	array( "name" => "Scavenger Hunt", "path" => "scavenger-hunt", "tags" => array("illustration") ),
 	array( "name" => "Suspended Belief Studios", "path" => "suspended-belief-studios", "tags" => array("places-i-worked") ),

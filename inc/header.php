@@ -3,6 +3,7 @@ $meta_description="";
 $footer_add="";
 $work_class = "";
 $about_class = "";
+$extra_padding = "";
 
 require_once 'inc/work-info.php';
 require_once 'functions.php';
@@ -20,6 +21,9 @@ if (isset($section)) {
 	}
 	if ($section=="about") {
 		$about_class="active";
+	}
+	if ( $section=="work" && $id ) {
+		$extra_padding = "style='padding-top: 45px'";
 	}
 }
 
@@ -83,7 +87,7 @@ if (isset($section)) {
 
 </head>
 
-<body>
+<body <? echo $extra_padding;?>>
 
 	<!-- Primary Page Layout
 	================================================== -->

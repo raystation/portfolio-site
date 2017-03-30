@@ -46,6 +46,7 @@ $line-height: 1.45em;
 $caption-font-size: 11pt;
 // $body-font: "Arvo";
 $body-font: "Circular";
+$system-fonts: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 
 $desktop-large: "only screen and (min-width: 960px)";
 $desktop: "only screen and (max-width: 959px)";
@@ -81,7 +82,6 @@ $mobile-portrait: "only screen and (max-width: 479px)";
 ================================================== */
 
 * { @include box-sizing(border-box); }
-
 
 body, html { width: 100%; }
 body {
@@ -315,25 +315,15 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 
 // INDEX
 // ======================================
-
-.index-text {
-	li {
-		// font-size: 16pt;
-		font-weight: 100;
-		max-width: 32em;
-		line-height: 1.75em;
-	}
-}
-
 .textbox {
 	max-width: 95%;
+	font-size: 30px;
+	margin-top: 120px;
 	h1 {
 		font-size: 45px;
-		margin-top: 120px;
 		line-height: 1.35em;
 		font-weight: 400 !important;
 		text-transform: inherit;
-		// color: $textbox-text-color;
 		color: $txt-color;
 		a:link, a:visited {
 			color: $textbox-link-color;
@@ -342,33 +332,31 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	}
 	p {
 		color: lighten($txt-color,30%);
-		font-size: 30px;
 		line-height: 1.35em;
-		// color: darken($textbox-color,45%);
-		// padding: 2em 3em;
-		// background-color: $textbox-color;
 		a:link, a:visited {
 			color: darken($textbox-color,45%);
 			@extend .underline;
 		}
 	}
-
-	@media #{$mobile} {
+	@media #{$tablet-portrait} {
 		line-height: $line-height;
-		padding: 0;
+		// padding: 0;
 		background-color: transparent;
 		color: $txt-color;
+		font-size: 25px;
 		h1 {
-			font-size: $font-size*1.5;
+			// font-size: 35px;
 			color: $txt-color;
-		}
-		p {
-			font-size: $font-size;
 		}
 		a:link, a:visited {
 			color: $link-color;
 		}
 	}
+	@media #{$mobile} {
+		font-size: $font-size;
+		margin-top: 30px;
+	}
+
 }
 
 .index-right-column {
@@ -463,12 +451,14 @@ ul.tags {
 }
 .back-to-landing-page-menu {
 	position: fixed;
+	display: flex;
+	justify-content: space-between;
 	left: 0;
-	bottom: 0;
+	top: 0;
 	width: 100%;
 	background-color: darken($link-color,10%);
-	z-index: 10;
-	padding: 8px 0 12px 0;
+	z-index: 11;
+	padding: 55px 20px 8px 20px;
 	line-height: 1.25em;
 	font-size: 90%;
 	color: white;
@@ -492,11 +482,19 @@ ul.tags {
 		color: white !important;
 		@include underline(2px);
 	}
-	.x-button {
-		// float: right;
-		position: absolute;
-		right: 10px;
-		bottom: 5px;
+	// .x-button {
+	// 	// float: right;
+	// 	position: absolute;
+	// 	right: 10px;
+	// 	bottom: 5px;
+	// }
+	@media #{$mobile} {
+		font-size: 15px;
+		flex-direction: column;
+		align-items: center;
+		.back-button-job {
+			margin-top: 5px;
+		}
 	}
 }
 
@@ -539,7 +537,7 @@ ul.tags {
 	width: 100%;
 	// max-width: 1440px;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 10px;
 	.fl-thumb {
 		width: 50%;
 		position: relative;
@@ -550,7 +548,7 @@ ul.tags {
 		font-size: 0;
 		margin-bottom: -2px;
 		@media (min-width: 768px) {width: calc(100%/3);}
-		@media (min-width: 1024px) {width: calc(100%/4);}
+		@media (min-width: 1024px) {width: calc(100%/4); padding: 0;}
 		@media (min-width: 1400px) {width: calc(100%/5);}
 		@include transition( all 0.25s);
 		.title {
@@ -1218,7 +1216,7 @@ ul.tags {
 		a:link, a:visited {
 			font-size: 16px;
 			@media (min-width: 500px) {
-				font-size: 25px;
+				font-size: 20px;
 			}
 			// @media (min-width: 1400px) {width: calc(100%/5);}
 		}

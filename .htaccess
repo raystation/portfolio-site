@@ -99,5 +99,7 @@ RewriteRule ^medium-senior-visual-designer$ hire-me?id=medium-senior-visual-desi
 RewriteRule ^merrill-morris-partners$ hire-me?id=merrill-morris-partners
 RewriteRule ^github-graphic-designer$ hire-me?id=github-graphic-designer
 RewriteRule ^ideo-production-designer$ hire-me?id=ideo-production-designer
+RewriteRule ^udemy-visual-designer$ hire-me?id=udemy-visual-designer
+RewriteRule ^studyblue-visual-designer$ hire-me?id=studyblue-visual-designer
 
 RewriteRule ^holiday2014$ http://www.rayuen.com/p/holiday-card/holiday
