@@ -107,19 +107,15 @@ if (isset($section)) {
 
 	<header class="navband headroom">
 		<div class="header">
-			<div id="title"><a href="./">
-			Ray Yuen
-			<!-- <img src="img/logo-rayuen.svg" style='height:30px;'> -->
-			</a></div>
+			<div id="title">
+				<a href="./">Ray Yuen <!-- <img src="img/logo-rayuen.svg" style='height:30px;'> --></a>
+			</div>
 			<div id='nav'>
-				<ul>
-					<li><a class="<? echo $work_class;?>" href="work<? echo $id_html;?>">work</a>
-					<li style='margin-right:15px;'><a class="<? echo $about_class;?>" href="about<? echo $id_html;?>">about</a>
-					<li><a href="mailto:rayuen@gmail.com"><img class='header-icon' src="img/icon/email.svg"></a>
-					<li><a href="http://www.linkedin.com/in/rayuen" target='_blank'><img class='header-icon' src="img/icon/linkedin.svg"></a>
-					<li><a href="https://dribbble.com/raystation" target='_blank'><img class='header-icon' src="img/icon/dribbble.svg"></a>
-					<!--<li><img class='header-icon' src="img/icon/twitter.svg">-->
-				</ul>
+				<div class='nav-item'><a class="<? echo $work_class;?>" href="work<? echo $id_html;?>">work</a></div>
+				<div class='nav-item'><a class="<? echo $about_class;?>" href="about<? echo $id_html;?>">about</a></div>
+				<div class='nav-item header-icon'><a href="mailto:rayuen@gmail.com"><img src="img/icon/email.svg"></a></div>
+				<div class='nav-item header-icon'><a href="http://www.linkedin.com/in/rayuen" target='_blank'><img src="img/icon/linkedin.svg"></a></div>
+				<div class='nav-item header-icon'><a href="https://dribbble.com/raystation" target='_blank'><img src="img/icon/dribbble.svg"></a></div>
 			</div>
 		</div>
 	</header>
