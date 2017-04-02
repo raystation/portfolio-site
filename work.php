@@ -321,8 +321,10 @@ if ( isset($project) ) {
 if ( !isset($template) ) {
 	// DEFAULT VIEW
 	echo "
-		<div class='sixteen columns filters'>
-			<ul>$filter_list_html</ul>
+		<div class='desltop-large desktop'>
+			<div class='filters'>
+				$filter_list_html
+			</div>
 		</div>
 	";
 	// echo "// <div class='sixteen columns'> // 	<h2>Selected Works</h2> // </div>";
@@ -466,9 +468,9 @@ function get_filter_list_html( $selected_filter ){
 
 	// sets ALL
 	if ($selected_filter=="") {
-		$html.="<li class='active'><a href='work$id_html'>All</a>";
+		$html.="<div class='filter-item active'><a href='work$id_html'>All</a></div>";
 	} else {
-		$html.="<li><a href='work$id_html'>All</a>";
+		$html.="<div class='filter-item'><a href='work$id_html'>All</a></div>";
 	}
 
 	$id_html = !is_null($id) ? "&id=$id" : "";
@@ -476,15 +478,15 @@ function get_filter_list_html( $selected_filter ){
 		if ( $selected_filter == $filter['url'] ) {
 			$class="class='active'";
 			if (!is_null($id)) {
-				$html.="<li class='active'><a href='work.php?$id_html'>&times; $filter[skill]</a>";
+				$html.="<div class='filter-item active'><a href='work.php?$id_html'>&times; $filter[skill]</a></div>";
 			} else {
-				$html.="<li class='active'><a href='work'>&times; $filter[skill]</a>";
+				$html.="<div class='filter-item active'><a href='work'>&times; $filter[skill]</a></div>";
 			}
 		} else {
 			if ( isset($id) ) {
-				$html.="<li><a href='work.php?f=$filter[url]$id_html'>$filter[skill]</a>";
+				$html.="<div class='filter-item'><a href='work.php?f=$filter[url]$id_html'>$filter[skill]</a></div>";
 			} else {
-				$html.="<li><a href='$filter[url]'>$filter[skill]</a>";
+				$html.="<div class='filter-item'><a href='$filter[url]'>$filter[skill]</a></div>";
 			}
 		}
 	}
