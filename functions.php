@@ -280,7 +280,7 @@ function print_skill_html(){
   echo '</div>';
 }
 
-function get_skill_html( $tools ){
+function get_skill_html_bk( $tools ){
   $content = "";
   include_once "inc/lists.php";
   if ( isset($tools) ) {
@@ -292,6 +292,23 @@ function get_skill_html( $tools ){
     return FALSE;
   }
   $html = "<div class='chart'>$content</div>";
+  return $html;
+}
+
+function get_skill_html( $tools ){
+  $content = "";
+  include_once "inc/lists.php";
+  if ( isset($tools) ) {
+    foreach ( $tools as $tool) {
+      $content .= "
+        <li>$tool[skill]
+      ";
+    }
+  }
+  else {
+    return FALSE;
+  }
+  $html = "<ul class='tags'>$content</ul>";
   return $html;
 }
 

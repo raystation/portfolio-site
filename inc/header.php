@@ -23,7 +23,7 @@ if (isset($section)) {
 		$about_class="active";
 	}
 	if ( $section=="work" && $id ) {
-		$extra_padding = "style='padding-top: 45px'";
+		$extra_padding = "class='subhead-padding'";
 	}
 }
 

@@ -439,9 +439,9 @@ else {
 	}
 }
 
-echo $landing_page_nav;
 
 include('inc/footer.php');
+echo $landing_page_nav;
 
 // ========================
 

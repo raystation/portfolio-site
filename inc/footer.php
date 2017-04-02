@@ -85,7 +85,7 @@ if ( !isset($id)) {
 			  lazyLoad: 'progressive',
 			  autoplay: true,
 			  autoplaySpeed: 4500,
-			  arrows: true,
+			  arrows: false,
 			  dots: true
 			});
 			$('.slick-index').slick({
