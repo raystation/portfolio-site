@@ -104,7 +104,6 @@ switch ( $id ) {
 		break;
 
 	case '523':
-		$company="Room to Read";
 		$hiring_company="Room to Read";
 		$jobTitle="Graphic Designer";
 		$name="Hiring Manager";
@@ -130,7 +129,6 @@ switch ( $id ) {
 
 
 case '090':
-		$company="Williams-Sonoma, Inc.";
 		$hiring_company="Williams-Sonoma, Inc.";
 		$jobTitle="Graphic Designer";
 		$name="Sandra Young";
@@ -155,7 +153,6 @@ case '090':
 		break;
 
 case '431':
-		$company="Twitch";
 		$hiring_company="Twitch";
 		$jobTitle="Brand Designer";
 		$name;
@@ -175,7 +172,6 @@ case '431':
 			I have over <a href=\"resume#history\">8+ years</a> working in design and marketing. I come from a print-production background, more recently delving into web design/production. At Pok&eacute;mon, I worked as part of a small team of three, supporting the various departments with their needs. In addition to enforcing the brand standards and guidelines, we worked on a variety of projects including toy packaging, video-game launches, brand standard guides for licensees, strategy guide localization, in-store branding, mini-movie websites...just to name a few.
 		</p>
 		<p>
-		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. Programming is a bit of a hobby of mine—I am extremely comfortable with HTML/CSS and am actively learning other web languages, like Javascript/jQuery, PHP and Ruby on Rails. I am also highly skilled in <a href=\"monkey-mo\">drawing</a>.
 		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. Programming is a vdasdasddasdasDasdasDAbit of a hobby of mine—I am extremely comfortable with HTML/CSS and am actively learning other web languages, like Javascript/jQuery, PHP and Ruby on Rails. I am also highly skilled in <a href=\"monkey-mo\">drawing</a>.
 		</p>
 
@@ -193,7 +189,6 @@ case '431':
 		break;
 
 case '360':
-		$company="Guidebook";
 		$hiring_company="Guidebook";
 		$jobTitle="Designer";
 		$name;
@@ -226,7 +221,6 @@ case '360':
 		break;
 
 case '101':
-		$company="Academia.edu";
 		$hiring_company="Academia.edu";
 		$jobTitle="Designer";
 		$name="Richard Price";
@@ -262,7 +256,6 @@ case '101':
 		break;
 
 case '510':
-		$company="Big Fish";
 		$hiring_company="Big Fish";
 		$jobTitle="Graphic Designer II";
 		$name="Anna Galgana";
@@ -376,7 +369,6 @@ case '510':
 		break;
 
 case '212':
-		$company="Crunchyroll";
 		$hiring_company="Crunchyroll";
 		$jobTitle="Visual Designer";
 		$name;
@@ -450,7 +442,6 @@ case '212':
 		break;
 
 	case '415':
-	$company="Toca Boca";
 	$hiring_company="Toca Boca";
 	$jobTitle="Designer";
 	$name="Kalle Hellzen";
@@ -489,7 +480,6 @@ case '212':
 	break;
 
 	case '88':
-	$company="YMCA of San Francisco";
 	$hiring_company="YMCA of San Francisco";
 	$jobTitle="Graphics Design Associate";
 	$name;
@@ -523,7 +513,6 @@ case '212':
 	break;
 
 	case '404':
-	$company="Code for America";
 	$hiring_company="Code for America";
 	$jobTitle="Visual Designer";
 	$name;
@@ -555,7 +544,6 @@ case '212':
 	break;
 
 	case '102':
-	$company="Education Superhighway";
 	$hiring_company="Education Superhighway";
 	$jobTitle="Graphic Designer";
 	$name;
@@ -587,7 +575,6 @@ case '212':
 	break;
 
 	case '911':
-	$company="San Francisco Public Press";
 	$hiring_company="San Francisco Public Press";
 	$jobTitle="Print Designer";
 	$name="Michael Stoll";
@@ -619,7 +606,6 @@ case '212':
 	break;
 
 	case '314':
-	$company="<a href='http://www.funplus.com' target='_blank'>FunPlus</a>";
 	$hiring_company="<a href='http://www.funplus.com' target='_blank'>FunPlus</a>";
 	$jobTitle="Game Designer - Content & Quests";
 	$logo="http://www.funplus.com/logo.png";
@@ -687,7 +673,6 @@ case '212':
 	break;
 
 	case '002':
-	$company="Chronicle Books";
 	$hiring_company="Chronicle Books";
 	$jobTitle="Junior Production Designer";
 	$logo="http://www.chroniclebooks.com/skin/frontend/enterprise/cbooks/images/logo.gif";
@@ -718,7 +703,6 @@ case '212':
 	break;
 
 	case '480px':
-	$company="Moboom";
 	$hiring_company="Moboom";
 	$jobTitle="Creative Director";
 	$logo="https://my.zartis.com/Settings/ShowLogo/401";
@@ -755,7 +739,6 @@ case '212':
 
 
 	case 'O2B':
-	$company="airbnb";
 	$hiring_company="airbnb";
 	$jobTitle="Digital&nbsp;Marketing Designer";
 	$logo="http://www.google.com/tagmanager/images/airbnb-logo.png";
@@ -791,7 +774,6 @@ case '212':
 	break;
 
 	case '789':
-	$company="Zipongo";
 	$hiring_company="Zipongo";
 	$jobTitle="Sr. Designer / Creative&nbsp;Director";
 	$logo="http://blog2.zipongo.com/wp-content/themes/zipongo/images/logo.svg";
@@ -828,7 +810,6 @@ case '212':
 
 
 	case 'C02b':
-	$company="airbnb";
 	$hiring_company="airbnb";
 	$jobTitle="Production Designer";
 	$logo="http://www.google.com/tagmanager/images/airbnb-logo.png";
@@ -865,7 +846,6 @@ case '212':
 
 
 	case '9112':
-	$company="CEP America";
 	$hiring_company="CEP America";
 	$jobTitle="Corporate Graphic Designer";
 	$logo="http://www.cep.com/Portals/0/cep-logo.png";
@@ -902,7 +882,6 @@ case '212':
 	break;
 
 	case '582':
-	$company="Triple Aught Design";
 	$hiring_company="Triple Aught Design";
 	$jobTitle="Graphic Designer & 2-D Artist";
 	$logo="https://assets.tripleaughtdesign.com/static/images/TAD-logotype-2x.png";
@@ -931,7 +910,6 @@ case '212':
 	break;
 
 	case '809':
-	$company="Bonhams";
 	$hiring_company="Bonhams";
 	$jobTitle="Production&nbsp;Artist / Proposal&nbsp;Coordinator";
 	$logo="http://www.bonhams.com/media/images/bonhams.png";
@@ -960,7 +938,6 @@ case '212':
 	break;
 
 	case '350':
-	$company="Playworks";
 	$hiring_company="Playworks";
 	$jobTitle="Graphic Designer-Web Production Manager";
 	$logo="https://evbdn.eventbrite.com/s3-s3/eventlogos/14851049/playworkslogo.jpg";
@@ -987,7 +964,6 @@ case '212':
 	break;
 
 	case '099':
-	$company="Astro gaming";
 	$hiring_company="Astro gaming";
 	$jobTitle="Lead Graphic Designer";
 	$logo="http://fathersongaming.tv/templates/default/assets/images/astro-logo.jpeg";
@@ -1015,7 +991,6 @@ case '212':
 	break;
 
 	case '191':
-	$company="FILTER";
 	$hiring_company="FILTER";
 	$jobTitle="Graphic Designer";
 	$logo="http://filterdigital.com/Sitefinity/WebsiteTemplates/Filter/App_Themes/FilterDigital/Images/Logos/filterLogo.png";
@@ -1042,7 +1017,6 @@ case '212':
 	break;
 
 	case 'viz':
-	$company="VIZ Media";
 	$hiring_company="VIZ Media";
 	$jobTitle="Designer – Digital Marketing";
 	$logo="http://majorspoilers.com/wp-content/uploads/2014/03/VIZ-Media-logo-post.jpg";
@@ -1140,7 +1114,6 @@ break;
 
 case 'church':
 	$jobTitle="PT associate / independent&nbsp;contractor";
-	$company="anon";
 	$hiring_company="anon";
 	$date="June 21, 2014";
 	$email='v7g8q-4530327344@job.craigslist.org';
@@ -1191,7 +1164,6 @@ case 'church':
 
 	case 'ad101':
 		$jobTitle="Mid-level Designer";
-		$company="Adworkshop Inc";
 		$hiring_company="Adworkshop Inc";
 		$date="June 21, 2014";
 		$logo="https://www.adworkshop.com/sites/all/themes/adworkshop/i/logos/adworkshop-logo-black.svg";
@@ -1245,7 +1217,6 @@ case 'church':
 
 		case 'QTpi':
 		$jobTitle="Graphic Designer";
-		$company="Tea Collection";
 		$hiring_company="Tea Collection";
 		$email="jobs@teacollection.com";
 		$date="July 2, 2014";
@@ -1321,7 +1292,6 @@ case 'church':
 
 case 'ad101':
 		$jobTitle="Mid-level Designer";
-		$company="Adworkshop Inc";
 		$hiring_company="Adworkshop Inc";
 		$date="June 21, 2014";
 		$logo="https://www.adworkshop.com/sites/all/themes/adworkshop/i/logos/adworkshop-logo-black.svg";
@@ -1376,7 +1346,6 @@ case 'ad101':
 
 		case 'cas-1':
 		$jobTitle="Graphic Designer";
-		$company="California Academy of Sciences";
 		$hiring_company="California Academy of Sciences";
 		$date="July 3, 2014";
 		$logo="http://www.coroflot.com/user_files/job_employer_logos/442008_aI8WzpdQM6gSU5XlFAjCVuJA_.jpg";
@@ -1484,7 +1453,6 @@ case 'ad101':
 
 		case 'cm-2':
 		$jobTitle="Book Designer";
-		$company="Callisto Media";
 		$hiring_company="Callisto Media";
 		$date="July 3, 2014";
 		$email="jobs@callistomedia.com";
@@ -1550,7 +1518,6 @@ case 'ad101':
 		$originaljobposting="https://www.docusign.com/company/careers?jvi=ownaZfwM,Job";
 		$logo;
 		$jobTitle="Designer/Jr. Art Director";
-		$company="Docusign";
 		$hiring_company="Docusign";
 		$date="July 9, 2014";
 		$email;
@@ -1625,7 +1592,6 @@ case 'ad101':
 		$originaljobposting="http://www.opentable.com/careers/#alljobs?nl=1&jvi=osebZfwA,Job&jvs=Indeed&jvk=Job";
 		$logo="http://www.opentable.com/about/images/logos/opentable-hr-color.svg";
 		$jobTitle="Contract Brand Experience Designer";
-		$company="Opentable";
 		$hiring_company="Opentable";
 		$date="July 9, 2014";
 		$email;
@@ -1684,7 +1650,6 @@ case 'ad101':
 		$originaljobposting="http://www.indeed.com/viewjob?jk=4e588f8bd2da4858&tk=18se0pj841d7271o&from=recommendedjobs";
 		$logo="http://media.glassdoor.com/sqll/693529/anyperk-squarelogo-1380243933805.png";
 		$jobTitle="Designer";
-		$company="Anyperk";
 		$hiring_company="Anyperk";
 		$date="July 9, 2014";
 		$email="jobs@anyperk.com";
@@ -1719,7 +1684,6 @@ case 'ad101':
 		$originaljobposting="https://www.airbnb.com/jobs/departments/position/2276?gh_src=r5qfbo";
 		$logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/250px-Airbnb_Logo_B%C3%A9lo.svg.png";
 		$jobTitle="Production Designer";
-		$company="Airbnb";
 		$hiring_company="Airbnb";
 		$date="July 28, 2014";
 		$email;
@@ -1780,7 +1744,6 @@ case 'ad101':
 		$originaljobposting="http://boards.greenhouse.io/zenpayroll/jobs/8623#.U9anxoBdX_r";
 		$logo="https://s3.amazonaws.com/prod-heroku/greenhouse_job_boards/logos/000/000/284/resized/zenpayroll-logo-250x120.png";
 		$jobTitle="Designer";
-		$company="ZenPayroll";
 		$hiring_company="ZenPayroll";
 		$date="July 28, 2014";
 		$name="David Nguyen";
@@ -2008,7 +1971,6 @@ case 'ad101':
 		$originaljobposting="https://www.linkedin.com/jobs2/view/17656623?trk=job_view_similar_jobs";
 		$logo="https://media.licdn.com/media/p/6/005/06c/3f2/0ea81b5.png";
 		$jobTitle="Graphic Designer - Mobile";
-		$company="DeNA";
 		$hiring_company="DeNA";
 		$date="July 28, 2014";
 		$name="Anna Lam";
@@ -2067,7 +2029,6 @@ case 'ad101':
 		$originaljobposting="https://gymboree.tms.hrdepartment.com/jobs/8606/Senior-Web-Creative-DesignerSan-Francisco-CA";
 		$logo="https://gymboree.tms.hrdepartment.com/custom/media/GYM/images/2010redesign/colorthemes/orange/gymboree_logo01_orange.gif";
 		$jobTitle="Senior Web Creative Designer";
-		$company="Gymboree";
 		$hiring_company="Gymboree";
 		$date="July 28, 2014";
 		$name="Adriann Harrington";
@@ -2108,7 +2069,6 @@ case 'ad101':
 		$originaljobposting="https://relayrides.com/jobs/graphic-design";
 		$logo="https://d1pryd867v4xab.cloudfront.net/resources/img/logos/logo_large.v6.png";
 		$jobTitle="Graphic Designer";
-		$company="RelayRides";
 		$hiring_company="RelayRides";
 		$date="July 28, 2014";
 		$name;
@@ -2158,7 +2118,6 @@ case 'ad101':
 		$originaljobposting="https://rew22.ultipro.com/REV1004/JobBoard/JobDetails.aspx?__ID=*2CD07B4273B83F69&__jbsrc=950BE424-D07B-4CB9-88AC-2FE566617D17";
 		$logo="https://rew22.ultipro.com/REV1004/JobBoard/custom/skincustom/logo.png";
 		$jobTitle="Graphic Designer";
-		$company="Revolution Foods";
 		$hiring_company="Revolution Foods";
 		$date="July 28, 2014";
 		$name;
@@ -2191,7 +2150,6 @@ case 'ad101':
 		$originaljobposting="http://hire.jobvite.com/CompanyJobs/Careers.aspx?k=Job&c=q4a9Vfw2&j=oeeGYfwQ&s=Indeed";
 		$logo="http://hire.jobvite.com/logo/973_onemed_logo.png";
 		$jobTitle="Graphic Designer";
-		$company="One Medical Group";
 		$hiring_company="One Medical Group";
 		$date="July 28, 2014";
 		$name;
@@ -2224,7 +2182,6 @@ case 'ad101':
 		$originaljobposting="http://calacademy.snaphire.com/jobdetails?jobmc=13152MDBI";
 		$logo="http://upload.wikimedia.org/wikipedia/fr/6/6d/California_Academy_of_Sciences_-_Logo.png";
 		$jobTitle="Graphic Designer";
-		$company="California Academy of Sciences";
 		$hiring_company="California Academy of Sciences";
 		$date="July 29, 2014";
 		$name;
@@ -2295,7 +2252,6 @@ case 'ad101':
 		$originaljobposting="http://www.verticalresponse.com/about/jobs?nl=1&jvi=o7peZfwt%2CJob&jvs=Craigslist#jobs";
 		$logo="http://www.verticalresponse.com/sites/all/themes/bootstrap/VRLogoTag.2C.svg";
 		$jobTitle="Graphic Web Designer/Front End Web Developer";
-		$company="Verticalresponse";
 		$hiring_company="Verticalresponse";
 		$date="July 29, 2014";
 		$name;
@@ -2367,7 +2323,6 @@ case 'experiment':
 		$originaljobposting="https://experiment.com/jobs";
 		$logo="https://d3t9s8cdqyboc5.cloudfront.net/assets/logo-motion-596724ca10a0f28cbbc37ee954ae9aca.gif";
 		$jobTitle="Graphic Designer";
-		$company="Experiment";
 		$hiring_company="Experiment";
 		$date="August 2, 2014";
 		$name;
@@ -2402,7 +2357,6 @@ case 'experiment':
 		$originaljobposting="http://www.heyzap.com/jobs/49";
 		$logo="http://heyzap.com/images/navigation/heybar_logo.png";
 		$jobTitle="Designer";
-		$company="Heyzap";
 		$hiring_company="Heyzap";
 		$date="August 7, 2014";
 		$name;
@@ -2542,11 +2496,6 @@ case 'experiment':
 		$originaljobposting="http://www.indeed.com/viewjob?jk=5c6e855af4f69344&q=web+designer&l=San+Francisco,+CA&tk=18udfv5sv076h0sg&from=ja&alid=3a86d2ec9d8ca6dc&utm_source=jobseeker_emails&utm_medium=email&utm_campaign=job_alerts";
 		$logo="https://d2ouawgq7rgimz.cloudfront.net/press/thumb-Dropcam-logo-vert-rev.png";
 		$jobTitle="Web Designer";
-		$company="Dropcam";
-		$date="August 8, 2014";
-		$name;
-		$email;
-		$hiremepage = downcasespace("http://rayuen.com/hire-me?id=$company");
 		$hiring_company="Dropcam";
 		$date="August 8, 2014";
 		$name;
@@ -2600,7 +2549,6 @@ case 'experiment':
 	break;
 
 	case '9999':
-		$company="Kabam";
 		$hiring_company="Kabam";
 		$jobTitle="Visual Designer";
 		$logo="http://www.indeed.com/cmp/_s/logos/f984ad8d5222c019";
@@ -2771,11 +2719,6 @@ case 'experiment':
 		$originaljobposting="http://jobs.nextlesson.org/a/jbb/job-details/998594";
 		$logo="http://www.nextlesson.org/siteassets/img/prlogo4.png";
 		$jobTitle="Graphic Designer";
-		$company="Nextlesson";
-		$date="August 25, 2014";
-		$name="Kaila Carty";
-		$email="kaila@nextlesson.org";
-		$hiremepage = downcasespace("http://rayuen.com/hire-me?id=$company");
 		$hiring_company="Nextlesson";
 		$date="August 25, 2014";
 		$name="Kaila Carty";
@@ -2838,7 +2781,6 @@ case 'experiment':
 		$originaljobposting="https://www.google.com/about/careers/jobs#!t=jo&jid=/google/creative-lead-doodle-team-1600-amphitheatre-pkwy-mountain-view-ca-2277940017";
 		$logo="https://www.wired.com/wp-content/uploads/2015/09/google-logo-1200x630.jpg";
 		$jobTitle="Creative Lead, Doodle Team";
-		$company="Google / Doodle Team";
 		$hiring_company="Google / Doodle Team";
 		$date="January 24, 2017";
 		// $name="";
@@ -2975,7 +2917,6 @@ case 'experiment':
 	break;
 
 case 'duckduckmoose':
-		$company="Duck Duck Moose";
 		$hiring_company="Duck Duck Moose";
 		$originaljobposting="http://www.duckduckmoose.com/2d-artist-illustrator/";
 		$logo="http://www.duckduckmoose.com/duckduckmoose/wp-content/themes/ddm/images/ddm-logo.png";
@@ -3078,7 +3019,6 @@ case 'ixl-illustration-coordinator':
 		$originaljobposting="https://www.ixl.com/company/jobs?p=job%2FojtG4fwg";
 		$logo="http://grapesforlife.com/wp-content/uploads/2014/08/mzl.pptgpfrl-e1417376137299.png";
 		$jobTitle="Illustration Coordinator";
-		$company="IXL / Learning";
 		$hiring_company="IXL / Learning";
 		$date="January 26, 2017";
 		$name="Linda Vo";
@@ -3088,7 +3028,6 @@ case 'ixl-illustration-coordinator':
 		// $resume = "img/ray_yuen_resume.pdf";
 
 		$job_details="
-		<h1>$company</h1>
 		<h1>$hiring_company</h1>
 		<h2>$jobTitle</h2>
 		<p>IXL Learning, a leading edtech company with products used by 6 million students worldwide, is seeking an illustration coordinator to oversee the creation of fun and delightful visuals for our educational content. In this role, you will brainstorming creative ideas, iterate with a team of illustrators, and collaborate with our design and engineering teams on technical requirements. We find it immensely satisfying to develop products that impact the lives of millions of students around the globe, and we are eager to have you join our team.</p>
@@ -3195,7 +3134,6 @@ case 'ixl-illustration-coordinator':
 		$originaljobposting="https://www.quora.com/careers/staff_product_designer";
 		$logo="https://upload.wikimedia.org/wikipedia/commons/9/91/Quora_logo_2015.svg";
 		$jobTitle="Staff Product Designer";
-		$company="Quora";
 		$hiring_company="Quora";
 		$date="January 31, 2017";
 		// $name="";
@@ -3246,7 +3184,6 @@ case 'ixl-illustration-coordinator':
 	case "facebook-illustrator-designer-cultural-moments":
 		$short_name = "facebook-illustrator-designer-cultural-moments";
 		$originaljobposting="https://www.facebook.com/careers/jobs/a0I1200000JXv61EAD/";
-		$company="Facebook";
 		$hiring_company="Facebook";
 		$jobTitle="Illustrator/Designer - Cultural Moments";
 		$logo="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png";
@@ -3315,7 +3252,6 @@ case 'ixl-illustration-coordinator':
 	case "humble-bundle-senior-designer":
 		$short_name = "humble-bundle-senior-designer";
 		$originaljobposting="https://boards.greenhouse.io/humblebundle/jobs/58978?gh_src=p7budj";
-		$company="Humble Bundle";
 		$hiring_company="Humble Bundle";
 		$jobTitle="Senior Designer";
 		$date="February 21, 2017";
@@ -3367,7 +3303,6 @@ case 'ixl-illustration-coordinator':
 		$short_name = "facebook-illustrator-designer-messenger";
 
 		$originaljobposting="https://www.facebook.com/careers/jobs/a0I1200000JXv4nEAD/";
-		$company="Facebook";
 		$hiring_company="Facebook";
 		$jobTitle="Illustrator/Designer - Messenger";
 
@@ -3409,7 +3344,6 @@ case 'ixl-illustration-coordinator':
 	case "eventbrite-senior-designer-brand-communications":
 		$short_name = "eventbrite-senior-designer-brand-communications";
 		$originaljobposting="https://jobs.lever.co/eventbrite/6f6682cb-c452-4dd9-ad4e-b3ef9130dcdf";
-		$company="Eventbrite";
 		$hiring_company="Eventbrite";
 		$jobTitle="Senior Designer - Brand Communications";
 		$date="February 25, 2017";
@@ -3447,7 +3381,6 @@ case 'ixl-illustration-coordinator':
 	case "weebly-brand-designer":
 		$short_name = "weebly-brand-designer";
 		$originaljobposting="https://careers.weebly.com/job.html?gh_jid=78937&gh_src=73a14v1#78937";
-		$company="Weebly";
 		$hiring_company="Weebly";
 		$jobTitle="Brand Designer";
 		$date="February 25, 2017";
@@ -3484,7 +3417,6 @@ case 'ixl-illustration-coordinator':
 	case "12510":
 		$short_name = "minted-visual-interactive-designer";
 		$originaljobposting="http://jobs.jobvite.com/careers/minted/job/oFkL4fwy";
-		$company="Minted";
 		$hiring_company="Minted";
 		$jobTitle="Visual/Interactive Designer: Onsite/Holiday";
 		$date="February 25, 2017";
@@ -3526,7 +3458,6 @@ case 'ixl-illustration-coordinator':
 	case "opendoor-brand-designer":
 		$short_name = "opendoor-brand-designer";
 		$originaljobposting="http://jobs.jobvite.com/careers/minted/job/oFkL4fwy";
-		$company="Opendoor";
 		$hiring_company="Opendoor";
 		$jobTitle="Brand Designer";
 		$date="February 25, 2017";
@@ -3567,7 +3498,6 @@ case 'ixl-illustration-coordinator':
 	case "exploratorium-director-of-design":
 		$short_name = "exploratorium-director-of-design";
 		$originaljobposting="https://careers.weebly.com/job.html?gh_jid=78937&gh_src=73a14v1#78937";
-		$company="Exploratorium";
 		$hiring_company="Exploratorium";
 		$jobTitle="Director of Design";
 		$date="February 27, 2017";
@@ -3610,7 +3540,6 @@ case 'ixl-illustration-coordinator':
 	case "47398457894":
 		$short_name = "wrkshp-ui-ux-designer";
 		$originaljobposting="https://boards.greenhouse.io/3876393/jobs/575423";
-		$company="Wrkshp";
 		$hiring_company="Wrkshp";
 		$jobTitle="UI/UX Designer";
 		$date="February 27, 2017";
@@ -3650,7 +3579,6 @@ case 'ixl-illustration-coordinator':
 	case "asana-marketing-designer":
 		$short_name = "asana-marketing-designer";
 		$originaljobposting="https://asana.com/jobs/marketing-designer";
-		$company="Asana";
 		$hiring_company="Asana";
 		$jobTitle="Marketing Designer";
 		$date="February 28, 2017";
@@ -3688,7 +3616,6 @@ case 'ixl-illustration-coordinator':
 	case "afar-media":
 		$short_name = "afar-media";
 		$originaljobposting="https://asana.com/jobs/product-designer";
-		$company="AFAR Media";
 		$hiring_company="AFAR Media";
 		$jobTitle="UX/Visual Designer";
 		$date="February 27, 2017";
@@ -3727,7 +3654,6 @@ case 'ixl-illustration-coordinator':
 	case "medium-senior-visual-designer":
 		$short_name = "medium-senior-visual-designer";
 		$originaljobposting="https://medium.com/jobs-at-medium/senior-visual-designer-cc881858650d#.j24irwnu8";
-		$company="Medium";
 		$hiring_company="Medium";
 		$jobTitle="Senior Visual Designer";
 		$date="February 28, 2017";
@@ -3760,7 +3686,6 @@ case 'ixl-illustration-coordinator':
 	case "merrill-morris-partners":
 		$short_name = "merrill-morris-partners";
 		// $originaljobposting="https://medium.com/jobs-at-medium/senior-visual-designer-cc881858650d#.j24irwnu8";
-		$company="Merrill Morris Partners";
 		$hiring_company="Merrill Morris Partners";
 		$date="March 1, 2017";
 		$hiremepage = "http://rayuen.com/$short_name";
@@ -3799,7 +3724,6 @@ case 'ixl-illustration-coordinator':
 	case "github-graphic-designer":
 		$short_name = "github-graphic-designer";
 		$originaljobposting="https://boards.greenhouse.io/github/jobs/621188#.WL326xIrLBK";
-		$company="Github";
 		$hiring_company="Github";
 		$jobTitle="Graphic Designer";
 		$date="March 9, 2017";
@@ -3834,7 +3758,6 @@ case 'ixl-illustration-coordinator':
 	case "ideo-production-designer":
 		$short_name = "ideo-production-designer";
 		$originaljobposting="http://supercell.com/en/careers/graphic-designer/199/";
-		$company="IDEO";
 		$hiring_company="IDEO";
 		$jobTitle="Production Designer";
 		$date="March 16, 2017";
@@ -3907,7 +3830,7 @@ case 'ixl-illustration-coordinator':
 
 }
 
-//===
+// ========================
 // FUNCTIONS
 
 function get_project_thumbnail_details( $projects ){
