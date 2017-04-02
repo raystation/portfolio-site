@@ -177,6 +177,10 @@ hr {
 	background: url('../img/bg/dots.gif') repeat-x;
 	margin : 1em 0;
 }
+hr.separator {
+	margin: 30px 0;
+	width: 10%;
+}
 
 .img-band 		{ width: 100%; height: 30%; }
 
@@ -593,8 +597,10 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		max-width: 95%;
 	}
 	.project-sidebar {
+		margin-bottom: 1em;
 		p {
 			font-size: 70%;
+			margin-bottom: 0;
 			@media #{$md}{
 				font-size: $font-size*.85;
 				margin-bottom: 0.1em;
@@ -892,10 +898,6 @@ ul.tags {
 	}
 }
 .cover-letter {
-	hr.separator {
-		margin: 30px 0;
-		width: 10%;
-	}
 	h5 {
 		margin-top: 1em;
 	}

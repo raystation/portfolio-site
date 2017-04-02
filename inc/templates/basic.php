@@ -111,7 +111,6 @@ $tools_html = get_skill_html( $tools );
 if ($tools) {
 	$tools_html = "
 		<div class='list-spacing-fix'>
-			<hr>
 			<h6>Tools Used:</h6>
 			$tools_html
 		</div>
@@ -126,12 +125,19 @@ $page = "
 		$img_slider_html
 		<h1>$title</h1>
 		<div class='twelve columns alpha'>
+			<div class='mobile'>
+				<div class='project-sidebar four columns'>
+				$sidebar
+				</div>
+			</div>
 			<p>$description</p>
+			<div class='project-sidebar mobile'><hr class='resume' style='width:10%'>$tools_html</div>
 			<div class='content'>$content</div>
 		</div>
-		<div class='project-sidebar four columns omega caption'>
-			$sidebar
-			$tools_html
+		<div class='desktop'>
+			<div class='project-sidebar four columns omega'>
+				$sidebar
+			</div>
 		</div>
 		$additional_img_html
 		$tags_html
