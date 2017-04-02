@@ -131,8 +131,8 @@ $page = "
 				</div>
 			</div>
 			<p>$description</p>
-			<div class='project-sidebar mobile'><hr class='resume' style='width:10%'>$tools_html</div>
 			<div class='content'>$content</div>
+			<div class='project-sidebar mobile'><hr class='resume' style='width:10%'>$tools_html</div>
 		</div>
 		<div class='desktop'>
 			<div class='project-sidebar four columns omega'>

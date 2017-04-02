@@ -321,7 +321,7 @@ if ( isset($project) ) {
 if ( !isset($template) ) {
 	// DEFAULT VIEW
 	echo "
-		<div class='desltop-large desktop'>
+		<div class='desktop'>
 			<div class='filters'>
 				$filter_list_html
 			</div>

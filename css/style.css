@@ -1885,14 +1885,14 @@ img.scale-with-grid2, .portfolio img {
   top: 50%;
 }
 
-.underline, .textbox h1 a:link, .textbox h1 a:visited, .textbox p a:link, .textbox p a:visited, .resume .company ul li a:link, .resume .company ul li a:visited {
+.underline, .index-textbox h1 a:link, .index-textbox h1 a:visited, .index-textbox p a:link, .index-textbox p a:visited, .resume .company ul li a:link, .resume .company ul li a:visited {
   border-bottom: 3px solid rgba(70, 130, 180, 0.25);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out false;
   -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
 }
-.underline:hover, .textbox h1 a:hover:link, .textbox h1 a:hover:visited, .textbox p a:hover:link, .textbox p a:hover:visited, .resume .company ul li a:hover:link, .resume .company ul li a:hover:visited {
+.underline:hover, .index-textbox h1 a:hover:link, .index-textbox h1 a:hover:visited, .index-textbox p a:hover:link, .index-textbox p a:hover:visited, .resume .company ul li a:hover:link, .resume .company ul li a:hover:visited {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out false;
   -o-transition: all 0.25s ease-in-out false;
@@ -2074,46 +2074,45 @@ img.scale-with-grid2, .portfolio img {
   }
 }
 
-.textbox {
-  max-width: 95%;
-  font-size: 30px;
-  margin-top: 120px;
+.index-textbox {
+  font-size: 14pt;
+  margin-top: 30px;
 }
-.textbox h1 {
+.index-textbox h1 {
   font-size: 45px;
-  line-height: 1.35em;
   font-weight: 400 !important;
   text-transform: inherit;
   color: #4d4d4d;
+  margin-bottom: 30px;
 }
-.textbox h1 a:link, .textbox h1 a:visited {
+.index-textbox h1 a:link, .index-textbox h1 a:visited {
   color: white;
 }
-.textbox p {
+.index-textbox p {
   color: #999999;
-  line-height: 1.35em;
+  line-height: 1.5em;
 }
-.textbox p a:link, .textbox p a:visited {
+.index-textbox p a:link, .index-textbox p a:visited {
   color: #065f95;
 }
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .textbox {
-    line-height: 1.45em;
+@media only screen and (min-width: 767px) {
+  .index-textbox {
+    margin-top: 70px;
     background-color: transparent;
     color: #4d4d4d;
     font-size: 25px;
+    max-width: 90%;
   }
-  .textbox h1 {
+  .index-textbox h1 {
+    font-size: 65px;
     color: #4d4d4d;
   }
-  .textbox a:link, .textbox a:visited {
-    color: #0072ce;
+  .index-textbox p {
+    font-size: 25px;
+    max-width: 80%;
   }
-}
-@media only screen and (max-width: 767px) {
-  .textbox {
-    font-size: 14pt;
-    margin-top: 30px;
+  .index-textbox a:link, .index-textbox a:visited {
+    color: #0072ce;
   }
 }
 
@@ -2152,7 +2151,8 @@ img.scale-with-grid2, .portfolio img {
   width: 100%;
 }
 .project-details h1 {
-  font-size: 30px;
+  font-size: 40px;
+  line-height: 1.125em;
   margin-top: -20px;
 }
 @media only screen and (min-width: 767px) {
@@ -2298,7 +2298,7 @@ ul.tags li.active {
 }
 
 .subhead-padding {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 @media only screen and (min-width: 767px) {
   .subhead-padding {
@@ -2974,11 +2974,16 @@ ul.tags li.active {
   margin-top: 40px;
   width: 100%;
   background-color: #262c30;
-  padding: 2em 0 4em 0;
+  padding: 1em 0;
   color: #688a9e;
 }
+@media only screen and (min-width: 767px) {
+  #footer {
+    padding: 2em 0 4em 0;
+  }
+}
 #footer p, #footer ul {
-  font-size: smaller;
+  font-size: 70%;
   line-height: 1.75em;
   margin-bottom: 0.25em;
 }
@@ -3019,7 +3024,7 @@ ul.tags li.active {
 #footer .flex-footer a:link, #footer .flex-footer a:visited {
   font-size: 16px;
 }
-@media (min-width: 500px) {
+@media only screen and (min-width: 767px) {
   #footer .flex-footer a:link, #footer .flex-footer a:visited {
     font-size: 20px;
   }

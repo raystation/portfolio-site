@@ -475,16 +475,15 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 
 // INDEX
 // ======================================
-.textbox {
-	max-width: 95%;
-	font-size: 30px;
-	margin-top: 120px;
+.index-textbox {
+	font-size: $font-size;
+	margin-top: 30px;
 	h1 {
 		font-size: 45px;
-		line-height: 1.35em;
 		font-weight: 400 !important;
 		text-transform: inherit;
 		color: $txt-color;
+		margin-bottom: 30px;
 		a:link, a:visited {
 			color: $textbox-link-color;
 			@extend .underline;
@@ -492,31 +491,31 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	}
 	p {
 		color: lighten($txt-color,30%);
-		line-height: 1.35em;
+		line-height: 1.5em;
 		a:link, a:visited {
 			color: darken($textbox-color,45%);
 			@extend .underline;
 		}
 	}
-	@media #{$tablet-portrait} {
-		line-height: $line-height;
-		// padding: 0;
+	@media #{$md} {
+		// line-height: $line-height;
+		margin-top: 70px;
 		background-color: transparent;
 		color: $txt-color;
 		font-size: 25px;
+		max-width: 90%;
 		h1 {
-			// font-size: 35px;
+			font-size: 65px;
 			color: $txt-color;
+		}
+		p {
+			font-size: 25px;
+			max-width: 80%;
 		}
 		a:link, a:visited {
 			color: $link-color;
 		}
 	}
-	@media #{$mobile} {
-		font-size: $font-size;
-		margin-top: 30px;
-	}
-
 }
 
 .index-right-column {
@@ -557,7 +556,8 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 .project-details {
 	img {width: 100%;}
 	h1 {
-		font-size: 30px;
+		font-size: 40px;
+		line-height: 1.125em;
 		margin-top: -20px;
 		@media #{$md} {
 			font-size: 45px;
@@ -729,7 +729,7 @@ ul.tags {
 	// }
 }
 .subhead-padding {
-	padding-top: 10px;
+	padding-top: 30px;
 	@media #{$md}{
 		padding-top: 35px;
 	}
@@ -1324,10 +1324,13 @@ ul.tags {
 	margin-top: 40px;
 	width: 100%;
 	background-color: $footer-color;
-	padding: 2em 0 4em 0;
+	padding: 1em 0;
 	color: $footer-text-color;
+	@media #{$md}{
+		padding: 2em 0 4em 0;
+ 	}
 	p, & ul {
-		font-size: smaller;
+		font-size: 70%;
 		line-height: 1.75em;
 		margin-bottom: 0.25em;
 	}
@@ -1372,7 +1375,7 @@ ul.tags {
 		-webkit-justify-content: space-between;
 		a:link, a:visited {
 			font-size: 16px;
-			@media (min-width: 500px) {
+			@media #{$md} {
 				font-size: 20px;
 			}
 			// @media (min-width: 1400px) {width: calc(100%/5);}
