@@ -160,11 +160,12 @@
 /* Dots */
 
 .slick-slider {
-    margin-bottom: 50px;
+    margin-bottom: 2em;
 }
 .slick-dots {
     position: absolute;
-    bottom: -45px;
+    // bottom: -20px;
+    bottom: -10px;
     list-style: none;
     display: block;
     text-align: center;

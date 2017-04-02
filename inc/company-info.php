@@ -2,7 +2,7 @@
 
 $short_name = "";
 $originaljobposting="";
-$company="";
+$hiring_company="";
 $jobTitle="";
 $slider_img="";
 $date="";
@@ -22,8 +22,78 @@ require_once 'functions.php';
 
 switch ( $id ) {
 
+	//UDEMY-VISUAL-DESIGNER
+	case "udemy-visual-designer":
+		$short_name = "udemy-visual-designer";
+		$originaljobposting="https://boards.greenhouse.io/udemy/jobs/612179#app";
+		$hiring_company="Udemy";
+		$jobTitle="Senior Visual Designer, Brand Team";
+		$date="March 30, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+		// $slider_img = "jobs/$short_name.jpg";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "I found this role on Indeed and wanted to pass along my info. Having recently just left an education startup<span class='tooltip' title='and loving it!'>*</span>, I am looking to foster a situation with similiar qualities—team-collaboration, creativity, friendship, and excitement working toward educational milestones.
+		$p_break
+		I'm a creative with 10+ years of experience with skills in branding, art production, illustration, and product UI/UX. At NextLesson, I managed small teams producing artwork at large scales which filled our products with artwork to engage users. With that being said, I've linked to three projects I am most proud of.
+		";
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+		);
+	break;
+
+	//STUDY-BLUE-VISUAL-DESIGNER
+	case "studyblue-visual-designer":
+		$short_name = "studyblue-visual-designer";
+		$originaljobposting="https://boards.greenhouse.io/studyblue/jobs/583437?gh_src=7rkga01";
+		$hiring_company="StudyBlue";
+		$jobTitle="Visual Designer";
+		$date="March 30, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+		// $slider_img = "jobs/$short_name.jpg";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "I found this role on Linkedin and wanted to find out more because I want to continue working in education! For the past couple of years I've been at NextLesson, working on branding, art production, illustration, and product UI/UX. I'm looking to foster a situation with similiar qualities—cool products, collaboration, creativity, friendship, and excitement as we work toward educational milestones—and to continue to hone UI/UX and product-related skills. StudyBlue seems like a great open-ended platform with a lot of potential and I'd be really interested to find out more.
+		";
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+		);
+	break;
+
 	default:
-		$company="Hiring Manager";
+		$hiring_company="Hiring Manager";
 		$copy="
 		<p class=\"add-top\">
 			I have worked in the design field for over 8 years and have a solid traditional print background. I used to work at Pokemon, in a small in-house creative team consisting of 3 people. The experience that would most interest you was our work supporting the publishing department (primarily with strategy guides). We would usually have big a diverse range of design work centered around any major video-game or movie releases, so time and project management was essential. More recently, I've been working with an independent publisher designing and laying out their travel guides.
@@ -35,6 +105,7 @@ switch ( $id ) {
 
 	case '523':
 		$company="Room to Read";
+		$hiring_company="Room to Read";
 		$jobTitle="Graphic Designer";
 		$name="Hiring Manager";
 		$email="hiring@roomtoread.org";
@@ -60,6 +131,7 @@ switch ( $id ) {
 
 case '090':
 		$company="Williams-Sonoma, Inc.";
+		$hiring_company="Williams-Sonoma, Inc.";
 		$jobTitle="Graphic Designer";
 		$name="Sandra Young";
 		$email;
@@ -84,6 +156,7 @@ case '090':
 
 case '431':
 		$company="Twitch";
+		$hiring_company="Twitch";
 		$jobTitle="Brand Designer";
 		$name;
 		$logo="http://www-cdn.jtvnw.net/images/xarth/header_logo.png";
@@ -103,6 +176,7 @@ case '431':
 		</p>
 		<p>
 		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. Programming is a bit of a hobby of mine—I am extremely comfortable with HTML/CSS and am actively learning other web languages, like Javascript/jQuery, PHP and Ruby on Rails. I am also highly skilled in <a href=\"monkey-mo\">drawing</a>.
+		I am <a href=\"resume#skills\">highly proficent</a> in the Adobe Creative Suite. Programming is a vdasdasddasdasDasdasDAbit of a hobby of mine—I am extremely comfortable with HTML/CSS and am actively learning other web languages, like Javascript/jQuery, PHP and Ruby on Rails. I am also highly skilled in <a href=\"monkey-mo\">drawing</a>.
 		</p>
 
 		<div class='four columns add-bottom alpha'><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>Pok&eacute;mon: Rise of Darkrai</a></div>
@@ -120,6 +194,7 @@ case '431':
 
 case '360':
 		$company="Guidebook";
+		$hiring_company="Guidebook";
 		$jobTitle="Designer";
 		$name;
 		$logo="http://jobscore-assets.s3.amazonaws.com/careers_site_header/header_bkgYd0UUur470-iGak6IKg@2x.jpg";
@@ -152,6 +227,7 @@ case '360':
 
 case '101':
 		$company="Academia.edu";
+		$hiring_company="Academia.edu";
 		$jobTitle="Designer";
 		$name="Richard Price";
 		$logo="http://2.academia-assets.com/images/home2/academia-edu.jpg?c955c2b2909a6b3b334a33da57bb307a";
@@ -187,6 +263,7 @@ case '101':
 
 case '510':
 		$company="Big Fish";
+		$hiring_company="Big Fish";
 		$jobTitle="Graphic Designer II";
 		$name="Anna Galgana";
 		$logo="http://www.underconsideration.com/brandnew/archives/big_fish_games_detail.jpg";
@@ -300,6 +377,7 @@ case '510':
 
 case '212':
 		$company="Crunchyroll";
+		$hiring_company="Crunchyroll";
 		$jobTitle="Visual Designer";
 		$name;
 		$logo="http://www.pakman.com/wp-content/uploads/2013/12/CrunchyRoll-Logo.jpg";
@@ -373,6 +451,7 @@ case '212':
 
 	case '415':
 	$company="Toca Boca";
+	$hiring_company="Toca Boca";
 	$jobTitle="Designer";
 	$name="Kalle Hellzen";
 	$logo="https://scontent-b-sjc.xx.fbcdn.net/hphotos-xpa1/t1.0-9/1016556_628012347252223_866083872_n.png";
@@ -411,6 +490,7 @@ case '212':
 
 	case '88':
 	$company="YMCA of San Francisco";
+	$hiring_company="YMCA of San Francisco";
 	$jobTitle="Graphics Design Associate";
 	$name;
 	$logo="http://www.indeed.com/cmp/_s/logos/e28b994824ced938";
@@ -444,6 +524,7 @@ case '212':
 
 	case '404':
 	$company="Code for America";
+	$hiring_company="Code for America";
 	$jobTitle="Visual Designer";
 	$name;
 	$logo="http://codeforamerica.org/assets/logo.png";
@@ -475,6 +556,7 @@ case '212':
 
 	case '102':
 	$company="Education Superhighway";
+	$hiring_company="Education Superhighway";
 	$jobTitle="Graphic Designer";
 	$name;
 	$logo="http://www.educationsuperhighway.org/uploads/1/0/9/4/10946543/1348157671.png";
@@ -506,6 +588,7 @@ case '212':
 
 	case '911':
 	$company="San Francisco Public Press";
+	$hiring_company="San Francisco Public Press";
 	$jobTitle="Print Designer";
 	$name="Michael Stoll";
 	$logo="http://sfpublicpress.org/files/logo.gif";
@@ -537,6 +620,7 @@ case '212':
 
 	case '314':
 	$company="<a href='http://www.funplus.com' target='_blank'>FunPlus</a>";
+	$hiring_company="<a href='http://www.funplus.com' target='_blank'>FunPlus</a>";
 	$jobTitle="Game Designer - Content & Quests";
 	$logo="http://www.funplus.com/logo.png";
 	$date="June 2, 2014";
@@ -604,6 +688,7 @@ case '212':
 
 	case '002':
 	$company="Chronicle Books";
+	$hiring_company="Chronicle Books";
 	$jobTitle="Junior Production Designer";
 	$logo="http://www.chroniclebooks.com/skin/frontend/enterprise/cbooks/images/logo.gif";
 	$date="June 2, 2014";
@@ -634,6 +719,7 @@ case '212':
 
 	case '480px':
 	$company="Moboom";
+	$hiring_company="Moboom";
 	$jobTitle="Creative Director";
 	$logo="https://my.zartis.com/Settings/ShowLogo/401";
 	$date="June 4, 2014";
@@ -670,6 +756,7 @@ case '212':
 
 	case 'O2B':
 	$company="airbnb";
+	$hiring_company="airbnb";
 	$jobTitle="Digital&nbsp;Marketing Designer";
 	$logo="http://www.google.com/tagmanager/images/airbnb-logo.png";
 	$date="June 4, 2014";
@@ -705,6 +792,7 @@ case '212':
 
 	case '789':
 	$company="Zipongo";
+	$hiring_company="Zipongo";
 	$jobTitle="Sr. Designer / Creative&nbsp;Director";
 	$logo="http://blog2.zipongo.com/wp-content/themes/zipongo/images/logo.svg";
 	$date="June 4, 2014";
@@ -741,6 +829,7 @@ case '212':
 
 	case 'C02b':
 	$company="airbnb";
+	$hiring_company="airbnb";
 	$jobTitle="Production Designer";
 	$logo="http://www.google.com/tagmanager/images/airbnb-logo.png";
 	$date="June 4, 2014";
@@ -777,6 +866,7 @@ case '212':
 
 	case '9112':
 	$company="CEP America";
+	$hiring_company="CEP America";
 	$jobTitle="Corporate Graphic Designer";
 	$logo="http://www.cep.com/Portals/0/cep-logo.png";
 	$date="June 5, 2014";
@@ -813,6 +903,7 @@ case '212':
 
 	case '582':
 	$company="Triple Aught Design";
+	$hiring_company="Triple Aught Design";
 	$jobTitle="Graphic Designer & 2-D Artist";
 	$logo="https://assets.tripleaughtdesign.com/static/images/TAD-logotype-2x.png";
 	$date="June 5, 2014";
@@ -841,6 +932,7 @@ case '212':
 
 	case '809':
 	$company="Bonhams";
+	$hiring_company="Bonhams";
 	$jobTitle="Production&nbsp;Artist / Proposal&nbsp;Coordinator";
 	$logo="http://www.bonhams.com/media/images/bonhams.png";
 	$date="June 5, 2014";
@@ -869,6 +961,7 @@ case '212':
 
 	case '350':
 	$company="Playworks";
+	$hiring_company="Playworks";
 	$jobTitle="Graphic Designer-Web Production Manager";
 	$logo="https://evbdn.eventbrite.com/s3-s3/eventlogos/14851049/playworkslogo.jpg";
 	$date="June 5, 2014";
@@ -895,6 +988,7 @@ case '212':
 
 	case '099':
 	$company="Astro gaming";
+	$hiring_company="Astro gaming";
 	$jobTitle="Lead Graphic Designer";
 	$logo="http://fathersongaming.tv/templates/default/assets/images/astro-logo.jpeg";
 	$date="June 5, 2014";
@@ -922,6 +1016,7 @@ case '212':
 
 	case '191':
 	$company="FILTER";
+	$hiring_company="FILTER";
 	$jobTitle="Graphic Designer";
 	$logo="http://filterdigital.com/Sitefinity/WebsiteTemplates/Filter/App_Themes/FilterDigital/Images/Logos/filterLogo.png";
 	$date="June 5, 2014";
@@ -948,6 +1043,7 @@ case '212':
 
 	case 'viz':
 	$company="VIZ Media";
+	$hiring_company="VIZ Media";
 	$jobTitle="Designer – Digital Marketing";
 	$logo="http://majorspoilers.com/wp-content/uploads/2014/03/VIZ-Media-logo-post.jpg";
 	$date="June 6, 2014";
@@ -1045,6 +1141,7 @@ break;
 case 'church':
 	$jobTitle="PT associate / independent&nbsp;contractor";
 	$company="anon";
+	$hiring_company="anon";
 	$date="June 21, 2014";
 	$email='v7g8q-4530327344@job.craigslist.org';
 	$originaljobposting="http://sfbay.craigslist.org/sfc/med/4530327344.html";
@@ -1095,6 +1192,7 @@ case 'church':
 	case 'ad101':
 		$jobTitle="Mid-level Designer";
 		$company="Adworkshop Inc";
+		$hiring_company="Adworkshop Inc";
 		$date="June 21, 2014";
 		$logo="https://www.adworkshop.com/sites/all/themes/adworkshop/i/logos/adworkshop-logo-black.svg";
 		$originaljobposting="https://www.adworkshop.com/employment/designer";
@@ -1148,6 +1246,7 @@ case 'church':
 		case 'QTpi':
 		$jobTitle="Graphic Designer";
 		$company="Tea Collection";
+		$hiring_company="Tea Collection";
 		$email="jobs@teacollection.com";
 		$date="July 2, 2014";
 		$logo="http://s.tea-global.net/mas_assets/theme/tea_collection/images/logo-new.png";
@@ -1223,6 +1322,7 @@ case 'church':
 case 'ad101':
 		$jobTitle="Mid-level Designer";
 		$company="Adworkshop Inc";
+		$hiring_company="Adworkshop Inc";
 		$date="June 21, 2014";
 		$logo="https://www.adworkshop.com/sites/all/themes/adworkshop/i/logos/adworkshop-logo-black.svg";
 		$originaljobposting="https://www.adworkshop.com/employment/designer";
@@ -1277,6 +1377,7 @@ case 'ad101':
 		case 'cas-1':
 		$jobTitle="Graphic Designer";
 		$company="California Academy of Sciences";
+		$hiring_company="California Academy of Sciences";
 		$date="July 3, 2014";
 		$logo="http://www.coroflot.com/user_files/job_employer_logos/442008_aI8WzpdQM6gSU5XlFAjCVuJA_.jpg";
 
@@ -1384,6 +1485,7 @@ case 'ad101':
 		case 'cm-2':
 		$jobTitle="Book Designer";
 		$company="Callisto Media";
+		$hiring_company="Callisto Media";
 		$date="July 3, 2014";
 		$email="jobs@callistomedia.com";
 		$logo="http://www.coroflot.com/user_files/job_employer_logos/0_sfcZ3EcR5a7fBnY7xRizo6JJl.png";
@@ -1449,6 +1551,7 @@ case 'ad101':
 		$logo;
 		$jobTitle="Designer/Jr. Art Director";
 		$company="Docusign";
+		$hiring_company="Docusign";
 		$date="July 9, 2014";
 		$email;
 
@@ -1523,6 +1626,7 @@ case 'ad101':
 		$logo="http://www.opentable.com/about/images/logos/opentable-hr-color.svg";
 		$jobTitle="Contract Brand Experience Designer";
 		$company="Opentable";
+		$hiring_company="Opentable";
 		$date="July 9, 2014";
 		$email;
 
@@ -1581,6 +1685,7 @@ case 'ad101':
 		$logo="http://media.glassdoor.com/sqll/693529/anyperk-squarelogo-1380243933805.png";
 		$jobTitle="Designer";
 		$company="Anyperk";
+		$hiring_company="Anyperk";
 		$date="July 9, 2014";
 		$email="jobs@anyperk.com";
 
@@ -1615,6 +1720,7 @@ case 'ad101':
 		$logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/250px-Airbnb_Logo_B%C3%A9lo.svg.png";
 		$jobTitle="Production Designer";
 		$company="Airbnb";
+		$hiring_company="Airbnb";
 		$date="July 28, 2014";
 		$email;
 
@@ -1675,6 +1781,7 @@ case 'ad101':
 		$logo="https://s3.amazonaws.com/prod-heroku/greenhouse_job_boards/logos/000/000/284/resized/zenpayroll-logo-250x120.png";
 		$jobTitle="Designer";
 		$company="ZenPayroll";
+		$hiring_company="ZenPayroll";
 		$date="July 28, 2014";
 		$name="David Nguyen";
 		$email;
@@ -1902,6 +2009,7 @@ case 'ad101':
 		$logo="https://media.licdn.com/media/p/6/005/06c/3f2/0ea81b5.png";
 		$jobTitle="Graphic Designer - Mobile";
 		$company="DeNA";
+		$hiring_company="DeNA";
 		$date="July 28, 2014";
 		$name="Anna Lam";
 		$email;
@@ -1960,6 +2068,7 @@ case 'ad101':
 		$logo="https://gymboree.tms.hrdepartment.com/custom/media/GYM/images/2010redesign/colorthemes/orange/gymboree_logo01_orange.gif";
 		$jobTitle="Senior Web Creative Designer";
 		$company="Gymboree";
+		$hiring_company="Gymboree";
 		$date="July 28, 2014";
 		$name="Adriann Harrington";
 		$email;
@@ -2000,6 +2109,7 @@ case 'ad101':
 		$logo="https://d1pryd867v4xab.cloudfront.net/resources/img/logos/logo_large.v6.png";
 		$jobTitle="Graphic Designer";
 		$company="RelayRides";
+		$hiring_company="RelayRides";
 		$date="July 28, 2014";
 		$name;
 		$email="<a href=\"mailto:jobs@relayrides.com\">jobs@relayrides.com</a>";
@@ -2049,6 +2159,7 @@ case 'ad101':
 		$logo="https://rew22.ultipro.com/REV1004/JobBoard/custom/skincustom/logo.png";
 		$jobTitle="Graphic Designer";
 		$company="Revolution Foods";
+		$hiring_company="Revolution Foods";
 		$date="July 28, 2014";
 		$name;
 		$email;
@@ -2081,6 +2192,7 @@ case 'ad101':
 		$logo="http://hire.jobvite.com/logo/973_onemed_logo.png";
 		$jobTitle="Graphic Designer";
 		$company="One Medical Group";
+		$hiring_company="One Medical Group";
 		$date="July 28, 2014";
 		$name;
 		$email;
@@ -2113,6 +2225,7 @@ case 'ad101':
 		$logo="http://upload.wikimedia.org/wikipedia/fr/6/6d/California_Academy_of_Sciences_-_Logo.png";
 		$jobTitle="Graphic Designer";
 		$company="California Academy of Sciences";
+		$hiring_company="California Academy of Sciences";
 		$date="July 29, 2014";
 		$name;
 		$email;
@@ -2183,6 +2296,7 @@ case 'ad101':
 		$logo="http://www.verticalresponse.com/sites/all/themes/bootstrap/VRLogoTag.2C.svg";
 		$jobTitle="Graphic Web Designer/Front End Web Developer";
 		$company="Verticalresponse";
+		$hiring_company="Verticalresponse";
 		$date="July 29, 2014";
 		$name;
 		$email;
@@ -2254,6 +2368,7 @@ case 'experiment':
 		$logo="https://d3t9s8cdqyboc5.cloudfront.net/assets/logo-motion-596724ca10a0f28cbbc37ee954ae9aca.gif";
 		$jobTitle="Graphic Designer";
 		$company="Experiment";
+		$hiring_company="Experiment";
 		$date="August 2, 2014";
 		$name;
 		$email;
@@ -2288,6 +2403,7 @@ case 'experiment':
 		$logo="http://heyzap.com/images/navigation/heybar_logo.png";
 		$jobTitle="Designer";
 		$company="Heyzap";
+		$hiring_company="Heyzap";
 		$date="August 7, 2014";
 		$name;
 		$email="jobs@heyzap.com";
@@ -2431,6 +2547,11 @@ case 'experiment':
 		$name;
 		$email;
 		$hiremepage = downcasespace("http://rayuen.com/hire-me?id=$company");
+		$hiring_company="Dropcam";
+		$date="August 8, 2014";
+		$name;
+		$email;
+		$hiremepage = downcasespace("http://rayuen.com/hire-me?id=$hiring_company");
 
 		$job_details="
 
@@ -2480,6 +2601,7 @@ case 'experiment':
 
 	case '9999':
 		$company="Kabam";
+		$hiring_company="Kabam";
 		$jobTitle="Visual Designer";
 		$logo="http://www.indeed.com/cmp/_s/logos/f984ad8d5222c019";
 		$date="June 4, 2014";
@@ -2654,6 +2776,11 @@ case 'experiment':
 		$name="Kaila Carty";
 		$email="kaila@nextlesson.org";
 		$hiremepage = downcasespace("http://rayuen.com/hire-me?id=$company");
+		$hiring_company="Nextlesson";
+		$date="August 25, 2014";
+		$name="Kaila Carty";
+		$email="kaila@nextlesson.org";
+		$hiremepage = downcasespace("http://rayuen.com/hire-me?id=$hiring_company");
 
 		$job_details="
 			<p>NextLesson (nextlesson.org) is an education technology startup focused on helping students prepare for the real world. We work with great teachers to build stellar curriculum for students primarily in the 3rd-8th grades.</p>
@@ -2712,6 +2839,7 @@ case 'experiment':
 		$logo="https://www.wired.com/wp-content/uploads/2015/09/google-logo-1200x630.jpg";
 		$jobTitle="Creative Lead, Doodle Team";
 		$company="Google / Doodle Team";
+		$hiring_company="Google / Doodle Team";
 		$date="January 24, 2017";
 		// $name="";
 		$email="";
@@ -2848,6 +2976,7 @@ case 'experiment':
 
 case 'duckduckmoose':
 		$company="Duck Duck Moose";
+		$hiring_company="Duck Duck Moose";
 		$originaljobposting="http://www.duckduckmoose.com/2d-artist-illustrator/";
 		$logo="http://www.duckduckmoose.com/duckduckmoose/wp-content/themes/ddm/images/ddm-logo.png";
 		$jobTitle="2D Artist / Illustrator";
@@ -2950,6 +3079,7 @@ case 'ixl-illustration-coordinator':
 		$logo="http://grapesforlife.com/wp-content/uploads/2014/08/mzl.pptgpfrl-e1417376137299.png";
 		$jobTitle="Illustration Coordinator";
 		$company="IXL / Learning";
+		$hiring_company="IXL / Learning";
 		$date="January 26, 2017";
 		$name="Linda Vo";
 		$email="";
@@ -2959,6 +3089,7 @@ case 'ixl-illustration-coordinator':
 
 		$job_details="
 		<h1>$company</h1>
+		<h1>$hiring_company</h1>
 		<h2>$jobTitle</h2>
 		<p>IXL Learning, a leading edtech company with products used by 6 million students worldwide, is seeking an illustration coordinator to oversee the creation of fun and delightful visuals for our educational content. In this role, you will brainstorming creative ideas, iterate with a team of illustrators, and collaborate with our design and engineering teams on technical requirements. We find it immensely satisfying to develop products that impact the lives of millions of students around the globe, and we are eager to have you join our team.</p>
 
@@ -3065,6 +3196,7 @@ case 'ixl-illustration-coordinator':
 		$logo="https://upload.wikimedia.org/wikipedia/commons/9/91/Quora_logo_2015.svg";
 		$jobTitle="Staff Product Designer";
 		$company="Quora";
+		$hiring_company="Quora";
 		$date="January 31, 2017";
 		// $name="";
 		$email="";
@@ -3115,6 +3247,7 @@ case 'ixl-illustration-coordinator':
 		$short_name = "facebook-illustrator-designer-cultural-moments";
 		$originaljobposting="https://www.facebook.com/careers/jobs/a0I1200000JXv61EAD/";
 		$company="Facebook";
+		$hiring_company="Facebook";
 		$jobTitle="Illustrator/Designer - Cultural Moments";
 		$logo="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png";
 		$date="February 8, 2017";
@@ -3183,6 +3316,7 @@ case 'ixl-illustration-coordinator':
 		$short_name = "humble-bundle-senior-designer";
 		$originaljobposting="https://boards.greenhouse.io/humblebundle/jobs/58978?gh_src=p7budj";
 		$company="Humble Bundle";
+		$hiring_company="Humble Bundle";
 		$jobTitle="Senior Designer";
 		$date="February 21, 2017";
 		// $name="Dave Johnson";
@@ -3234,6 +3368,7 @@ case 'ixl-illustration-coordinator':
 
 		$originaljobposting="https://www.facebook.com/careers/jobs/a0I1200000JXv4nEAD/";
 		$company="Facebook";
+		$hiring_company="Facebook";
 		$jobTitle="Illustrator/Designer - Messenger";
 
 		$slider_img="";
@@ -3275,6 +3410,7 @@ case 'ixl-illustration-coordinator':
 		$short_name = "eventbrite-senior-designer-brand-communications";
 		$originaljobposting="https://jobs.lever.co/eventbrite/6f6682cb-c452-4dd9-ad4e-b3ef9130dcdf";
 		$company="Eventbrite";
+		$hiring_company="Eventbrite";
 		$jobTitle="Senior Designer - Brand Communications";
 		$date="February 25, 2017";
 		$hiremepage = "http://rayuen.com/$short_name";
@@ -3312,6 +3448,7 @@ case 'ixl-illustration-coordinator':
 		$short_name = "weebly-brand-designer";
 		$originaljobposting="https://careers.weebly.com/job.html?gh_jid=78937&gh_src=73a14v1#78937";
 		$company="Weebly";
+		$hiring_company="Weebly";
 		$jobTitle="Brand Designer";
 		$date="February 25, 2017";
 		$hiremepage = "http://rayuen.com/$short_name";
@@ -3348,6 +3485,7 @@ case 'ixl-illustration-coordinator':
 		$short_name = "minted-visual-interactive-designer";
 		$originaljobposting="http://jobs.jobvite.com/careers/minted/job/oFkL4fwy";
 		$company="Minted";
+		$hiring_company="Minted";
 		$jobTitle="Visual/Interactive Designer: Onsite/Holiday";
 		$date="February 25, 2017";
 		$hiremepage = "http://rayuen.com/hire-me?id=12510";
@@ -3389,6 +3527,7 @@ case 'ixl-illustration-coordinator':
 		$short_name = "opendoor-brand-designer";
 		$originaljobposting="http://jobs.jobvite.com/careers/minted/job/oFkL4fwy";
 		$company="Opendoor";
+		$hiring_company="Opendoor";
 		$jobTitle="Brand Designer";
 		$date="February 25, 2017";
 		$hiremepage = "http://rayuen.com/hire-me?id=$short_name";
@@ -3429,6 +3568,7 @@ case 'ixl-illustration-coordinator':
 		$short_name = "exploratorium-director-of-design";
 		$originaljobposting="https://careers.weebly.com/job.html?gh_jid=78937&gh_src=73a14v1#78937";
 		$company="Exploratorium";
+		$hiring_company="Exploratorium";
 		$jobTitle="Director of Design";
 		$date="February 27, 2017";
 		$hiremepage = "http://rayuen.com/$short_name";
@@ -3471,6 +3611,7 @@ case 'ixl-illustration-coordinator':
 		$short_name = "wrkshp-ui-ux-designer";
 		$originaljobposting="https://boards.greenhouse.io/3876393/jobs/575423";
 		$company="Wrkshp";
+		$hiring_company="Wrkshp";
 		$jobTitle="UI/UX Designer";
 		$date="February 27, 2017";
 		$hiremepage = "http://rayuen.com/$short_name";
@@ -3510,6 +3651,7 @@ case 'ixl-illustration-coordinator':
 		$short_name = "asana-marketing-designer";
 		$originaljobposting="https://asana.com/jobs/marketing-designer";
 		$company="Asana";
+		$hiring_company="Asana";
 		$jobTitle="Marketing Designer";
 		$date="February 28, 2017";
 		$hiremepage = "http://rayuen.com/$short_name";
@@ -3547,6 +3689,7 @@ case 'ixl-illustration-coordinator':
 		$short_name = "afar-media";
 		$originaljobposting="https://asana.com/jobs/product-designer";
 		$company="AFAR Media";
+		$hiring_company="AFAR Media";
 		$jobTitle="UX/Visual Designer";
 		$date="February 27, 2017";
 		$hiremepage = "http://rayuen.com/hire-me?id=$short_name";
@@ -3585,6 +3728,7 @@ case 'ixl-illustration-coordinator':
 		$short_name = "medium-senior-visual-designer";
 		$originaljobposting="https://medium.com/jobs-at-medium/senior-visual-designer-cc881858650d#.j24irwnu8";
 		$company="Medium";
+		$hiring_company="Medium";
 		$jobTitle="Senior Visual Designer";
 		$date="February 28, 2017";
 		$hiremepage = "http://rayuen.com/$short_name";
@@ -3617,6 +3761,7 @@ case 'ixl-illustration-coordinator':
 		$short_name = "merrill-morris-partners";
 		// $originaljobposting="https://medium.com/jobs-at-medium/senior-visual-designer-cc881858650d#.j24irwnu8";
 		$company="Merrill Morris Partners";
+		$hiring_company="Merrill Morris Partners";
 		$date="March 1, 2017";
 		$hiremepage = "http://rayuen.com/$short_name";
 
@@ -3655,6 +3800,7 @@ case 'ixl-illustration-coordinator':
 		$short_name = "github-graphic-designer";
 		$originaljobposting="https://boards.greenhouse.io/github/jobs/621188#.WL326xIrLBK";
 		$company="Github";
+		$hiring_company="Github";
 		$jobTitle="Graphic Designer";
 		$date="March 9, 2017";
 		$hiremepage = "http://rayuen.com/$short_name";
@@ -3689,6 +3835,7 @@ case 'ixl-illustration-coordinator':
 		$short_name = "ideo-production-designer";
 		$originaljobposting="http://supercell.com/en/careers/graphic-designer/199/";
 		$company="IDEO";
+		$hiring_company="IDEO";
 		$jobTitle="Production Designer";
 		$date="March 16, 2017";
 		$hiremepage = "http://rayuen.com/$short_name";
@@ -3722,10 +3869,45 @@ case 'ixl-illustration-coordinator':
 		);
 	break;
 
+	//CHAIRISH - DESIGNER, MARKETING
+	case "chairish":
+		$short_name = "chairish";
+		$originaljobposting="https://www.indeed.com/viewjob?jk=804a5e60986de81c&q=illustration&l=San+Francisco,+CA&tk=1bbhpfi33bscjcs2&from=web";
+		$hiring_company="Chairish";
+		$jobTitle="Designer, Marketing";
+		$date="March 23, 2017";
+		$hiremepage = "http://rayuen.com/hire-me?id=$short_name";
+		// $slider_img = "jobs/$short_name.jpg";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "I found this role on Indeed and wanted to pass along my info. Having recently just left a startup, I am looking for a similiar situation with lots of collaboration and cross-disiplinary work. I'm a creative with 10+ years of experience with skills in branding, art production, illustration, and product UI/UX. I'd love to chat more about the design and illustrations that I can bring to the site.
+		$p_break
+		I've linked to some projects which that might be relevant to this job.
+		";
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+		);
+	break;
 
 }
 
-// ========================
+//===
 // FUNCTIONS
 
 function get_project_thumbnail_details( $projects ){

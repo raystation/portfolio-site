@@ -60,31 +60,31 @@
 	";
 
 // RELATED PROJECTS HTML
-$related_project_html = "";
-if ( isset($company) ) {
-	$related_projects_array = related_projects_check($company);
-	if ($related_projects_array !== NULL) {
-		$related_project_html .= "
-			<div class='clearfix'></div>
-			<div class='related'>
-			<hr style='margin-top:40px;width:10%'>
-			<h3>Related Projects</h3>
-			<ul>
-		";
-		foreach ($related_projects_array as $key => $related_project) {
-			if ( isset($id) ) {
-				$project_path = "work?project=$related_project[path]&id=$id";
-			} else {
-				$project_path = $related_project['path'];
-			}
-			if ($related_project['name'] !== $title) {
-				$related_project_html .= "<li><a href='$project_path'>$related_project[name]</a>";
-			}
-		}
-		$related_project_html .= "</ul></div>";
-	}
-}
-echo $related_project_html;
+// $related_project_html = "";
+// if ( isset($company) ) {
+// 	$related_projects_array = related_projects_check($company);
+// 	if ($related_projects_array !== NULL) {
+// 		$related_project_html .= "
+// 			<div class='clearfix'></div>
+// 			<div class='related'>
+// 			<hr style='margin-top:40px;width:10%'>
+// 			<h3>Related Projects</h3>
+// 			<ul>
+// 		";
+// 		foreach ($related_projects_array as $key => $related_project) {
+// 			if ( isset($id) ) {
+// 				$project_path = "work?project=$related_project[path]&id=$id";
+// 			} else {
+// 				$project_path = $related_project['path'];
+// 			}
+// 			if ($related_project['name'] !== $title) {
+// 				$related_project_html .= "<li><a href='$project_path'>$related_project[name]</a>";
+// 			}
+// 		}
+// 		$related_project_html .= "</ul></div>";
+// 	}
+// }
+// echo $related_project_html;
 	?>
 
 	</div>

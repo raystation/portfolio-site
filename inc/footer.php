@@ -43,33 +43,14 @@ if ( !isset($id)) {
 	<footer id="footer">
 
 		<div class="container">
-
-			<div class="four columns add-bottom">
-				<ul>
-					<li><a href="./<? echo $id_html;?>">home</a>
-				</ul>
+			<div class='sixteen columns'>
+				<div class='flex-footer'>
+					<a href="./<? echo $id_html;?>">home</a>
+					<a href="work<? echo $id_html;?>">work</a>
+					<a href="about<? echo $id_html;?>">about</a>
+					<a href="mailto:rayuen@gmail.com?body=<? echo $email_text;?>&subject=<? echo $email_subject;?>">email</a>
+				</div>
 			</div>
-
-			<div class="four columns add-bottom">
-				<ul>
-					<li><a href="work<? echo $id_html;?>">work</a>
-				</ul>
-			</div>
-
-			<div class="four columns">
-				<ul>
-					<li><a href="about<? echo $id_html;?>">about</a>
-					<!--<li><a href="ringtones.php">ringtones</a>-->
-					<!-- <li><a href="jobs">jobs</a> -->
-				</ul>
-			</div>
-
-			<div class="four columns">
-				<ul>
-					<li><a href="mailto:rayuen@gmail.com?body=<? echo $email_text;?>&subject=<? echo $email_subject;?>">email</a>
-				</ul>
-			</div>
-
 
 			<div class="sixteen columns">
 				<hr>
@@ -104,7 +85,7 @@ if ( !isset($id)) {
 			  lazyLoad: 'progressive',
 			  autoplay: true,
 			  autoplaySpeed: 4500,
-			  arrows: true,
+			  arrows: false,
 			  dots: true
 			});
 			$('.slick-index').slick({
@@ -135,25 +116,31 @@ if ( !isset($id)) {
 	<script src="js/lightbox.min.js"></script>
 
 	<!-- headroom -->
-	<script src="js/headroom.min.js"></script>
+	<!-- <script src="js/headroom.min.js"></script> -->
+	<script src="js/jquery.tooltipster.min.js"></script>
+	<script src="js/jquery.unveil.js"></script>
 	<script>
-		var myElement = document.querySelector("header");
-		// var headroom  = new Headroom(myElement);
-		var headroom = new Headroom(myElement, {
-		  "tolerance": 10,
-		  "offset": 50,
-		});
-		headroom.init();
+		// var myElement = document.querySelector("header");
+		// // var headroom  = new Headroom(myElement);
+		// var headroom = new Headroom(myElement, {
+		//   "tolerance": 10,
+		//   "offset": 50,
+		// });
+		// headroom.init();
 	</script>
 
-	<script src="js/jquery.tooltipster.min.js"></script>
 	<script>
-        $(document).ready(function() {
-            $('.tooltip').tooltipster({
-            	animation: 'fade',
-            	delay: 200
-            });
-        });
+      $(document).ready(function() {
+          $('.tooltip').tooltipster({
+          	animation: 'fade',
+          	delay: 200
+          });
+      });
+	</script>
+	<script>
+		$(document).ready(function() {
+			$("img").unveil();
+		});
 	</script>
 	<script src="js/job-details.js"></script>
 	<?php

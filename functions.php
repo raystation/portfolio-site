@@ -280,7 +280,7 @@ function print_skill_html(){
   echo '</div>';
 }
 
-function get_skill_html( $tools ){
+function get_skill_html_bk( $tools ){
   $content = "";
   include_once "inc/lists.php";
   if ( isset($tools) ) {
@@ -292,6 +292,23 @@ function get_skill_html( $tools ){
     return FALSE;
   }
   $html = "<div class='chart'>$content</div>";
+  return $html;
+}
+
+function get_skill_html( $tools ){
+  $content = "";
+  include_once "inc/lists.php";
+  if ( isset($tools) ) {
+    foreach ( $tools as $tool) {
+      $content .= "
+        <li>$tool[skill]
+      ";
+    }
+  }
+  else {
+    return FALSE;
+  }
+  $html = "<ul class='tags'>$content</ul>";
   return $html;
 }
 
@@ -360,7 +377,8 @@ function workthumb($num) {
 
 function skeleton_print_thumbnail_4(
   $works_array,
-  $number_of_projects=0
+  $number_of_projects=0,
+  $header_text = "Recent Projects"
   // $header=false,
   // $vertical=false
   ) {
@@ -381,7 +399,7 @@ function skeleton_print_thumbnail_4(
   echo '</div><div class="container portfolio">'."\n";
   global $description;
   if ( isset($description) ) {
-    echo "<div class='sixteen columns add-bottom add-top'><hr><h2>Recent Projects</h2></div>";
+    echo "<div class='sixteen columns add-bottom add-top'><hr><h2>$header_text</h2></div>";
   }
 
   // FILTERS
@@ -459,7 +477,7 @@ function skeleton_print_thumbnail_4(
   //adds project link if it's not the index page
   if ( isset($description) ) {
     // echo '<hr>'."\n";
-    echo "<div class='sixteen columns add-bottom'>&#11013; <a class='underline' href='work$id_html'>Back to all projects</a></div>";
+    echo "<div class='sixteen columns add-bottom'>&#11013; <a class='' href='work$id_html'>Back to all projects</a></div>";
   }
   echo "</div>";
 
@@ -673,14 +691,31 @@ function get_quick_intro(){
   include_once "inc/resume.php";
   return $quick_intro;
 }
-function flex_tiles($columns=4,$path,$folder="additional_img") {
+function flex_tiles($thumbnail_size="medium",$path,$folder="additional_img") {
   $content = "";
   $imgs = get_files("$path/$folder");
+
+  if ($thumbnail_size=="variable-height") {
+    foreach ($imgs as $key => $img){
+      $title = get_title($img);
+      $content.="<img src='img/thumb-default.jpg' data-src='$path/$folder/$img' alt='$title'>";
+    }
+    return "
+      </div>
+      </div>
+      <div class='variable-height'>
+        $content
+      </div>
+      <div class='container'>
+      <div class='sixteen columns'>
+    ";
+  }
+
   foreach ($imgs as $key => $img ) {
     $title = get_title($img);
     $content .= "
-      <div class='tile'>
-        <img src='$path/$folder/$img' alt='$title'>
+      <div class='$thumbnail_size'>
+        <img src='img/thumb-default.jpg' data-src='$path/$folder/$img' alt='$title'>
       </div>
     ";
   }
@@ -695,4 +730,85 @@ function flex_tiles($columns=4,$path,$folder="additional_img") {
     <div class='sixteen columns'>
   ";
   return $html;
+}
+function return_filtered_array_by_term( $array, $term ){
+  $filtered_array="";
+  foreach ($array as $key => $array_item) {
+    $tags = $array_item['tags'];
+    foreach ($tags as $key => $tag) {
+      if ($tag==$term) {
+        $filtered_array[]=$array_item;
+      }
+    }
+  }
+  if ($filtered_array=="") {
+    return FALSE;
+  } else {
+    return $filtered_array;
+  }
+}
+
+function full_thumbnail($works,$number_of_thumbnails=99,$class=""){
+  $content="";
+
+  // CHECKS FOR PROJECT ID AND FILTER
+  $id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+  $selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
+
+  // PASSES AN ID IF IT EXISTS
+  if ( isset($id) ) {
+    $id_html = "?id=$id";
+  } else {
+    $id_html="";
+  }
+
+  // FILTERS
+  // checks array for matching tags, if so, then it will push to a new array
+  $filtered_array="";
+  if ( isset($selected_filter) ) {
+    $works = return_filtered_array_by_term( $works, $selected_filter);
+  }
+
+  // PRINTS OUT THUMBNAILS
+  foreach ($works as $key => $work) {
+    $path = "img/".$work["path"];
+    $hd_thumb = check_for_img_format( $path , "thumb-hd");
+    if ($hd_thumb) {
+      $hd_thumb = "srcset='$hd_thumb 2x'";
+    }
+
+    $thumb = check_for_img_format( $path );
+    if ( $thumb==FALSE ) {
+      $thumb = "http://placehold.it/400x273&text=$work[name] thumbnail missing";
+    }
+
+    if (isset($id)) {
+      $project_path = "work?project=$work[path]&id=$id";
+    } else {
+      $project_path = $work['path'];
+    }
+
+    $content .= "
+      <div class='fl-thumb'>
+        <a href='$project_path'>
+          <div class='title'>$work[name]</div>
+          <img src='$thumb' $hd_thumb>
+        </a>
+      </div>
+    ";
+    if ($key == $number_of_thumbnails-1){
+      break;
+    }
+    // $tags_html = "";
+  }
+  if (count($works) <= 10) {
+    $class="reduce-width";
+  }
+  echo "
+    </div>
+    <div class='full-thumbnails $class'>
+      $content
+    </div>
+    <div class='container'>
+  ";
 }

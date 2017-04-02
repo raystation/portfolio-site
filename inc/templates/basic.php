@@ -4,6 +4,7 @@
 $tags = isset($tags) ? get_tags($tags) : null;
 $tags_html = isset($tags) ? "<ul class='tags'>$tags</ul>" : null;
 $project_path="";
+if (!isset($thumbnail_size)) {$thumbnail_size="medium";}
 
 // MAKES THE TOP SLIDER
 $img_slider_html="";
@@ -52,29 +53,29 @@ if ( isset($content) ) {
 
 // RELATED PROJECTS HTML
 $related_project_html = "";
-if ( isset($company) ) {
-	$related_projects_array = related_projects_check($company);
-	if ($related_projects_array !== NULL) {
-		$related_project_html .= "
-			<div class='clearfix'></div>
-			<div class='related'>
-			<hr style='margin-top:40px;width:10%'>
-			<h3>Related Projects</h3>
-			<ul>
-		";
-		foreach ($related_projects_array as $key => $related_project) {
-			if ( isset($id) ) {
-				$project_path = "work?project=$related_project[path]&id=$id";
-			} else {
-				$project_path = $related_project['path'];
-			}
-			if ($related_project['name'] !== $title) {
-				$related_project_html .= "<li><a href='$project_path'>$related_project[name]</a>";
-			}
-		}
-		$related_project_html .= "</ul></div>";
-	}
-}
+// if ( isset($company) ) {
+// 	$related_projects_array = related_projects_check($company);
+// 	if ($related_projects_array !== NULL) {
+// 		$related_project_html .= "
+// 			<div class='clearfix'></div>
+// 			<div class='related'>
+// 			<hr style='margin-top:40px;width:10%'>
+// 			<h3>Related Projects</h3>
+// 			<ul>
+// 		";
+// 		foreach ($related_projects_array as $key => $related_project) {
+// 			if ( isset($id) ) {
+// 				$project_path = "work?project=$related_project[path]&id=$id";
+// 			} else {
+// 				$project_path = $related_project['path'];
+// 			}
+// 			if ($related_project['name'] !== $title) {
+// 				$related_project_html .= "<li><a href='$project_path'>$related_project[name]</a>";
+// 			}
+// 		}
+// 		$related_project_html .= "</ul></div>";
+// 	}
+// }
 
 if ( !is_null($path) ) {
 	// ADDITIONAL IMAGES
@@ -83,11 +84,11 @@ if ( !is_null($path) ) {
 	if ( isset($auto_slideshow) ) {
 		$additional_img_html = get_slider_html( $path );
 	} elseif ( file_exists("$path/additional_img") ) {
-		if ( !isset($additional_img_column_count) ) {
-			$additional_img_column_count = 2;
-		}
+		// if ( !isset($additional_img_column_count) ) {
+		// 	$additional_img_column_count = 2;
+		// }
 		// $additional_img_html = skeleton_html($additional_img_column_count,$path,$folder="additional_img");
-		$additional_img_html = flex_tiles(4,$path,$folder="additional_img");
+		$additional_img_html = flex_tiles($thumbnail_size,$path,$folder="additional_img");
 	} else {
 		$additional_img_html = "";
 	}
@@ -110,7 +111,6 @@ $tools_html = get_skill_html( $tools );
 if ($tools) {
 	$tools_html = "
 		<div class='list-spacing-fix'>
-			<hr>
 			<h6>Tools Used:</h6>
 			$tools_html
 		</div>
@@ -121,22 +121,27 @@ if ($tools) {
 
 // HTML
 $page = "
-<div class='project-details sixteen columns'>
-	$img_slider_html
-	<h1>$title</h1>
-	<div class='twelve columns alpha intro'>
-		<p>$description</p>
-	</div>
-	<div class='project-sidebar four columns omega caption'>
-		$sidebar_logo
-		<p>$sidebar</p>
-		$tools_html
-	</div>
-	$content
-	$additional_img_html
-	$tags_html
-	$related_project_html
-</div> <!-- end sixteen -->
+	<div class='project-details sixteen columns'>
+		$img_slider_html
+		<h1>$title</h1>
+		<div class='twelve columns alpha'>
+			<div class='mobile'>
+				<div class='project-sidebar four columns'>
+				$sidebar
+				</div>
+			</div>
+			<p>$description</p>
+			<div class='content'>$content</div>
+			<div class='project-sidebar mobile'><hr class='resume' style='width:10%'>$tools_html</div>
+		</div>
+		<div class='desktop'>
+			<div class='project-sidebar four columns omega'>
+				$sidebar
+			</div>
+		</div>
+		$additional_img_html
+		$tags_html
+	</div> <!-- end sixteen -->
 ";
 // TODO: add in related projects in the sidebar
 

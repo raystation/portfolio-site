@@ -3,6 +3,7 @@ $meta_description="";
 $footer_add="";
 $work_class = "";
 $about_class = "";
+$extra_padding = "";
 
 require_once 'inc/work-info.php';
 require_once 'functions.php';
@@ -12,6 +13,18 @@ if ( isset($id) ) {
 	$id_html = "?id=$id";
 } else {
 	$id_html="";
+}
+
+if (isset($section)) {
+	if ($section=="work" ) {
+		$work_class="active";
+	}
+	if ($section=="about") {
+		$about_class="active";
+	}
+	if ( $section=="work" && $id ) {
+		$extra_padding = "class='subhead-padding'";
+	}
 }
 
 ?>
@@ -74,31 +87,36 @@ if ( isset($id) ) {
 
 </head>
 
-<body>
+<body <? echo $extra_padding;?>>
 
 	<!-- Primary Page Layout
 	================================================== -->
 
-	<header class="navband headroom">
+	<!--<header class="navband headroom" style='display:none;'>
 		<div class="container">
 			<nav class="sixteen columns">
 				<div class="title"><a href="./">Ray Yuen</a></div>
 				<ul>
-					<?
-						if (isset($section)) {
-							if ($section=="work" ) {
-								$work_class="active";
-							}
-							if ($section=="about") {
-								$about_class="active";
-							}
-						}
-					?>
 					<li><a class="<? echo $work_class;?>" href="work<? echo $id_html;?>">work</a></li>
 					<li><a class="<? echo $about_class;?>" href="about<? echo $id_html;?>">about</a></li>
 				</ul>
 
 			</nav>
+		</div>
+	</header>-->
+
+	<header class="navband headroom">
+		<div class="header">
+			<div id="title">
+				<a href="./">Ray Yuen <!-- <img src="img/logo-rayuen.svg" style='height:30px;'> --></a>
+			</div>
+			<div id='nav'>
+				<div class='nav-item'><a class="<? echo $work_class;?>" href="work<? echo $id_html;?>">work</a></div>
+				<div class='nav-item'><a class="<? echo $about_class;?>" href="about<? echo $id_html;?>">about</a></div>
+				<div class='nav-item header-icon'><a href="mailto:rayuen@gmail.com"><img src="img/icon/email.svg"></a></div>
+				<div class='nav-item header-icon'><a href="http://www.linkedin.com/in/rayuen" target='_blank'><img src="img/icon/linkedin.svg"></a></div>
+				<div class='nav-item header-icon'><a href="https://dribbble.com/raystation" target='_blank'><img src="img/icon/dribbble.svg"></a></div>
+			</div>
 		</div>
 	</header>
 

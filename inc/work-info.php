@@ -3,8 +3,8 @@ $p_break = "</p><p>";
 
 $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") ),
-	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("web-dev","illustration","ui-ux") ),
-	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("web-dev","illustration","ui-ux","branding") ),
+	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("ui-ux","illustration","web-dev") ),
+	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("illustration","ui-ux","branding","web-dev") ),
 	// array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing" ),
 	array( "name" => "NextLesson Glossary Images", "path" => "nextlesson-glossary", "tags"=>array("illustration") ),
 	array( "name" => "NextLesson Characters", "path" => "nextlesson-characters", "tags"=>array("illustration") ),
@@ -12,19 +12,19 @@ $works = array(
 	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars" ),
 	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library" ),
 	// array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-browse" ),
-	array( "name" => "The 3", "path" => "the3", "tags"=>array("illustration","ui-ux") ),
+	array( "name" => "The 3", "path" => "the3", "tags"=>array("ui-ux") ),
 	array( "name" => "Indiginauts", "path" => "indiginauts", "tags" => array("illustration","ui-ux") ),
 	array( "name" => "Pok&eacute;mon", "path" => "pokemon","tags"=>array("places-i-worked") ),
 	array( "name" => "Wired", "path" => "wired", "tags" => array("illustration") ),
 	array( "name" => "Abriendo Puertas / Opening&nbsp;Doors", "path" => "abriendo-puertas",	"tags"=>array("web-dev","branding") ),
 	array( "name" => "Color Chameleon", "path" => "color-chameleon", "tags" => array("illustration","ui-ux") ),
-	array( "name" => "Adelle Marcero Portfolio Site", "path" => "adelle-marcero","tags"=>array("web-dev", "ui-ux") ),
+	array( "name" => "Adelle Marcero", "path" => "adelle-marcero","tags"=>array("web-dev", "ui-ux") ),
 	array( "name" => "LesConcierges","path" => "lesconcierges", "tags" => array("illustration") ),
 	array( "name" => "Museyon Guides", "path" => "museyon-guides", "tags"=>array("places-i-worked") ),
 	array( "name" => "Project Animore", "path" => "project-animore", "tags" => array("illustration","ui-ux") ),
 	array( "name" => "#Inktober2016","path" => "inktober-2016", "tags" => array("illustration") ),
 	array( "name" => "100 Principles of Game Design", "path" => "100-principles-of-game-design", "tags" => array("illustration") ),
-	array( "name" => "Holiday Card 2014", "path" => "holiday-2014", "tags" => array("illustration") ),
+	array( "name" => "Holiday Card 2014", "path" => "holiday-2014", "tags" => array("web-dev","illustration") ),
 	array( "name" => "Monkey Mo, Monkey&nbsp;Go!", "path" => "monkey-mo", "tags" => array("illustration", "print-design") ),
 	array( "name" => "Scavenger Hunt", "path" => "scavenger-hunt", "tags" => array("illustration") ),
 	array( "name" => "Suspended Belief Studios", "path" => "suspended-belief-studios", "tags" => array("places-i-worked") ),
@@ -43,9 +43,9 @@ $works = array(
 	array( "name" => "Chronicles of Old&nbsp;Rome","path" => "chronicles-of-old-rome","tags"=>array("print-design")),
 	array( "name" => "The Rise of Darkrai","path" => "darkrai", "tags"=>array("print-design","ui-ux") ),
 	array( "name" => "Arceus and the Jewel of&nbsp;Life","path" => "arceus", "tags"=>array("print-design","ui-ux") ),
-	array( "name" => "Pok&eacute;mon: Toys 'R' Us Feature Shop", "path" => "feature-shop", "tags"=>array("print-design") ),
+	array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop", "path" => "feature-shop", "tags"=>array("print-design") ),
 	array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos", "tags"=>array("print-design","branding") ),
-	array( "name" => "Pok&eacute;mon 10th Anniversary","path" => "10th-anniversary","tags"=>array("print-design","branding") ),
+	array( "name" => "Pok&eacute;mon: 10th Anniversary","path" => "10th-anniversary","tags"=>array("print-design","branding") ),
 	array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon", "tags"=>array("print-design") ),
 	array( "name" => "Battle Revolution", "path" => "battle-revolution", "tags"=>array("print-design","ui-ux") ),
 	array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex", "tags"=>array("print-design") ),
@@ -86,9 +86,9 @@ function get_pokemon_projects(){
 	$works = array(
 		array( "name" => "The Rise of Darkrai","path" => "darkrai" ),
 		array( "name" => "Arceus and the Jewel of&nbsp;Life","path" => "arceus" ),
-		array( "name" => "Pok&eacute;mon: Toys 'R' Us Feature Shop", "path" => "feature-shop" ),
+		array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop", "path" => "feature-shop" ),
 		array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos" ),
-		array( "name" => "Pok&eacute;mon 10th Anniversary","path" => "10th-anniversary" ),
+		array( "name" => "Pok&eacute;mon: 10th Anniversary","path" => "10th-anniversary" ),
 		array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon" ),
 		array( "name" => "Battle Revolution", "path" => "battle-revolution" ),
 		array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex" ),
@@ -150,7 +150,7 @@ if ( $title == "Museyon Guides" ) {
 	';
 
 	$sidebar = "
-		<a href='http://www.museyon.com' target='_blank'>museyon.com</a>
+		<p><a href='http://www.museyon.com' target='_blank'>museyon.com</a></p>
 	";
 
 } // end MUSEYON GUIDES
@@ -169,7 +169,7 @@ if ( $title == "The Pok&eacute;mon Company" ) {
 	';
 
 	$sidebar = "
-		<a href='http://www.pokemon.com' target='_blank'>pokemon.com</a>
+		<p><a href='http://www.pokemon.com' target='_blank'>pokemon.com</a></p>
 	";
 
 } //end Pokémon
@@ -187,8 +187,10 @@ if ( $title == "Suspended Belief Studios" ) {
 	$template="company";
 	$logo="svg";
 
-	$sidebar = "Design studio.</p>
-	<p><a href='pages/sb-studios1/' target='_blank' >suspendedbeliefgames.com</a>";
+	$sidebar = "
+		<p>Design studio.</p>
+		<p><a href='pages/sb-studios1/' target='_blank' >suspendedbeliefgames.com</a>
+	";
 
 	$img_info = array(
 	);
@@ -216,9 +218,10 @@ if ( $title == "StoryMaps" ) {
 
 		";
 
-	$sidebar = '<p>Comic-like, hand-drawn illustrations</p>
-	<p><a href="http://seanh.github.io/storymaps">StoryMaps Github page</a>
-	';
+	$sidebar = "
+		<p>Comic-like, hand-drawn illustrations</p>
+		<p><a href='http://seanh.github.io/storymaps'>StoryMaps Github page</a>
+	";
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>40),
@@ -246,9 +249,8 @@ if ( $title == "idibon" ) {
 
 	$description = "Lumbersexual humblebrag asymmetrical, post-ironic kickstarter four loko kale chips bicycle rights venmo. Bushwick narwhal pickled selvage lo-fi, chartreuse celiac direct trade cliche pabst. XOXO taxidermy fingerstache brunch authentic, street art you probably haven't heard of them salvia.";
 
-	$sidebar = '<p>Comic-like, hand-drawn illustrations</p>
-	<p><a href="http://seanh.github.io/storymaps">StoryMaps Github page</a>
-	';
+	$sidebar = "
+	";
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>40),
@@ -277,7 +279,7 @@ if ( $title == "Indiginauts" ) {
 		";
 
 	$sidebar = "
-		iOS & Web Point 'n' Click Adventure</p>
+		<p>iOS & Web Point 'n' Click Adventure</p>
 		<p><a href='suspended-belief-studios'>Suspended Belief Studios</a><p>
 		<p>Game Design: Ray Yuen, Jeremy Klar</p>
 		<p>Art: Ray Yuen, Sun Park</p>
@@ -326,10 +328,13 @@ if ( $title == "100 Principles of Game Design" ) {
 		array("skill"=>"Photoshop", "percent"=>20),
 	);
 
-	$sidebar = "Published by Pearson</p>
-		<p>Written by <a href='https://twitter.com/subversified'>Wendy Despain</a> <br>
+	$sidebar = "
+		<p>Published by Pearson</p>
+		<p>
+		Written by <a href='https://twitter.com/subversified'>Wendy Despain</a><br>
 		December 2012<br>
-		240 pages </p>
+		240 pages
+		</p>
 		<p><a href='https://www.amazon.com/100-Principles-Game-Design-DESPAIN/dp/0321902491/ref=sr_1_1?ie=UTF8&qid=1482367099&sr=8-1&keywords=100+principles+of+game+design' target='_blank'>Buy a copy</a></p>
 	";
 
@@ -377,7 +382,7 @@ if ( $title == "Project Animore" ) {
 	);
 
 	$sidebar = "
-		iOS Runner</p>
+		<p>iOS Runner</p>
 		<p><a href='suspended-belief-studios'>Suspended Belief Studios</a><p>
 		<p>Game Concept: Ray Yuen, Jeremy Klar</p>
 		<p>Art: Ray Yuen, Sun Park
@@ -417,7 +422,8 @@ if ( $title == "Malado Baldwin" ) {
 		array("skill"=>"CSS", "percent"=>30),
 	);
 
-	$sidebar = "Portfolio Website </p>
+	$sidebar = "
+		<p>Portfolio Website</p>
 		<p><a href='http://www.maladobaldwin.com' target='_blank'>maladobaldwin.com</a>
 	";
 
@@ -445,7 +451,8 @@ if ( $title == "Malado Baldwin" ) {
 		Epilogue: Malado really likes Wordpress, but finds it overwhelming sometimes. Artists are very picky about how their work is shown so she needed complete freedom. She is generally happy with the site but she finds that she doesn’t have the time to maintain it anymore. Recently, I’ve been thinking about building her a super simple site with my newfound PHP, jQuery, media query and SASSSSSS skills...to be continued...?
 	";
 
-	$sidebar = 'Portfolio Website</p>
+	$sidebar = '
+		<p>Portfolio Website</p>
 		<p><a href="http://www.maladobaldwin.com" target="_blank">maladobaldwin.com</a>';
 
 	$tools=array(
@@ -482,7 +489,8 @@ if ( $title == "Sarah Walko" ) {
 		After figuring out all the nessesary information on her hosting, the actual Wordpress install really was about 5 minutes (this is something they boast)! We worked together on learning about a fresh WP install and soon was figuring out best practices for theme management, plugins and navigation. PRETTY COOL. So cool that <a href='malado-baldwin-wordpress'>Malado </a> wanted a site just like Sarah’s!
 	";
 
-	$sidebar = 'Portfolio Website</p>
+	$sidebar = '
+		<p>Portfolio Website</p>
 		<p><a href="http://www.sarahwalko.com/blog" target="_blank">sarahwalko.com</a>';
 
 	$tools=array(
@@ -516,7 +524,7 @@ if ( $title == "Scavenger Hunt" ) {
 		<p>It did not win the grand prize, however the museum still wanted to use the design and according to the representative at Threadless, it is now being sold at the museum gift shop.';
 
 	$sidebar = '
-		T-shirt design for Threadless.com</p>
+		<p>T-shirt design for Threadless.com</p>
 		<p><a href="img/scavenger-hunt/01.jpg" data-lightbox="scav" data-title="T-shirt" alt="">shirt detail</a>
 		<div class="none"><img src="img/scavenger-hunt/02.jpg" data-lightbox="scav" data-title="Art details" alt=""></div></p>
 		<p>October 2013'
@@ -560,7 +568,7 @@ if ( $title == "The 3" ) {
 	;
 
 	$sidebar = '
-		iOS Trivia Game</p>
+		<p>iOS Trivia Game</p>
 		<p><a href="suspended-belief-studios">Suspended Belief Studios</a><p>
 		<p>Game Design: Ray Yuen, Jeremy Klar</p>
 		<p>Art & Design: Ray Yuen</p>
@@ -589,7 +597,7 @@ if ( $title == "Edgeware" ) {
 
 	$description = 'These are vector graphics proposed for a device that would help  Coast Guard patrols decide on the best course of action or even rules of engagement. They would input the conditions and the device would narrow down your options. I am not sure that this device was actually ever created but that’s the world of lucrative government contracts fer&nbsp;ya.';
 
-	$sidebar = 'Vector Illustrations';
+	$sidebar = "<p>Vector Illustrations</p>";
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>70),
@@ -618,7 +626,8 @@ if ( $title == "Egg Baby" ) {
 
 	$description = 'A Brooklyn-based apparel company needed some illustrations for some of their clothing. Their work is targeted at infants, small boys and girls.';
 
-	$sidebar = 'Tee designs</p>
+	$sidebar = '
+	<p>Tee designs</p>
 	<p><a href="http://www.egg-baby.com">Egg by Susan Lazar</a></p>';
 
 	$tools=array(
@@ -654,7 +663,7 @@ if ( $title == "Color Chameleon" ) {
 	";
 
 	$sidebar = "
-		iOS runner</p>
+		<p>iOS runner</p>
 		<p><a href='suspended-belief-studios'>Suspended Belief Studios</a></p>
 		<p>Game Design: Jeremy Klar, Ray Yuen</p>
 		<p>Art by Ray&nbsp;Yuen, Sun&nbsp;Park</p>
@@ -1040,7 +1049,8 @@ if ( $title == "Abriendo Puertas / Opening&nbsp;Doors" ) {
 		AP/OD needed an informational site where parents and educators could come to find out more about the organization, where trainings would be, and a place where educators could access teaching materials. After getting approval on the overall look of the site, we built the site based on the Skeleton framework. After a few rounds of going back and forth, we streamlined the content of the site with PHP. They now have a beautiful site that looks great on all&nbsp;devices.
 		';
 
-	$sidebar = "Informational Responsive Website for a non-profit</p>
+	$sidebar = "
+		<p>Informational Responsive Website for a non-profit</p>
 		<p><a href='http://ap-od.org' target='_blank'>ap-od.org</a>
 	";
 	$tools=array(
@@ -1073,7 +1083,7 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>55),
-		array("skill"=>"Hand-drawn&nbsp;illustrations", "percent"=>30),
+		array("skill"=>"Hand&#8209;drawn&nbsp;illustrations", "percent"=>30),
 		array("skill"=>"Indesign", "percent"=>10),
 		array("skill"=>"Illustrator", "percent"=>5),
 	);
@@ -1095,7 +1105,8 @@ if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 		'
 		;
 
-	$sidebar = "Children's Book<br>Published 2010</p>
+	$sidebar = "
+		<p>Children's Book<br>Published 2010</p>
 		<p>written by: Lin Fong O'Neill, <a href='http://www.lotuswriting.com'>Lotus&nbsp;Writing</a><br>Illustrated: by Ray Yuen</p>
 		<p>Hand-drawn and inked, coloring done in Photoshop</p>
 		<p><a href='http://www.amazon.com/Monkey-Mo-Go-Lin-Fong-ONeill/dp/0978644131'>Buy the book</a></p>
@@ -1140,12 +1151,13 @@ if ( $title == "The Rise of Darkrai" ) {
 		array("skill"=>"Photoshop", "percent"=>20),
 	);
 
-	$sidebar = "February 2008</p>
-				<p><strong>Creative</strong>: Chris&nbsp;Brixey, Ray&nbsp;Yuen</p>
-				<p><strong>Interactive</strong>: Masahiro&nbsp;Manabe</p>
-				<p>Logo, movie poster, marketing materials, DVD packaging, movie mini-site</p>
-				<p><strong>Original title</strong>: Pocket&nbsp;Monsters Diamond & Pearl the Movie: Dialga vs. Palkia vs. Darkrai</p>
-				<p>劇場版ポケットモンスター ダイヤモンド&パール ディアルガVSパルキアVSダークライ</p>
+	$sidebar = "
+		<p>February 2008</p>
+		<p><strong>Creative</strong>: Chris&nbsp;Brixey, Ray&nbsp;Yuen</p>
+		<p><strong>Interactive</strong>: Masahiro&nbsp;Manabe</p>
+		<p>Logo, movie poster, marketing materials, DVD packaging, movie mini-site</p>
+		<p><strong>Original title</strong>: Pocket&nbsp;Monsters Diamond & Pearl the Movie: Dialga vs. Palkia vs. Darkrai</p>
+		<p>劇場版ポケットモンスター ダイヤモンド&パール ディアルガVSパルキアVSダークライ</p>
 				";
 
 	$img_info = array(
@@ -1202,7 +1214,7 @@ if ( $title == "Pok&eacute;mon: 10th Anniversary" ) {
 		array("skill"=>"Indesign", "percent"=>10),
 	);
 
-	$sidebar = "Bryant Park";
+	$sidebar = "<p>Bryant Park</p>";
 
 	$img_info = array(
 		array("file" => "16.jpg", "alt" => "Journey Across America"),
@@ -1235,7 +1247,7 @@ if ( $title == "Pok&eacute;mon: Toys'R'Us Feature Shop" ) {
 
 	$description="Coming soon.";
 
-	$sidebar = "Toys'R'Us Times Square";
+	$sidebar = "<p>Toys'R'Us Times Square</p>";
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>80),
@@ -1267,13 +1279,13 @@ if ( $title == "Pok&eacute;mon: Toy Fair" ) {
 	$description="
 		The Pok&eacute;mon Booth at Toy Fair 2006, in addition to new opportunities in product development, was an opportunity to promote our 10th Anniversary and our U.S. mall tour.
 		$p_break
-		While Pok&eacute;mon still had a presence in the US, recognition had waned over time. Our strategy that year was to have every event support our 10th anniversary and build up to our <a href='10th-anniversary'>video game tournament</a> in New York City's Bryant Park.
+		While Pok&eacute;mon still had a presence in the US, recognition had waned over time. Our strategy that year was to have every event support our 10th Anniversary and build up to our <a href='10th-anniversary'>video game tournament</a> in New York City's Bryant Park.
 		$p_break
 		Working with a production company to produce the fixtures and graphics, we assembled the booth the day before the show started. The booth featured the <em>four pillars</em> of the Pok&eacute;mon brand—the video game, television show, movies and trading card game. We commissioned a special statue to be built which featured the new Pok&eacute;mon from the that year's movie release. The back-wall was composed of a time-line of key events and memorabilia in Pok&eacute;mon history leading up to the present.
 	";
 
 	$sidebar = "
-		Trade Show Booth<br>
+		<p>Trade Show Booth</p>
 		Jacob Javits Center, NYC<br>
 		2006
 	";
@@ -1326,8 +1338,8 @@ if ( $title == "Pok&eacute;mon: Mystery Dungeon" ) {
 	";
 
 	$sidebar = "
-		Strategy Guide <br />
-		Mini-website Creation
+		<p>Strategy Guide</p>
+		<p>Mini-website Creation</p>
 	";
 
 	$tools=array(
@@ -1351,12 +1363,20 @@ if ( $title == "Pocket Pok&eacute;dex" ) {
 	$path="img/pocket-pokedex";
 	$company = "Pokemon";
 
-	// TODO: fill in missing Pokemon descriptions
-	$description="Coming soon.";
+	$description="
+	<span class='intro'>Challenge: To create a pocket reference guide to aid in collecting and training Pok&eacute;mon to compliment the Diamond and Pearl releases on the portable game system Nintendo DS.</span>
+	$p_break
+	To support the release of each core Pok&eacute;mon game, we published a strategy guide consisting of a walkthrough and Pok&eacute;dex. Every new game adds 100+ new Pok&eacute;mon so this book basically gets bigger every year. In order to successfully design this book, we identified what you would be doing and when you would be doing&nbsp;it.
+	$p_break
+	<img src='$path/pocket-pokedex-functions.png' alt='Pocket Pok&eacute;dex Functions' />
+	$p_break
+	Everything you do in the game is centered around two things—collecting and battling. At a minimum, we needed to cover these two activities or this book would just <span class='tooltip underline' title='For context, smartphones were in their infancy at this point.'>not be useful</span>. “Gotta catch ‘em all” is the mantra and consisting of <span class='tooltip underline' title='there are now 802!'>493 Pok&eacute;mon</span> (at the time), it’s not an easy undertaking. For battling, it was useful to know Pok&eacute;mon type weaknesses and move guides.
+	$p_break
+	In terms of the layout, we sorted by Pok&eacute;dex number. It’s not the most intuitive sorting for new comers, but we felt it made more sense. It matches up with the in-game Pok&eacute;dex and naturally reflects generations and evolution lines. We put the most important information on the outside margin for when you are skimming the pages. The National Pok&eacute;dex number doubled as a page number. Nice big picture of the Pok&eacute;mon. The Pok&eacute;mon type. We had some extra space so we included some extra information like size and egg groups. In the appendix, we included some more reference material and&nbsp;trivia.
+	";
 
 	$sidebar = "
-		Book Design <br />
-
+		<p>Book Design</p>
 	";
 
 	$tools=array(
@@ -1385,8 +1405,10 @@ if ( $title == "Battle Revolution" ) {
 
 	$description="Coming soon.";
 
-	$sidebar = "Strategy Guides <br />
-	Mini-website";
+	$sidebar = "
+	<p>Strategy Guides</p>
+	<p>Mini-website</p>
+	";
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>5),
@@ -1413,8 +1435,8 @@ if ( $title == "Pok&eacute;mon: Diamond & Pearl Launch" ) {
 	$description="Coming soon.";
 
 	$sidebar = "
-		Event at Nintendo World in New York <br />
-		Rockefeller Center
+		<p>Event at Nintendo World in New York</p>
+		<p>Rockefeller Center</p>
 	";
 
 	$tools=array(
@@ -1450,7 +1472,7 @@ if ( $title == "Licensing Show" ) {
 	$description="Coming soon.";
 
 	$sidebar = "
-		Trade Show Booth
+		<p>Trade Show Booth</p>
 	";
 
 	$tools=array(
@@ -1488,7 +1510,7 @@ if ( $title == "Pok&eacute;mon: Logos" ) {
 	$description="Coming soon.";
 
 	$sidebar = "
-		Logo examples
+		<p>Logo examples</p>
 	";
 
 	$tools=array(
@@ -1515,21 +1537,22 @@ if ( $title == "Wired" ) {
 
 	$path="img/wired";
 
-	$description="Illustration for an \"advertorial\" for Norton in Wired Magazine. Norton wanted to show that in this digital life of ours, our precious, precious memories are all stored on our personal devices that can be lost or broken. For this adventuring family, the best solution is to use Norton services to back up your data.
+	$description="Illustration for a Norton \"advertorial\" in Wired Magazine. Norton wanted to show that in this digital life of ours, our precious, precious memories are all stored on our personal devices that can be lost or broken. For this adventuring family, the best solution is to use Norton services to back up your data.";
+	$content="
 	</p>
-		<img src='img/wired/family.jpg' class='scale-with-grid'>
+		<img src='img/wired/family.jpg' class='scale-with-grid photo-outline'>
 		<img src='img/wired/rejected-01.jpg' class='scale-with-grid'>
 	<p>
 	The first idea–dad taking an underwater portrait–was rejected. I actually didn't get a reason, but so I hustled with the other option of the family in a road-trip scenario.
 	</p>
 	";
 
-	$sidebar="Wired Magazine<br>2014";
+	$sidebar="<p>Wired Magazine<br>2014</p>";
 	// add date of magazine
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>70),
-		array("skill"=>"<span class='nowrap'>Hand-drawn illustrations</span>", "percent"=>20),
+		array("skill"=>"Hand&#8209;drawn&nbsp;illustrations", "percent"=>20),
 		array("skill"=>"Photoshop", "percent"=>10),
 	);
 
@@ -1553,8 +1576,8 @@ if ( $title == "Holiday Card 2014" ) {
 	";
 
 	$sidebar="
-	Holiday 2014 <br>
-	<a href='http://www.rayuen.com/holiday2014' target='_blank'>link to site</a>
+	<p>Holiday 2014</p>
+	<p><a href='http://www.rayuen.com/holiday2014' target='_blank'>link to site</a></p>
 	";
 
 	$tools=array(
@@ -1585,8 +1608,8 @@ if ( $title == "Adelle Marcero" ) {
 	";
 
 	$sidebar="
-	Adelle Marcero Portfolio Site <br>
-	<a href='http://adelle.ink' target='_blank'>adelle.ink</a>
+	<p>Adelle Marcero Portfolio Site</p>
+	<p><a href='http://adelle.ink' target='_blank'>adelle.ink</a></p>
 	";
 
 	$tools=array(
@@ -1615,8 +1638,8 @@ if ( $title == "LesConcierges" ) {
 	$description="I was comissioned to do some illustrations to show an example of how LesConcierges' new web interface and app would work with their existing service.";
 
 	$sidebar="
-		Illustrations<br>
-		July 2014
+		<p>Illustrations</p>
+		<p>July 2014</p>
 	";
 
 	$tools=array(
@@ -1661,7 +1684,8 @@ if ( $title == "#Inktober2016" ) {
 	// $template="art";
 	$path="img/inktober-2016";
 
-	$additional_img_column_count=1;
+	// $additional_img_column_count=1;
+	$thumbnail_size="variable-height";
 
 	$description="
 		All throughout October, I drew a picture everyday and posted it to Instagram and Twitter with the hashtag <a href='https://twitter.com/search?q=%23InkTober'>#Inktober</a>. Inktober is a drawing exercise occurs in October that my friend got me into. A bunch of people were posting images all over the world so it seems like fun!
@@ -1669,8 +1693,8 @@ if ( $title == "#Inktober2016" ) {
 	";
 
 	$sidebar="
-		Illustration exercise<br>
-		October 2016
+		<p>Illustration exercise</p>
+		<p>October 2016</p>
 	";
 
 	$tools=array(
@@ -1693,8 +1717,8 @@ if ( $title == "#Inktober2016" ) {
 
 function get_nextlesson_projects(){
 	$works = array(
-		array( "name" => "NextLesson Project Covers", "path" => "nextlesson-covers" ),
-		array( "name" => "NextLesson Marketing", "path" => "nextlesson-marketing" ),
+		array( "name" => "NextLesson Lesson Covers", "path" => "nextlesson-covers" ),
+		// array( "name" => "NextLesson Marketing", "path" => "nextlesson-marketing" ),
 		array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid" ),
 		array( "name" => "NextLesson Glossary Terms", "path" => "nextlesson-glossary" ),
 		array( "name" => "NextLesson Characters", "path" => "nextlesson-characters" ),
@@ -1720,9 +1744,10 @@ if ( $title == "NextLesson" ) {
 	$template="company";
 	$logo="svg";
 
-	$sidebar = "Engaging K-12 educational materials<br>
-	2014-2016</p>
-	<p><a href='http://nextlesson.org' target='_blank'>nextlesson.org</a>";
+	$sidebar = "
+	<p>Engaging K-12 Educational Materials</p>
+	<p>2014-2016</p>
+	<p><a href='http://nextlesson.org' target='_blank'>nextlesson.org</a></p>";
 
 	$img_info = array(
 	);
@@ -1747,16 +1772,15 @@ if ( $title == "NextLesson Lesson Covers" ) {
 		Before I could get the team to help with the covers, I needed to make sure I knew what I wanted. Planned in tandem with a redesigned search/browse page, we set about standardizing the displayed information as well as taking the first steps to form a distinctive “look.”
 		$p_break
 		We set about making sure all covers had the same information in the same spot. Lesson type on top, logo in the bottom left, and title nice and big; everything else was up to the artist. I oversee a team of designers to make sure covers are created in a timely manner. I’ve created a graphics library that our freelancers use to facilitate faster turnaround.
-		<p></p>
+		$p_break
 		Jump to 2 years and 2,034 covers later. Most of the back-covers are complete and a system is in place for new covers. Please see some of my favorite covers below.
+		</p>
 	";
 
 	$sidebar = "
-		<p>
-		Design System and Illustrated Covers<br>
-		2014-2016
-		</p>
-		2,000+ covers
+		<p>Design System and Illustrated Covers</p>
+		<p>2014-2016</p>
+		<p>2,000+ covers</p>
 	";
 	$tools = array(
 		array("skill"=>"Photoshop", "percent"=>45),
@@ -1782,7 +1806,7 @@ if ( $title == "NextLesson Lesson Covers" ) {
 
 if ( $title == "NextLesson InterestID" ) {
 
-	$template = "ui";
+	// $template = "ui";
 	$company = "NextLesson";
 	$path = "img/nextlesson-interestid";
 	// $movie = "$path/interestid-voting.mp4";
@@ -1797,9 +1821,9 @@ if ( $title == "NextLesson InterestID" ) {
 	";
 
 	$sidebar = "
-		Student Interest Tool<br>
-		2015
-		<a href='https://www.nextlesson.org/interestid/' target='_blank'>link to project</a>
+		<p>Student Interest Tool</p>
+		<p>2015</p>
+		<p><a href='https://www.nextlesson.org/interestid/' target='_blank'>link to project</a></p>
 	";
 
 	$tools = array(
@@ -1810,11 +1834,12 @@ if ( $title == "NextLesson InterestID" ) {
 	);
 
 	$img_info = array(
-		// array("file" => "cover.jpg", "alt" => "..."),
+		array("file" => "cover.jpg", "alt" => "Screenshot of the tool"),
 		// array("file" => "interest-selection.jpg", "alt" => "InterestID liking and disliking"),
 	);
+	$thumbnail_size = "small";
 
-	$other = "
+	$content = "
 	<h3>Rating Interests</h3>
 	<video width='320' height='240' controls>
 		<source src='$path/interestid-voting.mp4' type='video/mp4'>
@@ -1846,7 +1871,6 @@ if ( $title == "NextLesson InterestID" ) {
 
 if ( $title == "NextLesson Glossary Terms" ) {
 
-	// $template = "ui";
 	$path = "img/nextlesson-glossary";
 	$company = "NextLesson";
 	// $movie = "$path/interactive-pt-overview.mp4";
@@ -1854,7 +1878,8 @@ if ( $title == "NextLesson Glossary Terms" ) {
 	$description = "After releasing the initial version of the Interactive lessons, it was up to our Curriculum team to fill it with learning materials! As they were working on that, we worked on the next iteration. To support our glossary terms, we thought having would be impactful, as well helpful for our younger and users.
 		$p_break
 		We had a variety of things to illustrate-including careers, mathematic principles, as well as terms specific to industries. Luckily, I had a whole library of image assets that I'd slowly created over time, making this task a little less time-intensive. However, it did require a bit more thought over how to illustrate abstract those terms, like &ldquo;viable&rdquo; and &ldquo;hypothesize.&rdquo;
-		</p>
+	";
+	$content = "
 		<img src='$path/02.png' alt='' class='thumb-outline scale-with-grid' />
 		<p>The glossary terms as they appear in the sidebar.</p>
 		<video class='thumb-outline' width='800' height='600' controls>
@@ -1865,8 +1890,8 @@ if ( $title == "NextLesson Glossary Terms" ) {
 	";
 
 	$sidebar = "
-		Vector Illustrations<br>
-		2016
+		<p>Vector Illustrations</p>
+		<p>2016</p>
 	";
 
 	$tools = array(
@@ -1875,38 +1900,33 @@ if ( $title == "NextLesson Glossary Terms" ) {
 	);
 
 	$img_info = array(
-		array("file"=>"glos/Agility.png", "alt"=>"Agility", "caption"=>TRUE),
-		array("file"=>"glos/Baker.png", "alt"=>"Baker", "caption"=>TRUE),
-		array("file"=>"glos/Budget.png", "alt"=>"Budget", "caption"=>TRUE),
-		array("file"=>"glos/Calorie.png", "alt"=>"Calorie", "caption"=>TRUE),
-		array("file"=>"glos/Consume.png", "alt"=>"Consume", "caption"=>TRUE),
-		array("file"=>"glos/Cost_of_Production.png", "alt"=>"Cost of Production", "caption"=>TRUE),
-		array("file"=>"glos/Counting_Principle.png", "alt"=>"Counting Principle", "caption"=>TRUE),
-		// array("file"=>"glos/Coupons.png", "alt"=>"Coupons", "caption"=>TRUE),
-		array("file"=>"glos/Critically_Endangered.png", "alt"=>"Critically Endangered", "caption"=>TRUE),
-		array("file"=>"glos/Critique.png", "alt"=>"Critique", "caption"=>TRUE),
-		array("file"=>"glos/Entrepreneur.png", "alt"=>"Entrepreneur", "caption"=>TRUE),
-		array("file"=>"glos/Field_Goal.png", "alt"=>"Field Goal", "caption"=>TRUE),
-		array("file"=>"glos/Foul.png", "alt"=>"Foul", "caption"=>TRUE),
-		array("file"=>"glos/Hypothesize.png", "alt"=>"Hypothesize", "caption"=>TRUE),
-		array("file"=>"glos/List_Price.png", "alt"=>"List Price", "caption"=>TRUE),
-		array("file"=>"glos/Marketing_Analyst.png", "alt"=>"Marketing Analyst", "caption"=>TRUE),
-		array("file"=>"glos/Marketing.png", "alt"=>"Marketing", "caption"=>TRUE),
-		array("file"=>"glos/Median.png", "alt"=>"Median", "caption"=>TRUE),
-		array("file"=>"glos/Negotiate.png", "alt"=>"Negotiate", "caption"=>TRUE),
-		array("file"=>"glos/Operator.png", "alt"=>"Operator", "caption"=>TRUE),
-		array("file"=>"glos/Personal_Shopper.png", "alt"=>"Personal Shopper", "caption"=>TRUE),
-		array("file"=>"glos/Pricing_Structure.png", "alt"=>"Pricing Structure", "caption"=>TRUE),
-		array("file"=>"glos/Production_Costs.png", "alt"=>"Production Costs", "caption"=>TRUE),
-		// array("file"=>"glos/Program.png", "alt"=>"Program", "caption"=>TRUE),
-		array("file"=>"glos/Revenue.png", "alt"=>"Revenue", "caption"=>TRUE),
-		array("file"=>"glos/Royalties.png", "alt"=>"Royalties", "caption"=>TRUE),
-		array("file"=>"glos/Stage_Manager.png", "alt"=>"Stage Manager", "caption"=>TRUE),
-		array("file"=>"glos/Telephoto_Lens.png", "alt"=>"Telephoto Lens", "caption"=>TRUE),
-		array("file"=>"glos/Viable.png", "alt"=>"Viable", "caption"=>TRUE),
-		array("file"=>"glos/Video_Wall.png", "alt"=>"Video Wall", "caption"=>TRUE),
+		array("file"=>"glos/Agility.png", "alt"=>"Agility"),
+		array("file"=>"glos/Agility.png", "alt"=>"Agility"),
+		array("file"=>"glos/Baker.png", "alt"=>"Baker"),
+		array("file"=>"glos/Budget.png", "alt"=>"Budget"),
+		array("file"=>"glos/Cost_of_Production.png", "alt"=>"Cost of Production"),
+		array("file"=>"glos/Counting_Principle.png", "alt"=>"Counting Principle"),
+		array("file"=>"glos/Coupons.png", "alt"=>"Coupons"),
+		array("file"=>"glos/Critically_Endangered.png", "alt"=>"Critically Endangered"),
+		array("file"=>"glos/Critique.png", "alt"=>"Critique"),
+		array("file"=>"glos/Entrepreneur.png", "alt"=>"Entrepreneur"),
+		array("file"=>"glos/List_Price.png", "alt"=>"List Price"),
+		array("file"=>"glos/Marketing.png", "alt"=>"Marketing"),
+		array("file"=>"glos/Median.png", "alt"=>"Median"),
+		array("file"=>"glos/Personal_Shopper.png", "alt"=>"Personal Shopper"),
+		array("file"=>"glos/Pricing_Structure.png", "alt"=>"Pricing Structure"),
+		array("file"=>"glos/Production_Costs.png", "alt"=>"Production Costs"),
+		array("file"=>"glos/Program.png", "alt"=>"Program"),
+		array("file"=>"glos/Revenue.png", "alt"=>"Revenue"),
+		array("file"=>"glos/Royalties.png", "alt"=>"Royalties"),
+		array("file"=>"glos/Stage_Manager.png", "alt"=>"Stage Manager"),
+		array("file"=>"glos/Telephoto_Lens.png", "alt"=>"Telephoto Lens"),
+		array("file"=>"glos/Viable.png", "alt"=>"Viable"),
+		array("file"=>"glos/Video_Wall.png	", "alt"=>"Video Wall"),
 	);
 	shuffle($img_info);
+
+	$thumbnail_size="large";
 
 	$other = "";
 
@@ -1926,8 +1946,8 @@ if ( $title == "NextLesson Marketing" ) {
 	$description = "Coming Soon.";
 
 	$sidebar = "
-		Marketing<br>
-		2014
+		<p>Marketing</p>
+		<p>2014</p>
 	";
 
 	$tools = array(
@@ -1960,8 +1980,8 @@ if ( $title == "NextLesson Search and Browse Page" ) {
 
 	//TODO: update the sidebar information
 	$sidebar = "
-		Illustrations<br>
-		July 2014
+		<p>Illustrations</p>
+		<p>July 2014</p>
 	";
 
 	$tools = array(
@@ -1990,52 +2010,47 @@ if ( $title == "NextLesson Search and Browse Page" ) {
 
 if ( $title == "NextLesson Characters" ) {
 
-	// $template = "ui";
-	$company = "NextLesson";
 	$path = "img/nextlesson-characters";
-	$movie = "$path/search-browse-bar-1.mp4";
+	$company = "NextLesson";
 
 	$description = "At NextLesson, in order to unify our covers and illustrations, developed a system of posable characters that could be used in a variety of situations. I developed a set of rules that which specified proportions and color choices depending on grade. Using these rules and an in-house assets library, contractors were able to make covers that consistently conveyed our visual standards as well as speeding up turn-around time.
 	";
 
 	$sidebar = "
-		Character Designs
+		<p>Character Designs</p>
 	";
 
-	include_once "functions.php";
-	$avatar_html = "";
-	$avatars = get_files("$path/avatars");
-	shuffle($avatars);
-	$class="";
-	$count = 1;
-	foreach ($avatars as $key => $avatar) {
-		if ( $count == 1 ) {
-			$class = "alpha";
-		} elseif ( $count == 4 ) {
-			$class = "omega";
-			$count = 0;
-		}
-		$avatar_html.="<div class='four columns add-bottom $class'><img src='$path/avatars/$avatar' alt='NextLesson Avatar $key'></div>";
-		$class = "";
-		$count++;
-	}
+	// include_once "functions.php";
+	// $avatar_html = "";
+	// $avatars = get_files("$path/avatars");
+	// shuffle($avatars);
+	// $class="";
+	// $count = 1;
+	// foreach ($avatars as $key => $avatar) {
+	// 	if ( $count == 1 ) {
+	// 		$class = "alpha";
+	// 	} elseif ( $count == 4 ) {
+	// 		$class = "omega";
+	// 		$count = 0;
+	// 	}
+	// 	$avatar_html.="<div class='four columns add-bottom $class'><img src='$path/avatars/$avatar' alt='NextLesson Avatar $key'></div>";
+	// 	$class = "";
+	// 	$count++;
+	// }
+	$thumbnail_size = "small";
 
 	$content = "
 		<figure class='add-bottom'>
-			<img src='$path/templates/body-rules.png' alt=''>
+			<img src='$path/templates/body-rules.png' alt='Body rules'>
 			<figcaption>Body Rules</figcaption>
 		</figure>
 		<figure class='add-bottom'>
-			<img src='$path/templates/expressions.png' alt=''>
+			<img src='$path/templates/expressions.png' alt='Facial Expression rules'>
 			<figcaption>Facial Expressions</figcaption>
 		</figure>
 		<figure class='add-bottom'>
-			<img src='$path/templates/portrait-rules.png' alt=''>
+			<img src='$path/templates/portrait-rules.png' alt='Head Proportion rules'>
 			<figcaption>Different Head Proportions</figcaption>
-		</figure>
-		<figure>
-			$avatar_html
-			<figcaption>The selection of avatars</figcaption>
 		</figure>
 	";
 	$tools = array(
@@ -2052,9 +2067,6 @@ if ( $title == "NextLesson Characters" ) {
 		array( "file"=>"slider/Girls_in_profile.png", "alt"=>""),
 	);
 
-	// $other = "";
-	$additional_img_column_count = 1;
-
-} //end NEXTLESSON SEARCH BROWSE
+} //end NEXTLESSON CHARACTERS
 
 
