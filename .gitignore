@@ -1,5 +1,4 @@
 *.sass-cache/
 *.DS_Store
 *z_deprecated/
-*jobs/
 sftp-config.json

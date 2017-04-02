@@ -1,0 +1,1 @@
+I found your open Marketing Designer role through your website and wanted to apply because you guys seem awesome. For the past two years I’ve been at an edtech startup <a href='work?project=nextlesson&id=$short_name'>NextLesson</a> doing branding, art production, illustration, and UI/UX. Managing art took most of my time and I'd love a role where I can focus more on UX.
