@@ -1832,6 +1832,8 @@ if ( $title == "NextLesson InterestID" ) {
 		array("skill"=>"Sketches", "percent"=>15),
 		array("skill"=>"Spreadsheets", "percent"=>10),
 	);
+	// $hero_img = "$path/hero-image.jpeg";
+	// $hero_img_mobile = "$path/hero-image.jpeg";
 
 	$img_info = array(
 		array("file" => "cover.jpg", "alt" => "Screenshot of the tool"),

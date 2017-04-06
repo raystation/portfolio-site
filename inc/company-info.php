@@ -3828,6 +3828,80 @@ case 'ixl-illustration-coordinator':
 		);
 	break;
 
+	//BAY-AREA-DISCOVERY-MUSEUM-GRAPHIC-DESIGNER
+	case "bay-area-discovery-museum-graphic-designer":
+		$short_name = "bay-area-discovery-museum-graphic-designer";
+		$originaljobposting="https://www.indeed.com/viewjob?jk=804a5e60986de81c&q=illustration&l=San+Francisco,+CA&tk=1bbhpfi33bscjcs2&from=web";
+		$hiring_company="Bay Area Discovery Museum";
+		$jobTitle="Graphic Designer";
+		$date="April 4, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+		// $slider_img = "jobs/$short_name.jpg";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "I found this role on Linkedin and wanted to pass along my info. I recently just left an education startup and loving the experience, wanted to find something similiar. I believe my design/art style and production experience will be a great asset. I'm a creative with 10+ years of experience with skills in branding, art production, illustration, and product UI/UX.
+		";
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			array(
+				"path"=>"scavenger-hunt",
+				"name"=>"Scavenger Hunt Tee",
+				"desc" => "Tee shirt entry to children's museum contest.",
+			),
+		);
+	break;
+
+
+	//EXPENSIFY-SF DESIGNER
+	case "expensify-sf-designer":
+		$short_name = "expensify-sf-designer";
+		$originaljobposting="https://we.are.expensify.com/sf-designer";
+		$hiring_company="Expensify";
+		$jobTitle="SF Designer";
+		$date="April 5, 2017";
+		$hiremepage = "http://rayuen.com/$short_name";
+		$funny_portrait = TRUE;
+		// $slider_img = "jobs/$short_name.jpg";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = markdown_exist("jobs/$short_name-letter.md");
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+		);
+	break;
+
 }
 
 // ========================

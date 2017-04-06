@@ -11,7 +11,6 @@
 @import 'bourbon/bourbon';
 @import 'base';
 @import 'skeleton';
-@import 'slick';
 @import 'lightbox';
 @import 'tooltipster';
 @import 'responsive-indicator';
@@ -101,9 +100,9 @@ body {
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 	-webkit-text-size-adjust: 100%;
-	margin-top: 50px;
+	margin-top: 10px;
 	@media #{$md}{
-		margin-top: 60px;
+		margin-top: 70px;
 	}
 }
 h1, h2, h3, h4, h5, h6 {
@@ -169,6 +168,9 @@ a,a:visited {
 .list-spacing-fix li	{
 	margin-bottom: 0.35em !important;
 	line-height: $line-height;
+}
+.fixed-padding-top {
+	padding-top: 20px;
 }
 
 hr {
@@ -351,7 +353,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		@include transition( all 0.75s ease-in-out );
 		&:hover {
 			@include transition( all 0.75s ease-in-out );
-			border-bottom: 3px solid lighten(white,20%);
+			border-bottom: 3px solid lighten(black,20%);
 		}
 	}
 	.header {
@@ -629,6 +631,11 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 			margin-bottom: 2em;
 		}
 	}
+	.slick {
+		@media #{$md}{
+			@extend .fixed-padding-top;
+		}
+	}
 }
 ul.tags {
 	margin: 0;
@@ -659,6 +666,7 @@ ul.tags {
 
 .filters {
 	// background-color: red;
+	@extend .fixed-padding-top;
 	display: flex !important;
 	width: 100%;
 	font-size: 15px;
@@ -872,7 +880,14 @@ ul.tags {
 	// -webkit-flex-wrap: wrap;
 	// -ms-flex-wrap: wrap;
 }
-
+.hero-container {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	img {
+		width: 100%;
+	}
+}
 
 
 // HIRE ME
@@ -898,22 +913,18 @@ ul.tags {
 	}
 }
 .cover-letter {
-	h5 {
-		margin-top: 1em;
-	}
 	.landing-page {
-		font-size: 22px;
+		font-size: 20px;
 		line-height: 1.5em;
 		p {
+			line-height: inherit;
 			@media #{$mobile} {
-				font-size: 18px !important;
-				line-height: 1.35em;
+				font-size: 16px;
 			}
 			a:link, a:visited {
 				&:hover {
 					@include underline(3px,$primary-color);
 				}
-				// background-color: #F5F8FA;
 				color: $primary-color;
 			}
 		}
@@ -928,16 +939,18 @@ ul.tags {
 			font-weight: 900;
 			font-size: 32px;
 			line-height: 1.5em;
-			@media #{$mobile}
-			 {
+			@media #{$mobile} {
 				font-size: 25px;
 				line-height: 1.35em;
 			}
 			.job-title {}
 		}
 		h3 {
-			font-size: 25px;
-			margin-top: 2em;
+			font-size: 20px;
+			margin: 0 0 10px 0;
+		}
+		h5 {
+			margin-top: 1em;
 		}
 		img {
 		  display: block;
@@ -950,6 +963,10 @@ ul.tags {
 				color: $txt-color;
 			}
 		}
+		img.portrait {
+			border-radius: 10em;
+			margin-bottom: 2rem;
+		}
 		.tooltip {
 			color: $link-color;
 		}
@@ -959,8 +976,8 @@ ul.tags {
 		.checklist {
 			li {margin-bottom: 0;}
 			@media only screen and (min-width: 800px) {
-				@include column-count(2);
-				@include column-gap(1em);
+				@include column-count(1);
+				// @include column-gap(1em);
 			}
 		}
 		ul.skills {
@@ -1501,3 +1518,4 @@ video {
 // 	.mobile-only {display: none !important;}
 // 	.desktop-only {display: inherit !important;}
 // }
+@import 'slick';

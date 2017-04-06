@@ -4,43 +4,58 @@
 $tags = isset($tags) ? get_tags($tags) : null;
 $tags_html = isset($tags) ? "<ul class='tags'>$tags</ul>" : null;
 $project_path="";
+
+$hero_img_html="";
+$img_slider_html="";
+
 if (!isset($thumbnail_size)) {$thumbnail_size="medium";}
 
-// MAKES THE TOP SLIDER
-$img_slider_html="";
-if (isset($img_info)) {
-	$img_slider_html .= "<div class='slick'>";
-		foreach($img_info as $img) {
-			$outline_class="";
-			$caption_text="";
-			// this is if we want thumbnails
-			if (isset($img['class'])) {
-				$outline_class="thumb-outline";
+if ( isset($hero_img) ) {
+	$hero_img_html="
+	</div>
+	<div class='hero-container'>
+		<img src='$hero_img' alt='$hero_img'>
+	</div>
+	<div class='container main-container add-bottom opacity-fade'>
+	";
+} else {
+	// MAKES THE TOP SLIDER
+	$img_slider_html="";
+	if (isset($img_info)) {
+		$img_slider_html .= "<div class='slick'>";
+			foreach($img_info as $img) {
+				$outline_class="";
+				$caption_text="";
+				// this is if we want thumbnails
+				if (isset($img['class'])) {
+					$outline_class="thumb-outline";
+				}
+				if (isset($img['caption'])) {
+					$caption_text = $img['alt'];
+				}
+			    $img_slider_html .= "<div><img class='scale-with-grid tooltip add-bottom $outline_class' src='$path/$img[file]' alt='$img[alt]'>$caption_text</div>";
 			}
-			if (isset($img['caption'])) {
-				$caption_text = $img['alt'];
-			}
-		    $img_slider_html .= "<div><img class='scale-with-grid tooltip add-bottom $outline_class' src='$path/$img[file]' alt='$img[alt]'>$caption_text</div>";
-		}
-	$img_slider_html .= "</div>";
-}
-else
-{
-	if ( !isset($path) ) {
-		$title = !isset($path) ? $project : "";
-		$path = "fill out information on work-info";
-		$sidebar = "fill out information on work-info";
-		$description = "fill out information on work-info. Meggings kogi biodiesel Cosby sweater Blue Bottle. Freegan PBR&B mustache, plaid tousled organic craft beer direct trade lo-fi synth messenger bag selfies mixtape bespoke. Tote bag actually 8-bit viral hella, Helvetica banjo +1 McSweeney's Vice literally kogi you probably haven't heard of them ethical. Austin fixie kogi, pour-over mumblecore occupy flannel raw denim Shoreditch PBR&B next level Pitchfork authentic High Life. Vinyl slow-carb stumptown aesthetic authentic. Wolf cornhole VHS Truffaut Vice. Mlkshk cred lomo Marfa, tattooed artisan bicycle rights.";
-		$tools = array();
-	}
-	if ( file_exists("$path/cover.jpg") ) {
-		$img_slider_html .=  "<img class='scale-with-grid' src='$path/cover.jpg' alt='$title Top Image'>";
+		$img_slider_html .= "</div>";
 	}
 	else
 	{
-		$img_slider_html .=  "<img class='scale-with-grid' src='img/hero_default.jpg' alt='$title Top Image'>";
+		if ( !isset($path) ) {
+			$title = !isset($path) ? $project : "";
+			$path = "fill out information on work-info";
+			$sidebar = "fill out information on work-info";
+			$description = "fill out information on work-info. Meggings kogi biodiesel Cosby sweater Blue Bottle. Freegan PBR&B mustache, plaid tousled organic craft beer direct trade lo-fi synth messenger bag selfies mixtape bespoke. Tote bag actually 8-bit viral hella, Helvetica banjo +1 McSweeney's Vice literally kogi you probably haven't heard of them ethical. Austin fixie kogi, pour-over mumblecore occupy flannel raw denim Shoreditch PBR&B next level Pitchfork authentic High Life. Vinyl slow-carb stumptown aesthetic authentic. Wolf cornhole VHS Truffaut Vice. Mlkshk cred lomo Marfa, tattooed artisan bicycle rights.";
+			$tools = array();
+		}
+		if ( file_exists("$path/cover.jpg") ) {
+			$img_slider_html .=  "<img class='scale-with-grid' src='$path/cover.jpg' alt='$title Top Image'>";
+		}
+		else
+		{
+			$img_slider_html .=  "<img class='scale-with-grid' src='img/hero_default.jpg' alt='$title Top Image'>";
+		}
 	}
 }
+
 
 // MAIN CONTENT
 $content = isset( $content ) ? $content : null;
@@ -121,8 +136,16 @@ if ($tools) {
 
 // HTML
 $page = "
+	$hero_img_html
+
+	</div>
+	<div class='mobile'>$img_slider_html</div>
+	<div class='container main-container add-bottom opacity-fade'>
+
 	<div class='project-details sixteen columns'>
-		$img_slider_html
+		<div class='desktop'>
+			$img_slider_html
+		</div>
 		<h1>$title</h1>
 		<div class='twelve columns alpha'>
 			<div class='mobile'>

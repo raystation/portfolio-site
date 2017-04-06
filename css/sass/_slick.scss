@@ -163,6 +163,7 @@
     margin-bottom: 2em;
 }
 .slick-dots {
+    // display: none;
     position: absolute;
     // bottom: -20px;
     bottom: -10px;
@@ -197,22 +198,23 @@
             &:focus {
                 outline: none;
             }
-
-            &:before {
-                position: absolute;
-                top: 0;
-                left: 0;
-                content:'\2022';
-                width: 20px;
-                height: 20px;
-                font-family:"slick";
-                font-size: 6px;
-                line-height: 20px;
-                text-align: center;
-                color: black;
-                opacity: 0.25;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
+            @media #{$md}{
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content:'\2022';
+                    width: 20px;
+                    height: 20px;
+                    font-family:"slick";
+                    font-size: 6px;
+                    line-height: 20px;
+                    text-align: center;
+                    color: black;
+                    opacity: 0.25;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
             }
 
         }

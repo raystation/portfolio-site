@@ -3,31 +3,33 @@
 - hand-coded with HTML/CSS/PHP
 - I'm fairly new to PHP so this definitly needs refactoring
 
-- add in alts for images
 
 # TO DO
-- scan image folders
-	- take out ds-store
-	- filter out thumbnail
-- separate lists functionality from data
+TODO: Get rid of the container tags from the header and footer
+TODO: redo the BASIC template with flexbox
 - randomize the logo  (cartoony, pixel)
 - add icons for "tools"
 - add icons to quickly identify things
 - GIF page
 - portraits page / add in celebrity portraits
-- hover state, get rid of labels below thumbnails
+- add in alts for images
 
 # TO DO DONE
-- x conversational slideshow during interviews
-- x refactor list random getting
-- x index, put off for now
-- x currently learning
-- x ringtones
-- x Put Pokemon all on one page?
-- x Put Museyon all on one page?
-- x about ?resume ?hire-me
-- x fake jobs page
-	- x sandwich logisitcs
+x scan image folders
+  x take out ds-store
+  x filter out thumbnail
+x separate lists functionality from data
+x hover state, get rid of labels below thumbnails
+x conversational slideshow during interviews
+x refactor list random getting
+x index, put off for now
+x currently learning
+x ringtones
+x Put Pokemon all on one page?
+x Put Museyon all on one page?
+x about ?resume ?hire-me
+x fake jobs page
+	x sandwich logisitcs
 
 # RESUME ADDITIONS
 - Strong project organizational skills required; able to successfully juggle multiple projects and to prioritize tasks
