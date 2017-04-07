@@ -3902,6 +3902,45 @@ case 'ixl-illustration-coordinator':
 		);
 	break;
 
+
+	//EXPENSIFY-SF DESIGNER
+	case "zendesk-brand-designer":
+		$short_name = "zendesk-brand-designer";
+		$originaljobposting="http://jobs.jobvite.com/zendesk/job/oavl4fwO";
+		$hiring_company="Zendesk";
+		$jobTitle="Brand Designer";
+		$date="April 6, 2017";
+		// $hiremepage = "http://rayuen.com/$short_name";
+		$funny_portrait = TRUE;
+		// $slider_img = "jobs/$short_name.jpg";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = markdown_exist("jobs/$short_name-letter.md");
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+		);
+	break;
+
+}
+
+if ( $hiremepage=="" ) {
+	$hiremepage="http://rayuen.com/hire-me?id=$short_name";
 }
 
 // ========================

@@ -111,9 +111,9 @@ if (isset($section)) {
 				<a href="./">Ray Yuen <!-- <img src="img/logo-rayuen.svg" style='height:30px;'> --></a>
 			</div>
 			<div id='nav'>
-				<div class='nav-item'><a class="<? echo $work_class;?>" href="work<? echo $id_html;?>">work</a></div>
-				<div class='nav-item'><a class="<? echo $about_class;?>" href="about<? echo $id_html;?>">about</a></div>
-				<div class='nav-item header-icon'><a href="mailto:rayuen@gmail.com"><img src="img/icon/email.svg"></a></div>
+				<div class='nav-item nav-page'><a class="<? echo $work_class;?>" href="work<? echo $id_html;?>">work</a></div>
+				<div class='nav-item nav-page'><a class="<? echo $about_class;?>" href="about<? echo $id_html;?>">about</a></div>
+				<div class='nav-item header-icon' id='email'><a href="mailto:rayuen@gmail.com"><img src="img/icon/email.svg"></a></div>
 				<div class='nav-item header-icon'><a href="http://www.linkedin.com/in/rayuen" target='_blank'><img src="img/icon/linkedin.svg"></a></div>
 				<div class='nav-item header-icon'><a href="https://dribbble.com/raystation" target='_blank'><img src="img/icon/dribbble.svg"></a></div>
 			</div>

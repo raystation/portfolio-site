@@ -100,9 +100,9 @@ body {
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 	-webkit-text-size-adjust: 100%;
-	margin-top: 10px;
+	margin-top: 34px;
 	@media #{$md}{
-		margin-top: 70px;
+		margin-top: 40px;
 	}
 }
 h1, h2, h3, h4, h5, h6 {
@@ -337,14 +337,14 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	padding: 0; margin: 0;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 2px;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-	-webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-	-moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-	@media #{$md}{
-		position: fixed;
-		padding: 10px 40px 0px 40px;
-	}
+	padding-top: 5px;
+	// box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	// -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	// -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	// @media #{$md}{
+	// 	position: fixed;
+	// 	padding: 10px 40px 0px 40px;
+	// }
 	@include transition( all 0.75s ease-in-out );
 	.active {
 		border-bottom: 3px solid black;
@@ -377,8 +377,11 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 			@media #{$md}{
 				margin-bottom: 6px;
 			}
+			.nav-page {
+				margin-right: 10px;
+			}
 			.nav-item {
-				margin-left: 1rem;
+				margin-left: 10px;
 				a:link, a:visited {
 					font-weight: 900;
 					font-size: 15px;
@@ -395,9 +398,13 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 				}
 				@media #{$md} {
 					display: inherit;
-					height: 20px;
-					width: 20px;
+					height: 16px;
+					width: 16px;
 				}
+			}
+			#email {
+				height: 24px;
+				width: 24px;
 			}
 			// ul {
 			// 	padding: 0; margin: 0;
@@ -479,7 +486,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 // ======================================
 .index-textbox {
 	font-size: $font-size;
-	margin-top: 30px;
+	margin-top: 100px;
 	h1 {
 		font-size: 45px;
 		font-weight: 400 !important;
@@ -500,7 +507,6 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		}
 	}
 	@media #{$md} {
-		// line-height: $line-height;
 		margin-top: 70px;
 		background-color: transparent;
 		color: $txt-color;
@@ -737,9 +743,9 @@ ul.tags {
 	// }
 }
 .subhead-padding {
-	padding-top: 30px;
+	// padding-top: 30px;
 	@media #{$md}{
-		padding-top: 35px;
+		// padding-top: 35px;
 	}
 }
 
@@ -754,7 +760,10 @@ ul.tags {
 	width: 100%;
 	// max-width: 1440px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0;
+	@media #{$md}{
+		padding: 0 10px;
+	}
 	.fl-thumb {
 		width: 50%;
 		position: relative;
@@ -1097,30 +1106,28 @@ ul.tags {
 .original-job-details {
 	color: lighten($txt-color,30%);
 	margin-top: 1em;
-	p,ul,li {font-size: 1rem;}
+	font-size: 1rem;
+	line-height: 1.5em;
 	hr,ul,h1,h2,h3,h4,h5,h6 { @include column-span(all); }
 	h1,h2,h3,h4,h5,h6 {
 		color: black;
-		margin-top: 1em;
+		// margin-top: 40px;
+		margin-top: 1em !important;
+		margin-bottom: 1em !important;
 	}
 	h2,h3,h4,h5,h6 {
-		color: hsla(0, 0%, 40%, 1)
+		color: hsla(0, 0%, 40%, 1);
 	}
 	em {
-		// text-decoration: underline;
 		font-style: normal;
 		background-color: yellow;
 	}
-	h6,hr {
-		margin: 2em 0;
-		text-align: center;
-	}
-	line-height: 1.15em;
 	ul {
-		font-weight: 800;
+		// font-weight: 800;
 		li {
 			 list-style-type: circle;
-			 line-height: 1.2em;
+			 line-height: 10px;
+			 // margin-bottom: 1em;
 		}
 	}
 	@media only screen and (min-width: 800px) {
