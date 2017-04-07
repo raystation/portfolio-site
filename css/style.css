@@ -1937,6 +1937,14 @@ img.scale-with-grid2, .portfolio img {
   transition: all 0.25s ease-in-out;
 }
 
+.project-details {
+  padding-top: 0px;
+}
+@media only screen and (min-width: 767px) {
+  .project-details {
+    padding-top: 20px;
+  }
+}
 .project-details img {
   width: 100%;
 }
@@ -2076,10 +2084,10 @@ ul.tags li.active {
 }
 @media only screen and (min-width: 767px) {
   .filters {
-    font-size: 20px;
+    font-size: 17px;
   }
   .filters .filter-item {
-    padding: 6px 16px;
+    padding: 0px 13px;
     margin-right: 10px;
   }
   .filters .filter-item:last-of-type {
