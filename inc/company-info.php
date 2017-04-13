@@ -3915,7 +3915,9 @@ case 'ixl-illustration-coordinator':
 		// $slider_img = "jobs/$short_name.jpg";
 
 		$job_details = markdown_exist("jobs/$short_name.md");
-		$copy = markdown_exist("jobs/$short_name-letter.md");
+		$copy = "
+			I saw your posting on Linkedin and it sounds really great! For the past two years I’ve been at edtech startup NextLesson doing branding, art production, illustration, and product UI/UX. I loved it there, but I would love to be at a place where I'm not the lone designer.
+		";
 		$closing="";
 
 		$sample_projects_array = array(
@@ -3941,6 +3943,9 @@ case 'ixl-illustration-coordinator':
 
 if ( $hiremepage=="" ) {
 	$hiremepage="http://rayuen.com/hire-me?id=$short_name";
+}
+if ( $copy=="" ) {
+	$copy = markdown_exist("jobs/$short_name-letter.md");
 }
 
 // ========================

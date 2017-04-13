@@ -154,12 +154,17 @@ $page = "
 				</div>
 			</div>
 			<p>$description</p>
-			<div class='content'>$content</div>
+			<div class='content mobile'>$content</div>
 			<div class='project-sidebar mobile'><hr class='resume' style='width:10%'>$tools_html</div>
 		</div>
 		<div class='desktop'>
 			<div class='project-sidebar four columns omega'>
 				$sidebar
+			</div>
+		</div>
+		<div class='desktop'>
+			<div class='sixteen columns alpha'>
+				<div class='content'>$content</div>
 			</div>
 		</div>
 		$additional_img_html

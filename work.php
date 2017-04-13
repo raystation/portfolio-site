@@ -240,40 +240,6 @@
 
 if ( !isset($title) ) { $title = "Work"; }
 
-// COMING FROM THE JOB LANDING PAGE, THIS WILL GENERATE A SECONDARY NAV BAR ON THE BOTTOM
-if ($id) {
-	include_once "inc/company-info.php";
-	if ($sample_projects_array) {
-		$sample_projects_html="";
-		foreach ($sample_projects_array as $key => $sample_project) {
-
-			$project_number = $key+1;
-
-			if ($sample_project['path'] == $project) {
-				$active_style = "active";
-			} else {
-				$active_style = "";
-			}
-
-			$sample_projects_html.="
-				<a href='work?project=$sample_project[path]&id=$id' class='tooltip $active_style' title='$sample_project[name]'>#$project_number</a>
-			";
-		}
-	}
-	//subhead
-	$landing_page_nav = "
-		<div class='back-to-landing-page-menu'>
-			<div>
-				<a class='tooltip' title='back to job inquiry' href='./hire-me?id=$id'>&#11013;</a>
-				<strong><span class='desktop'>Highlighted</span> Projects for $hiring_company:</strong>
-				$sample_projects_html
-			</div>
-		</div>
-	";
-} else {
-	$landing_page_nav="";
-}
-
 include('inc/header.php');
 
 // if (isset($title)) {

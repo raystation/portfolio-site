@@ -1355,7 +1355,7 @@ if ( $title == "Pok&eacute;mon: Mystery Dungeon" ) {
 } //end MYSTERY DUNGEON
 
 
-//  POCKET #POKEDEX
+//  #POCKET #POKEDEX
 // ===============================
 
 if ( $title == "Pocket Pok&eacute;dex" ) {
@@ -1767,13 +1767,34 @@ if ( $title == "NextLesson Lesson Covers" ) {
 	// $movie = "$path/interactive-pt-overview.mp4";
 
 	$description = "
-		My first big task at NextLesson! We have numerous projects and lessons on the site and each one needed a cover.
+		<span class='intro'>Challenge: Standardize lesson and project covers to be more modern, grade&#8209;aligned, and &ldquo;Pinterest&#8209;friendly&rdquo; to convey and sell our content.
+		</span>
 		$p_break
-		Before I could get the team to help with the covers, I needed to make sure I knew what I wanted. Planned in tandem with a redesigned search/browse page, we set about standardizing the displayed information as well as taking the first steps to form a distinctive “look.”
-		$p_break
-		We set about making sure all covers had the same information in the same spot. Lesson type on top, logo in the bottom left, and title nice and big; everything else was up to the artist. I oversee a team of designers to make sure covers are created in a timely manner. I’ve created a graphics library that our freelancers use to facilitate faster turnaround.
-		$p_break
-		Jump to 2 years and 2,034 covers later. Most of the back-covers are complete and a system is in place for new covers. Please see some of my favorite covers below.
+		My first big task at NextLesson! These original covers were made with no template by the authors so results varied wildly. Logo placement was inconsistent, random typefaces and graphic elements were pulled from various Internet sources, and all seemed similar regardless of age group.
+		";
+	$content="
+		<img src='$path/original-covers.jpg' srcset='$path/original-covers-hd.jpg 2x' alt='Original Covers'>
+		<div class='caption'>Lesson Covers 2014</div>
+		<p>
+		Before I could start churning out covers, I needed to make sure a consistent design was in place. The first step, to facilitate faster browsing and scanning, was to make sure the same information always appeared in the same spot. We identified three signifiers that would always be visible and clear—subject, type of learning material and grade level.
+		</p>
+		<p>
+			I wondered how strict we should be in regards to 1 color and 1 typeface. In regards to teachers and students: is ordered uniformity too boring for them? And certainly a design for 1st Grade Counting would not look the same as a 10th Grade lesson dealing with inequality. After getting some feedback from teachers and looking at what teachers were sharing on Pinterest, we opted to make the covers less on the uniform side.
+		</p>
+		<img src='$path/round-1.jpg' srcset='$path/round-1-hd.jpg 2x' alt='Ideas'>
+		<div class='caption'>Initial designs for information placement</div>
+		<img src='$path/round-2.jpg' srcset='$path/round-2-hd.jpg 2x' alt='Ideas'>
+		<div class='caption'>First Iteration of the Covers</div>
+		<img src='$path/final.jpg' srcset='$path/final-hd.jpg 2x' alt='Ideas'>
+		<div class='caption'>Cover and card design</div>
+		<p>
+			Planned in tandem with a redesigned search/browse page, we set about standardizing the displayed information as well as taking the first steps to form a distinctive look. After the logo and title, space still seemed a bit restricted, so we settled on separating the grade and subject and putting it on the <em>card</em>.
+		</p>
+		<p>
+			For freelancers, I developed a checklist of things to consider when making a cover as well as a template to start. I developed a graphics library for them to use to facilitate faster turnaround time and ensure consistency of style.
+		</p>
+		<p>
+			Jump to 2 years and 2,034 covers later. Most of the back-covers are complete and a system is in place for new covers. Here are some of my favorite covers below.
 		</p>
 	";
 
@@ -1796,6 +1817,7 @@ if ( $title == "NextLesson Lesson Covers" ) {
 		array("file" => "golden-gaming.jpg", "alt" => "Golden Gaming"),
 		array("file" => "bundles-of-fun.jpg", "alt" => "Bundles of Fun"),
 	);
+	$hero_img="$path/hero-img.jpg";
 	// $auto_slideshow = "additional_imgs";
 
 } //end NEXTLESSON COVER
@@ -1816,7 +1838,7 @@ if ( $title == "NextLesson InterestID" ) {
 	That information is available to teachers sorted by most popular categories. A click on the category connects the teacher to lessons where that topic is covered. Simple grade and subject filters allow the teacher to find the right lesson for their class if there are numerous results.</p><p>
 	As of January 2017, students have rated over 1,605,000+ interests. The more students rate and suggest new interests, the better we can tailor our learning materials and be more real-time and relevant.
 	</p>
-	<img src='$path/laptop.jpg' alt='InterestID' class='scale-with-grid'>
+	<img src='$path/sample-screen.jpg' alt='InterestID' class='scale-with-grid'>
 	<p class='caption'>The teacher experience(left) vs. the student experience(right)</p>
 	";
 
@@ -1918,7 +1940,7 @@ if ( $title == "NextLesson Glossary Terms" ) {
 		array("file"=>"glos/Personal_Shopper.png", "alt"=>"Personal Shopper"),
 		array("file"=>"glos/Pricing_Structure.png", "alt"=>"Pricing Structure"),
 		array("file"=>"glos/Production_Costs.png", "alt"=>"Production Costs"),
-		array("file"=>"glos/Program.png", "alt"=>"Program"),
+		// array("file"=>"glos/Program.png", "alt"=>"Program"),
 		array("file"=>"glos/Revenue.png", "alt"=>"Revenue"),
 		array("file"=>"glos/Royalties.png", "alt"=>"Royalties"),
 		array("file"=>"glos/Stage_Manager.png", "alt"=>"Stage Manager"),

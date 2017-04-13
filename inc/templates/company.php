@@ -21,7 +21,7 @@
 	}
 ?>
 
-<div class="sixteen columns project-details">
+<div class="sixteen columns project-details half-top">
 
 	<?
 		if (file_exists("$path/logo.svg")) {

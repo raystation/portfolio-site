@@ -1724,9 +1724,9 @@ img.scale-with-grid2, .portfolio img {
   background-color: #f8d31c;
   padding: 0;
   margin: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
   -webkit-transition: all 0.75s ease-in-out;
   -moz-transition: all 0.75s ease-in-out false;
   -o-transition: all 0.75s ease-in-out false;
@@ -1818,7 +1818,7 @@ img.scale-with-grid2, .portfolio img {
   margin-top: 0;
   width: 100%;
   background-color: #262c30;
-  padding: 40px 10px 4px 10px;
+  padding: 45px 10px 4px 10px;
   line-height: 1.25em;
   color: white;
   font-size: 15px;
@@ -1859,8 +1859,7 @@ img.scale-with-grid2, .portfolio img {
 }
 @media only screen and (min-width: 767px) {
   .back-to-landing-page-menu {
-    position: fixed;
-    padding: 55px 20px 8px 20px;
+    padding: 48px 20px 8px 20px;
   }
 }
 
@@ -1981,12 +1980,9 @@ img.scale-with-grid2, .portfolio img {
   }
 }
 .project-details .caption {
-  font-size: 10px;
-}
-@media only screen and (min-width: 480px) {
-  .project-details .caption {
-    font-size: 11pt;
-  }
+  font-size: 11pt;
+  color: #028eff;
+  margin-bottom: 2em;
 }
 .project-details .intro {
   color: #028eff;
@@ -2093,6 +2089,10 @@ ul.tags li.active {
   .filters .filter-item:last-of-type {
     margin-right: 0;
   }
+}
+
+.subhead-padding {
+  padding-top: 30px;
 }
 
 .full-thumbnails {
@@ -2537,7 +2537,6 @@ ul.tags li.active {
 }
 .original-job-details ul li {
   list-style-type: circle;
-  line-height: 10px;
 }
 @media only screen and (min-width: 800px) {
   .original-job-details {
@@ -2599,6 +2598,7 @@ ul.tags li.active {
 
 .resume {
   font-size: 90%;
+  padding-top: 30px;
 }
 .resume .tech-skills > div {
   font: 8pt sans-serif;

@@ -24,13 +24,15 @@ Our team works hard and gets shit done. Not only will you get to work on challen
 * The ability to prioritize multiple tasks across multiple teams and work quickly with fast turnaround times
 * Self-driven problem-solver and question-asker with a positive attitude who will gel well with our team
 * A thirst to learn and grow outside of your comfort zone
-Bonus Points:
+
+###Bonus Points:
 
 * Strong git/command line experience
 * Video editing skills including experience with Adobe After Effects
 * Photography skills
 * Experience with A/B Testing
-Next Steps:
+
+###Next Steps:
 
 Like what you see? Applying is easy, but it takes time. See, while we know you're awesome, it's actually really hard and time consuming to find you in the midst of literally hundreds of other applications we get from everyone else. So this is where we're going to ask our first favor: can you make it really easy and obvious how great you are, so we don't accidentally overlook you? There are probably many ways to do that, but the easiest way is to help us out by answering the following questions:
 

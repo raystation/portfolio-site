@@ -335,9 +335,9 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	font-size: 14pt;
 	background-color: $header-color;
 	padding: 0; margin: 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
 	// box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 	// -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 	// -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -448,7 +448,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	margin-top: 0;
 	width: 100%;
 	background-color: $footer-color;
-	padding: 40px 10px 4px 10px;
+	padding: 45px 10px 4px 10px;
 	line-height: 1.25em;
 	color: white;
 	font-size: 15px;
@@ -477,8 +477,8 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		@include underline(2px, white);
 	}
 	@media #{$md} {
-		position: fixed;
-		padding: 55px 20px 8px 20px;
+		// position: fixed;
+		padding: 48px 20px 8px 20px;
 	}
 }
 
@@ -595,9 +595,11 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		}
 	}
 	.caption {
-		font-size: 10px;
-		@media #{$sm} {
-			font-size: $caption-font-size;
+		font-size: $caption-font-size;
+		color: lighten($primary-color,10%);
+		margin-bottom: 2em;
+		@media #{$md} {
+			// font-size: 10px;
 		}
 	}
 	.intro {
@@ -746,9 +748,9 @@ ul.tags {
 	// }
 }
 .subhead-padding {
-	// padding-top: 30px;
+	padding-top: 30px;
 	@media #{$md}{
-		// padding-top: 35px;
+		// padding-top: 10px;
 	}
 }
 
@@ -1129,7 +1131,7 @@ ul.tags {
 		// font-weight: 800;
 		li {
 			 list-style-type: circle;
-			 line-height: 10px;
+			 // line-height: 10px !important;
 			 // margin-bottom: 1em;
 		}
 	}
@@ -1187,8 +1189,8 @@ ul.tags {
 
 .resume {
 	font-size: 90%;
+	padding-top: 30px;
 	// line-height: 1.25em;
-
 
 	.tech-skills > div {
 		font: 8pt sans-serif;
