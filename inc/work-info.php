@@ -936,8 +936,8 @@ if ( $title == "Chronicles of Old New&nbsp;York" ) {
 	$sidebar = museyon_sidebar();
 
 	$img_info = array(
-   		array("file" => "04.jpg", "alt" => ""),
    		array("file" => "cover.jpg", "alt" => ""),
+   		array("file" => "04.jpg", "alt" => ""),
    		array("file" => "07.jpg", "alt" => ""),
    		array("file" => "03.jpg", "alt" => ""),
    		array("file" => "10.jpg", "alt" => ""),

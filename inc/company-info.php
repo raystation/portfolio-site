@@ -3903,20 +3903,22 @@ case 'ixl-illustration-coordinator':
 	break;
 
 
-	//EXPENSIFY-SF DESIGNER
+	//ZENDESK BRAND DESIGNER
 	case "zendesk-brand-designer":
 		$short_name = "zendesk-brand-designer";
 		$originaljobposting="http://jobs.jobvite.com/zendesk/job/oavl4fwO";
 		$hiring_company="Zendesk";
 		$jobTitle="Brand Designer";
-		$date="April 6, 2017";
+		$date="April 13, 2017";
 		// $hiremepage = "http://rayuen.com/$short_name";
 		$funny_portrait = TRUE;
 		// $slider_img = "jobs/$short_name.jpg";
 
 		$job_details = markdown_exist("jobs/$short_name.md");
 		$copy = "
-			I saw your posting on Linkedin and it sounds really great! For the past two years I’ve been at edtech startup NextLesson doing branding, art production, illustration, and product UI/UX. I loved it there, but I would love to be at a place where I'm not the lone designer.
+			I was excited to see this posting having used Zendesk at work<span class='tooltip' title='We praised the simplicity and the ease of getting everything up our design standards.'>*</span>. I'm a collaborative self-starter who has worked on small and big brands from Bay Area startups to Pok&eacute;mon. For the past two years, I’ve been at edtech startup NextLesson doing branding, art production, illustration, and product UI/UX. Originally starting in print, I've been honing my web skills and I think this position would be great for taking it even further.
+			$p_break
+			EDIT: My Dribbble profile: <a href='https://dribbble.com/raystation' target='_blank'>https://dribbble.com/raystation</a>
 		";
 		$closing="";
 
@@ -3935,6 +3937,119 @@ case 'ixl-illustration-coordinator':
 				"path"=>"museyon-guides",
 				"name"=>"Museyon Guides",
 				"desc" => "Design and layout of travel guides.",
+			),
+		);
+	break;
+
+	//SFMOMA-ART-DIRECTOR
+	case "sfmoma-art-director":
+		$short_name = "sfmoma-art-director";
+		$originaljobposting="http://jobs.jobvite.com/zendesk/job/oavl4fwO";
+		$hiring_company="SFMOMA";
+		$jobTitle="Art Director";
+		$date="April 13, 2017";
+		// $hiremepage = "http://rayuen.com/$short_name";
+		// $funny_portrait = TRUE;
+		// $slider_img = "jobs/$short_name.jpg";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "
+			Having been to the museum on more than a few occasions for special events, I was really excited to see this posting<span class='tooltip' title='I've always really wanted to work at a museum too!>*</span>. It's so exciting to finally have the museum back after being under construction for a year and a half. As for me, the position sounds like it's right up my alley; I have a blend of print production and web skills from big and small companies like Pok&eacute;mon and NextLesson. Most recently, as Head of Design at edtech startup NextLesson, I've been doing branding, art production, conference artwork, and product UI/UX. I've helped develop 400+ page books as well as managed teams to produce timely artwork.
+		";
+		$closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"desc"=>"Booth Design, Research and Setup.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Establishing Visual Standards for K12 Lesson and project covers.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+		);
+	break;
+
+	//STRIPE-DESIGNER
+	case "stripe-designer":
+		$short_name = "stripe-designer";
+		$originaljobposting="https://stripe.com/jobs/positions/designer";
+		$hiring_company="Stripe";
+		$jobTitle="Designer";
+		$date="April 13, 2017";
+		// $hiremepage = "http://rayuen.com/$short_name";
+		// $funny_portrait = TRUE;
+		// $slider_img = "jobs/$short_name.jpg";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+		$copy = "
+		I saw your job posting and really wanted to pass along my info (I have cited your website to fellow designers as an example of good and simple responsive design). From your list of roles, I would say Brand design, Communications and web design, Illustration, Presentation design, UI engineer and Product design were the ones that spoke to me the most. For the past two years I’ve been at edtech startup NextLesson doing branding, art production, illustration, and product UI/UX. I believe this place would be a great place to continue honing my web design skills while also working in other areas I'm really interested in.
+		";
+		// $closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+		);
+	break;
+
+	//CHRONICLE-VISUAL JOURNALIST
+	case "chronicle-visual-journalist":
+		$short_name = "chronicle-visual-journalist";
+		$originaljobposting="https://www.indeed.com/viewjob?jk=c5a0e51c0b21bf94";
+		$hiring_company="San Francisco Chronicle";
+		$jobTitle="Visual Journalist";
+		$date="April 13, 2017";
+		// $hiremepage = "http://rayuen.com/$short_name";
+		// $funny_portrait = TRUE;
+		// $slider_img = "jobs/$short_name.jpg";
+
+		// $job_details = markdown_exist("jobs/$short_name.md");
+		$job_details = "Visual Journalist
+The San Francisco Chronicle - San Francisco, CA 94103
+The San Francisco Chronicle is seeking a visual journalist to help us tell our best stories in inventive and engaging ways. The ideal candidate will have the ability to conceive, research and execute informational graphics that play to the strengths of both our print and digital platforms. A passion for design and data and a collaborative spirit with our editorial and digital teams are a must. Preferably three or more years of experience creating reader-friendly data-driven displays in a deadline environment. Print and digital graphic design or illustration skills are a plus.
+
+Candidates should be proficient in the Adobe suite (including Illustrator, Photoshop and InDesign), using spreadsheets to manage information, and coding with HTML and CSS.";
+
+		$copy = "This position sounds really interesting! I'm a visual designer (originally from the print world) and for the past two years I’ve been at edtech startup NextLesson doing branding, art production, illustration, and product UI/UX.
+		";
+		// $closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+			array(
+				"path"=>"wired",
+				"name"=>"Wired Magazine",
+				"desc"=>"Illustration for Wired Magazine",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Visuals for glossary terms.",
 			),
 		);
 	break;
@@ -3963,5 +4078,4 @@ function get_project_thumbnail_details( $projects ){
 		$array[] = $work[$key];
 	}
 
-	return $array;
-}
+	return $array;}
