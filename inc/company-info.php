@@ -4054,13 +4054,96 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		);
 	break;
 
+
+	//SUN-RUN-UI
+	case "sun-run-ui":
+		$short_name = "sun-run-ui";
+		$originaljobposting="https://www.sunrun.com/about/solar-careers/job-postings/job/job?gnk=job&gni=8a7886a35adb5c5f015ae1e88e6818e0";
+		$hiring_company="Sunrun";
+		$jobTitle="UI/UX Designer";
+		$date="April 18, 2017";
+		$name = "Mike";
+		$email="mikehlee100@gmail.com";
+		$hiremepage = "http://rayuen.com/$short_name";
+		// $funny_portrait = TRUE;
+		// $slider_img = "jobs/$short_name.jpg";
+
+		$job_details = markdown_exist("jobs/$short_name.md");
+
+		$copy = "Hey, I had a great time attending CreativeIQ this past Thusday—learning, pizza and beer—how much better can it get? One of my personal goals has been to learn more coding for mockups, but with all these great tools coming out, I am seriously questioning all of that.
+		$p_break
+		As I mentioned, I used to work with Ashley at edtech startup NextLesson. As the Head of Design, I worked on a variety of things  including product UI/UX, branding/marketing, art directing and art production/illustration. In my two years there, we redesigned the site and its browse/search experience, worked on two major products and set the standardized design for future products. I also was in charge of producing all the artwork on the site, from the 2,000+ lesson covers to the 4,000+ icons populating the student interest tool.
+		$p_break
+		Working at NextLesson was awesome, but as the lone creative I wore so many hats. The position at Sunrun sounds really good because I can focus specifically on UI/UX. There are many things I want to explore/learn and it's just cool being able to work on or make these things.
+		";
+		// $closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers on which lessons to buy.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+		);
+	break;
+
+	//ZENLY
+	case "zenly-designer":
+		$short_name = "zenly-designer";
+		$originaljobposting="https://www.workable.com/j/A539253608";
+		$hiring_company="Zenly";
+		$jobTitle="Brand & Graphic Designer";
+		$date="April 18, 2017";
+		// $name = "Mike";
+		// $email="mikehlee100@gmail.com";
+		// $hiremepage = "http://rayuen.com/$short_name";
+		$funny_portrait = TRUE;
+		// $slider_img = "jobs/$short_name.jpg";
+
+		$copy = "
+		I saw your posting on Indeed and I am very interested in learning more about this job! The graphics are slick and colorful, which are right up my alley!
+		";
+		// $closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers on which lessons to buy.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+		);
+	break;
+
 }
 
 if ( $hiremepage=="" ) {
-	$hiremepage="http://rayuen.com/hire-me?id=$short_name";
+	$hiremepage="http://rayuen.com/lets-talk?id=$short_name";
 }
 if ( $copy=="" ) {
 	$copy = markdown_exist("jobs/$short_name-letter.md");
+}
+if ( $job_details=="" ) {
+	$job_details = markdown_exist("jobs/$short_name.md");
 }
 
 // ========================

@@ -53,7 +53,7 @@ if ($id ) {
 	$landing_page_nav = "
 		<div class='back-to-landing-page-menu'>
 			<div>
-				<a class='tooltip' title='back to job inquiry' href='./hire-me?id=$id'>&#11013;</a>
+				<a class='tooltip' title='back to job inquiry' href='./lets-talk?id=$id'>&#11013;</a>
 				<strong><span class='desktop'>Highlighted</span> Projects for $hiring_company:</strong>
 				$sample_projects_html
 			</div>
