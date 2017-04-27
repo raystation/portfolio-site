@@ -1,7 +1,8 @@
 <?
+	require_once 'functions.php';
 	$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
 	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
-
+	$subhead_filter_heading="";
 	$selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
 	$filter_list_html = get_filter_list_html($selected_filter);
 
@@ -16,229 +17,233 @@
 
 	$section = "work";
 
-	switch ( $project ) {
-		default:
-		$pageTitle = "Ray Yuen | Work";
-		break;
+	// switch ( $project ) {
+	// 	default:
+	// 	$pageTitle = "Ray Yuen | Work";
+	// 	break;
 
-		case '100-principles-of-game-design':
-		$title = '100 Principles of Game Design';
-		break;
+	// 	case '100-principles-of-game-design':
+	// 	$title = '100 Principles of Game Design';
+	// 	break;
 
-		case 'abriendo-puertas':
-		$title = 'Abriendo Puertas / Opening&nbsp;Doors';
-		break;
+	// 	case 'abriendo-puertas':
+	// 	$title = 'Abriendo Puertas / Opening&nbsp;Doors';
+	// 	break;
 
-		case 'project-animore':
-		$title = 'Project Animore';
-		break;
+	// 	case 'project-animore':
+	// 	$title = 'Project Animore';
+	// 	break;
 
-		case 'arceus':
-		$title = 'Arceus and the Jewel of&nbsp;Life';
-		break;
+	// 	case 'arceus':
+	// 	$title = 'Arceus and the Jewel of&nbsp;Life';
+	// 	break;
 
-		case 'art-and-paris':
-		$title = 'Art + Paris';
-		break;
+	// 	case 'art-and-paris':
+	// 	$title = 'Art + Paris';
+	// 	break;
 
-		case 'chronicles-of-old-boston':
-		$title = 'Chronicles of Old&nbsp;Boston';
-		break;
+	// 	case 'chronicles-of-old-boston':
+	// 	$title = 'Chronicles of Old&nbsp;Boston';
+	// 	break;
 
-		case 'chronicles-of-old-las-vegas':
-		$title = 'Chronicles of Old Las&nbsp;Vegas';
-		break;
+	// 	case 'chronicles-of-old-las-vegas':
+	// 	$title = 'Chronicles of Old Las&nbsp;Vegas';
+	// 	break;
 
-		case 'chronicles-of-old-new-york':
-		$title = 'Chronicles of Old New&nbsp;York';
-		break;
+	// 	case 'chronicles-of-old-new-york':
+	// 	$title = 'Chronicles of Old New&nbsp;York';
+	// 	break;
 
-		case 'chronicles-of-old-london':
-		$title = 'Chronicles of Old&nbsp;London';
-		break;
+	// 	case 'chronicles-of-old-london':
+	// 	$title = 'Chronicles of Old&nbsp;London';
+	// 	break;
 
-		case 'chronicles-of-old-rome':
-		$title = 'Chronicles of Old&nbsp;Rome';
-		break;
+	// 	case 'chronicles-of-old-rome':
+	// 	$title = 'Chronicles of Old&nbsp;Rome';
+	// 	break;
 
-		case 'chronicles-of-old-paris':
-		$title = 'Chronicles of Old&nbsp;Paris';
-		break;
+	// 	case 'chronicles-of-old-paris':
+	// 	$title = 'Chronicles of Old&nbsp;Paris';
+	// 	break;
 
-		case 'city-style':
-		$title = 'City Style';
-		break;
+	// 	case 'city-style':
+	// 	$title = 'City Style';
+	// 	break;
 
-		case 'color-chameleon':
-		$title = 'Color Chameleon';
-		break;
+	// 	case 'color-chameleon':
+	// 	$title = 'Color Chameleon';
+	// 	break;
 
-		case 'darkrai':
-		$title = 'The Rise of Darkrai';
-		break;
+	// 	case 'darkrai':
+	// 	$title = 'The Rise of Darkrai';
+	// 	break;
 
-		case 'edgeware':
-		$title = 'Edgeware';
-		break;
+	// 	case 'edgeware':
+	// 	$title = 'Edgeware';
+	// 	break;
 
-		case 'egg-baby':
-		$title = 'Egg Baby';
-		break;
+	// 	case 'egg-baby':
+	// 	$title = 'Egg Baby';
+	// 	break;
 
-		case 'indiginauts':
-		$title = 'Indiginauts';
-		break;
+	// 	case 'indiginauts':
+	// 	$title = 'Indiginauts';
+	// 	break;
 
-		case 'malado-baldwin':
-		$title = 'Malado Baldwin';
-		break;
+	// 	case 'malado-baldwin':
+	// 	$title = 'Malado Baldwin';
+	// 	break;
 
-		// case 'malado-baldwin-indexhibit':
-		// $title = 'Malado Baldwin';
-		// break;
+	// 	// case 'malado-baldwin-indexhibit':
+	// 	// $title = 'Malado Baldwin';
+	// 	// break;
 
-		case 'monkey-mo':
-		$title = 'Monkey Mo, Monkey&nbsp;Go!';
-		break;
+	// 	case 'monkey-mo':
+	// 	$title = 'Monkey Mo, Monkey&nbsp;Go!';
+	// 	break;
 
-		case 'nerd-comics':
-		$title = 'Nerd Comics';
-		break;
+	// 	case 'nerd-comics':
+	// 	$title = 'Nerd Comics';
+	// 	break;
 
-		case '10th-anniversary':
-		$title = 'Pok&eacute;mon: 10th Anniversary';
-		break;
+	// 	case '10th-anniversary':
+	// 	$title = 'Pok&eacute;mon: 10th Anniversary';
+	// 	break;
 
-		case 'feature-shop':
-		$title = "Pok&eacute;mon: Toys'R'Us Feature Shop";
-		break;
+	// 	case 'feature-shop':
+	// 	$title = "Pok&eacute;mon: Toys'R'Us Feature Shop";
+	// 	break;
 
-		case 'sarah-walko':
-		$title = 'Sarah Walko';
-		break;
+	// 	case 'sarah-walko':
+	// 	$title = 'Sarah Walko';
+	// 	break;
 
-		case 'scavenger-hunt':
-		$title = 'Scavenger Hunt';
-		break;
+	// 	case 'scavenger-hunt':
+	// 	$title = 'Scavenger Hunt';
+	// 	break;
 
-		case 'storymaps':
-		$title = 'StoryMaps';
-		break;
+	// 	case 'storymaps':
+	// 	$title = 'StoryMaps';
+	// 	break;
 
-		case 'suspended-belief-studios':
-		$title = 'Suspended Belief Studios';
-		break;
+	// 	case 'suspended-belief-studios':
+	// 	$title = 'Suspended Belief Studios';
+	// 	break;
 
-		case 'the3':
-		$title = 'The 3';
-		break;
+	// 	case 'the3':
+	// 	$title = 'The 3';
+	// 	break;
 
-		case 'museyon-guides':
-		$title = 'Museyon Guides';
-		break;
+	// 	case 'museyon-guides':
+	// 	$title = 'Museyon Guides';
+	// 	break;
 
-		case 'pokemon':
-		$title = 'The Pok&eacute;mon Company';
-		break;
+	// 	case 'pokemon':
+	// 	$title = 'The Pok&eacute;mon Company';
+	// 	break;
 
-		case 'toy-fair':
-		$title = 'Pok&eacute;mon: Toy Fair';
-		break;
+	// 	case 'toy-fair':
+	// 	$title = 'Pok&eacute;mon: Toy Fair';
+	// 	break;
 
-		case 'mystery-dungeon':
-		$title = 'Pok&eacute;mon: Mystery Dungeon';
-		break;
+	// 	case 'mystery-dungeon':
+	// 	$title = 'Pok&eacute;mon: Mystery Dungeon';
+	// 	break;
 
-		case 'battle-revolution':
-		$title = 'Battle Revolution';
-		break;
+	// 	case 'battle-revolution':
+	// 	$title = 'Battle Revolution';
+	// 	break;
 
-		case 'pocket-pokedex':
-		$title = 'Pocket Pok&eacute;dex';
-		break;
+	// 	case 'pocket-pokedex':
+	// 	$title = 'Pocket Pok&eacute;dex';
+	// 	break;
 
-		case 'dp-launch':
-		$title = 'Pok&eacute;mon: Diamond & Pearl Launch';
-		break;
+	// 	case 'dp-launch':
+	// 	$title = 'Pok&eacute;mon: Diamond & Pearl Launch';
+	// 	break;
 
-		case 'licensing-show':
-		$title = 'Licensing Show';
-		break;
+	// 	case 'licensing-show':
+	// 	$title = 'Licensing Show';
+	// 	break;
 
-		case 'pokemon-logos':
-		$title = 'Pok&eacute;mon: Logos';
-		break;
+	// 	case 'pokemon-logos':
+	// 	$title = 'Pok&eacute;mon: Logos';
+	// 	break;
 
-		case 'portfolio-site':
-		$title = 'Portfolio Site';
-		break;
+	// 	case 'portfolio-site':
+	// 	$title = 'Portfolio Site';
+	// 	break;
 
-		case 'lesconcierges':
-		$title = 'LesConcierges';
-		break;
+	// 	case 'lesconcierges':
+	// 	$title = 'LesConcierges';
+	// 	break;
 
-		case 'wired':
-		$title = 'Wired';
-		break;
+	// 	case 'wired':
+	// 	$title = 'Wired';
+	// 	break;
 
-		case 'holiday-2014':
-		$title = 'Holiday Card 2014';
-		break;
+	// 	case 'holiday-2014':
+	// 	$title = 'Holiday Card 2014';
+	// 	break;
 
-		case 'adelle-marcero':
-		$title = 'Adelle Marcero';
-		break;
+	// 	case 'adelle-marcero':
+	// 	$title = 'Adelle Marcero';
+	// 	break;
 
-		case 'idibon':
-		$title = 'idibon';
-		break;
+	// 	case 'idibon':
+	// 	$title = 'idibon';
+	// 	break;
 
-		case 'nextlesson':
-		$title = 'NextLesson';
-		break;
+	// 	case 'nextlesson':
+	// 	$title = 'NextLesson';
+	// 	break;
 
-		case 'nextlesson-search-browse':
-		$title = 'NextLesson Search and Browse Page';
-		break;
+	// 	case 'nextlesson-search-browse':
+	// 	$title = 'NextLesson Search and Browse Page';
+	// 	break;
 
-		case 'nextlesson-interestid':
-		$title = 'NextLesson InterestID';
-		break;
+	// 	case 'nextlesson-interestid':
+	// 	$title = 'NextLesson InterestID';
+	// 	break;
 
-		case 'nextlesson-marketing':
-		$title = 'NextLesson Marketing';
-		break;
+	// 	case 'nextlesson-marketing':
+	// 	$title = 'NextLesson Marketing';
+	// 	break;
 
-		case 'nextlesson-interactive':
-		$title = 'NextLesson Interactive';
-		break;
+	// 	case 'nextlesson-interactive':
+	// 	$title = 'NextLesson Interactive';
+	// 	break;
 
-		case 'nextlesson-avatars':
-		$title = 'Avatars';
-		break;
+	// 	case 'nextlesson-avatars':
+	// 	$title = 'Avatars';
+	// 	break;
 
-		case 'nextlesson-library':
-		$title = 'Graphics Library';
-		break;
+	// 	case 'nextlesson-library':
+	// 	$title = 'Graphics Library';
+	// 	break;
 
-		case 'nextlesson-glossary':
-		$title = 'NextLesson Glossary Terms';
-		break;
+	// 	case 'nextlesson-glossary':
+	// 	$title = 'NextLesson Glossary Terms';
+	// 	break;
 
-		case 'nextlesson-covers':
-		$title = 'NextLesson Lesson Covers';
-		break;
+	// 	case 'nextlesson-covers':
+	// 	$title = 'NextLesson Lesson Covers';
+	// 	break;
 
-		case 'inktober-2016':
-		$title = "#Inktober2016";
-		break;
+	// 	case 'inktober-2016':
+	// 	$title = "#Inktober2016";
+	// 	break;
 
-		case 'nextlesson-characters':
-		$title = "NextLesson Characters";
-		break;
-	}
+	// 	case 'nextlesson-characters':
+	// 	$title = "NextLesson Characters";
+	// 	break;
+	// }
 
-if ( !isset($title) ) { $title = "Work"; }
+if ( !isset($project) ) {
+	$title = "Work";
+} else {
+	$title = get_project_title($project);
+}
 
 include('inc/header.php');
 
@@ -254,6 +259,7 @@ include('inc/header.php');
 // IF THE PROJECT IS SET (VIEWING A PROJECT)
 // THEN IT WILL TAKE THE PROJECT OUT OF THE WORK ARRAY SO YOU DON'T GET IT IN THE RECENT PROJECTS
 if ( isset($project) ) {
+	// echo "TAGS";
 	foreach ($works as $key => $work) {
 		if (array_search($title, $work)){
 			$current_project_tags = $work['tags'];
@@ -264,6 +270,7 @@ if ( isset($project) ) {
 	// $tags = $works[$key][$tags];
 	unset($works[$key]);
 	$works = array_values($works);
+	shuffle($works);
 }
 
 // GRABS THE TEMPLATE FILE
@@ -287,9 +294,16 @@ if ( isset($project) ) {
 
 if ( !isset($template) ) {
 	// DEFAULT VIEW
+
+	if (isset($section)) {
+		if ( $section=="work" && $id ) {
+			$subhead_filter_padding = " subhead-filter-padding";
+		}
+	}
+
 	echo "
 		<div class='desktop'>
-			<div class='filters'>
+			<div class='filters $subhead_filter_padding'>
 				$filter_list_html
 			</div>
 		</div>

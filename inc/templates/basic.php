@@ -109,11 +109,11 @@ if ( !is_null($path) ) {
 	}
 
 	// SIDEBAR LOGO // fills the sidebar with a logo if it exists
-	$sidebar_logo = "";
-	$sidebar_logo_path = check_for_img_format($path,"logo");
-	if ($sidebar_logo_path) {
-		$sidebar_logo = "<img src='$sidebar_logo_path' alt='Logo' class='scale-with-grid'>";
-	}
+	// $sidebar_logo = "";
+	// $sidebar_logo_path = check_for_img_format($path,"logo");
+	// if ($sidebar_logo_path) {
+	// 	$sidebar_logo = "<img src='$sidebar_logo_path' alt='Logo' class='scale-with-grid'>";
+	// }
 }
 else
 {
@@ -126,7 +126,6 @@ $tools_html = get_skill_html( $tools );
 if ($tools) {
 	$tools_html = "
 		<div class='list-spacing-fix'>
-			<h6>Tools Used:</h6>
 			$tools_html
 		</div>
 	";
@@ -160,6 +159,7 @@ $page = "
 		<div class='desktop'>
 			<div class='project-sidebar four columns omega'>
 				$sidebar
+				$tools_html
 			</div>
 		</div>
 		<div class='desktop'>

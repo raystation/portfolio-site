@@ -4,6 +4,7 @@ $footer_add="";
 $work_class = "";
 $about_class = "";
 $extra_padding = "";
+$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
 
 require_once 'inc/work-info.php';
 require_once 'functions.php';

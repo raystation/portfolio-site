@@ -215,60 +215,6 @@ function get_images($dir){
   $files = array_diff( scandir( $dir ), Array( ".", "..", ".DS_Store" ) );
   return $files;
 }
-// function related_check() {
-
-//   global $title;
-
-//   if (
-//     $title == "Art + Paris" or
-//     $title == "Chronicles of Old&nbsp;Rome" or
-//     $title == "Chronicles of Old&nbsp;Boston" or
-//     $title == "Chronicles of Old New&nbsp;York" or
-//     $title == "Chronicles of Old&nbsp;London" or
-//     $title == "Chronicles of Old Las&nbsp;Vegas" or
-//     $title == "Chronicles of Old&nbsp;Paris" or
-//     $title == "City Style"
-
-//     ) { include 'inc/related-museyon.php'; }
-
-//   if (
-//     $title == "The 3" or
-//     $title == "Suspended Belief Studios" or
-//     $title == "Indiginauts" or
-//     $title == "Project Animore" or
-//     $title == "Abriendo Puertas / Opening&nbsp;Doors" or
-//     $title == "Color Chameleon"
-
-//     ) { include 'inc/related-sb.php'; }
-
-//   if (
-//     $title == "Pok&eacute;mon: Toy Fair" or
-//     $title == "Pok&eacute;mon: Logos" or
-//     $title == "Pok&eacute;mon: Toys'R'Us Feature Shop" or
-//     $title == "Pok&eacute;mon: 10th Anniversary" or
-//     $title == "The Rise of Darkrai" or
-//     $title == "Arceus and the Jewel of&nbsp;Life" or
-//     $title == "Battle Revolution" or
-//     $title == "Pocket Pok&eacute;dex" or
-//     $title == "Pok&eacute;mon: Diamond & Pearl Launch" or
-//     $title == "Pok&eacute;mon: Toy Fair" or
-//     $title == "Licensing Show" or
-//     $title == "Pok&eacute;mon: Mystery&nbsp;Dungeon"
-
-//     ) { include 'inc/related-pokemon.php'; }
-
-//   if (
-//     $title == "InterestID" or
-//     $title = 'NextLesson' or
-//     $title = 'NextLesson Lesson Covers' or
-//     $title = 'NextLesson Glossary Terms' or
-//     $title = 'Interactive Performance Tasks' or
-//     $title = 'NextLesson Search and Browse Page' or
-//     $title = 'Avatars' or
-//     $title = 'Graphics Library'
-
-//     ) { include 'inc/related-nextlesson.php'; }
-// }
 
 function print_skill_html(){
   global $tools;
@@ -297,7 +243,7 @@ function get_skill_html_bk( $tools ){
 
 function get_skill_html( $tools ){
   $content = "";
-  include_once "inc/lists.php";
+  // include_once "inc/lists.php";
   if ( isset($tools) ) {
     foreach ( $tools as $tool) {
       $content .= "
@@ -811,4 +757,20 @@ function full_thumbnail($works,$number_of_thumbnails=99,$class=""){
     </div>
     <div class='container'>
   ";
+}
+function get_project_title( $string ){
+  $string = replace_string( $string, "-", " ");
+  return title_case($string);
+}
+function title_case($string){
+  $exclude = array('and', 'not', 'of');
+  $words = explode(' ', $string);
+  foreach($words as $key => $word) {
+      if(in_array($word, $exclude)) {
+          continue;
+      }
+      $words[$key] = ucfirst($word);
+  }
+  $newString = implode(' ', $words);
+  return $newString;
 }

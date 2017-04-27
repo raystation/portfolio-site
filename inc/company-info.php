@@ -246,7 +246,7 @@ case '101':
 
 		<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
 
-		<div class='four columns add-bottom omega'><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
+		<div class='four columns add-bottom omega'><a class='caption' href='the-3'><img class='scale-with-grid' src='img/the-3/thumb.svg'>The 3</a></div>
 		<div class='clear'></div>
 
 		<p>Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href=\"resume\">here</a> or below for a PDF. Thank you!
@@ -275,7 +275,7 @@ case '510':
 			I've included links to some design and illustration work I've done.
 			<br>
 			&bull; <a href='indiginauts'>Indiginauts</a><br>
-			&bull; <a href='the3'>The 3</a><br>
+			&bull; <a href='the-3'>The 3</a><br>
 			&bull; <a href='project-animore'>Project Animore</a><br>
 			&bull; <a href='100-principles-of-game-design'>100 Principles of Game Design</a>
 		</p>
@@ -287,7 +287,7 @@ case '510':
 
 		<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
 
-		<div class='four columns add-bottom omega'><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
+		<div class='four columns add-bottom omega'><a class='caption' href='the-3'><img class='scale-with-grid' src='img/the-3/thumb.svg'>The 3</a></div>
 		<div class='clear'></div>
 
 		<p>Please let me know if I can provide any other sort of information or if we can set up a meeting. Please find my resume <a href=\"resume\">here</a> or below for a PDF. Thank you!
@@ -465,7 +465,7 @@ case '212':
 
 	<div class='four columns add-bottom '><a class='caption' href='project-animore'><img class='scale-with-grid' src='img/project-animore/thumb.jpg'>Project Animore</a></div>
 
-	<div class='four columns add-bottom omega'><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
+	<div class='four columns add-bottom omega'><a class='caption' href='the-3'><img class='scale-with-grid' src='img/the-3/thumb.svg'>The 3</a></div>
 	<div class='clear'></div>
 
 	<p>
@@ -620,7 +620,7 @@ case '212':
 		I am winding down from my <a href='suspended-belief-studios'>gaming startup</a> with my friend. I am as fascianted by game design as I am with the visuals. While I don't have experience working on a live free-to-play game, hopefully my \"gaming-resume\" will more than make up for that. I play a ton of games (casual, midcore, hardcore) and have evolved with the iOS market into it's current free-to-play phase and have been playing console games since the NES/Sega Master System. I love games!
 	</p>
 
-	<div class='four columns add-bottom alpha'><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
+	<div class='four columns add-bottom alpha'><a class='caption' href='the-3'><img class='scale-with-grid' src='img/the-3/thumb.svg'>The 3</a></div>
 
 	<div class='four columns add-bottom' ><a class='caption' href='indiginauts'><img class='scale-with-grid' src='img/indiginauts/thumb.jpg'>Indiginauts</a></div>
 
@@ -791,7 +791,7 @@ case '212':
 
 	<div class='four columns add-bottom alpha' ><a class='caption' href='color-chameleon'><img class='scale-with-grid' src='img/color-chameleon/thumb.jpg'>Color Chameleon</a></div>
 
-	<div class='four columns add-bottom '><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
+	<div class='four columns add-bottom '><a class='caption' href='the-3'><img class='scale-with-grid' src='img/the-3/thumb.svg'>The 3</a></div>
 
 	<div class='four columns add-bottom omega'><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>Abriendo Puertas</a></div>
 
@@ -827,7 +827,7 @@ case '212':
 
 	<div class='four columns add-bottom alpha' ><hr><a class='caption' href='color-chameleon'><img class='scale-with-grid' src='img/color-chameleon/thumb.jpg'>Color Chameleon</a></div>
 
-	<div class='four columns add-bottom '><hr><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
+	<div class='four columns add-bottom '><hr><a class='caption' href='the-3'><img class='scale-with-grid' src='img/the-3/thumb.svg'>The 3</a></div>
 
 	<div class='four columns add-bottom omega'><hr><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>Abriendo Puertas</a></div>
 
@@ -863,7 +863,7 @@ case '212':
 
 		<div class='four columns add-bottom alpha' ><hr><a class='caption' href='darkrai'><img class='scale-with-grid' src='img/darkrai/thumb.jpg'>The Rise of Darkrai</a></div>
 
-		<div class='four columns add-bottom '><hr><a class='caption' href='the3'><img class='scale-with-grid' src='img/the3/thumb.svg'>The 3</a></div>
+		<div class='four columns add-bottom '><hr><a class='caption' href='the-3'><img class='scale-with-grid' src='img/the-3/thumb.svg'>The 3</a></div>
 
 		<div class='four columns add-bottom omega'><hr><a class='caption' href='abriendo-puertas'><img class='scale-with-grid' src='img/abriendo-puertas/thumb.jpg'>Abriendo Puertas</a></div>
 
@@ -1567,7 +1567,7 @@ case 'ad101':
 
 		$project1=array("pokemon","The Pok&eacute;mon Company", "Overall support of all internal departments with creative needs. Fast-paced environment and we worked to bring projects from outside vendors in-house.");
 		$project2=array("abriendo-puertas","Abriendo Puertas", "Design and hand-code of responsive informational website for non-profit.");
-		$project3=array("the3","The 3", "Trivia game where I developed the UI and overall flow of the game.");
+		$project3=array("the-3","The 3", "Trivia game where I developed the UI and overall flow of the game.");
 
 		$sample_works = "
 			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
@@ -1629,7 +1629,7 @@ case 'ad101':
 
 		$project1=array("pokemon","The Pok&eacute;mon Company", "Overall support of all internal departments with creative needs. Fast-paced environment and we worked to bring projects from outside vendors in-house.");
 		$project2=array("abriendo-puertas","Abriendo Puertas", "Design and hand-code of responsive informational website for non-profit.");
-		$project3=array("the3","The 3", "Trivia game where I developed the UI and overall flow of the game.");
+		$project3=array("the-3","The 3", "Trivia game where I developed the UI and overall flow of the game.");
 
 		$sample_works = "
 			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position.</p>
@@ -1663,7 +1663,7 @@ case 'ad101':
 
 		$project1=array("pokemon","The Pok&eacute;mon Company", "Overall support of all internal departments with creative needs. Fast-paced environment where we worked to bring projects from outside vendors in-house. Take a look at the Toy Fair trade booth!");
 		$project2=array("abriendo-puertas","Abriendo Puertas", "Design and hand-code of responsive informational website for non-profit.");
-		$project3=array("the3","The 3", "Trivia game where I developed the UI and overall flow of the game.");
+		$project3=array("the-3","The 3", "Trivia game where I developed the UI and overall flow of the game.");
 
 		$sample_works = "
 			<p>I have linked to three samples of my work which I think will directly address some of the things you are looking for in this position. They may seem 'kiddy' but this was the nature of the work...meaning this isn't all I am capable of.</p>
@@ -1735,7 +1735,7 @@ case 'ad101':
 		$project1=array("path"=>"abriendo-puertas","name"=>"Abriendo Puertas","type"=>"jpg");
 		$project1["desc"]="Design and hand-code of responsive informational website for <span class='nowrap'>non-profit</span>.";
 
-		$project2=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
+		$project2=array("path"=>"the-3","name"=>"The 3", "type"=>"svg");
 		$project2["desc"]="Trivia game where I developed the UI and overall flow of the game.";
 
 		break;
@@ -1797,7 +1797,7 @@ case 'ad101':
 		$project1=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
 		$project1["desc"]="Unrealized game concept where I worked on wireframing, artwork, UI, game concept and design.";
 
-		$project2=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
+		$project2=array("path"=>"the-3","name"=>"The 3", "type"=>"svg");
 		$project2["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and design.";
 
 		$project3=array("path"=>"100-principles-of-game-design","name"=>"100 Principles of Game Design","type"=>"jpg");
@@ -2017,7 +2017,7 @@ case 'ad101':
 		$project3=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
 		$project3["desc"]="Unrealized game concept where I worked on wireframing, artwork, UI, game concept and design.";
 
-		$project2=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
+		$project2=array("path"=>"the-3","name"=>"The 3", "type"=>"svg");
 		$project2["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and design.";
 
 		$project1=array("path"=>"pokemon-logos","name"=>"Pok&eacute;mon logos","type"=>"jpg");
@@ -2057,7 +2057,7 @@ case 'ad101':
 		$project3=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
 		$project3["desc"]="Unrealized game concept where I worked on wireframing, artwork, UI, game concept and design.";
 
-		$project2=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
+		$project2=array("path"=>"the-3","name"=>"The 3", "type"=>"svg");
 		$project2["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and design.";
 
 		$project1=array("path"=>"abriendo-puertas","name"=>"ap-od.org","type"=>"jpg");
@@ -2106,7 +2106,7 @@ case 'ad101':
 		$project3=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
 		$project3["desc"]="Unrealized game concept where I worked on wireframing, artwork, UI, game concept and design.";
 
-		$project2=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
+		$project2=array("path"=>"the-3","name"=>"The 3", "type"=>"svg");
 		$project2["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and design.";
 
 		$project1=array("path"=>"abriendo-puertas","name"=>"ap-od.org","type"=>"jpg");
@@ -2140,7 +2140,7 @@ case 'ad101':
 		$project2=array("path"=>"museyon-guides","name"=>"Museyon Guides","type"=>"svg");
 		$project2["desc"]="Freelance book designer. Design and layout of books, from conception to press.";
 
-		$project3=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
+		$project3=array("path"=>"the-3","name"=>"The 3", "type"=>"svg");
 		$project3["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and&nbsp;design.";
 
 
@@ -2172,7 +2172,7 @@ case 'ad101':
 		$project2=array("path"=>"museyon-guides","name"=>"Museyon Guides","type"=>"svg");
 		$project2["desc"]="Freelance book designer. Design and layout of books, from conception to press.";
 
-		$project3=array("path"=>"the3","name"=>"The 3", "type"=>"svg");
+		$project3=array("path"=>"the-3","name"=>"The 3", "type"=>"svg");
 		$project3["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and&nbsp;design.";
 
 
@@ -2237,7 +2237,7 @@ case 'ad101':
 				I have linked to three samples which I think will directly address some of the things you are looking for in this position.</p>
 		";
 
-		$project1=array("path"=>"the3","name"=>"The3","type"=>"svg");
+		$project1=array("path"=>"the-3","name"=>"The-3","type"=>"svg");
 		$project1["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and&nbsp;design.";
 
 		$project2=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
@@ -2341,7 +2341,7 @@ case 'experiment':
 				I have linked to three samples which I think will directly address some of the things you are looking for in this position.</p>
 		";
 
-		$project1=array("path"=>"the3","name"=>"The3","type"=>"svg");
+		$project1=array("path"=>"the-3","name"=>"The-3","type"=>"svg");
 		$project1["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and&nbsp;design.";
 
 		$project2=array("path"=>"project-animore","name"=>"Project Animore","type"=>"jpg");
@@ -2481,7 +2481,7 @@ case 'experiment':
 
 		$rubiks=true;
 
-		$project1=array("path"=>"the3","name"=>"The3","type"=>"svg");
+		$project1=array("path"=>"the-3","name"=>"The-3","type"=>"svg");
 		$project1["desc"]="Apple App Store trivia game where I worked on wireframing, UI, trivia, game concept and&nbsp;design.";
 
 		$project2=array("path"=>"indiginauts","name"=>"Indiginauts","type"=>"jpg");
@@ -3636,7 +3636,7 @@ case 'ixl-illustration-coordinator':
 				"desc"=>"Student interest rating tool that informs teachers.",
 			),
 			array(
-				"path"=>"the3",
+				"path"=>"the-3",
 				"name"=>"The 3",
 				"type"=>"jpg",
 				"desc"=>"Game design and UI for mobile trivia game.",
@@ -4080,6 +4080,11 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 
 		$sample_projects_array = array(
 			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
 				"path"=>"nextlesson-interestid",
 				"name"=>"InterestID",
 				"desc"=>"Student interest rating tool that informs teachers on which lessons to buy.",
@@ -4093,6 +4098,11 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 				"path"=>"nextlesson-glossary",
 				"name"=>"NextLesson Glossary Terms",
 				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+			array(
+				"path"=>"color-chameleon",
+				"name"=>"Color Chameleon",
+				"desc" => "Design Concept for iOS game",
 			),
 		);
 	break;
@@ -4111,15 +4121,72 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		// $slider_img = "jobs/$short_name.jpg";
 
 		$copy = "
-		I saw your posting on Indeed and I am very interested in learning more about this job! The graphics are slick and colorful, which are right up my alley!
+		I saw your posting on Indeed and I am very interested in learning more about this job! The graphics are fun and colorful and you guys seem to be doing cool stuff. I believe my creative experience aligns really well with your aesthetic and my versatile skill set from working at startups would be invaluable.
+		$p_break
+		I'm a creative jack-of-all-trades who has worked on branding at small and established brands, like Pok&eacute;mon and most recently at edtech company NextLesson. For the past two years, I've been doing doing product UI/UX, branding, art production, marketing and illustration. We currently have over 2,000+ lessons with unique covers on our site. I developed the basic design standards and managed a small team to get them all created. I helped develop a student interest tool and populated it with over 3,000 icons.
 		";
 		// $closing="";
 
 		$sample_projects_array = array(
 			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+			array(
+				"path"=>"project-animore",
+				"name"=>"Project Animore",
+				"desc" => "A game concept where you mix different animals together.",
+			),
+			array(
+				"path"=>"nextlesson-characters",
+				"name"=>"NextLesson Characters",
+				"desc" => "A system of posable characters for covers and animation use.",
+			),
+			array(
 				"path"=>"nextlesson-interestid",
 				"name"=>"InterestID",
 				"desc"=>"Student interest rating tool that informs teachers on which lessons to buy.",
+			),
+			array(
+				"path"=>"licensing-show",
+				"name"=>"Pokémon Licensing Show",
+				"desc"=>"Developed artwork to be used in conference booth.",
+			),
+		);
+	break;
+
+
+	//EAZE-DESIGNER
+	case "eaze-designer":
+		$short_name = "eaze-designer";
+		$originaljobposting="http://bit.ly/2o5cSKa";
+		$hiring_company="Eaze";
+		$jobTitle="Senior Graphic Designer";
+		$date="April 19, 2017";
+		// $name = "Mike";
+		// $email="mikehlee100@gmail.com";
+		// $hiremepage = "http://rayuen.com/$short_name";
+		$funny_portrait = TRUE;
+		// $slider_img = "jobs/$short_name.jpg";
+
+		$copy = "
+		I am passing along my info after seeing your posting on Indeed. With my past experience at startups and fun-loving attitude<span class='tooltip' title='I keep it fun, something held over from my Pokémon and caricature days. '>*</span>, I believe I would be a great asset to your team.
+		$p_break
+		For the past two years I’ve been at edtech startup NextLesson doing branding, art production, marketing, illustration and product UI/UX. I helped develop the branding and set basic standards to move forward with. I developed the illustration style at NextLesson that is used on covers and icons. I trained freelancers on the style, as well as produced art assets<span class='tooltip' title='characters, backgrounds, objects'>*</span> to speed up production time. While I was there, I oversaw the creation of over 2,000 lesson covers and 3,000 icons that are currently populating the site.
+		";
+		// $closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"nextlesson-characters",
+				"name"=>"NextLesson Characters",
+				"desc" => "A system of posable characters for covers and animation use.",
 			),
 			array(
 				"path"=>"nextlesson-covers",
@@ -4127,9 +4194,63 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 				"desc"=>"Developing K12 lesson covers and standards.",
 			),
 			array(
-				"path"=>"nextlesson-glossary",
-				"name"=>"NextLesson Glossary Terms",
-				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+				"path"=>"licensing-show",
+				"name"=>"Pokémon Licensing Show",
+				"desc"=>"Developed artwork to be used in conference booth.",
+			),
+			array(
+				"path"=>"indiginauts",
+				"name"=>"Indiginauts",
+				"desc"=>"Point 'n' click game we developed for iOS.",
+			),
+		);
+	break;
+
+	//DOORDASH
+	case "doordash-designer":
+		$short_name = "doordash-designer";
+		$originaljobposting="http://bit.ly/2oxnBgy";
+		$hiring_company="DoorDash";
+		$jobTitle="Senior Graphic Designer";
+		$date="April 26, 2017";
+		// $name = "Mike";
+		// $email="mikehlee100@gmail.com";
+		// $hiremepage = "http://rayuen.com/$short_name";
+		$funny_portrait = TRUE;
+		// $slider_img = "jobs/$short_name.jpg";
+
+		$copy = "
+		I am passing along my info after seeing your posting. With my past experience at startups and fun-loving attitude<span class='tooltip' title='I keep it fun, something held over from my Pokémon and caricature days. '>*</span>, I believe I would be a great asset to your team.
+		$p_break
+		For the past two years I’ve been at edtech startup NextLesson doing branding, art production, marketing, illustration and product UI/UX. I helped develop the branding and set basic standards to move forward with. I worked with Marketing to develop a blog, conference planning and artwork, and press releases. I developed the illustration style at NextLesson that is used on covers and icons. I trained freelancers on the style, as well as produced art assets to speed up production time. While I was there, I oversaw the creation of over 2,000 lesson covers and 3,000 icons that are currently populating the site.
+		";
+		// $closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"nextlesson-characters",
+				"name"=>"NextLesson Characters",
+				"desc" => "A system of posable characters for covers and animation use.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"desc"=>"Design of conference booth and marketing materials",
+			),
+			array(
+				"path"=>"licensing-show",
+				"name"=>"Pokémon Licensing Show",
+				"desc"=>"Developed artwork to be used in conference booth.",
 			),
 		);
 	break;

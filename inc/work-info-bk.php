@@ -1,14 +1,9 @@
 <?
 $p_break = "</p><p>";
 
-if ( $project ) {
-	$path = "img/$project";
-}
-
 $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") ),
 	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("ui-ux","illustration","web-dev") ),
-	// array( "name" => "NextLesson Admin Landing Page","path" => "nl-district-landing-page","tags"=>array("ui-ux","web-dev") ),
 	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("illustration","ui-ux","branding","web-dev") ),
 	// array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing" ),
 	array( "name" => "NextLesson Glossary Images", "path" => "nextlesson-glossary", "tags"=>array("illustration") ),
@@ -17,11 +12,11 @@ $works = array(
 	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars" ),
 	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library" ),
 	// array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-browse" ),
-	array( "name" => "The 3", "path" => "the-3", "tags"=>array("ui-ux") ),
+	array( "name" => "The 3", "path" => "the3", "tags"=>array("ui-ux") ),
 	array( "name" => "Indiginauts", "path" => "indiginauts", "tags" => array("illustration","ui-ux") ),
-	array( "name" => "The Pok&eacute;mon Company", "path" => "pokemon","tags"=>array("places-i-worked") ),
+	array( "name" => "Pok&eacute;mon", "path" => "pokemon","tags"=>array("places-i-worked") ),
 	array( "name" => "Wired", "path" => "wired", "tags" => array("illustration") ),
-	array( "name" => "Abriendo Puertas / Opening Doors", "path" => "abriendo-puertas",	"tags"=>array("web-dev","branding") ),
+	array( "name" => "Abriendo Puertas / Opening&nbsp;Doors", "path" => "abriendo-puertas",	"tags"=>array("web-dev","branding") ),
 	array( "name" => "Color Chameleon", "path" => "color-chameleon", "tags" => array("illustration","ui-ux") ),
 	array( "name" => "Adelle Marcero", "path" => "adelle-marcero","tags"=>array("web-dev", "ui-ux") ),
 	array( "name" => "LesConcierges","path" => "lesconcierges", "tags" => array("illustration") ),
@@ -29,32 +24,32 @@ $works = array(
 	array( "name" => "Project Animore", "path" => "project-animore", "tags" => array("illustration","ui-ux") ),
 	array( "name" => "#Inktober2016","path" => "inktober-2016", "tags" => array("illustration") ),
 	array( "name" => "100 Principles of Game Design", "path" => "100-principles-of-game-design", "tags" => array("illustration") ),
-	array( "name" => "Holiday Card 2014", "path" => "holiday-card-2014", "tags" => array("web-dev","illustration") ),
-	array( "name" => "Monkey Mo, Monkey Go!", "path" => "monkey-mo", "tags" => array("illustration", "print-design") ),
+	array( "name" => "Holiday Card 2014", "path" => "holiday-2014", "tags" => array("web-dev","illustration") ),
+	array( "name" => "Monkey Mo, Monkey&nbsp;Go!", "path" => "monkey-mo", "tags" => array("illustration", "print-design") ),
 	array( "name" => "Scavenger Hunt", "path" => "scavenger-hunt", "tags" => array("illustration") ),
 	array( "name" => "Suspended Belief Studios", "path" => "suspended-belief-studios", "tags" => array("places-i-worked") ),
-	array( "name" => "Chronicles of Old New York", "path" => "chronicles-of-old-new-york", "tags"=>array("print-design") ),
+	array( "name" => "Chronicles of Old New&nbsp;York", "path" => "chronicles-of-old-new-york", "tags"=>array("print-design") ),
 	array( "name" => "Sarah Walko", "path" => "sarah-walko", "tags"=>array("web-dev") ),
 	array( "name" => "Edgeware", "path" => "edgeware", "tags"=>array("illustration") ),
 	array( "name" => "StoryMaps", "path" => "storymaps", "tags" => array("illustration") ),
 	array( "name" => "Malado Baldwin", "path" => "malado-baldwin", "tags"=>array("web-dev") ),
-	// array( "name" => "Egg Baby", "path" => "egg-baby", "tags" => array("illustration") ),
+	array( "name" => "Egg Baby", "path" => "egg-baby", "tags" => array("illustration") ),
 	array( "name" => "City Style","path" => "city-style","tags"=>array("print-design")),
-	array( "name" => "Chronicles of Old Las Vegas","path" => "chronicles-of-old-las-vegas","tags"=>array("print-design")),
-	array( "name" => "Chronicles of Old Boston","path" => "chronicles-of-old-boston","tags"=>array("print-design")),
-	array( "name" => "Chronicles of Old Paris","path" => "chronicles-of-old-paris","tags"=>array("print-design")),
-	array( "name" => "Chronicles of Old London", "path" => "chronicles-of-old-london", "tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old Las&nbsp;Vegas","path" => "chronicles-of-old-las-vegas","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old&nbsp;Boston","path" => "chronicles-of-old-boston","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old&nbsp;Paris","path" => "chronicles-of-old-paris","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old&nbsp;London", "path" => "chronicles-of-old-london", "tags"=>array("print-design")),
 	array( "name" => "Art + Paris","path" => "art-and-paris","tags"=>array("print-design")),
-	array( "name" => "Chronicles of Old Rome","path" => "chronicles-of-old-rome","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old&nbsp;Rome","path" => "chronicles-of-old-rome","tags"=>array("print-design")),
 	array( "name" => "The Rise of Darkrai","path" => "darkrai", "tags"=>array("print-design","ui-ux") ),
-	array( "name" => "Arceus and the Jewel of Life","path" => "arceus", "tags"=>array("print-design","ui-ux") ),
+	array( "name" => "Arceus and the Jewel of&nbsp;Life","path" => "arceus", "tags"=>array("print-design","ui-ux") ),
 	array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop", "path" => "feature-shop", "tags"=>array("print-design") ),
 	array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos", "tags"=>array("print-design","branding") ),
 	array( "name" => "Pok&eacute;mon: 10th Anniversary","path" => "10th-anniversary","tags"=>array("print-design","branding") ),
 	array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon", "tags"=>array("print-design") ),
 	array( "name" => "Battle Revolution", "path" => "battle-revolution", "tags"=>array("print-design","ui-ux") ),
 	array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex", "tags"=>array("print-design") ),
-	array( "name" => "Pok&eacute;mon Toy Fair", "path" => "toy-fair", "tags"=>array("print-design","branding") ),
+	array( "name" => "Pok&eacute;mon Toy&nbsp;Fair", "path" => "toy-fair", "tags"=>array("print-design","branding") ),
 	array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch", "tags"=>array("print-design","branding") ),
 	array( "name" => "Licensing Show", "path" => "licensing-show", "tags"=>array("print-design","branding") ),
 	// array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit" ),
@@ -66,8 +61,8 @@ $works = array(
 function get_suspended_belief_studios_projects(){
 	$works = array(
 		array( "name" => "Indiginauts","path" => "indiginauts" ),
-		array( "name" => "The 3","path" => "the-3","thumb" => "svg" ),
-		// array( "name" => "Abriendo Puertas / Opening Doors","path" => "abriendo-puertas ),
+		array( "name" => "The 3","path" => "the3","thumb" => "svg" ),
+		// array( "name" => "Abriendo Puertas / Opening&nbsp;Doors","path" => "abriendo-puertas ),
 		array( "name" => "Project Animore","path" => "project-animore" ),
 		array( "name" => "Color Chameleon","path" => "color-chameleon" ),
 	);
@@ -75,14 +70,14 @@ function get_suspended_belief_studios_projects(){
 }
 function get_museyon_projects(){
 	$works = array(
-		array( "name" => "Chronicles of Old New York","path" => "chronicles-of-old-new-york" ),
+		array( "name" => "Chronicles of Old New&nbsp;York","path" => "chronicles-of-old-new-york" ),
 		array( "name" => "City Style","path" => "city-style" ),
-		array( "name" => "Chronicles of Old Las Vegas","path" => "chronicles-of-old-las-vegas" ),
-		array( "name" => "Chronicles of Old Boston","path" => "chronicles-of-old-boston" ),
-		array( "name" => "Chronicles of Old Paris","path" => "chronicles-of-old-paris" ),
-		array( "name" => "Chronicles of Old London", "path" => "chronicles-of-old-london" ),
+		array( "name" => "Chronicles of Old Las&nbsp;Vegas","path" => "chronicles-of-old-las-vegas" ),
+		array( "name" => "Chronicles of Old&nbsp;Boston","path" => "chronicles-of-old-boston" ),
+		array( "name" => "Chronicles of Old&nbsp;Paris","path" => "chronicles-of-old-paris" ),
+		array( "name" => "Chronicles of Old&nbsp;London", "path" => "chronicles-of-old-london" ),
 		array( "name" => "Art + Paris","path" => "art-and-paris" ),
-		array( "name" => "Chronicles of Old Rome","path" => "chronicles-of-old-rome" ),
+		array( "name" => "Chronicles of Old&nbsp;Rome","path" => "chronicles-of-old-rome" ),
 	);
 	return $works;
 }
@@ -90,14 +85,14 @@ function get_museyon_projects(){
 function get_pokemon_projects(){
 	$works = array(
 		array( "name" => "The Rise of Darkrai","path" => "darkrai" ),
-		array( "name" => "Arceus and the Jewel of Life","path" => "arceus" ),
+		array( "name" => "Arceus and the Jewel of&nbsp;Life","path" => "arceus" ),
 		array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop", "path" => "feature-shop" ),
 		array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos" ),
 		array( "name" => "Pok&eacute;mon: 10th Anniversary","path" => "10th-anniversary" ),
 		array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon" ),
 		array( "name" => "Battle Revolution", "path" => "battle-revolution" ),
 		array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex" ),
-		array( "name" => "Pok&eacute;mon Toy Fair", "path" => "toy-fair" ),
+		array( "name" => "Pok&eacute;mon Toy&nbsp;Fair", "path" => "toy-fair" ),
 		array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch" ),
 		array( "name" => "Licensing Show", "path" => "licensing-show" ),
 	);
@@ -128,8 +123,8 @@ function museyon_sidebar() {
 	global $date;
 	global $url;
 	return "Written by " .$author."</p>
-			<p>Edited by Heather Corcoran and Akira Chiba </p>
-			<p>Published by <a href='museyon-guides'>Museyon Guides</a></p>
+			<p>Edited by Heather&nbsp;Corcoran and Akira&nbsp;Chiba </p>
+			<p>Published by <a href='museyon-guides'>Museyon&nbsp;Guides</a></p>
 			<p>Trade Paperback<br>"
 			. $pages . " pages<br>
 			5 &frac14;\" &#215; 8\"<br>
@@ -142,7 +137,7 @@ function museyon_sidebar() {
 //  #MUSEYON GUIDES
 // ===============================
 
-if ( $project == "museyon-guides" ) {
+if ( $title == "Museyon Guides" ) {
 
 	$path="img/museyon-guides";
 	$template="company";
@@ -164,9 +159,8 @@ if ( $project == "museyon-guides" ) {
 //  #POKEMON
 // ===============================
 
-if ( $project == "pokemon" ) {
+if ( $title == "The Pok&eacute;mon Company" ) {
 
-	$title = "The Pok&eacute;mon Company";
 	$path="img/pokemon";
 	$template="company";
 	$logo="svg";
@@ -183,7 +177,7 @@ if ( $project == "pokemon" ) {
 //  #SUSPENDED-BELIEF-STUDIOS
 // ===============================
 
-if ( $project == "suspended-belief-studios" ) {
+if ( $title == "Suspended Belief Studios" ) {
 
 	$path="img/suspended-belief-studios";
 
@@ -207,9 +201,8 @@ if ( $project == "suspended-belief-studios" ) {
 // #STORYMAPS
 // ========================
 
-if ( $project == "storymaps" ) {
+if ( $title == "StoryMaps" ) {
 
-	$title = "StoryMaps";
 	$path="img/storymaps";
 
 	$description = "
@@ -233,7 +226,7 @@ if ( $project == "storymaps" ) {
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>40),
 		// array("skill"=>"Illustrator", "percent"=>10),
-		array("skill"=>"Hand drawn illustrations", "percent"=>60),
+		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>60),
 	);
 
 	$img_info = array(
@@ -250,7 +243,7 @@ if ( $project == "storymaps" ) {
 // #idibon
 // ========================
 
-if ( $project == "idibon" ) {
+if ( $title == "idibon" ) {
 
 	$path="img/idibon";
 
@@ -261,7 +254,7 @@ if ( $project == "idibon" ) {
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>40),
-		array("skill"=>"Hand drawn illustrations", "percent"=>60),
+		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>60),
 	);
 
 	$img_info = array(
@@ -274,13 +267,13 @@ if ( $project == "idibon" ) {
 // #INDIGINAUTS
 // ========================
 
-if ( $project == "indiginauts" ) {
+if ( $title == "Indiginauts" ) {
 
 	$path="img/indiginauts";
 	$company = "Suspended Belief Studios";
 
 	$description = "
-		This idea was the whole reason we started Suspended Belief Games. Based on an illustration I did for a group show in New York, the Indiginauts were space explorers in the vein of Star Fleet. They were peace-loving creatures that explored the stars. Were they decended from humans? Maybe. They loved nothing more than to explore, learn and record for others to see.
+		This idea was the whole reason we started Suspended Belief Games. Based on an illustration I did for a group show in New York, the Indiginauts were space explorers in the vein of Star Fleet. They were peace-loving creatures that explored the stars. Were they decended from humans? Maybe. They loved nothing more than to explore, learn and record for others to&nbsp;see.
 		$p_break
 		Well, that was the original idea. Now they are wise-cracking repairmen. We developed the game as a simplified <span class='tooltip underline' title='Point and Touch?'>point-and-click</span> geared toward mobile devices. The main goal was to take everything we learned from classic point-and-clicks, like <em>Monkey Island</em>, and streamline and simplify. Top it off with an engaging story, developed characters and fun artwork.
 		";
@@ -295,7 +288,7 @@ if ( $project == "indiginauts" ) {
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>55),
-		array("skill"=>"Hand Drawn Illustrations", "percent"=>35),
+		array("skill"=>"Hand&nbsp;Drawn&nbsp;Illustrations", "percent"=>35),
 		array("skill"=>"Illustrator", "percent"=>5),
 		array("skill"=>"Flash", "percent"=>5),
 	);
@@ -319,19 +312,19 @@ if ( $project == "indiginauts" ) {
 // #100 PRINCIPLES OF GAME DESIGN
 // ===============================
 
-if ( $project == "100-principles-of-game-design" ) {
+if ( $title == "100 Principles of Game Design" ) {
 
 	$path="img/100-principles-of-game-design";
 
 	$description = "
-		Because of a scheduling problem, I was was asked to do the illustrations for a game design book. “Game design you say? This is my area of expertise!” The turnaround was tight, under a month for about 30 spot illustrations. The schedule wasn't the best, but I really wanted to do game illustrations. Exchanging sketches back and forth with the author, we decided that we could have a cast of  characters that could be reused which would greatly speed up the work, as well as establish a visual language.
+		Because of a scheduling problem, I was was asked to do the illustrations for a game design book. “Game design you say? This is my area of expertise!” The turnaround was tight, under a month for about 30 spot illustrations. The schedule wasn't the best, but I really wanted to do game illustrations. Exchanging sketches back and forth with the author, we decided that we could have a cast of  characters that could be reused which would greatly speed up the work, as well as establish a visual&nbsp;language.
 		</p><p>
-		After a month of my regular schedule at work and then spending my time at night creating the illustrations, I was stretched thin. In the end however, I was quite proud of the work and I took another step in mastering a pure vector art style.
+		After a month of my regular schedule at work and then spending my time at night creating the illustrations, I was stretched thin. In the end however, I was quite proud of the work and I took another step in mastering a pure vector art&nbsp;style.
 		";
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>45),
-		array("skill"=>"Hand drawn illustrations", "percent"=>35),
+		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>35),
 		array("skill"=>"Photoshop", "percent"=>20),
 	);
 
@@ -370,7 +363,7 @@ if ( $project == "100-principles-of-game-design" ) {
 // #ANIMORE
 // ===============================
 
-if ( $project == "project-animore" ) {
+if ( $title == "Project Animore" ) {
 
 	$path="img/project-animore";
 	$company = "Suspended Belief Studios";
@@ -413,7 +406,7 @@ if ( $project == "project-animore" ) {
 // #MALADO INDEXHIBIT
 // ===============================
 
-if ( $project == "malado-baldwin-indexhibit" ) {
+if ( $title == "Malado Baldwin" ) {
 
 	$path="img/malado-baldwin-indexhibit";
 
@@ -423,7 +416,7 @@ if ( $project == "malado-baldwin-indexhibit" ) {
 	 ';
 
 	$tools=array(
-		array("skill"=>"Indexhibit Framework", "percent"=>30),
+		array("skill"=>"Indexhibit&nbsp;Framework", "percent"=>30),
 		array("skill"=>"Photoshop", "percent"=>20),
 		array("skill"=>"HTML", "percent"=>20),
 		array("skill"=>"CSS", "percent"=>30),
@@ -446,7 +439,7 @@ if ( $project == "malado-baldwin-indexhibit" ) {
 // #MALADO-WORDPRESS-SITE
 // ===============================
 
-if ( $project == "malado-baldwin" ) {
+if ( $title == "Malado Baldwin" ) {
 
 	$path="img/malado-baldwin";
 
@@ -463,7 +456,7 @@ if ( $project == "malado-baldwin" ) {
 		<p><a href="http://www.maladobaldwin.com" target="_blank">maladobaldwin.com</a>';
 
 	$tools=array(
-		array("skill"=>"Wordpress Framework", "percent"=>30),
+		array("skill"=>"Wordpress&nbsp;Framework", "percent"=>30),
 		array("skill"=>"Photoshop", "percent"=>20),
 		array("skill"=>"HTML", "percent"=>20),
 		array("skill"=>"CSS", "percent"=>30),
@@ -486,12 +479,12 @@ if ( $project == "malado-baldwin" ) {
 // #SARAH-WALKO-WORDPRESS
 // ===============================
 
-if ( $project == "sarah-walko" ) {
+if ( $title == "Sarah Walko" ) {
 
 	$path="img/sarah-walko";
 
 	$description = "
-		My first experience building a site using Wordpress. I met artist Sarah Walko through my good artist friend Malado Baldwin. She expressed that she needed a site that she could update on her own and that she had experience with Wordpress through work. So I went about helping her figure out the best way to get this going for her.
+		My first experience building a site using Wordpress. I met artist Sarah Walko through my good artist friend Malado Baldwin. She expressed that she needed a site that she could update on her own and that she had experience with Wordpress through work. So I went about helping her figure out the best way to get this going for&nbsp;her.
 		</p><p>
 		After figuring out all the nessesary information on her hosting, the actual Wordpress install really was about 5 minutes (this is something they boast)! We worked together on learning about a fresh WP install and soon was figuring out best practices for theme management, plugins and navigation. PRETTY COOL. So cool that <a href='malado-baldwin-wordpress'>Malado </a> wanted a site just like Sarah’s!
 	";
@@ -501,7 +494,7 @@ if ( $project == "sarah-walko" ) {
 		<p><a href="http://www.sarahwalko.com/blog" target="_blank">sarahwalko.com</a>';
 
 	$tools=array(
-		array("skill"=>"Wordpress Framework", "percent"=>30),
+		array("skill"=>"Wordpress&nbsp;Framework", "percent"=>30),
 		array("skill"=>"Photoshop", "percent"=>20),
 		array("skill"=>"HTML", "percent"=>20),
 		array("skill"=>"CSS", "percent"=>30),
@@ -519,11 +512,11 @@ if ( $project == "sarah-walko" ) {
 // #SCAVENGER-HUNT
 // ===============================
 
-if ( $project == "scavenger-hunt" ) {
+if ( $title == "Scavenger Hunt" ) {
 
 	$path="img/scavenger-hunt";
 
-	$description = 'SAN FRANCISCO, California — I submitted a t-shirt design to a Threadless contest. The challenge: make a fun tee for the <a href="http://www.chicagochildrensmuseum.org">Chicago Children\'s Museum</a>. The winner would get a ticket out to Chicago and like $1,000 in Threadless store credit or something. I did a bunch of research about the museum and found my imagination running wild with the activities you could do there (and mildly jealous that I wasn\'t a kid in Chicago!). I thought it would be wonderful to have a shirt that represented all the neat things kids could do at the museum.
+	$description = 'SAN FRANCISCO, California — I submitted a t-shirt design to a Threadless contest. The challenge: make a fun tee for the <a href="http://www.chicagochildrensmuseum.org">Chicago Children\'s Museum</a>. The winner would get a ticket out to Chicago and like $1,000 in Threadless store credit or something. I did a bunch of research about the museum and found my imagination running wild with the activities you could do there (and mildly jealous that I wasn\'t a kid in Chicago!). I thought it would be wonderful to have a shirt that represented all the neat things kids could do at the&nbsp;museum.
 		</p><p>
 		My first idea was to perhaps to do a "Family Circus" style map showing a kid walking around the museum. I never did figure out the best way to represent three levels without a lot of weird perspective glitches. This is what lead me to the scavenger hunt idea. T-shirt real estate wise, it was more forgiving and allowed me more freedom with the  space on the shirt.
 		</p>
@@ -539,7 +532,7 @@ if ( $project == "scavenger-hunt" ) {
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>80),
-		array("skill"=>"Hand Drawn Illustrations", "percent"=>20),
+		array("skill"=>"Hand&nbsp;Drawn&nbsp;Illustrations", "percent"=>20),
 	);
 
 	$img_info = array(
@@ -550,12 +543,12 @@ if ( $project == "scavenger-hunt" ) {
 } //end scavenger-hunt
 
 
-// #THE-3
+// #THE3
 // ===============================
 
-if ( $project == "the-3" ) {
+if ( $title == "The 3" ) {
 
-	$path="img/the-3";
+	$path="img/the3";
 	$company = "Suspended Belief Studios";
 
 	$tools=array(
@@ -565,13 +558,13 @@ if ( $project == "the-3" ) {
 	);
 
 	$description = '
-		Our first foray into the iPhone games arena was a trivia game. &ldquo;The 3&rdquo; centered around the basic concept of multiple choice trivia with timely usage of powerups.
+		Our first foray into the iPhone games arena was a trivia game. &ldquo;The&nbsp;3&rdquo; centered around the basic concept of multiple choice trivia with timely usage of powerups.
 		</p>
 		<p>
 			In our first iteration, you had to type out the answers, but that wasn\'t working out how we hoped and took way too long. It became more of a fast typing game. In our second iteration, we implemented multiple choice with 5 right and wrong answers and set the game time around 2 minutes. We liked this, but ultimately decided that it seemed like people were reading more than they should be, so we decided to cut down the questions and answers to 3, set the timer at one minute and consciously try to keep the wording for questions minimal if possible. We next implemented a system of power-ups and then for the next month went about procuring and writing good trivia questions.
 		</p>
 		<p>
-			We released the game free in the <a href="https://itunes.apple.com/us/app/the-3-great-trivia/id694924959?mt=8" target="_blank">App Store</a> with in-app purchases for new categories as a way to generate revenue. It was also a chance for us to get to know first-hand how the App Store worked and seeing how a game would do with ads and without signifigant marketing dollars put behind it. Currently, it is still in stealth release because we still keep finding <span class="tooltip underline" title="FREAKIN\' google spreadsheet!">mistakes</span> in the questions, but we are hoping to squash all the mistakes.'
+			We released the game free in the <a href="https://itunes.apple.com/us/app/the-3-great-trivia/id694924959?mt=8" target="_blank">App Store</a> with in-app purchases for new categories as a way to generate revenue. It was also a chance for us to get to know first-hand how the App Store worked and seeing how a game would do with ads and without signifigant marketing dollars put behind it. Currently, it is still in stealth release because we still keep finding <span class="tooltip underline" title="FREAKIN\' google spreadsheet!">mistakes</span> in the questions, but we are hoping to squash all the&nbsp;mistakes.'
 	;
 
 	$sidebar = '
@@ -598,17 +591,17 @@ if ( $project == "the-3" ) {
 // #EDGEWARE
 // ===============================
 
-if ( $project == "edgeware" ) {
+if ( $title == "Edgeware" ) {
 
 	$path="img/edgeware";
 
-	$description = 'These are vector graphics proposed for a device that would help  Coast Guard patrols decide on the best course of action or even rules of engagement. They would input the conditions and the device would narrow down your options. I am not sure that this device was actually ever created but that’s the world of lucrative government contracts fer ya.';
+	$description = 'These are vector graphics proposed for a device that would help  Coast Guard patrols decide on the best course of action or even rules of engagement. They would input the conditions and the device would narrow down your options. I am not sure that this device was actually ever created but that’s the world of lucrative government contracts fer&nbsp;ya.';
 
 	$sidebar = "<p>Vector Illustrations</p>";
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>70),
-		array("skill"=>"Hand drawn illustrations", "percent"=>10),
+		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>10),
 		array("skill"=>"Illustrator", "percent"=>20),
 	);
 
@@ -627,7 +620,7 @@ if ( $project == "edgeware" ) {
 // #EGG BABY
 // ===============================
 
-if ( $project == "egg-baby" ) {
+if ( $title == "Egg Baby" ) {
 
 	$path="img/egg-baby";
 
@@ -639,7 +632,7 @@ if ( $project == "egg-baby" ) {
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>20),
-		array("skill"=>"Hand drawn illustrations", "percent"=>75),
+		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>75),
 		array("skill"=>"Illustrator", "percent"=>5),
 	);
 
@@ -657,7 +650,7 @@ if ( $project == "egg-baby" ) {
 // #COLOR CHAMELEON
 // ===============================
 
-if ( $project == "color-chameleon" ) {
+if ( $title == "Color Chameleon" ) {
 
 	$path="img/color-chameleon";
 	$company = "Suspended Belief Studios";
@@ -673,11 +666,11 @@ if ( $project == "color-chameleon" ) {
 		<p>iOS runner</p>
 		<p><a href='suspended-belief-studios'>Suspended Belief Studios</a></p>
 		<p>Game Design: Jeremy Klar, Ray Yuen</p>
-		<p>Art by Ray Yuen, Sun Park</p>
+		<p>Art by Ray&nbsp;Yuen, Sun&nbsp;Park</p>
 	";
 
 	$tools = array(
-		array("skill"=>"Hand drawn illustrations", "percent"=>50),
+		array("skill"=>"Hand&nbsp;drawn&nbsp;illustrations", "percent"=>50),
 		array("skill"=>"Photoshop", "percent"=>45),
 	);
 
@@ -701,7 +694,7 @@ if ( $project == "color-chameleon" ) {
 // #ART+PARIS
 // ===============================
 
-if ( $project == "art-and-paris" ) {
+if ( $title == "Art + Paris" ) {
 
 	$path="img/art-and-paris";
 	$company = "Museyon";
@@ -714,7 +707,7 @@ if ( $project == "art-and-paris" ) {
 		Epilogue: With hundreds of paintings to catalogue and detail, this book was the most meticulous and detail-oriented book I worked on with Museyon. In the end, I am quite proud of this book and for all the stuff I learned (that I forgot about in art history class).
 	';
 
-	$author = "Museyon Guides";
+	$author = "Museyon&nbsp;Guides";
 	$pages = 328;
 	$date = "July 2012";
 	$url = "http://www.museyon.com/shop/art-paris-impressionists";
@@ -746,7 +739,7 @@ if ( $project == "art-and-paris" ) {
 // CHRONICLES OF OLD #LONDON
 // ===============================
 
-if ( $project == "chronicles-of-old-london" ) {
+if ( $title == "Chronicles of Old&nbsp;London" ) {
 
 	$path="img/chronicles-of-old-london";
 	$company = "Museyon";
@@ -767,7 +760,7 @@ if ( $project == "chronicles-of-old-london" ) {
 			<img src="img/chronicles-of-old-london/Parks&Recreation_s.jpg" class="scale-with-grid" alt="" />Beautiful.
 		';
 
-	$author="Kevin Jackson";
+	$author="Kevin&nbsp;Jackson";
 	$pages = 288;
 	$date = "May 2012";
 	$url = "http://www.museyon.com/shop/chronicles-of-old-london";
@@ -792,7 +785,7 @@ if ( $project == "chronicles-of-old-london" ) {
 // CHRONICLES OF OLD #PARIS
 // ===============================
 
-if ( $project == "chronicles-of-old-paris" ) {
+if ( $title == "Chronicles of Old&nbsp;Paris" ) {
 
 	$path="img/chronicles-of-old-paris";
 	$company = "Museyon";
@@ -802,7 +795,7 @@ if ( $project == "chronicles-of-old-paris" ) {
 		</p>
 	';
 
-	$author="John Baxter";
+	$author="John&nbsp;Baxter";
 	$pages = 288;
 	$date = "May 2011";
 	$url = "http://www.museyon.com/shop/chronicles-of-old-paris";
@@ -827,7 +820,7 @@ if ( $project == "chronicles-of-old-paris" ) {
 // #CITY STYLE
 // ===============================
 
-if ( $project == "city-style" ) {
+if ( $title == "City Style" ) {
 
 	$path="img/city-style";
 	$company = "Museyon";
@@ -837,10 +830,10 @@ if ( $project == "city-style" ) {
 		</p><p>
 		This was basically me and Heather\'s book, so we basically got to do most everything we wanted. With Heather manning the phones and email trying to get approved photos from fashion houses, I went about establishing a variant of the Museyon style for the book\'s skeleton. It was structured, but loose enough that it allowed each city to have it\'s own look and feel. We wanted the book to have a a magazine feel to them with bold type design with big photos that spoke for themselves. We may have gotten a little carried away in the beginning with many pages being full photos and the page count going up, but we course-corrected and got ourselves back to the target page count.
 		</p><p>
-			Epilogue: This book really refined the working relationship that would serve us well in the coming year as we go into full <a href="chronicles-of-old-las-vegas"><em>Chronicles</em></a> mode.
+			Epilogue: This book really refined the working relationship that would serve us well in the coming year as we go into full <a href="chronicles-of-old-las-vegas"><em>Chronicles</em></a>&nbsp;mode.
 		';
 
-	$author = "Museyon Guides";
+	$author = "Museyon&nbsp;Guides";
 	$pages = 272;
 	$date = "October 2011";
 	$url = "http://www.museyon.com/shop/city-style";
@@ -875,18 +868,18 @@ if ( $project == "city-style" ) {
 // CHRONICLES OF OLD #ROME
 // ===============================
 
-if ( $project == "chronicles-of-old-rome" ) {
+if ( $title == "Chronicles of Old&nbsp;Rome" ) {
 
 	$path="img/chronicles-of-old-rome";
 	$company = "Museyon";
 
 	$description = '
-		<strong>Exploring Italy\'s Eternal City</strong>. After my move to San Francisco, I didn\'t get to work on as many big projects with Museyon anymore. One thing I still do on occasion is work on their maps. Normally there is another person who makes their maps, but because they are an intensive endeavor, I was asked to help out. I had good success with it because I was more familiar with the page margins, the software and being able to make all the fonts consistently the same size.
+		<strong>Exploring Italy\'s Eternal City</strong>. After my move to San Francisco, I didn\'t get to work on as many big projects with Museyon anymore. One thing I still do on occasion is work on their maps. Normally there is another person who makes their maps, but because they are an intensive endeavor, I was asked to help out. I had good success with it because I was more familiar with the page margins, the software and being able to make all the fonts consistently the same&nbsp;size.
 		</p><p>
 		That being said, they are still an intensive endeavor that involves some pretty detailed Illustrator work. And street labeling. So much street labeling.
 	';
 
-	$author = "Tamara Thiessen";
+	$author = "Tamara&nbsp;Thiessen";
 	$pages = 272;
 	$date = "April 2013";
 	$url = "http://www.museyon.com/shop/chronicles-of-old-rome";
@@ -895,7 +888,7 @@ if ( $project == "chronicles-of-old-rome" ) {
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>70),
-		array("skill"=>"Google Maps / Openmaps", "percent"=>20),
+		array("skill"=>"Google&nbsp;Maps&nbsp;/&nbsp;Openmaps", "percent"=>20),
 		array("skill"=>"Photoshop", "percent"=>5),
 		array("skill"=>"Indesign", "percent"=>5),
 	);
@@ -915,7 +908,7 @@ if ( $project == "chronicles-of-old-rome" ) {
 // CHRONICLES OF OLD NEW #YORK
 // ===============================
 
-if ( $project == "chronicles-of-old-new-york" ) {
+if ( $title == "Chronicles of Old New&nbsp;York" ) {
 
 	$path="img/chronicles-of-old-new-york";
 	$company = "Museyon";
@@ -929,7 +922,7 @@ if ( $project == "chronicles-of-old-new-york" ) {
 		</p><p>
 		<strong>Epilogue</strong>: We worked really well together and this book actually became their best selling book which lead to them doing more in the <em>Chronicles</em> series (which meant more work for me! Yeah!). They eventually asked me to do more in the series, but that took some time. In the meantime, they asked me to layout a <a href="city-style">fashion book</a>.';
 
-	$author = "James Roman";
+	$author = "James&nbsp;Roman";
 	$pages = 260;
 	$date = "June 2010";
 	$url = "http://www.museyon.com/shop/chronicles-of-old-new-york";
@@ -963,14 +956,14 @@ if ( $project == "chronicles-of-old-new-york" ) {
 // CHRONICLES OF OLD #BOSTON
 // ===============================
 
-if ( $project == "chronicles-of-old-boston" ) {
+if ( $title == "Chronicles of Old&nbsp;Boston" ) {
 
 	$path="img/chronicles-of-old-boston";
 	$company = "Museyon";
 
 	$description = '<strong>Exploring New England’s Historic Capital</strong>. No one can deny Boston’s historical signifigance in America’s history. Being able to read the stories of our forefathers and a broken mollasses tank that kills woman and children alike in the same book. Amazing. ';
 
-	$author="Charles Bahne";
+	$author="Charles&nbsp;Bahne";
 	$pages = 288;
 	$date = "April 2012";
 	$url="http://www.museyon.com/shop/chronicles-of-old-boston";
@@ -1002,7 +995,7 @@ if ( $project == "chronicles-of-old-boston" ) {
 // ##CHRONICLES OF OLD LAS #VEGAS
 // ===============================
 
-if ( $project == "chronicles-of-old-las-vegas" ) {
+if ( $title == "Chronicles of Old Las&nbsp;Vegas" ) {
 
 	$path="img/chronicles-of-old-las-vegas";
 	$company = "Museyon";
@@ -1015,7 +1008,7 @@ if ( $project == "chronicles-of-old-las-vegas" ) {
 			Epilogue: With the amazing cover and content, this is easily my favorite book in the whole series because the stories were so amazing and we had a lot of fun putting it all together. Next up...<a href="chronicles-of-old-boston">Boston</a>.
 	 ';
 
-	$author="James Roman";
+	$author="James&nbsp;Roman";
 	$pages = 240;
 	$date = "February 2012";
 	$url = "http://www.museyon.com/shop/chronicles-of-old-las-vegas";
@@ -1046,15 +1039,14 @@ if ( $project == "chronicles-of-old-las-vegas" ) {
 //  #ABRIENDO PUERTAS
 // ===============================
 
-if ( $project == "abriendo-puertas" ) {
+if ( $title == "Abriendo Puertas / Opening&nbsp;Doors" ) {
 
-	$title = "Abriendo Puertas / Opening Doors";
 	$path="img/abriendo-puertas";
 	//update screenshots and description
 
 	$description = '<em>Abriendo Puertas / Opening Doors</em> is a non-profit dedicated to decreasing the drop-out rate of Latino kids by instilling good behaviors at home. They believe the answer starts at home so their primary focus is on educating their parents. AP/OD holds training sessions where they teach parents different things they could do with their kids to better engage them and acclimate them to a learning environment.
 		</p><p>
-		AP/OD needed an informational site where parents and educators could come to find out more about the organization, where trainings would be, and a place where educators could access teaching materials. After getting approval on the overall look of the site, we built the site based on the Skeleton framework. After a few rounds of going back and forth, we streamlined the content of the site with PHP. They now have a beautiful site that looks great on all devices.
+		AP/OD needed an informational site where parents and educators could come to find out more about the organization, where trainings would be, and a place where educators could access teaching materials. After getting approval on the overall look of the site, we built the site based on the Skeleton framework. After a few rounds of going back and forth, we streamlined the content of the site with PHP. They now have a beautiful site that looks great on all&nbsp;devices.
 		';
 
 	$sidebar = "
@@ -1062,7 +1054,7 @@ if ( $project == "abriendo-puertas" ) {
 		<p><a href='http://ap-od.org' target='_blank'>ap-od.org</a>
 	";
 	$tools=array(
-		array("skill"=>"Skeleton Framework", "percent"=>20),
+		array("skill"=>"Skeleton&nbsp;Framework", "percent"=>20),
 		array("skill"=>"HTML", "percent"=>60),
 		array("skill"=>"CSS", "percent"=>40),
 		array("skill"=>"PHP", "percent"=>10),
@@ -1085,22 +1077,21 @@ if ( $project == "abriendo-puertas" ) {
 //  #MONKEY MO, MONKEY GO
 // ===============================
 
-if ( $project == "monkey-mo" ) {
+if ( $title == "Monkey Mo, Monkey&nbsp;Go!" ) {
 
-	$title = "Monkey Mo, Monkey Go!";
 	$path="img/monkey-mo";
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>55),
-		array("skill"=>"Hand&#8209;drawn illustrations", "percent"=>30),
+		array("skill"=>"Hand&#8209;drawn&nbsp;illustrations", "percent"=>30),
 		array("skill"=>"Indesign", "percent"=>10),
 		array("skill"=>"Illustrator", "percent"=>5),
 	);
 
 	$description = '
-		Teaming up again with author Lin Fong O\'Neil, we worked together to create another children\'s book. Lin wanted to make another book about another animal in the Chinese zodiac and when she asked me what I wanted to do, I responded with "Monkey!" Monkeys are rad obviously.
+		Teaming up again with author Lin Fong O\'Neil, we worked together to create another children\'s book. Lin wanted to make another book about another animal in the Chinese zodiac and when she asked me what I wanted to do, I responded with "Monkey!" Monkeys are rad&nbsp;obviously.
 		</p><p>
-		The story follows the adventures of a little boy\'s adventure to the zoo and finding a new best friend. I put a lot of detail into this book and made it somewhat interactive. I hid animals in various spots so as to give children an activity to do after they finish.
+		The story follows the adventures of a little boy\'s adventure to the zoo and finding a new best friend. I put a lot of detail into this book and made it somewhat interactive. I hid animals in various spots so as to give children an activity to do after they&nbsp;finish.
 		</p>
 
 		<div class="six columns alpha">
@@ -1116,7 +1107,7 @@ if ( $project == "monkey-mo" ) {
 
 	$sidebar = "
 		<p>Children's Book<br>Published 2010</p>
-		<p>written by: Lin Fong O'Neill, <a href='http://www.lotuswriting.com'>Lotus Writing</a><br>Illustrated: by Ray Yuen</p>
+		<p>written by: Lin Fong O'Neill, <a href='http://www.lotuswriting.com'>Lotus&nbsp;Writing</a><br>Illustrated: by Ray Yuen</p>
 		<p>Hand-drawn and inked, coloring done in Photoshop</p>
 		<p><a href='http://www.amazon.com/Monkey-Mo-Go-Lin-Fong-ONeill/dp/0978644131'>Buy the book</a></p>
 		<p><img width='50%' class='add-top' src='img/monkey-mo/icon_peter.png' alt='' />
@@ -1142,16 +1133,15 @@ if ( $project == "monkey-mo" ) {
 //  THE RISE OF #DARKRAI
 // ===============================
 
-if ( $project == "darkrai" ) {
+if ( $title == "The Rise of Darkrai" ) {
 
-	$title = "The Rise Of Darkrai";
 	$path="img/darkrai";
 	$company = "Pokemon";
 
 	$description = '
-	The Rise of Darkrai was the 10th Pok&eacute;mon movie made and the third movie I worked on.
+	The Rise of Darkrai was the 10th Pok&eacute;mon movie made and the third movie I worked&nbsp;on.
 		</p><p>
-		It was around this time I was finally starting to feel comfortable with the logos I was creating for these movies. The logos were by far the hardest part for me because they went against everything I was taught in school—to simplify and remove. Here it was almost more is better. Ornamental, fun and colorful. It was a little hard to adjust to at first, but eventually we got there.
+		It was around this time I was finally starting to feel comfortable with the logos I was creating for these movies. The logos were by far the hardest part for me because they went against everything I was taught in school—to simplify and remove. Here it was almost more is better. Ornamental, fun and colorful. It was a little hard to adjust to at first, but eventually we got&nbsp;there.
 		</p><p>
 		Chris, the creative director, and I worked closely on this one. I gave him a bunch of ideas, but they were all missing something. Once he found the typeface we ended up using, it quickly came in place. I thought the gothic typeface really captured the feel of the featured ghost-like character and the look of the movie. After that, localizing the rest of the materials was easy.
 		';
@@ -1163,10 +1153,10 @@ if ( $project == "darkrai" ) {
 
 	$sidebar = "
 		<p>February 2008</p>
-		<p><strong>Creative</strong>: Chris Brixey, Ray Yuen</p>
-		<p><strong>Interactive</strong>: Masahiro Manabe</p>
+		<p><strong>Creative</strong>: Chris&nbsp;Brixey, Ray&nbsp;Yuen</p>
+		<p><strong>Interactive</strong>: Masahiro&nbsp;Manabe</p>
 		<p>Logo, movie poster, marketing materials, DVD packaging, movie mini-site</p>
-		<p><strong>Original title</strong>: Pocket Monsters Diamond & Pearl the Movie: Dialga vs. Palkia vs. Darkrai</p>
+		<p><strong>Original title</strong>: Pocket&nbsp;Monsters Diamond & Pearl the Movie: Dialga vs. Palkia vs. Darkrai</p>
 		<p>劇場版ポケットモンスター ダイヤモンド&パール ディアルガVSパルキアVSダークライ</p>
 				";
 
@@ -1184,9 +1174,8 @@ if ( $project == "darkrai" ) {
 //  #ARCEUS
 // ===============================
 
-if ( $project == "arceus" ) {
+if ( $title == "Arceus and the Jewel of&nbsp;Life" ) {
 
-	$title = "Arceus and the Jewel of Life";
 	$path="img/arceus";
 	$company = "Pokemon";
 
@@ -1210,7 +1199,7 @@ if ( $project == "arceus" ) {
 //  POKEMON #10TH #ANNIVERSARY
 // ===============================
 
-if ( $project == "10th-anniversary" ) {
+if ( $title == "Pok&eacute;mon: 10th Anniversary" ) {
 
 	$path="img/10th-anniversary";
 	$company = "Pokemon";
@@ -1251,9 +1240,8 @@ if ( $project == "10th-anniversary" ) {
 //  POKEMON #TOYS R US
 // ===============================
 
-if ( $project == "feature-shop" ) {
+if ( $title == "Pok&eacute;mon: Toys'R'Us Feature Shop" ) {
 
-	$title = "Pok&eacute;mon: Toys'R'Us Feature Shop";
 	$path="img/feature-shop";
 	$company = "Pokemon";
 
@@ -1283,9 +1271,8 @@ if ( $project == "feature-shop" ) {
 //  #TOY-FAIR
 // ===============================
 
-if ( $project == "toy-fair" ) {
+if ( $title == "Pok&eacute;mon: Toy Fair" ) {
 
-	$title = "Pok&eacute;mon Toy Fair";
 	$path="img/toy-fair";
 	$company = "Pokemon";
 
@@ -1299,7 +1286,8 @@ if ( $project == "toy-fair" ) {
 
 	$sidebar = "
 		<p>Trade Show Booth</p>
-		<p>Jacob Javits Center, NYC<br>2006</p>
+		Jacob Javits Center, NYC<br>
+		2006
 	";
 
 	$tools=array(
@@ -1320,7 +1308,7 @@ if ( $project == "toy-fair" ) {
 //  #NERD COMICS
 // ===============================
 
-if ( $project == "nerd-comics" ) {
+if ( $title == "Nerd Comics" ) {
 
 	$path="img/nerd-comics";
 
@@ -1340,9 +1328,8 @@ if ( $project == "nerd-comics" ) {
 //  #MYSTERY#DUNGEON
 // ===============================
 
-if ( $project == "mystery-dungeon" ) {
+if ( $title == "Pok&eacute;mon: Mystery Dungeon" ) {
 
-	$title = "Pok&eacute;mon: Mystery Dungeon";
 	$path="img/mystery-dungeon";
 	$company = "Pokemon";
 
@@ -1371,7 +1358,7 @@ if ( $project == "mystery-dungeon" ) {
 //  #POCKET #POKEDEX
 // ===============================
 
-if ( $project == "pocket-pokedex" ) {
+if ( $title == "Pocket Pok&eacute;dex" ) {
 
 	$path="img/pocket-pokedex";
 	$company = "Pokemon";
@@ -1379,13 +1366,13 @@ if ( $project == "pocket-pokedex" ) {
 	$description="
 	<span class='intro'>Challenge: To create a pocket reference guide to aid in collecting and training Pok&eacute;mon to compliment the Diamond and Pearl releases on the portable game system Nintendo DS.</span>
 	$p_break
-	To support the release of each core Pok&eacute;mon game, we published a strategy guide consisting of a walkthrough and Pok&eacute;dex. Every new game adds 100+ new Pok&eacute;mon so this book basically gets bigger every year. In order to successfully design this book, we identified what you would be doing and when you would be doing it.
+	To support the release of each core Pok&eacute;mon game, we published a strategy guide consisting of a walkthrough and Pok&eacute;dex. Every new game adds 100+ new Pok&eacute;mon so this book basically gets bigger every year. In order to successfully design this book, we identified what you would be doing and when you would be doing&nbsp;it.
 	$p_break
 	<img src='$path/pocket-pokedex-functions.png' alt='Pocket Pok&eacute;dex Functions' />
 	$p_break
 	Everything you do in the game is centered around two things—collecting and battling. At a minimum, we needed to cover these two activities or this book would just <span class='tooltip underline' title='For context, smartphones were in their infancy at this point.'>not be useful</span>. “Gotta catch ‘em all” is the mantra and consisting of <span class='tooltip underline' title='there are now 802!'>493 Pok&eacute;mon</span> (at the time), it’s not an easy undertaking. For battling, it was useful to know Pok&eacute;mon type weaknesses and move guides.
 	$p_break
-	In terms of the layout, we sorted by Pok&eacute;dex number. It’s not the most intuitive sorting for new comers, but we felt it made more sense. It matches up with the in-game Pok&eacute;dex and naturally reflects generations and evolution lines. We put the most important information on the outside margin for when you are skimming the pages. The National Pok&eacute;dex number doubled as a page number. Nice big picture of the Pok&eacute;mon. The Pok&eacute;mon type. We had some extra space so we included some extra information like size and egg groups. In the appendix, we included some more reference material and trivia.
+	In terms of the layout, we sorted by Pok&eacute;dex number. It’s not the most intuitive sorting for new comers, but we felt it made more sense. It matches up with the in-game Pok&eacute;dex and naturally reflects generations and evolution lines. We put the most important information on the outside margin for when you are skimming the pages. The National Pok&eacute;dex number doubled as a page number. Nice big picture of the Pok&eacute;mon. The Pok&eacute;mon type. We had some extra space so we included some extra information like size and egg groups. In the appendix, we included some more reference material and&nbsp;trivia.
 	";
 
 	$sidebar = "
@@ -1411,7 +1398,7 @@ if ( $project == "pocket-pokedex" ) {
 //  BATTLE #REVOLUTION
 // ===============================
 
-if ( $project == "battle-revolution" ) {
+if ( $title == "Battle Revolution" ) {
 
 	$path="img/battle-revolution";
 	$company = "Pokemon";
@@ -1440,9 +1427,8 @@ if ( $project == "battle-revolution" ) {
 //  #DIAMOND-AND-PEARL
 // ===============================
 
-if ( $project == "dp-launch" ) {
+if ( $title == "Pok&eacute;mon: Diamond & Pearl Launch" ) {
 
-	$title = "Pok&eacute;mon: Diamond & Pearl Launch";
 	$path="img/dp-launch";
 	$company = "Pokemon";
 
@@ -1478,7 +1464,7 @@ if ( $project == "dp-launch" ) {
 //  #LICENSING-SHOW
 // ===============================
 
-if ( $project == "licensing-show" ) {
+if ( $title == "Licensing Show" ) {
 
 	$path="img/licensing-show";
 	$company = "Pokemon";
@@ -1516,9 +1502,8 @@ if ( $project == "licensing-show" ) {
 //  #POKEMON-LOGOS
 // ===============================
 
-if ( $project == "pokemon-logos" ) {
+if ( $title == "Pok&eacute;mon: Logos" ) {
 
-	$title = "Pok&eacute;mon: Logos";
 	$path="img/pokemon-logos";
 	$company = "Pokemon";
 
@@ -1548,7 +1533,7 @@ if ( $project == "pokemon-logos" ) {
 //  #WIRED
 // ===============================
 
-if ( $project == "wired" ) {
+if ( $title == "Wired" ) {
 
 	$path="img/wired";
 
@@ -1567,7 +1552,7 @@ if ( $project == "wired" ) {
 
 	$tools=array(
 		array("skill"=>"Illustrator", "percent"=>70),
-		array("skill"=>"Hand&#8209;drawn illustrations", "percent"=>20),
+		array("skill"=>"Hand&#8209;drawn&nbsp;illustrations", "percent"=>20),
 		array("skill"=>"Photoshop", "percent"=>10),
 	);
 
@@ -1582,12 +1567,12 @@ if ( $project == "wired" ) {
 //  #Holiday Card 2014
 // ===============================
 
-if ( $project == "holiday-card-2014" ) {
+if ( $title == "Holiday Card 2014" ) {
 
-	$path="img/holiday-card-2014";
+	$path="img/holiday-2014";
 
 	$description="
-	For our holiday greeting, I decided to do a riff on the <em>exquisite corpse</em> game with fun costumes. Each figure is composed of a head, a body and feet. These parts are randomly selected on page load and with each refresh, it will randomly select another set.
+	For our holiday greeting, I decided to do a riff on the <em>exquisite corpse</em> game with fun costumes. Each figure is composed of a head, a body and feet. These parts are randomly selected on page load and with each refresh, it will randomly select another&nbsp;set.
 	";
 
 	$sidebar="
@@ -1614,12 +1599,12 @@ if ( $project == "holiday-card-2014" ) {
 //  #Adelle's site
 // ===============================
 
-if ( $project == "adelle-marcero" ) {
+if ( $title == "Adelle Marcero" ) {
 
 	$path="img/adelle-marcero";
 
 	$description="
-	I helped my friend Adelle Marcero with her portfolio site. I built it using simple PHP and CSS and linked to her holiday Etsy shop.
+	I helped my friend Adelle Marcero with her portfolio site. I built it using simple PHP and CSS and linked to her holiday Etsy&nbsp;shop.
 	";
 
 	$sidebar="
@@ -1645,10 +1630,9 @@ if ( $project == "adelle-marcero" ) {
 //  #LESCONCIERGES
 // ===============================
 
-if ( $project == "lesconcierges" ) {
+if ( $title == "LesConcierges" ) {
 
-	// $template="art";
-	$title = "LesConcierges";
+	$template="art";
 	$path="img/lesconcierges";
 
 	$description="I was comissioned to do some illustrations to show an example of how LesConcierges' new web interface and app would work with their existing service.";
@@ -1695,8 +1679,8 @@ if ( $project == "lesconcierges" ) {
 //  #Inktober 2016
 // ===============================
 
-if ( $project == "inktober-2016" ) {
-	$title = "#Inktober2016";
+if ( $title == "#Inktober2016" ) {
+
 	// $template="art";
 	$path="img/inktober-2016";
 
@@ -1747,9 +1731,8 @@ function get_nextlesson_projects(){
 	return $works;
 }
 
-if ( $project == "nextlesson" ) {
+if ( $title == "NextLesson" ) {
 
-	$title = "NextLesson";
 	$path="img/nextlesson";
 
 	$description = "
@@ -1776,10 +1759,9 @@ if ( $project == "nextlesson" ) {
 //  #NEXTLESSON #COVERS
 // ===============================
 
-if ( $project == "nextlesson-covers" ) {
+if ( $title == "NextLesson Lesson Covers" ) {
 
 	// $template = "ui";
-	$title = "NextLesson Lesson Covers";
 	$path = "img/nextlesson-covers";
 	$company = "NextLesson";
 	// $movie = "$path/interactive-pt-overview.mp4";
@@ -1844,10 +1826,9 @@ if ( $project == "nextlesson-covers" ) {
 //  #NEXTLESSON #INTERESTID
 // ===============================
 
-if ( $project == "nextlesson-interestid" ) {
+if ( $title == "NextLesson InterestID" ) {
 
 	// $template = "ui";
-	$title = "NextLesson InterestID";
 	$company = "NextLesson";
 	$path = "img/nextlesson-interestid";
 	// $movie = "$path/interestid-voting.mp4";
@@ -1869,7 +1850,7 @@ if ( $project == "nextlesson-interestid" ) {
 
 	$tools = array(
 		array("skill"=>"Illustrator", "percent"=>50),
-		array("skill"=>"Mockups (PHP+JS)", "percent"=>25),
+		array("skill"=>"Mockups&nbsp;(PHP+JS)", "percent"=>25),
 		array("skill"=>"Sketches", "percent"=>15),
 		array("skill"=>"Spreadsheets", "percent"=>10),
 	);
@@ -1912,9 +1893,8 @@ if ( $project == "nextlesson-interestid" ) {
 //  #NEXTLESSON #GLOSSARY
 // ===============================
 
-if ( $project == "nextlesson-glossary" ) {
+if ( $title == "NextLesson Glossary Terms" ) {
 
-	$title = "NextLesson Glossary Terms";
 	$path = "img/nextlesson-glossary";
 	$company = "NextLesson";
 	// $movie = "$path/interactive-pt-overview.mp4";
@@ -1982,7 +1962,7 @@ if ( $project == "nextlesson-glossary" ) {
 //  #NEXTLESSON #MARKETING
 // ===============================
 
-if ( $project == "nextlesson-marketing" ) {
+if ( $title == "NextLesson Marketing" ) {
 
 	$path = "img/nextlesson-marketing";
 	$company = "NextLesson";
@@ -2013,7 +1993,7 @@ if ( $project == "nextlesson-marketing" ) {
 //  #NEXTLESSON #SEARCH BROWSE
 // ===============================
 
-if ( $project == "nextlesson-search-and-browse-page" ) {
+if ( $title == "NextLesson Search and Browse Page" ) {
 
 	$template = "ui";
 	$company = "NextLesson";
@@ -2052,7 +2032,7 @@ if ( $project == "nextlesson-search-and-browse-page" ) {
 //  #NEXTLESSON #SEARCH BROWSE
 // ===============================
 
-if ( $project == "nextlesson-characters" ) {
+if ( $title == "NextLesson Characters" ) {
 
 	$path = "img/nextlesson-characters";
 	$company = "NextLesson";
@@ -2063,6 +2043,24 @@ if ( $project == "nextlesson-characters" ) {
 	$sidebar = "
 		<p>Character Designs</p>
 	";
+
+	// include_once "functions.php";
+	// $avatar_html = "";
+	// $avatars = get_files("$path/avatars");
+	// shuffle($avatars);
+	// $class="";
+	// $count = 1;
+	// foreach ($avatars as $key => $avatar) {
+	// 	if ( $count == 1 ) {
+	// 		$class = "alpha";
+	// 	} elseif ( $count == 4 ) {
+	// 		$class = "omega";
+	// 		$count = 0;
+	// 	}
+	// 	$avatar_html.="<div class='four columns add-bottom $class'><img src='$path/avatars/$avatar' alt='NextLesson Avatar $key'></div>";
+	// 	$class = "";
+	// 	$count++;
+	// }
 	$thumbnail_size = "small";
 
 	$content = "
@@ -2096,51 +2094,3 @@ if ( $project == "nextlesson-characters" ) {
 } //end NEXTLESSON CHARACTERS
 
 
-
-//  #NEXTLESSON #DISTRICT#LANDING PAGE
-// ===============================
-
-if ( $project == "nl-district-landing-page" ) {
-
-	$title = "NextLesson District Landing Page";
-	$company = "NextLesson";
-	$hero_img="$path/hero-img.jpg";
-
-	$description = "
-	<span class='intro'>Challenge: To create a page catered toward district decision makers with all the information and samples they need to make a decision.
-	$p_break
-	We found that we were doing a really good job selling teachers and students on our products but we needed to make a stronger case with the actual decision&#8209;makers—in this case, the administrators and curriculum directors.
-	$p_break
-	<img src='$path/problems.png' alt=''>
-	While we had materials and lesson samples for them, we were still having a disconnect. Our browse experience was built with teachers in mind, so it emphasized discoverability. While we found this approach intuitive for them, a busy administrator would probably feel overwhelmed (especially given their time&#8209;constraints).
-	$p_break
-	Following weeks of discussion about our messaging and planning, I started to put together the site. The plan was get it started and then pass it off to our engineering team. Our site caters to a &ldquo;Pinterest&#8209;friendly&rdquo; group so this needed to be a bit more buttoned up.
-	$p_break
-	I've happy with how it turned out. It's simplifies what we do, decreases the friction for someone to get started, mentions specific key words which emphasize our strategy, and get them in front of our hand&#8209;selected samples.
-	";
-
-	$sidebar = "
-		<p><a href='http://rayuen.com/p/nextlesson/mockups/website-mockup/district' target='_blank'>link to page</a></p>
-	";
-	// $thumbnail_size = "small";
-
-	$content = "
-	";
-	$tools = array(
-		array("skill"=>"Sketch", "percent"=>40),
-		array("skill"=>"Illustrator", "percent"=>40),
-		array("skill"=>"Twitter Bootstrap", "percent"=>40),
-		array("skill"=>"UI/UX", "percent"=>40),
-		array("skill"=>"Responsive Design", "percent"=>40),
-	);
-	$img_info = array(
-		// array("file" =>"01.jpg", "alt" => ""),
-		// array( "file"=>"slider/Classroom.jpg", "alt"=>""),
-		// array( "file"=>"slider/Grandma.png", "alt"=>""),
-		// array( "file"=>"slider/Kid_reading_the_temperature.png", "alt"=>""),
-		// array( "file"=>"slider/Laptop_kid.png", "alt"=>""),
-		// array( "file"=>"slider/Sports.png", "alt"=>""),
-		// array( "file"=>"slider/Girls_in_profile.png", "alt"=>""),
-	);
-
-} //end NEXTLESSON CHARACTERS
