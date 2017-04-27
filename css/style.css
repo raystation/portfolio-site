@@ -2343,6 +2343,9 @@ img.scale-with-grid2, .portfolio img {
     line-height: 1.35em;
   }
 }
+.cover-letter .landing-page h2.heading .job-title:hover {
+  border-bottom: 2px dotted #9bd2ff;
+}
 .cover-letter .landing-page h3 {
   font-size: 20px;
   margin: 0 0 10px 0;

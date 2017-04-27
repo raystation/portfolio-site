@@ -4081,7 +4081,7 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		$sample_projects_array = array(
 			array(
 				"path"=>"nl-district-landing-page",
-				"name"=>"District Landing Page",
+				"name"=>"NextLesson District Landing Page",
 				"desc" => "Sales tool specific for decision makers.",
 			),
 			array(
@@ -4180,7 +4180,7 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		$sample_projects_array = array(
 			array(
 				"path"=>"nl-district-landing-page",
-				"name"=>"District Landing Page",
+				"name"=>"NextLesson District Landing Page",
 				"desc" => "Sales tool specific for decision makers.",
 			),
 			array(
@@ -4211,11 +4211,10 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		$short_name = "doordash-designer";
 		$originaljobposting="http://bit.ly/2oxnBgy";
 		$hiring_company="DoorDash";
-		$jobTitle="Senior Graphic Designer";
+		$jobTitle="Sr. Designer, Creative";
 		$date="April 26, 2017";
 		// $name = "Mike";
 		// $email="mikehlee100@gmail.com";
-		// $hiremepage = "http://rayuen.com/$short_name";
 		$funny_portrait = TRUE;
 		// $slider_img = "jobs/$short_name.jpg";
 
@@ -4229,7 +4228,7 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		$sample_projects_array = array(
 			array(
 				"path"=>"nl-district-landing-page",
-				"name"=>"District Landing Page",
+				"name"=>"NextLesson District Landing Page",
 				"desc" => "Sales tool specific for decision makers.",
 			),
 			array(
@@ -4252,6 +4251,72 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 				"name"=>"Pokémon Licensing Show",
 				"desc"=>"Developed artwork to be used in conference booth.",
 			),
+		);
+	break;
+
+
+	//SALESFORCE-DESIGNER
+	case "salesforce-designer":
+		$short_name = "salesforce-designer";
+		$originaljobposting="http://salesforce.careermount.com/career/55080/Designer-Customer-Journeys-Us-California-San-Francisco-Hq-Us-Illinois-Chicago-Us-New-York-New-York";
+		$hiring_company="Salesforce";
+		$jobTitle="Designer, Customer Journeys";
+		$date="April 26, 2017";
+		// $name = "Mike";
+		// $email="mikehlee100@gmail.com";
+		$funny_portrait = TRUE;
+		// $slider_img = "jobs/$short_name.jpg";
+
+		$copy = "
+		A friend forwarded this job and I wanted to apply because he absolutely loves his job at Salesforce. With my experience at startups and fun-loving attitude<span class='tooltip' title='I keep it fun, something held over from my Pokémon and caricature days. '>*</span>, I believe I would be a great asset to any team. I have a diverse set of skills originating in print and making the transition to more web-based.
+		$p_break
+		For the past two years I’ve been at edtech startup NextLesson doing branding, art production, marketing, illustration and product UI/UX. I helped develop the branding and implemented it throughout the site, in our products and presentations, on marketing materials and in graphics libraries. Working with Marketing, I helped launch a blog, created conference artwork, and press releases. I developed the illustration style at NextLesson that is used on covers and icons as well as trained freelancers on the style. While I was there, I oversaw the creation of over 2,000 lesson covers and 3,000 icons that are currently populating the site.
+		";
+		// $closing="";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			// array(
+			// 	"path"=>"nextlesson-characters",
+			// 	"name"=>"NextLesson Characters",
+			// 	"desc" => "A system of posable characters for covers and animation use.",
+			// ),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			array(
+				"path"=>"color-chameleon",
+				"name"=>"Color Chameleon",
+				"type"=>"jpg",
+				"desc"=>"Game concept for a runner.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"desc"=>"Design of conference booth and marketing materials",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+			// array(
+			// 	"path"=>"licensing-show",
+			// 	"name"=>"Pokémon Licensing Show",
+			// 	"desc"=>"Developed artwork to be used in conference booth.",
+			// ),
 		);
 	break;
 

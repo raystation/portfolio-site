@@ -956,7 +956,11 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 				font-size: 25px;
 				line-height: 1.35em;
 			}
-			.job-title {}
+			.job-title {
+				&:hover {
+					border-bottom: 2px dotted lighten($link-color,40%);
+				}
+			}
 		}
 		h3 {
 			font-size: 20px;

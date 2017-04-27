@@ -2117,10 +2117,12 @@ if ( $project == "nl-district-landing-page" ) {
 	Following weeks of discussion about our messaging and planning, I started to put together the site. The plan was get it started and then pass it off to our engineering team. Our site caters to a &ldquo;Pinterest&#8209;friendly&rdquo; group so this needed to be a bit more buttoned up.
 	$p_break
 	I've happy with how it turned out. It's simplifies what we do, decreases the friction for someone to get started, mentions specific key words which emphasize our strategy, and get them in front of our hand&#8209;selected samples.
+	$p_break
+	<a href='http://rayuen.com/p/nextlesson/mockups/website-mockup/district' target='_blank'>link to project</a>
 	";
 
 	$sidebar = "
-		<p><a href='http://rayuen.com/p/nextlesson/mockups/website-mockup/district' target='_blank'>link to page</a></p>
+		<p><a href='http://rayuen.com/p/nextlesson/mockups/website-mockup/district' target='_blank'>link to project</a></p>
 	";
 	// $thumbnail_size = "small";
 
