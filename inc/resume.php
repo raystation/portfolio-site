@@ -2,7 +2,7 @@
 //last updated January 10, 2017
 $p_break = "</p><p>";
 $quick_intro = "
-  I'm a visual designer and programmer living and working in San Francisco. I've worked in games, publishing, marketing, and most recently in edtech at NextLesson building products.
+  I'm a designer, illustrator and programmer living and working in San Francisco. I've worked in games, publishing, marketing, and most recently in edtech at NextLesson building products.
 ";
 
 $bio_array = array(

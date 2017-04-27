@@ -2,7 +2,7 @@
 	require_once 'functions.php';
 	$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
 	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
-	$subhead_filter_heading="";
+	$subhead_filter_padding="";
 	$selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
 	$filter_list_html = get_filter_list_html($selected_filter);
 

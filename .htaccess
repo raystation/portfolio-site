@@ -3,7 +3,7 @@ RewriteEngine On
 RewriteRule ^work$ work.php
 RewriteRule ^about$ about.php
 RewriteRule ^index$ index.php
-RewriteRule ^hire-me$ hire-me.php
+RewriteRule ^hire-me$ lets-talk.php
 RewriteRule ^lets-talk$ lets-talk.php
 RewriteRule ^resume$ about?view=resume
 RewriteRule ^portraits$ work?project=portraits
