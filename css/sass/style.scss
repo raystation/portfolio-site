@@ -566,11 +566,11 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	@media #{$md}{
 		padding-top: 20px;
 	}
-	img {width: 100%;}
+	img {width: 100%; margin-bottom: 20px;}
 	h1 {
 		font-size: 40px;
 		line-height: 1.125em;
-		margin-top: -20px;
+		margin-top: 0px;
 		@media #{$md} {
 			font-size: 45px;
 			margin-top: 60px;
@@ -612,8 +612,10 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	}
 	.project-sidebar {
 		margin-bottom: 1em;
+		// font-size: 120%;
+		font-size: inherit;
 		p {
-			font-size: 70%;
+			// font-size: 95%;
 			margin-bottom: 0;
 			@media #{$md}{
 				font-size: $font-size*.85;

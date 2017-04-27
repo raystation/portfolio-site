@@ -3,10 +3,12 @@
 // TAGS
 $tags = isset($tags) ? get_tags($tags) : null;
 $tags_html = isset($tags) ? "<ul class='tags'>$tags</ul>" : null;
+
 $project_path="";
 
 $hero_img_html="";
 $img_slider_html="";
+$project_link_html="";
 
 if (!isset($thumbnail_size)) {$thumbnail_size="medium";}
 
@@ -133,6 +135,13 @@ if ($tools) {
 	$tools_html = "";
 }
 
+// PROEJCT LINK
+if ($project_link) {
+	$project_link_html = "
+		<p><a href='$project_link'>link to project <i class='fa fa-chevron-right'></i></a></p>
+	";
+}
+
 // HTML
 $page = "
 	$hero_img_html
@@ -147,14 +156,14 @@ $page = "
 		</div>
 		<h1>$title</h1>
 		<div class='twelve columns alpha'>
-			<div class='mobile'>
-				<div class='project-sidebar four columns'>
-				$sidebar
-				</div>
-			</div>
 			<p>$description</p>
-			<div class='content mobile'>$content</div>
-			<div class='project-sidebar mobile'><hr class='resume' style='width:10%'>$tools_html</div>
+			<div class='content mobile'>$content $project_link_html</div>
+
+			<div class='project-sidebar mobile'>
+				<hr class='resume' style='width:10%'>
+				$sidebar
+				$tools_html
+			</div>
 		</div>
 		<div class='desktop'>
 			<div class='project-sidebar four columns omega'>
@@ -164,11 +173,13 @@ $page = "
 		</div>
 		<div class='desktop'>
 			<div class='sixteen columns alpha'>
-				<div class='content'>$content</div>
+				<div class='content'>$content $project_link_html</div>
 			</div>
 		</div>
+
 		$additional_img_html
 		$tags_html
+		$other
 	</div> <!-- end sixteen -->
 ";
 // TODO: add in related projects in the sidebar

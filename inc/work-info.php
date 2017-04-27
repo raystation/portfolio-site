@@ -1592,7 +1592,7 @@ if ( $project == "holiday-card-2014" ) {
 
 	$sidebar="
 	<p>Holiday 2014</p>
-	<p><a href='http://www.rayuen.com/holiday2014' target='_blank'>link to site</a></p>
+	<p><a href='http://www.rayuen.com/holiday2014' target='_blank'>link to site <i class='fa fa-chevron-right'></i></a></p>
 	";
 
 	$tools=array(
@@ -1864,7 +1864,7 @@ if ( $project == "nextlesson-interestid" ) {
 	$sidebar = "
 		<p>Student Interest Tool</p>
 		<p>2015</p>
-		<p><a href='https://www.nextlesson.org/interestid/' target='_blank'>link to project</a></p>
+		<p><a href='https://www.nextlesson.org/interestid/' target='_blank'>link to project <i class='fa fa-chevron-right'></i></a></p>
 	";
 
 	$tools = array(
@@ -2110,24 +2110,22 @@ if ( $project == "nl-district-landing-page" ) {
 	<span class='intro'>Challenge: To create a page catered toward district decision makers with all the information and samples they need to make a decision.
 	$p_break
 	We found that we were doing a really good job selling teachers and students on our products but we needed to make a stronger case with the actual decision&#8209;makers—in this case, the administrators and curriculum directors.
-	$p_break
+	";
+	$content="
 	<img src='$path/problems.png' alt=''>
-	While we had materials and lesson samples for them, we were still having a disconnect. Our browse experience was built with teachers in mind, so it emphasized discoverability. While we found this approach intuitive for them, a busy administrator would probably feel overwhelmed (especially given their time&#8209;constraints).
+	<p>While we had materials and lesson samples for them, we were still having a disconnect. Our browse experience was built with teachers in mind, so it emphasized discoverability. While we found this approach intuitive for them, a busy administrator would probably feel overwhelmed (especially given their time&#8209;constraints).
 	$p_break
 	Following weeks of discussion about our messaging and planning, I started to put together the site. The plan was get it started and then pass it off to our engineering team. Our site caters to a &ldquo;Pinterest&#8209;friendly&rdquo; group so this needed to be a bit more buttoned up.
 	$p_break
 	I've happy with how it turned out. It's simplifies what we do, decreases the friction for someone to get started, mentions specific key words which emphasize our strategy, and get them in front of our hand&#8209;selected samples.
-	$p_break
-	<a href='http://rayuen.com/p/nextlesson/mockups/website-mockup/district' target='_blank'>link to project</a>
 	";
 
 	$sidebar = "
-		<p><a href='http://rayuen.com/p/nextlesson/mockups/website-mockup/district' target='_blank'>link to project</a></p>
+		<p>Landing page with streamlined product pitch</p>
 	";
+	$project_link = "http://rayuen.com/p/nextlesson/mockups/website-mockup/district";
 	// $thumbnail_size = "small";
 
-	$content = "
-	";
 	$tools = array(
 		array("skill"=>"Sketch", "percent"=>40),
 		array("skill"=>"Illustrator", "percent"=>40),
@@ -2146,3 +2144,27 @@ if ( $project == "nl-district-landing-page" ) {
 	);
 
 } //end NEXTLESSON CHARACTERS
+
+
+
+
+
+
+
+// ========================
+// VARIABLE LEGEND
+
+if ( isset($project) ) {
+	$title = (isset( $title) ? $title : null );
+	$path = (isset( $path) ? $path : null );
+	$other = (isset( $other) ? $other : null );
+	$sidebar = (isset( $sidebar) ? $sidebar : null );
+	$hero_img = (isset( $hero_img) ? $hero_img : null );
+	$tools = (isset( $tools) ? $tools : null );
+	$img_info = (isset( $img_info) ? $img_info : null );
+	$description = (isset( $description) ? $description : null );
+	$company = (isset( $company) ? $company : null );
+	$company = (isset( $company) ? $company : null );
+	$project_link = (isset( $project_link) ? $project_link : null );
+}
+

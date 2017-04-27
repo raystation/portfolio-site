@@ -1946,11 +1946,12 @@ img.scale-with-grid2, .portfolio img {
 }
 .project-details img {
   width: 100%;
+  margin-bottom: 20px;
 }
 .project-details h1 {
   font-size: 40px;
   line-height: 1.125em;
-  margin-top: -20px;
+  margin-top: 0px;
 }
 @media only screen and (min-width: 767px) {
   .project-details h1 {
@@ -1994,9 +1995,9 @@ img.scale-with-grid2, .portfolio img {
 }
 .project-details .project-sidebar {
   margin-bottom: 1em;
+  font-size: inherit;
 }
 .project-details .project-sidebar p {
-  font-size: 70%;
   margin-bottom: 0;
 }
 @media only screen and (min-width: 767px) {

@@ -4328,17 +4328,13 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		$hiring_company="Aspera";
 		$jobTitle="Graphic Design Intern";
 		$date="April 27, 2017";
-		// $name = "Mike";
-		// $email="mikehlee100@gmail.com";
 		$funny_portrait = TRUE;
-		// $slider_img = "jobs/$short_name.jpg";
 
 		$copy = "
 		A friend forwarded this job and I wanted to apply because he absolutely loves his job at Salesforce. With my experience at startups and fun-loving attitude<span class='tooltip' title='I keep it fun, something held over from my Pokémon and caricature days. '>*</span>, I believe I would be a great asset to any team. I have a diverse set of skills originating in print and making the transition to more web-based.
 		$p_break
 		For the past two years I’ve been at edtech startup NextLesson doing branding, art production, marketing, illustration and product UI/UX. I helped develop the branding and implemented it throughout the site, in our products and presentations, on marketing materials and in graphics libraries. Working with Marketing, I helped launch a blog, created conference artwork, and press releases. I developed the illustration style at NextLesson that is used on covers and icons as well as trained freelancers on the style. While I was there, I oversaw the creation of over 2,000 lesson covers and 3,000 icons that are currently populating the site.
 		";
-		// $closing="";
 
 		$sample_projects_array = array(
 			array(
