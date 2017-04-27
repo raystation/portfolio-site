@@ -411,7 +411,7 @@ function list_tech_skills() {
 			array("percent"=>95,"skill"=>"HTML","url"=>"web-dev"),
 			array("percent"=>93,"skill"=>"CSS/Sass","url"=>"web-dev"),
 			array("percent"=>90,"skill"=>"Responsive Web Design","url"=>"web-dev"),
-			array("percent"=>30,"skill"=>"JS/JQuery","url"=>"web-dev"),
+			array("percent"=>35,"skill"=>"JS/JQuery","url"=>"web-dev"),
 			"clear",
 			array("percent"=>80,"skill"=>"PHP","url"=>"web-dev"),
 			array("percent"=>75,"skill"=>"Wordpress","url"=>"web-dev"),
