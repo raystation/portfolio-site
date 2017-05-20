@@ -6,7 +6,7 @@ if ( $project ) {
 }
 
 $works = array(
-	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") ),
+	// array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") ),
 	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("ui-ux","illustration","web-dev") ),
 	// array( "name" => "NextLesson Admin Landing Page","path" => "nl-district-landing-page","tags"=>array("ui-ux","web-dev") ),
 	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("illustration","ui-ux","branding","web-dev") ),
@@ -19,44 +19,44 @@ $works = array(
 	// array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-browse" ),
 	array( "name" => "The 3", "path" => "the-3", "tags"=>array("ui-ux") ),
 	array( "name" => "Indiginauts", "path" => "indiginauts", "tags" => array("illustration","ui-ux") ),
-	array( "name" => "The Pok&eacute;mon Company", "path" => "pokemon","tags"=>array("places-i-worked") ),
+	// array( "name" => "The Pok&eacute;mon Company", "path" => "pokemon","tags"=>array("places-i-worked") ),
 	array( "name" => "Wired", "path" => "wired", "tags" => array("illustration") ),
 	array( "name" => "Abriendo Puertas / Opening Doors", "path" => "abriendo-puertas",	"tags"=>array("web-dev","branding") ),
 	array( "name" => "Color Chameleon", "path" => "color-chameleon", "tags" => array("illustration","ui-ux") ),
 	array( "name" => "Adelle Marcero", "path" => "adelle-marcero","tags"=>array("web-dev", "ui-ux") ),
 	array( "name" => "LesConcierges","path" => "lesconcierges", "tags" => array("illustration") ),
-	array( "name" => "Museyon Guides", "path" => "museyon-guides", "tags"=>array("places-i-worked") ),
+	// array( "name" => "Museyon Guides", "path" => "museyon-guides", "tags"=>array("places-i-worked") ),
 	array( "name" => "Project Animore", "path" => "project-animore", "tags" => array("illustration","ui-ux") ),
-	array( "name" => "#Inktober2016","path" => "inktober-2016", "tags" => array("illustration") ),
+	// array( "name" => "#Inktober2016","path" => "inktober-2016", "tags" => array("illustration") ),
 	array( "name" => "100 Principles of Game Design", "path" => "100-principles-of-game-design", "tags" => array("illustration") ),
 	array( "name" => "Holiday Card 2014", "path" => "holiday-card-2014", "tags" => array("web-dev","illustration") ),
 	array( "name" => "Monkey Mo, Monkey Go!", "path" => "monkey-mo", "tags" => array("illustration", "print-design") ),
-	array( "name" => "Scavenger Hunt", "path" => "scavenger-hunt", "tags" => array("illustration") ),
-	array( "name" => "Suspended Belief Studios", "path" => "suspended-belief-studios", "tags" => array("places-i-worked") ),
-	array( "name" => "Chronicles of Old New York", "path" => "chronicles-of-old-new-york", "tags"=>array("print-design") ),
+	// array( "name" => "Scavenger Hunt", "path" => "scavenger-hunt", "tags" => array("illustration") ),
+	// array( "name" => "Suspended Belief Studios", "path" => "suspended-belief-studios", "tags" => array("places-i-worked") ),
+	// array( "name" => "Chronicles of Old New York", "path" => "chronicles-of-old-new-york", "tags"=>array("print-design") ),
 	array( "name" => "Sarah Walko", "path" => "sarah-walko", "tags"=>array("web-dev") ),
-	array( "name" => "Edgeware", "path" => "edgeware", "tags"=>array("illustration") ),
+	// array( "name" => "Edgeware", "path" => "edgeware", "tags"=>array("illustration") ),
 	array( "name" => "StoryMaps", "path" => "storymaps", "tags" => array("illustration") ),
 	array( "name" => "Malado Baldwin", "path" => "malado-baldwin", "tags"=>array("web-dev") ),
 	// array( "name" => "Egg Baby", "path" => "egg-baby", "tags" => array("illustration") ),
 	array( "name" => "City Style","path" => "city-style","tags"=>array("print-design")),
-	array( "name" => "Chronicles of Old Las Vegas","path" => "chronicles-of-old-las-vegas","tags"=>array("print-design")),
-	array( "name" => "Chronicles of Old Boston","path" => "chronicles-of-old-boston","tags"=>array("print-design")),
-	array( "name" => "Chronicles of Old Paris","path" => "chronicles-of-old-paris","tags"=>array("print-design")),
-	array( "name" => "Chronicles of Old London", "path" => "chronicles-of-old-london", "tags"=>array("print-design")),
+	// array( "name" => "Chronicles of Old Las Vegas","path" => "chronicles-of-old-las-vegas","tags"=>array("print-design")),
+	// array( "name" => "Chronicles of Old Boston","path" => "chronicles-of-old-boston","tags"=>array("print-design")),
+	// array( "name" => "Chronicles of Old Paris","path" => "chronicles-of-old-paris","tags"=>array("print-design")),
+	// array( "name" => "Chronicles of Old London", "path" => "chronicles-of-old-london", "tags"=>array("print-design")),
 	array( "name" => "Art + Paris","path" => "art-and-paris","tags"=>array("print-design")),
-	array( "name" => "Chronicles of Old Rome","path" => "chronicles-of-old-rome","tags"=>array("print-design")),
-	array( "name" => "The Rise of Darkrai","path" => "darkrai", "tags"=>array("print-design","ui-ux") ),
-	array( "name" => "Arceus and the Jewel of Life","path" => "arceus", "tags"=>array("print-design","ui-ux") ),
-	array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop", "path" => "feature-shop", "tags"=>array("print-design") ),
-	array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos", "tags"=>array("print-design","branding") ),
-	array( "name" => "Pok&eacute;mon: 10th Anniversary","path" => "10th-anniversary","tags"=>array("print-design","branding") ),
-	array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon", "tags"=>array("print-design") ),
-	array( "name" => "Battle Revolution", "path" => "battle-revolution", "tags"=>array("print-design","ui-ux") ),
-	array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex", "tags"=>array("print-design") ),
-	array( "name" => "Pok&eacute;mon Toy Fair", "path" => "toy-fair", "tags"=>array("print-design","branding") ),
-	array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch", "tags"=>array("print-design","branding") ),
-	array( "name" => "Licensing Show", "path" => "licensing-show", "tags"=>array("print-design","branding") ),
+	// array( "name" => "Chronicles of Old Rome","path" => "chronicles-of-old-rome","tags"=>array("print-design")),
+	// array( "name" => "The Rise of Darkrai","path" => "darkrai", "tags"=>array("print-design","ui-ux") ),
+	// array( "name" => "Arceus and the Jewel of Life","path" => "arceus", "tags"=>array("print-design","ui-ux") ),
+	// array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop", "path" => "feature-shop", "tags"=>array("print-design") ),
+	// array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos", "tags"=>array("print-design","branding") ),
+	// array( "name" => "Pok&eacute;mon: 10th Anniversary","path" => "10th-anniversary","tags"=>array("print-design","branding") ),
+	// array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon", "tags"=>array("print-design") ),
+	// array( "name" => "Battle Revolution", "path" => "battle-revolution", "tags"=>array("print-design","ui-ux") ),
+	// array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex", "tags"=>array("print-design") ),
+	// array( "name" => "Pok&eacute;mon Toy Fair", "path" => "toy-fair", "tags"=>array("print-design","branding") ),
+	// array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch", "tags"=>array("print-design","branding") ),
+	// array( "name" => "Licensing Show", "path" => "licensing-show", "tags"=>array("print-design","branding") ),
 	// array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit" ),
 	// array( "name" => "Portfolio Site","path" => "portfolio-site" ),
 	// array( "name" => "idibon","path" => "idibon","tags"=>array("illustration") ),
@@ -491,14 +491,16 @@ if ( $project == "sarah-walko" ) {
 	$path="img/sarah-walko";
 
 	$description = "
-		My first experience building a site using Wordpress. I met artist Sarah Walko through my good artist friend Malado Baldwin. She expressed that she needed a site that she could update on her own and that she had experience with Wordpress through work. So I went about helping her figure out the best way to get this going for her.
+		I helped Sarah set up a Wordpress site at <a href='http://www.sarahwalko.com/blog' target='_blank'>sarahwalko.com</a>. She has experience with the system and wanted something that she could update on her own. I helped with domain/hosting and got WP up and running. She enjoyed being able to select her own look and theme and to customize (to a limited degree).
 		</p><p>
-		After figuring out all the nessesary information on her hosting, the actual Wordpress install really was about 5 minutes (this is something they boast)! We worked together on learning about a fresh WP install and soon was figuring out best practices for theme management, plugins and navigation. PRETTY COOL. So cool that <a href='malado-baldwin-wordpress'>Malado </a> wanted a site just like Sarah’s!
+		It was my first experience building a site using Wordpress. The install was super simple and I realized why WP is so popular. We worked out best practices for theme management, plugins and navigation.  I decided to learn a bit more PHP after that so I could adjust the CSS and eventually make themes.
 	";
 
-	$sidebar = '
+	$project_link = "http://www.sarahwalko.com/blog";
+
+	$sidebar = "
 		<p>Portfolio Website</p>
-		<p><a href="http://www.sarahwalko.com/blog" target="_blank">sarahwalko.com</a>';
+	";
 
 	$tools=array(
 		array("skill"=>"Wordpress Framework", "percent"=>30),
@@ -1619,12 +1621,13 @@ if ( $project == "adelle-marcero" ) {
 	$path="img/adelle-marcero";
 
 	$description="
-	I helped my friend Adelle Marcero with her portfolio site. I built it using simple PHP and CSS and linked to her holiday Etsy shop.
+	Adelle wanted to showcase her travel drawings and paintings. She wanted it simple and to the point. I built it using simple PHP and a light-weight CSS framework.
 	";
 
+	$project_link = "http://adelle.ink";
+
 	$sidebar="
-	<p>Adelle Marcero Portfolio Site</p>
-	<p><a href='http://adelle.ink' target='_blank'>adelle.ink</a></p>
+	<p>Portfolio Site</p>
 	";
 
 	$tools=array(
@@ -1837,6 +1840,7 @@ if ( $project == "nextlesson-covers" ) {
 	);
 	$hero_img="$path/hero-img.jpg";
 	// $auto_slideshow = "additional_imgs";
+	$og_description = "Standardize lesson and project covers to be more modern, grade‑aligned, and “Pinterest‑friendly” to convey and sell our content.";
 
 } //end NEXTLESSON COVER
 
@@ -1852,37 +1856,29 @@ if ( $project == "nextlesson-interestid" ) {
 	$path = "img/nextlesson-interestid";
 	// $movie = "$path/interestid-voting.mp4";
 
+	$short_description = "Student Interest Tool";
+
 	$description = "
-	InterestID is a tool for students to inform teachers what topics interest them. Students “thumbs up” or “thumbs down” various topics which are featured in NextLesson lessons.</p><p>
-	That information is available to teachers sorted by most popular categories. A click on the category connects the teacher to lessons where that topic is covered. Simple grade and subject filters allow the teacher to find the right lesson for their class if there are numerous results.</p><p>
-	As of January 2017, students have rated over 1,605,000+ interests. The more students rate and suggest new interests, the better we can tailor our learning materials and be more real-time and relevant.
-	</p>
-	<img src='$path/sample-screen.jpg' alt='InterestID' class='scale-with-grid'>
-	<p class='caption'>The teacher experience(left) vs. the student experience(right)</p>
-	";
+	<span class='intro'>Challenge: To create a tool that helps teachers discover lessons based on student interests.</span>
+	$p_break
+	InterestID is a tool for students to inform teachers what topics interest them. Students “thumbs up” or “thumbs down” various topics which are featured in NextLesson lessons.
+	$p_break
+	That information is available to teachers sorted by most popular categories. A click on the category connects the teacher to lessons where that topic is covered. Simple grade and subject filters allow the teacher to find the right lesson for their class if there are numerous results.";
+
+	$project_link = "https://www.nextlesson.org/interestid/";
 
 	$sidebar = "
 		<p>Student Interest Tool</p>
 		<p>2015</p>
-		<p><a href='https://www.nextlesson.org/interestid/' target='_blank'>link to project <i class='fa fa-chevron-right'></i></a></p>
 	";
 
-	$tools = array(
-		array("skill"=>"Illustrator", "percent"=>50),
-		array("skill"=>"Mockups (PHP+JS)", "percent"=>25),
-		array("skill"=>"Sketches", "percent"=>15),
-		array("skill"=>"Spreadsheets", "percent"=>10),
-	);
-	// $hero_img = "$path/hero-image.jpeg";
-	// $hero_img_mobile = "$path/hero-image.jpeg";
-
-	$img_info = array(
-		array("file" => "cover.jpg", "alt" => "Screenshot of the tool"),
-		// array("file" => "interest-selection.jpg", "alt" => "InterestID liking and disliking"),
-	);
-	$thumbnail_size = "small";
-
 	$content = "
+	<div class='videoWrapper'>
+		<iframe width='560' height='315' src='https://www.youtube.com/embed/HxGJK6p5nwI' frameborder='0' allowfullscreen></iframe>
+	</div>
+	<p class='caption'>An overview video we made!</p>
+
+
 	<h3>Rating Interests</h3>
 	<video width='320' height='240' controls>
 		<source src='$path/interestid-voting.mp4' type='video/mp4'>
@@ -1902,7 +1898,26 @@ if ( $project == "nextlesson-interestid" ) {
 	<p>
 		We put filters in so you can browse by category or by interests you've already liked or disliked.
 	</p>
-	";
+	As of January 2017, students have rated over 1,605,000+ interests. The more students rate and suggest new interests, the better we can tailor our learning materials and be more real-time and relevant.
+	</p>
+	<img src='$path/sample-screen.jpg' alt='InterestID' class='scale-with-grid'>
+	<p class='caption'>The teacher experience(left) vs. the student experience(right)</p>"
+	;
+
+	$tools = array(
+		array("skill"=>"Illustrator", "percent"=>50),
+		array("skill"=>"Mockups (PHP+JS)", "percent"=>25),
+		array("skill"=>"Sketches", "percent"=>15),
+		array("skill"=>"Spreadsheets", "percent"=>10),
+	);
+	// $hero_img = "$path/hero-image.jpeg";
+	// $hero_img_mobile = "$path/hero-image.jpeg";
+
+	$img_info = array(
+		array("file" => "cover.jpg", "alt" => "Screenshot of the tool"),
+		// array("file" => "interest-selection.jpg", "alt" => "InterestID liking and disliking"),
+	);
+	$thumbnail_size = "small";
 
 } //end NEXTLESSON INTERESTID
 
@@ -2049,7 +2064,7 @@ if ( $project == "nextlesson-search-and-browse-page" ) {
 
 
 
-//  #NEXTLESSON #SEARCH BROWSE
+//  #NEXTLESSON #CHARACTERS
 // ===============================
 
 if ( $project == "nextlesson-characters" ) {
@@ -2057,7 +2072,7 @@ if ( $project == "nextlesson-characters" ) {
 	$path = "img/nextlesson-characters";
 	$company = "NextLesson";
 
-	$description = "At NextLesson, in order to unify our covers and illustrations, developed a system of posable characters that could be used in a variety of situations. I developed a set of rules that which specified proportions and color choices depending on grade. Using these rules and an in-house assets library, contractors were able to make covers that consistently conveyed our visual standards as well as speeding up turn-around time.
+	$description = "At NextLesson, in order to unify our covers and illustrations, I developed a system of posable characters that could be used in a variety of situations. I developed a set of rules that which specified proportions and color choices depending on grade. Using these rules and an in-house assets library, contractors were able to make covers that consistently conveyed our visual standards as well as speeding up turn-around time.
 	";
 
 	$sidebar = "
@@ -2107,7 +2122,7 @@ if ( $project == "nl-district-landing-page" ) {
 	$hero_img="$path/hero-img.jpg";
 
 	$description = "
-	<span class='intro'>Challenge: To create a page catered toward district decision makers with all the information and samples they need to make a decision.
+	<span class='intro'>Challenge: To create a page catered toward district decision makers with all the information and samples they need to make a decision.</span>
 	$p_break
 	We found that we were doing a really good job selling teachers and students on our products but we needed to make a stronger case with the actual decision&#8209;makers—in this case, the administrators and curriculum directors.
 	";

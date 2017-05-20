@@ -1463,7 +1463,7 @@ h5 {
   font-size: 1.25em;
 }
 
-a, a:visited {
+a:link, a:visited {
   color: #0072ce;
   text-decoration: none;
   -webkit-transition: all 0.25s ease-in-out;
@@ -1471,8 +1471,8 @@ a, a:visited {
   -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
 }
-a:hover, a:visited:hover {
-  color: #35a5ff;
+a:link:hover, a:visited:hover {
+  color: rgba(0, 114, 206, 0.75);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out false;
   -o-transition: all 0.25s ease-in-out false;
@@ -1678,7 +1678,7 @@ img.scale-with-grid2, .portfolio img {
 }
 
 .underline, .index-textbox h1 a:link, .index-textbox h1 a:visited, .index-textbox p a:link, .index-textbox p a:visited, .resume .company ul li a:link, .resume .company ul li a:visited {
-  border-bottom: 3px solid rgba(70, 130, 180, 0.25);
+  border-bottom: 2px solid rgba(0, 114, 206, 0.75);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out false;
   -o-transition: all 0.25s ease-in-out false;
@@ -1689,7 +1689,7 @@ img.scale-with-grid2, .portfolio img {
   -moz-transition: all 0.25s ease-in-out false;
   -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
-  border-bottom: 3px solid rgba(70, 130, 180, 0.5);
+  border-bottom: 2px solid rgba(0, 114, 206, 0.25);
 }
 
 .caption {
@@ -1844,7 +1844,7 @@ img.scale-with-grid2, .portfolio img {
 .back-to-landing-page-menu .active {
   opacity: 1 !important;
   color: white !important;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.75);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out false;
   -o-transition: all 0.25s ease-in-out false;
@@ -1855,7 +1855,7 @@ img.scale-with-grid2, .portfolio img {
   -moz-transition: all 0.25s ease-in-out false;
   -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
 }
 @media only screen and (min-width: 767px) {
   .back-to-landing-page-menu {
@@ -1915,6 +1915,71 @@ img.scale-with-grid2, .portfolio img {
   .index-right-column {
     padding-left: 0px;
   }
+}
+
+.home-page .intro {
+  padding: 100px 0 40px;
+}
+.home-page .intro h1 {
+  font-size: 25px;
+  line-height: 1.25em;
+  padding-right: 0;
+}
+.home-page .intro p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.home-page .intro p a:link, .home-page .intro p a:visited {
+  border-bottom: 2px solid rgba(0, 114, 206, 0.75);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out false;
+  -o-transition: all 0.25s ease-in-out false;
+  transition: all 0.25s ease-in-out;
+}
+.home-page .intro p a:link:hover, .home-page .intro p a:visited:hover {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out false;
+  -o-transition: all 0.25s ease-in-out false;
+  transition: all 0.25s ease-in-out;
+  border-bottom: 2px solid rgba(0, 114, 206, 0.25);
+}
+@media only screen and (min-width: 767px) {
+  .home-page .intro h1 {
+    font-size: 50px;
+    line-height: 1.25em;
+    padding-right: 10%;
+    margin-bottom: 2em;
+  }
+  .home-page .intro p {
+    padding-right: 20%;
+  }
+}
+.home-page .selected-projects {
+  margin-bottom: 40px;
+  letter-spacing: 0.01em;
+}
+.home-page .selected-projects h1 {
+  font-size: 14pt;
+}
+.home-page .selected-projects h2.title {
+  font-size: 0.9em;
+  font-size: 0.9em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+.home-page .selected-projects p {
+  font-size: 0.8em;
+  line-height: 1.5em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  opacity: 0.6;
+}
+.home-page .selected-projects p.tags {
+  letter-spacing: 1px;
+  font-size: 0.75em;
+  background-color: #E1E8ED;
+  padding: 2px 10px;
+  border-radius: 10em;
+  text-transform: uppercase;
 }
 
 .portfolio p {
@@ -1982,8 +2047,10 @@ img.scale-with-grid2, .portfolio img {
 }
 .project-details .caption {
   font-size: 11pt;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: #028eff;
   margin-bottom: 2em;
+  margin-top: 1em;
 }
 .project-details .intro {
   color: #028eff;
@@ -2094,7 +2161,7 @@ img.scale-with-grid2, .portfolio img {
 }
 @media only screen and (min-width: 767px) {
   .full-thumbnails {
-    padding: 0 10px;
+    padding: 15px 10px;
   }
 }
 .full-thumbnails .fl-thumb {
@@ -2161,6 +2228,12 @@ img.scale-with-grid2, .portfolio img {
   -o-transition: all 0.25s false false;
   transition: all 0.25s;
 }
+.full-thumbnails .project-thumbnail {
+  width: calc(100%/2);
+}
+.full-thumbnails .project-thumbnail img {
+  width: 100%;
+}
 
 .reduce-width {
   max-width: 1000px;
@@ -2177,6 +2250,10 @@ img.scale-with-grid2, .portfolio img {
 }
 .reduce-width .fl-thumb .title {
   font-size: 20px;
+}
+
+.index-thumbs .fl-thumb {
+  width: calc(100%/2);
 }
 
 .fl-additional-img {
@@ -2314,7 +2391,7 @@ img.scale-with-grid2, .portfolio img {
   color: #0072ce;
 }
 .cover-letter .landing-page p a:link:hover, .cover-letter .landing-page p a:visited:hover {
-  border-bottom: 3px solid rgba(0, 114, 206, 0.25);
+  border-bottom: 3px solid rgba(0, 114, 206, 0.75);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out false;
   -o-transition: all 0.25s ease-in-out false;
@@ -2325,7 +2402,7 @@ img.scale-with-grid2, .portfolio img {
   -moz-transition: all 0.25s ease-in-out false;
   -o-transition: all 0.25s ease-in-out false;
   transition: all 0.25s ease-in-out;
-  border-bottom: 3px solid rgba(0, 114, 206, 0.5);
+  border-bottom: 3px solid rgba(0, 114, 206, 0.25);
 }
 .cover-letter .landing-page h1, .cover-letter .landing-page h2, .cover-letter .landing-page h3, .cover-letter .landing-page h4, .cover-letter .landing-page h5, .cover-letter .landing-page h6 {
   margin-bottom: 1em;
@@ -2477,6 +2554,17 @@ img.scale-with-grid2, .portfolio img {
   }
 }
 
+.video-game-resume {
+  padding-bottom: 3em;
+}
+.video-game-resume .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.video-game-resume .list .game {
+  padding: 0 10px;
+}
+
 .space-page h5 {
   padding-top: 2em;
 }
@@ -2496,7 +2584,7 @@ img.scale-with-grid2, .portfolio img {
   text-align: center;
 }
 .original-job-button:hover {
-  background-color: #35a5ff;
+  background-color: rgba(0, 114, 206, 0.75);
 }
 
 .original-job-details {
@@ -3090,4 +3178,20 @@ input.button:hover {
 }
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

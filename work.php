@@ -4,7 +4,9 @@
 	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
 	$subhead_filter_padding="";
 	$selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
-	$filter_list_html = get_filter_list_html($selected_filter);
+
+	// FILTERS TURNED OFF FOR NOW
+	// $filter_list_html = get_filter_list_html($selected_filter);
 
 	//projects to show on the front page
 	$number_of_thumbnails = 99;
@@ -80,13 +82,15 @@ if ( !isset($template) ) {
 		}
 	}
 
-	echo "
-		<div class='desktop'>
-			<div class='filters $subhead_filter_padding'>
-				$filter_list_html
-			</div>
-		</div>
-	";
+	// FILTERS TURNED OFF FOR NOW
+	// echo "
+	// 	<div class='desktop'>
+	// 		<div class='filters $subhead_filter_padding'>
+	// 			$filter_list_html
+	// 		</div>
+	// 	</div>
+	// ";
+
 	// echo "// <div class='sixteen columns'> // 	<h2>Selected Works</h2> // </div>";
 	// skeleton_print_thumbnail_4($works);
 	full_thumbnail($works);

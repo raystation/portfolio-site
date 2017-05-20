@@ -138,7 +138,7 @@ if ($tools) {
 // PROEJCT LINK
 if ($project_link) {
 	$project_link_html = "
-		<p><a href='$project_link'>link to project <i class='fa fa-chevron-right'></i></a></p>
+		<p><a href='$project_link'>link to project <i class='fa fa-arrow-right' aria-hidden='true'></i></a></p>
 	";
 }
 

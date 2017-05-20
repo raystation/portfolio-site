@@ -622,8 +622,11 @@ function get_email_body($text){
   $email_text = replace_string( $email_text, "'", "%27");
   return $email_text;
 }
-function check_for_img_format($path,$filename='thumb'){
-  $img_formats = array("svg","png","jpg");
+function check_for_img_format($path,$filename="thumb",$img_formats=null){
+  if ( $img_formats == null ) {
+    $img_formats = array("svg","png","jpg");
+  }
+  // $img_formats = array("svg","png","jpg");
   foreach ($img_formats as $img_format) {
     // goes through the array of img formats, it it exists, it returns $thumb, else it will be the default img
     if ( file_exists("$path/$filename.$img_format") ) {
@@ -694,7 +697,7 @@ function return_filtered_array_by_term( $array, $term ){
   }
 }
 
-function full_thumbnail($works,$number_of_thumbnails=99,$class=""){
+function full_thumbnail($works,$number_of_thumbnails=99,$class="",$thumbnail="thumb"){
   $content="";
 
   // CHECKS FOR PROJECT ID AND FILTER
@@ -718,14 +721,25 @@ function full_thumbnail($works,$number_of_thumbnails=99,$class=""){
   // PRINTS OUT THUMBNAILS
   foreach ($works as $key => $work) {
     $path = "img/".$work["path"];
-    $hd_thumb = check_for_img_format( $path , "thumb-hd");
-    if ($hd_thumb) {
-      $hd_thumb = "srcset='$hd_thumb 2x'";
+
+    // checks to see if thumbnail exists
+
+    if ( $thumbnail!=="thumb" ) {
+      $thumb = check_for_img_format( $path, $thumbnail );
+    } else {
+      $thumb = check_for_img_format( $path );
     }
 
-    $thumb = check_for_img_format( $path );
+    // FALLBACK
     if ( $thumb==FALSE ) {
       $thumb = "http://placehold.it/400x273&text=$work[name] thumbnail missing";
+    }
+
+
+    // checks for HD image
+    $hd_thumb = check_for_img_format( $path , "$thumbnail-hd");
+    if ($hd_thumb) {
+      $hd_thumb = "srcset='$hd_thumb 2x'";
     }
 
     if (isset($id)) {
@@ -773,4 +787,78 @@ function title_case($string){
   }
   $newString = implode(' ', $words);
   return $newString;
+}
+
+function flex_thumbnail($works,$number_of_thumbnails=99,$class="",$thumbnail="thumb"){
+  $content="";
+
+  // CHECKS FOR PROJECT ID AND FILTER
+  $id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+  $selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
+
+  // PASSES AN ID IF IT EXISTS
+  if ( isset($id) ) {
+    $id_html = "?id=$id";
+  } else {
+    $id_html="";
+  }
+
+  // FILTERS
+  // checks array for matching tags, if so, then it will push to a new array
+  $filtered_array="";
+  if ( isset($selected_filter) ) {
+    $works = return_filtered_array_by_term( $works, $selected_filter);
+  }
+
+  // PRINTS OUT THUMBNAILS
+  foreach ($works as $key => $work) {
+    $path = "img/".$work["path"];
+
+    // checks to see if thumbnail exists
+
+    if ( $thumbnail!=="thumb" ) {
+      $thumb = check_for_img_format( $path, $thumbnail );
+    } else {
+      $thumb = check_for_img_format( $path );
+    }
+
+    // FALLBACK
+    if ( $thumb==FALSE ) {
+      $thumb = "http://placehold.it/400x273&text=$work[name] thumbnail missing";
+    }
+
+    // checks for HD image
+    $hd_thumb = check_for_img_format( $path , "$thumbnail-hd");
+    if ($hd_thumb) {
+      $hd_thumb = "srcset='$hd_thumb 2x'";
+    }
+
+    if (isset($id)) {
+      $project_path = "work?project=$work[path]&id=$id";
+    } else {
+      $project_path = $work['path'];
+    }
+
+    $content .= "
+      <div class=''>
+        <a href='$project_path'>
+          <img src='$thumb' $hd_thumb>
+        </a>
+      </div>
+    ";
+    if ($key == $number_of_thumbnails-1){
+      break;
+    }
+    // $tags_html = "";
+  }
+  if (count($works) <= 10) {
+    $class="reduce-width";
+  }
+  echo "
+    </div>
+    <div class='full-thumbnails $class'>
+      $content
+    </div>
+    <div class='container'>
+  ";
 }

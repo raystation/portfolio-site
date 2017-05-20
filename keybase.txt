@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/rayuen
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://rayuen.com
+  * I am rayuen (https://keybase.io/rayuen) on keybase.
+  * I have a public key ASARSFey5dxUuwUy-deoBB_C1lNukqS0Ck2M2cGjPtMs8Qo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120114857b2e5dc54bb0532f9d7a8041fc2d6536e92a4b40a4d8cd9c1a33ed32cf10a",
+            "host": "keybase.io",
+            "kid": "0120114857b2e5dc54bb0532f9d7a8041fc2d6536e92a4b40a4d8cd9c1a33ed32cf10a",
+            "uid": "80ec15815d10dfc2efa256086e73f819",
+            "username": "rayuen"
+        },
+        "service": {
+            "hostname": "rayuen.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.22"
+    },
+    "ctime": 1494913497,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1494913324,
+        "hash": "6c08293f26de36fdf712bda146371128bfe39f751fe759518bac4a0e6a9c9ac5baf3e3d4e9d164c58bb5bbf77725743757a570b448b7e2484d04ef47091eeb85",
+        "seqno": 1086524
+    },
+    "prev": "605d6bc0f79da3b3a9eedd2330c6e5911b0abc0b6828bdcf85e5d05545c329aa",
+    "seqno": 12,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgEUhXsuXcVLsFMvnXqAQfwtZTbpKktApNjNnBoz7TLPEKp3BheWxvYWTFAvF7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMTE0ODU3YjJlNWRjNTRiYjA1MzJmOWQ3YTgwNDFmYzJkNjUzNmU5MmE0YjQwYTRkOGNkOWMxYTMzZWQzMmNmMTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMTE0ODU3YjJlNWRjNTRiYjA1MzJmOWQ3YTgwNDFmYzJkNjUzNmU5MmE0YjQwYTRkOGNkOWMxYTMzZWQzMmNmMTBhIiwidWlkIjoiODBlYzE1ODE1ZDEwZGZjMmVmYTI1NjA4NmU3M2Y4MTkiLCJ1c2VybmFtZSI6InJheXVlbiJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoicmF5dWVuLmNvbSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjIifSwiY3RpbWUiOjE0OTQ5MTM0OTcsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ5NDkxMzMyNCwiaGFzaCI6IjZjMDgyOTNmMjZkZTM2ZmRmNzEyYmRhMTQ2MzcxMTI4YmZlMzlmNzUxZmU3NTk1MThiYWM0YTBlNmE5YzlhYzViYWYzZTNkNGU5ZDE2NGM1OGJiNWJiZjc3NzI1NzQzNzU3YTU3MGI0NDhiN2UyNDg0ZDA0ZWY0NzA5MWVlYjg1Iiwic2Vxbm8iOjEwODY1MjR9LCJwcmV2IjoiNjA1ZDZiYzBmNzlkYTNiM2E5ZWVkZDIzMzBjNmU1OTExYjBhYmMwYjY4MjhiZGNmODVlNWQwNTU0NWMzMjlhYSIsInNlcW5vIjoxMiwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEC7rgprFFrGi+Utws1rzAjlb8ee0kV28FCp4y0AfQ1UUNGKHVJf7j703qlMAzdANfgdRsMCzb8ERbUTx8YyxU0DqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgFUH9K964Hv4sOZWYGnq6gClka1iUn/EVOMf/tJ9NLM6jdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rayuen
+
+==================================================================

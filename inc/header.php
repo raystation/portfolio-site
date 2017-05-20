@@ -1,11 +1,17 @@
 <?
-$meta_description="";
+
 $footer_add="";
 $work_class = "";
 $about_class = "";
 $extra_padding = "";
+$meta_data = "";
+$og_img_size = "";
+
 $project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
 
+$home_path = "http://www.rayuen.com";
+
+// grabs the project details
 require_once 'inc/work-info.php';
 require_once 'functions.php';
 
@@ -64,6 +70,49 @@ if ($id ) {
 	$landing_page_nav="";
 }
 
+// META DATA
+if ( !isset($meta_description) ) {
+	$meta_description = "Ray Yuen is a designer and artist working in numerous media: books, games, game design and illustration.";
+}
+
+// OPEN GRAPH DATA
+
+	// IF A PROJECT IS SET
+	if ( isset($project) ) {
+		$og_thumb = check_for_img_format("img/$project","thumb-hd", array("jpg","png") );
+		if ($og_thumb==FALSE) {
+			$og_thumb = check_for_img_format("img/$project","thumb", array("jpg","png") );
+		}
+		if ($og_thumb==FALSE) {
+			$og_thumb = "img/logo-banner.jpg";
+		}
+	} else {
+		$og_thumb = "img/logo-banner.jpg";
+		// $og_img_size = "
+		// 	<meta name='og:image:width' content='1200'>
+		// 	<meta name='og:image:height' content='630'>
+		// ";
+	}
+	$meta_data = "
+		<meta charset='utf-8'>
+		<meta name='author' content='Ray Yuen' />
+		<meta property='article:author' content='http://rayuen.com' />
+		<meta name='keywords' content='portfolio, design, illustration, web design' />
+		<meta name='description' content='$meta_description' />
+
+		<meta property='og:site_name' content='Ray Yuen. Design + Illustration'/>
+		<meta property='og:url' content='http://rayuen.com/$project'/>
+
+		<meta property='og:type' content='article' />
+		<meta property='og:title' content='Ray Yuen. $title' />
+		<meta property='og:image' content='$home_path/$og_thumb' />
+		<meta name='og:image:width' content='1200'>
+		<meta name='og:image:height' content='630'>
+		$og_img_size
+		<meta property='og:description' content='Food truck Portland swag Pitchfork mustache semiotics.'>
+	";
+	// <meta itemprop='url' content='http://rayuen.com'/>
+
 
 ?>
 <!DOCTYPE html>
@@ -71,19 +120,12 @@ if ($id ) {
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
+<head prefix="og: http://ogp.me/ns#">
 
 	<!-- Basic Page Needs
   ================================================== -->
-	<meta charset="utf-8">
 	<title>Ray Yuen &#124; <?php pr($title); ?></title>
-	<meta name="description" content="<? if($meta_description){echo $meta_description; } else {echo "Ray Yuen is a designer and artist working in numerous media: books, games, game design and illustration."; } ?>">
-	<meta name="author" content="Ray Yuen">
-	<meta name="keywords" content="portfolio, design, illustration, web design">
-
-	<meta property="og:site_name" content="Ray Yuen. Design + Illustration"/>
-	<meta property="og:url" content="http://rayuen.com"/>
-	<meta itemprop="url" content="http://rayuen.com"/>
+	<? echo $meta_data; ?>
 
 	<!-- Mobile Specific Metas
   ================================================== -->
