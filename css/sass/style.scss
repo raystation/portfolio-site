@@ -978,6 +978,47 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 }
 
 
+// May 21, 2017
+.portfolio-project {
+	.main-content {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+
+		margin: 0 auto;
+		max-width: 800px;
+
+		margin-top: 40px;
+		h1.title {
+			margin-bottom: 10px;
+			font-size: 40px;
+		}
+		h2.subtitle {
+			font-size: 28px;
+			font-weight: 500;
+			color: hsla(0, 0%, 60%, 1);
+			font-family: #{$system-fonts};
+			letter-spacing: 0.01em;
+			margin-bottom: 60px;
+		}
+		.text-column {
+			font-family: #{$system-fonts};
+			letter-spacing: 0.01em;
+		}
+		@media #{$lg}{
+			// max-width: 90vw;
+			.text-column {
+				// columns: 2;
+				// -moz-columns: 2;
+				// -webkit-columns: 2;
+				// height: 100%;
+				// overflow: none;
+			}
+		}
+	}
+}
+
+
 // HIRE ME
 // ======================================
 

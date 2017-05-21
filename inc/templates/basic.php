@@ -13,10 +13,33 @@ $project_link_html="";
 if (!isset($thumbnail_size)) {$thumbnail_size="medium";}
 
 if ( isset($hero_img) ) {
+	// </div>
+	// <div class='hero-container'>
+	// 	<img src='$hero_img' alt='$hero_img'>
+	// </div>
+
+	// HERO IMAGES
+		$hero_img = check_for_img_format("$path/hero","hero-img");
+		$hero_img_mobile = check_for_img_format("$path/hero","hero-img-mobile");
+
+		// checks for retina image
+		$hero_img_retina = check_for_img_format("$path/hero","hero-img-retina");
+		if ($hero_img_retina) {
+			$hero_img_retina_html = "srcset='$hero_img_retina 2x'";
+		}
+
+		$text = $description . $content;
+
 	$hero_img_html="
 	</div>
-	<div class='hero-container'>
-		<img src='$hero_img' alt='$hero_img'>
+	<div class='container-fl'>
+		<div class='photo'>
+		  <picture>
+		    <source media='(min-width: 401px)' srcset='$hero_img_retina'/>
+		    <source media='(max-width: 400px)' srcset='$hero_img_mobile'/>
+		    <img src='$hero_img' class='scale-with-grid' alt='$title' $hero_img_retina_html />
+		  </picture>
+		</div>
 	</div>
 	<div class='container main-container add-bottom opacity-fade'>
 	";

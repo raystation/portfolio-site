@@ -1850,8 +1850,13 @@ if ( $project == "nextlesson-covers" ) {
 
 if ( $project == "nextlesson-interestid" ) {
 
-	// $template = "ui";
+	// $template = "basic-2";
+
 	$title = "NextLesson InterestID";
+	$subtitle = "A student interest tool";
+
+	$hero_img = TRUE;
+
 	$company = "NextLesson";
 	$path = "img/nextlesson-interestid";
 	// $movie = "$path/interestid-voting.mp4";
