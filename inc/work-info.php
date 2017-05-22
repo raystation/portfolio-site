@@ -1850,7 +1850,7 @@ if ( $project == "nextlesson-covers" ) {
 
 if ( $project == "nextlesson-interestid" ) {
 
-	// $template = "basic-2";
+	$template = "basic-2";
 
 	$title = "NextLesson InterestID";
 	$subtitle = "A student interest tool";
@@ -1882,7 +1882,6 @@ if ( $project == "nextlesson-interestid" ) {
 		<iframe width='560' height='315' src='https://www.youtube.com/embed/HxGJK6p5nwI' frameborder='0' allowfullscreen></iframe>
 	</div>
 	<p class='caption'>An overview video we made!</p>
-
 
 	<h3>Rating Interests</h3>
 	<video width='320' height='240' controls>

@@ -632,8 +632,20 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		margin-top: 0px;
 		@media #{$md} {
 			font-size: 45px;
-			margin-top: 60px;
+			margin-top: 40px;
 		}
+	}
+	h1.title {
+		font-size: 50px;
+		margin-bottom: 10px;
+	}
+	h2.subtitle {
+		font-size: 28px;
+		font-weight: 500;
+		color: hsla(0, 0%, 60%, 1);
+		// font-family: #{$system-fonts};
+		letter-spacing: 0.01em;
+		margin-bottom: 30px;
 	}
 	h2 {
 		font-size: 30px;
@@ -652,6 +664,11 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 			font-size: $font-size;
 			max-width: 95%;
 		}
+	}
+	video {
+		padding: 40px;
+		width: 100%;
+		background-color: #F5F8FA;
 	}
 	.caption {
 		font-size: $caption-font-size;
