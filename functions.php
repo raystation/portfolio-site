@@ -730,6 +730,17 @@ function full_thumbnail($works,$number_of_thumbnails=99,$class="",$thumbnail="th
       $thumb = check_for_img_format( $path );
     }
 
+    // MOVED OUT OF IMG -> PORTFOLIO FOLDER
+    // not done yet
+    // if ( $thumb==FALSE ) {
+    //   if ( isset($company) ) {
+    //     $path = "portfolio/".strtolower($company)."/".$work["path"];
+    //   } else {
+    //     $path = "portfolio/".$work["path"];
+    //   }
+    //   $thumb = check_for_img_format($path);
+    // }
+
     // FALLBACK
     if ( $thumb==FALSE ) {
       $thumb = "http://placehold.it/400x273&text=$work[name] thumbnail missing";

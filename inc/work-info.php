@@ -217,7 +217,7 @@ if ( $project == "storymaps" ) {
 		</p><p>
 		I wanted to make the artwork stylistically generic so that it wouldn't narrow your imagination. Looking at tarot cards and comics for inspiration, I sought to break each event down to it's core action. The main characters would all be represented by simple stick-like figures with no faces. Each image was accentuated with one color.
 		</p><p>
-		<div class='caption list-spacing-fix'>
+		<div class='list-spacing-fix'>
 		<ul>Additional reading:
 			<li><a href='http://www.era.lib.ed.ac.uk/handle/1842/5294' target='_blank'>Sean's Ph.D. thesis</a></li>
 		<ul>
@@ -227,8 +227,8 @@ if ( $project == "storymaps" ) {
 
 	$sidebar = "
 		<p>Comic-like, hand-drawn illustrations</p>
-		<p><a href='http://seanh.github.io/storymaps'>StoryMaps Github page</a>
 	";
+	$project_link="http://seanh.github.io/storymaps";
 
 	$tools=array(
 		array("skill"=>"Photoshop", "percent"=>40),
@@ -764,9 +764,9 @@ if ( $project == "chronicles-of-old-london" ) {
 		</p><p>
 		This book also has the singular distinction of making it onto a television show, &ldquo;Parks and Recreation.&rdquo; There is a season opener where the gang goes to London and Leslie Nope is seen holding the book! Hopefully it was also read and not just used because it has a beautiful cover! You know how Macs are always used instead of PCs in television and movies? I’d like to think that this is what’s happening here.
 		</p><p class="caption">
-			<img src="img/chronicles-of-old-london/Parks-and-Rec-9-550x366.jpg" class="scale-with-grid" alt="" />Leslie using the guide to travel.
+			<img src="img/chronicles-of-old-london/Parks-and-Rec-9-550x366.jpg" class="scale-with-grid" alt="" />Actor Amy Poehler using our book on an episode of &ldquo;Parks &amp; Rec.&rdquo;
 		</p><p class="caption">
-			<img src="img/chronicles-of-old-london/Parks&Recreation_s.jpg" class="scale-with-grid" alt="" />Beautiful.
+			<img src="img/chronicles-of-old-london/Parks&Recreation_s.jpg" class="scale-with-grid" alt="" />Another image of Amy holding our book.
 		';
 
 	$author="Kevin Jackson";
@@ -1850,25 +1850,28 @@ if ( $project == "nextlesson-covers" ) {
 
 if ( $project == "nextlesson-interestid" ) {
 
-	$template = "basic-2";
+	// $template = "basic-2";
 
 	$title = "NextLesson InterestID";
-	$subtitle = "A student interest tool";
+	$subtitle = "A student interest and lesson discovery tool";
 
-	$hero_img = TRUE;
 
 	$company = "NextLesson";
 	$path = "img/nextlesson-interestid";
+
+	$hero_img = "$path/hero/hero-img.png";
+
 	// $movie = "$path/interestid-voting.mp4";
 
 	$short_description = "Student Interest Tool";
 
+	// <span class='intro'>Challenge: To create a tool that helps teachers discover lessons based on student interests.</span>
 	$description = "
-	<span class='intro'>Challenge: To create a tool that helps teachers discover lessons based on student interests.</span>
+	One of the biggest selling points of NextLesson's content is that its built around students' current interests. To stay up-to-date on these interests, we came up with the idea of an interest rating tool—a &ldquo;Student Tinder&rdquo;—if you will. With InterestID, students can voice their interests by liking and disliking items within categories such as sports, movies, books, music, food and gadgets. If they can’t find a certain interest, they can add it in the tool – these recommendations help us determine which lessons we should create.
 	$p_break
-	InterestID is a tool for students to inform teachers what topics interest them. Students “thumbs up” or “thumbs down” various topics which are featured in NextLesson lessons.
-	$p_break
-	That information is available to teachers sorted by most popular categories. A click on the category connects the teacher to lessons where that topic is covered. Simple grade and subject filters allow the teacher to find the right lesson for their class if there are numerous results.";
+	For teachers, they are then able to view the interests of their students in a summary that displays the top liked categories, most popular interests within those categories, and recommended lessons from NextLesson based on those interests. They can also view interest summaries for individual students or classes as a whole, and even track changes over time.
+	</p>
+	";
 
 	$project_link = "https://www.nextlesson.org/interestid/";
 
@@ -1877,42 +1880,15 @@ if ( $project == "nextlesson-interestid" ) {
 		<p>2015</p>
 	";
 
-	$content = "
-	<div class='videoWrapper'>
-		<iframe width='560' height='315' src='https://www.youtube.com/embed/HxGJK6p5nwI' frameborder='0' allowfullscreen></iframe>
-	</div>
-	<p class='caption'>An overview video we made!</p>
+	$additional_img_label = "Some of my Favorite Interests";
 
-	<h3>Rating Interests</h3>
-	<video width='320' height='240' controls>
-		<source src='$path/interestid-voting.mp4' type='video/mp4'>
-		Your browser does not support the video tag.
-	</video>
-	<p class='caption'>A student voting.</p>
-	<p>
-		To rate interests, you just press the <em>thumbs up</em> to 'like' or the <em>thumbs down</em> to 'dislike'. The first screen gives you interests that have not been rated in a random order, so you see new interests everytime you go on. After an interest is rated, it will disappear so your <em>unrated</em> view is a little less cluttered.
-	</p>
-
-	<h3>Filtering by Category and by Liked</h3>
-	<video width='320' height='240' controls>
-		<source src='$path/interestid-filters.mp4' type='video/mp4'>
-		Your browser does not support the video tag.
-	</video>
-	<p class='caption'>A student voting.</p>
-	<p>
-		We put filters in so you can browse by category or by interests you've already liked or disliked.
-	</p>
-	As of January 2017, students have rated over 1,605,000+ interests. The more students rate and suggest new interests, the better we can tailor our learning materials and be more real-time and relevant.
-	</p>
-	<img src='$path/sample-screen.jpg' alt='InterestID' class='scale-with-grid'>
-	<p class='caption'>The teacher experience(left) vs. the student experience(right)</p>"
-	;
+	// $content = "";
 
 	$tools = array(
-		array("skill"=>"Illustrator", "percent"=>50),
-		array("skill"=>"Mockups (PHP+JS)", "percent"=>25),
 		array("skill"=>"Sketches", "percent"=>15),
-		array("skill"=>"Spreadsheets", "percent"=>10),
+		array("skill"=>"UI/UX", "percent"=>20),
+		array("skill"=>"Illustrator", "percent"=>40),
+		array("skill"=>"Mockups (PHP+JS)", "percent"=>25),
 	);
 	// $hero_img = "$path/hero-image.jpeg";
 	// $hero_img_mobile = "$path/hero-image.jpeg";
@@ -1922,6 +1898,7 @@ if ( $project == "nextlesson-interestid" ) {
 		// array("file" => "interest-selection.jpg", "alt" => "InterestID liking and disliking"),
 	);
 	$thumbnail_size = "small";
+
 
 } //end NEXTLESSON INTERESTID
 
@@ -1933,23 +1910,32 @@ if ( $project == "nextlesson-interestid" ) {
 
 if ( $project == "nextlesson-glossary" ) {
 
-	$title = "NextLesson Glossary Terms";
+	$title = "NextLesson Glossary";
+	$subtitle = "A feature of our interactive tool";
+
 	$path = "img/nextlesson-glossary";
 	$company = "NextLesson";
-	// $movie = "$path/interactive-pt-overview.mp4";
+	$template = "illustration";
 
-	$description = "After releasing the initial version of the Interactive lessons, it was up to our Curriculum team to fill it with learning materials! As they were working on that, we worked on the next iteration. To support our glossary terms, we thought having would be impactful, as well helpful for our younger and users.
-		$p_break
-		We had a variety of things to illustrate-including careers, mathematic principles, as well as terms specific to industries. Luckily, I had a whole library of image assets that I'd slowly created over time, making this task a little less time-intensive. However, it did require a bit more thought over how to illustrate abstract those terms, like &ldquo;viable&rdquo; and &ldquo;hypothesize.&rdquo;
+	$description = "
+	After the initial version of our interactive learning tool was live, it was up to the curriculum team to fill it with amazing lessons. In the meantime, we focused on new features and learning tools. Since many of our lessons centered around real world jobs—like accountants and sports team managers—there were bound to be industry-specific words that students wouldn't know. We set about building a &ldquo;toolbox&rdquo; that a student could use. We had visions of many tools down the road, but for now, the first tool would be a glossary.
+	</p>
 	";
+
 	$content = "
-		<img src='$path/02.png' alt='' class='thumb-outline scale-with-grid' />
-		<p>The glossary terms as they appear in the sidebar.</p>
-		<video class='thumb-outline' width='800' height='600' controls>
-			<source src='img/nextlesson-glossary/glossary.mp4' type='video/mp4'>
-			Your browser does not support the video tag.
-		</video>
-		<p>Video: Two ways to access the glossary definitions.
+		<h3>The User Experience</h3>
+		<p>
+			When a student encounters a underlined glossary term, they can click on it to see the definition. A little pop up tooltip will tell the student the definition and show an image if there is one. They can also access a list of all the terms in the lesson by going to the right hand toolbar and clicking on the glossary icon. This will slide in the list of glossary terms in the lesson that they can look over.
+		</p>
+		<div class='video-padding'>
+			<video width='800' height='600' controls>
+				<source src='img/nextlesson-glossary/glossary.mp4' type='video/mp4'>
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		<p class='caption'>A video depicting the two ways you can view a glossary term's definiton.</p>
+		<p>
+		Having the experience unobtrusive was key, because we didn't want students to get distracted. Rather than open up separate tabs or new windows, we intergrated it as much as we could. This lead to the side toolbar. The secondary vertical pane that shifted out of the toolbar also served a great place to hold the table of contents, which allowed quick navigation.
 	";
 
 	$sidebar = "
@@ -1988,6 +1974,37 @@ if ( $project == "nextlesson-glossary" ) {
 		array("file"=>"glos/Video_Wall.png	", "alt"=>"Video Wall"),
 	);
 	shuffle($img_info);
+
+	$illustration_intro_html="
+		<h3>The Visuals</h3>
+		<p>
+			We had a variety of concepts and objects to diagram including careers, mathematic principles, and industry&#8209;specific terms. Fortunately, I had a library of image assets that I'd slowly created over time, making this task a little less time-intensive. However, it still required a bit more thought over how to illustrate more abstract concepts like &ldquo;viable&rdquo; and &ldquo;hypothesize.&rdquo;
+		</p>
+	";
+
+	$illustrations = array(
+		array("path"=>"glos/Agility.png", "caption"=>"Agility"),
+		array("path"=>"glos/Baker.png", "caption"=>"Baker"),
+		array("path"=>"glos/Budget.png", "caption"=>"Budget"),
+		array("path"=>"glos/Cost_of_Production.png", "caption"=>"Cost of Production"),
+		array("path"=>"glos/Counting_Principle.png", "caption"=>"Counting Principle"),
+		array("path"=>"glos/Coupons.png", "caption"=>"Coupons"),
+		array("path"=>"glos/Critically_Endangered.png", "caption"=>"Critically Endangered"),
+		array("path"=>"glos/Critique.png", "caption"=>"Critique"),
+		array("path"=>"glos/Entrepreneur.png", "caption"=>"Entrepreneur"),
+		array("path"=>"glos/List_Price.png", "caption"=>"List Price"),
+		array("path"=>"glos/Marketing.png", "caption"=>"Marketing"),
+		array("path"=>"glos/Median.png", "caption"=>"Median"),
+		array("path"=>"glos/Personal_Shopper.png", "caption"=>"Personal Shopper"),
+		array("path"=>"glos/Pricing_Structure.png", "caption"=>"Pricing Structure"),
+		array("path"=>"glos/Production_Costs.png", "caption"=>"Production Costs"),
+		array("path"=>"glos/Revenue.png", "caption"=>"Revenue"),
+		array("path"=>"glos/Stage_Manager.png", "caption"=>"Stage Manager"),
+		array("path"=>"glos/Telephoto_Lens.png", "caption"=>"Telephoto Lens"),
+		array("path"=>"glos/Viable.png", "caption"=>"Viable"),
+		array("path"=>"glos/Video_Wall.png	", "caption"=>"Video Wall"),
+	);
+	shuffle($illustrations);
 
 	$thumbnail_size="large";
 

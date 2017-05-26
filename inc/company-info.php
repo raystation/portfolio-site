@@ -16,6 +16,8 @@ $closing="";
 $sample_projects_array=array();
 $video_game_resume=FALSE;
 
+$section = (isset($$section) ? $section : null );
+
 $p_break = "</p><p>";
 
 // TODO: include Markdown parser
@@ -4565,34 +4567,45 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		$originaljobposting="http://supercell.com/en/careers/graphic-designer/199/";
 		$hiring_company="Supercell";
 		$jobTitle="Graphic Designer";
-		$date="May 5, 2017";
+		$date="May 23, 2017";
 		$funny_portrait = TRUE;
 		$video_game_resume=TRUE;
 
 		$copy = "
-		Seeing as how I played &ldquo;Hay Day&rdquo; and &ldquo;Clash of the Clans&rdquo; all the time until my iPad broke, I was super psyched to see this position on Linkedin. I think that
+		Seeing as how I played “Hay Day” and “Clash of the Clans” all the time until my iPad broke, I was super excited to see this position on LinkedIn. I'd love the opportunity to share my work with you and to hear more about the role.
 		$p_break
-		For the past two years I've been Head of Design at edtech startup NextLesson assuming a variety of roles, one of which was overseeing the production of artwork for lesson covers and icons. At NextLesson, I developed the illustration style that is used on covers and icons as well as trained freelancers on the style. While I was there, I oversaw the creation of over 2,000 lesson covers and 3,000 icons that are currently populating the site. I refined processes when possible to speed up production, allowing myself and the artists to focus on the overall composition and quality.
+		A little about me—I’m sort of a hybrid print/web guy with experience in product UI/UX, branding, marketing, visual design and art production. I have strong illustration skills which inform my designs—a lot of influence stemming from my interests in video games! I have many years of experience and success working on and managing small in-house creative teams in different fields where I’ve continually had to adapt.
 		$p_break
-		Long term, I'd like to find a place where I can stay for a while and produce really great work (working at startups has been a bit rocky for me because I never want to leave places!). The position at Big Fish/Self Aware sounds like a fun challenge—a place to work on new things, learn new skills and collaborate with new people.
+		Most recently, I was Head of Design at edtech startup NextLesson. I supported Marketing with user research and designing conference booth, collateral, blog and newsletters that have converted into sales and lead generation. I was also tasked with standardizing lesson covers, which was also a tool to sell product. When I was at Pok&eacute;mon, we supported all internal departments around major video game releases which required a lot of time-management, vendor planning and a good sense of humor.
+		$p_break
 		";
 
 		$sample_projects_array = array(
+			array(
+				"path"=>"10th-anniversary",
+				"name"=>"Pok&eacute;mon 10th Anniversary Event",
+				"desc" => "Marketing, Signage, and Collateral for an event in NYC.",
+			),
 			array(
 				"path"=>"nextlesson-covers",
 				"name"=>"Nextlesson Project/Lesson Covers",
 				"desc"=>"Developing K12 lesson covers and standards.",
 			),
 			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"desc" => "Design of a Conference Booth",
+			),
+			array(
 				"path"=>"nextlesson-interestid",
 				"name"=>"InterestID",
 				"desc"=>"Student interest rating tool that informs teachers.",
 			),
-			array(
-				"path"=>"nextlesson-glossary",
-				"name"=>"NextLesson Glossary Terms",
-				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
-			),
+			// array(
+			// 	"path"=>"nextlesson-glossary",
+			// 	"name"=>"NextLesson Glossary Terms",
+			// 	"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			// ),
 			array(
 				"path"=>"nextlesson-characters",
 				"name"=>"NextLesson Characters",
@@ -4603,73 +4616,16 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 				"name"=>"Indiginauts",
 				"desc" => "Graphics for iOS game.",
 			),
-			array(
-				"path"=>"color-chameleon",
-				"name"=>"Color Chameleon",
-				"desc"=>"Game concept for a iOS runner.",
-			),
-			array(
-				"path"=>"project-animore",
-				"name"=>"Project Animore",
-				"desc"=>"Game concept for a iOS game.",
-			),
-		);
-	break;
-
-
-	//TELLTALE-ASSISTANT-GRAPHIC-DESIGNER
-	case "telltale-assistant-graphic-designer":
-		$originaljobposting="http://supercell.com/en/careers/graphic-designer/199/";
-		$hiring_company="Supercell";
-		$jobTitle="Assistant Graphic Designer";
-		$date="May 5, 2017";
-		$funny_portrait = TRUE;
-		$video_game_resume=TRUE;
-
-		$copy = "
-		Seeing as how I played &ldquo;Hay Day&rdquo; and &ldquo;Clash of the Clans&rdquo; all the time until my iPad broke, I was super psyched to see this position on Linkedin. I think that
-		$p_break
-		For the past two years I've been Head of Design at edtech startup NextLesson assuming a variety of roles, one of which was overseeing the production of artwork for lesson covers and icons. At NextLesson, I developed the illustration style that is used on covers and icons as well as trained freelancers on the style. While I was there, I oversaw the creation of over 2,000 lesson covers and 3,000 icons that are currently populating the site. I refined processes when possible to speed up production, allowing myself and the artists to focus on the overall composition and quality.
-		$p_break
-		Long term, I'd like to find a place where I can stay for a while and produce really great work (working at startups has been a bit rocky for me because I never want to leave places!). The position at Big Fish/Self Aware sounds like a fun challenge—a place to work on new things, learn new skills and collaborate with new people.
-		";
-
-		$sample_projects_array = array(
-			array(
-				"path"=>"nextlesson-covers",
-				"name"=>"Nextlesson Project/Lesson Covers",
-				"desc"=>"Developing K12 lesson covers and standards.",
-			),
-			array(
-				"path"=>"nextlesson-interestid",
-				"name"=>"InterestID",
-				"desc"=>"Student interest rating tool that informs teachers.",
-			),
-			array(
-				"path"=>"nextlesson-glossary",
-				"name"=>"NextLesson Glossary Terms",
-				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
-			),
-			array(
-				"path"=>"nextlesson-characters",
-				"name"=>"NextLesson Characters",
-				"desc" => "A system of posable characters for covers and animation use.",
-			),
-			array(
-				"path"=>"indiginauts",
-				"name"=>"Indiginauts",
-				"desc" => "Graphics for iOS game.",
-			),
-			array(
-				"path"=>"color-chameleon",
-				"name"=>"Color Chameleon",
-				"desc"=>"Game concept for a iOS runner.",
-			),
-			array(
-				"path"=>"project-animore",
-				"name"=>"Project Animore",
-				"desc"=>"Game concept for a iOS game.",
-			),
+			// array(
+			// 	"path"=>"color-chameleon",
+			// 	"name"=>"Color Chameleon",
+			// 	"desc"=>"Game concept for a iOS runner.",
+			// ),
+			// array(
+			// 	"path"=>"project-animore",
+			// 	"name"=>"Project Animore",
+			// 	"desc"=>"Game concept for a iOS game.",
+			// ),
 		);
 	break;
 
@@ -4736,6 +4692,126 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		);
 	break;
 
+	//OSMO
+	case "osmo-sr-graphic-designer":
+		$originaljobposting="https://jobs.lever.co/tangibleplay/82193644-3510-4dcf-90f1-1b16cfecc2be/apply";
+		$hiring_company="Osmo";
+		$jobTitle="Sr. Graphic Designer";
+		$date="May 23, 2017";
+		$funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$copy = "";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"color-chameleon",
+				"name"=>"Color Chameleon",
+				"desc"=>"Game concept for a iOS runner.",
+			),
+			array(
+				"path"=>"project-animore",
+				"name"=>"Project Animore",
+				"desc"=>"Game concept for a iOS game.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+			// array(
+			// 	"path"=>"nextlesson-characters",
+			// 	"name"=>"NextLesson Characters",
+			// 	"desc" => "A system of posable characters for covers and animation use.",
+			// ),
+			array(
+				"path"=>"storymaps",
+				"name"=>"StoryMaps",
+				"desc" => "Illustrations for a story building tool.",
+			),
+			// array(
+			// 	"path"=>"indiginauts",
+			// 	"name"=>"Indiginauts",
+			// 	"desc" => "Graphics for iOS game.",
+			// ),
+		);
+	break;
+
+	//BRILLIANT.ORG
+	case "brilliant-math-and-science-illustrator":
+		$originaljobposting="http://brilliant.applytojob.com/apply/job_20160622182721_PNGYWLUY3JFVTVH7/Math-And-Science-Illustrator-At-Brilliantorg";
+		$hiring_company="Brilliant.org";
+		$jobTitle="Math and Science Illustrator";
+		$date="May 24, 2017";
+		$funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$copy = "
+		I found your role on LinkedIn and wanted to apply because I'm a really fun guy who likes to make good looking pictures! While my degree is in design, I've really discovered a passion for illustration and I think this position would really allow me to explore that further.
+		$p_break
+		For the past two years I’ve been at edtech startup NextLesson doing branding, art production, marketing, illustration and product UI/UX (I'm kind of a hybrid print/web guy). I helped develop the look of nextlesson.org and one of those duties was to overhaul the lesson covers. I bought in the use of fun and cute illustrations and characters for the younger grades, while employing more thoughtful design principles to the upper grades. I trained and managed a team of designers and illustrators on guidelines I set out, which vastly freed up my time and increased production. I'm responsible for over 2,000 lesson covers and 5,000 icons for InterestID, our student interest tool.
+		$p_break
+		wording, above the fold,
+		";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+			array(
+				"path"=>"color-chameleon",
+				"name"=>"Color Chameleon",
+				"desc"=>"Game concept for a iOS runner.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"project-animore",
+				"name"=>"Project Animore",
+				"desc"=>"Game concept for a iOS game.",
+			),
+			array(
+				"path"=>"nextlesson-characters",
+				"name"=>"NextLesson Characters",
+				"desc" => "A system of posable characters for covers and animation use.",
+			),
+			array(
+				"path"=>"storymaps",
+				"name"=>"StoryMaps",
+				"desc" => "Illustrations for a story building tool.",
+			),
+			array(
+				"path"=>"indiginauts",
+				"name"=>"Indiginauts",
+				"desc" => "Graphics for iOS game.",
+			),
+			array(
+				"path"=>"wired",
+				"name"=>"Wired Magazine",
+				"desc" => "illustration for an ad.",
+			),
+		);
+	break;
 
 
 

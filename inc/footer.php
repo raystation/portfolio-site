@@ -110,24 +110,12 @@ if ( !isset($id)) {
 		});
 	</script>
 
-
-	<!-- Lightbox 2.7.1
-	==================================================  -->
+	<!-- Lightbox 2.7.1 -->
 	<script src="js/lightbox.min.js"></script>
-
-	<!-- headroom -->
-	<!-- <script src="js/headroom.min.js"></script> -->
+	<!-- tooltip -->
 	<script src="js/jquery.tooltipster.min.js"></script>
+	<!-- lazy load -->
 	<script src="js/jquery.unveil.js"></script>
-	<script>
-		// var myElement = document.querySelector("header");
-		// // var headroom  = new Headroom(myElement);
-		// var headroom = new Headroom(myElement, {
-		//   "tolerance": 10,
-		//   "offset": 50,
-		// });
-		// headroom.init();
-	</script>
 
 	<script>
       $(document).ready(function() {

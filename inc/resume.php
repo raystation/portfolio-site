@@ -2,7 +2,7 @@
 //last updated January 10, 2017
 $p_break = "</p><p>";
 $quick_intro = "
-  I’m Ray – a designer in San Francisco who focuses on  ui/ux, visual design and branding. I've worked in games, publishing, marketing, and most recently in edtech at NextLesson building a learning platform.
+  I’m Ray – a designer and illustrator in San Francisco who focuses on branding, visual design, and ui/ux. I've worked in games, publishing, marketing, and most recently in edtech at NextLesson building a learning platform.
 ";
 
 $bio_array = array(

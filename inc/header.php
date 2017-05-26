@@ -8,6 +8,7 @@ $meta_data = "";
 $og_img_size = "";
 
 $project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
+$header_add = isset($header_add) ? $header_add : null;
 
 $home_path = "http://www.rayuen.com";
 
@@ -34,10 +35,8 @@ if (isset($section)) {
 	}
 }
 
-$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
-
 // COMING FROM THE JOB LANDING PAGE, THIS WILL GENERATE A SECONDARY NAV BAR ON THE BOTTOM
-if ($id ) {
+if ( $id ) {
 	include_once "inc/company-info.php";
 	if ($sample_projects_array) {
 		$sample_projects_html="";
@@ -113,6 +112,12 @@ if ( !isset($meta_description) ) {
 	";
 	// <meta itemprop='url' content='http://rayuen.com'/>
 
+	// passes ID to homepage
+	if ( isset($id) ) {
+		$id_html = "?id=$id";
+	} else {
+		$id_html="";
+	}
 
 ?>
 <!DOCTYPE html>
@@ -135,6 +140,7 @@ if ( !isset($meta_description) ) {
   ================================================== -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<? echo $header_add; ?>
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -190,7 +196,7 @@ if ( !isset($meta_description) ) {
 	<header class="navband headroom">
 		<div class="header">
 			<div id="title">
-				<a href="./">Ray Yuen <!-- <img src="img/logo-rayuen.svg" style='height:30px;'> --></a>
+				<a href="./<? echo $id_html; ?>">Ray Yuen</a>
 			</div>
 			<div id='nav'>
 				<div class='nav-item nav-page'><a class="<? echo $work_class;?>" href="work<? echo $id_html;?>">work</a></div>

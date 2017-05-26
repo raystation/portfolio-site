@@ -9,55 +9,33 @@ $project_path="";
 $hero_img_html="";
 $img_slider_html="";
 $project_link_html="";
+$illustration_intro_html = isset( $illustration_intro_html) ? $illustration_intro_html : "<h2>Illustrations</h2><p>Examples of works.</p>";
 
-if (!isset($thumbnail_size)) {$thumbnail_size="medium";}
+// HERO IMAGES
+	$hero_img = check_for_img_format("$path/hero","hero-img");
+	$hero_img_mobile = check_for_img_format("$path/hero","hero-img-mobile");
 
-if ( isset($hero_img) ) {
-	$hero_img_html="
-	</div>
-	<div class='hero-container'>
-		<img src='$hero_img' alt='$hero_img'>
-	</div>
-	<div class='container main-container add-bottom opacity-fade'>
-	";
-} else {
-	// MAKES THE TOP SLIDER
-	$img_slider_html="";
-	if (isset($img_info)) {
-		$img_slider_html .= "<div class='slick'>";
-			foreach($img_info as $img) {
-				$outline_class="";
-				$caption_text="";
-				// this is if we want thumbnails
-				if (isset($img['class'])) {
-					$outline_class="thumb-outline";
-				}
-				if (isset($img['caption'])) {
-					$caption_text = $img['alt'];
-				}
-			    $img_slider_html .= "<div><img class='scale-with-grid tooltip add-bottom $outline_class' src='$path/$img[file]' alt='$img[alt]'>$caption_text</div>";
-			}
-		$img_slider_html .= "</div>";
+	// checks for retina image
+	$hero_img_retina = check_for_img_format("$path/hero","hero-img-retina");
+	if ($hero_img_retina) {
+		$hero_img_retina_html = "srcset='$hero_img_retina 2x'";
 	}
-	else
-	{
-		if ( !isset($path) ) {
-			$title = !isset($path) ? $project : "";
-			$path = "fill out information on work-info";
-			$sidebar = "fill out information on work-info";
-			$description = "fill out information on work-info. Meggings kogi biodiesel Cosby sweater Blue Bottle. Freegan PBR&B mustache, plaid tousled organic craft beer direct trade lo-fi synth messenger bag selfies mixtape bespoke. Tote bag actually 8-bit viral hella, Helvetica banjo +1 McSweeney's Vice literally kogi you probably haven't heard of them ethical. Austin fixie kogi, pour-over mumblecore occupy flannel raw denim Shoreditch PBR&B next level Pitchfork authentic High Life. Vinyl slow-carb stumptown aesthetic authentic. Wolf cornhole VHS Truffaut Vice. Mlkshk cred lomo Marfa, tattooed artisan bicycle rights.";
-			$tools = array();
-		}
-		if ( file_exists("$path/cover.jpg") ) {
-			$img_slider_html .=  "<img class='scale-with-grid' src='$path/cover.jpg' alt='$title Top Image'>";
-		}
-		else
-		{
-			$img_slider_html .=  "<img class='scale-with-grid' src='img/hero_default.jpg' alt='$title Top Image'>";
-		}
-	}
-}
 
+	$text = $description . $content;
+
+$hero_img_html="
+</div>
+<div class='container-fl  hero-img'>
+	<div class='photo'>
+	  <picture>
+	    <source media='(min-width: 401px)' srcset='$hero_img_retina'/>
+	    <source media='(max-width: 400px)' srcset='$hero_img_mobile'/>
+	    <img src='$hero_img' class='scale-with-grid' alt='$title' $hero_img_retina_html />
+	  </picture>
+	</div>
+</div>
+<div class='container main-container add-bottom opacity-fade'>
+";
 
 // MAIN CONTENT
 $content = isset( $content ) ? $content : null;
@@ -105,20 +83,7 @@ if ( !is_null($path) ) {
 		// 	$additional_img_column_count = 2;
 		// }
 		// $additional_img_html = skeleton_html($additional_img_column_count,$path,$folder="additional_img");
-		if (isset($additional_img_label)) {
-			$additional_img_html = "
-			<div class='sixteen columns'>
-				<h3>$additional_img_label</h2>
-			</div>
-			";
-		} else {
-			$additional_img_html = "
-			<div class='sixteen columns'>
-				<h3>Additional Images</h3>
-			</div>
-			";
-		}
-		$additional_img_html .= flex_tiles($thumbnail_size,$path,$folder="additional_img");
+		$additional_img_html = flex_tiles($thumbnail_size,$path,$folder="additional_img");
 	} else {
 		$additional_img_html = "";
 	}
@@ -151,7 +116,17 @@ if ($tools) {
 // PROEJCT LINK
 if ($project_link) {
 	$project_link_html = "
-		<p><a href='$project_link'>link to project <i class='fa fa-arrow-right' aria-hidden='true'></i></a></p>
+		<p><a ,bhref='$project_link'>link to project <i class='fa fa-arrow-right' aria-hidden='true'></i></a></p>
+	";
+}
+
+$illustration_html="";
+foreach ($illustrations as $key => $illustration) {
+	$illustration_html.="
+		<div class='illy-padding'>
+		  <img src='$path/$illustration[path]'>
+		</div>
+		<p class='caption'>$illustration[caption]</p>
 	";
 }
 
@@ -167,32 +142,42 @@ $page = "
 		<div class='desktop'>
 			$img_slider_html
 		</div>
-		<h1>$title</h1>
+		<h1 class='title'>$title</h1>
+		<h2 class='subtitle'>$subtitle</h2>
 		<div class='twelve columns alpha'>
 			<p>$description</p>
-			<div class='content mobile'>$content $project_link_html</div>
+
+			<div class='content mobile'>
+				$content
+				$illustration_intro_html
+				$project_link_html
+			</div>
 
 			<div class='project-sidebar mobile'>
 				<hr class='resume' style='width:10%'>
 				$sidebar
+				$project_link_html
 				$tools_html
 			</div>
 		</div>
 		<div class='desktop'>
 			<div class='project-sidebar four columns omega'>
 				$sidebar
+				$project_link_html
 				$tools_html
 			</div>
 		</div>
 		<div class='desktop'>
-			<div class='sixteen columns alpha'>
-				<div class='content'>$content $project_link_html</div>
+			<div class='sixteen columns alpha' style=''>
+				<div class='content'>
+					$content
+					<a name='illustrations'></a>
+					$illustration_intro_html
+					$illustration_html
+					$project_link_html
+				</div>
 			</div>
 		</div>
-
-		$additional_img_html
-		$tags_html
-		$other
 	</div> <!-- end sixteen -->
 ";
 // TODO: add in related projects in the sidebar

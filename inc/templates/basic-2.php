@@ -161,7 +161,7 @@ if ($tools) {
 // PROEJCT LINK
 if ($project_link) {
 	$project_link_html = "
-		<p><a href='$project_link'>link to project <i class='fa fa-arrow-right' aria-hidden='true'></i></a></p>
+		<p><a ,bhref='$project_link'>link to project <i class='fa fa-arrow-right' aria-hidden='true'></i></a></p>
 	";
 }
 
@@ -186,12 +186,14 @@ $page = "
 			<div class='project-sidebar mobile'>
 				<hr class='resume' style='width:10%'>
 				$sidebar
+				$project_link_html
 				$tools_html
 			</div>
 		</div>
 		<div class='desktop'>
 			<div class='project-sidebar four columns omega'>
 				$sidebar
+				$project_link_html
 				$tools_html
 			</div>
 		</div>

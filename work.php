@@ -1,24 +1,27 @@
 <?
-	require_once 'functions.php';
-	$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
-	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
-	$subhead_filter_padding="";
-	$selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
 
-	// FILTERS TURNED OFF FOR NOW
-	// $filter_list_html = get_filter_list_html($selected_filter);
+require_once 'functions.php';
+$project = (isset( $_GET["project"] ) ? $_GET["project"] : null );
+$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+$subhead_filter_padding="";
+$selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
 
-	//projects to show on the front page
-	$number_of_thumbnails = 99;
+// FILTERS TURNED OFF FOR NOW
+// $filter_list_html = get_filter_list_html($selected_filter);
 
-	if ( isset($id) ) {
-		$id_html = "?id=$id";
-	} else {
-		$id_html="";
-	}
+//projects to show on the front page
+$number_of_thumbnails = 99;
 
-	$section = "work";
+if ( isset($id) ) {
+	$id_html = "?id=$id";
+} else {
+	$id_html="";
+}
 
+$section = "work";
+
+// variable setting
+$subtitle = isset( $subtitle) ? $subtitle : null;
 
 if ( !isset($project) ) {
 	$title = "Work";
@@ -53,6 +56,18 @@ if ( isset($project) ) {
 	$works = array_values($works);
 	shuffle($works);
 }
+
+
+// AUTO GENERATE CONTENT
+$content = isset($content) ? $content : "";
+if ( isset($path)) {
+	if ($content=="") {
+		if ( file_exists("$path/$project-content.md") ) {
+			$content = markdown_exist("$path/$project-content.md");
+		}
+	}
+}
+
 
 // GRABS THE TEMPLATE FILE
 // IF THE PROJECT IS SET
