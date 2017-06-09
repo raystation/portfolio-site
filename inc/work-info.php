@@ -656,7 +656,7 @@ if ( $project == "egg-baby" ) {
 } //end egg-baby
 
 
-// #COLOR CHAMELEON
+// #COLOR#CHAMELEON
 // ===============================
 
 if ( $project == "color-chameleon" ) {
@@ -685,14 +685,14 @@ if ( $project == "color-chameleon" ) {
 
 	$img_info = array(
 	    array("file" => "title.jpg", "alt" => "Title Screen on the iPhone"),
-	    array("file" => "art.jpg", "alt" => "Color Chameleon background art"),
+	    array("file" => "02.jpg", "alt" => "Store screens"),
+	    array("file" => "01.jpg", "alt" => "3-D Version on the iPhone"),
+	    // array("file" => "art.jpg", "alt" => "Color Chameleon background art"),
+	    array("file" => "04.jpg", "alt" => "Asset Creation"),
 	    array("file" => "cham_run_eyes.gif", "alt" => "Early Sketch of Chameleon Artwork"),
 	    array("file" => "06.jpg", "alt" => "Level Concept Artwork"),
-	    array("file" => "07.jpg", "alt" => "Early 2-D Version of Color Chameleon"),
+	    // array("file" => "07.jpg", "alt" => "Early 2-D Version of Color Chameleon"),
 	    array("file" => "00.jpg", "alt" => "Different Versions of the Chameleon by Sun Park"),
-	    array("file" => "01.jpg", "alt" => "3-D Version on the iPhone"),
-	    array("file" => "02.jpg", "alt" => "Store screens"),
-	    array("file" => "04.jpg", "alt" => "Objects"),
 	    array("file" => "03.jpg", "alt" => "Rock details"),
 	    array("file" => "05.jpg", "alt" => "Character Selection by Sun Park"),
 	);

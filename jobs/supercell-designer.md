@@ -19,29 +19,29 @@ We are looking for passionate artists who want to help define and build game bra
 We want to grow, and become a beacon of artistic quality - can you help us get there?
 ###Responsibilities
 
-Art Direct & create digital marketing assets, including but not limited to: mobile featuring art, batches of digital banners and rich media on a recurring basis
-Create content for game website, social media and other multimedia venues
-Work closely with internal stakeholders and external creative partners to ensure that the visual identity is in line with the global marketing strategy
-Help to evaluate, select, and manage our roster of external creative vendors
-High understanding of digital trends and trials on new media
-Community art support
+* Art Direct & create digital marketing assets, including but not limited to: mobile featuring art, batches of digital banners and rich media on a recurring basis
+* Create content for game website, social media and other multimedia venues
+* Work closely with internal stakeholders and external creative partners to ensure that the visual identity is in * line with the global marketing strategy
+* Help to evaluate, select, and manage our roster of external creative vendors
+* High understanding of digital trends and trials on new media
+* Community art support
 
 ###Requirements
 
-Experience on a marketing art team with time spent giving clear graphic design art direction
-Strong sense of graphic design, layout, typography, UI/UX and front•end web development. Bonus if experienced in video production
-Experience giving detailed feedback and communicate direction between both internal team and external partners
-Strong understanding of marketing design and best practices for Western market
-Advanced knowledge and experience of Photoshop and Illustrator
-High understanding on web and mobile environment
-To be able to succeed, you need to be a strong team player, passionate, committed and in general an autonomous person with a high level of initiative and energy
-Game industry experience is a plus
-Online portfolio and/or demo reel is required and must be included with application
+* Experience on a marketing art team with time spent giving clear graphic design art direction
+* Strong sense of graphic design, layout, typography, UI/UX and front-end web development. Bonus if experienced in video production
+* Experience giving detailed feedback and communicate direction between both internal team and external partners
+* Strong understanding of marketing design and best practices for Western market
+* Advanced knowledge and experience of Photoshop and Illustrator
+* High understanding on web and mobile environment
+* To be able to succeed, you need to be a strong team player, passionate, committed and in general an autonomous person with a high level of initiative and energy
+* Game industry experience is a plus
+* Online portfolio and/or demo reel is required and must be included with application
 
 ###Why you'll love it here
 
-Independence and a lack of bureaucracy that clears the way for your to do the best work possible
-Awesome compensation and benefits We create great teams and take very good care of them
-Put smiles on the faces of the 100 million people who play our games every single day
-Travel to our offices in Helsinki, Seoul, Tokyo and Shanghai as well as annual company offsite meetings
-Work with kind, humble teams that inspire
+* Independence and a lack of bureaucracy that clears the way for your to do the best work possible
+* Awesome compensation and benefits We create great teams and take very good care of them
+* Put smiles on the faces of the 100 million people who play our games every single day
+* Travel to our offices in Helsinki, Seoul, Tokyo and Shanghai as well as annual company offsite meetings
+* Work with kind, humble teams that inspire
