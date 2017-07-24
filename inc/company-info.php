@@ -15,6 +15,7 @@ $copy="";
 $closing="";
 $sample_projects_array=array();
 $video_game_resume=FALSE;
+$hero_html="";
 
 $section = (isset($$section) ? $section : null );
 
@@ -29,7 +30,7 @@ switch ( $id ) {
 	case "udemy-visual-designer":
 		$short_name = "udemy-visual-designer";
 		$originaljobposting="https://boards.greenhouse.io/udemy/jobs/612179#app";
-		$hiring_company="Udemy";
+		$hiring_company ="Udemy";
 		$jobTitle="Senior Visual Designer, Brand Team";
 		$date="March 30, 2017";
 		$hiremepage = "http://rayuen.com/$short_name";
@@ -4157,7 +4158,6 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		);
 	break;
 
-
 	//EAZE-DESIGNER
 	case "eaze-designer":
 		$short_name = "eaze-designer";
@@ -5066,6 +5066,566 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		);
 	break;
 
+
+	//ART.COM GRAPHIC DESIGNER
+	case "art-com-graphic-designer":
+		$originaljobposting="http://corporate.art.com/careers/details.asp?jobID=37";
+		$hiring_company="Art.com";
+		$jobTitle="Graphic Designer";
+		$date="June 8, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$copy = "
+		I found your role through LinkedIn and wanted to pass along my info. I'm kind of a hybrid print/web guy—I've made the transition over from print and am looking for a place where I can continue working in web. I have a very good understanding of designs translate over to the web.
+		$p_break
+		 For the past two years I’ve been at edtech startup NextLesson doing branding, marketing, art production, illustration and product UI/UX. I assisted Marketing with our sales lead generation, press, product announcements, collateral, and conference artwork.
+		";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"10th-anniversary",
+				"name"=>"Pok&eacute;mon 10th Anniversary Event",
+				"desc" => "Marketing, Signage, and Collateral for an event in NYC.",
+			),
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Chronicles of Old New York",
+				"type"=>"jpg",
+				"desc"=>"Design and layout of travel books for Museyon Guides.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+
+		);
+	break;
+
+
+	//WALMART-SENIOR-GRAPHIC-DESIGNER
+	case "walmart-senior-graphic-designer":
+		$originaljobposting="https://www.indeed.com/viewjob?jk=1b3b3efb193d1c97&q=senior+designer&l=San+Francisco&tk=1bi4p8m9q159m9hn&from=ja&alid=5878011fe4b00c1dbe5dc856&utm_source=jobseeker_emails&utm_medium=email&utm_campaign=job_alerts&rgtk=1bi4p8m9q159m9hn";
+		$hiring_company="Walmart";
+		$jobTitle="Senior Graphic Designer";
+		$date="June 12, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"10th-anniversary",
+				"name"=>"Pok&eacute;mon 10th Anniversary Event",
+				"desc" => "Marketing, Signage, and Collateral for an event in NYC.",
+			),
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Chronicles of Old New York",
+				"type"=>"jpg",
+				"desc"=>"Design and layout of travel books for Museyon Guides.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+			// array(
+			// 	"path"=>"project-animore",
+			// 	"name"=>"Project Animore",
+			// 	"desc"=>"Game concept for a iOS game.",
+			// ),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+			// array(
+			// 	"path"=>"color-chameleon",
+			// 	"name"=>"Color Chameleon",
+			// 	"desc"=>"Game concept for a iOS runner.",
+			// ),
+			// array(
+			// 	"path"=>"nextlesson-characters",
+			// 	"name"=>"NextLesson Characters",
+			// 	"desc" => "A system of posable characters for covers and animation use.",
+			// ),
+			// array(
+			// 	"path"=>"storymaps",
+			// 	"name"=>"StoryMaps",
+			// 	"desc" => "Illustrations for a story building tool.",
+			// ),
+			// array(
+			// 	"path"=>"indiginauts",
+			// 	"name"=>"Indiginauts",
+			// 	"desc" => "Graphics for iOS game.",
+			// ),
+			// array(
+			// 	"path"=>"wired",
+			// 	"name"=>"Wired Magazine",
+			// 	"desc" => "illustration for an ad.",
+			// ),
+		);
+	break;
+
+
+
+	//#MOTHER-JONES-ART-DIRECTOR
+	case "mother-jones-art-director":
+		$originaljobposting="https://www.mediabistro.com/jobs/description/359221/digital-art-director/?utm_campaign=recruitics&utm_source=indeed&rx_campaign=indeed15&rx_group=100581&rx_job=359221&rx_source=Indeed&rx_medium=cpc&utm_medium=cpv";
+		$hiring_company="Mother Jones";
+		$jobTitle="Digital Art Director";
+		$date="July 8, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		// $copy = "
+		// I found your role through Mediabistro and wanted to pass along my info. I heard about your magazine through the National Magazine Award (congratulations!). I'm a designer with over 10+ years of experience, from print to digital. I'm looking for a place where I can apply my experience as well as a place where I can continue to hone my UI/UX skills.
+		// $p_break
+		//  For the past two years I’ve been at edtech startup NextLesson doing branding, marketing, art production, illustration and product UI/UX. Originally hired to make sure all our content had a cohesive and unified look, I quickly branched into the redesign of our website.
+		// ";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Chronicles of Old New York",
+				"type"=>"jpg",
+				"desc"=>"Design and layout of travel books for Museyon Guides.",
+			),
+			// array(
+			// 	"path"=>"10th-anniversary",
+			// 	"name"=>"Pok&eacute;mon 10th Anniversary Event",
+			// 	"desc" => "Marketing, Signage, and Collateral for an event in NYC.",
+			// ),
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit",
+			),
+
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+		);
+	break;
+
+
+	//#THOUSANDEYES-GRAPHIC-DESIGNER
+	case "thousandeyes-graphic-designer":
+		$originaljobposting="https://www.linkedin.com/jobs/view/385555160/";
+		$hiring_company="ThousandEyes";
+		$jobTitle="Graphic Designer";
+		$date="July 11, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$copy = "I found your posting on Linkedin and wanted to pass along my info. I'm a designer with experience in print and web, looking for a place to apply my diverse knowledge and to continue to hone my web skills.
+		$p_break
+		Most recently I worked at education startup NextLesson. As Head of Design, I worked on branding, art production, marketing, illustration and product UI/UX. As the lone creative, I helped develop the look of nextlesson.org while also helped refine the art contractor process, resulting in over 3,000 lesson covers and 5,000 student interest icons created. I also assisted Marketing in developing print collateral, trade show graphics, press releases and with sales initiatives.";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			// array(
+			// 	"path"=>"chronicles-of-old-new-york",
+			// 	"name"=>"Chronicles of Old New York",
+			// 	"type"=>"jpg",
+			// 	"desc"=>"Design and layout of travel books for Museyon Guides.",
+			// ),
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit",
+			),
+			array(
+				"path"=>"10th-anniversary",
+				"name"=>"Pok&eacute;mon 10th Anniversary Event",
+				"desc" => "Marketing, Signage, and Collateral for an event in NYC.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+		);
+	break;
+
+	//#PINTEREST-PRODUCTION-DESIGNER
+	case "pinterest-production-designer":
+		$originaljobposting="https://careers.pinterest.com/careers/details/production-designer-product-design_san-francisco_234883";
+		$hiring_company="Pinterest";
+		$jobTitle="Production Designer, Product Design";
+		$date="July 13, 2017";
+		$funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$copy = "I found your posting on Linkedin and wanted to pass along my info. I'm a designer with an  extensive history in production. Most of my experience is in print, but in the last 5 years I've made an active transition into web by learning to code and learning modern prototyping tools like Sketch. I'm looking for a place to apply my diverse knowledge and to continue to hone my web skills and I believe Pinterest could be the place to take me to the next level!
+		$p_break
+		Most recently I worked at education startup NextLesson. As Head of Design, I worked on branding, art production, marketing, illustration and product UI/UX. As the lone creative, I helped develop the look of nextlesson.org while also helping refine the art contractor production process, resulting in over 3,000 lesson covers and 5,000 student interest icons created. On our site, I helped created the look and user experience for search/browse, new educational products and overall look and branding.";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit",
+			),
+			// array(
+			// 	"path"=>"10th-anniversary",
+			// 	"name"=>"Pok&eacute;mon 10th Anniversary Event",
+			// 	"desc" => "Marketing, Signage, and Collateral for an event in NYC.",
+			// ),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Chronicles of Old New York",
+				"type"=>"jpg",
+				"desc"=>"Design and layout of travel books for Museyon Guides.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+		);
+	break;
+
+	//#EDUCATIONSUPERHIGHWAY-GRAPHIC-DESIGNER
+	case "educationsuperhighway-graphic-designer":
+		$originaljobposting="https://careers.pinterest.com/careers/details/production-designer-product-design_san-francisco_234883";
+		$hiring_company="EducationSuperHighway";
+		$jobTitle="Graphic Designer";
+		$date="July 13, 2017";
+		$funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$copy = "I found your posting on Linkedin and wanted to pass along my info. I'm a designer with over 10+ years of experience in print and web.  I'm looking for a place to continue to hone my skills as well as a place to collaborate. I recently left an education startup (I still advise for them) and absolutely loved the environment; great people and worthy goals!
+		$p_break
+		Most recently I worked at education startup NextLesson. As Head of Design, I worked on branding, art production, marketing, illustration and product UI/UX. As the lone creative, I helped develop the look of nextlesson.org while also helping refine the art contractor process, resulting in over 3,000 lesson covers and 5,000 student interest icons created. I also assisted Marketing in developing print collateral, trade show graphics, press releases and with sales initiatives.";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"10th-anniversary",
+				"name"=>"Pok&eacute;mon 10th Anniversary Event",
+				"desc" => "Marketing, Signage, and Collateral for an event in NYC.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool that informs teachers.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and standards.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Chronicles of Old New York",
+				"type"=>"jpg",
+				"desc"=>"Design and layout of travel books for Museyon Guides.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+		);
+	break;
+
+
+
+	//#DIY
+	case "diy-product-designer":
+		$originaljobposting="http://jam.applytojob.com/apply/KOqGn19vFk/Product-Designer";
+		$hiring_company="JAM / DIY";
+		$jobTitle="Product Designer";
+		$date="July 13, 2017";
+		$funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+		$hero_img = "jobs/diy-hero.jpg";
+
+		$copy = "I found your posting and wanted to apply because I'm a huge fan of your site and would love to work with y'all! I'm excited about what you do because you give kids a central resource and community to make things, something I always wanted as a kid. For the past two years I’ve been at edtech startup NextLesson doing product UI/UX, branding, art production, marketing and illustration. This position would give me the opportunity to work on a delightful product and continue to hone my user interface and product skills.
+		$p_break
+		<img src='jobs/diy-badges.png' alt='DIY Badges' class='scale-with-grid'>
+		<p class='caption' style='text-align:center'>These DIY badges basically sum up my work experience.</p>
+
+		As Head of Design at NextLesson, I worked on branding, art production, marketing, illustration and product UI/UX. As the lone creative, I helped develop the look of nextlesson.org while also helping refine the art contractor process, resulting in over 3,000 lesson covers and 5,000 student interest icons created. On our site, I helped created the look and user experience for search/browse, new educational products and the overall look and branding.";
+
+		$sample_projects_array = array(
+			// array(
+			// 	"path"=>"nl-district-landing-page",
+			// 	"name"=>"NextLesson District Landing Page",
+			// 	"desc" => "Sales tool specific for decision makers.",
+			// ),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"color-chameleon",
+				"name"=>"Color Chameleon",
+				"desc"=>"Game design, user interface and illustration for iOS game concept.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+			array(
+				"path"=>"pokemon",
+				"name"=>"Pok&eacute;mon",
+				"desc" => "Work done at Pok&eacute;mon.",
+			),
+			array(
+				"path"=>"monkey-mo",
+				"name"=>"Monkey Mo, Monkey Go!",
+				"desc"=>"Illustration for a children's book.",
+			),
+		);
+	break;
+
+	//#DIY
+	case "science-exchange-designer":
+		$originaljobposting = "https://jobs.lever.co/scienceexchange/3f11b9d0-5980-489f-8268-55cc737e8470";
+		$hiring_company = "Science Exchange";
+		$jobTitle = "Designer";
+		$date = "July 18, 2017";
+		$funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"pokemon",
+				"name"=>"Pok&eacute;mon",
+				"desc" => "Work done at Pok&eacute;mon.",
+			),
+
+		);
+	break;
+
+	//#BIO-RAD-SENIOR-GRAPHIC-DESIGNER
+	case "bio-rad-senior-graphic-designer":
+		$originaljobposting = "https://biorad-openhire.silkroad.com/epostings/index.cfm?fuseaction=app.jobinfo&jobid=11011&source=ONLINE&JobOwner=995276&company_id=16446&version=1&byBusinessUnit=NULL&bycountry=0&bystate=0&byRegion=&bylocation=&keywords=designer&byCat=&proximityCountry=&postalCode=&radiusDistance=&isKilometers=&tosearch=yes&city=";
+		$hiring_company = "Bio-Rad";
+		$jobTitle = "Senior Graphic Designer";
+		$date = "July 18, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"pokemon",
+				"name"=>"Pok&eacute;mon",
+				"desc" => "Work done at Pok&eacute;mon.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit",
+			),
+			// array(
+			// 	"path"=>"nextlesson-glossary",
+			// 	"name"=>"NextLesson Glossary Terms",
+			// 	"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			// ),
+		);
+	break;
+
+	//#ALTSCHOOL-SR-PRODUCT-DESIGNER
+	case "altschool-sr-product-designer":
+		$originaljobposting = "https://www.altschool.com/about/job?gh_jid=214741";
+		$hiring_company = "AltSchool";
+		$jobTitle = "Sr. Product Designer";
+		$date = "July 19, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"pokemon",
+				"name"=>"Pok&eacute;mon",
+				"desc" => "Work done at Pok&eacute;mon.",
+			),
+			array(
+				"path"=>"museyon-guides",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+		);
+	break;
 
 
 }

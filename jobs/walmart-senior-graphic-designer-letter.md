@@ -1,0 +1,4 @@
+
+I saw your posting and wanted to pass along my information. I'm a graphic designer with over 10+ years of creative experience working in marketing, gaming, and most recently education.
+
+A little about me—for the past two years I’ve been at edtech startup NextLesson. The work was about 60% marketing, branding, art production and about 40% product UI & UX. While I was there, we rebranded the site, launched two new products, and I was responsible for 2,000+ lesson covers and 5,000+ interest icons. I assisted marketing with collateral design, conference artwork, lead generation from emails and blogs, and overall branding/messaging. While I truly enjoyed my time there, I think I am ready for a little more stability and a bigger team.

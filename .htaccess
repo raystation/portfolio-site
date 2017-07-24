@@ -68,6 +68,8 @@ RewriteRule ^holiday-card-2014$ work?project=holiday-card-2014
 RewriteRule ^adelle-marcero$ work?project=adelle-marcero
 RewriteRule ^inktober-2016$ work?project=inktober-2016
 
+RewriteRule ^supercell-art-test$ work?project=supercell-art-test
+
 RewriteRule ^nextlesson$ work?project=nextlesson
 RewriteRule ^nextlesson-covers$ work?project=nextlesson-covers
 RewriteRule ^nextlesson-interestid$ work?project=nextlesson-interestid

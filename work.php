@@ -20,6 +20,10 @@ if ( isset($id) ) {
 
 $section = "work";
 
+// if ( $project ) {
+// 	$path = "img/$project";
+// }
+
 // variable setting
 $subtitle = isset( $subtitle) ? $subtitle : null;
 
@@ -30,6 +34,14 @@ if ( !isset($project) ) {
 }
 
 include('inc/header.php');
+
+// Looks for project text variable file
+if ( isset($project) && file_exists("$path/$project.php") ) {
+	include "$path/$project.php";
+}
+// else {
+// 	// echo "$path/$project.php does not exist.";
+// }
 
 // if (isset($title)) {
 // 	foreach ($works as $key => $work) {
@@ -68,6 +80,8 @@ if ( isset($path)) {
 	}
 }
 
+// ========================
+// DEFAULT VIEW (based on on view template)
 
 // GRABS THE TEMPLATE FILE
 // IF THE PROJECT IS SET
@@ -87,6 +101,7 @@ if ( isset($project) ) {
 // TODO: have thumbnails not print on company page or consolidate
 
 //produces thumbnails for homepage and below the projects
+
 
 if ( !isset($template) ) {
 	// DEFAULT VIEW
@@ -108,7 +123,17 @@ if ( !isset($template) ) {
 
 	// echo "// <div class='sixteen columns'> // 	<h2>Selected Works</h2> // </div>";
 	// skeleton_print_thumbnail_4($works);
-	full_thumbnail($works);
+
+	// filter out the projects we don't want to output on the default view
+	$selected_works=array();
+	foreach ($works as $key => $work) {
+		if ($work['work-display']==true) {
+			$selected_works[]=$work;
+		}
+	}
+	// var_dump($selected_works);
+	full_thumbnail($selected_works);
+	// full_thumbnail($works);
 }
 elseif ($template=="company") {
 	echo "
