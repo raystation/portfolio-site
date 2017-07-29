@@ -945,15 +945,15 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	// }
 }
 .subhead-padding {
-	padding-top: 10px;
+	padding-top: 35px;
 	@media #{$md}{
 		// padding-top: 10px;
 	}
 }
-.subhead-filter-padding {
-	padding-top: 40px;
-	@media #{$md}{}
-}
+// .subhead-filter-padding {
+// 	padding-top: 120px !important;
+// 	@media #{$md}{}
+// }
 // FLEX
 .full-thumbnails {
 	display: flex;

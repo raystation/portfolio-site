@@ -5477,7 +5477,7 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		);
 	break;
 
-	//#DIY
+	//#SCIENCE-EXCHANGE-DESIGNER
 	case "science-exchange-designer":
 		$originaljobposting = "https://jobs.lever.co/scienceexchange/3f11b9d0-5980-489f-8268-55cc737e8470";
 		$hiring_company = "Science Exchange";
@@ -5627,6 +5627,728 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		);
 	break;
 
+//#TAPJOY-WEB-CONTENT-DEVELOPER-DESIGNER
+	case "tapjoy-web-content-developer-designer":
+		$originaljobposting = "https://www.linkedin.com/jobs/view/381613166";
+		$hiring_company = "Tapjoy";
+		$jobTitle = "Web Content Developer/Designer";
+		$date = "July 25, 2017";
+		$funny_portrait = TRUE;
+		$video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"desc" => "Design of a conference booth and supplemental materials.",
+			),
+			array(
+				"path"=>"supercell-art-test",
+				"name"=>"Supercell",
+				"desc" => "Art test for a marketing job.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit",
+			),
+			// array(
+			// 	"path"=>"museyon-guides",
+			// 	"name"=>"Museyon Guides",
+			// 	"desc" => "Design and layout of travel guides.",
+			// ),
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"pokemon",
+				"name"=>"Pok&eacute;mon",
+				"desc" => "Work done at Pok&eacute;mon.",
+			),
+			// array(
+			// 	"path"=>"nextlesson-glossary",
+			// 	"name"=>"NextLesson Glossary Terms",
+			// 	"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			// ),
+		);
+	break;
+
+
+//#CRUNCHYROLL-GRAPHIC-DESIGNER
+	case "crunchyroll-graphic-designer":
+		$originaljobposting = "https://www.linkedin.com/jobs/view/401501047/";
+		$hiring_company = "Crunchyroll";
+		$jobTitle = "Graphic Designer";
+		$date = "July 25, 2017";
+		$funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"desc" => "Design of a conference booth and supplemental materials.",
+			),
+			// array(
+			// 	"path"=>"nextlesson-marketing",
+			// 	"name"=>"NextLesson Marketing",
+			// 	"desc"=>"some examples of Marketing pieces",
+			// ),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			array(
+				"path"=>"darkrai",
+				"name"=>"The Rise of Darkrai",
+				"desc" => "Movie release.",
+			),
+			array(
+				"path"=>"pokemon-logos",
+				"name"=>"Pok&eacute;mon logos",
+				"desc" => "Logos I developed for various properties.",
+			),
+			array(
+				"path"=>"supercell-art-test",
+				"name"=>"Supercell",
+				"desc" => "Art test for a marketing job.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit.",
+			),
+			// array(
+			// 	"path"=>"nl-district-landing-page",
+			// 	"name"=>"NextLesson District Landing Page",
+			// 	"desc" => "Sales tool specific for decision makers.",
+			// ),
+			// array(
+			// 	"path"=>"pokemon",
+			// 	"name"=>"Pok&eacute;mon",
+			// 	"desc" => "Work done at Pok&eacute;mon.",
+			// ),
+			// array(
+			// 	"path"=>"nextlesson-glossary",
+			// 	"name"=>"NextLesson Glossary Terms",
+			// 	"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			// ),
+		);
+	break;
+
+//#MEGABOTS-CREATIVE-DIRECTOR
+	case "megabots-creative-director":
+		$originaljobposting = "https://www.megabots.com/careers/f69a412a-2a62-46ec-bd90-022bfce66e03";
+		$hiring_company = "MegaBots";
+		$jobTitle = "Creative Director";
+		$date = "July 25, 2017";
+		$funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"desc" => "Design of a conference booth and supplemental materials.",
+			),
+			// array(
+			// 	"path"=>"chronicles-of-old-new-york",
+			// 	"name"=>"Museyon Guides",
+			// 	"desc" => "Design and layout of travel guides.",
+			// ),
+			array(
+				"path"=>"darkrai",
+				"name"=>"The Rise of Darkrai",
+				"desc" => "Movie release.",
+			),
+			array(
+				"path"=>"color-chameleon",
+				"name"=>"Color Chameleon",
+				"desc"=>"Game concept for a iOS runner.",
+			),
+			array(
+				"path"=>"project-animore",
+				"name"=>"Project Animore",
+				"desc"=>"Game concept for a iOS game.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"Some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"pokemon-logos",
+				"name"=>"Pok&eacute;mon logos",
+				"desc" => "Logos I developed for various properties.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"supercell-art-test",
+				"name"=>"Supercell",
+				"desc" => "Art test for a marketing job.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit.",
+			),
+			// array(
+			// 	"path"=>"nl-district-landing-page",
+			// 	"name"=>"NextLesson District Landing Page",
+			// 	"desc" => "Sales tool specific for decision makers.",
+			// ),
+			// array(
+			// 	"path"=>"pokemon",
+			// 	"name"=>"Pok&eacute;mon",
+			// 	"desc" => "Work done at Pok&eacute;mon.",
+			// ),
+			// array(
+			// 	"path"=>"nextlesson-glossary",
+			// 	"name"=>"NextLesson Glossary Terms",
+			// 	"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			// ),
+		);
+	break;
+
+
+//#AUTODESK-VISUAL-DESIGNER
+	case "autodesk-visual-designer":
+		$originaljobposting = "https://autodesk.taleo.net/careersection/adsk_gen/jobdetail.ftl?job=17WD23577";
+		$hiring_company = "Autodesk";
+		$jobTitle = "Visual Designer";
+		$date = "July 25, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"color-chameleon",
+				"name"=>"Color Chameleon",
+				"desc"=>"Game concept for a iOS runner.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"supercell-art-test",
+				"name"=>"Supercell",
+				"desc" => "Art test for a marketing job.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit.",
+			),
+			array(
+				"path"=>"pokemon",
+				"name"=>"Pok&eacute;mon",
+				"desc" => "Work I did at Pok&eacute;mon",
+			),
+		);
+	break;
+
+
+//#BAMBOO-ART-DIRECTOR
+	case "globalimagefactory":
+		// $originaljobposting = "https://autodesk.taleo.net/careersection/adsk_gen/jobdetail.ftl?job=17WD23577";
+		$hiring_company = "Bamboo";
+		$jobTitle = "Art Director";
+		$date = "July 25, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$copy="What's up!";
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"nextlesson-glossary",
+				"name"=>"NextLesson Glossary Terms",
+				"desc" => "Design of Interactive Learning Tool and Graphics for glossary terms.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"pokemon",
+				"name"=>"Pok&eacute;mon",
+				"desc" => "Work I did at Pok&eacute;mon",
+			),
+			array(
+				"path"=>"the-3",
+				"name"=>"The 3",
+				"desc"=>"Trivia game for iOS.",
+			),
+
+			array(
+				"path"=>"color-chameleon",
+				"name"=>"Color Chameleon",
+				"desc"=>"Game concept for a iOS runner.",
+			),
+			array(
+				"path"=>"supercell-art-test",
+				"name"=>"Supercell",
+				"desc" => "Art test for a marketing job.",
+			),
+			// array(
+			// 	"path"=>"abriendo-puertas",
+			// 	"name"=>"Abriendo Puertas",
+			// 	"desc"=>"Informational site for a non-profit.",
+			// ),
+		);
+	break;
+
+
+
+//#BRANDLESS-DESIGNER
+	case "brandless-designer":
+		// $originaljobposting = "https://autodesk.taleo.net/careersection/adsk_gen/jobdetail.ftl?job=17WD23577";
+		$hiring_company = "Brandless";
+		$jobTitle = "Graphic Designer";
+		$date = "July 25, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			// array(
+			// 	"path"=>"pokemon",
+			// 	"name"=>"Pok&eacute;mon",
+			// 	"desc" => "Work I did at Pok&eacute;mon",
+			// ),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"Some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			array(
+				"path"=>"supercell-art-test",
+				"name"=>"Supercell",
+				"desc" => "Art test for a marketing job.",
+			),
+		);
+	break;
+
+//#YELP-GRAPHIC-DESIGNER-MARKETING
+	case "yelp-graphic-designer-marketing":
+		$originaljobposting = "https://www.linkedin.com/jobs/view/334632821";
+		$hiring_company = "Yelp";
+		$jobTitle = "Graphic Designer - Marketing";
+		$date = "July 26, 2017";
+		$funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"Some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"supercell-art-test",
+				"name"=>"Supercell",
+				"desc" => "Art test for a marketing job.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+		);
+	break;
+
+//#AUTODESK-TECHNICAL-DESIGNER
+	case "autodesk-technical-designer":
+		$originaljobposting = "https://autodesk.taleo.net/careersection/adsk_gen/jobdetail.ftl?job=17WD23995";
+		$hiring_company = "Autodesk";
+		$jobTitle = "Technical Designer";
+		$date = "July 26, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			// array(
+			// 	"path"=>"nextlesson-marketing",
+			// 	"name"=>"NextLesson Marketing",
+			// 	"desc"=>"Some examples of Marketing pieces",
+			// ),
+			// array(
+			// 	"path"=>"nl-district-landing-page",
+			// 	"name"=>"NextLesson District Landing Page",
+			// 	"desc" => "Sales tool specific for decision makers.",
+			// ),
+			// array(
+			// 	"path"=>"supercell-art-test",
+			// 	"name"=>"Supercell",
+			// 	"desc" => "Art test for a marketing job.",
+			// ),
+			// array(
+			// 	"path"=>"toy-fair",
+			// 	"name"=>"Pok&eacute;mon Toy Fair",
+			// 	"type"=>"jpg",
+			// 	"desc" => "Branding, Conference Booth Design and Collateral.",
+			// ),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			array(
+				"path"=>"monkey-mo",
+				"name"=>"Monkey Mo, Monkey Go",
+				"desc" => "Design, layout and illstration of children's book.",
+			),
+			array(
+				"path"=>"100-principles-of-game-design",
+				"name"=>"100 Principles Of Game Design",
+				"desc" => "Illustrations for a video game book.",
+			),
+			array(
+				"path"=>"pokemon",
+				"name"=>"Pok&eacute;mon",
+				"desc" => "Work I did at Pok&eacute;mon",
+			),
+
+		);
+	break;
+
+//#AI-RESUME-ARTIST-ILLUSTRATOR-AND-GRAPHIC-DESIGNER
+	case "ai-resume-artist-illustrator-and-graphic-designer":
+		$originaljobposting = "https://autodesk.taleo.net/careersection/adsk_gen/jobdetail.ftl?job=17WD23995";
+		$hiring_company = "A.I. Resume";
+		$jobTitle = "Artist, Illustrator and Graphic Designer";
+		$date = "July 28, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			array(
+				"path"=>"the-3",
+				"name"=>"The 3",
+				"desc"=>"Trivia game for iOS.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"Some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"supercell-art-test",
+				"name"=>"Supercell",
+				"desc" => "Art test for a marketing job.",
+			),
+		);
+	break;
+
+//#BAY-ORG-LEAD-GRAPHIC-AND-WEBSITE-DESIGNER
+	case "bay-org-lead-graphic-and-website-designer":
+		$originaljobposting = "https://www.linkedin.com/jobs/view/359424313/";
+		$hiring_company = "Bay.org";
+		$jobTitle = "Lead Graphic and Website Designer";
+		$date = "July 28, 2017";
+		$name = "Laura Canaya";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"Some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			// array(
+			// 	"path"=>"the-3",
+			// 	"name"=>"The 3",
+			// 	"desc"=>"Trivia game for iOS.",
+			// ),
+			// array(
+			// 	"path"=>"supercell-art-test",
+			// 	"name"=>"Supercell",
+			// 	"desc" => "Art test for a marketing job.",
+			// ),
+		);
+	break;
+
+//#SAVE-THE-BAY-GRAPHIC-AND-WEBSITE-DESIGN-MANAGER
+	case "save-the-bay-graphic-and-website-design-manager":
+		$originaljobposting = "https://www.indeed.com/viewjob?jk=109828b23b095f7f";
+		$hiring_company = "Save The Bay";
+		$jobTitle = "Graphic & Website Design Manager";
+		$date = "July 28, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"Some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			// array(
+			// 	"path"=>"the-3",
+			// 	"name"=>"The 3",
+			// 	"desc"=>"Trivia game for iOS.",
+			// ),
+			// array(
+			// 	"path"=>"supercell-art-test",
+			// 	"name"=>"Supercell",
+			// 	"desc" => "Art test for a marketing job.",
+			// ),
+		);
+	break;
+
+//#INSTAPAGE-SENIOR-GRAPHIC-VISUAL-DESIGNER
+	case "instapage-senior-graphic-visual-designer":
+		$originaljobposting = "https://instapage.workable.com/jobs/334345";
+		$hiring_company = "Instapage";
+		$jobTitle = "Senior Graphic / Visual Designer";
+		$date = "July 28, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"Some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			// array(
+			// 	"path"=>"the-3",
+			// 	"name"=>"The 3",
+			// 	"desc"=>"Trivia game for iOS.",
+			// ),
+			array(
+				"path"=>"supercell-art-test",
+				"name"=>"Supercell",
+				"desc" => "Art test for a marketing job.",
+			),
+		);
+	break;
+
 
 }
 
@@ -5637,13 +6359,15 @@ if ( $hiremepage=="" ) {
 	$hiremepage="http://rayuen.com/lets-talk?id=$short_name";
 }
 if ( $copy=="" ) {
-	$copy = markdown_exist("jobs/$short_name-letter.md");
+	if ( $copy = markdown_exist("jobs/$short_name-letter.md") ) {
+		$copy = markdown_exist("jobs/$short_name-letter.md");
+	} else {
+		$copy = markdown_exist("jobs/$short_name.md");
+	}
+	// $copy = markdown_exist("jobs/$short_name-letter.md");
 }
 if ( $job_details=="" ) {
 	$job_details = markdown_exist("jobs/$short_name.md");
-}
-if ( $video_game_resume == true && $section=="cover-letter" ) {
-	$video_game_resume_html = get_video_game_resume();
 }
 
 // ========================

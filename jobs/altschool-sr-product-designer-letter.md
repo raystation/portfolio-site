@@ -2,11 +2,11 @@
 
 
 
-I saw this on your site and I hope you will consider me for this position! I was particularly interested in seeing a position open at Altschool after hearing my coworkers speak very highly of you after an informational meeting (I used to work for NextLesson; currently advise for them). Education is a worthy goal, work I personally find a lot of satisfaction in. I really like UX, but I don't have a lot of interest in researching different buttons colors to increase click rates.
+I saw this on your site and I hope you will consider me for this position! I was particularly interested in seeing a position open at Altschool after hearing my coworkers speak very highly of you after an informational meeting (I used to work for NextLesson; currently advise for them). Education is a worthy goal, work I personally find a lot of satisfaction in. I want to help build meaningful and useful products that inform and delight.
 
-As you will see from my resume, I have design experience in branding, production, marketing, pre-press, and web development, mostly from working at in-house creative departments. Most recently, I’ve been at edtech startup NextLesson doing branding, art production, marketing, product UI/UX, and illustration. Though my work was mainly to produce artworks for the content on our site and to assist marketing with lead generation, I quickly asserted myself in product user interface and experience. I found myself gravitating more and more toward UI/UX and making prototypes, which is one of the main reasons I am inquiring about this position.
+As you will see from my resume, I have design experience in branding, production, marketing, pre-press, and web development, mostly from working at in-house creative departments. More recently, I’ve been at edtech startup NextLesson doing branding, art production, marketing, product UI/UX, and illustration. Though my work was concentrated in producing artworks for the content on our site and to assist marketing with lead generation, I quickly asserted myself in product user interface and experience. I found myself gravitating more and more toward UI/UX and making prototypes, which is one of the main reasons I am inquiring about this position.
 
-Additionally, in an effort to make myself more versatile, I've been developing coding skills<span class='tooltip' title='HTML, CSS, JS/JQ, some PHP'>*</span> to refine production techiques, better interact with user experience designers and software engineers, and be able to create clickable mockups for user feedback.
+Additionally, in an effort to make myself more versatile, I've  developed coding skills<span class='tooltip' title='HTML, CSS, JS/JQ, some PHP'>*</span> which I have used to refine production techniques, better interact with user experience designers and software engineers, and to be able to create clickable mockups for user feedback.
 
 <!--
 #Sr. Product Designer

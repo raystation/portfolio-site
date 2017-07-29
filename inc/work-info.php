@@ -9,25 +9,25 @@ if ( $project ) {
 
 $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") , "work-display"=>false),
-	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("ui-ux","illustration","web-dev") , "work-display"=>true),
-	array( "name" => "NextLesson Admin Landing Page","path" => "nl-district-landing-page","tags"=>array("ui-ux","web-dev") , "work-display"=>false),
-	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("illustration","ui-ux","branding","web-dev") , "work-display"=>true),
-	array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing","tags"=>array("marketing"), "work-display"=>true),
+	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("ui-ux","illustration","web") , "work-display"=>true),
+	array( "name" => "NextLesson Admin Landing Page","path" => "nl-district-landing-page","tags"=>array("ui-ux","web") , "work-display"=>false),
+	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("illustration","ui-ux","marketing-branding","web") , "work-display"=>true),
+	array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing","tags"=>array("marketing-branding"), "work-display"=>true),
 	array( "name" => "NextLesson Glossary Images", "path" => "nextlesson-glossary", "tags"=>array("illustration") , "work-display"=>true),
 	array( "name" => "NextLesson Characters", "path" => "nextlesson-characters", "tags"=>array("illustration") , "work-display"=>true),
 	// array( "name" => "NextLesson Interactive","path" => "nextlesson-interactive" , "work-display"=>false),
-	array( "name" => "Supercell Art Test","path" => "supercell-art-test" , "work-display"=>false),
+	array( "name" => "Supercell Art Test","path" => "supercell-art-test" , "tags"=>array("marketing-branding"), "work-display"=>false),
 	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars" , "work-display"=>false),
 	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library" , "work-display"=>false),
 	// array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-browse" , "work-display"=>false),
 	array( "name" => "Museyon Guides", "path" => "museyon-guides", "tags"=>array("places-i-worked") , "work-display"=>false),
-	array( "name" => "The Pok&eacute;mon Company", "path" => "pokemon","tags"=>array("places-i-worked") , "work-display"=>false),
-	array( "name" => "Abriendo Puertas / Opening Doors", "path" => "abriendo-puertas",	"tags"=>array("web-dev","branding") , "work-display"=>true),
-	array( "name" => "Adelle Marcero", "path" => "adelle-marcero","tags"=>array("web-dev", "ui-ux") , "work-display"=>true),
+	array( "name" => "The Pok&eacute;mon Company", "path" => "pokemon","tags"=>array("places-i-worked") , "work-display"=>true),
+	array( "name" => "Abriendo Puertas / Opening Doors", "path" => "abriendo-puertas",	"tags"=>array("web","marketing-branding") , "work-display"=>true),
+	array( "name" => "Adelle Marcero", "path" => "adelle-marcero","tags"=>array("web", "ui-ux") , "work-display"=>true),
 	array( "name" => "The 3", "path" => "the-3", "tags"=>array("ui-ux") , "work-display"=>true),
 	array( "name" => "Wired", "path" => "wired", "tags" => array("illustration") , "work-display"=>true),
 	array( "name" => "Suspended Belief Studios", "path" => "suspended-belief-studios", "tags" => array("places-i-worked") , "work-display"=>false),
-	array( "name" => "Malado Baldwin", "path" => "malado-baldwin", "tags"=>array("web-dev") , "work-display"=>true),
+	array( "name" => "Malado Baldwin", "path" => "malado-baldwin", "tags"=>array("web") , "work-display"=>true),
 	array( "name" => "City Style","path" => "city-style","tags"=>array("print-design"), "work-display"=>true),
 	array( "name" => "Chronicles of Old New York", "path" => "chronicles-of-old-new-york", "tags"=>array("print-design") , "work-display"=>true),
 	array( "name" => "Chronicles of Old Las Vegas","path" => "chronicles-of-old-las-vegas","tags"=>array("print-design"), "work-display"=>false),
@@ -36,27 +36,27 @@ $works = array(
 	array( "name" => "Chronicles of Old London", "path" => "chronicles-of-old-london", "tags"=>array("print-design"), "work-display"=>false),
 	array( "name" => "Art + Paris","path" => "art-and-paris","tags"=>array("print-design"), "work-display"=>true),
 	array( "name" => "Chronicles of Old Rome","path" => "chronicles-of-old-rome","tags"=>array("print-design"), "work-display"=>false),
-	array( "name" => "The Rise of Darkrai","path" => "darkrai", "tags"=>array("print-design","ui-ux","marketing") , "work-display"=>false),
-	array( "name" => "Arceus and the Jewel of Life","path" => "arceus", "tags"=>array("print-design","ui-ux","marketing") , "work-display"=>false),
-	array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop", "path" => "feature-shop", "tags"=>array("print-design","marketing") , "work-display"=>false),
-	array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos", "tags"=>array("print-design","branding") , "work-display"=>false),
-	array( "name" => "Pok&eacute;mon: 10th Anniversary","path" => "10th-anniversary","tags"=>array("print-design","branding","marketing") , "work-display"=>false),
+	array( "name" => "The Rise of Darkrai","path" => "darkrai", "tags"=>array("print-design","ui-ux","marketing-branding") , "work-display"=>false),
+	array( "name" => "Arceus and the Jewel of Life","path" => "arceus", "tags"=>array("print-design","ui-ux","marketing-branding") , "work-display"=>false),
+	array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop", "path" => "feature-shop", "tags"=>array("print-design","marketing-branding") , "work-display"=>false),
+	array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos", "tags"=>array("print-design","marketing-branding") , "work-display"=>false),
+	array( "name" => "Pok&eacute;mon: 10th Anniversary","path" => "10th-anniversary","tags"=>array("print-design","marketing-branding") , "work-display"=>false),
 	array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon", "tags"=>array("print-design") , "work-display"=>false),
 	array( "name" => "Battle Revolution", "path" => "battle-revolution", "tags"=>array("print-design","ui-ux") , "work-display"=>false),
 	array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex", "tags"=>array("print-design") , "work-display"=>false),
-	array( "name" => "Pok&eacute;mon Toy Fair", "path" => "toy-fair", "tags"=>array("print-design","branding","marketing") , "work-display"=>false),
-	array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch", "tags"=>array("print-design","branding","marketing") , "work-display"=>false),
-	array( "name" => "Licensing Show", "path" => "licensing-show", "tags"=>array("print-design","branding","marketing") , "work-display"=>false),
+	array( "name" => "Pok&eacute;mon Toy Fair", "path" => "toy-fair", "tags"=>array("print-design","marketing-branding",) , "work-display"=>false),
+	array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch", "tags"=>array("print-design","marketing-branding",) , "work-display"=>false),
+	array( "name" => "Licensing Show", "path" => "licensing-show", "tags"=>array("print-design","marketing-branding") , "work-display"=>false),
 	array( "name" => "Indiginauts", "path" => "indiginauts", "tags" => array("illustration","ui-ux") , "work-display"=>true),
 	array( "name" => "Color Chameleon", "path" => "color-chameleon", "tags" => array("illustration","ui-ux") , "work-display"=>true),
-	array( "name" => "LesConcierges","path" => "lesconcierges", "tags" => array("illustration","marketing") , "work-display"=>false),
+	array( "name" => "LesConcierges","path" => "lesconcierges", "tags" => array("illustration","marketing-branding") , "work-display"=>false),
 	array( "name" => "Project Animore", "path" => "project-animore", "tags" => array("illustration","ui-ux") , "work-display"=>true),
 	array( "name" => "#Inktober2016","path" => "inktober-2016", "tags" => array("illustration") , "work-display"=>false),
 	array( "name" => "100 Principles of Game Design", "path" => "100-principles-of-game-design", "tags" => array("illustration") , "work-display"=>true),
-	array( "name" => "Holiday Card 2014", "path" => "holiday-card-2014", "tags" => array("web-dev","illustration") , "work-display"=>false),
+	array( "name" => "Holiday Card 2014", "path" => "holiday-card-2014", "tags" => array("web","illustration") , "work-display"=>false),
 	array( "name" => "Monkey Mo, Monkey Go!", "path" => "monkey-mo", "tags" => array("illustration", "print-design") , "work-display"=>true),
-	array( "name" => "Scavenger Hunt", "path" => "scavenger-hunt", "tags" => array("illustration") , "work-display"=>false),
-	array( "name" => "Sarah Walko", "path" => "sarah-walko", "tags"=>array("web-dev") , "work-display"=>true),
+	array( "name" => "Scavenger Hunt", "path" => "scavenger-hunt", "tags" => array("illustration") , "work-display"=>true),
+	array( "name" => "Sarah Walko", "path" => "sarah-walko", "tags"=>array("web") , "work-display"=>true),
 	array( "name" => "Edgeware", "path" => "edgeware", "tags"=>array("illustration") , "work-display"=>false),
 	array( "name" => "StoryMaps", "path" => "storymaps", "tags" => array("illustration") , "work-display"=>true),
 	array( "name" => "Egg Baby", "path" => "egg-baby", "tags" => array("illustration") , "work-display"=>false),
@@ -1797,8 +1797,11 @@ if ( $project == "nextlesson-covers" ) {
 		My first big task at NextLesson! These original covers were made with no template by the authors so results varied wildly. Logo placement was inconsistent, random typefaces and graphic elements were pulled from various Internet sources, and all seemed similar regardless of age group.
 		";
 	$content="
+		<img src='$path/title-image.jpg' srcset='$path/title-image-hd.jpg 2x' alt='The redesigned covers'>
+		<div class='caption'>After: examples of current lesson covers</div>
+
 		<img src='$path/original-covers.jpg' srcset='$path/original-covers-hd.jpg 2x' alt='Original Covers'>
-		<div class='caption'>Lesson Covers 2014</div>
+		<div class='caption'>Before: the original lesson covers in 2014</div>
 		<p>
 		Before I could start churning out covers, I needed to make sure a consistent design was in place. The first step, to facilitate faster browsing and scanning, was to make sure the same information always appeared in the same spot. We identified three signifiers that would always be visible and clear—subject, type of learning material and grade level.
 		</p>

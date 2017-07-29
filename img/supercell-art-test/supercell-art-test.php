@@ -10,6 +10,9 @@ $description = "
   Supercell is a video game company, known for their games <em>Clash of the Clans</em>, <em>Boom Beach</em>, and <em>Clash Royale</em>.
 ";
 $content="
+<img src='$path/mockup.jpg' alt='mockup' class='img-diagram  scale-with-grid'>
+<p class='caption'>Mockup of ad on a video game news site</p>
+
 <div class='img-para-50'><img src='$path/box-640x960-a.png' alt='(640x960) Inside the Box - Option A' /><div class='caption'>(640x960) Inside the Box - Option A</div></div>
 <div class='img-para-50'><img src='$path/box-640x960-b.png' alt='(640x960) Inside the Box - Option B' /><div class='caption'>(640x960) Inside the Box - Option B</div></div>
 <div class='img-para-50'><img src='$path/outside-640x960-a.png' alt='(640x960) Outside the Box - Option A' /><div class='caption'>(640x960) Outside the Box - Option A</div></div>

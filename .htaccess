@@ -13,9 +13,10 @@ RewriteRule ^jobs$ about?id=jobs
 
 RewriteRule ^illustration$ work?f=illustration
 RewriteRule ^ui-ux$ work?f=ui-ux
-RewriteRule ^web-dev$ work?f=web-dev
+RewriteRule ^web$ work?f=web
 RewriteRule ^print-design$ work?f=print-design
 RewriteRule ^branding$ work?f=branding
+RewriteRule ^marketing-branding$ work?f=marketing-branding
 RewriteRule ^places-i-worked$ work?f=places-i-worked
 
 RewriteRule ^pokemon$ work?project=pokemon
@@ -109,5 +110,6 @@ RewriteRule ^bay-area-discovery-museum-graphic-designer$ hire-me?id=bay-area-dis
 RewriteRule ^expensify-sf-designer$ hire-me?id=expensify-sf-designer
 RewriteRule ^sun-run-ui$ hire-me?id=sun-run-ui
 RewriteRule ^sunrun-ui$ hire-me?id=sun-run-ui
+RewriteRule ^globalimagefactory$ hire-me?id=globalimagefactory
 
 RewriteRule ^holiday2014$ http://www.rayuen.com/p/holiday-card/holiday

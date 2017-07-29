@@ -681,7 +681,9 @@ function flex_tiles($thumbnail_size="medium",$path,$folder="additional_img") {
   return $html;
 }
 function return_filtered_array_by_term( $array, $term ){
+
   $filtered_array="";
+
   foreach ($array as $key => $array_item) {
     $tags = $array_item['tags'];
     foreach ($tags as $key => $tag) {

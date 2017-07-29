@@ -7,7 +7,7 @@ $subhead_filter_padding="";
 $selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
 
 // FILTERS TURNED OFF FOR NOW
-// $filter_list_html = get_filter_list_html($selected_filter);
+$filter_list_html = get_filter_list_html($selected_filter);
 
 //projects to show on the front page
 $number_of_thumbnails = 99;
@@ -106,34 +106,37 @@ if ( isset($project) ) {
 if ( !isset($template) ) {
 	// DEFAULT VIEW
 
-	if (isset($section)) {
-		if ( $section=="work" && $id ) {
-			$subhead_filter_padding = " subhead-filter-padding";
-		}
-	}
+	// if (isset($section)) {
+	// 	if ( $section=="work" && $id ) {
+	// 		$subhead_filter_padding = " subhead-filter-padding";
+	// 	}
+	// }
 
-	// FILTERS TURNED OFF FOR NOW
-	// echo "
-	// 	<div class='desktop'>
-	// 		<div class='filters $subhead_filter_padding'>
-	// 			$filter_list_html
-	// 		</div>
-	// 	</div>
-	// ";
+	// FILTERS: DESKTOP TOP
+	echo "
+
+		<div class='filters'>
+			$filter_list_html
+		</div>
+	";
 
 	// echo "// <div class='sixteen columns'> // 	<h2>Selected Works</h2> // </div>";
 	// skeleton_print_thumbnail_4($works);
 
 	// filter out the projects we don't want to output on the default view
-	$selected_works=array();
-	foreach ($works as $key => $work) {
-		if ($work['work-display']==true) {
-			$selected_works[]=$work;
+	if (!isset($selected_filter)) {
+		$selected_works=array();
+		foreach ($works as $key => $work) {
+			if ($work['work-display']==true) {
+				$selected_works[]=$work;
+			}
 		}
+		full_thumbnail($selected_works);
+	} else {
+		full_thumbnail($works);
 	}
+
 	// var_dump($selected_works);
-	full_thumbnail($selected_works);
-	// full_thumbnail($works);
 }
 elseif ($template=="company") {
 	echo "
@@ -205,43 +208,6 @@ else {
 			}
 		}
 		skeleton_print_thumbnail_4($related_projects_by_tag,0,"Related Projects");
-
-		// while ( $related_projects_count <= $project_count ) {
-		// 	$same_tags_array = array_intersect( $current_project_tags, $works[$x]["tags"] );
-
-		// 	$temp_title = $works[$x]["path"];
-		// 	if ($same_tags_array) {
-		// 		// var_dump($same_tags_array);
-		// 		echo "$x: $temp_title - match ";
-		// 		foreach ($same_tags_array as $key => $tag) {
-		// 			echo "[$tag] ";
-		// 			if (!in_array($works[$x], $related_projects_by_tag)) {
-		// 				$related_projects_by_tag[] = $works[$x];
-		// 				$related_projects_count++;
-		// 			}
-		// 		}
-		// 		echo "<br>";
-		// 		$same_tags_array="";
-		// 	} else {
-		// 		echo "$x: $temp_title - no match<br>";
-		// 	}
-
-		// 	$x++;
-		// 	if ($related_projects_count == 4) {
-		// 		break;
-		// 	}
-		// 	if ($x == count($works)) {
-		// 		break;
-		// 	}
-		// }
-		// skeleton_print_thumbnail_4($related_projects_by_tag,4,"Related Projects by Tag");
-
-		// foreach ($related_projects_by_tag as $key => $project) {
-		// 	echo "Related Project $key: $project[name]<br>";
-		// }
-
-		// PRINTS OUR 4 RECENT PROJECTS
-		// skeleton_print_thumbnail_4($works,4,"Recent Projects");
 	}
 }
 
@@ -253,11 +219,12 @@ echo $landing_page_nav;
 
 function get_filters(){
 	$filter_list = array(
+		array( "skill"=>"Marketing & Branding", "url"=>"marketing-branding"),
+		array( "skill"=>"Print", "url"=>"print-design"),
 		array( "skill"=>"UI/UX", "url"=>"ui-ux"),
-		array( "skill"=>"Web Dev", "url"=>"web-dev"),
+		array( "skill"=>"Web", "url"=>"web"),
 		array( "skill"=>"Illustration", "url"=>"illustration"),
-		array( "skill"=>"Print Design", "url"=>"print-design"),
-		array( "skill"=>"Branding", "url"=>"branding"),
+		// array( "skill"=>"Marketing", "url"=>"marketing"),
 		// array( "skill"=>"Places I Worked", "url"=>"places-i-worked"),
 	);
 	return $filter_list;
