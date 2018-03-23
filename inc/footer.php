@@ -75,7 +75,6 @@ if ( !isset($id)) {
 	================================================== -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js">\x3C/script>')</script>
-
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript">
 		//TODO: only echo the stuff we need for each page, boolean value from work-info.php

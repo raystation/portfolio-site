@@ -6349,6 +6349,277 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		);
 	break;
 
+//#NARVAR-DESIGNER
+	case "narvar-designer":
+		$originaljobposting = "https://www.linkedin.com/jobs/view/359455619";
+		$hiring_company = "Narvar";
+		$jobTitle = "Designer";
+		$date = "July 28, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"Some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			array(
+				"path"=>"supercell-art-test",
+				"name"=>"Supercell",
+				"desc" => "Art test for a marketing job.",
+			),
+		);
+	break;
+
+//#SUTTER-HEALTH-VISUAL-DESIGNER
+	case "sutter-health-visual-designer":
+		$originaljobposting = "http://www.careerbuilder.com/job/J3H08X68DXC61TW5DL8";
+		$hiring_company = "Sutter Health";
+		$jobTitle = "Visual Designer";
+		$date = "July 29, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"Some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			array(
+				"path"=>"supercell-art-test",
+				"name"=>"Supercell",
+				"desc" => "Art test for a marketing job.",
+			),
+		);
+	break;
+
+//#ELECTRONIC-ARTS-DESIGNER-BRAND-DESIGN
+	case "electronic-arts-designer-brand-design":
+		$originaljobposting = "http://bit.ly/2uXc8Hc";
+		$hiring_company = "Electronic Arts";
+		$jobTitle = "Designer (Brand Design)";
+		$date = "August 1, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"Some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			array(
+				"path"=>"supercell-art-test",
+				"name"=>"Supercell",
+				"desc" => "Art test for a marketing job.",
+			),
+		);
+	break;
+
+
+//#DUCK-DUCK-MOOSE-2D-ARTIST-ILLUSTRATOR
+	case "duck-duck-moose-2d-artist-illustrator":
+		$originaljobposting = "http://bit.ly/2uXc8Hc";
+		$hiring_company = "Duck Duck Moose";
+		$jobTitle = "2D Artist / Illustrator";
+		$date = "August 1, 2017";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"Some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			array(
+				"path"=>"supercell-art-test",
+				"name"=>"Supercell",
+				"desc" => "Art test for a marketing job.",
+			),
+		);
+	break;
+
+//#QUANTCAST-PRODUCT-DESIGNER
+	case "quantcast-product-designer":
+		$originaljobposting = "https://www.quantcast.com/careers/50db4022-e509-4846-b204-ed2cf0643031/";
+		$hiring_company = "Quantcast";
+		$jobTitle = "Product Designer";
+		$date = "March 6, 2018";
+		// $funny_portrait = TRUE;
+		// $video_game_resume=TRUE;
+
+		$sample_projects_array = array(
+			array(
+				"path"=>"nl-district-landing-page",
+				"name"=>"NextLesson District Landing Page",
+				"desc" => "Sales tool specific for decision makers.",
+			),
+			array(
+				"path"=>"abriendo-puertas",
+				"name"=>"Abriendo Puertas",
+				"desc"=>"Informational site for a non-profit.",
+			),
+			array(
+				"path"=>"nextlesson-marketing",
+				"name"=>"NextLesson Marketing",
+				"desc"=>"Some examples of Marketing pieces",
+			),
+			array(
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
+			),
+			array(
+				"path"=>"toy-fair",
+				"name"=>"Pok&eacute;mon Toy Fair",
+				"type"=>"jpg",
+				"desc" => "Branding, Conference Booth Design and Collateral.",
+			),
+			array(
+				"path"=>"nextlesson-covers",
+				"name"=>"Nextlesson Project/Lesson Covers",
+				"desc"=>"Developing K12 lesson covers and design standards.",
+			),
+			array(
+				"path"=>"chronicles-of-old-new-york",
+				"name"=>"Museyon Guides",
+				"desc" => "Design and layout of travel guides.",
+			),
+			array(
+				"path"=>"supercell-art-test",
+				"name"=>"Supercell",
+				"desc" => "Art test for a marketing job.",
+			),
+		);
+	break;
+
 
 }
 

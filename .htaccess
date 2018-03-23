@@ -111,5 +111,6 @@ RewriteRule ^expensify-sf-designer$ hire-me?id=expensify-sf-designer
 RewriteRule ^sun-run-ui$ hire-me?id=sun-run-ui
 RewriteRule ^sunrun-ui$ hire-me?id=sun-run-ui
 RewriteRule ^globalimagefactory$ hire-me?id=globalimagefactory
+RewriteRule ^quantcast-product-designer$ hire-me?id=quantcast-product-designer
 
 RewriteRule ^holiday2014$ http://www.rayuen.com/p/holiday-card/holiday
