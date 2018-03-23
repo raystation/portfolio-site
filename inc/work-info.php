@@ -9,6 +9,7 @@ if ( $project ) {
 
 $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") , "work-display"=>false),
+	array( "name" => "Quantcast Demographics Card","path" => "quantcast-demographics-card", "tags" => array("ui-ux") , "work-display"=>true),
 	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("ui-ux","illustration","web") , "work-display"=>true),
 	array( "name" => "NextLesson Admin Landing Page","path" => "nl-district-landing-page","tags"=>array("ui-ux","web") , "work-display"=>false),
 	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("illustration","ui-ux","marketing-branding","web") , "work-display"=>true),
@@ -2199,7 +2200,54 @@ if ( $project == "nl-district-landing-page" ) {
 		// array( "file"=>"slider/Girls_in_profile.png", "alt"=>""),
 	);
 
-} //end NEXTLESSON CHARACTERS
+} //end district landing page
+
+##QUANTCAST
+//  #QUANTCAST
+// ===============================
+
+if ( $project == "quantcast-demographics-card" ) {
+
+	$title = "Quantcast Demographics Card";
+	$company = "Quantcast";
+	$hero_img="$path/hero-img.jpg";
+
+	$description = "
+	<span class='intro'>Challenge: To increase engagement on the Quantcast Measure profile.</span>
+	$p_break
+	We found that we were doing a really good job selling teachers and students on our products but we needed to make a stronger case with the actual decision&#8209;makers—in this case, the administrators and curriculum directors.
+	";
+
+	$content="
+	";
+
+	$sidebar = "
+		<p>Redesigned Profile Card </p>
+	";
+	$project_link = "https://www.quantcast.com/buzzfeed.com";
+	// $thumbnail_size = "small";
+
+	$tools = array(
+		array("skill"=>"Sketch", "percent"=>40),
+		array("skill"=>"Illustrator", "percent"=>40),
+		array("skill"=>"UI/UX", "percent"=>40),
+		array("skill"=>"Responsive Design", "percent"=>40),
+	);
+	$img_info = array(
+		// array("file" =>"01.jpg", "alt" => ""),
+		// array( "file"=>"slider/Classroom.jpg", "alt"=>""),
+		// array( "file"=>"slider/Grandma.png", "alt"=>""),
+		// array( "file"=>"slider/Kid_reading_the_temperature.png", "alt"=>""),
+		// array( "file"=>"slider/Laptop_kid.png", "alt"=>""),
+		// array( "file"=>"slider/Sports.png", "alt"=>""),
+		// array( "file"=>"slider/Girls_in_profile.png", "alt"=>""),
+	);
+
+} //end district landing page
+
+
+
+
 
 
 

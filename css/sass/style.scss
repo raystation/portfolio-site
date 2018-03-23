@@ -1110,8 +1110,19 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	position: relative;
+	overflow: hidden;
+	max-height: 400px;
+	-moz-box-shadow: 0 3px 15px rgba(gray, 0.115);
+	-webkit-box-shadow: 0 3px 15px rgba(gray, 0.115);
+	box-shadow: 0 3px 15px rgba(gray, 0.115);
+
 	img {
 		width: 100%;
+	}
+	@media #{$lg}{
+		max-height: 800px;
+
 	}
 }
 .hero-img {

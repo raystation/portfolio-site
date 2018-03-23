@@ -85,6 +85,8 @@ RewriteRule ^nextlesson-sports$ work?project=nextlesson-sports
 RewriteRule ^nextlesson-characters$ work?project=nextlesson-characters
 RewriteRule ^nl-district-landing-page$ work?project=nl-district-landing-page
 
+RewriteRule ^quantcast-demographics-card$ work?project=quantcast-demographics-card
+
 RewriteRule ^kabam$ hire-me?id=9999
 RewriteRule ^bigfish$ hire-me?id=510
 RewriteRule ^zenpayroll$ hire-me?id=zen
