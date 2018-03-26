@@ -86,6 +86,9 @@ RewriteRule ^nextlesson-characters$ work?project=nextlesson-characters
 RewriteRule ^nl-district-landing-page$ work?project=nl-district-landing-page
 
 RewriteRule ^quantcast-demographics-card$ work?project=quantcast-demographics-card
+RewriteRule ^quantcast-measure-monthly-email$ work?project=quantcast-measure-monthly-email
+RewriteRule ^quantcast-chrome-extension$ work?project=quantcast-chrome-extension
+RewriteRule ^quantcast-blog-posts$ work?project=quantcast-blog-posts
 
 RewriteRule ^kabam$ hire-me?id=9999
 RewriteRule ^bigfish$ hire-me?id=510

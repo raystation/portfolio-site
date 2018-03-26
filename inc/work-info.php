@@ -10,6 +10,9 @@ if ( $project ) {
 $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") , "work-display"=>false),
 	array( "name" => "Quantcast Demographics Card","path" => "quantcast-demographics-card", "tags" => array("ui-ux") , "work-display"=>true),
+	array( "name" => "Quantcast Measure Monthly Email","path" => "quantcast-measure-monthly-email", "tags" => array("ui-ux") , "work-display"=>true),
+	array( "name" => "Quantcast Chrome Extension","path" => "quantcast-chrome-extension", "tags" => array("ui-ux") , "work-display"=>true),
+	array( "name" => "Quantcast Blog Posts","path" => "quantcast-blog-posts", "tags" => array("ui-ux") , "work-display"=>true),
 	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("ui-ux","illustration","web") , "work-display"=>true),
 	array( "name" => "NextLesson Admin Landing Page","path" => "nl-district-landing-page","tags"=>array("ui-ux","web") , "work-display"=>false),
 	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("illustration","ui-ux","marketing-branding","web") , "work-display"=>true),
@@ -2203,7 +2206,8 @@ if ( $project == "nl-district-landing-page" ) {
 } //end district landing page
 
 ##QUANTCAST
-//  #QUANTCAST
+
+//  #QUANTCAST DEMOGRAPHICS CARD
 // ===============================
 
 if ( $project == "quantcast-demographics-card" ) {
@@ -2219,6 +2223,16 @@ if ( $project == "quantcast-demographics-card" ) {
 	";
 
 	$content="
+		<div class='illy-padding'><img src='$path/demo-card-original.png' alt=''></div>
+		<p class='caption'>Current Demographics card.</p>
+		<p>
+			Blue Bottle American Apparel wolf small batch, Wes Anderson fashion axe vinyl McSweeney's gluten-free messenger bag four loko photo booth dreamcatcher. Quinoa food truck Banksy semiotics single-origin coffee, authentic Tumblr. Bitters blog occupy, narwhal vinyl hella ugh kitsch freegan quinoa. Umami try-hard photo booth, post-ironic wayfarers VHS literally Odd Future.
+		</p>
+		<div class='illy-padding'><img src='$path/demo-card-proposed.png' alt=''></div>
+		<p class='caption'>Proposed Demographics card.</p>
+		<p>
+			Lumbersexual humblebrag asymmetrical, post-ironic kickstarter four loko kale chips bicycle rights venmo. Bushwick narwhal pickled selvage lo-fi, chartreuse celiac direct trade cliche pabst. XOXO taxidermy fingerstache brunch authentic, street art you probably haven't heard of them salvia. Farm-to-table forage pug freegan, chicharrones synth microdosing pitchfork chillwave mumblecore art party.
+		</p>
 	";
 
 	$sidebar = "
@@ -2229,9 +2243,9 @@ if ( $project == "quantcast-demographics-card" ) {
 
 	$tools = array(
 		array("skill"=>"Sketch", "percent"=>40),
-		array("skill"=>"Illustrator", "percent"=>40),
 		array("skill"=>"UI/UX", "percent"=>40),
-		array("skill"=>"Responsive Design", "percent"=>40),
+		array("skill"=>"Product", "percent"=>40),
+		array("skill"=>"Design System", "percent"=>40),
 	);
 	$img_info = array(
 		// array("file" =>"01.jpg", "alt" => ""),
@@ -2243,7 +2257,166 @@ if ( $project == "quantcast-demographics-card" ) {
 		// array( "file"=>"slider/Girls_in_profile.png", "alt"=>""),
 	);
 
-} //end district landing page
+} //QUANTCAST DEMOGRAPHICS
+
+//  #QUANTCAST MONTHLY EMAIL
+// ===============================
+
+if ( $project == "quantcast-measure-monthly-email" ) {
+
+	$title = "Quantcast Measure Monthly Email";
+	$company = "Quantcast";
+	$hero_img="$path/hero-img.jpg";
+
+	$description = "
+	<span class='intro'>Challenge: Food truck Portland swag Pitchfork mustache semiotics.</span>
+	$p_break
+	We found that we were doing a really good job selling teachers and students on our products but we needed to make a stronger case with the actual decision&#8209;makers—in this case, the administrators and curriculum directors.
+	";
+
+	$content="
+		<div class='illy-padding'><img src='$path/email-monthly-progress-1.jpg' alt=''></div>
+		<p class='caption'>Email Monthly Progress 1</p>
+		<p>
+			Blue Bottle American Apparel wolf small batch, Wes Anderson fashion axe vinyl McSweeney's gluten-free messenger bag four loko photo booth dreamcatcher. Quinoa food truck Banksy semiotics single-origin coffee, authentic Tumblr. Bitters blog occupy, narwhal vinyl hella ugh kitsch freegan quinoa. Umami try-hard photo booth, post-ironic wayfarers VHS literally Odd Future.
+		</p>
+		<div class='illy-padding'><img src='$path/email-monthly-progress-2.jpg' alt=''></div>
+		<p class='caption'>Email Monthly Progress 2</p>
+		<p>
+			Lumbersexual humblebrag asymmetrical, post-ironic kickstarter four loko kale chips bicycle rights venmo. Bushwick narwhal pickled selvage lo-fi, chartreuse celiac direct trade cliche pabst. XOXO taxidermy fingerstache brunch authentic, street art you probably haven't heard of them salvia. Farm-to-table forage pug freegan, chicharrones synth microdosing pitchfork chillwave mumblecore art party.
+		</p>
+	";
+
+	$sidebar = "
+		<p>Redesigned Profile Card </p>
+	";
+	$project_link = "https://www.quantcast.com/buzzfeed.com";
+	// $thumbnail_size = "small";
+
+	$tools = array(
+		array("skill"=>"Sketch", "percent"=>40),
+		array("skill"=>"UI/UX", "percent"=>40),
+		array("skill"=>"Product", "percent"=>40),
+		array("skill"=>"Design System", "percent"=>40),
+	);
+	$img_info = array(
+		// array("file" =>"01.jpg", "alt" => ""),
+		// array( "file"=>"slider/Classroom.jpg", "alt"=>""),
+		// array( "file"=>"slider/Grandma.png", "alt"=>""),
+		// array( "file"=>"slider/Kid_reading_the_temperature.png", "alt"=>""),
+		// array( "file"=>"slider/Laptop_kid.png", "alt"=>""),
+		// array( "file"=>"slider/Sports.png", "alt"=>""),
+		// array( "file"=>"slider/Girls_in_profile.png", "alt"=>""),
+	);
+
+} //QUANTCAST MONTHLY EMAIL
+
+//  #QUANTCAST CHROME EXTENSION
+// ===============================
+
+if ( $project == "quantcast-chrome-extension" ) {
+
+	$title = "Quantcast Chrome Extension";
+	$company = "Quantcast";
+	$hero_img="$path/hero-img.gif";
+
+	$description = "
+	<span class='intro'>Challenge: Food truck Portland swag Pitchfork mustache semiotics.</span>
+	$p_break
+	We found that we were doing a really good job selling teachers and students on our products but we needed to make a stronger case with the actual decision&#8209;makers—in this case, the administrators and curriculum directors.
+	";
+
+	$content="
+		<div class='illy-padding'><img src='$path/email-monthly-progress-1.jpg' alt=''></div>
+		<p class='caption'>Email Monthly Progress 1</p>
+		<p>
+			Blue Bottle American Apparel wolf small batch, Wes Anderson fashion axe vinyl McSweeney's gluten-free messenger bag four loko photo booth dreamcatcher. Quinoa food truck Banksy semiotics single-origin coffee, authentic Tumblr. Bitters blog occupy, narwhal vinyl hella ugh kitsch freegan quinoa. Umami try-hard photo booth, post-ironic wayfarers VHS literally Odd Future.
+		</p>
+		<div class='illy-padding'><img src='$path/email-monthly-progress-2.jpg' alt=''></div>
+		<p class='caption'>Email Monthly Progress 2</p>
+		<p>
+			Lumbersexual humblebrag asymmetrical, post-ironic kickstarter four loko kale chips bicycle rights venmo. Bushwick narwhal pickled selvage lo-fi, chartreuse celiac direct trade cliche pabst. XOXO taxidermy fingerstache brunch authentic, street art you probably haven't heard of them salvia. Farm-to-table forage pug freegan, chicharrones synth microdosing pitchfork chillwave mumblecore art party.
+		</p>
+	";
+
+	$sidebar = "
+		<p>Redesigned Profile Card </p>
+	";
+	$project_link = "https://www.quantcast.com/buzzfeed.com";
+	// $thumbnail_size = "small";
+
+	$tools = array(
+		array("skill"=>"Sketch", "percent"=>40),
+		array("skill"=>"UI/UX", "percent"=>40),
+		array("skill"=>"Product", "percent"=>40),
+		array("skill"=>"Design System", "percent"=>40),
+	);
+	$img_info = array(
+		// array("file" =>"01.jpg", "alt" => ""),
+		// array( "file"=>"slider/Classroom.jpg", "alt"=>""),
+		// array( "file"=>"slider/Grandma.png", "alt"=>""),
+		// array( "file"=>"slider/Kid_reading_the_temperature.png", "alt"=>""),
+		// array( "file"=>"slider/Laptop_kid.png", "alt"=>""),
+		// array( "file"=>"slider/Sports.png", "alt"=>""),
+		// array( "file"=>"slider/Girls_in_profile.png", "alt"=>""),
+	);
+
+} //QUANTCAST CHROME EXTENSION
+
+
+
+
+//  #QUANTCAST-BLOG-POSTS
+// ===============================
+
+if ( $project == "quantcast-blog-posts" ) {
+
+	$title = "Quantcast Blog Posts";
+	$company = "Quantcast";
+	$hero_img="$path/hero-img.jpg";
+
+	$description = "
+	<span class='intro'>Challenge: Food truck Portland swag Pitchfork mustache semiotics.</span>
+	$p_break
+	We found that we were doing a really good job selling teachers and students on our products but we needed to make a stronger case with the actual decision&#8209;makers—in this case, the administrators and curriculum directors.
+	";
+
+	$content="
+		<div class='illy-padding'><img src='$path/email-monthly-progress-1.jpg' alt=''></div>
+		<p class='caption'>Email Monthly Progress 1</p>
+		<p>
+			Blue Bottle American Apparel wolf small batch, Wes Anderson fashion axe vinyl McSweeney's gluten-free messenger bag four loko photo booth dreamcatcher. Quinoa food truck Banksy semiotics single-origin coffee, authentic Tumblr. Bitters blog occupy, narwhal vinyl hella ugh kitsch freegan quinoa. Umami try-hard photo booth, post-ironic wayfarers VHS literally Odd Future.
+		</p>
+		<div class='illy-padding'><img src='$path/email-monthly-progress-2.jpg' alt=''></div>
+		<p class='caption'>Email Monthly Progress 2</p>
+		<p>
+			Lumbersexual humblebrag asymmetrical, post-ironic kickstarter four loko kale chips bicycle rights venmo. Bushwick narwhal pickled selvage lo-fi, chartreuse celiac direct trade cliche pabst. XOXO taxidermy fingerstache brunch authentic, street art you probably haven't heard of them salvia. Farm-to-table forage pug freegan, chicharrones synth microdosing pitchfork chillwave mumblecore art party.
+		</p>
+	";
+
+	$sidebar = "
+		<p>Redesigned Profile Card </p>
+	";
+	$project_link = "https://www.quantcast.com/buzzfeed.com";
+	// $thumbnail_size = "small";
+
+	$tools = array(
+		array("skill"=>"Sketch", "percent"=>40),
+		array("skill"=>"UI/UX", "percent"=>40),
+		array("skill"=>"Product", "percent"=>40),
+		array("skill"=>"Design System", "percent"=>40),
+	);
+	$img_info = array(
+		// array("file" =>"01.jpg", "alt" => ""),
+		// array( "file"=>"slider/Classroom.jpg", "alt"=>""),
+		// array( "file"=>"slider/Grandma.png", "alt"=>""),
+		// array( "file"=>"slider/Kid_reading_the_temperature.png", "alt"=>""),
+		// array( "file"=>"slider/Laptop_kid.png", "alt"=>""),
+		// array( "file"=>"slider/Sports.png", "alt"=>""),
+		// array( "file"=>"slider/Girls_in_profile.png", "alt"=>""),
+	);
+
+} //QUANTCAST-BLOG-POSTS
 
 
 
