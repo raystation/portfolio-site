@@ -9,6 +9,8 @@ $project_path="";
 $hero_img_html="";
 $img_slider_html="";
 $project_link_html="";
+
+// the intro paragraph in HTML to describe array of illustrations
 $illustration_intro_html = isset( $illustration_intro_html) ? $illustration_intro_html : "<h2>Illustrations</h2><p>Examples of works.</p>";
 
 // HERO IMAGES
@@ -116,7 +118,7 @@ if ($tools) {
 // PROEJCT LINK
 if ($project_link) {
 	$project_link_html = "
-		<p><a ,bhref='$project_link'>link to project <i class='fa fa-arrow-right' aria-hidden='true'></i></a></p>
+		<p><a target='_blank' href='$project_link'>link to project <i class='fa fa-arrow-right' aria-hidden='true'></i></a></p>
 	";
 }
 

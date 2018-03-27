@@ -2253,7 +2253,10 @@ if ( $project == "quantcast" ) {
 
 if ( $project == "quantcast-demographics-card" ) {
 
+	$template = "illustration";
+
 	$title = "Demographic Card Experiment";
+	$subtitle = "subtitle";
 	$company = "Quantcast";
 	$hero_img="$path/hero-img.jpg";
 
@@ -2272,18 +2275,27 @@ if ( $project == "quantcast-demographics-card" ) {
 			Our hypothesis in this experiment is if we diversify and simplify the ways we visualize data, people won't skim as quickly, creating a focus on the card buttons and data.
 			$p_break
 			For us, engagement is: staying on the card longer, clicking on &ldquo;View Details.&rdquo; and/or changing the data view on the side (Composition, Web/Apps, Help).
+			$p_break
+			We targeted the Demographics card because it is close to the top, and gets lots of views. I identified elements in the current design I liked and wanted to improve upon.
+			<li>Data labels are right aligned with the graph right next to it, making the data easy to quickly scan.
+			<li>The other elements seem to suffer a bit—icons seem unanchored, chart labels look off to me.
+			<li>The bars are normalized ***
+			<li>Our research shows users don't interact with the options on the side, so maybe surfacing Composition instead of Index might clue the user that more data is available.
 		</p>
 		<a href='$path/designs-v1.jpg' target='_blank'><img src='$path/designs-v1.jpg' alt=''></a>
 		<p class='caption'>Initial Designs.</p>
 		<p>
-			Blue Bottle American Apparel wolf small batch, Wes Anderson fashion axe vinyl McSweeney's gluten-free messenger bag four loko photo booth dreamcatcher. Quinoa food truck Banksy semiotics single-origin coffee, authentic Tumblr. Bitters blog occupy, narwhal vinyl hella ugh kitsch freegan quinoa. Umami try-hard photo booth, post-ironic wayfarers VHS literally Odd Future.
+			For the design on the left, I played around with how the charts were sorted, putting them all one on top of each other so it was easier to align elements. It's easier to find what you need, but a bit harder to scan. I got feedback that it's harder to compare the data and the card is also getting too long.
+			$p_break
+			I got more positive feedback from the right-hand design. People liked how compact it was and easy to read.
 		</p>
 		<div class='illy-padding'><img src='$path/demo-card-proposed.png' alt=''></div>
 		<p class='caption'>Proposed Demographics card.</p>
 		<p>
-			Lumbersexual humblebrag asymmetrical, post-ironic kickstarter four loko kale chips bicycle rights venmo. Bushwick narwhal pickled selvage lo-fi, chartreuse celiac direct trade cliche pabst. XOXO taxidermy fingerstache brunch authentic, street art you probably haven't heard of them salvia. Farm-to-table forage pug freegan, chicharrones synth microdosing pitchfork chillwave mumblecore art party.
+			The design we landed on also features the U.S. Composition, something you can usually only see in the details view. The height of this card is determined by the height of the Index view, so I couldn't make it as short as I wanted to. I am hoping it won't distract from the &ldquo;View Details&rdquo; button.
 		</p>
 	";
+	$illustration_intro_html="";
 
 	$sidebar = "
 		<p>Growth Experiment</p>
@@ -2314,8 +2326,10 @@ if ( $project == "quantcast-demographics-card" ) {
 // ===============================
 
 if ( $project == "quantcast-measure-monthly-email" ) {
+	$template = "illustration";
 
 	$title = "Quantcast Measure Monthly Email";
+	$subtitle = "subtitle";
 	$company = "Quantcast";
 	$hero_img="$path/hero-img.jpg";
 
@@ -2367,7 +2381,10 @@ if ( $project == "quantcast-measure-monthly-email" ) {
 
 if ( $project == "quantcast-chrome-extension" ) {
 
+	$template = "illustration";
+
 	$title = "Quantcast Chrome Extension";
+	$subtitle = "subtitle";
 	$company = "Quantcast";
 	$hero_img="$path/hero-img.jpg";
 
@@ -2422,49 +2439,69 @@ if ( $project == "quantcast-chrome-extension" ) {
 
 if ( $project == "quantcast-blog-posts" ) {
 
+	$template = "illustration";
+
 	$title = "Quantcast Blog Posts";
+	$subtitle = "Illustrated Banners and Thumbnails";
+
 	$company = "Quantcast";
 	$hero_img="$path/hero-img.jpg";
 
 	$description = "
-	<span class='intro'>Challenge: Food truck Portland swag Pitchfork mustache semiotics.</span>
-	$p_break
-	We found that we were doing a really good job selling teachers and students on our products but we needed to make a stronger case with the actual decision&#8209;makers—in this case, the administrators and curriculum directors.
+	User acquisition and lead generation is an essential part of ensuring a product is successful. Our blog posts provided publishers valuable information on how to build ad revenue using our tools.
 	";
 
 	$content="
-		<div class='illy-padding'><img src='$path/email-monthly-progress-1.jpg' alt=''></div>
-		<p class='caption'>Email Monthly Progress 1</p>
+		<div class='img-diagram'><img src='$path/blog-page.png' alt='' srcset='$path/blog-page-retina.png 2x'></div>
+		<p class='caption'>Screenshot of the Quantcast blog</p>
 		<p>
-			Blue Bottle American Apparel wolf small batch, Wes Anderson fashion axe vinyl McSweeney's gluten-free messenger bag four loko photo booth dreamcatcher. Quinoa food truck Banksy semiotics single-origin coffee, authentic Tumblr. Bitters blog occupy, narwhal vinyl hella ugh kitsch freegan quinoa. Umami try-hard photo booth, post-ironic wayfarers VHS literally Odd Future.
+			The art style at the time consisted of extreme gradients and simplistic vector graphics.
 		</p>
-		<div class='illy-padding'><img src='$path/email-monthly-progress-2.jpg' alt=''></div>
-		<p class='caption'>Email Monthly Progress 2</p>
-		<p>
-			Lumbersexual humblebrag asymmetrical, post-ironic kickstarter four loko kale chips bicycle rights venmo. Bushwick narwhal pickled selvage lo-fi, chartreuse celiac direct trade cliche pabst. XOXO taxidermy fingerstache brunch authentic, street art you probably haven't heard of them salvia. Farm-to-table forage pug freegan, chicharrones synth microdosing pitchfork chillwave mumblecore art party.
-		</p>
+	";
+
+	$illustration_intro_html="
+		<h3>Examples of Blog Graphics</h3>
 	";
 
 	$sidebar = "
 		<p>Redesigned Profile Card </p>
 	";
-	$project_link = "https://www.quantcast.com/buzzfeed.com";
+	$project_link = "https://www.quantcast.com/blog";
 	// $thumbnail_size = "small";
 
 	$tools = array(
-		array("skill"=>"Sketch", "percent"=>40),
-		array("skill"=>"UI/UX", "percent"=>40),
-		array("skill"=>"Product", "percent"=>40),
-		array("skill"=>"Design System", "percent"=>40),
+		// array("skill"=>"Sketch", "percent"=>40),
+		array("skill"=>"Illustrator", "percent"=>40),
+		array("skill"=>"Photoshop", "percent"=>40),
+		array("skill"=>"Branding", "percent"=>40),
+		array("skill"=>"Marketing", "percent"=>40),
+		// array("skill"=>"UI/UX", "percent"=>40),
+		// array("skill"=>"Product", "percent"=>40),
+		// array("skill"=>"Design System", "percent"=>40),
 	);
-	$img_info = array(
-		// array("file" =>"01.jpg", "alt" => ""),
-		// array( "file"=>"slider/Classroom.jpg", "alt"=>""),
-		// array( "file"=>"slider/Grandma.png", "alt"=>""),
-		// array( "file"=>"slider/Kid_reading_the_temperature.png", "alt"=>""),
-		// array( "file"=>"slider/Laptop_kid.png", "alt"=>""),
-		// array( "file"=>"slider/Sports.png", "alt"=>""),
-		// array( "file"=>"slider/Girls_in_profile.png", "alt"=>""),
+	$illustrations = array(
+
+		array("path"=>"images/content-segments-top-graphic.png", "caption"=>"Introducing Content Segments for Quantcast Measure"),
+
+		array("path"=>"images/collecting-the-right-audience-data-for-an-rfp-blog.png", "caption"=>""),
+		array("path"=>"images/collecting-the-right-audience-data-for-an-rfp-thumbnail.png", "caption"=>"Collecting the Right Audience Data for an RFP - <a href='https://www.quantcast.com/blog/collecting-the-right-audience-data-for-an-rfp/' target='_blank'>link to post</a>"),
+
+		array("path"=>"images/direct-ad-sales-blog.png", "caption"=>""),
+		array("path"=>"images/direct-ad-sales-facebook.png", "caption"=>"Should You Start Exploring Direct Ad Sales?"),
+		array("path"=>"images/direct-marketing-blog.png", "caption"=>""),
+		array("path"=>"images/direct-marketing-facebook.png", "caption"=>"Direct Advertising: What's Important to Agencies"),
+
+		array("path"=>"images/moms_blog.png", "caption"=>""),
+		array("path"=>"images/moms_facebook.png", "caption"=>"Top 25 Mom's Lifestyle Websites - <a href='https://www.quantcast.com/blog/top-25-moms-lifestyle-websites/' target='_blank'>link to post</a>"),
+		array("path"=>"images/moms_infographic.png", "caption"=>"Top 25 Mom's Lifestyle Websites Infographic"),
+
+		array("path"=>"images/pet-peeves-with-rfps-blog.png", "caption"=>""),
+		array("path"=>"images/pet-peeves-with-rfps-linkedin.png", "caption"=>"Advertising Agency Pet Peeves with RFPs - <a href='https://www.quantcast.com/blog/advertising-agency-pet-peeves-with-rfps/' target='_blank'>link to post</a>"),
+
+		array("path"=>"images/website-monetization-blog-1.png", "caption"=>""),
+		array("path"=>"images/website-monetization-facebook-1.png", "caption"=>""),
+		array("path"=>"images/website-monetization-blog-2.png", "caption"=>""),
+		array("path"=>"images/website-monetization-facebook-2.png", "caption"=>"Website Monetization: Creating an RFP that Wins - <a href='https://www.quantcast.com/blog/website-monetization-creating-rfp-wins-part-1/' target='_blank'>Part 1</a>, <a href='https://www.quantcast.com/blog/website-monetization-creating-rfp-wins-part-2/' target='_blank'>Part 2</a>"),
 	);
 
 } //QUANTCAST-BLOG-POSTS
