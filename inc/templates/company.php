@@ -1,4 +1,10 @@
 <?
+
+$function_check_name = "get_" . $title . "_projects";
+
+if (function_exists($function_check_name)) {
+	$projects = $function_check_name();
+} else {
 	switch ( $title ) {
 		case 'Museyon Guides':
 		$projects=get_museyon_projects();
@@ -16,9 +22,16 @@
 		$projects=get_nextlesson_projects();
 		break;
 
+		case "Quantcast":
+		$projects=get_quantcast_projects();
+		break;
+
 		default:
 		break;
 	}
+
+}
+
 ?>
 
 <div class="sixteen columns project-details half-top">
@@ -47,7 +60,7 @@
 
 	</div>
 
-	<div class="four columns omega caption add-bottom">
+	<div class="four columns omega add-bottom">
 		<?php
 			//echo '<img src="'.$path.$logo.'" alt="'.$title.' logo" class="scale-with-grid">';
 			echo $sidebar;

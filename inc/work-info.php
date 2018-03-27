@@ -9,7 +9,8 @@ if ( $project ) {
 
 $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") , "work-display"=>false),
-	array( "name" => "Quantcast Demographics Card","path" => "quantcast-demographics-card", "tags" => array("ui-ux") , "work-display"=>true),
+	array( "name" => "Quantcast","path" => "quantcast", "tags" => array("places-i-worked") , "work-display"=>false),
+	array( "name" => "Quantcast Demographics Card Redesign Experiment","path" => "quantcast-demographics-card", "tags" => array("ui-ux") , "work-display"=>true),
 	array( "name" => "Quantcast Measure Monthly Email","path" => "quantcast-measure-monthly-email", "tags" => array("ui-ux") , "work-display"=>true),
 	array( "name" => "Quantcast Chrome Extension","path" => "quantcast-chrome-extension", "tags" => array("ui-ux") , "work-display"=>true),
 	array( "name" => "Quantcast Blog Posts","path" => "quantcast-blog-posts", "tags" => array("ui-ux") , "work-display"=>true),
@@ -2205,26 +2206,75 @@ if ( $project == "nl-district-landing-page" ) {
 
 } //end district landing page
 
+
+
+// ========================
 ##QUANTCAST
+
+function get_quantcast_projects(){
+	$works = array(
+		array( "name" => "Demographic Card Experiment","path" => "quantcast-demographics-card" ),
+		array( "name" => "Quantcast Measure Monthly Email","path" => "quantcast-measure-monthly-email" ),
+		array( "name" => "Quantcast Chrome Extension","path" => "quantcast-chrome-extension" ),
+		array( "name" => "Quantcast Blog Posts","path" => "quantcast-blog-posts" ),
+	);
+	return $works;
+}
+
+
+if ( $project == "quantcast" ) {
+
+	$title = "Quantcast";
+	$path="img/quantcast";
+
+	$description = "
+	Poke la croix etsy deep v meggings lomo cray godard chartreuse. Cronut cloud bread cold-pressed adaptogen vinyl waistcoat deep v hoodie. Lo-fi echo park hoodie, intelligentsia live-edge gastropub neutra af cliche hella vegan. Tofu ethical pickled shoreditch twee cronut readymade etsy kinfolk keytar vinyl gentrify prism.
+	$p_break
+	Food truck Portland swag Pitchfork mustache semiotics, gluten-free raw denim ethical deep v hoodie YOLO Bushwick hella. Carles 3 wolf moon cred freegan slow-carb, banh mi direct trade High Life Helvetica street art.
+	";
+
+	$template="company";
+	$logo="svg";
+
+	$sidebar = "
+	<p>Engaging K-12 Educational Materials</p>
+	<p>2014-2016</p>
+	<p><a href='http://nextlesson.org' target='_blank'>nextlesson.org</a></p>";
+
+	$img_info = array(
+	);
+
+} //end NEXTLESSON
+
+
 
 //  #QUANTCAST DEMOGRAPHICS CARD
 // ===============================
 
 if ( $project == "quantcast-demographics-card" ) {
 
-	$title = "Quantcast Demographics Card";
+	$title = "Demographic Card Experiment";
 	$company = "Quantcast";
 	$hero_img="$path/hero-img.jpg";
 
 	$description = "
-	<span class='intro'>Challenge: To increase engagement on the Quantcast Measure profile.</span>
+		Our goal on the Growth team is to maintain and grow the <span class='tooltip underline' title='Measure gives you reports on your audience, like Traffic, Demographics, and Shopping Interests.'>Quantcast Measure</span> self-serve customer base, and to get them on the path to be a paying customer. In order to do that, we need to make sure that customers see the value of the profile and understand how it can help their business.
 	$p_break
-	We found that we were doing a really good job selling teachers and students on our products but we needed to make a stronger case with the actual decision&#8209;makers—in this case, the administrators and curriculum directors.
+	We run experiments to increase user engagement, interaction with new features, improvement of liked features, and improve the onboarding process.
 	";
 
 	$content="
 		<div class='illy-padding'><img src='$path/demo-card-original.png' alt=''></div>
 		<p class='caption'>Current Demographics card.</p>
+		<p>
+			In this particular experiment, our goal was to increase engagement on the <span class='tooltip underline' title='The Measure profile page gives you audience data on a site, a network of sites, or an app.'>Quantcast Measure profile</span>. It is a scrolling page consisting of 10 cards which contain a different report on your website/app. We use bar charts on 5 out of the 10 cards.
+			$p_break
+			Our hypothesis in this experiment is if we diversify and simplify the ways we visualize data, people won't skim as quickly, creating a focus on the card buttons and data.
+			$p_break
+			For us, engagement is: staying on the card longer, clicking on &ldquo;View Details.&rdquo; and/or changing the data view on the side (Composition, Web/Apps, Help).
+		</p>
+		<a href='$path/designs-v1.jpg' target='_blank'><img src='$path/designs-v1.jpg' alt=''></a>
+		<p class='caption'>Initial Designs.</p>
 		<p>
 			Blue Bottle American Apparel wolf small batch, Wes Anderson fashion axe vinyl McSweeney's gluten-free messenger bag four loko photo booth dreamcatcher. Quinoa food truck Banksy semiotics single-origin coffee, authentic Tumblr. Bitters blog occupy, narwhal vinyl hella ugh kitsch freegan quinoa. Umami try-hard photo booth, post-ironic wayfarers VHS literally Odd Future.
 		</p>
@@ -2236,16 +2286,17 @@ if ( $project == "quantcast-demographics-card" ) {
 	";
 
 	$sidebar = "
-		<p>Redesigned Profile Card </p>
+		<p>Growth Experiment</p>
 	";
 	$project_link = "https://www.quantcast.com/buzzfeed.com";
 	// $thumbnail_size = "small";
 
 	$tools = array(
-		array("skill"=>"Sketch", "percent"=>40),
-		array("skill"=>"UI/UX", "percent"=>40),
 		array("skill"=>"Product", "percent"=>40),
-		array("skill"=>"Design System", "percent"=>40),
+		array("skill"=>"Experiment", "percent"=>40),
+		array("skill"=>"UI/UX", "percent"=>40),
+		array("skill"=>"Sketch", "percent"=>40),
+		// array("skill"=>"Design System", "percent"=>40),
 	);
 	$img_info = array(
 		// array("file" =>"01.jpg", "alt" => ""),
@@ -2318,7 +2369,7 @@ if ( $project == "quantcast-chrome-extension" ) {
 
 	$title = "Quantcast Chrome Extension";
 	$company = "Quantcast";
-	$hero_img="$path/hero-img.gif";
+	$hero_img="$path/hero-img.jpg";
 
 	$description = "
 	<span class='intro'>Challenge: Food truck Portland swag Pitchfork mustache semiotics.</span>

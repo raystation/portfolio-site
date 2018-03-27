@@ -611,20 +611,34 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	@media #{$md}{
 		padding-top: 20px;
 	}
-	// .content {
-	// 	p {
-	// 	padding-left: 2em;
-	// 	padding-right: 2em;
-	// 	}
-	// }
+	.content {
+		// text-align: center;
+		p {
+			margin: 0 auto;
+			margin-bottom: 1.5em;
+			// background-color: yellow;
+			max-width: 650px;
+		}
+		.caption {
+			max-width: 100%;
+			text-align: center;
+			font-size: $caption-font-size;
+			font-family: #{$system-fonts};
+			color: $gray5;
+			line-height: 1.45em;
+			margin-bottom: 2em;
+			margin-top: 10px;
+		}
+	}
 	img {width: 100%; margin-bottom: 20px;}
 	h1 {
 		color: black;
-		font-size: 40px;
+		font-size: 24px;
 		line-height: 1.125em;
 		margin-top: 0;
+		@media #{$sm} {font-size: 35px; }
 		@media #{$md} {
-			font-size: 45px;
+			font-size: 38px;
 		}
 	}
 	h1.title {
@@ -757,17 +771,8 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 			padding: 40px 60px;
 		}
 	}
-	.caption {
-		text-align: center;
-		font-size: $caption-font-size;
-		font-family: #{$system-fonts};
-		color: $gray5;
-		line-height: 1.45em;
-		margin-bottom: 2em;
-		margin-top: 10px;
-	}
 	.intro {
-		color: lighten($primary-color,10%);
+		color: darken($primary-color,15%);
 		font-weight: 900;
 		margin-bottom: 2em;
 		font-size: 140%;
@@ -801,7 +806,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 			margin-top: 1em;
 			padding: 0;
 			li {
-				background-color: red;
+				// background-color: red;
 				display: inline-block;
 				margin-right: 1em;
 				margin-bottom: 10px;
