@@ -11,7 +11,7 @@ $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") , "work-display"=>false),
 	array( "name" => "Quantcast","path" => "quantcast", "tags" => array("places-i-worked") , "work-display"=>false),
 	array( "name" => "Quantcast Demographics Card Redesign Experiment","path" => "quantcast-demographics-card", "tags" => array("ui-ux") , "work-display"=>true),
-	array( "name" => "Quantcast Measure Monthly Email","path" => "quantcast-measure-monthly-email", "tags" => array("ui-ux") , "work-display"=>true),
+	array( "name" => "Measure Monthly Report","path" => "quantcast-measure-monthly-email", "tags" => array("ui-ux") , "work-display"=>true),
 	array( "name" => "Quantcast Chrome Extension","path" => "quantcast-chrome-extension", "tags" => array("ui-ux") , "work-display"=>true),
 	array( "name" => "Quantcast Blog Posts","path" => "quantcast-blog-posts", "tags" => array("ui-ux") , "work-display"=>true),
 	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("ui-ux","illustration","web") , "work-display"=>true),
@@ -2214,7 +2214,7 @@ if ( $project == "nl-district-landing-page" ) {
 function get_quantcast_projects(){
 	$works = array(
 		array( "name" => "Demographic Card Experiment","path" => "quantcast-demographics-card" ),
-		array( "name" => "Quantcast Measure Monthly Email","path" => "quantcast-measure-monthly-email" ),
+		array( "name" => "Measure Monthly Report","path" => "quantcast-measure-monthly-email" ),
 		array( "name" => "Quantcast Chrome Extension","path" => "quantcast-chrome-extension" ),
 		array( "name" => "Quantcast Blog Posts","path" => "quantcast-blog-posts" ),
 	);
@@ -2328,41 +2328,40 @@ if ( $project == "quantcast-demographics-card" ) {
 if ( $project == "quantcast-measure-monthly-email" ) {
 	$template = "illustration";
 
-	$title = "Quantcast Measure Monthly Email";
-	$subtitle = "subtitle";
+	$title = "Measure Monthly Report";
+	$subtitle = "Re-engagement Email Experiment";
 	$company = "Quantcast";
 	$hero_img="$path/hero-img.jpg";
 
 	$description = "
-	<span class='intro'>Challenge: Food truck Portland swag Pitchfork mustache semiotics.</span>
-	$p_break
-	We found that we were doing a really good job selling teachers and students on our products but we needed to make a stronger case with the actual decision&#8209;makers—in this case, the administrators and curriculum directors.
+		One of the challenges with getting users engaged is that our data doesn't update every day. While our users are waiting for our reports, they might forget about us.
+		$p_break
+		We decided to start a monthly email that took user's site reports to them. The hypothesis was that they would see the value in the data and become re-engaged. We targeted free users but especially wanted our inactive and dormant accounts to see the email.
 	";
 
 	$content="
-		<div class='illy-padding'><img src='$path/email-monthly-progress-1.jpg' alt=''></div>
-		<p class='caption'>Email Monthly Progress 1</p>
+		<div class='img-diagram'><img src='$path/email-1.jpg' srcset='$path/email-1-retina.jpg 2x' alt=''></div>
+		<p class='caption'>Monthly Report Email v.1</p>
 		<p>
-			Blue Bottle American Apparel wolf small batch, Wes Anderson fashion axe vinyl McSweeney's gluten-free messenger bag four loko photo booth dreamcatcher. Quinoa food truck Banksy semiotics single-origin coffee, authentic Tumblr. Bitters blog occupy, narwhal vinyl hella ugh kitsch freegan quinoa. Umami try-hard photo booth, post-ironic wayfarers VHS literally Odd Future.
+			<!--<placeholder: stats on email>-->
 		</p>
-		<div class='illy-padding'><img src='$path/email-monthly-progress-2.jpg' alt=''></div>
-		<p class='caption'>Email Monthly Progress 2</p>
-		<p>
-			Lumbersexual humblebrag asymmetrical, post-ironic kickstarter four loko kale chips bicycle rights venmo. Bushwick narwhal pickled selvage lo-fi, chartreuse celiac direct trade cliche pabst. XOXO taxidermy fingerstache brunch authentic, street art you probably haven't heard of them salvia. Farm-to-table forage pug freegan, chicharrones synth microdosing pitchfork chillwave mumblecore art party.
-		</p>
+		<div class='img-diagram'><img src='$path/email-2.jpg' srcset='$path/email-2-retina.jpg 2x' alt=''></div>
+		<p class='caption'>Monthly Report Email v.2</p>
 	";
 
 	$sidebar = "
-		<p>Redesigned Profile Card </p>
+		<p>Re-engagement Email Experiment</p>
 	";
-	$project_link = "https://www.quantcast.com/buzzfeed.com";
+	$illustration_intro_html="";
+	// $project_link = "https://www.quantcast.com/buzzfeed.com";
 	// $thumbnail_size = "small";
 
 	$tools = array(
 		array("skill"=>"Sketch", "percent"=>40),
-		array("skill"=>"UI/UX", "percent"=>40),
-		array("skill"=>"Product", "percent"=>40),
-		array("skill"=>"Design System", "percent"=>40),
+		// array("skill"=>"UI/UX", "percent"=>40),
+		// array("skill"=>"Product", "percent"=>40),
+		array("skill"=>"HTML", "percent"=>40),
+		array("skill"=>"Autopilot", "percent"=>40),
 	);
 	$img_info = array(
 		// array("file" =>"01.jpg", "alt" => ""),
@@ -2384,26 +2383,18 @@ if ( $project == "quantcast-chrome-extension" ) {
 	$template = "illustration";
 
 	$title = "Quantcast Chrome Extension";
-	$subtitle = "subtitle";
+	$subtitle = "New User Acquisition and Engagement Experiment";
 	$company = "Quantcast";
-	$hero_img="$path/hero-img.jpg";
 
 	$description = "
-	<span class='intro'>Challenge: Food truck Portland swag Pitchfork mustache semiotics.</span>
-	$p_break
-	We found that we were doing a really good job selling teachers and students on our products but we needed to make a stronger case with the actual decision&#8209;makers—in this case, the administrators and curriculum directors.
+	Lumbersexual humblebrag asymmetrical, post-ironic kickstarter four loko kale chips bicycle rights venmo. Bushwick narwhal pickled selvage lo-fi, chartreuse celiac direct trade cliche pabst. XOXO taxidermy fingerstache brunch authentic, street art you probably haven't heard of them salvia.
 	";
 
 	$content="
-		<div class='illy-padding'><img src='$path/email-monthly-progress-1.jpg' alt=''></div>
+		<div class='img-diagram'><img src='$path/extension-screenshot.jpg' srcset='$path/extension-screenshot-retina.jpg 2x' alt=''></div>
 		<p class='caption'>Email Monthly Progress 1</p>
 		<p>
 			Blue Bottle American Apparel wolf small batch, Wes Anderson fashion axe vinyl McSweeney's gluten-free messenger bag four loko photo booth dreamcatcher. Quinoa food truck Banksy semiotics single-origin coffee, authentic Tumblr. Bitters blog occupy, narwhal vinyl hella ugh kitsch freegan quinoa. Umami try-hard photo booth, post-ironic wayfarers VHS literally Odd Future.
-		</p>
-		<div class='illy-padding'><img src='$path/email-monthly-progress-2.jpg' alt=''></div>
-		<p class='caption'>Email Monthly Progress 2</p>
-		<p>
-			Lumbersexual humblebrag asymmetrical, post-ironic kickstarter four loko kale chips bicycle rights venmo. Bushwick narwhal pickled selvage lo-fi, chartreuse celiac direct trade cliche pabst. XOXO taxidermy fingerstache brunch authentic, street art you probably haven't heard of them salvia. Farm-to-table forage pug freegan, chicharrones synth microdosing pitchfork chillwave mumblecore art party.
 		</p>
 	";
 

@@ -115,7 +115,7 @@ if ($tools) {
 	$tools_html = "";
 }
 
-// PROEJCT LINK
+// PROJECT LINK
 if ($project_link) {
 	$project_link_html = "
 		<p><a target='_blank' href='$project_link'>link to project <i class='fa fa-arrow-right' aria-hidden='true'></i></a></p>
