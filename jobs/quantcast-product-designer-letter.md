@@ -12,7 +12,7 @@ Hello! I'm Ray—a designer on the Quantcast Growth Team hoping to make a transi
 ---
 
 
-#Quantcast
+<!-- #Quantcast
 ##Product Designer
 
 Quantcast is hiring a Product Designer to work on our Product Design team in our San Francisco office.
@@ -43,4 +43,4 @@ As a Product Designer, you will join our team of talented, passionate designers.
 
 Since 2006, we’ve been building Q - the world’s largest AI-driven audience behavior platform for the open Internet that today directly quantifies over 100 million web and mobile destinations. Q powers the Quantcast Intelligence Cloud, our suite of audience insights, targeting and measurement solutions designed to understand, influence, convert and measure the consumer journey. Marketers, agencies, consultancies and publishers use the Quantcast Intelligence Cloud to discover new customers, drive incremental growth and deliver business outcomes.
 
-As a global technology company, Quantcast operates in 10 countries with headquarters in San Francisco. We are committed to building an inclusive and diverse environment where everyone can be their authentic self.
+As a global technology company, Quantcast operates in 10 countries with headquarters in San Francisco. We are committed to building an inclusive and diverse environment where everyone can be their authentic self. -->

@@ -6571,30 +6571,20 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		$originaljobposting = "https://www.quantcast.com/careers/50db4022-e509-4846-b204-ed2cf0643031/";
 		$hiring_company = "Quantcast";
 		$jobTitle = "Product Designer";
-		$date = "March 6, 2018";
+		$date = "March 28, 2018";
 		// $funny_portrait = TRUE;
 		// $video_game_resume=TRUE;
 
 		$sample_projects_array = array(
 			array(
-				"path"=>"nl-district-landing-page",
-				"name"=>"NextLesson District Landing Page",
-				"desc" => "Sales tool specific for decision makers.",
+				"path"=>"nextlesson-interestid",
+				"name"=>"InterestID",
+				"desc"=>"Student interest rating tool.",
 			),
 			array(
 				"path"=>"abriendo-puertas",
 				"name"=>"Abriendo Puertas",
 				"desc"=>"Informational site for a non-profit.",
-			),
-			array(
-				"path"=>"nextlesson-marketing",
-				"name"=>"NextLesson Marketing",
-				"desc"=>"Some examples of Marketing pieces",
-			),
-			array(
-				"path"=>"nextlesson-interestid",
-				"name"=>"InterestID",
-				"desc"=>"Student interest rating tool.",
 			),
 			array(
 				"path"=>"toy-fair",

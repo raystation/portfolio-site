@@ -419,6 +419,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 // subheader
 .back-to-landing-page-menu {
 	z-index: 9;
+	background-color: lighten($footer-color,20%);
 	position: absolute;
 	display: flex;
 	justify-content: center;
@@ -426,7 +427,6 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	top: 0;
 	margin-top: 0;
 	width: 100%;
-	background-color: $footer-color;
 	padding: 45px 10px 4px 10px;
 	line-height: 1.25em;
 	color: white;
@@ -709,7 +709,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		}
 	}
 	.img-diagram {
-		background-color: hsla(0, 0%, 90%, 1);
+		background-color: hsla(0, 0%, 93%, 1);
 		padding: 0;
 		border-radius: 3px;
 		margin-bottom: 0;
@@ -854,6 +854,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-bottom: -10px;
+	margin-top: 30px;
 	.filter-item {
 		margin-bottom: 6px;
 		margin-right: 6px;
@@ -918,7 +919,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	// }
 }
 .subhead-padding {
-	padding-top: 35px;
+	padding-top: 10px;
 	@media #{$md}{
 		// padding-top: 10px;
 	}
