@@ -444,7 +444,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	a:link, a:visited {
 		color: white;
 		opacity: 0.5;
-		padding: 0	3px;
+		padding: 0 3px;
 		&:hover {
 			opacity: 1;
 			color: white;
@@ -457,7 +457,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	}
 	@media #{$md} {
 		// position: fixed;
-		padding: 48px 20px 8px 20px;
+		padding: 52px 20px 8px 20px;
 	}
 }
 
@@ -1507,7 +1507,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 			height : 0;
 			background: none;
 			margin-top: 3em;
-			border: 1px dashed hsla(0, 0%, 90%, 1);
+			border-bottom: 1px dashed hsla(0, 0%, 90%, 1);
 			max-width: 75%;
 		}
 		h2.job-title,

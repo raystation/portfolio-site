@@ -1,15 +1,8 @@
+I am applying for the open Product Designer role! I've been gravitating toward product design for a while now, and with this role, I am excited to completely immerse myself. With my experience working with the Growth team, I've gained a solid understanding of Quantcast and our audience as well as its internal processes, systems, tools and people. Now I'm interested in using those learnings to realize the vision of the Quantcast platform by joining your team as a Product Designer.
 
+You asked me once where I wanted to go in my career and I couldn't quite verbalize it at the time. I hadn't thought about the next step because I was learning so much—how to run A/B experiments, how to work with PMs and engineers, how the business worked. Through Ricardo and your team, I've gained a better understanding of how Quantcast and Product Design works and am now ready to take on new challenges and responsibilities.
 
-
-Hello! I'm Ray—a designer on the Quantcast Growth Team hoping to make a transition to full-time. Currently, I help the growth team run AB experiments to increase retention and engagement on the Measure product with the ultimate goal is to convert self-serve customers to paying customers.
-
-###What's the URL of your website?
-###What's your design history? When did you start, and what have you done between then and now?
-###What do you want to do with the rest of your life, and how is Expensify a step toward your long-term goals?
-###How did you hear about us? A job posting? Chalk on a sidewalk? From a friend? Let us know where you saw this opening.
-
-
----
+With Ellen joining your team, I owned Growth design projects from start to finish. I churned out designs for engagement experiments—alerts to adopt new features, redesigns of profile cards, user interface animations, and directing users to more insights. So what did I do before Quantcast? Well, I have over 15+ years of experience from print to digital, spanning marketing, branding, and most recently, product. My skills reflect my interests and adaptability. I've designed education products, laid out books, coded simple websites, developed brand & illustration guides, created artwork for games, and done event design. Before Quantcast, I was at Nextlesson, an education startup, where I owned the design function. I worked with the Product team to develop wireframes and mockups, early prototypes of products, and even solicited product feedback directly from customers through feedback sessions and surveys. This was in addition to marketing, branding, and developing the aesthetic of our education resources.
 
 
 <!-- #Quantcast

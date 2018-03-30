@@ -76,7 +76,7 @@ RewriteRule ^nextlesson-covers$ work?project=nextlesson-covers
 RewriteRule ^nextlesson-interestid$ work?project=nextlesson-interestid
 RewriteRule ^nextlesson-glossary$ work?project=nextlesson-glossary
 RewriteRule ^nextlesson-interative$ work?project=nextlesson-interative
-RewriteRule ^nextlesson-search-browse$ work?project=nextlesson-search-browse
+RewriteRule ^nextlesson-search-and-browse$ work?project=nextlesson-search-and-browse
 RewriteRule ^nextlesson-library$ work?project=nextlesson-library
 RewriteRule ^nextlesson-avatars$ work?project=nextlesson-avatars
 RewriteRule ^nextlesson-pdf$ work?project=nextlesson-pdf
@@ -86,7 +86,7 @@ RewriteRule ^nextlesson-characters$ work?project=nextlesson-characters
 RewriteRule ^nl-district-landing-page$ work?project=nl-district-landing-page
 
 RewriteRule ^quantcast$ work?project=quantcast
-RewriteRule ^quantcast-demographics-card$ work?project=quantcast-demographics-card
+RewriteRule ^quantcast-profile-experiments$ work?project=quantcast-profile-experiments
 RewriteRule ^quantcast-measure-monthly-email$ work?project=quantcast-measure-monthly-email
 RewriteRule ^quantcast-chrome-extension$ work?project=quantcast-chrome-extension
 RewriteRule ^quantcast-blog-posts$ work?project=quantcast-blog-posts

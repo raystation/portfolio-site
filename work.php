@@ -106,11 +106,11 @@ if ( isset($project) ) {
 if ( !isset($template) ) {
 	// DEFAULT VIEW
 
-	if (isset($section)) {
-		if ( $section=="work" && $id ) {
-			$subhead_filter_padding = " subhead-filter-padding";
-		}
-	}
+	// if (isset($section)) {
+	// 	if ( $section=="work" && $id ) {
+	// 		$subhead_filter_padding = " subhead-filter-padding";
+	// 	}
+	// }
 
 	// FILTERS: DESKTOP TOP
 	echo "

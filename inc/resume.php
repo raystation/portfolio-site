@@ -22,6 +22,28 @@ $bio_array['about_me'] = "
 
 $work_history_array = array(
 
+
+  "quantcast" => array(
+    "job_title" => "Growth Design Contractor",
+    "company" => "Quantcast",
+    "url" => "quantcast",
+    "description" => "Was originally hired to be the on-site marketing designer to speed up turnaround of design projects. Eventually started working on experiment designs and mockups to increase retention and engagment. Helping realize the Quantcast platform vision.",
+    "location" => "San Francisco",
+    "start" => "9/2017",
+    "end" => "current",
+    "duties" => array(
+      "Worked on Profile experiements to increase retention and engagement for Measure self-serve customers.",
+      "Developed toaster alerts, pop-ups, and notification dots to help drive customer adoption of Content Segments.",
+      "Developed experiment to test a click profile vs. a scrolling profile.",
+      "Sent emails to Measure self-serve customers to assist Content Segment setup.",
+      "Helped implement better documentation for experiment results on the Growth Team.",
+      "Designed email templates for Measure customer journey.",
+      "Created branded sales pieces(leave behinds, one pagers, postcards) for general use and for Adweek.",
+      "Developed graphics and diagrams for blog posts and help documents.",
+      "Worked with Marketing team to ensure brand consistency and helped develop illustration guidelines.",
+    ),
+  ),
+
   "nextlesson" => array(
     "job_title" => "Head of Design / Advisor",
     "company" => "NextLesson",

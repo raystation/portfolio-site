@@ -1,5 +1,40 @@
 <?
 
+function list_tech_skills() {
+	//things I'm pretty good at
+	$list = array(
+		"name"=>"Technical Skills",
+		"list"=>array(
+			array("percent"=>99,"skill"=>"Hand-drawing skills","url"=>"illustration"),
+			array("percent"=>93,"skill"=>"Vector Illustration","url"=>"illustration"),
+			"clear",
+			array("percent"=>95,"skill"=>"Photoshop","url"=>"print-design"),
+			array("percent"=>99.44,"skill"=>"Illustrator","url"=>"illustration"),
+			array("percent"=>98,"skill"=>"Indesign","url"=>"print-design"),
+			"clear",
+			array("percent"=>85,"skill"=>"UI & UX","url"=>"ui-ux"),
+			array("percent"=>90,"skill"=>"Sketch","url"=>"ui-ux"),
+			array("percent"=>90,"skill"=>"Invision","url"=>"ui-ux"),
+			"clear",
+			array("percent"=>95,"skill"=>"HTML","url"=>"web-dev"),
+			array("percent"=>93,"skill"=>"CSS/Sass","url"=>"web-dev"),
+			array("percent"=>90,"skill"=>"Responsive Web Design","url"=>"web-dev"),
+			array("percent"=>35,"skill"=>"JS/JQuery","url"=>"web-dev"),
+			"clear",
+			array("percent"=>80,"skill"=>"PHP","url"=>"web-dev"),
+			array("percent"=>75,"skill"=>"Wordpress","url"=>"web-dev"),
+			"clear",
+			array("percent"=>85,"skill"=>"Git and Github","url"=>"web-dev"),
+			"clear",
+			array("percent"=>90,"skill"=>"Page Layout","url"=>"print-design"),
+			array("percent"=>95,"skill"=>"Pre-Press","url"=>"print-design"),
+			// array("percent"=>89,"skill"=>"QuarkXPress"),
+			// array("percent"=>95,"skill"=>"Microsoft Excel"),
+			// array("percent"=>85,"skill"=>"Dreamweaver"),
+			// array("percent"=>52,"skill"=>"Flash"),
+			// array("percent"=>92,"skill"=>"Sass"),
+		)
+	);
 function list_new_favorite_things() {
 	$list = array(
 		"name"=>"New Favorite Things",
@@ -19,19 +54,22 @@ function list_new_favorite_things() {
 			// "Tosadas",
 			// "Amazon Prime",
 			// "Twitter Bootstrap",
-			"Bloodborne",
+			// "Bloodborne",
+			"EDC",
+			"Goruck",
 			// "Kindle Paperwhite",
 			// "PlayStation 4",
 			// "Snapchat",
-			"Gerber knives",
+			// "Gerber knives",
 			// "The Force Awakens",
 			// "Curry Up Now",
 			// "Areaware",
 			// "Set",
-			"Sushi Go!",
+			// "Sushi Go!",
+			"Codenames",
 			// "Made in Mayhem",
 			// "Copic Marker refills",
-			"Fisher Space Pen",
+			"Space Pens",
 			"Allbirds",
 			// "Sketch",
 			// "Superjail",
@@ -395,41 +433,6 @@ function list_funny_city_names() {
 	return $list;
 }
 
-function list_tech_skills() {
-	//things I'm pretty good at
-	$list = array(
-		"name"=>"Technical Skills",
-		"list"=>array(
-			array("percent"=>99,"skill"=>"Hand-drawing skills","url"=>"illustration"),
-			array("percent"=>93,"skill"=>"Vector Illustration","url"=>"illustration"),
-			"clear",
-			array("percent"=>95,"skill"=>"Photoshop","url"=>"print-design"),
-			array("percent"=>99.44,"skill"=>"Illustrator","url"=>"illustration"),
-			array("percent"=>98,"skill"=>"Indesign","url"=>"print-design"),
-			"clear",
-			array("percent"=>85,"skill"=>"UI & UX","url"=>"ui-ux"),
-			array("percent"=>90,"skill"=>"Sketch","url"=>"ui-ux"),
-			array("percent"=>50,"skill"=>"Adobe XD","url"=>"ui-ux"),
-			"clear",
-			array("percent"=>95,"skill"=>"HTML","url"=>"web-dev"),
-			array("percent"=>93,"skill"=>"CSS/Sass","url"=>"web-dev"),
-			array("percent"=>90,"skill"=>"Responsive Web Design","url"=>"web-dev"),
-			array("percent"=>35,"skill"=>"JS/JQuery","url"=>"web-dev"),
-			"clear",
-			array("percent"=>80,"skill"=>"PHP","url"=>"web-dev"),
-			array("percent"=>75,"skill"=>"Wordpress","url"=>"web-dev"),
-			"clear",
-			array("percent"=>85,"skill"=>"Git and Github","url"=>"web-dev"),
-			"clear",
-			array("percent"=>90,"skill"=>"Page Layout","url"=>"print-design"),
-			array("percent"=>95,"skill"=>"Pre-Press","url"=>"print-design"),
-			// array("percent"=>89,"skill"=>"QuarkXPress"),
-			// array("percent"=>95,"skill"=>"Microsoft Excel"),
-			// array("percent"=>85,"skill"=>"Dreamweaver"),
-			// array("percent"=>52,"skill"=>"Flash"),
-			// array("percent"=>92,"skill"=>"Sass"),
-		)
-	);
 	return $list;
 }
 function get_puns() {

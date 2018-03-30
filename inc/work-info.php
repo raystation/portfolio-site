@@ -10,7 +10,7 @@ if ( $project ) {
 $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") , "work-display"=>false),
 	array( "name" => "Quantcast","path" => "quantcast", "tags" => array("places-i-worked") , "work-display"=>false),
-	array( "name" => "Quantcast Demographics Card Redesign Experiment","path" => "quantcast-demographics-card", "tags" => array("ui-ux") , "work-display"=>true),
+	array( "name" => "Quantcast Profile Experiments","path" => "quantcast-profile-experiments", "tags" => array("ui-ux") , "work-display"=>false),
 	array( "name" => "Measure Monthly Report","path" => "quantcast-measure-monthly-email", "tags" => array("ui-ux") , "work-display"=>true),
 	array( "name" => "Quantcast Chrome Extension","path" => "quantcast-chrome-extension", "tags" => array("ui-ux") , "work-display"=>true),
 	array( "name" => "Quantcast Blog Posts","path" => "quantcast-blog-posts", "tags" => array("ui-ux") , "work-display"=>true),
@@ -24,7 +24,7 @@ $works = array(
 	array( "name" => "Supercell Art Test","path" => "supercell-art-test" , "tags"=>array("marketing-branding"), "work-display"=>false),
 	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars" , "work-display"=>false),
 	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library" , "work-display"=>false),
-	// array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-browse" , "work-display"=>false),
+	array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-and-browse" , "work-display"=>false),
 	array( "name" => "Museyon Guides", "path" => "museyon-guides", "tags"=>array("places-i-worked") , "work-display"=>false),
 	array( "name" => "The Pok&eacute;mon Company", "path" => "pokemon","tags"=>array("places-i-worked") , "work-display"=>true),
 	array( "name" => "Abriendo Puertas / Opening Doors", "path" => "abriendo-puertas",	"tags"=>array("web","marketing-branding") , "work-display"=>true),
@@ -1069,6 +1069,7 @@ if ( $project == "abriendo-puertas" ) {
 
 	$sidebar = "
 		<p>Informational Responsive Website for a non-profit</p>
+		<p>2010</p>
 		<p><a href='http://ap-od.org' target='_blank'>ap-od.org</a>
 	";
 	$tools=array(
@@ -1636,6 +1637,7 @@ if ( $project == "adelle-marcero" ) {
 
 	$sidebar="
 	<p>Portfolio Site</p>
+	<p>2011</p>
 	";
 
 	$tools=array(
@@ -1749,7 +1751,7 @@ function get_nextlesson_projects(){
 		array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid" ),
 		array( "name" => "NextLesson Glossary Terms", "path" => "nextlesson-glossary" ),
 		array( "name" => "NextLesson Characters", "path" => "nextlesson-characters" ),
-		// array( "name" => "Browsing Experience","path" => "nextlesson-search-browse" ),
+		array( "name" => "Nextlesson Search and Browse","path" => "nextlesson-search-browse" ),
 		// array( "name" => "Graphics Library", "path" => "nextlesson-library" ),
 		// array( "name" => "Profile Avatars", "path" => "nextlesson-avatars" ),
 		// array( "name" => "Interactive Performance Tasks", "path" => "nextlesson-interative-pt" ),
@@ -2074,18 +2076,18 @@ if ( $project == "nextlesson-marketing" ) {
 //  #NEXTLESSON #SEARCH BROWSE
 // ===============================
 
-if ( $project == "nextlesson-search-and-browse-page" ) {
+if ( $project == "nextlesson-search-and-browse" ) {
 
-	$template = "ui";
+	$template = "illustration";
 	$company = "NextLesson";
-	$path = "img/nextlesson-search-browse";
+	// $path = "img/nextlesson-search-browse";
 	$movie = "$path/search-browse-bar-1.mp4";
+	$subtitle = "Design of browsing and searching experience for educational resources";
 
-	$description = "I was comissioned to do some illustrations to show an example of how LesConcierges' new web interface and app would work with their existing service.";
+	$description = "Worked with the Product team to develop the searching and browsing experience to access our educational resources. I developed wireframes and mockups, coded clickable prototypes, and even got product feedback directly from customers through feedback sessions and surveys. We put an emphasis on the grade filters, subjects, and lesson covers.";
 
 	//TODO: update the sidebar information
 	$sidebar = "
-		<p>Illustrations</p>
 		<p>July 2014</p>
 	";
 
@@ -2094,11 +2096,13 @@ if ( $project == "nextlesson-search-and-browse-page" ) {
 		array("skill"=>"Photoshop", "percent"=>40),
 	);
 
-	$img_info = array(
+	$illustration_intro_html="";
+
+	$illustrations = array(
 		// array("file" => "puzzle.jpg", "alt" => "The hotel owner tells his assistant that he needs to schedule a flight to Shanghai"),
 	);
 
-	$other = "
+	$content = "
 	<video width='320' height='240' controls>
 		<source src='$movie' type='video/mp4'>
 		Your browser does not support the video tag.
@@ -2123,6 +2127,7 @@ if ( $project == "nextlesson-characters" ) {
 
 	$sidebar = "
 		<p>Character Designs</p>
+		<p>2016</p>
 	";
 	$thumbnail_size = "small";
 
@@ -2183,6 +2188,7 @@ if ( $project == "nl-district-landing-page" ) {
 
 	$sidebar = "
 		<p>Landing page with streamlined product pitch</p>
+		<p>2017</p>
 	";
 	$project_link = "http://rayuen.com/p/nextlesson/mockups/website-mockup/district";
 	// $thumbnail_size = "small";
@@ -2213,7 +2219,7 @@ if ( $project == "nl-district-landing-page" ) {
 
 function get_quantcast_projects(){
 	$works = array(
-		array( "name" => "Demographic Card Experiment","path" => "quantcast-demographics-card" ),
+		array( "name" => "Quantcast Profile Experiments","path" => "quantcast-profile-experiments" ),
 		array( "name" => "Measure Monthly Report","path" => "quantcast-measure-monthly-email" ),
 		array( "name" => "Quantcast Chrome Extension","path" => "quantcast-chrome-extension" ),
 		array( "name" => "Quantcast Blog Posts","path" => "quantcast-blog-posts" ),
@@ -2251,12 +2257,12 @@ if ( $project == "quantcast" ) {
 //  #QUANTCAST DEMOGRAPHICS CARD
 // ===============================
 
-if ( $project == "quantcast-demographics-card" ) {
+if ( $project == "quantcast-profile-experiments" ) {
 
 	$template = "illustration";
 
-	$title = "Demographic Card Experiment";
-	$subtitle = "Proposed Engagement Experiment";
+	$title = "Quantcast Profile Experiments";
+	$subtitle = "Engagement Experiments";
 	$company = "Quantcast";
 	$hero_img="$path/hero-img.jpg";
 
@@ -2267,6 +2273,7 @@ if ( $project == "quantcast-demographics-card" ) {
 	";
 
 	$content="
+			<h3>Demographics Card Update</h3>
 			In this particular experiment, our goal was to increase engagement on the <span class='tooltip underline' title='The Measure profile page gives you audience data on a site, a network of sites, or an app.'>Quantcast Measure profile</span>. It is a scrolling page consisting of 10 cards which contain a different report on your website/app. We use bar charts on 5 out of the 10 cards.
 			$p_break
 			Our hypothesis in this experiment is if we diversify and simplify the ways we visualize data, people won't skim as quickly, creating a focus on the card buttons and data. For us, engagement is: staying on the card longer, clicking on &ldquo;View Details.&rdquo; and/or changing the data view on the side (Composition, Web/Apps, Help).
@@ -2275,17 +2282,29 @@ if ( $project == "quantcast-demographics-card" ) {
 			<div class='img-diagram'><img src='$path/demo-card-original.png' alt=''></div>
 			<p class='caption'>Current Demographics card.
 			$p_break
-			I identified elements in the current design I liked and wanted to improve upon.
+			I identified elements in the current design I liked and wanted to improve upon. I also needed to make decisions on how <em>different</em> I could go since it still needs to fit in with the other cards.
 			<li>Data labels are right aligned with the graph right next to it, making the data easy to quickly scan.
-			<li>The other elements seem to suffer a bit—icons seem unanchored, chart labels look off to me.
-			<li>The bars are normalized ***
+			<li>The other elements seem unanchored and chart labels look off to me.
+			<li>The bars don't show true &ldquo;100%&rdquo;.
 			<li>Our research shows users don't interact with the options on the side, so maybe surfacing Composition instead of Index might clue the user that more data is available.
 			$p_break
-			<a href='$path/designs-v1.jpg' target='_blank'><img src='$path/designs-v1.jpg' alt=''></a>
-			<p class='caption'>Initial Designs.</p>
-			For the design on the left, I played around with how the charts were sorted, putting them all one on top of each other so it was easier to align elements. It's easier to find what you need, but a bit harder to scan. I got feedback that it's harder to compare the data and the card is also getting too long.
+			<div class='illy-padding'>
+			  <img src='$path/v1-bars-gradient.jpg'>
+			</div>
+			<p class='caption'>Design A.</p>
+			<p>
+			<strong>Design A. </strong>I played around with how the charts were sorted, putting them all one on top of each other so it was easier to align elements. It's easier to find what you need, but a bit harder to scan. I received feedback that it's harder to compare the data and that the card is getting too long.
+			</p>
+			<div class='illy-padding linked'>
+			  <img src='$path/v1-vertical-bars.jpg'>
+			</div>
+			<p class='caption'>Design B.</p>
+			<p>
+			<strong>Design B. </strong>This design received more positive feedback. The team liked how compact and easy to read it was.
+			</p>
+
 			$p_break
-			I got more positive feedback from the right-hand design. People liked how compact it was and easy to read.
+
 		</p>
 		<div class='img-diagram'><img src='$path/demo-card-proposed.png' alt=''></div>
 		<p class='caption'>Proposed Demographics card.</p>
@@ -2297,8 +2316,9 @@ if ( $project == "quantcast-demographics-card" ) {
 
 	$sidebar = "
 		<p>Growth Experiment</p>
+		<p>2017</p>
 	";
-	$project_link = "https://www.quantcast.com/buzzfeed.com";
+	// $project_link = "https://www.quantcast.com/buzzfeed.com";
 	// $thumbnail_size = "small";
 
 	$tools = array(
@@ -2343,6 +2363,7 @@ if ( $project == "quantcast-measure-monthly-email" ) {
 
 	$sidebar = "
 		<p>Re-engagement Email Experiment</p>
+		<p>2017</p>
 	";
 	$illustration_intro_html="";
 	// $project_link = "https://www.quantcast.com/buzzfeed.com";
@@ -2373,18 +2394,22 @@ if ( $project == "quantcast-chrome-extension" ) {
 	$company = "Quantcast";
 
 	$description = "
+		We know the actual process of getting &ldquo;Quantified&rdquo; is not as easy as it should be.
 		Troubleshoot Quantcast tag installation and see traffic, rank, and simple demographics for sites that are quantified.
 	";
 
 	$content="
 		<div class='img-diagram'><img src='$path/extension-screenshot.jpg' srcset='$path/extension-screenshot-retina.jpg 2x' alt=''></div>
 		<p class='caption'>Screenshot of Chrome extension on wikia.com</p>
+		<div class='illy-padding'><img src='$path/tag.png' alt=''></div>
+		<p class='caption'>Screenshot of Chrome extension on wikia.com</p>
 	";
 
 	$illustration_intro_html="";
 
 	$sidebar = "
-		<p>Redesigned Profile Card </p>
+		<p>Redesigned Profile Card</p>
+		<p>2017</p>
 	";
 	$project_link = "https://www.quantcast.com/blog/announcing-the-newly-revamped-quantcast-chrome-extension/";
 	// $thumbnail_size = "small";
@@ -2440,7 +2465,8 @@ if ( $project == "quantcast-blog-posts" ) {
 	";
 
 	$sidebar = "
-		<p>Redesigned Profile Card </p>
+		<p>Redesigned Profile Card</p>
+		<p>2018</p>
 	";
 	$project_link = "https://www.quantcast.com/blog";
 	// $thumbnail_size = "small";
@@ -2456,8 +2482,6 @@ if ( $project == "quantcast-blog-posts" ) {
 		// array("skill"=>"Design System", "percent"=>40),
 	);
 	$illustrations = array(
-
-		array("path"=>"images/content-segments-top-graphic.png", "caption"=>"Introducing Content Segments for Quantcast Measure"),
 
 		array("path"=>"images/collecting-the-right-audience-data-for-an-rfp-blog.png", "caption"=>""),
 		array("path"=>"images/collecting-the-right-audience-data-for-an-rfp-thumbnail.png", "caption"=>"Collecting the Right Audience Data for an RFP - <a href='https://www.quantcast.com/blog/collecting-the-right-audience-data-for-an-rfp/' target='_blank'>link to post</a>"),
@@ -2478,6 +2502,12 @@ if ( $project == "quantcast-blog-posts" ) {
 		array("path"=>"images/website-monetization-facebook-1.png", "caption"=>""),
 		array("path"=>"images/website-monetization-blog-2.png", "caption"=>""),
 		array("path"=>"images/website-monetization-facebook-2.png", "caption"=>"Website Monetization: Creating an RFP that Wins - <a href='https://www.quantcast.com/blog/website-monetization-creating-rfp-wins-part-1/' target='_blank'>Part 1</a>, <a href='https://www.quantcast.com/blog/website-monetization-creating-rfp-wins-part-2/' target='_blank'>Part 2</a>"),
+
+		array("path"=>"images/content-segments-top-graphic.png", "caption"=>""),
+		array("path"=>"images/cs-meta-example.jpg", "caption"=>""),
+		array("path"=>"images/cs-checklist-example.jpg", "caption"=>"Introducing Content Segments for Quantcast Measure"),
+
+
 	);
 
 } //QUANTCAST-BLOG-POSTS

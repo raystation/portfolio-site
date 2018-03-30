@@ -6572,40 +6572,55 @@ Candidates should be proficient in the Adobe suite (including Illustrator, Photo
 		$hiring_company = "Quantcast";
 		$jobTitle = "Product Designer";
 		$date = "March 28, 2018";
+		$name="Julie";
 		// $funny_portrait = TRUE;
 		// $video_game_resume=TRUE;
 
+		$closing = "
+		<p>
+		I'd love the opportunity to share my work with you and to learn more about the role. I’ve included some relevant work samples below. Don’t hesitate to contact me with questions!
+		</p>
+		<p>
+		Thanks for your time,<br>
+		Ray
+		</p>
+		";
+
 		$sample_projects_array = array(
+			array(
+				"path"=>"quantcast-profile-experiments",
+				"name"=>"Quantcast Profile Experiments",
+				"desc"=>"Profile engagement experiments.",
+			),
+			array(
+				"path"=>"quantcast-chrome-extension",
+				"name"=>"Quantcast Chrome Extension",
+				"desc"=>"New user acquisition and engagement experiment.",
+			),
+			array(
+				"path"=>"quantcast-measure-monthly-email",
+				"name"=>"Measure Monthly Report",
+				"desc"=>"Email experiment.",
+			),
+			array(
+				"path"=>"nextlesson-search-and-browse",
+				"name"=>"Nextlesson Browse Page",
+				"desc"=>"Design of browsing and searching experience for educational resources.",
+			),
 			array(
 				"path"=>"nextlesson-interestid",
 				"name"=>"InterestID",
 				"desc"=>"Student interest rating tool.",
 			),
 			array(
+				"path"=>"quantcast-blog-posts",
+				"name"=>"Quantcast Blog Posts",
+				"desc"=>"Illustrated Banners and Thumbnails.",
+			),
+			array(
 				"path"=>"abriendo-puertas",
 				"name"=>"Abriendo Puertas",
 				"desc"=>"Informational site for a non-profit.",
-			),
-			array(
-				"path"=>"toy-fair",
-				"name"=>"Pok&eacute;mon Toy Fair",
-				"type"=>"jpg",
-				"desc" => "Branding, Conference Booth Design and Collateral.",
-			),
-			array(
-				"path"=>"nextlesson-covers",
-				"name"=>"Nextlesson Project/Lesson Covers",
-				"desc"=>"Developing K12 lesson covers and design standards.",
-			),
-			array(
-				"path"=>"chronicles-of-old-new-york",
-				"name"=>"Museyon Guides",
-				"desc" => "Design and layout of travel guides.",
-			),
-			array(
-				"path"=>"supercell-art-test",
-				"name"=>"Supercell",
-				"desc" => "Art test for a marketing job.",
 			),
 		);
 	break;
