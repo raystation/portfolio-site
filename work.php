@@ -32,6 +32,7 @@ if ( !isset($project) ) {
 } else {
 	$title = get_project_title($project);
 }
+$header_add .= "<meta name ='title' content='$title'>";
 
 include('inc/header.php');
 
