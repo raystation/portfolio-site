@@ -7,16 +7,15 @@ $subhead_filter_padding="";
 $selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
 
 // FILTERS TURNED OFF FOR NOW
+// prints out the filters and shows which one is active
 $filter_list_html = get_filter_list_html($selected_filter);
 
 //projects to show on the front page
 $number_of_thumbnails = 99;
 
-if ( isset($id) ) {
-	$id_html = "?id=$id";
-} else {
-	$id_html="";
-}
+// $id=job if a job is selected, keeps the id in the url
+if ( isset($id) ) {$id_html = "?id=$id"; }
+else {$id_html=""; }
 
 $section = "work";
 
@@ -54,16 +53,11 @@ if ( isset($project) && file_exists("$path/$project.php") ) {
 // }
 
 // IF THE PROJECT IS SET (VIEWING A PROJECT)
-// THEN IT WILL TAKE THE PROJECT OUT OF THE WORK ARRAY SO YOU DON'T GET IT IN THE RECENT PROJECTS
+
+
 if ( isset($project) ) {
-	// echo "TAGS";
-	foreach ($works as $key => $work) {
-		if (array_search($title, $work)){
-			$current_project_tags = $work['tags'];
-			// var_dump($tags);
-			break;
-		};
-	}
+	// Related Projects
+	// THEN IT WILL TAKE THE PROJECT OUT OF THE WORK ARRAY SO YOU DON'T GET IT IN THE RECENT PROJECTS
 	// $tags = $works[$key][$tags];
 	unset($works[$key]);
 	$works = array_values($works);
@@ -82,9 +76,9 @@ if ( isset($path)) {
 }
 
 // ========================
-// DEFAULT VIEW (based on on view template)
+// VIEW (based on on view template)
 
-// GRABS THE TEMPLATE FILE
+// GRABS THE TEMPLATE FILE FOR PROJECTS
 // IF THE PROJECT IS SET
 if ( isset($project) ) {
 
@@ -100,9 +94,7 @@ if ( isset($project) ) {
 	}
 }
 // TODO: have thumbnails not print on company page or consolidate
-
-//produces thumbnails for homepage and below the projects
-
+// If the template is not set, it means that the user clicked on WORK
 
 if ( !isset($template) ) {
 	// DEFAULT VIEW
@@ -115,7 +107,6 @@ if ( !isset($template) ) {
 
 	// FILTERS: DESKTOP TOP
 	echo "
-
 		<div class='filters'>
 			$filter_list_html
 		</div>
@@ -124,7 +115,7 @@ if ( !isset($template) ) {
 	// echo "// <div class='sixteen columns'> // 	<h2>Selected Works</h2> // </div>";
 	// skeleton_print_thumbnail_4($works);
 
-	// filter out the projects we don't want to output on the default view
+	// filter out the projects we don't want to output on the Selected Works view
 	if (!isset($selected_filter)) {
 		$selected_works=array();
 		foreach ($works as $key => $work) {
@@ -169,12 +160,22 @@ else {
 	} else {
 		// PRINT RELATED PROJECTS BY TAG[4]
 		// get tags, make array of all tags
-		// $tags = $works[$project]['tags'];
-		// var_dump($current_project_tags);
+		$tags = $works[$project]['tags'];
+		var_dump($current_project_tags);
 		// echo "<br>";
+
+		foreach ($works as $key => $work) {
+			if (array_search($title, $work)){
+				$current_project_tags = $work['tags'];
+				// var_dump($tags);
+				break;
+			};
+		}
 
 
 		// searches for other projects just based on first tag, doesn't do the second.
+
+		// new related projects array set
 		$related_projects_by_tag = array();
 
 		$x=0; //step counter
@@ -183,6 +184,7 @@ else {
 		$tag_search=0;
 
 		$current_project_tag = $current_project_tags[0]; //the tags on the current project
+		var_dump($current_project_tag);
 		for ($i=0;  $related_projects_count <= $project_count; $i++) {
 			$temp_title = $works[$i]["path"];
 
@@ -240,12 +242,12 @@ function get_filter_list_html( $selected_filter ){
 
 	// sets ALL
 	if ($selected_filter=="") {
-		$html.="<div class='filter-item active'><a href='work$id_html'>All</a></div>";
+		$html.="<div class='filter-item active'><a href='work$id_html'>Selected Works</a></div>";
 	} else {
-		$html.="<div class='filter-item'><a href='work$id_html'>All</a></div>";
+		$html.="<div class='filter-item'><a href='work$id_html'>Selected Works</a></div>";
 	}
 
-	$id_html = !is_null($id) ? "&id=$id" : "";
+	// $id_html = !is_null($id) ? "&id=$id" : "";
 	foreach ($filters as $key => $filter) {
 		if ( $selected_filter == $filter['url'] ) {
 			$class="class='active'";

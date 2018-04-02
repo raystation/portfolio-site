@@ -439,6 +439,7 @@ if ( $project == "malado-baldwin-indexhibit" ) {
 
 	$sidebar = "
 		<p>Portfolio Website</p>
+		<p>2009</p>
 		<p><a href='http://www.maladobaldwin.com' target='_blank'>maladobaldwin.com</a>
 	";
 
@@ -2310,6 +2311,17 @@ if ( $project == "quantcast-profile-experiments" ) {
 		<p class='caption'>Proposed Demographics card.</p>
 		<p>
 			The design we landed on also features the U.S. Composition, something you usually only see in the Details view. The height of this card is determined by the height of the Index view, so I couldn't make it as short as I wanted to. I am hoping the focus is still on the the data, the &ldquo;View Details&rdquo; button, and the switches on the right side.
+		$p_break
+		<h3>UI Button Prompts</h3>
+		<div class='video-padding'>
+			<video width='800' height='600' controls>
+				<source src='$path/ui-prompt.mp4' type='video/mp4'>
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		<p class='caption'>Experiment on the Buzzfeed Profile page</p>
+		<p>
+			An experiment to test the waters on simple visual cues to teach users how to interact with Profile cards. Our hypothesis is that they don't see the &ldquo;View Details&rdquo; button and clicking on the button will give the users more value.
 		</p>
 	";
 	$illustration_intro_html="";
@@ -2408,7 +2420,6 @@ if ( $project == "quantcast-chrome-extension" ) {
 	$illustration_intro_html="";
 
 	$sidebar = "
-		<p>Redesigned Profile Card</p>
 		<p>2017</p>
 	";
 	$project_link = "https://www.quantcast.com/blog/announcing-the-newly-revamped-quantcast-chrome-extension/";
@@ -2465,7 +2476,6 @@ if ( $project == "quantcast-blog-posts" ) {
 	";
 
 	$sidebar = "
-		<p>Redesigned Profile Card</p>
 		<p>2018</p>
 	";
 	$project_link = "https://www.quantcast.com/blog";
