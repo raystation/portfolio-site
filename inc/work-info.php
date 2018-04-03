@@ -8,67 +8,67 @@ if ( $project ) {
 }
 
 $works = array(
-	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") , "work-display"=>false),
-	array( "name" => "Quantcast","path" => "quantcast", "tags" => array("places-i-worked") , "work-display"=>false),
-	array( "name" => "Quantcast Profile Experiments","path" => "quantcast-profile-experiments", "tags" => array("ui-ux") , "work-display"=>false),
-	array( "name" => "Measure Monthly Report","path" => "quantcast-measure-monthly-email", "tags" => array("ui-ux") , "work-display"=>true),
-	array( "name" => "Quantcast Chrome Extension","path" => "quantcast-chrome-extension", "tags" => array("ui-ux") , "work-display"=>true),
-	array( "name" => "Quantcast Blog Posts","path" => "quantcast-blog-posts", "tags" => array("ui-ux") , "work-display"=>true),
-	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("ui-ux","illustration","web") , "work-display"=>true),
-	array( "name" => "NextLesson Admin Landing Page","path" => "nl-district-landing-page","tags"=>array("ui-ux","web") , "work-display"=>false),
-	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("illustration","ui-ux","marketing-branding","web") , "work-display"=>true),
-	array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing","tags"=>array("marketing-branding"), "work-display"=>true),
-	array( "name" => "NextLesson Glossary Images", "path" => "nextlesson-glossary", "tags"=>array("illustration") , "work-display"=>true),
-	array( "name" => "NextLesson Characters", "path" => "nextlesson-characters", "tags"=>array("illustration") , "work-display"=>true),
-	// array( "name" => "NextLesson Interactive","path" => "nextlesson-interactive" , "work-display"=>false),
-	array( "name" => "Supercell Art Test","path" => "supercell-art-test" , "tags"=>array("marketing-branding"), "work-display"=>false),
-	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars" , "work-display"=>false),
-	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library" , "work-display"=>false),
-	array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-and-browse" , "work-display"=>false),
-	array( "name" => "Museyon Guides", "path" => "museyon-guides", "tags"=>array("places-i-worked") , "work-display"=>false),
-	array( "name" => "The Pok&eacute;mon Company", "path" => "pokemon","tags"=>array("places-i-worked") , "work-display"=>true),
-	array( "name" => "Abriendo Puertas / Opening Doors", "path" => "abriendo-puertas",	"tags"=>array("web","marketing-branding") , "work-display"=>true),
-	array( "name" => "Adelle Marcero", "path" => "adelle-marcero","tags"=>array("web", "ui-ux") , "work-display"=>true),
-	array( "name" => "The 3", "path" => "the-3", "tags"=>array("ui-ux") , "work-display"=>true),
-	array( "name" => "Wired", "path" => "wired", "tags" => array("illustration") , "work-display"=>true),
-	array( "name" => "Suspended Belief Studios", "path" => "suspended-belief-studios", "tags" => array("places-i-worked") , "work-display"=>false),
-	array( "name" => "Malado Baldwin", "path" => "malado-baldwin", "tags"=>array("web") , "work-display"=>true),
-	array( "name" => "City Style","path" => "city-style","tags"=>array("print-design"), "work-display"=>true),
-	array( "name" => "Chronicles of Old New York", "path" => "chronicles-of-old-new-york", "tags"=>array("print-design") , "work-display"=>true),
-	array( "name" => "Chronicles of Old Las Vegas","path" => "chronicles-of-old-las-vegas","tags"=>array("print-design"), "work-display"=>false),
-	array( "name" => "Chronicles of Old Boston","path" => "chronicles-of-old-boston","tags"=>array("print-design"), "work-display"=>false),
-	array( "name" => "Chronicles of Old Paris","path" => "chronicles-of-old-paris","tags"=>array("print-design"), "work-display"=>false),
-	array( "name" => "Chronicles of Old London", "path" => "chronicles-of-old-london", "tags"=>array("print-design"), "work-display"=>false),
-	array( "name" => "Art + Paris","path" => "art-and-paris","tags"=>array("print-design"), "work-display"=>true),
-	array( "name" => "Chronicles of Old Rome","path" => "chronicles-of-old-rome","tags"=>array("print-design"), "work-display"=>false),
-	array( "name" => "The Rise of Darkrai","path" => "darkrai", "tags"=>array("print-design","ui-ux","marketing-branding") , "work-display"=>false),
-	array( "name" => "Arceus and the Jewel of Life","path" => "arceus", "tags"=>array("print-design","ui-ux","marketing-branding") , "work-display"=>false),
-	array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop", "path" => "feature-shop", "tags"=>array("print-design","marketing-branding") , "work-display"=>false),
-	array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos", "tags"=>array("print-design","marketing-branding") , "work-display"=>false),
-	array( "name" => "Pok&eacute;mon: 10th Anniversary","path" => "10th-anniversary","tags"=>array("print-design","marketing-branding") , "work-display"=>false),
-	array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon", "tags"=>array("print-design") , "work-display"=>false),
-	array( "name" => "Battle Revolution", "path" => "battle-revolution", "tags"=>array("print-design","ui-ux") , "work-display"=>false),
-	array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex", "tags"=>array("print-design") , "work-display"=>false),
-	array( "name" => "Pok&eacute;mon Toy Fair", "path" => "toy-fair", "tags"=>array("print-design","marketing-branding",) , "work-display"=>false),
-	array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch", "tags"=>array("print-design","marketing-branding",) , "work-display"=>false),
-	array( "name" => "Licensing Show", "path" => "licensing-show", "tags"=>array("print-design","marketing-branding") , "work-display"=>false),
-	array( "name" => "Indiginauts", "path" => "indiginauts", "tags" => array("illustration","ui-ux") , "work-display"=>true),
-	array( "name" => "Color Chameleon", "path" => "color-chameleon", "tags" => array("illustration","ui-ux") , "work-display"=>true),
-	array( "name" => "LesConcierges","path" => "lesconcierges", "tags" => array("illustration","marketing-branding") , "work-display"=>false),
-	array( "name" => "Project Animore", "path" => "project-animore", "tags" => array("illustration","ui-ux") , "work-display"=>true),
-	array( "name" => "#Inktober2016","path" => "inktober-2016", "tags" => array("illustration") , "work-display"=>false),
-	array( "name" => "100 Principles of Game Design", "path" => "100-principles-of-game-design", "tags" => array("illustration") , "work-display"=>true),
-	array( "name" => "Holiday Card 2014", "path" => "holiday-card-2014", "tags" => array("web","illustration") , "work-display"=>false),
-	array( "name" => "Monkey Mo, Monkey Go!", "path" => "monkey-mo", "tags" => array("illustration", "print-design") , "work-display"=>true),
-	array( "name" => "Scavenger Hunt", "path" => "scavenger-hunt", "tags" => array("illustration") , "work-display"=>true),
-	array( "name" => "Sarah Walko", "path" => "sarah-walko", "tags"=>array("web") , "work-display"=>true),
-	array( "name" => "Edgeware", "path" => "edgeware", "tags"=>array("illustration") , "work-display"=>false),
-	array( "name" => "StoryMaps", "path" => "storymaps", "tags" => array("illustration") , "work-display"=>true),
-	array( "name" => "Egg Baby", "path" => "egg-baby", "tags" => array("illustration") , "work-display"=>false),
-	// array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit" , "work-display"=>false),
-	// array( "name" => "Portfolio Site","path" => "portfolio-site" , "work-display"=>false),
-	// array( "name" => "idibon","path" => "idibon","tags"=>array("illustration") , "work-display"=>false),
-	// array( "name" => "Nerd Comics", "path" => "nerd-comics" , "work-display"=>false),
+	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") ),
+	array( "name" => "Quantcast","path" => "quantcast", "tags" => array("places-i-worked") ),
+	array( "name" => "Quantcast Profile Experiments","path" => "quantcast-profile-experiments", "tags" => array("ui-ux") ),
+	array( "name" => "Measure Monthly Report","path" => "quantcast-measure-monthly-email", "tags" => array("ui-ux","selected")),
+	array( "name" => "Quantcast Chrome Extension","path" => "quantcast-chrome-extension", "tags" => array("ui-ux","selected")),
+	array( "name" => "Quantcast Blog Posts","path" => "quantcast-blog-posts", "tags" => array("ui-ux","selected")),
+	array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid","tags"=>array("ui-ux","illustration","web","selected")),
+	array( "name" => "NextLesson Admin Landing Page","path" => "nl-district-landing-page","tags"=>array("ui-ux","web") ),
+	array( "name" => "NextLesson Lesson Covers","path" => "nextlesson-covers", "tags"=>array("illustration","ui-ux","marketing-branding","web","selected")),
+	array( "name" => "NextLesson Marketing","path" => "nextlesson-marketing","tags"=>array("marketing-branding","selected")),
+	array( "name" => "NextLesson Glossary Images", "path" => "nextlesson-glossary", "tags"=>array("illustration","selected")),
+	array( "name" => "NextLesson Characters", "path" => "nextlesson-characters", "tags"=>array("illustration","selected")),
+	// array( "name" => "NextLesson Interactive","path" => "nextlesson-interactive", "tags"=>array("ui-ux")),
+	array( "name" => "Supercell Art Test","path" => "supercell-art-test" , "tags"=>array("marketing-branding")),
+	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars" ),
+	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library" ),
+	array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-and-browse" ),
+	array( "name" => "Museyon Guides", "path" => "museyon-guides", "tags"=>array("places-i-worked") ),
+	array( "name" => "The Pok&eacute;mon Company", "path" => "pokemon","tags"=>array("places-i-worked","selected")),
+	array( "name" => "Abriendo Puertas / Opening Doors", "path" => "abriendo-puertas",	"tags"=>array("web","ui-ux","marketing-branding","selected")),
+	array( "name" => "Adelle Marcero", "path" => "adelle-marcero","tags"=>array("web", "ui-ux")),
+	array( "name" => "The 3", "path" => "the-3", "tags"=>array("ui-ux","selected")),
+	array( "name" => "Wired", "path" => "wired", "tags" => array("illustration","selected")),
+	array( "name" => "Suspended Belief Studios", "path" => "suspended-belief-studios", "tags" => array("places-i-worked") ),
+	array( "name" => "Malado Baldwin", "path" => "malado-baldwin", "tags"=>array("web","ui-ux","selected","ui-ux")),
+	array( "name" => "City Style","path" => "city-style","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old New York", "path" => "chronicles-of-old-new-york", "tags"=>array("print-design","selected")),
+	array( "name" => "Chronicles of Old Las Vegas","path" => "chronicles-of-old-las-vegas","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old Boston","path" => "chronicles-of-old-boston","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old Paris","path" => "chronicles-of-old-paris","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old London", "path" => "chronicles-of-old-london", "tags"=>array("print-design")),
+	array( "name" => "Art + Paris","path" => "art-and-paris","tags"=>array("print-design")),
+	array( "name" => "Chronicles of Old Rome","path" => "chronicles-of-old-rome","tags"=>array("print-design")),
+	array( "name" => "The Rise of Darkrai","path" => "darkrai", "tags"=>array("print-design","ui-ux","marketing-branding") ),
+	array( "name" => "Arceus and the Jewel of Life","path" => "arceus", "tags"=>array("print-design","ui-ux","marketing-branding") ),
+	array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop", "path" => "feature-shop", "tags"=>array("print-design","marketing-branding") ),
+	array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos", "tags"=>array("print-design","marketing-branding") ),
+	array( "name" => "Pok&eacute;mon: 10th Anniversary","path" => "10th-anniversary","tags"=>array("print-design","marketing-branding") ),
+	array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon", "tags"=>array("print-design") ),
+	array( "name" => "Battle Revolution", "path" => "battle-revolution", "tags"=>array("print-design","ui-ux") ),
+	array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex", "tags"=>array("print-design") ),
+	array( "name" => "Pok&eacute;mon Toy Fair", "path" => "toy-fair", "tags"=>array("print-design","marketing-branding",) ),
+	array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch", "tags"=>array("print-design","marketing-branding",) ),
+	array( "name" => "Licensing Show", "path" => "licensing-show", "tags"=>array("print-design","marketing-branding") ),
+	array( "name" => "Indiginauts", "path" => "indiginauts", "tags" => array("illustration","selected")),
+	array( "name" => "Color Chameleon", "path" => "color-chameleon", "tags" => array("illustration","ui-ux")),
+	array( "name" => "LesConcierges","path" => "lesconcierges", "tags" => array("illustration","marketing-branding") ),
+	array( "name" => "Project Animore", "path" => "project-animore", "tags" => array("illustration","ui-ux") ),
+	array( "name" => "#Inktober2016","path" => "inktober-2016", "tags" => array("illustration") ),
+	array( "name" => "100 Principles of Game Design", "path" => "100-principles-of-game-design", "tags" => array("illustration") ),
+	array( "name" => "Holiday Card 2014", "path" => "holiday-card-2014", "tags" => array("web","illustration","ui-ux") ),
+	array( "name" => "Monkey Mo, Monkey Go!", "path" => "monkey-mo", "tags" => array("illustration", "print-design","selected")),
+	array( "name" => "Scavenger Hunt", "path" => "scavenger-hunt", "tags" => array("illustration") ),
+	array( "name" => "Sarah Walko", "path" => "sarah-walko", "tags"=>array("web","ui-ux") ),
+	array( "name" => "Edgeware", "path" => "edgeware", "tags"=>array("illustration") ),
+	array( "name" => "StoryMaps", "path" => "storymaps", "tags" => array("illustration")),
+	array( "name" => "Egg Baby", "path" => "egg-baby", "tags" => array("illustration") ),
+	// array( "name" => "Malado Baldwin website","path" => "malado-baldwin-indexhibit" ),
+	// array( "name" => "Portfolio Site","path" => "portfolio-site" ),
+	// array( "name" => "idibon","path" => "idibon","tags"=>array("illustration") ),
+	// array( "name" => "Nerd Comics", "path" => "nerd-comics" ),
 );
 
 function get_suspended_belief_studios_projects(){
@@ -2232,21 +2232,21 @@ function get_quantcast_projects(){
 if ( $project == "quantcast" ) {
 
 	$title = "Quantcast";
-	$path="img/quantcast";
-
-	$description = "
-	Poke la croix etsy deep v meggings lomo cray godard chartreuse. Cronut cloud bread cold-pressed adaptogen vinyl waistcoat deep v hoodie. Lo-fi echo park hoodie, intelligentsia live-edge gastropub neutra af cliche hella vegan. Tofu ethical pickled shoreditch twee cronut readymade etsy kinfolk keytar vinyl gentrify prism.
-	$p_break
-	Food truck Portland swag Pitchfork mustache semiotics, gluten-free raw denim ethical deep v hoodie YOLO Bushwick hella. Carles 3 wolf moon cred freegan slow-carb, banh mi direct trade High Life Helvetica street art.
-	";
-
+	$path="img/quantcast/";
 	$template="company";
 	$logo="svg";
 
+	$description = "
+	Quantcast is on a mission to help brands grow in the AI era. We are creating the System of Intelligence for the marketing ecosystem so clients can make every customer engagement smarter, faster and more relevant.
+	$p_break
+	Since 2006, we’ve been building Q - the world’s largest AI-driven audience behavior platform for the open Internet that today directly quantifies over 100 million web and mobile destinations. Q powers the Quantcast Intelligence Cloud, our suite of audience insights, targeting and measurement solutions designed to understand, influence, convert and measure the consumer journey. Marketers, agencies, consultancies and publishers use the Quantcast Intelligence Cloud to discover new customers, drive incremental growth and deliver business outcomes.
+	";
+
+
 	$sidebar = "
-	<p>Engaging K-12 Educational Materials</p>
-	<p>2014-2016</p>
-	<p><a href='http://nextlesson.org' target='_blank'>nextlesson.org</a></p>";
+	<p>2017 - current<br>
+	<a href='http://quantcast.com' target='_blank'>quantcast.com</a>
+	</p>";
 
 	$img_info = array(
 	);

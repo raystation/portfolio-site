@@ -8,6 +8,7 @@ $selected_filter = (isset( $_GET["f"] ) ? $_GET["f"] : null );
 
 // FILTERS TURNED OFF FOR NOW
 // prints out the filters and shows which one is active
+$filter_list_html = "";
 $filter_list_html = get_filter_list_html($selected_filter);
 
 //projects to show on the front page
@@ -31,9 +32,9 @@ if ( !isset($project) ) {
 } else {
 	$title = get_project_title($project);
 }
-$header_add .= "<meta name ='title' content='$title'>";
 
 include('inc/header.php');
+$header_add .= "<meta name ='title' content='$title'>";
 
 // Looks for project text variable file
 if ( isset($project) && file_exists("$path/$project.php") ) {
@@ -59,7 +60,7 @@ if ( isset($project) ) {
 	// Related Projects
 	// THEN IT WILL TAKE THE PROJECT OUT OF THE WORK ARRAY SO YOU DON'T GET IT IN THE RECENT PROJECTS
 	// $tags = $works[$key][$tags];
-	unset($works[$key]);
+	// unset($works[$key]);
 	$works = array_values($works);
 	shuffle($works);
 }
@@ -112,23 +113,38 @@ if ( !isset($template) ) {
 		</div>
 	";
 
-	// echo "// <div class='sixteen columns'> // 	<h2>Selected Works</h2> // </div>";
-	// skeleton_print_thumbnail_4($works);
-
-	// filter out the projects we don't want to output on the Selected Works view
+		// filter out the projects we don't want to output on the Selected Works view
 	if (!isset($selected_filter)) {
-		$selected_works=array();
-		foreach ($works as $key => $work) {
-			if ($work['work-display']==true) {
-				$selected_works[]=$work;
-			}
-		}
+		// $selected_works=array();
+		// foreach ($works as $key => $work) {
+		// 	if ($work['work-display']==true) {
+		// 		$selected_works[]=$work;
+		// 	}
+		// }
+		$selected_works = return_filtered_array_by_term($works,"selected");
+		echo "<div class='sixteen columns half-top' style='text-align: center'><h2>Selected Works</h2></div>";
 		full_thumbnail($selected_works);
-	} else {
+	}
+	else
+	{
+		if ($selected_filter=="ui-ux") {
+			$title_print = "UI/UX";
+		} elseif ($selected_filter=="marketing-branding") {
+			$title_print = "Marketing & Branding";
+		} else {
+			$title_print = get_project_title($selected_filter);
+		}
+		echo "<div class='sixteen columns half-top' style='text-align: center'><h2>$title_print</h2></div>";
 		full_thumbnail($works);
 	}
 
-	// var_dump($selected_works);
+
+
+
+
+
+
+// RELATED PROJECTS HTML
 }
 elseif ($template=="company") {
 	echo "
@@ -222,10 +238,10 @@ echo $landing_page_nav;
 
 function get_filters(){
 	$filter_list = array(
+		array( "skill"=>"UI/UX", "url"=>"ui-ux"),
 		array( "skill"=>"Marketing & Branding", "url"=>"marketing-branding"),
 		array( "skill"=>"Print", "url"=>"print-design"),
-		array( "skill"=>"UI/UX", "url"=>"ui-ux"),
-		array( "skill"=>"Web", "url"=>"web"),
+		// array( "skill"=>"Web", "url"=>"web"),
 		array( "skill"=>"Illustration", "url"=>"illustration"),
 		// array( "skill"=>"Marketing", "url"=>"marketing"),
 		// array( "skill"=>"Places I Worked", "url"=>"places-i-worked"),
@@ -238,27 +254,30 @@ function get_filter_list_html( $selected_filter ){
 	// IS THE PERSON COMING FROM A JOB LANDING PAGE
 	// checks to see if $id is set
 	$id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
-	$id_html = !is_null($id) ? "?id=$id" : "";
+	$id_html = !is_null($id) ? "&id=$id" : "";
 
 	// sets ALL
 	if ($selected_filter=="") {
-		$html.="<div class='filter-item active'><a href='work$id_html'>Selected Works</a></div>";
+		$html.="<div class='filter-item active'><a href='work?$id_html'>Selected Works</a></div>";
 	} else {
-		$html.="<div class='filter-item'><a href='work$id_html'>Selected Works</a></div>";
+		$html.="<div class='filter-item'><a href='work?$id_html'>Selected Works</a></div>";
 	}
+
+	// $id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
+	// $id_html = !is_null($id) ? "&id=$id" : "";
 
 	// $id_html = !is_null($id) ? "&id=$id" : "";
 	foreach ($filters as $key => $filter) {
 		if ( $selected_filter == $filter['url'] ) {
 			$class="class='active'";
 			if (!is_null($id)) {
-				$html.="<div class='filter-item active'><a href='work.php?$id_html'>&times; $filter[skill]</a></div>";
+				$html.="<div class='filter-item active'><a href='work?$id_html'>&times; $filter[skill]</a></div>";
 			} else {
 				$html.="<div class='filter-item active'><a href='work'>&times; $filter[skill]</a></div>";
 			}
 		} else {
 			if ( isset($id) ) {
-				$html.="<div class='filter-item'><a href='work.php?f=$filter[url]$id_html'>$filter[skill]</a></div>";
+				$html.="<div class='filter-item'><a href='work?f=$filter[url]$id_html'>$filter[skill]</a></div>";
 			} else {
 				$html.="<div class='filter-item'><a href='$filter[url]'>$filter[skill]</a></div>";
 			}

@@ -680,19 +680,26 @@ function flex_tiles($thumbnail_size="medium",$path,$folder="additional_img") {
   ";
   return $html;
 }
-function return_filtered_array_by_term( $array, $term ){
-  $filtered_array="";
-  // echo $term;
-  foreach ($array as $key => $array_item) {
-    // echo $array_item;
-    $tags = $array_item['tags'];
-    foreach ($tags as $key => $tag) {
-      if ($tag==$term) {
-        $filtered_array[]=$array_item;
-        // echo $array_item;
+function return_filtered_array_by_term( $works_array, $term ){
+  $filtered_array = array();
+
+  // loop through every piece and check the tag for match
+  foreach ( $works_array as $key => $work )
+  {
+    $project_tags = isset( $work['tags'] ) ? $work['tags'] : "";
+
+    if ($project_tags) {
+      foreach ( $project_tags as $key => $tag )
+      {
+        if ($tag == $term)
+        {
+          $filtered_array[] = $work;
+          break;
+        }
       }
     }
   }
+
   if ($filtered_array=="") {
     return FALSE;
   } else {
