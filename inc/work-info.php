@@ -27,7 +27,7 @@ $works = array(
 	array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-and-browse" ),
 	array( "name" => "Museyon Guides", "path" => "museyon-guides", "tags"=>array("places-i-worked") ),
 	array( "name" => "The Pok&eacute;mon Company", "path" => "pokemon","tags"=>array("places-i-worked","selected")),
-	array( "name" => "Abriendo Puertas / Opening Doors", "path" => "abriendo-puertas",	"tags"=>array("web","ui-ux","marketing-branding","selected")),
+	array( "name" => "Abriendo Puertas / Opening Doors", "path" => "abriendo-puertas",	"tags"=>array("web","ui-ux","marketing-branding","selected") ),
 	array( "name" => "Adelle Marcero", "path" => "adelle-marcero","tags"=>array("web", "ui-ux")),
 	array( "name" => "The 3", "path" => "the-3", "tags"=>array("ui-ux","selected")),
 	array( "name" => "Wired", "path" => "wired", "tags" => array("illustration","selected")),
@@ -1752,7 +1752,7 @@ function get_nextlesson_projects(){
 		array( "name" => "NextLesson InterestID","path" => "nextlesson-interestid" ),
 		array( "name" => "NextLesson Glossary Terms", "path" => "nextlesson-glossary" ),
 		array( "name" => "NextLesson Characters", "path" => "nextlesson-characters" ),
-		array( "name" => "Nextlesson Search and Browse","path" => "nextlesson-search-browse" ),
+		array( "name" => "Nextlesson Search and Browse","path" => "nextlesson-search-and-browse" ),
 		// array( "name" => "Graphics Library", "path" => "nextlesson-library" ),
 		// array( "name" => "Profile Avatars", "path" => "nextlesson-avatars" ),
 		// array( "name" => "Interactive Performance Tasks", "path" => "nextlesson-interative-pt" ),
@@ -2274,52 +2274,72 @@ if ( $project == "quantcast-profile-experiments" ) {
 	";
 
 	$content="
-			<h3>Demographics Card Update</h3>
-			In this particular experiment, our goal was to increase engagement on the <span class='tooltip underline' title='The Measure profile page gives you audience data on a site, a network of sites, or an app.'>Quantcast Measure profile</span>. It is a scrolling page consisting of 10 cards which contain a different report on your website/app. We use bar charts on 5 out of the 10 cards.
-			$p_break
-			Our hypothesis in this experiment is if we diversify and simplify the ways we visualize data, people won't skim as quickly, creating a focus on the card buttons and data. For us, engagement is: staying on the card longer, clicking on &ldquo;View Details.&rdquo; and/or changing the data view on the side (Composition, Web/Apps, Help).
-			$p_break
-			We targeted the Demographics card because it is close to the top, and has more visibility.
-			<div class='img-diagram'><img src='$path/demo-card-original.png' alt=''></div>
-			<p class='caption'>Current Demographics card.
-			$p_break
-			I identified elements in the current design I liked and wanted to improve upon. I also needed to make decisions on how <em>different</em> I could go since it still needs to fit in with the other cards.
-			<li>Data labels are right aligned with the graph right next to it, making the data easy to quickly scan.
-			<li>The other elements seem unanchored and chart labels look off to me.
-			<li>The bars don't show true &ldquo;100%&rdquo;.
-			<li>Our research shows users don't interact with the options on the side, so maybe surfacing Composition instead of Index might clue the user that more data is available.
-			$p_break
-			<div class='illy-padding'>
-			  <img src='$path/v1-bars-gradient.jpg'>
-			</div>
-			<p class='caption'>Design A.</p>
-			<p>
-			<strong>Design A. </strong>I played around with how the charts were sorted, putting them all one on top of each other so it was easier to align elements. It's easier to find what you need, but a bit harder to scan. I received feedback that it's harder to compare the data and that the card is getting too long.
-			</p>
-			<div class='illy-padding linked'>
-			  <img src='$path/v1-vertical-bars.jpg'>
-			</div>
-			<p class='caption'>Design B.</p>
-			<p>
-			<strong>Design B. </strong>This design received more positive feedback. The team liked how compact and easy to read it was.
-			</p>
+		<h3>Demographics Card Update</h3>
 
-			$p_break
-
+		<p>
+		In this particular experiment, our goal was to increase engagement on the <span class='tooltip underline' title='The Measure profile page gives you audience data on a site, a network of sites, or an app.'>Quantcast Measure profile</span>. It is a scrolling page consisting of 10 cards which contain a different report on your website/app. We use bar charts on 5 out of the 10 cards.
 		</p>
+
+		<p>
+		Our hypothesis in this experiment is if we diversify and simplify the ways we visualize data, people won't skim as quickly, creating a focus on the card buttons and data. For us, engagement is: staying on the card longer, clicking on &ldquo;View Details.&rdquo; and/or changing the data view on the side (Composition, Web/Apps, Help).
+		</p>
+
+		<p>
+		We targeted the Demographics card because it is close to the top, and has more visibility.
+		</p>
+
+		<div class='img-diagram'><img src='$path/demo-card-original.png' alt=''></div>
+
+		<p class='caption'>Current Demographics card.</p>
+
+		<p>
+		I identified elements in the current design I liked and wanted to improve upon. I also needed to make decisions on how <em>different</em> I could go since it still needs to fit in with the other cards.
+		</p>
+
+		<li>Data labels are right aligned with the graph right next to it, making the data easy to quickly scan.</li>
+		<li>The other elements seem unanchored and chart labels look off to me.</li>
+		<li>The bars don't show true &ldquo;100%&rdquo;.</li>
+		<li>Our research shows users don't interact with the options on the side, so maybe surfacing Composition instead of Index might clue the user that more data is available.</li>
+
+		<div class='illy-padding'>
+		  <img src='$path/v1-bars-gradient.jpg'>
+		</div>
+
+		<p class='caption'>Design A.</p>
+
+		<p>
+		<strong>Design A. </strong>I played around with how the charts were sorted, putting them all one on top of each other so it was easier to align elements. It's easier to find what you need, but a bit harder to scan. I received feedback that it's harder to compare the data and that the card is getting too long.
+		</p>
+
+		<div class='illy-padding linked'>
+		  <img src='$path/v1-vertical-bars.jpg'>
+		</div>
+
+		<p class='caption'>Design B.</p>
+
+		<p>
+		<strong>Design B. </strong>This design received more positive feedback. The team liked how compact and easy to read it was.
+		</p>
+
 		<div class='img-diagram'><img src='$path/demo-card-proposed.png' alt=''></div>
+
 		<p class='caption'>Proposed Demographics card.</p>
+
 		<p>
 			The design we landed on also features the U.S. Composition, something you usually only see in the Details view. The height of this card is determined by the height of the Index view, so I couldn't make it as short as I wanted to. I am hoping the focus is still on the the data, the &ldquo;View Details&rdquo; button, and the switches on the right side.
-		$p_break
+		</p>
+
 		<h3>UI Button Prompts</h3>
+
 		<div class='video-padding'>
 			<video width='800' height='600' controls>
 				<source src='$path/ui-prompt.mp4' type='video/mp4'>
 				Your browser does not support the video tag.
 			</video>
 		</div>
+
 		<p class='caption'>Experiment on the Buzzfeed Profile page</p>
+
 		<p>
 			An experiment to test the waters on simple visual cues to teach users how to interact with Profile cards. Our hypothesis is that they don't see the &ldquo;View Details&rdquo; button and clicking on the button will give the users more value.
 		</p>

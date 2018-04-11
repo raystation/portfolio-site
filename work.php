@@ -176,8 +176,8 @@ else {
 	} else {
 		// PRINT RELATED PROJECTS BY TAG[4]
 		// get tags, make array of all tags
-		$tags = $works[$project]['tags'];
-		var_dump($current_project_tags);
+		// $tags = $works[$project]['tags'];
+		// var_dump($current_project_tags);
 		// echo "<br>";
 
 		foreach ($works as $key => $work) {
@@ -200,7 +200,7 @@ else {
 		$tag_search=0;
 
 		$current_project_tag = $current_project_tags[0]; //the tags on the current project
-		var_dump($current_project_tag);
+		// var_dump($current_project_tag);
 		for ($i=0;  $related_projects_count <= $project_count; $i++) {
 			$temp_title = $works[$i]["path"];
 
