@@ -1804,12 +1804,12 @@ if ( $project == "nextlesson-covers" ) {
 		$p_break
 		My first big task at NextLesson! These original covers were made with no template by the authors so results varied wildly. Logo placement was inconsistent, random typefaces and graphic elements were pulled from various Internet sources, and all seemed similar regardless of age group.
 		";
+		// <img src='$path/original-covers.jpg' srcset='$path/original-covers-hd.jpg 2x' alt='Original Covers'>
+		// <div class='caption'>Before: the original lesson covers in 2014</div>
 	$content="
 		<img src='$path/title-image.jpg' srcset='$path/title-image-hd.jpg 2x' alt='The redesigned covers'>
 		<div class='caption'>After: examples of current lesson covers</div>
 
-		<img src='$path/original-covers.jpg' srcset='$path/original-covers-hd.jpg 2x' alt='Original Covers'>
-		<div class='caption'>Before: the original lesson covers in 2014</div>
 		<p>
 		Before I could start churning out covers, I needed to make sure a consistent design was in place. The first step, to facilitate faster browsing and scanning, was to make sure the same information always appeared in the same spot. We identified three signifiers that would always be visible and clear—subject, type of learning material and grade level.
 		</p>
