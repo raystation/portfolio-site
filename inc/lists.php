@@ -60,7 +60,7 @@ function list_new_favorite_things() {
 			// "Bloodborne",
 			// "EDC",
 			// "Overcooked",
-			"Free Cell",
+			// "FreeCell",
 			// "Mission Workshop bags",
 			// "First Aid Kits",
 			// "Goruck",
@@ -76,14 +76,23 @@ function list_new_favorite_things() {
 			// "Codenames",
 			// "Made in Mayhem",
 			// "Copic Marker refills",
-			"Space Pens",
+			// "Space Pens",
 			// "Allbirds",
 			// "Sketch",
 			// "Superjail",
 			// "Over the Garden Wall",
-			"striped shirts",
-			"toilet training cats",
+			// "striped shirts",
+			// "toilet training cats",
 			"top-roping & bouldering",
+			"redstone contraptions",
+			"Birkenstocks",
+			"sewing machines",
+			"pineapples",
+			"Heroclips",
+			"black cats",
+			"Zion Williamson",
+			"Zima Blue",
+			"Fujifilm cameras",
 		)
 	);
 	return $list;
@@ -115,9 +124,12 @@ function list_games_playing() {
 			// "Night in the Woods",
 			// "Uurnog",
 			"Minecraft",
-			"Red Dead Redemption 2",
-			"Cuphead",
-			"Marvel's Spider-Man",
+			// "Red Dead Redemption 2",
+			// "Cuphead",
+			// "Marvel's Spider-Man",
+			"Animal Crossing: New Horizons",
+			"ENYO",
+			"NYT Crosswords",
 		)
 	);
 	return $container;
@@ -323,7 +335,7 @@ function list_videogame_backlog() {
 			// "Grand Theft Auto 5",
 			// "Mario Kart 8",
 			// "Nidhogg",
-			"Minecraft",
+			// "Minecraft",
 			"Super Mario Maker",
 			"Persona 4",
 			// "Batman: Arkham Knight",
@@ -353,11 +365,11 @@ function list_videogame_backlog() {
 			// "The Binding of Isaac",
 			// "Badland",
 			// "Metamorphabet",
-			"Retro City Rampage",
-			"A-Train 3D: City Simulator",
+			// "Retro City Rampage",
+			// "A-Train 3D: City Simulator",
 			// "Fallout 4",
 			"Just Cause 3",
-			"Transistor",
+			// "Transistor",
 		)
 	);
 	return $list;
@@ -378,10 +390,13 @@ function list_albums_listening() {
 	$list = array(
 		"name"=>"Music Rotation",
 		"list"=>array(
-			"<a href='https://open.spotify.com/album/5wtzauAez32y69kp2ZMKwt'>Beirut</a>",
-			"<a href='https://open.spotify.com/user/rayuen/playlist/4ZrBmhpjQzG1YvXRsk5IBT'>Grateful Dead</a>",
-			"<a href='https://open.spotify.com/user/rayuen/playlist/4gSwcapV8FEjxoFvzjmXCE'>Beach House</a>",
-			"<a href='https://open.spotify.com/user/rayuen/playlist/3Fy2DIKfIBIsZJVCLaZY2f'>Pogo</a>",
+			// "<a href='https://open.spotify.com/album/5wtzauAez32y69kp2ZMKwt'>Beirut</a>",
+			// "<a href='https://open.spotify.com/user/rayuen/playlist/4ZrBmhpjQzG1YvXRsk5IBT'>Grateful Dead</a>",
+			// "<a href='https://open.spotify.com/user/rayuen/playlist/4gSwcapV8FEjxoFvzjmXCE'>Beach House</a>",
+			// "<a href='https://open.spotify.com/user/rayuen/playlist/3Fy2DIKfIBIsZJVCLaZY2f'>Pogo</a>",
+			"<a href='https://open.spotify.com/playlist/0vvXsWCC9xrXsKd4FyS8kM?si=pGsxrrqbSAWeyTvJ7CI4AQ'>lofi hip hop music</a>",
+			"<a href='https://open.spotify.com/album/3oNO1P0Qlr4oSlMA2MIj67?si=PbSC-jg9Tca37sSY2kL5LQ'>Zelda & Chill</a>",
+			"<a href='https://open.spotify.com/playlist/7ubrj2L9k05fNoydeC7emC?si=QeD6hYbiSMmbRlV7NU1A_g'>my Italian dinner party playlist</a>",
 		)
 	);
 	return $list;
@@ -397,9 +412,10 @@ function list_friends() {
 			"<a href='http://adelle.ink' target='_blank'>Adelle Marcero</a>",
 			"<a href='http://timeggert.com' target='_blank'>Tim Eggert</a>",
 			"<a href='http://sarahwalko.com' target='_blank'>Sarah Walko</a>",
-			"<a href='http://marinagrinshpun.com' target='_blank'>Marina Grinshpun</a>",
+			"<a href='https://www.stephaniedefranzo.com/' target='_blank'>Stephanie DeFranzo</a>",
+			// "<a href='http://marinagrinshpun.com' target='_blank'>Marina Grinshpun</a>",
 			"<a href='http://vivz.me/' target='_blank'>Vivian Z</a>",
-			"<a href='http://www.coryborman.com/' target='_blank'>Cory Borman</a>",
+			// "<a href='http://www.coryborman.com/' target='_blank'>Cory Borman</a>",
 			// "<a href='http://datablick.com' target='_blank'>Data Blick</a>",
 		)
 	);
@@ -421,6 +437,7 @@ function list_favorite_pokemon() {
 			"Garchomp",
 			"Spiritomb",
 			"Snorlax",
+			"Litten",
 		)
 	);
 	return $list;
@@ -542,6 +559,7 @@ function list_favorite_games(){
 		"list" => array(
 			"Age of Empires 2",
 			"Animal Crossing: Wild World",
+			"Animal Crossing: New Horizons",
 			"Animal Crossing: New Leaf",
 			"Astro Boy: Omega Factor",
 			"Batman: Arkham City",
@@ -565,6 +583,7 @@ function list_favorite_games(){
 			"Final Fantasy Tactics: The War of the Lions",
 			"Final Fantasy VI",
 			"Final Fantasy XII: Revenant Wings",
+			"FreeCell",
 			"God of War",
 			"Golden Axe 2",
 			"Grand Theft Auto III",
@@ -583,6 +602,7 @@ function list_favorite_games(){
 			"Mario Kart Wii",
 			"Metal Gear Solid",
 			"Middle Earth: Shadow of Mordor",
+			"Minecraft",
 			// "Mini Metro",
 			"Motocross Maniacs",
 			"NBA Street",
