@@ -845,7 +845,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 	}
 	.slick {
 		@media #{$md}{
-			@extend .fixed-padding-top;
+			// @extend .fixed-padding-top;
 		}
 	}
 }
