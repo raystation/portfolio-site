@@ -2,7 +2,7 @@
 //last updated January 10, 2017
 $p_break = "</p><p>";
 $quick_intro = "
-  I’m Ray – a designer in San Francisco who focuses on branding, visual design, and ui/ux. I've worked in games, publishing, marketing, and currently at Quantcast on the Growth team.
+  I’m Ray – a designer in San Francisco who focuses on branding, visual design, and ui/ux. I've worked in games, publishing, marketing. Currently at Quantcast on the Brand Marketing team.
 ";
 
 $bio_array = array(
@@ -22,15 +22,35 @@ $bio_array['about_me'] = "
 
 $work_history_array = array(
 
+  "quantcast-2" => array(
+    "job_title" => "Senior Designer Manager",
+    "company" => "Quantcast",
+    "url" => "quantcast",
+    "description" => "I manage the Marketing design team. We support Sales, Demand&#8209;gen, and Product.",
+    "location" => "San Francisco",
+    "start" => "9/2018",
+    "end" => "current",
+    "duties" => array(
+      // "Worked on Profile experiements to increase retention and engagement for Measure self-serve customers.",
+      // "Developed toaster alerts, pop-ups, and notification dots to help drive customer adoption of Content Segments.",
+      // "Developed experiment to test a click profile vs. a scrolling profile.",
+      // "Sent emails to Measure self-serve customers to assist Content Segment setup.",
+      // "Helped implement better documentation for experiment results on the Growth Team.",
+      // "Designed email templates for Measure customer journey.",
+      // "Created branded sales pieces(leave behinds, one pagers, postcards) for general use and for Adweek.",
+      // "Developed graphics and diagrams for blog posts and help documents.",
+      // "Worked with Marketing team to ensure brand consistency and helped develop illustration guidelines.",
+    ),
+  ),
 
-  "quantcast" => array(
+  "quantcast-1" => array(
     "job_title" => "Growth Design Contractor",
     "company" => "Quantcast",
     "url" => "quantcast",
     "description" => "Was originally hired to be the on-site marketing designer to speed up turnaround of design projects. Eventually started working on experiment designs and mockups to increase retention and engagment. Helping realize the Quantcast platform vision.",
     "location" => "San Francisco",
     "start" => "9/2017",
-    "end" => "current",
+    "end" => "9/2018",
     "duties" => array(
       "Worked on Profile experiements to increase retention and engagement for Measure self-serve customers.",
       "Developed toaster alerts, pop-ups, and notification dots to help drive customer adoption of Content Segments.",

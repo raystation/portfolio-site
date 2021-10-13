@@ -83,16 +83,21 @@ function list_new_favorite_things() {
 			// "Over the Garden Wall",
 			// "striped shirts",
 			// "toilet training cats",
-			"top-roping & bouldering",
+			// "top-roping & bouldering",
 			"redstone contraptions",
-			"Birkenstocks",
+			// "Birkenstocks",
 			"sewing machines",
-			"pineapples",
-			"Heroclips",
+			// "pineapples",
+			// "Heroclips",
 			"black cats",
 			"Zion Williamson",
 			"Zima Blue",
 			"Fujifilm cameras",
+			"Crab traps",
+			"Cotopaxti bags",
+			"the Occult",
+			"Vespas",
+
 		)
 	);
 	return $list;
@@ -127,9 +132,12 @@ function list_games_playing() {
 			// "Red Dead Redemption 2",
 			// "Cuphead",
 			// "Marvel's Spider-Man",
-			"Animal Crossing: New Horizons",
-			"ENYO",
-			"NYT Crosswords",
+			// "Animal Crossing: New Horizons",
+			// "ENYO",
+			// "NYT Crosswords",
+			"Bloodborne",
+			"Freecell",
+			"Spelunky",
 		)
 	);
 	return $container;
@@ -256,6 +264,11 @@ function list_fav_tv() {
 			"Peaky Blinders",
 			"Over the Garden Wall",
 			"Black Mirror",
+			"Ted Lasso",
+			"Witcher",
+			"The Boys",
+			"Daredevl",
+
 			// "Bravest Warriors",
 		)
 	);
@@ -276,7 +289,7 @@ function list_self_nicknames() {
 			"The Worm",
 			"The Hand",
 			"Wild Bunch",
-			"Stormborn",
+			// "Stormborn",
 		)
 	);
 	return $list;
@@ -341,7 +354,7 @@ function list_videogame_backlog() {
 			// "Batman: Arkham Knight",
 			// "Shovel Knight",
 			// "The Elder Scrolls V: Skyrim",
-			"Spelunky",
+			// "Spelunky",
 			"Shadowrun",
 			"Goof Troop",
 			"A Wolf Among Us",
@@ -356,7 +369,7 @@ function list_videogame_backlog() {
 			"Uncharted 3: Drake's Deception",
 			"Heartstone: Heroes of Warcraft",
 			// "Monster Hunter Ultimate 4",
-			"SteamWorld Dig",
+			// "SteamWorld Dig",
 			// "Gone Home",
 			"Dragon Age: Inquisition",
 			// "Middle Earth: Shadow of Mordor",
@@ -370,6 +383,8 @@ function list_videogame_backlog() {
 			// "Fallout 4",
 			"Just Cause 3",
 			// "Transistor",
+			"Nioh",
+
 		)
 	);
 	return $list;
@@ -397,6 +412,7 @@ function list_albums_listening() {
 			"<a href='https://open.spotify.com/playlist/0vvXsWCC9xrXsKd4FyS8kM?si=pGsxrrqbSAWeyTvJ7CI4AQ'>lofi hip hop music</a>",
 			"<a href='https://open.spotify.com/album/3oNO1P0Qlr4oSlMA2MIj67?si=PbSC-jg9Tca37sSY2kL5LQ'>Zelda & Chill</a>",
 			"<a href='https://open.spotify.com/playlist/7ubrj2L9k05fNoydeC7emC?si=QeD6hYbiSMmbRlV7NU1A_g'>my Italian dinner party playlist</a>",
+			"<a href='https://open.spotify.com/playlist/5IsCSRDdUYYe3h6m89AFpz?si=8070228d362c42eb'>the music they play at my fav Italian deli, Molinari</a>",
 		)
 	);
 	return $list;

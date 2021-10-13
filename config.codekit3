@@ -2265,14 +2265,6 @@
       "ou" : "lpckwebp-none",
       "rq" : 75
     },
-    "\/img\/about-me\/laptop-work.mp4" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/about-me\/laptop-work.mp4",
-      "oF" : 0
-    },
     "\/img\/about-me\/me.gif" : {
       "ft" : 4194304,
       "iS" : 4233,
@@ -6854,6 +6846,14 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/laptop-work.mp4" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/laptop-work.mp4",
+      "oF" : 0
+    },
     "\/img\/lesconcierges\/01.jpg" : {
       "ft" : 16384,
       "iS" : 114258,
@@ -11017,16 +11017,24 @@
     },
     "\/img\/nextlesson-interestid\/hero-img.png" : {
       "ft" : 32768,
-      "iS" : 84577,
+      "iS" : 488433,
       "oA" : 0,
       "oAP" : "\/img\/nextlesson-interestid\/hero-img.png",
       "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/img\/nextlesson-interestid\/hero-img.png.bk" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/nextlesson-interestid\/hero-img.png.bk",
+      "oF" : 0
     },
     "\/img\/nextlesson-interestid\/hero\/hero-img-mobile.svg" : {
       "ft" : 2097152,
