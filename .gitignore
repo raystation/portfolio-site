@@ -2,3 +2,5 @@
 *.DS_Store
 *z_deprecated/
 sftp-config.json
+config.codekit3
+*.codekit3
