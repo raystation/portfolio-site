@@ -14,7 +14,7 @@
 @import 'lightbox';
 @import 'tooltipster';
 // @import 'responsive-indicator';
-@import "compass/css3";
+// @import "compass/css3";
 // @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
 // @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
@@ -47,6 +47,13 @@ $gray3: #CCD6DD;
 $gray4: #8899A6;
 $gray5: #66757F;
 
+// LCARS
+$lcar-orange: #FF9A00;
+$lcar-lavender: #9996FF;
+$lcar-pink: #CD98CD;
+$lcar-salmon: #CE6564;
+$lcar-white: #FFFFFF;
+
 $font-size: 15pt;
 $mobile-font-size: 14pt;
 $line-height: 1.45em;
@@ -56,7 +63,6 @@ $caption-font-size: 10pt;
 $system-fonts: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 $body-font: "Circular";
 $header-font: "Circular";
-
 
 $desktop-large: "only screen and (min-width: 960px)";
 $desktop: "only screen and (max-width: 959px)";
@@ -122,7 +128,8 @@ h1, h2, h3, h4, h5, h6 {
 	color: $link-color;
 }
 h1 {
-	// letter-spacing: -0.5px;
+	// letter-spacing: -1px;
+	letter-spacing: -0.5px;
 	// @extend .uppercase;
 }
 
@@ -136,6 +143,35 @@ a:link, a:visited {
 	&:hover {
 		color: $link-hover-color;
 		@include transition( all 0.25s ease-in-out );
+	}
+}
+
+// DARK MODE
+
+@mixin darkmode {
+	h1 { color: $lcar-orange !important; }
+	h2 { color: $lcar-lavender !important; }
+	h3, h4, h5, h6 { color: $lcar-pink !important; }
+	p {color: hsla(0, 0%, 80%, 1); }
+	li {color: hsla(0, 0%, 80%, 1); }
+	a:link, a:visited {color: $lcar-lavender !important; }
+	p.caption { color: $lcar-pink !important; }
+	strong { color: $lcar-lavender !important; }
+	.intro h1 { color: $lcar-salmon !important;}
+}
+
+@media (prefers-color-scheme: dark) {
+	@include darkmode;
+	.navband {background-color: black !important;}
+	#footer {
+		background-color: black !important;
+		border-top: 1px solid rgba($lcar-salmon, 0.5);
+	}
+	.project-details {@include darkmode; }
+	body {background-color: black; }
+	ul.tags li {
+		background-color: #CE6564 !important;
+		color: black;
 	}
 }
 
@@ -1831,3 +1867,4 @@ video {
 video::-internal-media-controls-download-button {display:none; }
 video::-webkit-media-controls-enclosure {overflow:hidden; }
 video::-webkit-media-controls-panel {width: calc(100% + 30px); /* Adjust as needed */ }
+
