@@ -17777,7 +17777,7 @@
       }
     },
     "esLintSourceType" : 0,
-    "externalServerAddress" : "http:\/\/localhost\/portfolio-site",
+    "externalServerAddress" : "http:\/\/localhost:8080\/",
     "gitIgnoreBuildFolder" : 1,
     "hideConfigFile" : 0,
     "jsCheckerReservedNamesString" : "",
