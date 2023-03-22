@@ -92,12 +92,13 @@ RewriteRule ^quantcast-profile-experiments$ work?project=quantcast-profile-exper
 RewriteRule ^quantcast-measure-monthly-email$ work?project=quantcast-measure-monthly-email
 RewriteRule ^quantcast-chrome-extension$ work?project=quantcast-chrome-extension
 RewriteRule ^quantcast-blog-posts$ work?project=quantcast-blog-posts
-RewriteRule ^quantcast-blog-posts$ work?project=blog-posts
+
 RewriteRule ^quantcast-insights$ work?project=quantcast-insights
 RewriteRule ^quantcast-videos$ work?project=quantcast-videos
 RewriteRule ^quantcast-events$ work?project=quantcast-events
 RewriteRule ^quantcast-academy$ work?project=quantcast-academy
 RewriteRule ^quantcast-refresh$ work?project=quantcast-refresh
+RewriteRule ^quantcast-permisio$ work?project=quantcast-permisio
 
 RewriteRule ^kabam$ hire-me?id=9999
 RewriteRule ^bigfish$ hire-me?id=510

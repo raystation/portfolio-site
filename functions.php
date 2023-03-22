@@ -6,14 +6,23 @@ spl_autoload_register(function($class){
 });
 
 # Get Markdown class
-use Michelf\Markdown;
+// use Michelf\Markdown;
+// function markdown_convert($file){
+//   # Read file and pass content through the Markdown parser
+//   $text = file_get_contents($file);
+//   $html = Markdown::defaultTransform($text);
+//   return $html;
+// }
 
-function markdown_convert($file){
-  # Read file and pass content through the Markdown parser
-  $text = file_get_contents($file);
-  $html = Markdown::defaultTransform($text);
-  return $html;
+require_once 'inc/Parsedown.php';
+
+function markdown_convert($filename) {
+    $parsedown = new Parsedown();
+    $markdown = file_get_contents($filename);
+    $html = $parsedown->text($markdown);
+    return $html;
 }
+
 function markdown_exist($filename){
   if ( file_exists($filename) ) {
     $copy = markdown_convert( $filename );

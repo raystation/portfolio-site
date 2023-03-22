@@ -1380,76 +1380,6 @@ a:link:hover, a:visited:hover {
   transition: all 0.25s ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  h1 {
-    color: #FF9A00 !important;
-  }
-  h2 {
-    color: #9996FF !important;
-  }
-  h3, h4, h5, h6 {
-    color: #CD98CD !important;
-  }
-  p {
-    color: hsl(0, 0%, 80%);
-  }
-  li {
-    color: hsl(0, 0%, 80%);
-  }
-  a:link, a:visited {
-    color: #9996FF !important;
-  }
-  p.caption {
-    color: #CD98CD !important;
-  }
-  strong {
-    color: #9996FF !important;
-  }
-  .intro h1 {
-    color: #CE6564 !important;
-  }
-  .navband {
-    background-color: black !important;
-  }
-  #footer {
-    background-color: black !important;
-    border-top: 1px solid rgba(206, 101, 100, 0.5);
-  }
-  .project-details h1 {
-    color: #FF9A00 !important;
-  }
-  .project-details h2 {
-    color: #9996FF !important;
-  }
-  .project-details h3, .project-details h4, .project-details h5, .project-details h6 {
-    color: #CD98CD !important;
-  }
-  .project-details p {
-    color: hsl(0, 0%, 80%);
-  }
-  .project-details li {
-    color: hsl(0, 0%, 80%);
-  }
-  .project-details a:link, .project-details a:visited {
-    color: #9996FF !important;
-  }
-  .project-details p.caption {
-    color: #CD98CD !important;
-  }
-  .project-details strong {
-    color: #9996FF !important;
-  }
-  .project-details .intro h1 {
-    color: #CE6564 !important;
-  }
-  body {
-    background-color: black;
-  }
-  ul.tags li {
-    background-color: #CE6564 !important;
-    color: black;
-  }
-}
 /* Colors
 =========================== */
 .dots {
@@ -3346,4 +3276,99 @@ video::-webkit-media-controls-enclosure {
 
 video::-webkit-media-controls-panel {
   width: calc(100% + 30px); /* Adjust as needed */
+}
+
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: #FF9A00 !important;
+  }
+  h2 {
+    color: #9996FF !important;
+  }
+  h3, h4, h5, h6 {
+    color: #CD98CD !important;
+  }
+  p {
+    color: hsl(0, 0%, 80%);
+  }
+  li {
+    color: hsl(0, 0%, 80%);
+  }
+  a:link, a:visited {
+    color: #9996FF !important;
+  }
+  p.caption {
+    color: #CD98CD !important;
+  }
+  strong {
+    color: #9996FF !important;
+  }
+  .intro h1 {
+    color: #CE6564 !important;
+  }
+  .filters .active {
+    background-color: #FF9A00 !important;
+  }
+  .filters .filter-item {
+    background-color: rgba(206, 101, 100, 0.75);
+  }
+  .filter-item {
+    background-color: #CD98CD;
+  }
+  .filter-item a:link, .filter-item a:visited {
+    color: black !important;
+  }
+  .navband {
+    background-color: black !important;
+  }
+  #footer {
+    background-color: black !important;
+    border-top: 1px solid rgba(206, 101, 100, 0.5);
+  }
+  .project-details h1 {
+    color: #FF9A00 !important;
+  }
+  .project-details h2 {
+    color: #9996FF !important;
+  }
+  .project-details h3, .project-details h4, .project-details h5, .project-details h6 {
+    color: #CD98CD !important;
+  }
+  .project-details p {
+    color: hsl(0, 0%, 80%);
+  }
+  .project-details li {
+    color: hsl(0, 0%, 80%);
+  }
+  .project-details a:link, .project-details a:visited {
+    color: #9996FF !important;
+  }
+  .project-details p.caption {
+    color: #CD98CD !important;
+  }
+  .project-details strong {
+    color: #9996FF !important;
+  }
+  .project-details .intro h1 {
+    color: #CE6564 !important;
+  }
+  .project-details .filters .active {
+    background-color: #FF9A00 !important;
+  }
+  .project-details .filters .filter-item {
+    background-color: rgba(206, 101, 100, 0.75);
+  }
+  .project-details .filter-item {
+    background-color: #CD98CD;
+  }
+  .project-details .filter-item a:link, .project-details .filter-item a:visited {
+    color: black !important;
+  }
+  body {
+    background-color: black;
+  }
+  ul.tags li {
+    background-color: #CE6564 !important;
+    color: black;
+  }
 }

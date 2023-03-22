@@ -158,20 +158,13 @@ a:link, a:visited {
 	p.caption { color: $lcar-pink !important; }
 	strong { color: $lcar-lavender !important; }
 	.intro h1 { color: $lcar-salmon !important;}
-}
-
-@media (prefers-color-scheme: dark) {
-	@include darkmode;
-	.navband {background-color: black !important;}
-	#footer {
-		background-color: black !important;
-		border-top: 1px solid rgba($lcar-salmon, 0.5);
-	}
-	.project-details {@include darkmode; }
-	body {background-color: black; }
-	ul.tags li {
-		background-color: #CE6564 !important;
-		color: black;
+	.filters .active { background-color: $lcar-orange !important; }
+	.filters .filter-item { background-color: rgba($lcar-salmon,0.75); }
+	.filter-item {
+		background-color: $lcar-pink;
+		a:link, a:visited {
+			color: black !important;
+		}
 	}
 }
 
@@ -1868,3 +1861,17 @@ video::-internal-media-controls-download-button {display:none; }
 video::-webkit-media-controls-enclosure {overflow:hidden; }
 video::-webkit-media-controls-panel {width: calc(100% + 30px); /* Adjust as needed */ }
 
+@media (prefers-color-scheme: dark) {
+	@include darkmode;
+	.navband {background-color: black !important;}
+	#footer {
+		background-color: black !important;
+		border-top: 1px solid rgba($lcar-salmon, 0.5);
+	}
+	.project-details {@include darkmode; }
+	body {background-color: black; }
+	ul.tags li {
+		background-color: #CE6564 !important;
+		color: black;
+	}
+}

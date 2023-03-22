@@ -1,6 +1,8 @@
 <?
 // AUTO-LOADED BY THE HEADER
 
+// turning on the hero image will override the slideshow in the 'basic' template.
+
 $p_break = "</p><p>";
 
 if ( $project ) {
@@ -10,7 +12,12 @@ if ( $project ) {
 $works = array(
 	array( "name" => "NextLesson","path" => "nextlesson", "tags" => array("places-i-worked") ),
 	array( "name" => "Quantcast","path" => "quantcast", "tags" => array("places-i-worked") ),
+	array( "name" => "Museyon Guides", "path" => "museyon-guides", "tags"=>array("places-i-worked") ),
+	array( "name" => "The Pok&eacute;mon Company", "path" => "pokemon","tags"=>array("places-i-worked","selected")),
+	array( "name" => "Suspended Belief Studios", "path" => "suspended-belief-studios", "tags" => array("places-i-worked") ),
+
 	array( "name" => "Quantcast Profile Experiments","path" => "quantcast-profile-experiments", "tags" => array("ui-ux") ),
+
 	array( "name" => "Measure Monthly Report","path" => "quantcast-measure-monthly-email", "tags" => array("ui-ux","selected")),
 	array( "name" => "Quantcast Chrome Extension","path" => "quantcast-chrome-extension", "tags" => array("ui-ux","selected")),
 	array( "name" => "Quantcast Blog Posts","path" => "quantcast-blog-posts", "tags" => array("ui-ux","selected")),
@@ -21,17 +28,14 @@ $works = array(
 	array( "name" => "NextLesson Glossary Images", "path" => "nextlesson-glossary", "tags"=>array("illustration","selected")),
 	array( "name" => "NextLesson Characters", "path" => "nextlesson-characters", "tags"=>array("illustration","selected")),
 	// array( "name" => "NextLesson Interactive","path" => "nextlesson-interactive", "tags"=>array("ui-ux")),
-	array( "name" => "Supercell Art Test","path" => "supercell-art-test" , "tags"=>array("marketing-branding")),
+	// array( "name" => "Supercell Art Test","path" => "supercell-art-test" , "tags"=>array("marketing-branding")),
 	// array( "name" => "Custom Avatars","path" => "nextlesson-avatars" ),
 	// array( "name" => "NextLesson Graphics Library","path" => "nextlesson-library" ),
 	array( "name" => "NextLesson Search and Browse Page","path" => "nextlesson-search-and-browse" ),
-	array( "name" => "Museyon Guides", "path" => "museyon-guides", "tags"=>array("places-i-worked") ),
-	array( "name" => "The Pok&eacute;mon Company", "path" => "pokemon","tags"=>array("places-i-worked","selected")),
 	array( "name" => "Abriendo Puertas / Opening Doors", "path" => "abriendo-puertas",	"tags"=>array("web","ui-ux","marketing-branding","selected") ),
 	array( "name" => "Adelle Marcero", "path" => "adelle-marcero","tags"=>array("web", "ui-ux")),
 	array( "name" => "The 3", "path" => "the-3", "tags"=>array("ui-ux","selected")),
 	array( "name" => "Wired", "path" => "wired", "tags" => array("illustration","selected")),
-	array( "name" => "Suspended Belief Studios", "path" => "suspended-belief-studios", "tags" => array("places-i-worked") ),
 	array( "name" => "Malado Baldwin", "path" => "malado-baldwin", "tags"=>array("web","ui-ux","selected","ui-ux")),
 	array( "name" => "City Style","path" => "city-style","tags"=>array("print-design")),
 	array( "name" => "Chronicles of Old New York", "path" => "chronicles-of-old-new-york", "tags"=>array("print-design","selected")),
@@ -1869,14 +1873,9 @@ if ( $project == "nextlesson-interestid" ) {
 	$title = "NextLesson InterestID";
 	$subtitle = "A student interest and lesson discovery tool";
 
-
 	$company = "NextLesson";
 	$path = "img/nextlesson-interestid";
-
 	$hero_img = "$path/hero/hero-img.png";
-
-	// $movie = "$path/interestid-voting.mp4";
-
 	$short_description = "Student Interest Tool";
 
 	// <span class='intro'>Challenge: To create a tool that helps teachers discover lessons based on student interests.</span>
@@ -2216,14 +2215,21 @@ if ( $project == "nl-district-landing-page" ) {
 
 
 // ========================
-##QUANTCAST
+##QUANTCAST #QC
 
 function get_quantcast_projects(){
 	$works = array(
-		array( "name" => "Quantcast Profile Experiments","path" => "quantcast-profile-experiments" ),
-		array( "name" => "Measure Monthly Report","path" => "quantcast-measure-monthly-email" ),
-		array( "name" => "Quantcast Chrome Extension","path" => "quantcast-chrome-extension" ),
-		array( "name" => "Quantcast Blog Posts","path" => "quantcast-blog-posts" ),
+		array( "name" => "Quantcast Profile Experiments", "path" => "quantcast-profile-experiments" ),
+		array( "name" => "Measure Monthly Report", "path" => "quantcast-measure-monthly-email" ),
+		array( "name" => "Quantcast Chrome Extension", "path" => "quantcast-chrome-extension" ),
+		array( "name" => "Quantcast Blog Posts", "path" => "quantcast-blog-posts" ),
+
+		array( "name" => "Quantcast Insights", "path" => "quantcast-insights" ),
+		array( "name" => "Quantcast Videos", "path" => "quantcast-videos" ),
+		array( "name" => "Quantcast Events", "path" => "quantcast-events" ),
+		array( "name" => "Quantcast Academy", "path" => "quantcast-academy" ),
+		array( "name" => "Brand Refresh", "path" => "quantcast-refresh" ),
+		array( "name" => "Permisio", "path" => "quantcast-permisio" ),
 	);
 	return $works;
 }
@@ -2242,14 +2248,12 @@ if ( $project == "quantcast" ) {
 	Since 2006, we’ve been building Q - the world’s largest AI-driven audience behavior platform for the open Internet that today directly quantifies over 100 million web and mobile destinations. Q powers the Quantcast Intelligence Cloud, our suite of audience insights, targeting and measurement solutions designed to understand, influence, convert and measure the consumer journey. Marketers, agencies, consultancies and publishers use the Quantcast Intelligence Cloud to discover new customers, drive incremental growth and deliver business outcomes.
 	";
 
-
 	$sidebar = "
 	<p>2017 - current<br>
 	<a href='http://quantcast.com' target='_blank'>quantcast.com</a>
 	</p>";
 
-	$img_info = array(
-	);
+	$img_info = array();
 
 } //end NEXTLESSON
 
@@ -2463,16 +2467,12 @@ if ( $project == "quantcast-chrome-extension" ) {
 
 } //QUANTCAST CHROME EXTENSION
 
-
-
-
 //  #QUANTCAST-BLOG-POSTS
 // ===============================
 
 if ( $project == "quantcast-blog-posts" ) {
 
 	$template = "illustration";
-
 	$title = "Quantcast Blog Posts";
 	$subtitle = "Illustrated Banners and Thumbnails";
 
@@ -2543,13 +2543,186 @@ if ( $project == "quantcast-blog-posts" ) {
 } //QUANTCAST-BLOG-POSTS
 
 
+// #QUANTCAST-ACADEMY
+// ===============================
+if ( $project == "quantcast-academy" ) {
+
+	$title = "Quantcast Academy";
+	$subtitle = "Arcu urna duis nulla habitasse curabitur phasellus";
+	$company = "Quantcast";
+	$path = "img/quantcast-academy";
+	$short_description = "Student Interest Tool";
+	$description = markdown_convert($path . '/content.md');
+	$project_link = "https://www.quantcast.com/quantcast-academy";
+
+	$sidebar = "
+		<p>Student Interest Tool</p>
+		<p>2022</p>
+	";
+
+	$content = "";
+	$tools = array(
+		array("skill"=>"Sketches", "percent"=>15),
+		array("skill"=>"UI/UX", "percent"=>20),
+		array("skill"=>"Illustrator", "percent"=>40),
+		array("skill"=>"Figma", "percent"=>25),
+	);
+	$img_info = array(
+		array("file" => "cover1.jpg", "alt" => "He's here"),
+		array("file" => "cover2.jpg", "alt" => "He's there"),
+	);
+	$thumbnail_size = "small";
+} // #QUANTCAST-ACADEMY
 
 
+// #QUANTCAST-REFRESH
+// ===============================
+if ( $project == "quantcast-refresh" ) {
+
+	$title = "Quantcast Brand Refresh";
+	$subtitle = "Arcu urna duis nulla habitasse curabitur phasellus";
+	$company = "Quantcast";
+	$path = "img/quantcast-refresh";
+	$description = markdown_convert($path . '/content.md');
+
+	$sidebar = "
+		<p>Brand Refresh</p>
+		<p>2022</p>
+	";
+
+	$content = "";
+	$tools = array(
+		array("skill"=>"Sketches", "percent"=>15),
+		array("skill"=>"UI/UX", "percent"=>20),
+		array("skill"=>"Illustrator", "percent"=>40),
+		array("skill"=>"Figma", "percent"=>25),
+	);
+	$img_info = array(
+		array("file" => "cover1.jpg", "alt" => "He's here"),
+		array("file" => "cover2.jpg", "alt" => "He's there"),
+	);
+	$thumbnail_size = "small";
+} // #QUANTCAST-REFRESH
 
 
+// #QUANTCAST-VIDEOS
+// ===============================
+if ( $project == "quantcast-videos" ) {
+
+	$title = "Quantcast Videos";
+	$subtitle = "Arcu urna duis nulla habitasse curabitur phasellus";
+	$company = "Quantcast";
+	$path = "img/quantcast-videos";
+	$short_description = "Dignissim aptent tempus malesuada consequat tristique eros";
+	$description = markdown_convert($path . '/content.md');
+
+	$sidebar = "
+		<p>Videos</p>
+		<p>2022</p>
+	";
+
+	$content = "";
+	$tools = array(
+		array("skill"=>"Sketches", "percent"=>15),
+		array("skill"=>"UI/UX", "percent"=>20),
+		array("skill"=>"Illustrator", "percent"=>40),
+		array("skill"=>"Figma", "percent"=>25),
+	);
+	$img_info = array(
+		array("file" => "cover1.jpg", "alt" => "He's here"),
+		array("file" => "cover2.jpg", "alt" => "He's there"),
+	);
+} // #QUANTCAST-VIDEOS
 
 
+// #QUANTCAST-INSIGHTS
+// ===============================
+if ( $project == "quantcast-insights" ) {
 
+	$title = "Quantcast Insights";
+	$subtitle = "Arcu urna duis nulla habitasse curabitur phasellus";
+	$company = "Quantcast";
+	$path = "img/quantcast-insights";
+	$short_description = "Dignissim aptent tempus malesuada consequat tristique eros";
+	$description = markdown_convert($path . '/content.md');
+
+	$sidebar = "
+		<p>Insights</p>
+		<p>2022</p>
+	";
+
+	$content = "";
+	$tools = array(
+		array("skill"=>"Sketches", "percent"=>15),
+		array("skill"=>"UI/UX", "percent"=>20),
+		array("skill"=>"Illustrator", "percent"=>40),
+		array("skill"=>"Figma", "percent"=>25),
+	);
+	$img_info = array(
+		array("file" => "cover1.jpg", "alt" => "He's here"),
+		array("file" => "cover2.jpg", "alt" => "He's there"),
+	);
+} // #QUANTCAST-INSIGHTS
+
+
+// #QUANTCAST-EVENTS
+// ===============================
+if ( $project == "quantcast-events" ) {
+
+	$title = "Quantcast Events";
+	$subtitle = "Arcu urna duis nulla habitasse curabitur phasellus";
+	$company = "Quantcast";
+	$path = "img/quantcast-events";
+	$short_description = "Dignissim aptent tempus malesuada consequat tristique eros";
+	$description = markdown_convert($path . '/content.md');
+
+	$sidebar = "
+		<p>Events</p>
+		<p>2022</p>
+	";
+
+	$content = "";
+	$tools = array(
+		array("skill"=>"Sketches", "percent"=>15),
+		array("skill"=>"UI/UX", "percent"=>20),
+		array("skill"=>"Illustrator", "percent"=>40),
+		array("skill"=>"Figma", "percent"=>25),
+	);
+	$img_info = array(
+		array("file" => "cover1.jpg", "alt" => "He's here"),
+		array("file" => "cover2.jpg", "alt" => "He's there"),
+	);
+} // #QUANTCAST-EVENTS
+
+
+// #QUANTCAST-PERMISIO
+// ===============================
+if ( $project == "quantcast-permisio" ) {
+
+	$title = "Quantcast Permisio";
+	$subtitle = "Arcu urna duis nulla habitasse curabitur phasellus";
+	$company = "Quantcast";
+	$path = "img/quantcast-permisio";
+	$short_description = "Dignissim aptent tempus malesuada consequat tristique eros";
+	$description = markdown_convert($path . '/content.md');
+
+	$sidebar = "
+		<p>Permisio</p>
+		<p>2022</p>
+	";
+
+	$content = "";
+	$tools = array(
+		array("skill"=>"Sketches", "percent"=>15),
+		array("skill"=>"UI/UX", "percent"=>20),
+		array("skill"=>"Illustrator", "percent"=>40),
+		array("skill"=>"Figma", "percent"=>25),
+	);
+	$img_info = array(
+		array("file" => "cover1.jpg", "alt" => "He's here"),
+		array("file" => "cover2.jpg", "alt" => "He's there"),
+	);
+} // #QUANTCAST-PERMISIO
 
 
 // ========================
