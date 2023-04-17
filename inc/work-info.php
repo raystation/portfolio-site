@@ -99,22 +99,6 @@ function get_museyon_projects(){
 	return $works;
 }
 
-function get_pokemon_projects(){
-	$works = array(
-		array( "name" => "The Rise of Darkrai","path" => "darkrai" ),
-		array( "name" => "Arceus and the Jewel of Life","path" => "arceus" ),
-		array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop", "path" => "feature-shop" ),
-		array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos" ),
-		array( "name" => "Pok&eacute;mon: 10th Anniversary","path" => "10th-anniversary" ),
-		array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon" ),
-		array( "name" => "Battle Revolution", "path" => "battle-revolution" ),
-		array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex" ),
-		array( "name" => "Pok&eacute;mon Toy Fair", "path" => "toy-fair" ),
-		array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch" ),
-		array( "name" => "Licensing Show", "path" => "licensing-show" ),
-	);
-	return $works;
-}
 
 //order of the projects
 
@@ -176,17 +160,38 @@ if ( $project == "museyon-guides" ) {
 //  #POKEMON
 // ===============================
 
+function get_pokemon_projects(){
+	$works = array(
+		array( "name" => "Pok&eacute;mon: 10th Anniversary","path" => "10th-anniversary" ),
+		array( "name" => "Pocket Pokedex", "path" => "pocket-pokedex" ),
+		array( "name" => "Licensing Show", "path" => "licensing-show" ),
+		array( "name" => "Pok&eacute;mon: Diamond & Pearl Launch", "path" => "dp-launch" ),
+		array( "name" => "The Rise of Darkrai","path" => "darkrai" ),
+		array( "name" => "Arceus and the Jewel of Life","path" => "arceus" ),
+		array( "name" => "Pok&eacute;mon: Toys'R'Us Feature Shop", "path" => "feature-shop" ),
+		array( "name" => "Pok&eacute;mon: Logos", "path" => "pokemon-logos" ),
+		array( "name" => "Pok&eacute;mon: Mystery Dungeon", "path" => "mystery-dungeon" ),
+		array( "name" => "Battle Revolution", "path" => "battle-revolution" ),
+		array( "name" => "Pok&eacute;mon Toy Fair", "path" => "toy-fair" ),
+	);
+	return $works;
+}
+
+
 if ( $project == "pokemon" ) {
 
 	$title = "The Pok&eacute;mon Company";
 	$path="img/pokemon";
 	$template="company";
 	$logo="svg";
-	$description = '
-		I worked at Pok&eacute;mon from 2015-2010. It was a great experience and a lot of fun. As part of a small in-house creative team, we produced many things including strategy guides, mini game and movie sites, localized logos, and marketing materials.
-	';
+	$description = "
+		I worked at Pok&eacute;mon from 2015-2010. The Pokémon Company International is a branch of the Japanese company responsible for managing the brand’s localization, licensing, marketing, publishing, and related activities in North America and Europe.
+		$p_break
+		As part of a small in-house creative team, we produced many things including strategy guides, mini game and movie sites, localized logos, and marketing materials.
+	";
 
 	$sidebar = "
+		Japanese franchise
 		<p><a href='http://www.pokemon.com' target='_blank'>pokemon.com</a></p>
 	";
 
@@ -1462,10 +1467,14 @@ if ( $project == "dp-launch" ) {
 	$path="img/dp-launch";
 	$company = "Pokemon";
 
-	$description="Coming soon.";
+	$description = "The launch of Pokémon Diamond and Pearl in New York City in 2007 was a major event in the gaming industry. We went all-out to create a memorable experience for fans, setting up a massive tent in Times Square that was filled with gaming stations, giveaways, and other interactive activities. The event drew thousands of fans from around the country, many of whom camped out overnight in the hopes of being among the first to purchase the games.
+	$p_break
+	The launch was also accompanied by a number of celebrity appearances and performances, including a concert by the popular J-pop group, Puffy AmiYumi. Despite the long lines and crowded conditions, the launch was a huge success, with fans expressing their excitement and enthusiasm for the new games and the Pokémon franchise as a whole. The launch event set a new standard for video game launches, and remains a memorable moment in the history of the Pokémon series.";
 
 	$sidebar = "
-		<p>Event at Nintendo World in New York</p>
+		<p>Time Square launch event</p>
+		<p>Nintendo World game release</p>
+		<p>2007</p>
 		<p>Rockefeller Center</p>
 	";
 
@@ -2224,12 +2233,12 @@ function get_quantcast_projects(){
 		array( "name" => "Quantcast Chrome Extension", "path" => "quantcast-chrome-extension" ),
 		array( "name" => "Quantcast Blog Posts", "path" => "quantcast-blog-posts" ),
 
-		array( "name" => "Quantcast Insights", "path" => "quantcast-insights" ),
-		array( "name" => "Quantcast Videos", "path" => "quantcast-videos" ),
-		array( "name" => "Quantcast Events", "path" => "quantcast-events" ),
 		array( "name" => "Quantcast Academy", "path" => "quantcast-academy" ),
-		array( "name" => "Brand Refresh", "path" => "quantcast-refresh" ),
-		array( "name" => "Permisio", "path" => "quantcast-permisio" ),
+		array( "name" => "Quantcast Insights", "path" => "quantcast-insights" ),
+		// array( "name" => "Quantcast Videos", "path" => "quantcast-videos" ),
+		// array( "name" => "Quantcast Events", "path" => "quantcast-events" ),
+		// array( "name" => "Brand Refresh", "path" => "quantcast-refresh" ),
+		// array( "name" => "Permisio", "path" => "quantcast-permisio" ),
 	);
 	return $works;
 }
@@ -2243,9 +2252,8 @@ if ( $project == "quantcast" ) {
 	$logo="svg";
 
 	$description = "
-	Quantcast is on a mission to help brands grow in the AI era. We are creating the System of Intelligence for the marketing ecosystem so clients can make every customer engagement smarter, faster and more relevant.
+	Quantcast is a digital marketing and data analytics company that provides a range of services to help businesses better understand and engage with their audiences online.
 	$p_break
-	Since 2006, we’ve been building Q - the world’s largest AI-driven audience behavior platform for the open Internet that today directly quantifies over 100 million web and mobile destinations. Q powers the Quantcast Intelligence Cloud, our suite of audience insights, targeting and measurement solutions designed to understand, influence, convert and measure the consumer journey. Marketers, agencies, consultancies and publishers use the Quantcast Intelligence Cloud to discover new customers, drive incremental growth and deliver business outcomes.
 	";
 
 	$sidebar = "
@@ -2556,20 +2564,20 @@ if ( $project == "quantcast-academy" ) {
 	$project_link = "https://www.quantcast.com/quantcast-academy";
 
 	$sidebar = "
-		<p>Student Interest Tool</p>
+		<p>Education Resource and Training</p>
 		<p>2022</p>
 	";
 
 	$content = "";
 	$tools = array(
-		array("skill"=>"Sketches", "percent"=>15),
+		array("skill"=>"Video", "percent"=>15),
+		array("skill"=>"After Effects", "percent"=>15),
 		array("skill"=>"UI/UX", "percent"=>20),
 		array("skill"=>"Illustrator", "percent"=>40),
-		array("skill"=>"Figma", "percent"=>25),
 	);
 	$img_info = array(
-		array("file" => "cover1.jpg", "alt" => "He's here"),
-		array("file" => "cover2.jpg", "alt" => "He's there"),
+		array("file" => "slideshow/quantcast-academy_slide.png", "alt" => "Quantcast Academy hero image"),
+		array("file" => "slideshow/certificate.jpg", "alt" => "Quantcast Academy certificate of completion"),
 	);
 	$thumbnail_size = "small";
 } // #QUANTCAST-ACADEMY

@@ -1549,9 +1549,13 @@ hr.separator {
 }
 
 .subtle-drop-shadow, .project-details .img-diagram img, .project-details .img-diagram-bottom-crop img, .project-details .video-padding video, .project-details .video-padding img {
-  -moz-box-shadow: 3px 3px 20px rgba(128, 128, 128, 0.45);
-  -webkit-box-shadow: 3px 3px 20px rgba(128, 128, 128, 0.45);
-  box-shadow: 3px 3px 20px rgba(128, 128, 128, 0.45);
+  -moz-box-shadow: 0 2px 20px rgba(128, 128, 128, 0.25);
+  -webkit-box-shadow: 0 2px 20px rgba(128, 128, 128, 0.25);
+  box-shadow: 0 2px 20px rgba(128, 128, 128, 0.25);
+}
+
+.round-corner {
+  border-radius: 5px;
 }
 
 .img-band {
@@ -2102,7 +2106,7 @@ img.scale-with-grid2, .portfolio img {
   font-size: inherit;
 }
 .project-details .project-sidebar p {
-  margin-bottom: 0;
+  line-height: 1.35em;
 }
 @media only screen and (min-width : 767px) {
   .project-details .project-sidebar p {

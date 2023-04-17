@@ -226,9 +226,13 @@ hr.separator {
 	width: 10%;
 }
 .subtle-drop-shadow {
-	-moz-box-shadow: 3px 3px 20px rgba(gray,0.45);
-	-webkit-box-shadow: 3px 3px 20px rgba(gray,0.45);
-	box-shadow: 3px 3px 20px rgba(gray,0.45);
+	-moz-box-shadow: 0 2px 20px rgba(gray,0.25);
+	-webkit-box-shadow: 0 2px 20px rgba(gray,0.25);
+	box-shadow: 0 2px 20px rgba(gray,0.25);
+}
+
+.round-corner {
+	border-radius: 5px;
 }
 
 .img-band 		{ width: 100%; height: 30%; }
@@ -822,8 +826,7 @@ img.scale-with-grid2 { max-width: 100%; height:auto }
 		// font-size: 120%;
 		font-size: inherit;
 		p {
-			// font-size: 95%;
-			margin-bottom: 0;
+			line-height: 1.35em;
 			@media #{$md}{
 				font-size: $font-size*.85;
 				margin-bottom: 0.1em;
@@ -1812,35 +1815,6 @@ video {
        font-weight: bold;
 }
 
-// @font-face {
-//   font-family: 'Arvo';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: local('Arvo'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/BM-nqL-L5PgjKPDNaleWB_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
-// }
-// @font-face {
-//   font-family: 'Arvo';
-//   font-style: normal;
-//   font-weight: 700;
-//   src: local('Arvo Bold'), local('Arvo-Bold'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/_OKjjqM9ed2qvTR07QdjWwLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
-// }
-
-// @media #{$sm} {
-// 	.mobile-only {display: inherit !important;}
-// 	.desktop-only {display: none !important;}
-// }
-// @media #{$md} {
-// 	.mobile-only {display: inherit !important;}
-// 	.desktop-only {display: none !important;}
-// }
-// @media #{$lg} {
-// 	.mobile-only {display: none !important;}
-// 	.desktop-only {display: inherit !important;}
-// }
-// @media #{$xl} {
-// 	.mobile-only {display: none !important;}
-// 	.desktop-only {display: inherit !important;}
-// }
 @import 'slick';
 
 .videoWrapper {

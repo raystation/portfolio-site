@@ -3,6 +3,8 @@
 $p_break = "</p><p>";
 $quick_intro = "
   I’m Ray – a designer in San Francisco who focuses on <strong>branding</strong>, <strong>visual design</strong>, and <strong>ui/ux</strong>. I've worked in games, publishing, and marketing. Currently at Quantcast on the Brand Marketing team.
+
+
 ";
 
 $bio_array = array(
