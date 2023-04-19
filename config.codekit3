@@ -7,7 +7,7 @@
       "uuidString" : "7B32A6F0-286D-49DD-A8CA-ECCD600F106F"
     }
   ],
-  "creatorBuild" : "34472",
+  "creatorBuild" : "34434",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -12806,13 +12806,71 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/quantcast-insights\/content.html" : {
+    "\/img\/quantcast-insights\/body-img\/covid-19-trends.jpg" : {
+      "ft" : 16384,
+      "iS" : 255648,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/quantcast-insights\/body-img\/covid-19-trends.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/quantcast-insights\/body-img\/italy-insights-timeline.jpg" : {
+      "ft" : 16384,
+      "iS" : 2268661,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/quantcast-insights\/body-img\/italy-insights-timeline.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/quantcast-insights\/body-img\/us-insights-timeline.jpg" : {
+      "ft" : 16384,
+      "iS" : 213891,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/quantcast-insights\/body-img\/us-insights-timeline.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/quantcast-insights\/content-body.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/quantcast-insights\/content.html",
+      "oAP" : "\/img\/quantcast-insights\/content-body.html",
       "oF" : 0
+    },
+    "\/img\/quantcast-insights\/content-body.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/quantcast-insights\/content-body.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
     },
     "\/img\/quantcast-insights\/content.md" : {
       "cB" : 0,
@@ -12841,20 +12899,7 @@
       "oAP" : "\/img\/quantcast-insights\/cover1.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/quantcast-insights\/cover2.jpg" : {
-      "ft" : 16384,
-      "iS" : 1547377,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/quantcast-insights\/cover2.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -17574,10 +17619,6 @@
         "active" : 0,
         "optionString" : "'always', {exceptAfterSingleLine: false}"
       },
-      "logical-assignment-operators" : {
-        "active" : 0,
-        "optionString" : "'always',  {'enforceForIfStatements': false}"
-      },
       "max-classes-per-file" : {
         "active" : 0,
         "optionString" : "1"
@@ -17738,9 +17779,6 @@
       "no-empty-pattern" : {
         "active" : 1
       },
-      "no-empty-static-block" : {
-        "active" : 0
-      },
       "no-eq-null" : {
         "active" : 0
       },
@@ -17879,9 +17917,6 @@
         "active" : 0
       },
       "no-new-func" : {
-        "active" : 0
-      },
-      "no-new-native-nonconstructor" : {
         "active" : 0
       },
       "no-new-object" : {
@@ -18445,7 +18480,7 @@
       "strictUnits" : 0
     },
     "languageDefaultsMARKDOWN" : {
-      "autoOutputAction" : 0,
+      "autoOutputAction" : 1,
       "autoOutputPathFilenamePattern" : "*.html",
       "autoOutputPathRelativePath" : "",
       "autoOutputPathReplace1" : "",
@@ -18624,7 +18659,6 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
-    "rollupTreeshakingModuleSideEffects" : 1,
     "skippedFoldersString" : "logs,.idea,log,\/storage\/framework\/sessions,_cache,_logs,node_modules,cache,\/.sass-cache",
     "sourceFolderName" : "source",
     "susyVersion" : 3,

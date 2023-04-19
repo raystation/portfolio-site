@@ -2648,10 +2648,10 @@ if ( $project == "quantcast-videos" ) {
 if ( $project == "quantcast-insights" ) {
 
 	$title = "Quantcast Insights";
-	$subtitle = "Arcu urna duis nulla habitasse curabitur phasellus";
+	// $subtitle = "Arcu urna duis nulla habitasse curabitur phasellus";
 	$company = "Quantcast";
 	$path = "img/quantcast-insights";
-	$short_description = "Dignissim aptent tempus malesuada consequat tristique eros";
+	// $short_description = "Dignissim aptent tempus malesuada consequat tristique eros";
 	$description = markdown_convert($path . '/content.md');
 
 	$sidebar = "
@@ -2659,7 +2659,7 @@ if ( $project == "quantcast-insights" ) {
 		<p>2022</p>
 	";
 
-	$content = "";
+	$content = markdown_convert($path . '/content-body.md');
 	$tools = array(
 		array("skill"=>"Sketches", "percent"=>15),
 		array("skill"=>"UI/UX", "percent"=>20),
@@ -2667,8 +2667,7 @@ if ( $project == "quantcast-insights" ) {
 		array("skill"=>"Figma", "percent"=>25),
 	);
 	$img_info = array(
-		array("file" => "cover1.jpg", "alt" => "He's here"),
-		array("file" => "cover2.jpg", "alt" => "He's there"),
+		array("file" => "cover1.jpg", "alt" => "hello"),
 	);
 } // #QUANTCAST-INSIGHTS
 
