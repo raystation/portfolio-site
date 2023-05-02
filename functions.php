@@ -574,7 +574,7 @@ function title_ellipsis($string,$limit=27){
     }
     return $word;
 }
-function skeleton_html($columns=1,$path,$folder="additional_img"){
+function skeleton_html($columns=1,$path="",$folder="additional_img"){
   // prints img HTML with a path, columns and folders
   $additional_img_html="";
 
@@ -649,7 +649,7 @@ function get_quick_intro(){
   include_once "inc/resume.php";
   return $quick_intro;
 }
-function flex_tiles($thumbnail_size="medium",$path,$folder="additional_img") {
+function flex_tiles($thumbnail_size="medium",$path="",$folder="additional_img") {
   $content = "";
   $imgs = get_files("$path/$folder");
 
