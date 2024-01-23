@@ -1,4 +1,4 @@
-<?
+<?php
 
 $job_details = Markdown::defaultTransform("jobs/humble-bundle-senior-designer.md");
 

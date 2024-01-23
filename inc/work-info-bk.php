@@ -1,4 +1,4 @@
-<?
+<?php
 $p_break = "</p><p>";
 
 $works = array(

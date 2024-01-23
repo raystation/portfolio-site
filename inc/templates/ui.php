@@ -1,4 +1,4 @@
-<?
+<?php
 
 	if ( !is_null($path) ) {
 		// checks for ADDITIONAL_IMG folder for support images
@@ -30,7 +30,7 @@
 
 <div class="sixteen columns project-details">
 	<!-- basic -->
-	<?
+	<?php
 
 	if ( file_exists("$path/cover.jpg") ) {
 		echo "<img class='scale-with-grid' src='$path/cover.jpg' alt='$title Top Image'>";
@@ -49,11 +49,11 @@
 	echo "\t\t\t</div>";
 	?>
 
-	<? echo "<h1 style='margin-top:40px;'>$title</h1>\n";?>
+	<?php echo "<h1 style='margin-top:40px;'>$title</h1>\n";?>
 
 	<div class="twelve columns alpha description">
 
-	<?
+	<?php
 	echo "
 		<p>$description</p>
 		$other

@@ -1,4 +1,4 @@
-<?
+<?php
 
 # Install PSR-0-compatible class autoloader
 spl_autoload_register(function($class){
@@ -523,23 +523,54 @@ function social_print($caption=false){
 
   // echo '</ul>';
 }
-function time_difference($month,$day,$year){
+function time_difference($setDate){
+
+  // $setDate = '2022-01-01';
+  // $timeDifference = getTimeDifference($setDate);
+  // echo "Time difference between $setDate and today: $timeDifference";
+
   // gets the current date
   date_default_timezone_set('America/Los_Angeles');
-  $current_month = date('m');
-  $current_day = date('d');
-  $current_year = date('y');
+  $currentDate = new DateTime();
+  $targetDate = new DateTime($setDate);
 
-  $date1 = "$year-$month-$day";
-  $date2 = "$current_year-$current_month-$current_day";
+  $interval = $currentDate->diff($targetDate);
 
-  $diff = abs(strtotime($date2) - strtotime($date1));
+  $years = $interval->y;
+  $months = $interval->m;
+  $days = $interval->d;
+  $hours = $interval->h;
+  $minutes = $interval->i;
+  $seconds = $interval->s;
 
-  $years = floor($diff / (365*60*60*24));
-  $months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
-  $days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
+  $timeDifference = '';
 
-  printf("%d years, %d months, and %d days", $years, $months, $days);
+  if ($years > 0) {
+      $timeDifference .= "$years year" . ($years > 1 ? 's' : '') . ', ';
+  }
+  if ($months > 0) {
+      $timeDifference .= "$months month" . ($months > 1 ? 's' : '') . ', and ';
+  }
+  if ($days > 0) {
+      $timeDifference .= "$days day" . ($days > 1 ? 's' : '') . '';
+  }
+
+  return trim($timeDifference);
+
+  // $current_month = date('m');
+  // $current_day = date('d');
+  // $current_year = date('y');
+
+  // $date1 = "$year-$month-$day";
+  // $date2 = "$current_year-$current_month-$current_day";
+
+  // $diff = abs(strtotime($date2) - strtotime($date1));
+
+  // $years = floor($diff / (365*60*60*24));
+  // $months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
+  // $days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
+
+  // printf("%d years, %d months, and %d days", $years, $months, $days);
 }
 function birthday($birth_month,$birth_day,$birth_year){
   date_default_timezone_set('America/Los_Angeles');
@@ -891,4 +922,55 @@ function flex_thumbnail($works,$number_of_thumbnails=99,$class="",$thumbnail="th
     </div>
     <div class='container'>
   ";
+}
+
+function readFolder($path, $type = 'both') {
+  // Check if path exists and is a directory
+  if (!is_dir($path)) {
+    throw new Exception('Invalid path: ' . $path);
+  }
+
+  $result = array();
+
+  // Open directory handle
+  $handle = opendir($path);
+
+  // Loop through directory contents
+  while (false !== ($entry = readdir($handle))) {
+    if ($entry != '.' && $entry != '..') {
+      $fullPath = $path . '/' . $entry;
+
+      if ($type === 'folder' && !is_dir($fullPath)) {
+        continue;
+      }
+
+      if ($type === 'file' && !is_file($fullPath)) {
+        continue;
+      }
+
+      $result[] = $fullPath;
+    }
+  }
+
+  // Close directory handle
+  closedir($handle);
+
+  return $result;
+}
+
+// removes characters from a string
+function removeString($originalString, $stringToRemove) {
+  $result = str_replace($stringToRemove, '', $originalString);
+  return $result;
+}
+
+// searches array values for a string and it if contains it, will not add to the new array created
+function removeArrayItemsContainingString($array, $string) {
+    $newArray = array();
+    foreach ($array as $item) {
+        if (strpos($item, $string) === false) {
+            $newArray[] = $item;
+        }
+    }
+    return $newArray;
 }

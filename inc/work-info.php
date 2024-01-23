@@ -1,4 +1,4 @@
-<?
+<?php
 // AUTO-LOADED BY THE HEADER
 
 // turning on the hero image will override the slideshow in the 'basic' template.
@@ -1102,6 +1102,44 @@ if ( $project == "abriendo-puertas" ) {
 
 } //end abriendo-puertas
 
+
+//  #TIGER
+// ===============================
+
+if ( $project == "tiger-tiger" ) {
+
+	$title = "Tiger, Tiger, Tail on Fire!";
+	$path="img/tiger";
+
+	$tools=array(
+		array("skill"=>"Photoshop", "percent"=>55),
+		array("skill"=>"Hand&#8209;drawn illustrations", "percent"=>30),
+		array("skill"=>"Indesign", "percent"=>10),
+		array("skill"=>"Illustrator", "percent"=>5),
+	);
+
+	$description = '';
+
+	$sidebar = "
+		<p>Children's Book<br>Published 2008</p>
+		<p>written by: Lin Fong O'Neill, <a href='http://www.lotuswriting.com'>Lotus Writing</a><br>Illustrated: by Ray Yuen</p>
+		<p>Hand-drawn and inked, coloring done in Photoshop</p>
+		<p><a href='http://www.amazon.com/Monkey-Mo-Go-Lin-Fong-ONeill/dp/0978644131'>Buy the book</a></p>
+		<p><img width='50%' class='add-top' src='img/monkey-mo/icon_peter.png' alt='' />
+	";
+
+	$img_info = array(
+		// array("file" => "title.jpg", "alt" => "home screen"),
+		array("file" => "title.jpg", "alt" => "Title"),
+		array("file" => "tigertiger_b.jpg", "alt" => "Tigertiger B"),
+		array("file" => "tiger_cover.png", "alt" => "Tiger Cover"),
+		array("file" => "tiger_05.jpg", "alt" => "Tiger 05"),
+		array("file" => "tiger_04.jpg", "alt" => "Tiger 04"),
+		array("file" => "tiger_03.png", "alt" => "Tiger 03"),
+		array("file" => "tiger_02.png		", "alt" => "Tiger 02"),
+	);
+
+} //end TIGER
 
 //  #MONKEY MO, MONKEY GO
 // ===============================

@@ -1,4 +1,4 @@
-<?
+<?php
 
 $footer_add="";
 $work_class = "";
@@ -130,7 +130,7 @@ if ( !isset($meta_description) ) {
 	<!-- Basic Page Needs
   ================================================== -->
 	<title>Ray Yuen &#124; <?php pr($title); ?></title>
-	<? echo $meta_data; ?>
+	<?php echo $meta_data; ?>
 
 	<!-- Mobile Specific Metas
   ================================================== -->
@@ -140,7 +140,7 @@ if ( !isset($meta_description) ) {
   ================================================== -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-	<? echo $header_add; ?>
+	<?php echo $header_add; ?>
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -172,9 +172,19 @@ if ( !isset($meta_description) ) {
 	  }}();
 	</script>
 
+	<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0GPV06E00T"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-0GPV06E00T');
+		</script>
+
 </head>
 
-<body <? echo $extra_padding;?>>
+<body <?php echo $extra_padding;?>>
 
 	<!-- Primary Page Layout
 	================================================== -->
@@ -184,8 +194,8 @@ if ( !isset($meta_description) ) {
 			<nav class="sixteen columns">
 				<div class="title"><a href="./">Ray Yuen</a></div>
 				<ul>
-					<li><a class="<? echo $work_class;?>" href="work<? echo $id_html;?>">work</a></li>
-					<li><a class="<? echo $about_class;?>" href="about<? echo $id_html;?>">about</a></li>
+					<li><a class="<?php echo $work_class;?>" href="work<?php echo $id_html;?>">work</a></li>
+					<li><a class="<?php echo $about_class;?>" href="about<?php echo $id_html;?>">about</a></li>
 				</ul>
 
 			</nav>
@@ -195,11 +205,11 @@ if ( !isset($meta_description) ) {
 	<header class="navband headroom">
 		<div class="header">
 			<div id="title">
-				<a href="./<? echo $id_html; ?>">Ray Yuen</a>
+				<a href="./<?php echo $id_html; ?>">Ray Yuen</a>
 			</div>
 			<div id='nav'>
-				<div class='nav-item nav-page'><a class="<? echo $work_class;?>" href="work<? echo $id_html;?>">work</a></div>
-				<div class='nav-item nav-page'><a class="<? echo $about_class;?>" href="about<? echo $id_html;?>">about</a></div>
+				<div class='nav-item nav-page'><a class="<?php echo $work_class;?>" href="work<?php echo $id_html;?>">work</a></div>
+				<div class='nav-item nav-page'><a class="<?php echo $about_class;?>" href="about<?php echo $id_html;?>">about</a></div>
 				<div class='nav-item header-icon' id='email'><a href="mailto:rayuen@gmail.com"><img src="img/icon/email.svg"></a></div>
 				<div class='nav-item header-icon'><a href="http://www.linkedin.com/in/rayuen" target='_blank'><img src="img/icon/linkedin.svg"></a></div>
 				<div class='nav-item header-icon'><a href="https://dribbble.com/raystation" target='_blank'><img src="img/icon/dribbble.svg"></a></div>

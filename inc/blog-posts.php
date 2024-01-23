@@ -1,4 +1,4 @@
-<?
+<?php
 
 $blogposts=array(
 

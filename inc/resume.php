@@ -1,4 +1,4 @@
-<?
+<?php
 //last updated January 10, 2017
 $p_break = "</p><p>";
 $quick_intro = "

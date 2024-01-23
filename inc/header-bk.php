@@ -1,4 +1,4 @@
-<?
+<?php
 $meta_description="";
 $footer_add="";
 $work_class = "";
@@ -35,7 +35,7 @@ if (isset($section)) {
   ================================================== -->
 	<meta charset="utf-8">
 	<title>Ray Yuen &#124; <?php pr($title); ?></title>
-	<meta name="description" content="<? if($meta_description){echo $meta_description; } else {echo "Ray Yuen is a designer and artist working in numerous media: books, games, game design and illustration."; } ?>">
+	<meta name="description" content="<?php if($meta_description){echo $meta_description; } else {echo "Ray Yuen is a designer and artist working in numerous media: books, games, game design and illustration."; } ?>">
 	<meta name="author" content="Ray Yuen">
 	<meta name="keywords" content="portfolio, design, illustration, web design">
 
@@ -93,8 +93,8 @@ if (isset($section)) {
 			<nav class="sixteen columns">
 				<div class="title"><a href="./">Ray Yuen</a></div>
 				<ul>
-					<li><a class="<? echo $work_class;?>" href="work<? echo $id_html;?>">work</a></li>
-					<li><a class="<? echo $about_class;?>" href="about<? echo $id_html;?>">about</a></li>
+					<li><a class="<?php echo $work_class;?>" href="work<?php echo $id_html;?>">work</a></li>
+					<li><a class="<?php echo $about_class;?>" href="about<?php echo $id_html;?>">about</a></li>
 				</ul>
 
 			</nav>

@@ -1,4 +1,4 @@
-<?
+<?php
 
 // TAGS
 $tags = isset($tags) ? get_tags($tags) : null;

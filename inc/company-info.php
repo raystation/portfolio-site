@@ -1,4 +1,4 @@
-<?
+<?php
 
 $short_name = "";
 $originaljobposting="";

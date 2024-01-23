@@ -1,4 +1,4 @@
-<?
+<?php
 
 $function_check_name = "get_" . $title . "_projects";
 
@@ -36,7 +36,7 @@ if (function_exists($function_check_name)) {
 
 <div class="sixteen columns project-details half-top">
 
-	<?
+	<?php
 		if (file_exists("$path/logo.svg")) {
 			echo "<img class='scale-with-grid add-bottom desktop' alt='$title logo' src='$path/logo.svg'>";
 			echo "<img class='scale-with-grid add-bottom mobile' alt='$title logo' src='$path/logo-mobile.svg'>";
@@ -54,7 +54,7 @@ if (function_exists($function_check_name)) {
 	?>
 
 	<div class="twelve columns description alpha add-bottom">
-		<?
+		<?php
 			echo "<p>".$description."</p>"
 		?>
 
@@ -71,7 +71,7 @@ if (function_exists($function_check_name)) {
 
 </div> <!-- end sixteen -->
 
-<?
+<?php
 	skeleton_print_page_thumbnail_4($projects);
 ?>
 

@@ -1,4 +1,4 @@
-<?
+<?php
 
 $id = (isset( $_GET["id"] ) ? $_GET["id"] : null );
 if ( isset($id) ) {
@@ -45,10 +45,10 @@ if ( !isset($id)) {
 		<div class="container">
 			<div class='sixteen columns'>
 				<div class='flex-footer'>
-					<a href="./<? echo $id_html;?>">home</a>
-					<a href="work<? echo $id_html;?>">work</a>
-					<a href="about<? echo $id_html;?>">about</a>
-					<a href="mailto:rayuen@gmail.com?body=<? echo $email_text;?>&subject=<? echo $email_subject;?>">email</a>
+					<a href="./<?php echo $id_html;?>">home</a>
+					<a href="work<?php echo $id_html;?>">work</a>
+					<a href="about<?php echo $id_html;?>">about</a>
+					<a href="mailto:rayuen@gmail.com?body=<?php echo $email_text;?>&subject=<?php echo $email_subject;?>">email</a>
 				</div>
 			</div>
 
@@ -59,11 +59,11 @@ if ( !isset($id)) {
 			<div class="twelve columns add-bottom">
 				<p>All works &copy; <?php $date=get_date();echo $date["year"];?> Raymond Yuen.</p>
 				<p class="add-bottom">Please do not reproduce without expressed written consent.</p>
-				<p><? $pun = print_pun(); echo $pun; ?></p>
+				<p><?php $pun = print_pun(); echo $pun; ?></p>
 			</div>
 
 			<div class="four columns  emoji">
-				<? //get_emoji(3);?>
+				<?php //get_emoji(3);?>
 			</div>
 
 		</div> <!-- END CONTAINER -->

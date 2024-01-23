@@ -1,4 +1,4 @@
-<?
+<?php
 
 // $title = "NextLesson District Landing Page";
 // $company = "NextLesson";

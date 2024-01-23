@@ -1,4 +1,4 @@
-<?
+<?php
 
 function list_tech_skills()
 {
